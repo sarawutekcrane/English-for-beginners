@@ -5,10 +5,9 @@ import Flashcards from "./modules/Flashcards";
 import ListeningQuiz from "./modules/ListeningQuiz";
 import SpeakingPractice from "./modules/SpeakingPractice";
 import Conversation from "./modules/Conversation";
+import SentencePatterns from "./modules/SentencePatterns";
 import { playClick } from "./utils/sound";
 
-// Forward-compatible with the module UI patterns future phases will add
-// (Sentence Patterns, etc. reuse these same class names).
 const CLICKABLE_SELECTOR = "button, .topic-card, .reply-option, .quiz-option, .chunk-pill";
 
 const TITLES = {
@@ -16,6 +15,7 @@ const TITLES = {
   listening: "แบบทดสอบฟัง",
   speaking: "ฝึกพูด",
   conversation: "ฝึกสนทนา",
+  sentencePatterns: "แพทเทิร์นประโยค",
 };
 
 function App() {
@@ -61,6 +61,7 @@ function App() {
           {view === "listening" && <ListeningQuiz key={instanceKey} />}
           {view === "speaking" && <SpeakingPractice key={instanceKey} />}
           {view === "conversation" && <Conversation key={instanceKey} />}
+          {view === "sentencePatterns" && <SentencePatterns key={instanceKey} />}
           {settingsOpen && <SettingsPanel onClose={() => setSettingsOpen(false)} />}
         </>
       )}

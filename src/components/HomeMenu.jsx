@@ -2,7 +2,6 @@ import { useState } from "react";
 import Mascot from "./Mascot";
 import SettingsPanel from "./SettingsPanel";
 
-// More learning modules (Sentence Patterns, etc.) land in later phases.
 const MODULES = [
   {
     id: "flashcards",
@@ -31,6 +30,13 @@ const MODULES = [
     title: "ฝึกสนทนา",
     subtitle: "บทสนทนาสถานการณ์จริง",
     color: "blue",
+  },
+  {
+    id: "sentencePatterns",
+    emoji: "🧩",
+    title: "แพทเทิร์นประโยค",
+    subtitle: "โครงสร้างประโยค & ผันคำ",
+    color: "pink",
   },
 ];
 

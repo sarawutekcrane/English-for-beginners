@@ -1,0 +1,376 @@
+[
+  {
+    "id": "eat",
+    "dict": "eat",
+    "regularity": "irregular",
+    "meaningThai": "กิน",
+    "forms": {
+      "present": "eats",
+      "past": "ate",
+      "presentParticiple": "eating",
+      "negative": "don't eat"
+    },
+    "phonetic": {
+      "dict": "/iːt/",
+      "present": "/iːts/",
+      "past": "/eɪt/",
+      "presentParticiple": "/ˈiːtɪŋ/",
+      "negative": "/doʊnt iːt/"
+    },
+    "altScript": {
+      "dict": [
+        {
+          "text": "EAT",
+          "reading": "eat"
+        }
+      ],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "go",
+    "dict": "go",
+    "regularity": "irregular",
+    "meaningThai": "ไป",
+    "forms": {
+      "present": "goes",
+      "past": "went",
+      "presentParticiple": "going",
+      "negative": "don't go"
+    },
+    "phonetic": {
+      "dict": "/ɡoʊ/",
+      "present": "/ɡoʊz/",
+      "past": "/wɛnt/",
+      "presentParticiple": "/ˈɡoʊɪŋ/",
+      "negative": "/doʊnt ɡoʊ/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "have",
+    "dict": "have",
+    "regularity": "irregular",
+    "meaningThai": "มี",
+    "forms": {
+      "present": "has",
+      "past": "had",
+      "presentParticiple": "having",
+      "negative": "don't have"
+    },
+    "phonetic": {
+      "dict": "/hæv/",
+      "present": "/hæz/",
+      "past": "/hæd/",
+      "presentParticiple": "/ˈhævɪŋ/",
+      "negative": "/doʊnt hæv/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "do",
+    "dict": "do",
+    "regularity": "irregular",
+    "meaningThai": "ทำ",
+    "forms": {
+      "present": "does",
+      "past": "did",
+      "presentParticiple": "doing",
+      "negative": "don't do"
+    },
+    "phonetic": {
+      "dict": "/duː/",
+      "present": "/dʌz/",
+      "past": "/dɪd/",
+      "presentParticiple": "/ˈduːɪŋ/",
+      "negative": "/doʊnt duː/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "write",
+    "dict": "write",
+    "regularity": "irregular",
+    "meaningThai": "เขียน",
+    "forms": {
+      "present": "writes",
+      "past": "wrote",
+      "presentParticiple": "writing",
+      "negative": "don't write"
+    },
+    "phonetic": {
+      "dict": "/raɪt/",
+      "present": "/raɪts/",
+      "past": "/roʊt/",
+      "presentParticiple": "/ˈraɪtɪŋ/",
+      "negative": "/doʊnt raɪt/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "speak",
+    "dict": "speak",
+    "regularity": "irregular",
+    "meaningThai": "พูด",
+    "forms": {
+      "present": "speaks",
+      "past": "spoke",
+      "presentParticiple": "speaking",
+      "negative": "don't speak"
+    },
+    "phonetic": {
+      "dict": "/spiːk/",
+      "present": "/spiːks/",
+      "past": "/spoʊk/",
+      "presentParticiple": "/ˈspiːkɪŋ/",
+      "negative": "/doʊnt spiːk/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "drink",
+    "dict": "drink",
+    "regularity": "irregular",
+    "meaningThai": "ดื่ม",
+    "forms": {
+      "present": "drinks",
+      "past": "drank",
+      "presentParticiple": "drinking",
+      "negative": "don't drink"
+    },
+    "phonetic": {
+      "dict": "/drɪŋk/",
+      "present": "/drɪŋks/",
+      "past": "/dræŋk/",
+      "presentParticiple": "/ˈdrɪŋkɪŋ/",
+      "negative": "/doʊnt drɪŋk/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "play",
+    "dict": "play",
+    "regularity": "regular",
+    "meaningThai": "เล่น",
+    "forms": {
+      "present": "plays",
+      "past": "played",
+      "presentParticiple": "playing",
+      "negative": "don't play"
+    },
+    "phonetic": {
+      "dict": "/pleɪ/",
+      "present": "/pleɪz/",
+      "past": "/pleɪd/",
+      "presentParticiple": "/ˈpleɪɪŋ/",
+      "negative": "/doʊnt pleɪ/"
+    },
+    "altScript": {
+      "dict": [
+        {
+          "text": "PLAY",
+          "reading": "play"
+        }
+      ],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "watch",
+    "dict": "watch",
+    "regularity": "regular",
+    "meaningThai": "ดู",
+    "forms": {
+      "present": "watches",
+      "past": "watched",
+      "presentParticiple": "watching",
+      "negative": "don't watch"
+    },
+    "phonetic": {
+      "dict": "/wɒtʃ/",
+      "present": "/ˈwɒtʃɪz/",
+      "past": "/wɒtʃt/",
+      "presentParticiple": "/ˈwɒtʃɪŋ/",
+      "negative": "/doʊnt wɒtʃ/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "study",
+    "dict": "study",
+    "regularity": "regular",
+    "meaningThai": "เรียน / ศึกษา",
+    "forms": {
+      "present": "studies",
+      "past": "studied",
+      "presentParticiple": "studying",
+      "negative": "don't study"
+    },
+    "phonetic": {
+      "dict": "/ˈstʌdi/",
+      "present": "/ˈstʌdiz/",
+      "past": "/ˈstʌdid/",
+      "presentParticiple": "/ˈstʌdiɪŋ/",
+      "negative": "/doʊnt ˈstʌdi/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "work",
+    "dict": "work",
+    "regularity": "regular",
+    "meaningThai": "ทำงาน",
+    "forms": {
+      "present": "works",
+      "past": "worked",
+      "presentParticiple": "working",
+      "negative": "don't work"
+    },
+    "phonetic": {
+      "dict": "/wɜːrk/",
+      "present": "/wɜːrks/",
+      "past": "/wɜːrkt/",
+      "presentParticiple": "/ˈwɜːrkɪŋ/",
+      "negative": "/doʊnt wɜːrk/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "read",
+    "dict": "read",
+    "regularity": "regular",
+    "meaningThai": "อ่าน",
+    "forms": {
+      "present": "reads",
+      "past": "read",
+      "presentParticiple": "reading",
+      "negative": "don't read"
+    },
+    "phonetic": {
+      "dict": "/riːd/",
+      "present": "/riːdz/",
+      "past": "/rɛd/",
+      "presentParticiple": "/ˈriːdɪŋ/",
+      "negative": "/doʊnt riːd/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "listen",
+    "dict": "listen",
+    "regularity": "regular",
+    "meaningThai": "ฟัง",
+    "forms": {
+      "present": "listens",
+      "past": "listened",
+      "presentParticiple": "listening",
+      "negative": "don't listen"
+    },
+    "phonetic": {
+      "dict": "/ˈlɪsən/",
+      "present": "/ˈlɪsənz/",
+      "past": "/ˈlɪsənd/",
+      "presentParticiple": "/ˈlɪsənɪŋ/",
+      "negative": "/doʊnt ˈlɪsən/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "cook",
+    "dict": "cook",
+    "regularity": "regular",
+    "meaningThai": "ทำอาหาร",
+    "forms": {
+      "present": "cooks",
+      "past": "cooked",
+      "presentParticiple": "cooking",
+      "negative": "don't cook"
+    },
+    "phonetic": {
+      "dict": "/kʊk/",
+      "present": "/kʊks/",
+      "past": "/kʊkt/",
+      "presentParticiple": "/ˈkʊkɪŋ/",
+      "negative": "/doʊnt kʊk/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  }
+]

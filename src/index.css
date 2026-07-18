@@ -927,3 +927,408 @@ button {
 .toggle-group.blue {
   border-color: var(--blue-deep);
 }
+
+/* ---------- Sentence Patterns: pattern list picker ---------- */
+.pattern-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.pattern-list-btn {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  border: 3px solid var(--pink);
+  background: var(--cream);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+  box-shadow: var(--shadow-soft);
+  text-align: left;
+}
+
+.pattern-list-order {
+  width: 30px;
+  height: 30px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: var(--pink-deep);
+  color: var(--white);
+  font-weight: 800;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 0.95rem;
+}
+
+.pattern-list-title {
+  font-weight: 700;
+  color: var(--ink);
+}
+
+/* ---------- Sentence Patterns: detail shell ---------- */
+.pattern-detail-title {
+  color: var(--pink-text);
+  font-size: 1.15rem;
+  text-align: center;
+}
+
+/* ---------- Lesson view ---------- */
+.lesson-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+  width: 100%;
+}
+
+.lesson-card {
+  width: 100%;
+  max-width: 480px;
+  background: var(--white);
+  border: 4px solid var(--pink-deep);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.lesson-heading {
+  color: var(--pink-text);
+  font-size: 1rem;
+  margin-top: 6px;
+}
+
+.lesson-structure {
+  background: var(--cream);
+  border: 2px dashed var(--pink-deep);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  text-align: center;
+  line-height: 1.6;
+}
+
+.particle-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.particle-item {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+}
+
+.particle-chip {
+  background: var(--blue);
+  border: 2px solid var(--blue-deep);
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-weight: 800;
+  color: var(--blue-text);
+  flex-shrink: 0;
+}
+
+.particle-role {
+  color: var(--ink-soft);
+  font-size: 0.88rem;
+  line-height: 1.4;
+}
+
+.time-note {
+  background: var(--cream-deep);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.example-list {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.example-card {
+  border: 2px solid var(--pink);
+  background: var(--cream);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+  cursor: pointer;
+}
+
+.example-jp {
+  font-size: 1.15rem;
+  font-weight: 700;
+}
+
+.example-romaji {
+  color: var(--ink-soft);
+  font-style: italic;
+  font-size: 0.85rem;
+}
+
+.example-thai {
+  color: var(--pink-text);
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+.example-play {
+  font-size: 0.78rem;
+  color: var(--ink-soft);
+}
+
+/* ---------- Practice views (word order + conjugation) ---------- */
+.practice-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+  width: 100%;
+}
+
+.practice-topbar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 6px;
+}
+
+.practice-card {
+  width: 100%;
+  max-width: 460px;
+  background: var(--white);
+  border: 4px solid var(--pink-deep);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 22px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.practice-card.blue {
+  border-color: var(--blue-deep);
+}
+
+.word-order-prompt {
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.answer-slot {
+  width: 100%;
+  min-height: 56px;
+  border: 3px dashed var(--blue-deep);
+  border-radius: var(--radius-sm);
+  background: var(--blue);
+  padding: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  align-items: center;
+  justify-content: center;
+}
+
+.answer-slot-hint {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.chunk-pool {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  justify-content: center;
+}
+
+.chunk-pill {
+  border: 3px solid var(--pink-deep);
+  background: var(--cream);
+  border-radius: 999px;
+  padding: 8px 16px;
+  font-size: 1rem;
+  font-weight: 700;
+  color: var(--ink);
+  box-shadow: var(--shadow-soft);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.chunk-pill.placed {
+  background: var(--white);
+  border-color: var(--blue-deep);
+  color: var(--blue-text);
+}
+
+.chunk-romaji-hint {
+  font-size: 0.72rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.explanation-box {
+  background: var(--cream-deep);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+  font-size: 0.88rem;
+  color: var(--ink);
+  line-height: 1.5;
+}
+
+.verb-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+}
+
+.verb-dict {
+  font-size: 2.2rem;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+.verb-group {
+  color: var(--pink-text);
+  background: var(--pink);
+  border-radius: 999px;
+  padding: 3px 12px;
+  font-size: 0.85rem;
+  font-weight: 700;
+}
+
+.verb-meaning {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+}
+
+.conjugation-instruction {
+  font-size: 0.95rem;
+  color: var(--ink);
+}
+
+/* ---------- Conjugation / adjective lesson topics ---------- */
+.group-rule-card {
+  border: 2px solid var(--blue-deep);
+  background: var(--blue);
+  border-radius: var(--radius-sm);
+  padding: 12px 14px;
+}
+
+.group-rule-explanation {
+  color: var(--ink);
+  font-size: 0.85rem;
+  line-height: 1.4;
+}
+
+.verb-chip-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.verb-chip {
+  border: 2px solid var(--blue-deep);
+  background: var(--white);
+  border-radius: 999px;
+  padding: 6px 14px;
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--ink);
+}
+
+.conj-example-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+.conj-example-row {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--white);
+  border-radius: var(--radius-sm);
+  padding: 8px 12px;
+  flex-wrap: wrap;
+}
+
+.conj-word {
+  font-size: 1.1rem;
+  font-weight: 700;
+}
+
+.conj-ending {
+  border-radius: 6px;
+  padding: 0 3px;
+}
+
+.conj-old {
+  color: var(--error-deep);
+  background: #ffe3ea;
+}
+
+.conj-new {
+  color: var(--success-deep);
+  background: #e3f7ea;
+}
+
+.conj-arrow {
+  color: var(--ink-soft);
+}
+
+.comparison-table {
+  border-collapse: collapse;
+  width: 100%;
+  min-width: 520px;
+}
+
+.comparison-table th,
+.comparison-table td {
+  border: 1px solid var(--pink);
+  padding: 8px 10px;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.comparison-table th {
+  background: var(--pink);
+  color: var(--pink-text);
+  font-size: 0.85rem;
+}
+
+.comparison-dict {
+  font-weight: 700;
+  display: block;
+}
+
+.comparison-group {
+  color: var(--ink-soft);
+  font-size: 0.72rem;
+  display: block;
+}
+
+.comparison-cell {
+  cursor: pointer;
+  font-weight: 600;
+}
+
+.comparison-cell:hover {
+  background: var(--cream);
+}

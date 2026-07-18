@@ -1,0 +1,410 @@
+[
+  {
+    "id": "big",
+    "dict": "big",
+    "ruleGroup": "er-est",
+    "meaningThai": "ใหญ่",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "big",
+        "phonetic": "/bɪɡ/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "bigger",
+        "phonetic": "/ˈbɪɡər/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "biggest",
+        "phonetic": "/ˈbɪɡɪst/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "happy",
+    "dict": "happy",
+    "ruleGroup": "er-est",
+    "meaningThai": "มีความสุข",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "happy",
+        "phonetic": "/ˈhæpi/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "happier",
+        "phonetic": "/ˈhæpiər/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "happiest",
+        "phonetic": "/ˈhæpiɪst/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "tall",
+    "dict": "tall",
+    "ruleGroup": "er-est",
+    "meaningThai": "สูง",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "tall",
+        "phonetic": "/tɔːl/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "taller",
+        "phonetic": "/ˈtɔːlər/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "tallest",
+        "phonetic": "/ˈtɔːlɪst/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "fast",
+    "dict": "fast",
+    "ruleGroup": "er-est",
+    "meaningThai": "เร็ว",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "fast",
+        "phonetic": "/fæst/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "faster",
+        "phonetic": "/ˈfæstər/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "fastest",
+        "phonetic": "/ˈfæstɪst/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "small",
+    "dict": "small",
+    "ruleGroup": "er-est",
+    "meaningThai": "เล็ก",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "small",
+        "phonetic": "/smɔːl/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "smaller",
+        "phonetic": "/ˈsmɔːlər/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "smallest",
+        "phonetic": "/ˈsmɔːlɪst/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "cheap",
+    "dict": "cheap",
+    "ruleGroup": "er-est",
+    "meaningThai": "ถูก (ราคา)",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "cheap",
+        "phonetic": "/tʃiːp/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "cheaper",
+        "phonetic": "/ˈtʃiːpər/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "cheapest",
+        "phonetic": "/ˈtʃiːpɪst/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "beautiful",
+    "dict": "beautiful",
+    "ruleGroup": "more-most",
+    "meaningThai": "สวยงาม",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "beautiful",
+        "phonetic": "/ˈbjuːtɪfəl/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "more beautiful",
+        "phonetic": "/mɔːr ˈbjuːtɪfəl/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "most beautiful",
+        "phonetic": "/moʊst ˈbjuːtɪfəl/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "expensive",
+    "dict": "expensive",
+    "ruleGroup": "more-most",
+    "meaningThai": "แพง",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "expensive",
+        "phonetic": "/ɪkˈspɛnsɪv/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "more expensive",
+        "phonetic": "/mɔːr ɪkˈspɛnsɪv/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "most expensive",
+        "phonetic": "/moʊst ɪkˈspɛnsɪv/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "difficult",
+    "dict": "difficult",
+    "ruleGroup": "more-most",
+    "meaningThai": "ยาก",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "difficult",
+        "phonetic": "/ˈdɪfɪkəlt/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "more difficult",
+        "phonetic": "/mɔːr ˈdɪfɪkəlt/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "most difficult",
+        "phonetic": "/moʊst ˈdɪfɪkəlt/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "comfortable",
+    "dict": "comfortable",
+    "ruleGroup": "more-most",
+    "meaningThai": "สบาย",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "comfortable",
+        "phonetic": "/ˈkʌmftərbəl/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "more comfortable",
+        "phonetic": "/mɔːr ˈkʌmftərbəl/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "most comfortable",
+        "phonetic": "/moʊst ˈkʌmftərbəl/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "interesting",
+    "dict": "interesting",
+    "ruleGroup": "more-most",
+    "meaningThai": "น่าสนใจ",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "interesting",
+        "phonetic": "/ˈɪntrəstɪŋ/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "more interesting",
+        "phonetic": "/mɔːr ˈɪntrəstɪŋ/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "most interesting",
+        "phonetic": "/moʊst ˈɪntrəstɪŋ/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "careful",
+    "dict": "careful",
+    "ruleGroup": "more-most",
+    "meaningThai": "ระมัดระวัง",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "careful",
+        "phonetic": "/ˈkɛrfəl/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "more careful",
+        "phonetic": "/mɔːr ˈkɛrfəl/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "most careful",
+        "phonetic": "/moʊst ˈkɛrfəl/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "good",
+    "dict": "good",
+    "ruleGroup": "irregular",
+    "meaningThai": "ดี",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "good",
+        "phonetic": "/ɡʊd/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "better",
+        "phonetic": "/ˈbɛtər/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "best",
+        "phonetic": "/bɛst/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "bad",
+    "dict": "bad",
+    "ruleGroup": "irregular",
+    "meaningThai": "แย่",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "bad",
+        "phonetic": "/bæd/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "worse",
+        "phonetic": "/wɜːrs/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "worst",
+        "phonetic": "/wɜːrst/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "far",
+    "dict": "far",
+    "ruleGroup": "irregular",
+    "meaningThai": "ไกล",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "far",
+        "phonetic": "/fɑːr/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "farther",
+        "phonetic": "/ˈfɑːrðər/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "farthest",
+        "phonetic": "/ˈfɑːrðɪst/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "little",
+    "dict": "little",
+    "ruleGroup": "irregular",
+    "meaningThai": "น้อย (นับไม่ได้)",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "little",
+        "phonetic": "/ˈlɪtəl/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "less",
+        "phonetic": "/lɛs/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "least",
+        "phonetic": "/liːst/",
+        "altScript": []
+      }
+    }
+  },
+  {
+    "id": "much",
+    "dict": "much",
+    "ruleGroup": "irregular",
+    "meaningThai": "มาก (นับไม่ได้)",
+    "altScript": [],
+    "forms": {
+      "base": {
+        "text": "much",
+        "phonetic": "/mʌtʃ/",
+        "altScript": []
+      },
+      "comparative": {
+        "text": "more",
+        "phonetic": "/mɔːr/",
+        "altScript": []
+      },
+      "superlative": {
+        "text": "most",
+        "phonetic": "/moʊst/",
+        "altScript": []
+      }
+    }
+  }
+]
