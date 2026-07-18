@@ -663,6 +663,56 @@ button {
   justify-content: center;
 }
 
+/* ---------- Speaking practice ---------- */
+.speaking-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.speaking-card {
+  width: 100%;
+  max-width: 380px;
+  background: var(--white);
+  border: 4px solid var(--pink-deep);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+  text-align: center;
+}
+
+.speaking-note {
+  color: var(--error-deep);
+  font-size: 0.85rem;
+}
+
+.speaking-heard {
+  color: var(--ink-soft);
+  font-size: 0.85rem;
+}
+
+.speaking-feedback {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  align-items: center;
+}
+
+.speaking-disclaimer {
+  max-width: 420px;
+  text-align: center;
+  color: var(--ink-soft);
+  font-size: 0.82rem;
+  background: var(--cream-deep);
+  border-radius: var(--radius-sm);
+  padding: 12px 16px;
+}
+
 /* ---------- Toggle switch (shared) ---------- */
 .toggle-row {
   display: inline-flex;

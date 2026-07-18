@@ -1,5 +1,6 @@
-import { useCallback, useEffect, useState } from "react";
+import { useCallback, useEffect, useRef, useState } from "react";
 import { useSettings } from "../context/SettingsContext";
+import { ALT_TRANSCRIPTIONS } from "../data/altTranscriptions";
 
 let cachedVoice = null;
 
@@ -64,4 +65,116 @@ export function useSpeak() {
   );
 
   return { speak, speaking, supported };
+}
+
+function normalizeEn(str = "") {
+  return str
+    .normalize("NFKC")
+    .replace(/[\s.,!?'";:()-]/g, "")
+    .toLowerCase();
+}
+
+/**
+ * Forgiving match, not exact-string equality: normalized strings equal, or
+ * either one contains the other (handles filler words the recognizer adds,
+ * or the target being a substring of a longer utterance). Falls back to a
+ * small alternate-transcription table for known homophone/near-homophone
+ * confusions when the direct match fails. Deliberately has no script-folding
+ * step (the source app's katakana-to-hiragana equivalent) -- English has a
+ * single script, so there's nothing to fold.
+ */
+export function matchesEnglish(transcript, target) {
+  const a = normalizeEn(transcript);
+  const b = normalizeEn(target);
+  if (!a || !b) return false;
+  if (a === b || a.includes(b) || b.includes(a)) return true;
+  const alts = ALT_TRANSCRIPTIONS[target];
+  if (alts) {
+    return alts.some((alt) => {
+      const n = normalizeEn(alt);
+      return a === n || a.includes(n) || n.includes(a);
+    });
+  }
+  return false;
+}
+
+const SpeechRecognitionCtor =
+  typeof window !== "undefined" ? window.SpeechRecognition || window.webkitSpeechRecognition : undefined;
+
+const RECOGNITION_TIMEOUT_MS = 8000;
+
+/** Wraps the Web Speech API's SpeechRecognition for English speaking practice. */
+export function useSpeechRecognition() {
+  const supported = !!SpeechRecognitionCtor;
+  const [listening, setListening] = useState(false);
+  const recognitionRef = useRef(null);
+  const timeoutRef = useRef(null);
+  const settledRef = useRef(false);
+
+  const start = useCallback(
+    ({ onResult, onError, onEnd } = {}) => {
+      if (!supported) return;
+      recognitionRef.current?.abort();
+      clearTimeout(timeoutRef.current);
+      settledRef.current = false;
+
+      const recognition = new SpeechRecognitionCtor();
+      recognition.lang = PREFERRED_LOCALE;
+      recognition.interimResults = false;
+      recognition.maxAlternatives = 5;
+
+      const finish = () => {
+        clearTimeout(timeoutRef.current);
+        settledRef.current = true;
+      };
+
+      recognition.onstart = () => setListening(true);
+      recognition.onresult = (event) => {
+        finish();
+        const results = event.results?.[0];
+        const alternatives = results ? Array.from(results).map((alt) => alt.transcript) : [];
+        onResult?.(alternatives[0] || "", alternatives);
+      };
+      recognition.onerror = (event) => {
+        finish();
+        onError?.(event.error);
+      };
+      recognition.onend = () => {
+        setListening(false);
+        clearTimeout(timeoutRef.current);
+        // Some browsers end the session without ever firing onresult/onerror
+        // (e.g. permission hiccups). Without this, the UI looks "frozen".
+        if (!settledRef.current) {
+          settledRef.current = true;
+          onError?.("no-speech");
+        }
+        onEnd?.();
+      };
+      recognitionRef.current = recognition;
+      recognition.start();
+
+      // Defensive timeout in case no browser event ever fires.
+      timeoutRef.current = setTimeout(() => {
+        if (settledRef.current) return;
+        settledRef.current = true;
+        recognition.abort();
+        onError?.("timeout");
+      }, RECOGNITION_TIMEOUT_MS);
+    },
+    [supported]
+  );
+
+  const stop = useCallback(() => {
+    recognitionRef.current?.stop();
+  }, []);
+
+  useEffect(
+    () => () => {
+      clearTimeout(timeoutRef.current);
+      recognitionRef.current?.abort();
+    },
+    []
+  );
+
+  return { supported, listening, start, stop };
 }

@@ -3,15 +3,17 @@ import HomeMenu from "./components/HomeMenu";
 import SettingsPanel from "./components/SettingsPanel";
 import Flashcards from "./modules/Flashcards";
 import ListeningQuiz from "./modules/ListeningQuiz";
+import SpeakingPractice from "./modules/SpeakingPractice";
 import { playClick } from "./utils/sound";
 
 // Forward-compatible with the module UI patterns future phases will add
-// (Speaking Practice, etc. reuse these same class names).
+// (Conversation Practice, etc. reuse these same class names).
 const CLICKABLE_SELECTOR = "button, .topic-card, .reply-option, .quiz-option, .chunk-pill";
 
 const TITLES = {
   flashcards: "แฟลชการ์ด",
   listening: "แบบทดสอบฟัง",
+  speaking: "ฝึกพูด",
 };
 
 function App() {
@@ -55,6 +57,7 @@ function App() {
           </div>
           {view === "flashcards" && <Flashcards key={instanceKey} />}
           {view === "listening" && <ListeningQuiz key={instanceKey} />}
+          {view === "speaking" && <SpeakingPractice key={instanceKey} />}
           {settingsOpen && <SettingsPanel onClose={() => setSettingsOpen(false)} />}
         </>
       )}
