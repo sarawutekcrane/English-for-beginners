@@ -6,6 +6,7 @@ import ListeningQuiz from "./modules/ListeningQuiz";
 import SpeakingPractice from "./modules/SpeakingPractice";
 import Conversation from "./modules/Conversation";
 import SentencePatterns from "./modules/SentencePatterns";
+import VocabularyRecall from "./modules/VocabularyRecall";
 import { playClick } from "./utils/sound";
 
 const CLICKABLE_SELECTOR = "button, .topic-card, .reply-option, .quiz-option, .chunk-pill";
@@ -16,6 +17,7 @@ const TITLES = {
   speaking: "ฝึกพูด",
   conversation: "ฝึกสนทนา",
   sentencePatterns: "แพทเทิร์นประโยค",
+  vocabRecall: "ฝึกสะกดคำ",
 };
 
 function App() {
@@ -62,6 +64,7 @@ function App() {
           {view === "speaking" && <SpeakingPractice key={instanceKey} />}
           {view === "conversation" && <Conversation key={instanceKey} />}
           {view === "sentencePatterns" && <SentencePatterns key={instanceKey} />}
+          {view === "vocabRecall" && <VocabularyRecall key={instanceKey} />}
           {settingsOpen && <SettingsPanel onClose={() => setSettingsOpen(false)} />}
         </>
       )}

@@ -11,11 +11,11 @@
       "negative": "don't eat"
     },
     "phonetic": {
-      "dict": "/iːt/",
-      "present": "/iːts/",
-      "past": "/eɪt/",
-      "presentParticiple": "/ˈiːtɪŋ/",
-      "negative": "/doʊnt iːt/"
+      "dict": "อีท",
+      "present": "อีทส์",
+      "past": "เอท",
+      "presentParticiple": "อีท-ทิ่ง",
+      "negative": "โดนท์ อีท"
     },
     "altScript": {
       "dict": [
@@ -42,11 +42,11 @@
       "negative": "don't go"
     },
     "phonetic": {
-      "dict": "/ɡoʊ/",
-      "present": "/ɡoʊz/",
-      "past": "/wɛnt/",
-      "presentParticiple": "/ˈɡoʊɪŋ/",
-      "negative": "/doʊnt ɡoʊ/"
+      "dict": "โก",
+      "present": "โกส์",
+      "past": "เวนท์",
+      "presentParticiple": "โก-อิ่ง",
+      "negative": "โดนท์ โก"
     },
     "altScript": {
       "dict": [],
@@ -68,11 +68,11 @@
       "negative": "don't have"
     },
     "phonetic": {
-      "dict": "/hæv/",
-      "present": "/hæz/",
-      "past": "/hæd/",
-      "presentParticiple": "/ˈhævɪŋ/",
-      "negative": "/doʊnt hæv/"
+      "dict": "แฮฟ",
+      "present": "แฮส",
+      "past": "แฮด",
+      "presentParticiple": "แฮฟ-วิ่ง",
+      "negative": "โดนท์ แฮฟ"
     },
     "altScript": {
       "dict": [],
@@ -94,11 +94,11 @@
       "negative": "don't do"
     },
     "phonetic": {
-      "dict": "/duː/",
-      "present": "/dʌz/",
-      "past": "/dɪd/",
-      "presentParticiple": "/ˈduːɪŋ/",
-      "negative": "/doʊnt duː/"
+      "dict": "ดู",
+      "present": "ดัส",
+      "past": "ดิด",
+      "presentParticiple": "ดู-อิ่ง",
+      "negative": "โดนท์ ดู"
     },
     "altScript": {
       "dict": [],
@@ -120,11 +120,11 @@
       "negative": "don't write"
     },
     "phonetic": {
-      "dict": "/raɪt/",
-      "present": "/raɪts/",
-      "past": "/roʊt/",
-      "presentParticiple": "/ˈraɪtɪŋ/",
-      "negative": "/doʊnt raɪt/"
+      "dict": "ไรท์",
+      "present": "ไรทส์",
+      "past": "โรท",
+      "presentParticiple": "ไร-ทิ่ง",
+      "negative": "โดนท์ ไรท์"
     },
     "altScript": {
       "dict": [],
@@ -146,11 +146,11 @@
       "negative": "don't speak"
     },
     "phonetic": {
-      "dict": "/spiːk/",
-      "present": "/spiːks/",
-      "past": "/spoʊk/",
-      "presentParticiple": "/ˈspiːkɪŋ/",
-      "negative": "/doʊnt spiːk/"
+      "dict": "สปีค",
+      "present": "สปีคส์",
+      "past": "สโปค",
+      "presentParticiple": "สปี-กิ้ง",
+      "negative": "โดนท์ สปีค"
     },
     "altScript": {
       "dict": [],
@@ -172,11 +172,11 @@
       "negative": "don't drink"
     },
     "phonetic": {
-      "dict": "/drɪŋk/",
-      "present": "/drɪŋks/",
-      "past": "/dræŋk/",
-      "presentParticiple": "/ˈdrɪŋkɪŋ/",
-      "negative": "/doʊnt drɪŋk/"
+      "dict": "ดริงค์",
+      "present": "ดริงค์ส",
+      "past": "แดรงค์",
+      "presentParticiple": "ดริง-กิ้ง",
+      "negative": "โดนท์ ดริงค์"
     },
     "altScript": {
       "dict": [],
@@ -198,11 +198,11 @@
       "negative": "don't play"
     },
     "phonetic": {
-      "dict": "/pleɪ/",
-      "present": "/pleɪz/",
-      "past": "/pleɪd/",
-      "presentParticiple": "/ˈpleɪɪŋ/",
-      "negative": "/doʊnt pleɪ/"
+      "dict": "เพลย์",
+      "present": "เพลย์ส",
+      "past": "เพลย์ด",
+      "presentParticiple": "เพลย์-อิ่ง",
+      "negative": "โดนท์ เพลย์"
     },
     "altScript": {
       "dict": [
@@ -229,11 +229,11 @@
       "negative": "don't watch"
     },
     "phonetic": {
-      "dict": "/wɒtʃ/",
-      "present": "/ˈwɒtʃɪz/",
-      "past": "/wɒtʃt/",
-      "presentParticiple": "/ˈwɒtʃɪŋ/",
-      "negative": "/doʊnt wɒtʃ/"
+      "dict": "วอช",
+      "present": "วอช-เชส",
+      "past": "วอชท์",
+      "presentParticiple": "วอช-ชิ่ง",
+      "negative": "โดนท์ วอช"
     },
     "altScript": {
       "dict": [],
@@ -255,11 +255,11 @@
       "negative": "don't study"
     },
     "phonetic": {
-      "dict": "/ˈstʌdi/",
-      "present": "/ˈstʌdiz/",
-      "past": "/ˈstʌdid/",
-      "presentParticiple": "/ˈstʌdiɪŋ/",
-      "negative": "/doʊnt ˈstʌdi/"
+      "dict": "สทัด-ดี้",
+      "present": "สทัด-ดีส",
+      "past": "สทัด-ดีด",
+      "presentParticiple": "สทัด-ดี้-อิ่ง",
+      "negative": "โดนท์ สทัด-ดี้"
     },
     "altScript": {
       "dict": [],
@@ -281,11 +281,11 @@
       "negative": "don't work"
     },
     "phonetic": {
-      "dict": "/wɜːrk/",
-      "present": "/wɜːrks/",
-      "past": "/wɜːrkt/",
-      "presentParticiple": "/ˈwɜːrkɪŋ/",
-      "negative": "/doʊnt wɜːrk/"
+      "dict": "เวิร์ค",
+      "present": "เวิร์คส์",
+      "past": "เวิร์คท์",
+      "presentParticiple": "เวิร์ค-กิ้ง",
+      "negative": "โดนท์ เวิร์ค"
     },
     "altScript": {
       "dict": [],
@@ -307,11 +307,11 @@
       "negative": "don't read"
     },
     "phonetic": {
-      "dict": "/riːd/",
-      "present": "/riːdz/",
-      "past": "/rɛd/",
-      "presentParticiple": "/ˈriːdɪŋ/",
-      "negative": "/doʊnt riːd/"
+      "dict": "รีด",
+      "present": "รีดส์",
+      "past": "รีด",
+      "presentParticiple": "รี-ดิ้ง",
+      "negative": "โดนท์ รีด"
     },
     "altScript": {
       "dict": [],
@@ -333,11 +333,11 @@
       "negative": "don't listen"
     },
     "phonetic": {
-      "dict": "/ˈlɪsən/",
-      "present": "/ˈlɪsənz/",
-      "past": "/ˈlɪsənd/",
-      "presentParticiple": "/ˈlɪsənɪŋ/",
-      "negative": "/doʊnt ˈlɪsən/"
+      "dict": "ลิส-เซิ่น",
+      "present": "ลิส-เซินส์",
+      "past": "ลิส-เซินด์",
+      "presentParticiple": "ลิส-เซิ่น-นิ่ง",
+      "negative": "โดนท์ ลิส-เซิ่น"
     },
     "altScript": {
       "dict": [],
@@ -359,11 +359,11 @@
       "negative": "don't cook"
     },
     "phonetic": {
-      "dict": "/kʊk/",
-      "present": "/kʊks/",
-      "past": "/kʊkt/",
-      "presentParticiple": "/ˈkʊkɪŋ/",
-      "negative": "/doʊnt kʊk/"
+      "dict": "คุค",
+      "present": "คุคส์",
+      "past": "คุคท์",
+      "presentParticiple": "คุค-กิ้ง",
+      "negative": "โดนท์ คุค"
     },
     "altScript": {
       "dict": [],
@@ -385,11 +385,11 @@
       "negative": "don't want"
     },
     "phonetic": {
-      "dict": "/wɒnt/",
-      "present": "/wɒnts/",
-      "past": "/ˈwɒntɪd/",
-      "presentParticiple": "/ˈwɒntɪŋ/",
-      "negative": "/doʊnt wɒnt/"
+      "dict": "วอนท์",
+      "present": "วอนท์ส",
+      "past": "วอน-ทิด",
+      "presentParticiple": "วอน-ทิ่ง",
+      "negative": "โดนท์ วอนท์"
     },
     "altScript": {
       "dict": [],
@@ -411,11 +411,11 @@
       "negative": "don't make"
     },
     "phonetic": {
-      "dict": "/meɪk/",
-      "present": "/meɪks/",
-      "past": "/meɪd/",
-      "presentParticiple": "/ˈmeɪkɪŋ/",
-      "negative": "/doʊnt meɪk/"
+      "dict": "เมค",
+      "present": "เมคส์",
+      "past": "เมด",
+      "presentParticiple": "เม-กิ้ง",
+      "negative": "โดนท์ เมค"
     },
     "altScript": {
       "dict": [],

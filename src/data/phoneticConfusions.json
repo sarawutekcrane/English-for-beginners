@@ -1,0 +1,898 @@
+{
+  "fa-07": [
+    {
+      "id": "cf-fa-07-1",
+      "display": "Sun",
+      "audioText": "Sun",
+      "answerText": "Sun",
+      "reading": "ซัน",
+      "thai": "ดวงอาทิตย์"
+    },
+    {
+      "id": "cf-fa-07-2",
+      "display": "Song",
+      "audioText": "Song",
+      "answerText": "Song",
+      "reading": "ซอง",
+      "thai": "เพลง"
+    }
+  ],
+  "fa-10": [
+    {
+      "id": "cf-fa-10-1",
+      "display": "Five",
+      "audioText": "Five",
+      "answerText": "Five",
+      "reading": "ไฟว์",
+      "thai": "ห้า"
+    },
+    {
+      "id": "cf-fa-10-2",
+      "display": "Hive",
+      "audioText": "Hive",
+      "answerText": "Hive",
+      "reading": "ไฮฟ์",
+      "thai": "รังผึ้ง"
+    }
+  ],
+  "fo-13": [
+    {
+      "id": "cf-fo-13-1",
+      "display": "Tree",
+      "audioText": "Tree",
+      "answerText": "Tree",
+      "reading": "ทรี",
+      "thai": "ต้นไม้"
+    },
+    {
+      "id": "cf-fo-13-2",
+      "display": "Three",
+      "audioText": "Three",
+      "answerText": "Three",
+      "reading": "ทรี",
+      "thai": "สาม"
+    }
+  ],
+  "fo-04": [
+    {
+      "id": "cf-fo-04-1",
+      "display": "Rise",
+      "audioText": "Rise",
+      "answerText": "Rise",
+      "reading": "ไรส์",
+      "thai": "ลุกขึ้น / สูงขึ้น"
+    },
+    {
+      "id": "cf-fo-04-2",
+      "display": "Nice",
+      "audioText": "Nice",
+      "answerText": "Nice",
+      "reading": "ไนซ์",
+      "thai": "ดี, น่ารัก"
+    }
+  ],
+  "fo-02": [
+    {
+      "id": "cf-fo-02-1",
+      "display": "Bed",
+      "audioText": "Bed",
+      "answerText": "Bed",
+      "reading": "เบด",
+      "thai": "เตียง"
+    },
+    {
+      "id": "cf-fo-02-2",
+      "display": "Red",
+      "audioText": "Red",
+      "answerText": "Red",
+      "reading": "เรด",
+      "thai": "สีแดง"
+    }
+  ],
+  "fo-08": [
+    {
+      "id": "cf-fo-08-1",
+      "display": "Leg",
+      "audioText": "Leg",
+      "answerText": "Leg",
+      "reading": "เล็ก",
+      "thai": "ขา"
+    },
+    {
+      "id": "cf-fo-08-2",
+      "display": "Beg",
+      "audioText": "Beg",
+      "answerText": "Beg",
+      "reading": "เบ็ก",
+      "thai": "ขอร้อง"
+    }
+  ],
+  "fo-09": [
+    {
+      "id": "cf-fo-09-1",
+      "display": "Dish",
+      "audioText": "Dish",
+      "answerText": "Dish",
+      "reading": "ดิช",
+      "thai": "จาน"
+    },
+    {
+      "id": "cf-fo-09-2",
+      "display": "Wish",
+      "audioText": "Wish",
+      "answerText": "Wish",
+      "reading": "วิช",
+      "thai": "ความปรารถนา"
+    }
+  ],
+  "fo-10": [
+    {
+      "id": "cf-fo-10-1",
+      "display": "Leaf",
+      "audioText": "Leaf",
+      "answerText": "Leaf",
+      "reading": "ลีฟ",
+      "thai": "ใบไม้"
+    },
+    {
+      "id": "cf-fo-10-2",
+      "display": "Beach",
+      "audioText": "Beach",
+      "answerText": "Beach",
+      "reading": "บีช",
+      "thai": "ชายหาด"
+    }
+  ],
+  "fo-07": [
+    {
+      "id": "cf-fo-07-1",
+      "display": "Silk",
+      "audioText": "Silk",
+      "answerText": "Silk",
+      "reading": "ซิลค์",
+      "thai": "ผ้าไหม"
+    }
+  ],
+  "nu-03": [
+    {
+      "id": "cf-nu-03-1",
+      "display": "Tree",
+      "audioText": "Tree",
+      "answerText": "Tree",
+      "reading": "ทรี",
+      "thai": "ต้นไม้"
+    },
+    {
+      "id": "cf-nu-03-2",
+      "display": "Free",
+      "audioText": "Free",
+      "answerText": "Free",
+      "reading": "ฟรี",
+      "thai": "ฟรี, ว่าง"
+    }
+  ],
+  "nu-04": [
+    {
+      "id": "cf-nu-04-1",
+      "display": "Floor",
+      "audioText": "Floor",
+      "answerText": "Floor",
+      "reading": "ฟลอร์",
+      "thai": "พื้น"
+    },
+    {
+      "id": "cf-nu-04-2",
+      "display": "For",
+      "audioText": "For",
+      "answerText": "For",
+      "reading": "ฟอร์",
+      "thai": "สำหรับ"
+    }
+  ],
+  "nu-05": [
+    {
+      "id": "cf-nu-05-1",
+      "display": "Wife",
+      "audioText": "Wife",
+      "answerText": "Wife",
+      "reading": "ไวฟ์",
+      "thai": "ภรรยา"
+    },
+    {
+      "id": "cf-nu-05-2",
+      "display": "Hive",
+      "audioText": "Hive",
+      "answerText": "Hive",
+      "reading": "ไฮฟ์",
+      "thai": "รังผึ้ง"
+    }
+  ],
+  "nu-06": [
+    {
+      "id": "cf-nu-06-1",
+      "display": "Fix",
+      "audioText": "Fix",
+      "answerText": "Fix",
+      "reading": "ฟิกซ์",
+      "thai": "ซ่อม"
+    },
+    {
+      "id": "cf-nu-06-2",
+      "display": "Mix",
+      "audioText": "Mix",
+      "answerText": "Mix",
+      "reading": "มิกซ์",
+      "thai": "ผสม"
+    }
+  ],
+  "nu-09": [
+    {
+      "id": "cf-nu-09-1",
+      "display": "Wine",
+      "audioText": "Wine",
+      "answerText": "Wine",
+      "reading": "ไวน์",
+      "thai": "ไวน์"
+    },
+    {
+      "id": "cf-nu-09-2",
+      "display": "Line",
+      "audioText": "Line",
+      "answerText": "Line",
+      "reading": "ไลน์",
+      "thai": "เส้น, แถว"
+    }
+  ],
+  "nu-10": [
+    {
+      "id": "cf-nu-10-1",
+      "display": "Pen",
+      "audioText": "Pen",
+      "answerText": "Pen",
+      "reading": "เพน",
+      "thai": "ปากกา"
+    },
+    {
+      "id": "cf-nu-10-2",
+      "display": "Hen",
+      "audioText": "Hen",
+      "answerText": "Hen",
+      "reading": "เฮน",
+      "thai": "แม่ไก่"
+    }
+  ],
+  "co-01": [
+    {
+      "id": "cf-co-01-1",
+      "display": "Bed",
+      "audioText": "Bed",
+      "answerText": "Bed",
+      "reading": "เบด",
+      "thai": "เตียง"
+    },
+    {
+      "id": "cf-co-01-2",
+      "display": "Read",
+      "audioText": "Read",
+      "answerText": "Read",
+      "reading": "รีด",
+      "thai": "อ่าน"
+    }
+  ],
+  "co-05": [
+    {
+      "id": "cf-co-05-1",
+      "display": "Blew",
+      "audioText": "Blew",
+      "answerText": "Blew",
+      "reading": "บลู",
+      "thai": "เป่า (อดีต)"
+    },
+    {
+      "id": "cf-co-05-2",
+      "display": "Glue",
+      "audioText": "Glue",
+      "answerText": "Glue",
+      "reading": "กลู",
+      "thai": "กาว"
+    }
+  ],
+  "co-04": [
+    {
+      "id": "cf-co-04-1",
+      "display": "Grin",
+      "audioText": "Grin",
+      "answerText": "Grin",
+      "reading": "กริน",
+      "thai": "ยิ้มกว้าง"
+    },
+    {
+      "id": "cf-co-04-2",
+      "display": "Clean",
+      "audioText": "Clean",
+      "answerText": "Clean",
+      "reading": "คลีน",
+      "thai": "สะอาด"
+    }
+  ],
+  "co-09": [
+    {
+      "id": "cf-co-09-1",
+      "display": "Block",
+      "audioText": "Block",
+      "answerText": "Block",
+      "reading": "บล็อค",
+      "thai": "ปิดกั้น, ตึกละแวก"
+    },
+    {
+      "id": "cf-co-09-2",
+      "display": "Back",
+      "audioText": "Back",
+      "answerText": "Back",
+      "reading": "แบ็ค",
+      "thai": "หลัง, ด้านหลัง"
+    }
+  ],
+  "co-10": [
+    {
+      "id": "cf-co-10-1",
+      "display": "Wide",
+      "audioText": "Wide",
+      "answerText": "Wide",
+      "reading": "ไวด์",
+      "thai": "กว้าง"
+    },
+    {
+      "id": "cf-co-10-2",
+      "display": "Write",
+      "audioText": "Write",
+      "answerText": "Write",
+      "reading": "ไรท์",
+      "thai": "เขียน"
+    }
+  ],
+  "dt-14": [
+    {
+      "id": "cf-dt-14-1",
+      "display": "Light",
+      "audioText": "Light",
+      "answerText": "Light",
+      "reading": "ไลท์",
+      "thai": "แสง, เบา"
+    },
+    {
+      "id": "cf-dt-14-2",
+      "display": "Right",
+      "audioText": "Right",
+      "answerText": "Right",
+      "reading": "ไรท์",
+      "thai": "ถูกต้อง, ขวา"
+    }
+  ],
+  "dt-15": [
+    {
+      "id": "cf-dt-15-1",
+      "display": "Weak",
+      "audioText": "Weak",
+      "answerText": "Weak",
+      "reading": "วีค",
+      "thai": "อ่อนแอ"
+    },
+    {
+      "id": "cf-dt-15-2",
+      "display": "Wick",
+      "audioText": "Wick",
+      "answerText": "Wick",
+      "reading": "วิค",
+      "thai": "ไส้เทียน"
+    }
+  ],
+  "dt-17": [
+    {
+      "id": "cf-dt-17-1",
+      "display": "Ear",
+      "audioText": "Ear",
+      "answerText": "Ear",
+      "reading": "เอียร์",
+      "thai": "หู"
+    },
+    {
+      "id": "cf-dt-17-2",
+      "display": "Beer",
+      "audioText": "Beer",
+      "answerText": "Beer",
+      "reading": "เบียร์",
+      "thai": "เบียร์"
+    }
+  ],
+  "dt-18": [
+    {
+      "id": "cf-dt-18-1",
+      "display": "Our",
+      "audioText": "Our",
+      "answerText": "Our",
+      "reading": "อาว-เออร์",
+      "thai": "ของเรา"
+    }
+  ],
+  "we-06": [
+    {
+      "id": "cf-we-06-1",
+      "display": "Hat",
+      "audioText": "Hat",
+      "answerText": "Hat",
+      "reading": "แฮท",
+      "thai": "หมวก"
+    },
+    {
+      "id": "cf-we-06-2",
+      "display": "Hut",
+      "audioText": "Hut",
+      "answerText": "Hut",
+      "reading": "ฮัท",
+      "thai": "กระท่อม"
+    }
+  ],
+  "we-07": [
+    {
+      "id": "cf-we-07-1",
+      "display": "Gold",
+      "audioText": "Gold",
+      "answerText": "Gold",
+      "reading": "โกลด์",
+      "thai": "สีทอง, ทองคำ"
+    }
+  ],
+  "we-09": [
+    {
+      "id": "cf-we-09-1",
+      "display": "Pool",
+      "audioText": "Pool",
+      "answerText": "Pool",
+      "reading": "พูล",
+      "thai": "สระว่ายน้ำ"
+    },
+    {
+      "id": "cf-we-09-2",
+      "display": "Fool",
+      "audioText": "Fool",
+      "answerText": "Fool",
+      "reading": "ฟูล",
+      "thai": "คนโง่"
+    }
+  ],
+  "we-08": [
+    {
+      "id": "cf-we-08-1",
+      "display": "Worm",
+      "audioText": "Worm",
+      "answerText": "Worm",
+      "reading": "เวิร์ม",
+      "thai": "หนอน"
+    },
+    {
+      "id": "cf-we-08-2",
+      "display": "Farm",
+      "audioText": "Farm",
+      "answerText": "Farm",
+      "reading": "ฟาร์ม",
+      "thai": "ฟาร์ม"
+    }
+  ],
+  "ho-11": [
+    {
+      "id": "cf-ho-11-1",
+      "display": "Led",
+      "audioText": "Led",
+      "answerText": "Led",
+      "reading": "เล็ด",
+      "thai": "นำ (อดีต)"
+    },
+    {
+      "id": "cf-ho-11-2",
+      "display": "Fed",
+      "audioText": "Fed",
+      "answerText": "Fed",
+      "reading": "เฟ็ด",
+      "thai": "ให้อาหาร (อดีต)"
+    }
+  ],
+  "ho-17": [
+    {
+      "id": "cf-ho-17-1",
+      "display": "Knee",
+      "audioText": "Knee",
+      "answerText": "Knee",
+      "reading": "นี",
+      "thai": "เข่า"
+    },
+    {
+      "id": "cf-ho-17-2",
+      "display": "Sea",
+      "audioText": "Sea",
+      "answerText": "Sea",
+      "reading": "ซี",
+      "thai": "ทะเล"
+    }
+  ],
+  "ho-07": [
+    {
+      "id": "cf-ho-07-1",
+      "display": "Store",
+      "audioText": "Store",
+      "answerText": "Store",
+      "reading": "สตอร์",
+      "thai": "ร้านค้า"
+    },
+    {
+      "id": "cf-ho-07-2",
+      "display": "Four",
+      "audioText": "Four",
+      "answerText": "Four",
+      "reading": "ฟอร์",
+      "thai": "สี่"
+    }
+  ],
+  "ho-10": [
+    {
+      "id": "cf-ho-10-1",
+      "display": "Share",
+      "audioText": "Share",
+      "answerText": "Share",
+      "reading": "แชร์",
+      "thai": "แบ่งปัน"
+    }
+  ],
+  "ho-20": [
+    {
+      "id": "cf-ho-20-1",
+      "display": "Proof",
+      "audioText": "Proof",
+      "answerText": "Proof",
+      "reading": "พรูฟ",
+      "thai": "หลักฐาน"
+    },
+    {
+      "id": "cf-ho-20-2",
+      "display": "Root",
+      "audioText": "Root",
+      "answerText": "Root",
+      "reading": "รูท",
+      "thai": "ราก"
+    }
+  ],
+  "cl-10": [
+    {
+      "id": "cf-cl-10-1",
+      "display": "Hot",
+      "audioText": "Hot",
+      "answerText": "Hot",
+      "reading": "ฮอท",
+      "thai": "ร้อน"
+    },
+    {
+      "id": "cf-cl-10-2",
+      "display": "Hate",
+      "audioText": "Hate",
+      "answerText": "Hate",
+      "reading": "เฮท",
+      "thai": "เกลียด"
+    }
+  ],
+  "cl-07": [
+    {
+      "id": "cf-cl-07-1",
+      "display": "Boat",
+      "audioText": "Boat",
+      "answerText": "Boat",
+      "reading": "โบ๊ท",
+      "thai": "เรือ"
+    },
+    {
+      "id": "cf-cl-07-2",
+      "display": "Goat",
+      "audioText": "Goat",
+      "answerText": "Goat",
+      "reading": "โกท",
+      "thai": "แพะ"
+    }
+  ],
+  "cl-09": [
+    {
+      "id": "cf-cl-09-1",
+      "display": "Box",
+      "audioText": "Box",
+      "answerText": "Box",
+      "reading": "บ็อกซ์",
+      "thai": "กล่อง"
+    },
+    {
+      "id": "cf-cl-09-2",
+      "display": "Rocks",
+      "audioText": "Rocks",
+      "answerText": "Rocks",
+      "reading": "ร็อคส์",
+      "thai": "ก้อนหิน"
+    }
+  ],
+  "cl-15": [
+    {
+      "id": "cf-cl-15-1",
+      "display": "Felt",
+      "audioText": "Felt",
+      "answerText": "Felt",
+      "reading": "เฟลท์",
+      "thai": "รู้สึก (อดีต)"
+    },
+    {
+      "id": "cf-cl-15-2",
+      "display": "Melt",
+      "audioText": "Melt",
+      "answerText": "Melt",
+      "reading": "เมลท์",
+      "thai": "ละลาย"
+    }
+  ],
+  "bo-03": [
+    {
+      "id": "cf-bo-03-1",
+      "display": "Year",
+      "audioText": "Year",
+      "answerText": "Year",
+      "reading": "เยียร์",
+      "thai": "ปี"
+    },
+    {
+      "id": "cf-bo-03-2",
+      "display": "Beer",
+      "audioText": "Beer",
+      "answerText": "Beer",
+      "reading": "เบียร์",
+      "thai": "เบียร์"
+    }
+  ],
+  "bo-02": [
+    {
+      "id": "cf-bo-02-1",
+      "display": "Pie",
+      "audioText": "Pie",
+      "answerText": "Pie",
+      "reading": "พาย",
+      "thai": "พาย (ขนม)"
+    },
+    {
+      "id": "cf-bo-02-2",
+      "display": "Tie",
+      "audioText": "Tie",
+      "answerText": "Tie",
+      "reading": "ไท",
+      "thai": "เนคไท"
+    }
+  ],
+  "bo-07": [
+    {
+      "id": "cf-bo-07-1",
+      "display": "Farm",
+      "audioText": "Farm",
+      "answerText": "Farm",
+      "reading": "ฟาร์ม",
+      "thai": "ฟาร์ม"
+    },
+    {
+      "id": "cf-bo-07-2",
+      "display": "Harm",
+      "audioText": "Harm",
+      "answerText": "Harm",
+      "reading": "ฮาร์ม",
+      "thai": "อันตราย"
+    }
+  ],
+  "bo-08": [
+    {
+      "id": "cf-bo-08-1",
+      "display": "Egg",
+      "audioText": "Egg",
+      "answerText": "Egg",
+      "reading": "เอ็กก์",
+      "thai": "ไข่"
+    },
+    {
+      "id": "cf-bo-08-2",
+      "display": "Beg",
+      "audioText": "Beg",
+      "answerText": "Beg",
+      "reading": "เบ็ก",
+      "thai": "ขอร้อง"
+    }
+  ],
+  "bo-11": [
+    {
+      "id": "cf-bo-11-1",
+      "display": "Black",
+      "audioText": "Black",
+      "answerText": "Black",
+      "reading": "แบล็ค",
+      "thai": "สีดำ"
+    },
+    {
+      "id": "cf-bo-11-2",
+      "display": "Pack",
+      "audioText": "Pack",
+      "answerText": "Pack",
+      "reading": "แพ็ค",
+      "thai": "แพ็ค, บรรจุ"
+    }
+  ],
+  "jo-02": [
+    {
+      "id": "cf-jo-02-1",
+      "display": "Purse",
+      "audioText": "Purse",
+      "answerText": "Purse",
+      "reading": "เพิร์ส",
+      "thai": "กระเป๋าสตางค์"
+    },
+    {
+      "id": "cf-jo-02-2",
+      "display": "Curse",
+      "audioText": "Curse",
+      "answerText": "Curse",
+      "reading": "เคิร์ส",
+      "thai": "คำสาป"
+    }
+  ],
+  "sh-07": [
+    {
+      "id": "cf-sh-07-1",
+      "display": "Door",
+      "audioText": "Door",
+      "answerText": "Door",
+      "reading": "ดอร์",
+      "thai": "ประตู"
+    },
+    {
+      "id": "cf-sh-07-2",
+      "display": "Score",
+      "audioText": "Score",
+      "answerText": "Score",
+      "reading": "สกอร์",
+      "thai": "คะแนน"
+    }
+  ],
+  "sh-10": [
+    {
+      "id": "cf-sh-10-1",
+      "display": "Back",
+      "audioText": "Back",
+      "answerText": "Back",
+      "reading": "แบ็ค",
+      "thai": "หลัง, ด้านหลัง"
+    },
+    {
+      "id": "cf-sh-10-2",
+      "display": "Bug",
+      "audioText": "Bug",
+      "answerText": "Bug",
+      "reading": "บัก",
+      "thai": "แมลง"
+    }
+  ],
+  "sh-09": [
+    {
+      "id": "cf-sh-09-1",
+      "display": "Crash",
+      "audioText": "Crash",
+      "answerText": "Crash",
+      "reading": "แครช",
+      "thai": "ชน, ปะทะ"
+    }
+  ],
+  "tr-14": [
+    {
+      "id": "cf-tr-14-1",
+      "display": "Sheep",
+      "audioText": "Sheep",
+      "answerText": "Sheep",
+      "reading": "ชีพ",
+      "thai": "แกะ"
+    },
+    {
+      "id": "cf-tr-14-2",
+      "display": "Chip",
+      "audioText": "Chip",
+      "answerText": "Chip",
+      "reading": "ชิพ",
+      "thai": "มันฝรั่งทอด/ชิป"
+    }
+  ],
+  "tr-01": [
+    {
+      "id": "cf-tr-01-1",
+      "display": "Care",
+      "audioText": "Care",
+      "answerText": "Care",
+      "reading": "แคร์",
+      "thai": "ดูแล, ห่วงใย"
+    },
+    {
+      "id": "cf-tr-01-2",
+      "display": "Far",
+      "audioText": "Far",
+      "answerText": "Far",
+      "reading": "ฟาร์",
+      "thai": "ไกล"
+    }
+  ],
+  "tr-02": [
+    {
+      "id": "cf-tr-02-1",
+      "display": "Bust",
+      "audioText": "Bust",
+      "answerText": "Bust",
+      "reading": "บัสท์",
+      "thai": "ทลาย, ล้มเหลว"
+    },
+    {
+      "id": "cf-tr-02-2",
+      "display": "Buzz",
+      "audioText": "Buzz",
+      "answerText": "Buzz",
+      "reading": "บัซซ์",
+      "thai": "เสียงหึ่ง"
+    }
+  ],
+  "tr-08": [
+    {
+      "id": "cf-tr-08-1",
+      "display": "Coat",
+      "audioText": "Coat",
+      "answerText": "Coat",
+      "reading": "โค้ท",
+      "thai": "เสื้อโค้ท"
+    },
+    {
+      "id": "cf-tr-08-2",
+      "display": "Goat",
+      "audioText": "Goat",
+      "answerText": "Goat",
+      "reading": "โกท",
+      "thai": "แพะ"
+    }
+  ],
+  "fe-02": [
+    {
+      "id": "cf-fe-02-1",
+      "display": "Said",
+      "audioText": "Said",
+      "answerText": "Said",
+      "reading": "เซด",
+      "thai": "พูด (อดีต)"
+    },
+    {
+      "id": "cf-fe-02-2",
+      "display": "Bad",
+      "audioText": "Bad",
+      "answerText": "Bad",
+      "reading": "แบด",
+      "thai": "แย่, ไม่ดี"
+    }
+  ],
+  "fe-12": [
+    {
+      "id": "cf-fe-12-1",
+      "display": "Cloud",
+      "audioText": "Cloud",
+      "answerText": "Cloud",
+      "reading": "คลาวด์",
+      "thai": "เมฆ"
+    },
+    {
+      "id": "cf-fe-12-2",
+      "display": "Crowd",
+      "audioText": "Crowd",
+      "answerText": "Crowd",
+      "reading": "คราวด์",
+      "thai": "ฝูงชน"
+    }
+  ]
+}

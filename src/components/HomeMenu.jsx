@@ -38,6 +38,13 @@ const MODULES = [
     subtitle: "โครงสร้างประโยค & ผันคำ",
     color: "pink",
   },
+  {
+    id: "vocabRecall",
+    emoji: "✍️",
+    title: "ฝึกสะกดคำ",
+    subtitle: "ฟังแล้วพิมพ์คำศัพท์",
+    color: "blue",
+  },
 ];
 
 export default function HomeMenu({ onSelect }) {

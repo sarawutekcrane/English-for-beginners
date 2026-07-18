@@ -5,6 +5,7 @@ import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard, sample, shuffle } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
 import { useReviewQueue } from "../utils/reviewQueue";
+import PHONETIC_CONFUSIONS from "../data/phoneticConfusions.json";
 
 const EMPTY = [];
 
@@ -30,13 +31,23 @@ function PoolPicker({ onPick }) {
   );
 }
 
-/** One correct answer + 3 distractors sampled from the same category pool, shuffled into display order. */
+/**
+ * One correct answer + 3 distractors, shuffled into display order.
+ * Prefers phonetically-confusable sound-alike words (curated in
+ * phoneticConfusions.json) when available for the answer -- these test
+ * listening discrimination much better than arbitrary same-category words.
+ * Any remaining slots (fewer than 3 genuine confusables, or none at all)
+ * are filled with same-category distractors, so every question still ends
+ * up with exactly 4 options either way.
+ */
 function buildQuestion(pool, answer) {
-  const distractors = sample(
-    pool.filter((p) => p.id !== answer.id),
-    3
-  );
-  const options = shuffle([answer, ...distractors]);
+  const confusables = PHONETIC_CONFUSIONS[answer.id] || [];
+  const preferredDistractors = shuffle(confusables).slice(0, 3);
+  const remaining = 3 - preferredDistractors.length;
+  const usedIds = new Set([answer.id, ...preferredDistractors.map((c) => c.id)]);
+  const fallbackDistractors =
+    remaining > 0 ? sample(pool.filter((p) => !usedIds.has(p.id)), remaining) : [];
+  const options = shuffle([answer, ...preferredDistractors, ...fallbackDistractors]);
   return { answer, options };
 }
 

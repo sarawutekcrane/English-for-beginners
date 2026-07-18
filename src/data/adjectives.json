@@ -8,17 +8,17 @@
     "forms": {
       "base": {
         "text": "big",
-        "phonetic": "/bɪɡ/",
+        "phonetic": "บิก",
         "altScript": []
       },
       "comparative": {
         "text": "bigger",
-        "phonetic": "/ˈbɪɡər/",
+        "phonetic": "บิก-เกอร์",
         "altScript": []
       },
       "superlative": {
         "text": "biggest",
-        "phonetic": "/ˈbɪɡɪst/",
+        "phonetic": "บิก-เกสท์",
         "altScript": []
       }
     }
@@ -32,17 +32,17 @@
     "forms": {
       "base": {
         "text": "happy",
-        "phonetic": "/ˈhæpi/",
+        "phonetic": "แฮพ-พี",
         "altScript": []
       },
       "comparative": {
         "text": "happier",
-        "phonetic": "/ˈhæpiər/",
+        "phonetic": "แฮพ-พี้-เออร์",
         "altScript": []
       },
       "superlative": {
         "text": "happiest",
-        "phonetic": "/ˈhæpiɪst/",
+        "phonetic": "แฮพ-พี้-เอสท์",
         "altScript": []
       }
     }
@@ -56,17 +56,17 @@
     "forms": {
       "base": {
         "text": "tall",
-        "phonetic": "/tɔːl/",
+        "phonetic": "ทอล",
         "altScript": []
       },
       "comparative": {
         "text": "taller",
-        "phonetic": "/ˈtɔːlər/",
+        "phonetic": "ทอล-เลอร์",
         "altScript": []
       },
       "superlative": {
         "text": "tallest",
-        "phonetic": "/ˈtɔːlɪst/",
+        "phonetic": "ทอล-เลสท์",
         "altScript": []
       }
     }
@@ -80,17 +80,17 @@
     "forms": {
       "base": {
         "text": "fast",
-        "phonetic": "/fæst/",
+        "phonetic": "ฟาสท์",
         "altScript": []
       },
       "comparative": {
         "text": "faster",
-        "phonetic": "/ˈfæstər/",
+        "phonetic": "ฟาสท์-เทอร์",
         "altScript": []
       },
       "superlative": {
         "text": "fastest",
-        "phonetic": "/ˈfæstɪst/",
+        "phonetic": "ฟาสท์-เทสท์",
         "altScript": []
       }
     }
@@ -104,17 +104,17 @@
     "forms": {
       "base": {
         "text": "small",
-        "phonetic": "/smɔːl/",
+        "phonetic": "สมอล",
         "altScript": []
       },
       "comparative": {
         "text": "smaller",
-        "phonetic": "/ˈsmɔːlər/",
+        "phonetic": "สมอล-เลอร์",
         "altScript": []
       },
       "superlative": {
         "text": "smallest",
-        "phonetic": "/ˈsmɔːlɪst/",
+        "phonetic": "สมอล-เลสท์",
         "altScript": []
       }
     }
@@ -128,17 +128,17 @@
     "forms": {
       "base": {
         "text": "cheap",
-        "phonetic": "/tʃiːp/",
+        "phonetic": "ชีพ",
         "altScript": []
       },
       "comparative": {
         "text": "cheaper",
-        "phonetic": "/ˈtʃiːpər/",
+        "phonetic": "ชี-เพอร์",
         "altScript": []
       },
       "superlative": {
         "text": "cheapest",
-        "phonetic": "/ˈtʃiːpɪst/",
+        "phonetic": "ชี-เพสท์",
         "altScript": []
       }
     }
@@ -152,17 +152,17 @@
     "forms": {
       "base": {
         "text": "beautiful",
-        "phonetic": "/ˈbjuːtɪfəl/",
+        "phonetic": "บิว-ทิ-ฟุล",
         "altScript": []
       },
       "comparative": {
         "text": "more beautiful",
-        "phonetic": "/mɔːr ˈbjuːtɪfəl/",
+        "phonetic": "มอร์ บิว-ทิ-ฟุล",
         "altScript": []
       },
       "superlative": {
         "text": "most beautiful",
-        "phonetic": "/moʊst ˈbjuːtɪfəl/",
+        "phonetic": "โมสท์ บิว-ทิ-ฟุล",
         "altScript": []
       }
     }
@@ -176,17 +176,17 @@
     "forms": {
       "base": {
         "text": "expensive",
-        "phonetic": "/ɪkˈspɛnsɪv/",
+        "phonetic": "เอ็ก-สเปน-ซิฟ",
         "altScript": []
       },
       "comparative": {
         "text": "more expensive",
-        "phonetic": "/mɔːr ɪkˈspɛnsɪv/",
+        "phonetic": "มอร์ เอ็ก-สเปน-ซิฟ",
         "altScript": []
       },
       "superlative": {
         "text": "most expensive",
-        "phonetic": "/moʊst ɪkˈspɛnsɪv/",
+        "phonetic": "โมสท์ เอ็ก-สเปน-ซิฟ",
         "altScript": []
       }
     }
@@ -200,17 +200,17 @@
     "forms": {
       "base": {
         "text": "difficult",
-        "phonetic": "/ˈdɪfɪkəlt/",
+        "phonetic": "ดิฟ-ฟิ-คัลท์",
         "altScript": []
       },
       "comparative": {
         "text": "more difficult",
-        "phonetic": "/mɔːr ˈdɪfɪkəlt/",
+        "phonetic": "มอร์ ดิฟ-ฟิ-คัลท์",
         "altScript": []
       },
       "superlative": {
         "text": "most difficult",
-        "phonetic": "/moʊst ˈdɪfɪkəlt/",
+        "phonetic": "โมสท์ ดิฟ-ฟิ-คัลท์",
         "altScript": []
       }
     }
@@ -224,17 +224,17 @@
     "forms": {
       "base": {
         "text": "comfortable",
-        "phonetic": "/ˈkʌmftərbəl/",
+        "phonetic": "คัม-ฟอร์-เทอ-เบิล",
         "altScript": []
       },
       "comparative": {
         "text": "more comfortable",
-        "phonetic": "/mɔːr ˈkʌmftərbəl/",
+        "phonetic": "มอร์ คัม-ฟอร์-เทอ-เบิล",
         "altScript": []
       },
       "superlative": {
         "text": "most comfortable",
-        "phonetic": "/moʊst ˈkʌmftərbəl/",
+        "phonetic": "โมสท์ คัม-ฟอร์-เทอ-เบิล",
         "altScript": []
       }
     }
@@ -248,17 +248,17 @@
     "forms": {
       "base": {
         "text": "interesting",
-        "phonetic": "/ˈɪntrəstɪŋ/",
+        "phonetic": "อิน-เทอ-เรส-ติ้ง",
         "altScript": []
       },
       "comparative": {
         "text": "more interesting",
-        "phonetic": "/mɔːr ˈɪntrəstɪŋ/",
+        "phonetic": "มอร์ อิน-เทอ-เรส-ติ้ง",
         "altScript": []
       },
       "superlative": {
         "text": "most interesting",
-        "phonetic": "/moʊst ˈɪntrəstɪŋ/",
+        "phonetic": "โมสท์ อิน-เทอ-เรส-ติ้ง",
         "altScript": []
       }
     }
@@ -272,17 +272,17 @@
     "forms": {
       "base": {
         "text": "careful",
-        "phonetic": "/ˈkɛrfəl/",
+        "phonetic": "แคร์-ฟุล",
         "altScript": []
       },
       "comparative": {
         "text": "more careful",
-        "phonetic": "/mɔːr ˈkɛrfəl/",
+        "phonetic": "มอร์ แคร์-ฟุล",
         "altScript": []
       },
       "superlative": {
         "text": "most careful",
-        "phonetic": "/moʊst ˈkɛrfəl/",
+        "phonetic": "โมสท์ แคร์-ฟุล",
         "altScript": []
       }
     }
@@ -296,17 +296,17 @@
     "forms": {
       "base": {
         "text": "good",
-        "phonetic": "/ɡʊd/",
+        "phonetic": "กู๊ด",
         "altScript": []
       },
       "comparative": {
         "text": "better",
-        "phonetic": "/ˈbɛtər/",
+        "phonetic": "เบท-เทอร์",
         "altScript": []
       },
       "superlative": {
         "text": "best",
-        "phonetic": "/bɛst/",
+        "phonetic": "เบสท์",
         "altScript": []
       }
     }
@@ -320,17 +320,17 @@
     "forms": {
       "base": {
         "text": "bad",
-        "phonetic": "/bæd/",
+        "phonetic": "แบด",
         "altScript": []
       },
       "comparative": {
         "text": "worse",
-        "phonetic": "/wɜːrs/",
+        "phonetic": "เวิร์ส",
         "altScript": []
       },
       "superlative": {
         "text": "worst",
-        "phonetic": "/wɜːrst/",
+        "phonetic": "เวิร์สท์",
         "altScript": []
       }
     }
@@ -344,17 +344,17 @@
     "forms": {
       "base": {
         "text": "far",
-        "phonetic": "/fɑːr/",
+        "phonetic": "ฟาร์",
         "altScript": []
       },
       "comparative": {
         "text": "farther",
-        "phonetic": "/ˈfɑːrðər/",
+        "phonetic": "ฟาร์-เธอร์",
         "altScript": []
       },
       "superlative": {
         "text": "farthest",
-        "phonetic": "/ˈfɑːrðɪst/",
+        "phonetic": "ฟาร์-เธสท์",
         "altScript": []
       }
     }
@@ -368,17 +368,17 @@
     "forms": {
       "base": {
         "text": "little",
-        "phonetic": "/ˈlɪtəl/",
+        "phonetic": "ลิท-เทิล",
         "altScript": []
       },
       "comparative": {
         "text": "less",
-        "phonetic": "/lɛs/",
+        "phonetic": "เลส",
         "altScript": []
       },
       "superlative": {
         "text": "least",
-        "phonetic": "/liːst/",
+        "phonetic": "ลีสท์",
         "altScript": []
       }
     }
@@ -392,17 +392,17 @@
     "forms": {
       "base": {
         "text": "much",
-        "phonetic": "/mʌtʃ/",
+        "phonetic": "มัช",
         "altScript": []
       },
       "comparative": {
         "text": "more",
-        "phonetic": "/mɔːr/",
+        "phonetic": "มอร์",
         "altScript": []
       },
       "superlative": {
         "text": "most",
-        "phonetic": "/moʊst/",
+        "phonetic": "โมสท์",
         "altScript": []
       }
     }

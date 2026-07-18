@@ -28,14 +28,13 @@ const SettingsContext = createContext(null);
 
 /**
  * The only piece of app state allowed to touch localStorage is speechRate.
- * showAlternateScript/showAnnotation reset to their defaults on every
- * reload by design (matches the source app's "no unwanted persistence"
- * rule); every other toggle lives as local useState inside module
- * components and must never be lifted here.
+ * Every other toggle lives as local useState inside module components and
+ * must never be lifted here. (Phase 0-7: this used to also hold
+ * showAlternateScript/showAnnotation for a global ruby-annotation toggle;
+ * Phase 8 removed it from Settings and from this Context -- see
+ * AnnotatedText.jsx for why and where that logic now lives.)
  */
 export function SettingsProvider({ children }) {
-  const [showAlternateScript, setShowAlternateScript] = useState(false);
-  const [showAnnotation, setShowAnnotation] = useState(true);
   const [speechRate, setSpeechRateRaw] = useState(loadSpeechRate);
 
   useEffect(() => {
@@ -45,18 +44,7 @@ export function SettingsProvider({ children }) {
   const setSpeechRate = (rate) => setSpeechRateRaw(clampSpeechRate(rate));
 
   return (
-    <SettingsContext.Provider
-      value={{
-        showAlternateScript,
-        setShowAlternateScript,
-        showAnnotation,
-        setShowAnnotation,
-        speechRate,
-        setSpeechRate,
-      }}
-    >
-      {children}
-    </SettingsContext.Provider>
+    <SettingsContext.Provider value={{ speechRate, setSpeechRate }}>{children}</SettingsContext.Provider>
   );
 }
 

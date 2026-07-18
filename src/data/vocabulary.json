@@ -3,7 +3,7 @@
     {
       "id": "gr-01",
       "word": "Hello",
-      "phonetic": "/həˈloʊ/",
+      "phonetic": "เฮล-โล",
       "thai": "สวัสดี",
       "icon": "hello-wave",
       "level": "A2",
@@ -20,7 +20,7 @@
     {
       "id": "gr-02",
       "word": "Good morning",
-      "phonetic": "/ɡʊd ˈmɔːrnɪŋ/",
+      "phonetic": "กู๊ด มอร์-นิ่ง",
       "thai": "สวัสดีตอนเช้า",
       "icon": "sunrise",
       "level": "A2"
@@ -28,7 +28,7 @@
     {
       "id": "gr-03",
       "word": "Good evening",
-      "phonetic": "/ɡʊd ˈiːvnɪŋ/",
+      "phonetic": "กู๊ด อีฟ-นิ่ง",
       "thai": "สวัสดีตอนเย็น",
       "icon": "sunset",
       "level": "A2"
@@ -36,7 +36,7 @@
     {
       "id": "gr-04",
       "word": "Thank you",
-      "phonetic": "/θæŋk juː/",
+      "phonetic": "แธงค์ ยู",
       "thai": "ขอบคุณ",
       "icon": "thanks-heart",
       "level": "A2",
@@ -53,7 +53,7 @@
     {
       "id": "gr-05",
       "word": "Goodbye",
-      "phonetic": "/ˌɡʊdˈbaɪ/",
+      "phonetic": "กู๊ด-บาย",
       "thai": "ลาก่อน",
       "icon": "wave-goodbye",
       "level": "A2",
@@ -70,7 +70,7 @@
     {
       "id": "gr-06",
       "word": "Please",
-      "phonetic": "/pliːz/",
+      "phonetic": "พลีส",
       "thai": "กรุณา",
       "icon": "please-hands",
       "level": "A2"
@@ -78,7 +78,7 @@
     {
       "id": "gr-07",
       "word": "Good afternoon",
-      "phonetic": "/ɡʊd ˌæftərˈnuːn/",
+      "phonetic": "กู๊ด อาฟ-เทอร์-นูน",
       "thai": "สวัสดีตอนบ่าย",
       "icon": "sunrise",
       "level": "A2"
@@ -86,7 +86,7 @@
     {
       "id": "gr-08",
       "word": "Good night",
-      "phonetic": "/ɡʊd naɪt/",
+      "phonetic": "กู๊ด ไนท์",
       "thai": "ราตรีสวัสดิ์",
       "icon": "moon-sleep",
       "level": "A2"
@@ -94,7 +94,7 @@
     {
       "id": "gr-09",
       "word": "How are you?",
-      "phonetic": "/haʊ ɑːr juː/",
+      "phonetic": "ฮาว อาร์ ยู",
       "thai": "สบายดีไหม",
       "icon": "question-face",
       "level": "A2"
@@ -102,7 +102,7 @@
     {
       "id": "gr-10",
       "word": "I'm fine, thank you.",
-      "phonetic": "/aɪm faɪn, θæŋk juː/",
+      "phonetic": "ไอม์ ไฟน์ แธงค์ ยู",
       "thai": "ฉันสบายดี ขอบคุณ",
       "icon": "happy-face",
       "level": "A2"
@@ -110,7 +110,7 @@
     {
       "id": "gr-11",
       "word": "Nice to meet you.",
-      "phonetic": "/naɪs tə miːt juː/",
+      "phonetic": "ไนซ์ ทู มีท ยู",
       "thai": "ยินดีที่ได้รู้จัก",
       "icon": "handshake",
       "level": "A2"
@@ -118,7 +118,7 @@
     {
       "id": "gr-12",
       "word": "See you later.",
-      "phonetic": "/siː juː ˈleɪtər/",
+      "phonetic": "ซี ยู เล-เทอร์",
       "thai": "แล้วเจอกันใหม่",
       "icon": "see-you-later",
       "level": "A2"
@@ -126,7 +126,7 @@
     {
       "id": "gr-13",
       "word": "Excuse me.",
-      "phonetic": "/ɪkˈskjuːz miː/",
+      "phonetic": "เอ็ก-สคิวส์ มี",
       "thai": "ขอโทษครับ",
       "icon": "excuse-me-leave",
       "level": "A2"
@@ -134,7 +134,7 @@
     {
       "id": "gr-14",
       "word": "I'm sorry.",
-      "phonetic": "/aɪm ˈsɒri/",
+      "phonetic": "ไอม์ ซอ-รี่",
       "thai": "ฉันขอโทษ",
       "icon": "sorry-sweat",
       "level": "A2"
@@ -142,7 +142,7 @@
     {
       "id": "gr-15",
       "word": "You're welcome.",
-      "phonetic": "/jʊr ˈwɛlkəm/",
+      "phonetic": "ยัวร์ เวล-คัม",
       "thai": "ยินดีต้อนรับ",
       "icon": "youre-welcome",
       "level": "A2"
@@ -150,7 +150,7 @@
     {
       "id": "gr-16",
       "word": "What's your name?",
-      "phonetic": "/wʊts jɔːr neɪm/",
+      "phonetic": "วอทส์ ยัวร์ เนม",
       "thai": "คุณชื่ออะไร",
       "icon": "question-face",
       "level": "A2"
@@ -158,7 +158,7 @@
     {
       "id": "gr-17",
       "word": "My name is Sarah.",
-      "phonetic": "/maɪ neɪm ɪz ˈsɛrə/",
+      "phonetic": "มาย เนม อิส ซาร่าห์",
       "thai": "ฉันชื่อซาร่า",
       "icon": "hello-wave",
       "level": "A2"
@@ -166,7 +166,7 @@
     {
       "id": "gr-18",
       "word": "Where are you from?",
-      "phonetic": "/wɛr ɑːr juː frʌm/",
+      "phonetic": "แวร์ อาร์ ยู ฟรอม",
       "thai": "คุณมาจากไหน",
       "icon": "question-face",
       "level": "B1"
@@ -174,7 +174,7 @@
     {
       "id": "gr-19",
       "word": "I don't understand.",
-      "phonetic": "/aɪ doʊnt ˌʌndərˈstænd/",
+      "phonetic": "ไอ โดนท์ อัน-เดอร์-สแตนด์",
       "thai": "ฉันไม่เข้าใจ",
       "icon": "sad-bow",
       "level": "B1"
@@ -182,7 +182,7 @@
     {
       "id": "gr-20",
       "word": "Can you repeat that, please?",
-      "phonetic": "/kæn juː rɪˈpiːt ðæt, pliːz/",
+      "phonetic": "แคน ยู รี-พีท แดท พลีส",
       "thai": "ช่วยพูดอีกครั้งได้ไหม",
       "icon": "please-hands",
       "level": "B1"
@@ -192,7 +192,7 @@
     {
       "id": "fa-01",
       "word": "Mother",
-      "phonetic": "/ˈmʌðər/",
+      "phonetic": "มา-เธอร์",
       "thai": "แม่",
       "icon": "family-mother",
       "level": "A2"
@@ -200,7 +200,7 @@
     {
       "id": "fa-02",
       "word": "Father",
-      "phonetic": "/ˈfɑːðər/",
+      "phonetic": "ฟา-เธอร์",
       "thai": "พ่อ",
       "icon": "family-father",
       "level": "A2"
@@ -208,7 +208,7 @@
     {
       "id": "fa-03",
       "word": "Sister",
-      "phonetic": "/ˈsɪstər/",
+      "phonetic": "ซิส-เทอร์",
       "thai": "พี่สาว หรือ น้องสาว",
       "icon": "family-sister",
       "level": "A2"
@@ -216,7 +216,7 @@
     {
       "id": "fa-04",
       "word": "Brother",
-      "phonetic": "/ˈbrʌðər/",
+      "phonetic": "บรา-เธอร์",
       "thai": "พี่ชาย หรือ น้องชาย",
       "icon": "family-brother",
       "level": "A2"
@@ -224,7 +224,7 @@
     {
       "id": "fa-05",
       "word": "Grandmother",
-      "phonetic": "/ˈɡrænˌmʌðər/",
+      "phonetic": "แกรนด์-มา-เธอร์",
       "thai": "ย่า หรือ ยาย",
       "icon": "family-grandmother",
       "level": "B1"
@@ -232,7 +232,7 @@
     {
       "id": "fa-06",
       "word": "Grandfather",
-      "phonetic": "/ˈɡrænˌfɑːðər/",
+      "phonetic": "แกรนด์-ฟา-เธอร์",
       "thai": "ปู่ หรือ ตา",
       "icon": "family-grandfather",
       "level": "B1"
@@ -240,7 +240,7 @@
     {
       "id": "fa-07",
       "word": "Son",
-      "phonetic": "/sʌn/",
+      "phonetic": "ซัน",
       "thai": "ลูกชาย",
       "icon": "family-son",
       "level": "A2"
@@ -248,7 +248,7 @@
     {
       "id": "fa-08",
       "word": "Daughter",
-      "phonetic": "/ˈdɔːtər/",
+      "phonetic": "ดอ-เทอร์",
       "thai": "ลูกสาว",
       "icon": "family-daughter",
       "level": "A2"
@@ -256,7 +256,7 @@
     {
       "id": "fa-09",
       "word": "Husband",
-      "phonetic": "/ˈhʌzbənd/",
+      "phonetic": "ฮัส-แบนด์",
       "thai": "สามี",
       "icon": "family-husband",
       "level": "A2"
@@ -264,7 +264,7 @@
     {
       "id": "fa-10",
       "word": "Wife",
-      "phonetic": "/waɪf/",
+      "phonetic": "ไวฟ์",
       "thai": "ภรรยา",
       "icon": "family-wife",
       "level": "A2"
@@ -272,7 +272,7 @@
     {
       "id": "fa-11",
       "word": "Aunt",
-      "phonetic": "/ænt/",
+      "phonetic": "อานท์",
       "thai": "ป้า น้า หรือ อา (ฝ่ายหญิง)",
       "icon": "family-aunt",
       "level": "B1"
@@ -280,7 +280,7 @@
     {
       "id": "fa-12",
       "word": "Uncle",
-      "phonetic": "/ˈʌŋkəl/",
+      "phonetic": "อัง-เคิล",
       "thai": "ลุง น้า หรือ อา (ฝ่ายชาย)",
       "icon": "family-uncle",
       "level": "B1"
@@ -288,7 +288,7 @@
     {
       "id": "fa-13",
       "word": "Cousin",
-      "phonetic": "/ˈkʌzən/",
+      "phonetic": "คัส-ซิน",
       "thai": "ลูกพี่ลูกน้อง",
       "icon": "family-cousin",
       "level": "B1"
@@ -296,7 +296,7 @@
     {
       "id": "fa-14",
       "word": "Niece",
-      "phonetic": "/niːs/",
+      "phonetic": "นีซ",
       "thai": "หลานสาว",
       "icon": "family-niece",
       "level": "B1"
@@ -304,7 +304,7 @@
     {
       "id": "fa-15",
       "word": "Nephew",
-      "phonetic": "/ˈnɛfjuː/",
+      "phonetic": "เนฟ-ฮิว",
       "thai": "หลานชาย",
       "icon": "family-nephew",
       "level": "B1"
@@ -312,7 +312,7 @@
     {
       "id": "fa-16",
       "word": "Baby",
-      "phonetic": "/ˈbeɪbi/",
+      "phonetic": "เบ-บี้",
       "thai": "ทารก",
       "icon": "family-baby",
       "level": "A2"
@@ -320,7 +320,7 @@
     {
       "id": "fa-17",
       "word": "Parents",
-      "phonetic": "/ˈpɛrənts/",
+      "phonetic": "แพ-เรินท์ส",
       "thai": "พ่อแม่",
       "icon": "family-parents",
       "level": "A2"
@@ -328,7 +328,7 @@
     {
       "id": "fa-18",
       "word": "Children",
-      "phonetic": "/ˈtʃɪldrən/",
+      "phonetic": "ชิล-เดรน",
       "thai": "ลูกๆ หรือ เด็กๆ",
       "icon": "family-children",
       "level": "A2"
@@ -336,7 +336,7 @@
     {
       "id": "fa-19",
       "word": "Grandparents",
-      "phonetic": "/ˈɡrænˌpɛrənts/",
+      "phonetic": "แกรนด์-แพ-เรินท์ส",
       "thai": "ปู่ย่าตายาย",
       "icon": "family-grandparents",
       "level": "B1"
@@ -344,7 +344,7 @@
     {
       "id": "fa-20",
       "word": "Grandchild",
-      "phonetic": "/ˈɡrænˌtʃaɪld/",
+      "phonetic": "แกรนด์-ไชลด์",
       "thai": "หลาน",
       "icon": "family-grandchild",
       "level": "B1"
@@ -354,7 +354,7 @@
     {
       "id": "fo-01",
       "word": "Apple",
-      "phonetic": "/ˈæpəl/",
+      "phonetic": "แอป-เปิล",
       "thai": "แอปเปิ้ล",
       "icon": "food-apple",
       "level": "A2"
@@ -362,7 +362,7 @@
     {
       "id": "fo-02",
       "word": "Bread",
-      "phonetic": "/brɛd/",
+      "phonetic": "เบรด",
       "thai": "ขนมปัง",
       "icon": "food-bread",
       "level": "A2"
@@ -370,7 +370,7 @@
     {
       "id": "fo-03",
       "word": "Water",
-      "phonetic": "/ˈwɔːtər/",
+      "phonetic": "วอ-เทอร์",
       "thai": "น้ำ",
       "icon": "food-water",
       "level": "A2"
@@ -378,7 +378,7 @@
     {
       "id": "fo-04",
       "word": "Rice",
-      "phonetic": "/raɪs/",
+      "phonetic": "ไรซ์",
       "thai": "ข้าว",
       "icon": "food-rice",
       "level": "A2"
@@ -386,7 +386,7 @@
     {
       "id": "fo-05",
       "word": "Chicken",
-      "phonetic": "/ˈtʃɪkɪn/",
+      "phonetic": "ชิค-เค่น",
       "thai": "ไก่",
       "icon": "food-chicken",
       "level": "A2"
@@ -394,7 +394,7 @@
     {
       "id": "fo-06",
       "word": "Coffee",
-      "phonetic": "/ˈkɒfi/",
+      "phonetic": "คอฟ-ฟี่",
       "thai": "กาแฟ",
       "icon": "food-coffee",
       "level": "A2"
@@ -402,7 +402,7 @@
     {
       "id": "fo-07",
       "word": "Milk",
-      "phonetic": "/mɪlk/",
+      "phonetic": "มิลค์",
       "thai": "นม",
       "icon": "food-milk",
       "level": "A2"
@@ -410,7 +410,7 @@
     {
       "id": "fo-08",
       "word": "Egg",
-      "phonetic": "/ɛɡ/",
+      "phonetic": "เอ็กก์",
       "thai": "ไข่",
       "icon": "food-egg",
       "level": "A2"
@@ -418,7 +418,7 @@
     {
       "id": "fo-09",
       "word": "Fish",
-      "phonetic": "/fɪʃ/",
+      "phonetic": "ฟิช",
       "thai": "ปลา",
       "icon": "food-fish",
       "level": "A2"
@@ -426,7 +426,7 @@
     {
       "id": "fo-10",
       "word": "Beef",
-      "phonetic": "/biːf/",
+      "phonetic": "บีฟ",
       "thai": "เนื้อวัว",
       "icon": "food-beef",
       "level": "A2"
@@ -434,7 +434,7 @@
     {
       "id": "fo-11",
       "word": "Vegetable",
-      "phonetic": "/ˈvɛdʒtəbəl/",
+      "phonetic": "เวจ-จิ-เท-เบิล",
       "thai": "ผัก",
       "icon": "food-vegetable",
       "level": "A2"
@@ -442,7 +442,7 @@
     {
       "id": "fo-12",
       "word": "Fruit",
-      "phonetic": "/fruːt/",
+      "phonetic": "ฟรุต",
       "thai": "ผลไม้",
       "icon": "food-fruit",
       "level": "A2"
@@ -450,7 +450,7 @@
     {
       "id": "fo-13",
       "word": "Tea",
-      "phonetic": "/tiː/",
+      "phonetic": "ที",
       "thai": "ชา",
       "icon": "food-tea",
       "level": "A2"
@@ -458,7 +458,7 @@
     {
       "id": "fo-14",
       "word": "Juice",
-      "phonetic": "/dʒuːs/",
+      "phonetic": "จูซ",
       "thai": "น้ำผลไม้",
       "icon": "food-juice",
       "level": "A2"
@@ -466,7 +466,7 @@
     {
       "id": "fo-15",
       "word": "Soup",
-      "phonetic": "/suːp/",
+      "phonetic": "ซุป",
       "thai": "ซุป",
       "icon": "food-soup",
       "level": "B1"
@@ -474,7 +474,7 @@
     {
       "id": "fo-16",
       "word": "Salad",
-      "phonetic": "/ˈsæləd/",
+      "phonetic": "แซล-ลาด",
       "thai": "สลัด",
       "icon": "food-salad",
       "level": "B1"
@@ -482,7 +482,7 @@
     {
       "id": "fo-17",
       "word": "Noodles",
-      "phonetic": "/ˈnuːdəlz/",
+      "phonetic": "นู้ด-เดิลส์",
       "thai": "ก๋วยเตี๋ยว",
       "icon": "food-noodles",
       "level": "B1"
@@ -490,7 +490,7 @@
     {
       "id": "fo-18",
       "word": "Cheese",
-      "phonetic": "/tʃiːz/",
+      "phonetic": "ชีส",
       "thai": "ชีส",
       "icon": "food-cheese",
       "level": "B1"
@@ -498,7 +498,7 @@
     {
       "id": "fo-19",
       "word": "Butter",
-      "phonetic": "/ˈbʌtər/",
+      "phonetic": "บัท-เทอร์",
       "thai": "เนย",
       "icon": "food-butter",
       "level": "B1"
@@ -506,7 +506,7 @@
     {
       "id": "fo-20",
       "word": "Sugar",
-      "phonetic": "/ˈʃʊɡər/",
+      "phonetic": "ชู-การ์",
       "thai": "น้ำตาล",
       "icon": "food-sugar",
       "level": "B1"
@@ -516,7 +516,7 @@
     {
       "id": "nu-01",
       "word": "One",
-      "phonetic": "/wʌn/",
+      "phonetic": "วัน",
       "thai": "หนึ่ง",
       "icon": "number",
       "level": "A2",
@@ -525,7 +525,7 @@
     {
       "id": "nu-02",
       "word": "Two",
-      "phonetic": "/tuː/",
+      "phonetic": "ทู",
       "thai": "สอง",
       "icon": "number",
       "level": "A2",
@@ -534,7 +534,7 @@
     {
       "id": "nu-03",
       "word": "Three",
-      "phonetic": "/θriː/",
+      "phonetic": "ทรี",
       "thai": "สาม",
       "icon": "number",
       "level": "A2",
@@ -543,7 +543,7 @@
     {
       "id": "nu-04",
       "word": "Four",
-      "phonetic": "/fɔːr/",
+      "phonetic": "ฟอร์",
       "thai": "สี่",
       "icon": "number",
       "level": "A2",
@@ -552,7 +552,7 @@
     {
       "id": "nu-05",
       "word": "Five",
-      "phonetic": "/faɪv/",
+      "phonetic": "ไฟว์",
       "thai": "ห้า",
       "icon": "number",
       "level": "A2",
@@ -561,7 +561,7 @@
     {
       "id": "nu-06",
       "word": "Six",
-      "phonetic": "/sɪks/",
+      "phonetic": "ซิกซ์",
       "thai": "หก",
       "icon": "number",
       "level": "A2",
@@ -570,7 +570,7 @@
     {
       "id": "nu-07",
       "word": "Seven",
-      "phonetic": "/ˈsɛvən/",
+      "phonetic": "เซ-เว่น",
       "thai": "เจ็ด",
       "icon": "number",
       "level": "A2",
@@ -579,7 +579,7 @@
     {
       "id": "nu-08",
       "word": "Eight",
-      "phonetic": "/eɪt/",
+      "phonetic": "เอท",
       "thai": "แปด",
       "icon": "number",
       "level": "A2",
@@ -588,7 +588,7 @@
     {
       "id": "nu-09",
       "word": "Nine",
-      "phonetic": "/naɪn/",
+      "phonetic": "ไนน์",
       "thai": "เก้า",
       "icon": "number",
       "level": "A2",
@@ -597,7 +597,7 @@
     {
       "id": "nu-10",
       "word": "Ten",
-      "phonetic": "/tɛn/",
+      "phonetic": "เทน",
       "thai": "สิบ",
       "icon": "number",
       "level": "A2",
@@ -606,7 +606,7 @@
     {
       "id": "nu-11",
       "word": "Eleven",
-      "phonetic": "/ɪˈlɛvən/",
+      "phonetic": "อี-เลฟ-เว่น",
       "thai": "สิบเอ็ด",
       "icon": "number",
       "level": "A2",
@@ -615,7 +615,7 @@
     {
       "id": "nu-12",
       "word": "Twelve",
-      "phonetic": "/twɛlv/",
+      "phonetic": "ทเวลฟ์",
       "thai": "สิบสอง",
       "icon": "number",
       "level": "A2",
@@ -624,7 +624,7 @@
     {
       "id": "nu-13",
       "word": "Thirteen",
-      "phonetic": "/ˌθɜːrˈtiːn/",
+      "phonetic": "เธอร์-ทีน",
       "thai": "สิบสาม",
       "icon": "number",
       "level": "A2",
@@ -633,7 +633,7 @@
     {
       "id": "nu-14",
       "word": "Fourteen",
-      "phonetic": "/ˌfɔːrˈtiːn/",
+      "phonetic": "ฟอร์-ทีน",
       "thai": "สิบสี่",
       "icon": "number",
       "level": "A2",
@@ -642,7 +642,7 @@
     {
       "id": "nu-15",
       "word": "Fifteen",
-      "phonetic": "/ˌfɪfˈtiːn/",
+      "phonetic": "ฟิฟ-ทีน",
       "thai": "สิบห้า",
       "icon": "number",
       "level": "A2",
@@ -651,7 +651,7 @@
     {
       "id": "nu-16",
       "word": "Sixteen",
-      "phonetic": "/ˌsɪksˈtiːn/",
+      "phonetic": "ซิก-ทีน",
       "thai": "สิบหก",
       "icon": "number",
       "level": "B1",
@@ -660,7 +660,7 @@
     {
       "id": "nu-17",
       "word": "Seventeen",
-      "phonetic": "/ˌsɛvənˈtiːn/",
+      "phonetic": "เซ-เว่น-ทีน",
       "thai": "สิบเจ็ด",
       "icon": "number",
       "level": "B1",
@@ -669,7 +669,7 @@
     {
       "id": "nu-18",
       "word": "Eighteen",
-      "phonetic": "/ˌeɪˈtiːn/",
+      "phonetic": "เอ-ทีน",
       "thai": "สิบแปด",
       "icon": "number",
       "level": "B1",
@@ -678,7 +678,7 @@
     {
       "id": "nu-19",
       "word": "Nineteen",
-      "phonetic": "/ˌnaɪnˈtiːn/",
+      "phonetic": "ไนน์-ทีน",
       "thai": "สิบเก้า",
       "icon": "number",
       "level": "B1",
@@ -687,7 +687,7 @@
     {
       "id": "nu-20",
       "word": "Twenty",
-      "phonetic": "/ˈtwɛnti/",
+      "phonetic": "ทเวน-ที",
       "thai": "ยี่สิบ",
       "icon": "number",
       "level": "B1",
@@ -698,7 +698,7 @@
     {
       "id": "co-01",
       "word": "Red",
-      "phonetic": "/rɛd/",
+      "phonetic": "เรด",
       "thai": "สีแดง",
       "icon": "color",
       "level": "A2",
@@ -707,7 +707,7 @@
     {
       "id": "co-02",
       "word": "Orange",
-      "phonetic": "/ˈɒrɪndʒ/",
+      "phonetic": "ออ-เรนจ์",
       "thai": "สีส้ม",
       "icon": "color",
       "level": "A2",
@@ -716,7 +716,7 @@
     {
       "id": "co-03",
       "word": "Yellow",
-      "phonetic": "/ˈjɛloʊ/",
+      "phonetic": "เยล-โลว์",
       "thai": "สีเหลือง",
       "icon": "color",
       "level": "A2",
@@ -725,7 +725,7 @@
     {
       "id": "co-04",
       "word": "Green",
-      "phonetic": "/ɡriːn/",
+      "phonetic": "กรีน",
       "thai": "สีเขียว",
       "icon": "color",
       "level": "A2",
@@ -734,7 +734,7 @@
     {
       "id": "co-05",
       "word": "Blue",
-      "phonetic": "/bluː/",
+      "phonetic": "บลู",
       "thai": "สีฟ้า",
       "icon": "color",
       "level": "A2",
@@ -743,7 +743,7 @@
     {
       "id": "co-06",
       "word": "Purple",
-      "phonetic": "/ˈpɜːrpəl/",
+      "phonetic": "เพอร์-เพิล",
       "thai": "สีม่วง",
       "icon": "color",
       "level": "A2",
@@ -752,7 +752,7 @@
     {
       "id": "co-07",
       "word": "Pink",
-      "phonetic": "/pɪŋk/",
+      "phonetic": "พิงค์",
       "thai": "สีชมพู",
       "icon": "color",
       "level": "A2",
@@ -761,7 +761,7 @@
     {
       "id": "co-08",
       "word": "Brown",
-      "phonetic": "/braʊn/",
+      "phonetic": "บราวน์",
       "thai": "สีน้ำตาล",
       "icon": "color",
       "level": "A2",
@@ -770,7 +770,7 @@
     {
       "id": "co-09",
       "word": "Black",
-      "phonetic": "/blæk/",
+      "phonetic": "แบล็ค",
       "thai": "สีดำ",
       "icon": "color",
       "level": "A2",
@@ -779,7 +779,7 @@
     {
       "id": "co-10",
       "word": "White",
-      "phonetic": "/waɪt/",
+      "phonetic": "ไวท์",
       "thai": "สีขาว",
       "icon": "color",
       "level": "A2",
@@ -788,7 +788,7 @@
     {
       "id": "co-11",
       "word": "Gray",
-      "phonetic": "/ɡreɪ/",
+      "phonetic": "เกรย์",
       "thai": "สีเทา",
       "icon": "color",
       "level": "A2",
@@ -797,7 +797,7 @@
     {
       "id": "co-12",
       "word": "Gold",
-      "phonetic": "/ɡoʊld/",
+      "phonetic": "โกลด์",
       "thai": "สีทอง",
       "icon": "color",
       "level": "B1",
@@ -806,7 +806,7 @@
     {
       "id": "co-13",
       "word": "Silver",
-      "phonetic": "/ˈsɪlvər/",
+      "phonetic": "ซิล-เวอร์",
       "thai": "สีเงิน",
       "icon": "color",
       "level": "B1",
@@ -815,7 +815,7 @@
     {
       "id": "co-14",
       "word": "Light blue",
-      "phonetic": "/laɪt bluː/",
+      "phonetic": "ไลท์ บลู",
       "thai": "สีฟ้าอ่อน",
       "icon": "color",
       "level": "B1",
@@ -824,7 +824,7 @@
     {
       "id": "co-15",
       "word": "Dark green",
-      "phonetic": "/dɑːrk ɡriːn/",
+      "phonetic": "ดาร์ค กรีน",
       "thai": "สีเขียวเข้ม",
       "icon": "color",
       "level": "B1",
@@ -833,7 +833,7 @@
     {
       "id": "co-16",
       "word": "Turquoise",
-      "phonetic": "/ˈtɜːrkwɔɪz/",
+      "phonetic": "เทอร์-ควอยซ์",
       "thai": "สีเขียวอมฟ้า",
       "icon": "color",
       "level": "B1",
@@ -842,7 +842,7 @@
     {
       "id": "co-17",
       "word": "Beige",
-      "phonetic": "/beɪʒ/",
+      "phonetic": "เบจ",
       "thai": "สีเบจ",
       "icon": "color",
       "level": "B1",
@@ -851,7 +851,7 @@
     {
       "id": "co-18",
       "word": "Navy blue",
-      "phonetic": "/ˈneɪvi bluː/",
+      "phonetic": "เน-วี่ บลู",
       "thai": "สีกรมท่า",
       "icon": "color",
       "level": "B1",
@@ -860,7 +860,7 @@
     {
       "id": "co-19",
       "word": "Maroon",
-      "phonetic": "/məˈruːn/",
+      "phonetic": "มา-รูน",
       "thai": "สีแดงเลือดหมู",
       "icon": "color",
       "level": "B1",
@@ -869,7 +869,7 @@
     {
       "id": "co-20",
       "word": "Lime green",
-      "phonetic": "/laɪm ɡriːn/",
+      "phonetic": "ไลม์ กรีน",
       "thai": "สีเขียวมะนาว",
       "icon": "color",
       "level": "B1",
@@ -880,7 +880,7 @@
     {
       "id": "dt-01",
       "word": "Monday",
-      "phonetic": "/ˈmʌndeɪ/",
+      "phonetic": "มัน-เดย์",
       "thai": "วันจันทร์",
       "icon": "dayTime-monday",
       "level": "A2"
@@ -888,7 +888,7 @@
     {
       "id": "dt-02",
       "word": "Tuesday",
-      "phonetic": "/ˈtuːzdeɪ/",
+      "phonetic": "ทิวส์-เดย์",
       "thai": "วันอังคาร",
       "icon": "dayTime-tuesday",
       "level": "A2"
@@ -896,7 +896,7 @@
     {
       "id": "dt-03",
       "word": "Wednesday",
-      "phonetic": "/ˈwɛnzdeɪ/",
+      "phonetic": "เวนส์-เดย์",
       "thai": "วันพุธ",
       "icon": "dayTime-wednesday",
       "level": "A2"
@@ -904,7 +904,7 @@
     {
       "id": "dt-04",
       "word": "Thursday",
-      "phonetic": "/ˈθɜːrzdeɪ/",
+      "phonetic": "เธิร์ส-เดย์",
       "thai": "วันพฤหัสบดี",
       "icon": "dayTime-thursday",
       "level": "A2"
@@ -912,7 +912,7 @@
     {
       "id": "dt-05",
       "word": "Friday",
-      "phonetic": "/ˈfraɪdeɪ/",
+      "phonetic": "ไฟร-เดย์",
       "thai": "วันศุกร์",
       "icon": "dayTime-friday",
       "level": "A2"
@@ -920,7 +920,7 @@
     {
       "id": "dt-06",
       "word": "Saturday",
-      "phonetic": "/ˈsætərdeɪ/",
+      "phonetic": "แซท-เทอร์-เดย์",
       "thai": "วันเสาร์",
       "icon": "dayTime-saturday",
       "level": "A2"
@@ -928,7 +928,7 @@
     {
       "id": "dt-07",
       "word": "Sunday",
-      "phonetic": "/ˈsʌndeɪ/",
+      "phonetic": "ซัน-เดย์",
       "thai": "วันอาทิตย์",
       "icon": "dayTime-sunday",
       "level": "A2"
@@ -936,7 +936,7 @@
     {
       "id": "dt-08",
       "word": "Today",
-      "phonetic": "/təˈdeɪ/",
+      "phonetic": "ทู-เดย์",
       "thai": "วันนี้",
       "icon": "dayTime-today",
       "level": "A2"
@@ -944,7 +944,7 @@
     {
       "id": "dt-09",
       "word": "Tomorrow",
-      "phonetic": "/təˈmɒroʊ/",
+      "phonetic": "ทู-มอร์-โรว์",
       "thai": "พรุ่งนี้",
       "icon": "dayTime-tomorrow",
       "level": "A2"
@@ -952,7 +952,7 @@
     {
       "id": "dt-10",
       "word": "Yesterday",
-      "phonetic": "/ˈjɛstərdeɪ/",
+      "phonetic": "เยส-เทอร์-เดย์",
       "thai": "เมื่อวาน",
       "icon": "dayTime-yesterday",
       "level": "A2"
@@ -960,7 +960,7 @@
     {
       "id": "dt-11",
       "word": "Morning",
-      "phonetic": "/ˈmɔːrnɪŋ/",
+      "phonetic": "มอร์-นิ่ง",
       "thai": "ตอนเช้า",
       "icon": "dayTime-morning",
       "level": "A2"
@@ -968,7 +968,7 @@
     {
       "id": "dt-12",
       "word": "Afternoon",
-      "phonetic": "/ˌæftərˈnuːn/",
+      "phonetic": "อาฟ-เทอร์-นูน",
       "thai": "ตอนบ่าย",
       "icon": "dayTime-afternoon",
       "level": "A2"
@@ -976,7 +976,7 @@
     {
       "id": "dt-13",
       "word": "Evening",
-      "phonetic": "/ˈiːvnɪŋ/",
+      "phonetic": "อีฟ-นิ่ง",
       "thai": "ตอนเย็น",
       "icon": "dayTime-evening",
       "level": "A2"
@@ -984,7 +984,7 @@
     {
       "id": "dt-14",
       "word": "Night",
-      "phonetic": "/naɪt/",
+      "phonetic": "ไนท์",
       "thai": "กลางคืน",
       "icon": "dayTime-night",
       "level": "A2"
@@ -992,7 +992,7 @@
     {
       "id": "dt-15",
       "word": "Week",
-      "phonetic": "/wiːk/",
+      "phonetic": "วีค",
       "thai": "สัปดาห์",
       "icon": "dayTime-week",
       "level": "A2"
@@ -1000,7 +1000,7 @@
     {
       "id": "dt-16",
       "word": "Month",
-      "phonetic": "/mʌnθ/",
+      "phonetic": "มันธ์",
       "thai": "เดือน",
       "icon": "dayTime-month",
       "level": "A2"
@@ -1008,7 +1008,7 @@
     {
       "id": "dt-17",
       "word": "Year",
-      "phonetic": "/jɪr/",
+      "phonetic": "เยียร์",
       "thai": "ปี",
       "icon": "dayTime-year",
       "level": "A2"
@@ -1016,7 +1016,7 @@
     {
       "id": "dt-18",
       "word": "Hour",
-      "phonetic": "/ˈaʊər/",
+      "phonetic": "อาว-เออร์",
       "thai": "ชั่วโมง",
       "icon": "dayTime-hour",
       "level": "B1"
@@ -1024,7 +1024,7 @@
     {
       "id": "dt-19",
       "word": "Minute",
-      "phonetic": "/ˈmɪnɪt/",
+      "phonetic": "มิน-นิท",
       "thai": "นาที",
       "icon": "dayTime-minute",
       "level": "B1"
@@ -1032,7 +1032,7 @@
     {
       "id": "dt-20",
       "word": "Weekend",
-      "phonetic": "/ˈwiːkɛnd/",
+      "phonetic": "วีค-เอนด์",
       "thai": "วันหยุดสุดสัปดาห์",
       "icon": "dayTime-weekend",
       "level": "B1"
@@ -1042,7 +1042,7 @@
     {
       "id": "we-01",
       "word": "Sunny",
-      "phonetic": "/ˈsʌni/",
+      "phonetic": "ซัน-นี่",
       "thai": "แดดจัด",
       "icon": "weather-sunny",
       "level": "A2"
@@ -1050,7 +1050,7 @@
     {
       "id": "we-02",
       "word": "Rainy",
-      "phonetic": "/ˈreɪni/",
+      "phonetic": "เรน-นี่",
       "thai": "ฝนตก",
       "icon": "weather-rainy",
       "level": "A2"
@@ -1058,7 +1058,7 @@
     {
       "id": "we-03",
       "word": "Cloudy",
-      "phonetic": "/ˈklaʊdi/",
+      "phonetic": "คลาว-ดี้",
       "thai": "มีเมฆมาก",
       "icon": "weather-cloudy",
       "level": "A2"
@@ -1066,7 +1066,7 @@
     {
       "id": "we-04",
       "word": "Windy",
-      "phonetic": "/ˈwɪndi/",
+      "phonetic": "วิน-ดี้",
       "thai": "ลมแรง",
       "icon": "weather-windy",
       "level": "A2"
@@ -1074,7 +1074,7 @@
     {
       "id": "we-05",
       "word": "Snowy",
-      "phonetic": "/ˈsnoʊi/",
+      "phonetic": "สโน-วี่",
       "thai": "หิมะตก",
       "icon": "weather-snowy",
       "level": "A2"
@@ -1082,7 +1082,7 @@
     {
       "id": "we-06",
       "word": "Hot",
-      "phonetic": "/hɒt/",
+      "phonetic": "ฮอท",
       "thai": "ร้อน",
       "icon": "weather-hot",
       "level": "A2"
@@ -1090,7 +1090,7 @@
     {
       "id": "we-07",
       "word": "Cold",
-      "phonetic": "/koʊld/",
+      "phonetic": "โคลด์",
       "thai": "หนาว",
       "icon": "weather-cold",
       "level": "A2"
@@ -1098,7 +1098,7 @@
     {
       "id": "we-08",
       "word": "Warm",
-      "phonetic": "/wɔːrm/",
+      "phonetic": "วอร์ม",
       "thai": "อบอุ่น",
       "icon": "weather-warm",
       "level": "A2"
@@ -1106,7 +1106,7 @@
     {
       "id": "we-09",
       "word": "Cool",
-      "phonetic": "/kuːl/",
+      "phonetic": "คูล",
       "thai": "เย็นสบาย",
       "icon": "weather-cool",
       "level": "A2"
@@ -1114,7 +1114,7 @@
     {
       "id": "we-10",
       "word": "Rainbow",
-      "phonetic": "/ˈreɪnboʊ/",
+      "phonetic": "เรน-โบว์",
       "thai": "รุ้งกินน้ำ",
       "icon": "weather-rainbow",
       "level": "A2"
@@ -1122,7 +1122,7 @@
     {
       "id": "we-11",
       "word": "Umbrella",
-      "phonetic": "/ʌmˈbrɛlə/",
+      "phonetic": "อัม-เบรล-ล่า",
       "thai": "ร่ม",
       "icon": "weather-umbrella",
       "level": "A2"
@@ -1130,7 +1130,7 @@
     {
       "id": "we-12",
       "word": "Spring",
-      "phonetic": "/sprɪŋ/",
+      "phonetic": "สปริง",
       "thai": "ฤดูใบไม้ผลิ",
       "icon": "weather-spring",
       "level": "A2"
@@ -1138,7 +1138,7 @@
     {
       "id": "we-13",
       "word": "Summer",
-      "phonetic": "/ˈsʌmər/",
+      "phonetic": "ซัม-เมอร์",
       "thai": "ฤดูร้อน",
       "icon": "weather-summer",
       "level": "A2"
@@ -1146,7 +1146,7 @@
     {
       "id": "we-14",
       "word": "Autumn",
-      "phonetic": "/ˈɔːtəm/",
+      "phonetic": "ออ-ทัมน์",
       "thai": "ฤดูใบไม้ร่วง",
       "icon": "weather-autumn",
       "level": "A2"
@@ -1154,7 +1154,7 @@
     {
       "id": "we-15",
       "word": "Winter",
-      "phonetic": "/ˈwɪntər/",
+      "phonetic": "วิน-เทอร์",
       "thai": "ฤดูหนาว",
       "icon": "weather-winter",
       "level": "A2"
@@ -1162,7 +1162,7 @@
     {
       "id": "we-16",
       "word": "Foggy",
-      "phonetic": "/ˈfɒɡi/",
+      "phonetic": "ฟ็อก-กี้",
       "thai": "มีหมอก",
       "icon": "weather-foggy",
       "level": "B1"
@@ -1170,7 +1170,7 @@
     {
       "id": "we-17",
       "word": "Stormy",
-      "phonetic": "/ˈstɔːrmi/",
+      "phonetic": "สตอร์-มี่",
       "thai": "มีพายุ",
       "icon": "weather-stormy",
       "level": "B1"
@@ -1178,7 +1178,7 @@
     {
       "id": "we-18",
       "word": "Humid",
-      "phonetic": "/ˈhjuːmɪd/",
+      "phonetic": "ฮิว-มิด",
       "thai": "ชื้น",
       "icon": "weather-humid",
       "level": "B1"
@@ -1186,7 +1186,7 @@
     {
       "id": "we-19",
       "word": "Thunder",
-      "phonetic": "/ˈθʌndər/",
+      "phonetic": "ธัน-เดอร์",
       "thai": "ฟ้าร้อง",
       "icon": "weather-thunder",
       "level": "B1"
@@ -1194,7 +1194,7 @@
     {
       "id": "we-20",
       "word": "Lightning",
-      "phonetic": "/ˈlaɪtnɪŋ/",
+      "phonetic": "ไลท์-นิ่ง",
       "thai": "ฟ้าแลบ",
       "icon": "weather-lightning",
       "level": "B1"
@@ -1204,7 +1204,7 @@
     {
       "id": "ho-01",
       "word": "House",
-      "phonetic": "/haʊs/",
+      "phonetic": "เฮาส์",
       "thai": "บ้าน",
       "icon": "house-house",
       "level": "A2"
@@ -1212,7 +1212,7 @@
     {
       "id": "ho-02",
       "word": "Room",
-      "phonetic": "/ruːm/",
+      "phonetic": "รูม",
       "thai": "ห้อง",
       "icon": "house-room",
       "level": "A2"
@@ -1220,7 +1220,7 @@
     {
       "id": "ho-03",
       "word": "Kitchen",
-      "phonetic": "/ˈkɪtʃɪn/",
+      "phonetic": "คิท-เช่น",
       "thai": "ห้องครัว",
       "icon": "house-kitchen",
       "level": "A2"
@@ -1228,7 +1228,7 @@
     {
       "id": "ho-04",
       "word": "Bedroom",
-      "phonetic": "/ˈbɛdruːm/",
+      "phonetic": "เบด-รูม",
       "thai": "ห้องนอน",
       "icon": "house-bedroom",
       "level": "A2"
@@ -1236,7 +1236,7 @@
     {
       "id": "ho-05",
       "word": "Bathroom",
-      "phonetic": "/ˈbæθruːm/",
+      "phonetic": "บาธ-รูม",
       "thai": "ห้องน้ำ",
       "icon": "house-bathroom",
       "level": "A2"
@@ -1244,7 +1244,7 @@
     {
       "id": "ho-06",
       "word": "Living room",
-      "phonetic": "/ˈlɪvɪŋ ruːm/",
+      "phonetic": "ลิฝ-วิ่ง รูม",
       "thai": "ห้องนั่งเล่น",
       "icon": "house-livingroom",
       "level": "A2"
@@ -1252,7 +1252,7 @@
     {
       "id": "ho-07",
       "word": "Door",
-      "phonetic": "/dɔːr/",
+      "phonetic": "ดอร์",
       "thai": "ประตู",
       "icon": "house-door",
       "level": "A2"
@@ -1260,7 +1260,7 @@
     {
       "id": "ho-08",
       "word": "Window",
-      "phonetic": "/ˈwɪndoʊ/",
+      "phonetic": "วิน-โดว์",
       "thai": "หน้าต่าง",
       "icon": "house-window",
       "level": "A2"
@@ -1268,7 +1268,7 @@
     {
       "id": "ho-09",
       "word": "Table",
-      "phonetic": "/ˈteɪbəl/",
+      "phonetic": "เท-เบิล",
       "thai": "โต๊ะ",
       "icon": "house-table",
       "level": "A2"
@@ -1276,7 +1276,7 @@
     {
       "id": "ho-10",
       "word": "Chair",
-      "phonetic": "/tʃɛr/",
+      "phonetic": "แชร์",
       "thai": "เก้าอี้",
       "icon": "house-chair",
       "level": "A2"
@@ -1284,7 +1284,7 @@
     {
       "id": "ho-11",
       "word": "Bed",
-      "phonetic": "/bɛd/",
+      "phonetic": "เบด",
       "thai": "เตียง",
       "icon": "house-bed",
       "level": "A2"
@@ -1292,7 +1292,7 @@
     {
       "id": "ho-12",
       "word": "Sofa",
-      "phonetic": "/ˈsoʊfə/",
+      "phonetic": "โซ-ฟา",
       "thai": "โซฟา",
       "icon": "house-sofa",
       "level": "A2"
@@ -1300,7 +1300,7 @@
     {
       "id": "ho-13",
       "word": "Television",
-      "phonetic": "/ˈtɛlɪˌvɪʒən/",
+      "phonetic": "เท-เล-วิช-ชั่น",
       "thai": "โทรทัศน์",
       "icon": "house-tv",
       "level": "A2"
@@ -1308,7 +1308,7 @@
     {
       "id": "ho-14",
       "word": "Lamp",
-      "phonetic": "/læmp/",
+      "phonetic": "แลมพ์",
       "thai": "โคมไฟ",
       "icon": "house-lamp",
       "level": "A2"
@@ -1316,7 +1316,7 @@
     {
       "id": "ho-15",
       "word": "Mirror",
-      "phonetic": "/ˈmɪrər/",
+      "phonetic": "มิ-เรอร์",
       "thai": "กระจก",
       "icon": "house-mirror",
       "level": "A2"
@@ -1324,7 +1324,7 @@
     {
       "id": "ho-16",
       "word": "Garden",
-      "phonetic": "/ˈɡɑːrdən/",
+      "phonetic": "การ์-เดน",
       "thai": "สวน",
       "icon": "house-garden",
       "level": "A2"
@@ -1332,7 +1332,7 @@
     {
       "id": "ho-17",
       "word": "Key",
-      "phonetic": "/kiː/",
+      "phonetic": "คีย์",
       "thai": "กุญแจ",
       "icon": "house-key",
       "level": "A2"
@@ -1340,7 +1340,7 @@
     {
       "id": "ho-18",
       "word": "Refrigerator",
-      "phonetic": "/rɪˈfrɪdʒəreɪtər/",
+      "phonetic": "รี-ฟริจ-เจอ-เร-เทอร์",
       "thai": "ตู้เย็น",
       "icon": "house-fridge",
       "level": "B1"
@@ -1348,7 +1348,7 @@
     {
       "id": "ho-19",
       "word": "Shelf",
-      "phonetic": "/ʃɛlf/",
+      "phonetic": "เชล์ฟ",
       "thai": "ชั้นวางของ",
       "icon": "house-shelf",
       "level": "B1"
@@ -1356,7 +1356,7 @@
     {
       "id": "ho-20",
       "word": "Roof",
-      "phonetic": "/ruːf/",
+      "phonetic": "รูฟ",
       "thai": "หลังคา",
       "icon": "house-roof",
       "level": "B1"
@@ -1366,7 +1366,7 @@
     {
       "id": "cl-01",
       "word": "Shirt",
-      "phonetic": "/ʃɜːrt/",
+      "phonetic": "เชิ้ต",
       "thai": "เสื้อเชิ้ต",
       "icon": "clothing-shirt",
       "level": "A2"
@@ -1374,7 +1374,7 @@
     {
       "id": "cl-02",
       "word": "T-shirt",
-      "phonetic": "/ˈtiːʃɜːrt/",
+      "phonetic": "ที เชิ้ต",
       "thai": "เสื้อยืด",
       "icon": "clothing-tshirt",
       "level": "A2"
@@ -1382,7 +1382,7 @@
     {
       "id": "cl-03",
       "word": "Pants",
-      "phonetic": "/pænts/",
+      "phonetic": "แพนท์ส",
       "thai": "กางเกง",
       "icon": "clothing-pants",
       "level": "A2"
@@ -1390,7 +1390,7 @@
     {
       "id": "cl-04",
       "word": "Dress",
-      "phonetic": "/drɛs/",
+      "phonetic": "เดรส",
       "thai": "ชุดเดรส",
       "icon": "clothing-dress",
       "level": "A2"
@@ -1398,7 +1398,7 @@
     {
       "id": "cl-05",
       "word": "Skirt",
-      "phonetic": "/skɜːrt/",
+      "phonetic": "สเกิร์ท",
       "thai": "กระโปรง",
       "icon": "clothing-skirt",
       "level": "A2"
@@ -1406,7 +1406,7 @@
     {
       "id": "cl-06",
       "word": "Jacket",
-      "phonetic": "/ˈdʒækɪt/",
+      "phonetic": "แจ็ค-เก็ต",
       "thai": "แจ็คเก็ต",
       "icon": "clothing-jacket",
       "level": "A2"
@@ -1414,7 +1414,7 @@
     {
       "id": "cl-07",
       "word": "Coat",
-      "phonetic": "/koʊt/",
+      "phonetic": "โค้ท",
       "thai": "เสื้อโค้ท",
       "icon": "clothing-coat",
       "level": "A2"
@@ -1422,7 +1422,7 @@
     {
       "id": "cl-08",
       "word": "Shoes",
-      "phonetic": "/ʃuːz/",
+      "phonetic": "ชูส์",
       "thai": "รองเท้า",
       "icon": "clothing-shoes",
       "level": "A2"
@@ -1430,7 +1430,7 @@
     {
       "id": "cl-09",
       "word": "Socks",
-      "phonetic": "/sɒks/",
+      "phonetic": "ซ็อคส์",
       "thai": "ถุงเท้า",
       "icon": "clothing-socks",
       "level": "A2"
@@ -1438,7 +1438,7 @@
     {
       "id": "cl-10",
       "word": "Hat",
-      "phonetic": "/hæt/",
+      "phonetic": "แฮท",
       "thai": "หมวก",
       "icon": "clothing-hat",
       "level": "A2"
@@ -1446,7 +1446,7 @@
     {
       "id": "cl-11",
       "word": "Jeans",
-      "phonetic": "/dʒiːnz/",
+      "phonetic": "ยีนส์",
       "thai": "กางเกงยีนส์",
       "icon": "clothing-jeans",
       "level": "A2"
@@ -1454,7 +1454,7 @@
     {
       "id": "cl-12",
       "word": "Shorts",
-      "phonetic": "/ʃɔːrts/",
+      "phonetic": "ชอร์ตส์",
       "thai": "กางเกงขาสั้น",
       "icon": "clothing-shorts",
       "level": "A2"
@@ -1462,7 +1462,7 @@
     {
       "id": "cl-13",
       "word": "Gloves",
-      "phonetic": "/ɡlʌvz/",
+      "phonetic": "กลัฟส์",
       "thai": "ถุงมือ",
       "icon": "clothing-gloves",
       "level": "B1"
@@ -1470,7 +1470,7 @@
     {
       "id": "cl-14",
       "word": "Scarf",
-      "phonetic": "/skɑːrf/",
+      "phonetic": "สการ์ฟ",
       "thai": "ผ้าพันคอ",
       "icon": "clothing-scarf",
       "level": "B1"
@@ -1478,7 +1478,7 @@
     {
       "id": "cl-15",
       "word": "Belt",
-      "phonetic": "/bɛlt/",
+      "phonetic": "เบลท์",
       "thai": "เข็มขัด",
       "icon": "clothing-belt",
       "level": "B1"
@@ -1486,7 +1486,7 @@
     {
       "id": "cl-16",
       "word": "Sweater",
-      "phonetic": "/ˈswɛtər/",
+      "phonetic": "สเว-ตเตอร์",
       "thai": "เสื้อสเวตเตอร์",
       "icon": "clothing-sweater",
       "level": "B1"
@@ -1494,7 +1494,7 @@
     {
       "id": "cl-17",
       "word": "Underwear",
-      "phonetic": "/ˈʌndərwɛr/",
+      "phonetic": "อัน-เดอร์-แวร์",
       "thai": "ชุดชั้นใน",
       "icon": "clothing-underwear",
       "level": "B1"
@@ -1502,7 +1502,7 @@
     {
       "id": "cl-18",
       "word": "Boots",
-      "phonetic": "/buːts/",
+      "phonetic": "บูทส์",
       "thai": "รองเท้าบูท",
       "icon": "clothing-boots",
       "level": "B1"
@@ -1510,7 +1510,7 @@
     {
       "id": "cl-19",
       "word": "Sunglasses",
-      "phonetic": "/ˈsʌnˌɡlæsɪz/",
+      "phonetic": "ซัน-กลาส-เซส",
       "thai": "แว่นกันแดด",
       "icon": "clothing-sunglasses",
       "level": "B1"
@@ -1518,7 +1518,7 @@
     {
       "id": "cl-20",
       "word": "Pajamas",
-      "phonetic": "/pəˈdʒɑːməz/",
+      "phonetic": "พะ-จา-มาส์",
       "thai": "ชุดนอน",
       "icon": "clothing-pajamas",
       "level": "B1"
@@ -1528,7 +1528,7 @@
     {
       "id": "bo-01",
       "word": "Head",
-      "phonetic": "/hɛd/",
+      "phonetic": "เฮด",
       "thai": "ศีรษะ",
       "icon": "body-head",
       "level": "A2"
@@ -1536,7 +1536,7 @@
     {
       "id": "bo-02",
       "word": "Eye",
-      "phonetic": "/aɪ/",
+      "phonetic": "อาย",
       "thai": "ตา",
       "icon": "body-eye",
       "level": "A2"
@@ -1544,7 +1544,7 @@
     {
       "id": "bo-03",
       "word": "Ear",
-      "phonetic": "/ɪr/",
+      "phonetic": "เอียร์",
       "thai": "หู",
       "icon": "body-ear",
       "level": "A2"
@@ -1552,7 +1552,7 @@
     {
       "id": "bo-04",
       "word": "Nose",
-      "phonetic": "/noʊz/",
+      "phonetic": "โนส",
       "thai": "จมูก",
       "icon": "body-nose",
       "level": "A2"
@@ -1560,7 +1560,7 @@
     {
       "id": "bo-05",
       "word": "Mouth",
-      "phonetic": "/maʊθ/",
+      "phonetic": "เมาธ์",
       "thai": "ปาก",
       "icon": "body-mouth",
       "level": "A2"
@@ -1568,7 +1568,7 @@
     {
       "id": "bo-06",
       "word": "Hand",
-      "phonetic": "/hænd/",
+      "phonetic": "แฮนด์",
       "thai": "มือ",
       "icon": "body-hand",
       "level": "A2"
@@ -1576,7 +1576,7 @@
     {
       "id": "bo-07",
       "word": "Arm",
-      "phonetic": "/ɑːrm/",
+      "phonetic": "อาร์ม",
       "thai": "แขน",
       "icon": "body-arm",
       "level": "A2"
@@ -1584,7 +1584,7 @@
     {
       "id": "bo-08",
       "word": "Leg",
-      "phonetic": "/lɛɡ/",
+      "phonetic": "เล็ก",
       "thai": "ขา",
       "icon": "body-leg",
       "level": "A2"
@@ -1592,7 +1592,7 @@
     {
       "id": "bo-09",
       "word": "Foot",
-      "phonetic": "/fʊt/",
+      "phonetic": "ฟุต",
       "thai": "เท้า",
       "icon": "body-foot",
       "level": "A2"
@@ -1600,7 +1600,7 @@
     {
       "id": "bo-10",
       "word": "Stomach",
-      "phonetic": "/ˈstʌmək/",
+      "phonetic": "สทัม-มัค",
       "thai": "ท้อง",
       "icon": "body-stomach",
       "level": "A2"
@@ -1608,7 +1608,7 @@
     {
       "id": "bo-11",
       "word": "Back",
-      "phonetic": "/bæk/",
+      "phonetic": "แบ็ค",
       "thai": "หลัง",
       "icon": "body-back",
       "level": "A2"
@@ -1616,7 +1616,7 @@
     {
       "id": "bo-12",
       "word": "Tooth",
-      "phonetic": "/tuːθ/",
+      "phonetic": "ทูธ",
       "thai": "ฟัน",
       "icon": "body-tooth",
       "level": "A2"
@@ -1624,7 +1624,7 @@
     {
       "id": "bo-13",
       "word": "Hair",
-      "phonetic": "/hɛr/",
+      "phonetic": "แฮร์",
       "thai": "ผม",
       "icon": "body-hair",
       "level": "A2"
@@ -1632,7 +1632,7 @@
     {
       "id": "bo-14",
       "word": "Finger",
-      "phonetic": "/ˈfɪŋɡər/",
+      "phonetic": "ฟิง-เกอร์",
       "thai": "นิ้วมือ",
       "icon": "body-finger",
       "level": "A2"
@@ -1640,7 +1640,7 @@
     {
       "id": "bo-15",
       "word": "Doctor",
-      "phonetic": "/ˈdɒktər/",
+      "phonetic": "ด็อก-เตอร์",
       "thai": "หมอ",
       "icon": "body-doctor",
       "level": "A2"
@@ -1648,7 +1648,7 @@
     {
       "id": "bo-16",
       "word": "Hospital",
-      "phonetic": "/ˈhɒspɪtəl/",
+      "phonetic": "ฮอส-พิ-เทิล",
       "thai": "โรงพยาบาล",
       "icon": "body-hospital",
       "level": "A2"
@@ -1656,7 +1656,7 @@
     {
       "id": "bo-17",
       "word": "Sick",
-      "phonetic": "/sɪk/",
+      "phonetic": "ซิค",
       "thai": "ป่วย",
       "icon": "body-sick",
       "level": "A2"
@@ -1664,7 +1664,7 @@
     {
       "id": "bo-18",
       "word": "Heart",
-      "phonetic": "/hɑːrt/",
+      "phonetic": "ฮาร์ท",
       "thai": "หัวใจ",
       "icon": "body-heart",
       "level": "B1"
@@ -1672,7 +1672,7 @@
     {
       "id": "bo-19",
       "word": "Medicine",
-      "phonetic": "/ˈmɛdsɪn/",
+      "phonetic": "เมด-ดิ-ซิน",
       "thai": "ยา",
       "icon": "body-medicine",
       "level": "B1"
@@ -1680,7 +1680,7 @@
     {
       "id": "bo-20",
       "word": "Healthy",
-      "phonetic": "/ˈhɛlθi/",
+      "phonetic": "เฮล-ธี",
       "thai": "สุขภาพดี",
       "icon": "body-healthy",
       "level": "B1"
@@ -1690,7 +1690,7 @@
     {
       "id": "jo-01",
       "word": "Teacher",
-      "phonetic": "/ˈtiːtʃər/",
+      "phonetic": "ทีช-เชอร์",
       "thai": "ครู",
       "icon": "job-teacher",
       "level": "A2"
@@ -1698,7 +1698,7 @@
     {
       "id": "jo-02",
       "word": "Nurse",
-      "phonetic": "/nɜːrs/",
+      "phonetic": "เนิร์ส",
       "thai": "พยาบาล",
       "icon": "job-nurse",
       "level": "A2"
@@ -1706,7 +1706,7 @@
     {
       "id": "jo-03",
       "word": "Police officer",
-      "phonetic": "/pəˈliːs ˈɒfɪsər/",
+      "phonetic": "พะ-ลีส ออฟ-ฟิ-เซอร์",
       "thai": "ตำรวจ",
       "icon": "job-police",
       "level": "A2"
@@ -1714,7 +1714,7 @@
     {
       "id": "jo-04",
       "word": "Chef",
-      "phonetic": "/ʃɛf/",
+      "phonetic": "เชฟ",
       "thai": "พ่อครัว",
       "icon": "job-chef",
       "level": "A2"
@@ -1722,7 +1722,7 @@
     {
       "id": "jo-05",
       "word": "Farmer",
-      "phonetic": "/ˈfɑːrmər/",
+      "phonetic": "ฟาร์ม-เมอร์",
       "thai": "ชาวนา",
       "icon": "job-farmer",
       "level": "A2"
@@ -1730,7 +1730,7 @@
     {
       "id": "jo-06",
       "word": "Driver",
-      "phonetic": "/ˈdraɪvər/",
+      "phonetic": "ไดร-เวอร์",
       "thai": "คนขับรถ",
       "icon": "job-driver",
       "level": "A2"
@@ -1738,7 +1738,7 @@
     {
       "id": "jo-07",
       "word": "Artist",
-      "phonetic": "/ˈɑːrtɪst/",
+      "phonetic": "อาร์-ทิสท์",
       "thai": "ศิลปิน",
       "icon": "job-artist",
       "level": "A2"
@@ -1746,7 +1746,7 @@
     {
       "id": "jo-08",
       "word": "Musician",
-      "phonetic": "/mjuˈzɪʃən/",
+      "phonetic": "มิว-ซิช-ชั่น",
       "thai": "นักดนตรี",
       "icon": "job-musician",
       "level": "A2"
@@ -1754,7 +1754,7 @@
     {
       "id": "jo-09",
       "word": "Writer",
-      "phonetic": "/ˈraɪtər/",
+      "phonetic": "ไร-เทอร์",
       "thai": "นักเขียน",
       "icon": "job-writer",
       "level": "A2"
@@ -1762,7 +1762,7 @@
     {
       "id": "jo-10",
       "word": "Student",
-      "phonetic": "/ˈstuːdənt/",
+      "phonetic": "สทิว-เดินท์",
       "thai": "นักเรียน",
       "icon": "job-student",
       "level": "A2"
@@ -1770,7 +1770,7 @@
     {
       "id": "jo-11",
       "word": "Waiter",
-      "phonetic": "/ˈweɪtər/",
+      "phonetic": "เว-เทอร์",
       "thai": "พนักงานเสิร์ฟ",
       "icon": "job-waiter",
       "level": "A2"
@@ -1778,7 +1778,7 @@
     {
       "id": "jo-12",
       "word": "Cashier",
-      "phonetic": "/kæˈʃɪr/",
+      "phonetic": "แค-ชเยียร์",
       "thai": "พนักงานเก็บเงิน",
       "icon": "job-cashier",
       "level": "A2"
@@ -1786,7 +1786,7 @@
     {
       "id": "jo-13",
       "word": "Firefighter",
-      "phonetic": "/ˈfaɪərˌfaɪtər/",
+      "phonetic": "ไฟร์-ไฟ-เทอร์",
       "thai": "นักดับเพลิง",
       "icon": "job-firefighter",
       "level": "A2"
@@ -1794,7 +1794,7 @@
     {
       "id": "jo-14",
       "word": "Engineer",
-      "phonetic": "/ˌɛndʒɪˈnɪr/",
+      "phonetic": "เอน-จิ-เนียร์",
       "thai": "วิศวกร",
       "icon": "job-engineer",
       "level": "B1"
@@ -1802,7 +1802,7 @@
     {
       "id": "jo-15",
       "word": "Lawyer",
-      "phonetic": "/ˈlɔɪər/",
+      "phonetic": "ลอย-เยอร์",
       "thai": "ทนายความ",
       "icon": "job-lawyer",
       "level": "B1"
@@ -1810,7 +1810,7 @@
     {
       "id": "jo-16",
       "word": "Manager",
-      "phonetic": "/ˈmænɪdʒər/",
+      "phonetic": "แมน-นิ-เจอร์",
       "thai": "ผู้จัดการ",
       "icon": "job-manager",
       "level": "B1"
@@ -1818,7 +1818,7 @@
     {
       "id": "jo-17",
       "word": "Pilot",
-      "phonetic": "/ˈpaɪlət/",
+      "phonetic": "ไพ-ลัท",
       "thai": "นักบิน",
       "icon": "job-pilot",
       "level": "B1"
@@ -1826,7 +1826,7 @@
     {
       "id": "jo-18",
       "word": "Scientist",
-      "phonetic": "/ˈsaɪəntɪst/",
+      "phonetic": "ไซ-เอน-ทิสท์",
       "thai": "นักวิทยาศาสตร์",
       "icon": "job-scientist",
       "level": "B1"
@@ -1834,7 +1834,7 @@
     {
       "id": "jo-19",
       "word": "Dentist",
-      "phonetic": "/ˈdɛntɪst/",
+      "phonetic": "เดน-ทิสท์",
       "thai": "ทันตแพทย์",
       "icon": "job-dentist",
       "level": "B1"
@@ -1842,7 +1842,7 @@
     {
       "id": "jo-20",
       "word": "Accountant",
-      "phonetic": "/əˈkaʊntənt/",
+      "phonetic": "อะ-เคาน์-เทินท์",
       "thai": "นักบัญชี",
       "icon": "job-accountant",
       "level": "B1"
@@ -1852,7 +1852,7 @@
     {
       "id": "sh-01",
       "word": "Money",
-      "phonetic": "/ˈmʌni/",
+      "phonetic": "มัน-นี่",
       "thai": "เงิน",
       "icon": "shop-money",
       "level": "A2"
@@ -1860,7 +1860,7 @@
     {
       "id": "sh-02",
       "word": "Price",
-      "phonetic": "/praɪs/",
+      "phonetic": "ไพรซ์",
       "thai": "ราคา",
       "icon": "shop-price",
       "level": "A2"
@@ -1868,7 +1868,7 @@
     {
       "id": "sh-03",
       "word": "Cheap",
-      "phonetic": "/tʃiːp/",
+      "phonetic": "ชีพ",
       "thai": "ถูก",
       "icon": "shop-cheap",
       "level": "A2"
@@ -1876,7 +1876,7 @@
     {
       "id": "sh-04",
       "word": "Expensive",
-      "phonetic": "/ɪkˈspɛnsɪv/",
+      "phonetic": "เอ็ก-สเปน-ซิฟ",
       "thai": "แพง",
       "icon": "shop-expensive",
       "level": "A2"
@@ -1884,7 +1884,7 @@
     {
       "id": "sh-05",
       "word": "Buy",
-      "phonetic": "/baɪ/",
+      "phonetic": "บาย",
       "thai": "ซื้อ",
       "icon": "shop-buy",
       "level": "A2"
@@ -1892,7 +1892,7 @@
     {
       "id": "sh-06",
       "word": "Sell",
-      "phonetic": "/sɛl/",
+      "phonetic": "เซล",
       "thai": "ขาย",
       "icon": "shop-sell",
       "level": "A2"
@@ -1900,7 +1900,7 @@
     {
       "id": "sh-07",
       "word": "Store",
-      "phonetic": "/stɔːr/",
+      "phonetic": "สตอร์",
       "thai": "ร้านค้า",
       "icon": "shop-store",
       "level": "A2"
@@ -1908,7 +1908,7 @@
     {
       "id": "sh-08",
       "word": "Market",
-      "phonetic": "/ˈmɑːrkɪt/",
+      "phonetic": "มาร์-เกต",
       "thai": "ตลาด",
       "icon": "shop-market",
       "level": "A2"
@@ -1916,7 +1916,7 @@
     {
       "id": "sh-09",
       "word": "Cash",
-      "phonetic": "/kæʃ/",
+      "phonetic": "แคช",
       "thai": "เงินสด",
       "icon": "shop-cash",
       "level": "A2"
@@ -1924,7 +1924,7 @@
     {
       "id": "sh-10",
       "word": "Bag",
-      "phonetic": "/bæɡ/",
+      "phonetic": "แบ็ก",
       "thai": "กระเป๋า",
       "icon": "shop-bag",
       "level": "A2"
@@ -1932,7 +1932,7 @@
     {
       "id": "sh-11",
       "word": "Size",
-      "phonetic": "/saɪz/",
+      "phonetic": "ไซซ์",
       "thai": "ขนาด",
       "icon": "shop-size",
       "level": "A2"
@@ -1940,7 +1940,7 @@
     {
       "id": "sh-12",
       "word": "Change",
-      "phonetic": "/tʃeɪndʒ/",
+      "phonetic": "เชนจ์",
       "thai": "เงินทอน",
       "icon": "shop-change",
       "level": "A2"
@@ -1948,7 +1948,7 @@
     {
       "id": "sh-13",
       "word": "Sale",
-      "phonetic": "/seɪl/",
+      "phonetic": "เซล",
       "thai": "ลดราคา",
       "icon": "shop-sale",
       "level": "A2"
@@ -1956,7 +1956,7 @@
     {
       "id": "sh-14",
       "word": "Customer",
-      "phonetic": "/ˈkʌstəmər/",
+      "phonetic": "คัส-เทอ-เมอร์",
       "thai": "ลูกค้า",
       "icon": "shop-customer",
       "level": "A2"
@@ -1964,7 +1964,7 @@
     {
       "id": "sh-15",
       "word": "Shopping cart",
-      "phonetic": "/ˈʃɒpɪŋ kɑːrt/",
+      "phonetic": "ชอป-ปิ้ง คาร์ท",
       "thai": "รถเข็นช้อปปิ้ง",
       "icon": "shop-cart",
       "level": "A2"
@@ -1972,7 +1972,7 @@
     {
       "id": "sh-16",
       "word": "Wallet",
-      "phonetic": "/ˈwɒlɪt/",
+      "phonetic": "วอล-เลท",
       "thai": "กระเป๋าสตางค์",
       "icon": "shop-wallet",
       "level": "A2"
@@ -1980,7 +1980,7 @@
     {
       "id": "sh-17",
       "word": "Receipt",
-      "phonetic": "/rɪˈsiːt/",
+      "phonetic": "รี-ซีท",
       "thai": "ใบเสร็จ",
       "icon": "shop-receipt",
       "level": "B1"
@@ -1988,7 +1988,7 @@
     {
       "id": "sh-18",
       "word": "Discount",
-      "phonetic": "/ˈdɪskaʊnt/",
+      "phonetic": "ดิส-เคาท์",
       "thai": "ส่วนลด",
       "icon": "shop-discount",
       "level": "B1"
@@ -1996,7 +1996,7 @@
     {
       "id": "sh-19",
       "word": "Credit card",
-      "phonetic": "/ˈkrɛdɪt kɑːrd/",
+      "phonetic": "เครด-ดิท การ์ด",
       "thai": "บัตรเครดิต",
       "icon": "shop-creditcard",
       "level": "B1"
@@ -2004,7 +2004,7 @@
     {
       "id": "sh-20",
       "word": "Coupon",
-      "phonetic": "/ˈkuːpɒn/",
+      "phonetic": "คู-พอน",
       "thai": "คูปอง",
       "icon": "shop-coupon",
       "level": "B1"
@@ -2014,7 +2014,7 @@
     {
       "id": "tr-01",
       "word": "Car",
-      "phonetic": "/kɑːr/",
+      "phonetic": "คาร์",
       "thai": "รถยนต์",
       "icon": "transport-car",
       "level": "A2"
@@ -2022,7 +2022,7 @@
     {
       "id": "tr-02",
       "word": "Bus",
-      "phonetic": "/bʌs/",
+      "phonetic": "บัส",
       "thai": "รถบัส",
       "icon": "transport-bus",
       "level": "A2"
@@ -2030,7 +2030,7 @@
     {
       "id": "tr-03",
       "word": "Train",
-      "phonetic": "/treɪn/",
+      "phonetic": "เทรน",
       "thai": "รถไฟ",
       "icon": "transport-train",
       "level": "A2"
@@ -2038,7 +2038,7 @@
     {
       "id": "tr-04",
       "word": "Airplane",
-      "phonetic": "/ˈɛrpleɪn/",
+      "phonetic": "แอร์-เพลน",
       "thai": "เครื่องบิน",
       "icon": "transport-airplane",
       "level": "A2"
@@ -2046,7 +2046,7 @@
     {
       "id": "tr-05",
       "word": "Bicycle",
-      "phonetic": "/ˈbaɪsɪkəl/",
+      "phonetic": "ไบ-ซิ-เคิล",
       "thai": "จักรยาน",
       "icon": "transport-bicycle",
       "level": "A2"
@@ -2054,7 +2054,7 @@
     {
       "id": "tr-06",
       "word": "Motorcycle",
-      "phonetic": "/ˈmoʊtərˌsaɪkəl/",
+      "phonetic": "โม-เตอร์-ไซ-เคิล",
       "thai": "มอเตอร์ไซค์",
       "icon": "transport-motorcycle",
       "level": "A2"
@@ -2062,7 +2062,7 @@
     {
       "id": "tr-07",
       "word": "Taxi",
-      "phonetic": "/ˈtæksi/",
+      "phonetic": "แท็ก-ซี่",
       "thai": "แท็กซี่",
       "icon": "transport-taxi",
       "level": "A2"
@@ -2070,7 +2070,7 @@
     {
       "id": "tr-08",
       "word": "Boat",
-      "phonetic": "/boʊt/",
+      "phonetic": "โบ๊ท",
       "thai": "เรือ",
       "icon": "transport-boat",
       "level": "A2"
@@ -2078,7 +2078,7 @@
     {
       "id": "tr-09",
       "word": "Road",
-      "phonetic": "/roʊd/",
+      "phonetic": "โรด",
       "thai": "ถนน",
       "icon": "transport-road",
       "level": "A2"
@@ -2086,7 +2086,7 @@
     {
       "id": "tr-10",
       "word": "Ticket",
-      "phonetic": "/ˈtɪkɪt/",
+      "phonetic": "ทิค-เคท",
       "thai": "ตั๋ว",
       "icon": "transport-ticket",
       "level": "A2"
@@ -2094,7 +2094,7 @@
     {
       "id": "tr-11",
       "word": "Station",
-      "phonetic": "/ˈsteɪʃən/",
+      "phonetic": "สเต-ชั่น",
       "thai": "สถานี",
       "icon": "transport-station",
       "level": "A2"
@@ -2102,7 +2102,7 @@
     {
       "id": "tr-12",
       "word": "Airport",
-      "phonetic": "/ˈɛrpɔːrt/",
+      "phonetic": "แอร์-พอร์ท",
       "thai": "สนามบิน",
       "icon": "transport-airport",
       "level": "A2"
@@ -2110,7 +2110,7 @@
     {
       "id": "tr-13",
       "word": "Subway",
-      "phonetic": "/ˈsʌbweɪ/",
+      "phonetic": "ซับ-เวย์",
       "thai": "รถไฟใต้ดิน",
       "icon": "transport-subway",
       "level": "B1"
@@ -2118,7 +2118,7 @@
     {
       "id": "tr-14",
       "word": "Ship",
-      "phonetic": "/ʃɪp/",
+      "phonetic": "ชิพ",
       "thai": "เรือเดินทะเล",
       "icon": "transport-ship",
       "level": "B1"
@@ -2126,7 +2126,7 @@
     {
       "id": "tr-15",
       "word": "Traffic",
-      "phonetic": "/ˈtræfɪk/",
+      "phonetic": "แทรฟ-ฟิค",
       "thai": "การจราจร",
       "icon": "transport-traffic",
       "level": "B1"
@@ -2134,7 +2134,7 @@
     {
       "id": "tr-16",
       "word": "Passenger",
-      "phonetic": "/ˈpæsɪndʒər/",
+      "phonetic": "แพส-เซน-เจอร์",
       "thai": "ผู้โดยสาร",
       "icon": "transport-passenger",
       "level": "B1"
@@ -2142,7 +2142,7 @@
     {
       "id": "tr-17",
       "word": "Traffic light",
-      "phonetic": "/ˈtræfɪk laɪt/",
+      "phonetic": "แทรฟ-ฟิค ไลท์",
       "thai": "สัญญาณไฟจราจร",
       "icon": "transport-trafficlight",
       "level": "B1"
@@ -2150,7 +2150,7 @@
     {
       "id": "tr-18",
       "word": "Parking",
-      "phonetic": "/ˈpɑːrkɪŋ/",
+      "phonetic": "พาร์ค-กิ้ง",
       "thai": "ที่จอดรถ",
       "icon": "transport-parking",
       "level": "B1"
@@ -2158,7 +2158,7 @@
     {
       "id": "tr-19",
       "word": "Highway",
-      "phonetic": "/ˈhaɪweɪ/",
+      "phonetic": "ไฮ-เวย์",
       "thai": "ทางหลวง",
       "icon": "transport-highway",
       "level": "B1"
@@ -2166,7 +2166,7 @@
     {
       "id": "tr-20",
       "word": "Seatbelt",
-      "phonetic": "/ˈsiːtbɛlt/",
+      "phonetic": "ซีท-เบลท์",
       "thai": "เข็มขัดนิรภัย",
       "icon": "transport-seatbelt",
       "level": "B1"
@@ -2176,7 +2176,7 @@
     {
       "id": "hb-01",
       "word": "Reading",
-      "phonetic": "/ˈriːdɪŋ/",
+      "phonetic": "รี-ดิ้ง",
       "thai": "การอ่านหนังสือ",
       "icon": "hobby-reading",
       "level": "A2"
@@ -2184,7 +2184,7 @@
     {
       "id": "hb-02",
       "word": "Swimming",
-      "phonetic": "/ˈswɪmɪŋ/",
+      "phonetic": "สวิม-มิ่ง",
       "thai": "การว่ายน้ำ",
       "icon": "hobby-swimming",
       "level": "A2"
@@ -2192,7 +2192,7 @@
     {
       "id": "hb-03",
       "word": "Running",
-      "phonetic": "/ˈrʌnɪŋ/",
+      "phonetic": "รัน-นิ่ง",
       "thai": "การวิ่ง",
       "icon": "hobby-running",
       "level": "A2"
@@ -2200,7 +2200,7 @@
     {
       "id": "hb-04",
       "word": "Dancing",
-      "phonetic": "/ˈdænsɪŋ/",
+      "phonetic": "แดน-ซิ่ง",
       "thai": "การเต้นรำ",
       "icon": "hobby-dancing",
       "level": "A2"
@@ -2208,7 +2208,7 @@
     {
       "id": "hb-05",
       "word": "Singing",
-      "phonetic": "/ˈsɪŋɪŋ/",
+      "phonetic": "ซิง-กิ้ง",
       "thai": "การร้องเพลง",
       "icon": "hobby-singing",
       "level": "A2"
@@ -2216,7 +2216,7 @@
     {
       "id": "hb-06",
       "word": "Painting",
-      "phonetic": "/ˈpeɪntɪŋ/",
+      "phonetic": "เพน-ทิ่ง",
       "thai": "การวาดภาพสี",
       "icon": "hobby-painting",
       "level": "A2"
@@ -2224,7 +2224,7 @@
     {
       "id": "hb-07",
       "word": "Fishing",
-      "phonetic": "/ˈfɪʃɪŋ/",
+      "phonetic": "ฟิช-ชิ่ง",
       "thai": "การตกปลา",
       "icon": "hobby-fishing",
       "level": "A2"
@@ -2232,7 +2232,7 @@
     {
       "id": "hb-08",
       "word": "Gaming",
-      "phonetic": "/ˈɡeɪmɪŋ/",
+      "phonetic": "เกม-มิ่ง",
       "thai": "การเล่นเกม",
       "icon": "hobby-gaming",
       "level": "A2"
@@ -2240,7 +2240,7 @@
     {
       "id": "hb-09",
       "word": "Traveling",
-      "phonetic": "/ˈtrævəlɪŋ/",
+      "phonetic": "แทรฟ-เวล-ลิ่ง",
       "thai": "การท่องเที่ยว",
       "icon": "hobby-traveling",
       "level": "A2"
@@ -2248,7 +2248,7 @@
     {
       "id": "hb-10",
       "word": "Drawing",
-      "phonetic": "/ˈdrɔːɪŋ/",
+      "phonetic": "ดรอว์-อิ่ง",
       "thai": "การวาดเส้น",
       "icon": "hobby-drawing",
       "level": "A2"
@@ -2256,7 +2256,7 @@
     {
       "id": "hb-11",
       "word": "Playing football",
-      "phonetic": "/ˈpleɪɪŋ ˈfʊtbɔːl/",
+      "phonetic": "เพลย์-อิ่ง ฟุต-บอล",
       "thai": "การเล่นฟุตบอล",
       "icon": "hobby-football",
       "level": "A2"
@@ -2264,7 +2264,7 @@
     {
       "id": "hb-12",
       "word": "Playing guitar",
-      "phonetic": "/ˈpleɪɪŋ ɡɪˈtɑːr/",
+      "phonetic": "เพลย์-อิ่ง กี-ตาร์",
       "thai": "การเล่นกีตาร์",
       "icon": "hobby-guitar",
       "level": "A2"
@@ -2272,7 +2272,7 @@
     {
       "id": "hb-13",
       "word": "Watching movies",
-      "phonetic": "/ˈwɒtʃɪŋ ˈmuːviz/",
+      "phonetic": "วอช-ชิ่ง มู-วีส์",
       "thai": "การดูหนัง",
       "icon": "hobby-movies",
       "level": "A2"
@@ -2280,7 +2280,7 @@
     {
       "id": "hb-14",
       "word": "Photography",
-      "phonetic": "/fəˈtɒɡrəfi/",
+      "phonetic": "โฟ-ทอก-กระ-ฟี",
       "thai": "การถ่ายภาพ",
       "icon": "hobby-photography",
       "level": "B1"
@@ -2288,7 +2288,7 @@
     {
       "id": "hb-15",
       "word": "Gardening",
-      "phonetic": "/ˈɡɑːrdənɪŋ/",
+      "phonetic": "การ์-เดน-นิ่ง",
       "thai": "การทำสวน",
       "icon": "hobby-gardening",
       "level": "B1"
@@ -2296,7 +2296,7 @@
     {
       "id": "hb-16",
       "word": "Hiking",
-      "phonetic": "/ˈhaɪkɪŋ/",
+      "phonetic": "ไฮ-กิ้ง",
       "thai": "การเดินป่า",
       "icon": "hobby-hiking",
       "level": "B1"
@@ -2304,7 +2304,7 @@
     {
       "id": "hb-17",
       "word": "Yoga",
-      "phonetic": "/ˈjoʊɡə/",
+      "phonetic": "โย-กะ",
       "thai": "โยคะ",
       "icon": "hobby-yoga",
       "level": "B1"
@@ -2312,7 +2312,7 @@
     {
       "id": "hb-18",
       "word": "Camping",
-      "phonetic": "/ˈkæmpɪŋ/",
+      "phonetic": "แคม-ปิ้ง",
       "thai": "การตั้งแคมป์",
       "icon": "hobby-camping",
       "level": "B1"
@@ -2320,7 +2320,7 @@
     {
       "id": "hb-19",
       "word": "Cycling",
-      "phonetic": "/ˈsaɪklɪŋ/",
+      "phonetic": "ไซ-คลิ่ง",
       "thai": "การปั่นจักรยาน",
       "icon": "hobby-cycling",
       "level": "B1"
@@ -2328,7 +2328,7 @@
     {
       "id": "hb-20",
       "word": "Knitting",
-      "phonetic": "/ˈnɪtɪŋ/",
+      "phonetic": "นิท-ติ้ง",
       "thai": "การถักไหมพรม",
       "icon": "hobby-knitting",
       "level": "B1"
@@ -2338,7 +2338,7 @@
     {
       "id": "fe-01",
       "word": "Happy",
-      "phonetic": "/ˈhæpi/",
+      "phonetic": "แฮพ-พี",
       "thai": "มีความสุข",
       "icon": "feeling-happy",
       "level": "A2"
@@ -2346,7 +2346,7 @@
     {
       "id": "fe-02",
       "word": "Sad",
-      "phonetic": "/sæd/",
+      "phonetic": "แซด",
       "thai": "เศร้า",
       "icon": "feeling-sad",
       "level": "A2"
@@ -2354,7 +2354,7 @@
     {
       "id": "fe-03",
       "word": "Angry",
-      "phonetic": "/ˈæŋɡri/",
+      "phonetic": "แอง-กรี",
       "thai": "โกรธ",
       "icon": "feeling-angry",
       "level": "A2"
@@ -2362,7 +2362,7 @@
     {
       "id": "fe-04",
       "word": "Excited",
-      "phonetic": "/ɪkˈsaɪtɪd/",
+      "phonetic": "เอ็ก-ไซ-เท็ด",
       "thai": "ตื่นเต้น",
       "icon": "feeling-excited",
       "level": "A2"
@@ -2370,7 +2370,7 @@
     {
       "id": "fe-05",
       "word": "Nervous",
-      "phonetic": "/ˈnɜːrvəs/",
+      "phonetic": "เนอร์-เวิส",
       "thai": "กังวล",
       "icon": "feeling-nervous",
       "level": "A2"
@@ -2378,7 +2378,7 @@
     {
       "id": "fe-06",
       "word": "Tired",
-      "phonetic": "/ˈtaɪərd/",
+      "phonetic": "ไทร์ด",
       "thai": "เหนื่อย",
       "icon": "feeling-tired",
       "level": "A2"
@@ -2386,7 +2386,7 @@
     {
       "id": "fe-07",
       "word": "Bored",
-      "phonetic": "/bɔːrd/",
+      "phonetic": "บอร์ด",
       "thai": "เบื่อ",
       "icon": "feeling-bored",
       "level": "A2"
@@ -2394,7 +2394,7 @@
     {
       "id": "fe-08",
       "word": "Surprised",
-      "phonetic": "/sərˈpraɪzd/",
+      "phonetic": "เซอร์-ไพรส์ด",
       "thai": "ประหลาดใจ",
       "icon": "feeling-surprised",
       "level": "A2"
@@ -2402,7 +2402,7 @@
     {
       "id": "fe-09",
       "word": "Scared",
-      "phonetic": "/skɛrd/",
+      "phonetic": "สแกร์ด",
       "thai": "กลัว",
       "icon": "feeling-scared",
       "level": "A2"
@@ -2410,7 +2410,7 @@
     {
       "id": "fe-10",
       "word": "Relaxed",
-      "phonetic": "/rɪˈlækst/",
+      "phonetic": "รี-แลกซ์ด",
       "thai": "ผ่อนคลาย",
       "icon": "feeling-relaxed",
       "level": "A2"
@@ -2418,7 +2418,7 @@
     {
       "id": "fe-11",
       "word": "Confused",
-      "phonetic": "/kənˈfjuːzd/",
+      "phonetic": "คอน-ฟิวส์ด",
       "thai": "สับสน",
       "icon": "feeling-confused",
       "level": "B1"
@@ -2426,7 +2426,7 @@
     {
       "id": "fe-12",
       "word": "Proud",
-      "phonetic": "/praʊd/",
+      "phonetic": "พราวด์",
       "thai": "ภูมิใจ",
       "icon": "feeling-proud",
       "level": "B1"
@@ -2434,7 +2434,7 @@
     {
       "id": "fe-13",
       "word": "Embarrassed",
-      "phonetic": "/ɪmˈbærəst/",
+      "phonetic": "เอ็ม-แบ-รัสท์",
       "thai": "อาย",
       "icon": "feeling-embarrassed",
       "level": "B1"
@@ -2442,7 +2442,7 @@
     {
       "id": "fe-14",
       "word": "Worried",
-      "phonetic": "/ˈwɜːrid/",
+      "phonetic": "เวอ-รีด",
       "thai": "เป็นห่วง",
       "icon": "feeling-worried",
       "level": "B1"
@@ -2450,7 +2450,7 @@
     {
       "id": "fe-15",
       "word": "Confident",
-      "phonetic": "/ˈkɒnfɪdənt/",
+      "phonetic": "คอน-ฟิ-เดินท์",
       "thai": "มั่นใจ",
       "icon": "feeling-confident",
       "level": "B1"
@@ -2458,7 +2458,7 @@
     {
       "id": "fe-16",
       "word": "Jealous",
-      "phonetic": "/ˈdʒɛləs/",
+      "phonetic": "เจล-ลัส",
       "thai": "อิจฉา",
       "icon": "feeling-jealous",
       "level": "B1"
@@ -2466,7 +2466,7 @@
     {
       "id": "fe-17",
       "word": "Lonely",
-      "phonetic": "/ˈloʊnli/",
+      "phonetic": "โลน-ลี่",
       "thai": "เหงา",
       "icon": "feeling-lonely",
       "level": "B1"
@@ -2474,7 +2474,7 @@
     {
       "id": "fe-18",
       "word": "Grateful",
-      "phonetic": "/ˈɡreɪtfəl/",
+      "phonetic": "เกรท-ฟุล",
       "thai": "ซาบซึ้งใจ",
       "icon": "feeling-grateful",
       "level": "B1"
@@ -2482,7 +2482,7 @@
     {
       "id": "fe-19",
       "word": "Disappointed",
-      "phonetic": "/ˌdɪsəˈpɔɪntɪd/",
+      "phonetic": "ดิส-อะ-พอยน์-เท็ด",
       "thai": "ผิดหวัง",
       "icon": "feeling-disappointed",
       "level": "B1"
@@ -2490,7 +2490,7 @@
     {
       "id": "fe-20",
       "word": "Curious",
-      "phonetic": "/ˈkjʊəriəs/",
+      "phonetic": "คิว-เรียส",
       "thai": "อยากรู้อยากเห็น",
       "icon": "feeling-curious",
       "level": "B1"

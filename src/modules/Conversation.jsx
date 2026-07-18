@@ -23,7 +23,7 @@ function TopicPicker({ onPick }) {
           {conversations.map((topic) => (
             <button key={topic.id} className="topic-card" onClick={() => onPick(topic)}>
               <span className="module-emoji">{topic.emoji}</span>
-              <span className="module-title">{topic.title}</span>
+              <span className="module-title th-text">{topic.title}</span>
             </button>
           ))}
         </div>

@@ -67,33 +67,59 @@ export function useSpeak() {
   return { speak, speaking, supported };
 }
 
+// The recognizer commonly prepends a filler article before the target word
+// ("a car" for "car"). Stripping these before normalizing lets short targets
+// still match that common case via the exact-match branch below, instead of
+// needing the (riskier, for short words) "contains" fallback to catch it.
+const LEADING_FILLERS = new Set(["a", "an", "the", "um", "uh"]);
+
+function stripLeadingFillers(str) {
+  const words = str.trim().split(/\s+/);
+  while (words.length > 1 && LEADING_FILLERS.has(words[0].toLowerCase().replace(/[.,!?'";:()-]/g, ""))) {
+    words.shift();
+  }
+  return words.join(" ");
+}
+
 function normalizeEn(str = "") {
-  return str
+  return stripLeadingFillers(str)
     .normalize("NFKC")
     .replace(/[\s.,!?'";:()-]/g, "")
     .toLowerCase();
 }
 
+// Below this length, "contains" matching is too dangerous to allow: real
+// English words routinely contain short target words as substrings by pure
+// coincidence (target "car" is a substring of "scarf"; target "bus" is a
+// substring of "business"; target "hat" is a substring of "what"). Below
+// this length on *either* side, only an exact match after normalization is
+// accepted -- see matchesEnglish() bug 4(a) fix in the Phase 8 notes.
+const MIN_LEN_FOR_CONTAINS = 4;
+
+function looselyEqual(a, b) {
+  if (a === b) return true;
+  return a.length >= MIN_LEN_FOR_CONTAINS && b.length >= MIN_LEN_FOR_CONTAINS && (a.includes(b) || b.includes(a));
+}
+
 /**
  * Forgiving match, not exact-string equality: normalized strings equal, or
- * either one contains the other (handles filler words the recognizer adds,
- * or the target being a substring of a longer utterance). Falls back to a
- * small alternate-transcription table for known homophone/near-homophone
- * confusions when the direct match fails. Deliberately has no script-folding
- * step (the source app's katakana-to-hiragana equivalent) -- English has a
- * single script, so there's nothing to fold.
+ * (for targets/transcripts both long enough that a coincidental substring
+ * match is unlikely) either one contains the other -- handles filler words
+ * the recognizer adds beyond a leading article, or the target being a
+ * substring of a longer utterance. Falls back to a small alternate-
+ * transcription table for known homophone/near-homophone confusions when
+ * the direct match fails. Deliberately has no script-folding step (the
+ * source app's katakana-to-hiragana equivalent) -- English has a single
+ * script, so there's nothing to fold.
  */
 export function matchesEnglish(transcript, target) {
   const a = normalizeEn(transcript);
   const b = normalizeEn(target);
   if (!a || !b) return false;
-  if (a === b || a.includes(b) || b.includes(a)) return true;
+  if (looselyEqual(a, b)) return true;
   const alts = ALT_TRANSCRIPTIONS[target];
   if (alts) {
-    return alts.some((alt) => {
-      const n = normalizeEn(alt);
-      return a === n || a.includes(n) || n.includes(a);
-    });
+    return alts.some((alt) => looselyEqual(a, normalizeEn(alt)));
   }
   return false;
 }
@@ -101,7 +127,12 @@ export function matchesEnglish(transcript, target) {
 const SpeechRecognitionCtor =
   typeof window !== "undefined" ? window.SpeechRecognition || window.webkitSpeechRecognition : undefined;
 
-const RECOGNITION_TIMEOUT_MS = 8000;
+// Bug 4(b) fix: 8s was firing before recognition finished on slower
+// devices/connections, producing a false "no speech detected" for an
+// attempt that was actually still in progress. 12s gives cloud-backed
+// recognizers (what most mobile browsers use) more room while still
+// bounding the worst case so the UI can't hang indefinitely.
+const RECOGNITION_TIMEOUT_MS = 12000;
 
 /** Wraps the Web Speech API's SpeechRecognition for English speaking practice. */
 export function useSpeechRecognition() {
@@ -121,6 +152,14 @@ export function useSpeechRecognition() {
       const recognition = new SpeechRecognitionCtor();
       recognition.lang = PREFERRED_LOCALE;
       recognition.interimResults = false;
+      // Bug 4(c) audit: these 5 alternatives are consumed ONLY inside
+      // matchesEnglish()-style comparisons by the caller's onResult callback
+      // (see SpeakingPractice.jsx) -- try-each-alternative for matching, one
+      // top transcript for the "we heard: X" display. Nothing in this app
+      // renders `alternatives` as a list of tappable options; if a future
+      // change ever passes this array into a rendering path (e.g. by
+      // copy-pasting Listening Quiz's option-grid pattern), that would be the
+      // bug to look for.
       recognition.maxAlternatives = 5;
 
       const finish = () => {

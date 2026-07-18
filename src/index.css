@@ -663,6 +663,37 @@ button {
   justify-content: center;
 }
 
+/* ---------- Vocabulary recall (typed-answer listening drill) ---------- */
+.recall-form {
+  width: 100%;
+  max-width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.recall-input {
+  width: 100%;
+  border: 3px solid var(--blue-deep);
+  border-radius: 999px;
+  padding: 12px 20px;
+  font-size: 1.3rem;
+  font-weight: 700;
+  text-align: center;
+  color: var(--ink);
+  background: var(--cream);
+}
+
+.recall-input:focus {
+  outline: none;
+  border-color: var(--blue-text);
+}
+
+.recall-input:disabled {
+  opacity: 0.7;
+}
+
 /* ---------- Speaking practice ---------- */
 .speaking-view {
   display: flex;
