@@ -2,14 +2,16 @@ import { useEffect, useState } from "react";
 import HomeMenu from "./components/HomeMenu";
 import SettingsPanel from "./components/SettingsPanel";
 import Flashcards from "./modules/Flashcards";
+import ListeningQuiz from "./modules/ListeningQuiz";
 import { playClick } from "./utils/sound";
 
 // Forward-compatible with the module UI patterns future phases will add
-// (Listening Quiz, etc. reuse these same class names).
+// (Speaking Practice, etc. reuse these same class names).
 const CLICKABLE_SELECTOR = "button, .topic-card, .reply-option, .quiz-option, .chunk-pill";
 
 const TITLES = {
   flashcards: "แฟลชการ์ด",
+  listening: "แบบทดสอบฟัง",
 };
 
 function App() {
@@ -52,6 +54,7 @@ function App() {
             </button>
           </div>
           {view === "flashcards" && <Flashcards key={instanceKey} />}
+          {view === "listening" && <ListeningQuiz key={instanceKey} />}
           {settingsOpen && <SettingsPanel onClose={() => setSettingsOpen(false)} />}
         </>
       )}

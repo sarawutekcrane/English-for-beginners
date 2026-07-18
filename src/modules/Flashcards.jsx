@@ -82,7 +82,7 @@ function FlashcardView({ selection, onBack }) {
 
       {completed ? (
         <div className="flashcard">
-          <p className="th-text flashcard-complete-text">คุณดูครบทุกคำศัพท์ในหมวดนี้แล้ว! 🎉📘</p>
+          <p className="th-text session-complete-text">คุณดูครบทุกคำศัพท์ในหมวดนี้แล้ว! 🎉📘</p>
           <button className="btn btn-success btn-sm" onClick={restart}>
             🔁 เริ่มรอบใหม่ (สุ่มใหม่)
           </button>

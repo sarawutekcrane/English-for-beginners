@@ -552,11 +552,115 @@ button {
   gap: 18px;
 }
 
-.flashcard-complete-text {
+/** Shared "you've reached the end of this session" message, reused by
+    Flashcards and Listening Quiz completion screens. */
+.session-complete-text {
   font-size: 1.1rem;
   font-weight: 700;
   color: var(--pink-text);
   text-align: center;
+}
+
+/* ---------- Listening quiz ---------- */
+.quiz-view {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 16px;
+}
+
+.quiz-card {
+  width: 100%;
+  max-width: 400px;
+  background: var(--white);
+  border: 4px solid var(--blue-deep);
+  border-radius: var(--radius-lg);
+  box-shadow: var(--shadow-soft);
+  padding: 24px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 12px;
+}
+
+.quiz-instruction {
+  color: var(--ink-soft);
+  font-size: 0.9rem;
+  text-align: center;
+}
+
+.quiz-options {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 6px;
+}
+
+.quiz-option {
+  border: 3px solid var(--pink);
+  background: var(--cream);
+  border-radius: var(--radius-sm);
+  padding: 16px 8px;
+  font-size: 1.4rem;
+  font-weight: 700;
+  color: var(--ink);
+  box-shadow: var(--shadow-soft);
+  transition: transform 0.1s ease;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 3px;
+}
+
+.quiz-option-hint {
+  font-size: 0.78rem;
+  font-weight: 500;
+  color: var(--ink-soft);
+}
+
+.quiz-option:not(:disabled):hover {
+  transform: translateY(-2px);
+}
+
+.quiz-option.correct {
+  background: #e3f7ea;
+  border-color: var(--success-deep);
+  color: var(--success-deep);
+}
+
+.quiz-option.incorrect {
+  background: #ffe6ea;
+  border-color: var(--error-deep);
+  color: var(--error-deep);
+}
+
+.quiz-feedback {
+  font-weight: 700;
+}
+
+.feedback-correct {
+  color: var(--success-deep);
+}
+
+.feedback-incorrect {
+  color: var(--error-deep);
+}
+
+.quiz-reveal {
+  color: var(--pink-text);
+  font-weight: 700;
+  background: var(--pink);
+  padding: 8px 16px;
+  border-radius: var(--radius-sm);
+  text-align: center;
+}
+
+.quiz-actions {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 
 /* ---------- Toggle switch (shared) ---------- */

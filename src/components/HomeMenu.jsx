@@ -2,7 +2,7 @@ import { useState } from "react";
 import Mascot from "./Mascot";
 import SettingsPanel from "./SettingsPanel";
 
-// More learning modules (Listening Quiz, etc.) land in later phases.
+// More learning modules (Speaking Practice, etc.) land in later phases.
 const MODULES = [
   {
     id: "flashcards",
@@ -10,6 +10,13 @@ const MODULES = [
     title: "แฟลชการ์ด",
     subtitle: "คำศัพท์ภาษาอังกฤษ",
     color: "pink",
+  },
+  {
+    id: "listening",
+    emoji: "🎧",
+    title: "แบบทดสอบฟัง",
+    subtitle: "ฟังแล้วเลือกคำตอบ",
+    color: "blue",
   },
 ];
 
