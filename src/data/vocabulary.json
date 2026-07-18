@@ -1,0 +1,54 @@
+{
+  "greetings": [
+    {
+      "id": "gr-01",
+      "word": "Hello",
+      "phonetic": "/həˈloʊ/",
+      "thai": "สวัสดี",
+      "icon": "hello-wave",
+      "level": "A2",
+      "altScript": [
+        {
+          "text": "HEL",
+          "reading": "Hel"
+        },
+        {
+          "text": "lo"
+        }
+      ]
+    },
+    {
+      "id": "gr-02",
+      "word": "Good morning",
+      "phonetic": "/ɡʊd ˈmɔːrnɪŋ/",
+      "thai": "สวัสดีตอนเช้า",
+      "icon": "sunrise",
+      "level": "A2"
+    },
+    {
+      "id": "gr-03",
+      "word": "Good evening",
+      "phonetic": "/ɡʊd ˈiːvnɪŋ/",
+      "thai": "สวัสดีตอนเย็น",
+      "icon": "sunset",
+      "level": "A2"
+    },
+    {
+      "id": "gr-04",
+      "word": "Thank you",
+      "phonetic": "/θæŋk juː/",
+      "thai": "ขอบคุณ",
+      "icon": "thanks-heart",
+      "level": "A2",
+      "altScript": [
+        {
+          "text": "THANK",
+          "reading": "Thank"
+        },
+        {
+          "text": " you"
+        }
+      ]
+    }
+  ]
+}
