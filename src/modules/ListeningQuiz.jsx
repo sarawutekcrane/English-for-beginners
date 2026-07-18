@@ -173,6 +173,7 @@ function QuizView({ selection, onBack }) {
             <p className="quiz-reveal en-text">
               เฉลย: <AnnotatedText plain={question.answer.display} segments={question.answer.segments} />
               {question.answer.reading ? ` (${question.answer.reading})` : ""}
+              {question.answer.partOfSpeech ? ` (${question.answer.partOfSpeech})` : ""}
             </p>
           )}
 

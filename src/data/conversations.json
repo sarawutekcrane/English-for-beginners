@@ -2592,5 +2592,1785 @@
         ]
       }
     }
+  },
+  {
+    "id": "report-accident",
+    "title": "การรายงานอุบัติเหตุในที่ทำงาน",
+    "emoji": "🚨",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "What happened? Is anyone injured?",
+          "phonetic": "วอท แฮพ-เพินด์ อิส เอน-นี่-วัน อิน-เจอร์ด",
+          "thai": "เกิดอะไรขึ้นคะ มีใครบาดเจ็บไหม"
+        },
+        "options": [
+          {
+            "text": "There was an accident near the machine.",
+            "phonetic": "แดร์ วอส แอน แอ็ก-ซิ-เดิ้นท์ เนียร์ เดอะ มะ-ชีน",
+            "thai": "เกิดอุบัติเหตุใกล้เครื่องจักรค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "It's just a small hazard, nothing serious.",
+            "phonetic": "อิทส์ จัสท์ อะ สมอล แฮ-เซิร์ด นัธ-ธิ่ง เซีย-เรียส",
+            "thai": "แค่มีสิ่งเสี่ยงเล็กน้อย ไม่ร้ายแรงค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I like the new safety helmet.",
+            "phonetic": "ไอ ไลค์ เดอะ นิว เซฟ-ตี้ เฮล-เม็ท",
+            "thai": "ฉันชอบหมวกนิรภัยอันใหม่ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Is the injury serious? Do we need an ambulance?",
+          "phonetic": "อิส เดอะ อิน-จู-รี่ เซีย-เรียส ดู วี นีด แอน แอม-บิว-แลนซ์",
+          "thai": "บาดเจ็บหนักไหมคะ ต้องเรียกรถพยาบาลไหม"
+        },
+        "options": [
+          {
+            "text": "Yes, please call an ambulance now.",
+            "phonetic": "เยส พลีส คอล แอน แอม-บิว-แลนซ์ นาว",
+            "thai": "ค่ะ กรุณาเรียกรถพยาบาลตอนนี้เลย",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "No, it's just a bruise.",
+            "phonetic": "โน อิทส์ จัสท์ อะ บรูซ",
+            "thai": "ไม่ค่ะ แค่รอยฟกช้ำเอง",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "The weather is nice today.",
+            "phonetic": "เดอะ เว-เธอร์ อิส ไนซ์ ทู-เดย์",
+            "thai": "วันนี้อากาศดีค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Okay. Please write an accident report anyway.",
+          "phonetic": "โอ-เค พลีส ไรท์ แอน แอ็ก-ซิ-เดิ้นท์ รี-พอร์ท เอน-นี่-เวย์",
+          "thai": "โอเคค่ะ แต่ช่วยเขียนรายงานอุบัติเหตุด้วยนะคะ"
+        },
+        "options": [
+          {
+            "text": "Sure, I'll fill out the report.",
+            "phonetic": "ชัวร์ ไอล์ ฟิล เอาท์ เดอะ รี-พอร์ท",
+            "thai": "ได้ค่ะ ฉันจะกรอกรายงานเลย",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I already told the safety officer.",
+            "phonetic": "ไอ ออล-เร-ดี้ โทลด์ เดอะ เซฟ-ตี้ ออฟ-ฟิ-เซอร์",
+            "thai": "ฉันบอกเจ้าหน้าที่ความปลอดภัยไปแล้วค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't like paperwork.",
+            "phonetic": "ไอ โดนท์ ไลค์ เพ-เพอร์-เวิร์ค",
+            "thai": "ฉันไม่ชอบงานเอกสารค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "What caused the accident?",
+          "phonetic": "วอท คอสท์ เดอะ แอ็ก-ซิ-เดิ้นท์",
+          "thai": "อะไรเป็นสาเหตุของอุบัติเหตุคะ"
+        },
+        "options": [
+          {
+            "text": "The floor was wet, it was a hazard.",
+            "phonetic": "เดอะ ฟลอร์ วอส เวท อิท วอส อะ แฮ-เซิร์ด",
+            "thai": "พื้นเปียก เป็นสิ่งเสี่ยงอันตรายค่ะ",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "The machine had no safety guard.",
+            "phonetic": "เดอะ มะ-ชีน แฮด โน เซฟ-ตี้ การ์ด",
+            "thai": "เครื่องจักรไม่มีเครื่องป้องกันความปลอดภัยค่ะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I forgot my lunch today.",
+            "phonetic": "ไอ ฟอร์-กอท มาย ลันช์ ทู-เดย์",
+            "thai": "วันนี้ฉันลืมเอาข้าวกลางวันมาค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Thank you. We'll clean the area and add a warning sign.",
+          "phonetic": "แธงค์ ยู วีล คลีน เดอะ แอ-เรีย แอนด์ แอด อะ วอร์น-นิ่ง ไซน์",
+          "thai": "ขอบคุณค่ะ เราจะทำความสะอาดพื้นที่และติดป้ายเตือน"
+        },
+        "options": [
+          {
+            "text": "Thank you, that sounds good.",
+            "phonetic": "แธงค์ ยู แดท ซาวด์ส กู๊ด",
+            "thai": "ขอบคุณค่ะ ฟังดูดีเลย",
+            "correct": true
+          },
+          {
+            "text": "Should I write a precaution note too?",
+            "phonetic": "ชุด ไอ ไรท์ อะ พรี-คอ-ชั่น โนท ทู",
+            "thai": "ฉันควรเขียนมาตรการป้องกันเพิ่มด้วยไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "I love spicy food.",
+            "phonetic": "ไอ ลัฝ สไป-ซี่ ฟูด",
+            "thai": "ฉันชอบอาหารเผ็ดค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Thank you. We'll fix the safety guard immediately.",
+          "phonetic": "แธงค์ ยู วีล ฟิกซ์ เดอะ เซฟ-ตี้ การ์ด อิม-มี-เดียท-ลี่",
+          "thai": "ขอบคุณค่ะ เราจะซ่อมเครื่องป้องกันทันที"
+        },
+        "options": [
+          {
+            "text": "Great, thank you for taking action.",
+            "phonetic": "เกรท แธงค์ ยู ฟอร์ เท-คิ่ง แอ็ค-ชั่น",
+            "thai": "ดีเลยค่ะ ขอบคุณที่จัดการให้",
+            "correct": true
+          },
+          {
+            "text": "Will you check the other machines too?",
+            "phonetic": "วิล ยู เช็ค เดอะ อัธ-เธอร์ มะ-ชีนส์ ทู",
+            "thai": "จะตรวจเครื่องจักรอื่นด้วยไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "I need a new phone.",
+            "phonetic": "ไอ นีด อะ นิว โฟน",
+            "thai": "ฉันต้องการโทรศัพท์เครื่องใหม่ค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ask-coworker-injury",
+    "title": "การถามเพื่อนร่วมงานเรื่องการบาดเจ็บ",
+    "emoji": "🤕",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Are you okay? What happened to your arm?",
+          "phonetic": "อาร์ ยู โอ-เค วอท แฮพ-เพินด์ ทู ยัวร์ อาร์ม",
+          "thai": "คุณไม่เป็นไรใช่ไหม แขนเป็นอะไรไปคะ"
+        },
+        "options": [
+          {
+            "text": "I have a fracture. I fell down the stairs.",
+            "phonetic": "ไอ แฮฟ อะ แฟรค-เชอร์ ไอ เฟล ดาวน์ เดอะ สแตร์ส",
+            "thai": "ฉันกระดูกหัก ตกบันไดมาค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "It's just a bruise. I bumped into a shelf.",
+            "phonetic": "อิทส์ จัสท์ อะ บรูซ ไอ บัมพ์ท์ อิน-ทู อะ เชล์ฟ",
+            "thai": "แค่รอยฟกช้ำ ฉันชนชั้นวางของค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I finished my report yesterday.",
+            "phonetic": "ไอ ฟิน-นิชท์ มาย รี-พอร์ท เยส-เทอร์-เดย์",
+            "thai": "เมื่อวานฉันทำรายงานเสร็จแล้วค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "That sounds serious. Did you see a doctor?",
+          "phonetic": "แดท ซาวด์ส เซีย-เรียส ดิด ยู ซี อะ ด็อก-เตอร์",
+          "thai": "ฟังดูรุนแรงเลยนะคะ ไปหาหมอหรือยัง"
+        },
+        "options": [
+          {
+            "text": "Yes, I went to the hospital for an X-ray.",
+            "phonetic": "เยส ไอ เวนท์ ทู เดอะ ฮอส-พิ-เทิล ฟอร์ แอน เอ็กซ์ เรย์",
+            "thai": "ไปแล้วค่ะ ไปโรงพยาบาลเพื่อเอกซเรย์",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Not yet, but I will go now.",
+            "phonetic": "น็อท เยท บัท ไอ วิล โก นาว",
+            "thai": "ยังค่ะ แต่ฉันจะไปตอนนี้เลย",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I like reading books.",
+            "phonetic": "ไอ ไลค์ รี-ดิ้ง บุคส์",
+            "thai": "ฉันชอบอ่านหนังสือค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "I'm glad it's not too bad. Do you need a bandage?",
+          "phonetic": "ไอม์ แกลด อิทส์ น็อท ทู แบด ดู ยู นีด อะ แบน-เดจ",
+          "thai": "ดีใจที่ไม่หนักมากนะคะ ต้องการผ้าพันแผลไหม"
+        },
+        "options": [
+          {
+            "text": "Yes, a bandage would help.",
+            "phonetic": "เยส อะ แบน-เดจ วุด เฮลพ์",
+            "thai": "ค่ะ ผ้าพันแผลช่วยได้ค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "No, I already used antiseptic.",
+            "phonetic": "โน ไอ ออล-เร-ดี้ ยูสท์ แอน-ติ-เซพ-ติค",
+            "thai": "ไม่ค่ะ ฉันใช้ยาฆ่าเชื้อไปแล้ว",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't have any money.",
+            "phonetic": "ไอ โดนท์ แฮฟ เอน-นี่ มัน-นี่",
+            "thai": "ฉันไม่มีเงินเลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Please rest and take care of yourself.",
+          "phonetic": "พลีส เรสท์ แอนด์ เทค แคร์ ออฟ ยัวร์-เซลฟ์",
+          "thai": "พักผ่อนและดูแลตัวเองด้วยนะคะ"
+        },
+        "options": [
+          {
+            "text": "Thank you, I will take a break.",
+            "phonetic": "แธงค์ ยู ไอ วิล เทค อะ เบรค",
+            "thai": "ขอบคุณค่ะ ฉันจะพักสักหน่อย",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Should I report this injury to the safety officer?",
+            "phonetic": "ชุด ไอ รี-พอร์ท ดิส อิน-จู-รี่ ทู เดอะ เซฟ-ตี้ ออฟ-ฟิ-เซอร์",
+            "thai": "ฉันควรรายงานการบาดเจ็บนี้ให้เจ้าหน้าที่ความปลอดภัยไหมคะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "Let's go to the party tonight.",
+            "phonetic": "เล็ทส์ โก ทู เดอะ พาร์-ตี้ ทู-ไนท์",
+            "thai": "ไปงานปาร์ตี้คืนนี้กันเถอะค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Good. Let me know if you need anything.",
+          "phonetic": "กู๊ด เล็ท มี โนว์ อิฟ ยู นีด เอน-นี่-ธิ่ง",
+          "thai": "ดีค่ะ บอกฉันนะถ้าต้องการอะไร"
+        },
+        "options": [
+          {
+            "text": "Thank you, I appreciate it.",
+            "phonetic": "แธงค์ ยู ไอ แอพ-พรี-ชี-เอท อิท",
+            "thai": "ขอบคุณค่ะ ซาบซึ้งใจมาก",
+            "correct": true
+          },
+          {
+            "text": "I will call you if it gets worse.",
+            "phonetic": "ไอ วิล คอล ยู อิฟ อิท เก็ทส์ เวิร์ส",
+            "thai": "ฉันจะโทรหาถ้าอาการแย่ลงค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I love playing football.",
+            "phonetic": "ไอ ลัฝ เพลย์-อิ่ง ฟุต-บอล",
+            "thai": "ฉันชอบเล่นฟุตบอลค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Yes, please report it. It helps prevent future accidents.",
+          "phonetic": "เยส พลีส รี-พอร์ท อิท อิท เฮลพ์ส พรี-เวนท์ ฟิว-เชอร์ แอ็ก-ซิ-เดิ้นท์ส",
+          "thai": "ค่ะ ช่วยรายงานด้วยนะ จะช่วยป้องกันอุบัติเหตุในอนาคต"
+        },
+        "options": [
+          {
+            "text": "Okay, I'll fill out the form now.",
+            "phonetic": "โอ-เค ไอล์ ฟิล เอาท์ เดอะ ฟอร์ม นาว",
+            "thai": "โอเคค่ะ ฉันจะกรอกแบบฟอร์มตอนนี้เลย",
+            "correct": true
+          },
+          {
+            "text": "Understood, safety first.",
+            "phonetic": "อัน-เดอร์-สทูด เซฟ-ตี้ เฟิร์สท์",
+            "thai": "เข้าใจค่ะ ความปลอดภัยต้องมาก่อน",
+            "correct": true
+          },
+          {
+            "text": "I don't like doctors.",
+            "phonetic": "ไอ โดนท์ ไลค์ ด็อก-เตอร์ส",
+            "thai": "ฉันไม่ชอบหมอค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "near-miss",
+    "title": "การรายงานเหตุการณ์เกือบเกิดอุบัติเหตุ",
+    "emoji": "⚠️",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "You wanted to report something?",
+          "phonetic": "ยู วอน-ทิด ทู รี-พอร์ท ซัม-ธิ่ง",
+          "thai": "คุณอยากรายงานอะไรบางอย่างใช่ไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, a box almost fell on someone near the shelf.",
+            "phonetic": "เยส อะ บ็อกซ์ ออล-โมสท์ เฟล ออน ซัม-วัน เนียร์ เดอะ เชล์ฟ",
+            "thai": "ค่ะ มีกล่องเกือบตกใส่คนใกล้ชั้นวางของ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Yes, I saw a wire on the floor, it's a trip hazard.",
+            "phonetic": "เยส ไอ ซอ อะ ไวร์ ออน เดอะ ฟลอร์ อิทส์ อะ ทริพ แฮ-เซิร์ด",
+            "thai": "ค่ะ ฉันเห็นสายไฟบนพื้น เป็นสิ่งเสี่ยงให้สะดุด",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I want to ask about my salary.",
+            "phonetic": "ไอ วอนท์ ทู อาสก์ อะ-เบาท์ มาย แซล-ละ-รี่",
+            "thai": "ฉันอยากถามเรื่องเงินเดือนค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "That's a serious near miss. Was anyone hurt?",
+          "phonetic": "แดทส์ อะ เซีย-เรียส เนียร์ มิส วอส เอน-นี่-วัน เฮิร์ท",
+          "thai": "นั่นเกือบเกิดอุบัติเหตุร้ายแรงเลยนะคะ มีใครบาดเจ็บไหม"
+        },
+        "options": [
+          {
+            "text": "No, but it was very close.",
+            "phonetic": "โน บัท อิท วอส เว-รี่ โคลส",
+            "thai": "ไม่มีค่ะ แต่เฉียดมากเลย",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "No, everyone is safe.",
+            "phonetic": "โน เอฟ-วรี่-วัน อิส เซฟ",
+            "thai": "ไม่มีค่ะ ทุกคนปลอดภัยดี",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Yes, I love that shelf.",
+            "phonetic": "เยส ไอ ลัฝ แดท เชล์ฟ",
+            "thai": "ค่ะ ฉันชอบชั้นวางของอันนั้นมาก",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Thank you for reporting. Where exactly is the wire?",
+          "phonetic": "แธงค์ ยู ฟอร์ รี-พอร์ท-ติ่ง แวร์ เอ็ก-แซ็คท์-ลี่ อิส เดอะ ไวร์",
+          "thai": "ขอบคุณที่รายงานนะคะ สายไฟอยู่ตรงไหนแน่ๆ"
+        },
+        "options": [
+          {
+            "text": "It's near the emergency exit.",
+            "phonetic": "อิทส์ เนียร์ เดอะ อิ-เมอร์-เจน-ซี่ เอ็ก-ซิท",
+            "thai": "อยู่ใกล้ทางออกฉุกเฉินค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "It's next to the machine.",
+            "phonetic": "อิทส์ เน็กซ์ท์ ทู เดอะ มะ-ชีน",
+            "thai": "อยู่ข้างเครื่องจักรค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "It's my favorite color.",
+            "phonetic": "อิทส์ มาย เฟ-เวอ-ริท คัล-เลอร์",
+            "thai": "มันเป็นสีโปรดของฉันค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "We should fix this before it becomes a real accident.",
+          "phonetic": "วี ชุด ฟิกซ์ ดิส บิ-ฟอร์ อิท บิ-คัมส์ อะ รีล แอ็ก-ซิ-เดิ้นท์",
+          "thai": "เราควรแก้ไขก่อนที่จะกลายเป็นอุบัติเหตุจริงนะคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, safety first.",
+            "phonetic": "เยส เซฟ-ตี้ เฟิร์สท์",
+            "thai": "ค่ะ ความปลอดภัยต้องมาก่อน",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Should we put up a warning sign?",
+            "phonetic": "ชุด วี พุท อัพ อะ วอร์น-นิ่ง ไซน์",
+            "thai": "เราควรติดป้ายเตือนไหมคะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "Let's order some coffee.",
+            "phonetic": "เล็ทส์ ออร์-เดอร์ ซัม คอฟ-ฟี่",
+            "thai": "สั่งกาแฟกันเถอะค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "I agree. I'll send someone to fix it today.",
+          "phonetic": "ไอ อะ-กรี ไอล์ เซนด์ ซัม-วัน ทู ฟิกซ์ อิท ทู-เดย์",
+          "thai": "เห็นด้วยค่ะ ฉันจะส่งคนไปแก้ไขวันนี้เลย"
+        },
+        "options": [
+          {
+            "text": "Thank you for taking this seriously.",
+            "phonetic": "แธงค์ ยู ฟอร์ เท-คิ่ง ดิส เซีย-เรียส-ลี่",
+            "thai": "ขอบคุณที่ให้ความสำคัญกับเรื่องนี้ค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I'll check back tomorrow.",
+            "phonetic": "ไอล์ เช็ค แบ็ค ทู-มอร์-โรว์",
+            "thai": "ฉันจะมาเช็กอีกทีพรุ่งนี้ค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I don't like meetings.",
+            "phonetic": "ไอ โดนท์ ไลค์ มี-ทิ่งส์",
+            "thai": "ฉันไม่ชอบประชุมค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Good idea. I'll add a sign right now.",
+          "phonetic": "กู๊ด ไอ-เดีย ไอล์ แอด อะ ไซน์ ไรท์ นาว",
+          "thai": "ความคิดดีค่ะ ฉันจะติดป้ายตอนนี้เลย"
+        },
+        "options": [
+          {
+            "text": "That will help prevent an accident.",
+            "phonetic": "แดท วิล เฮลพ์ พรี-เวนท์ แอน แอ็ก-ซิ-เดิ้นท์",
+            "thai": "จะช่วยป้องกันอุบัติเหตุได้ค่ะ",
+            "correct": true
+          },
+          {
+            "text": "Thank you for your quick action.",
+            "phonetic": "แธงค์ ยู ฟอร์ ยัวร์ ควิค แอ็ค-ชั่น",
+            "thai": "ขอบคุณที่จัดการรวดเร็วค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I need a new laptop.",
+            "phonetic": "ไอ นีด อะ นิว แลป-ท็อป",
+            "thai": "ฉันต้องการแล็ปท็อปเครื่องใหม่ค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "sudden-illness",
+    "title": "การถามพนักงานเกี่ยวกับอาการป่วยกะทันหัน",
+    "emoji": "🤒",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "You don't look well. What's wrong?",
+          "phonetic": "ยู โดนท์ ลุค เวล วอทส์ รอง",
+          "thai": "คุณดูไม่สบายเลยนะ เป็นอะไรไปคะ"
+        },
+        "options": [
+          {
+            "text": "I feel dizzy and nauseous.",
+            "phonetic": "ไอ ฟีล ดิส-ซี่ แอนด์ นอ-เชิส",
+            "thai": "ฉันรู้สึกเวียนศีรษะและคลื่นไส้ค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "I have a fever and I feel weak.",
+            "phonetic": "ไอ แฮฟ อะ ฟี-เวอร์ แอนด์ ไอ ฟีล วีค",
+            "thai": "ฉันมีไข้และรู้สึกอ่อนแรงค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I'm just a little tired from work.",
+            "phonetic": "ไอม์ จัสท์ อะ ลิท-เทิล ไทร์ด ฟรอม เวิร์ค",
+            "thai": "แค่เหนื่อยจากงานนิดหน่อยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Do you have any other symptoms?",
+          "phonetic": "ดู ยู แฮฟ เอน-นี่ อัธ-เธอร์ ซิมพ์-ทัมส์",
+          "thai": "มีอาการอื่นอีกไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, I also have a headache.",
+            "phonetic": "เยส ไอ ออล-โซ แฮฟ อะ เฮด-เอค",
+            "thai": "ค่ะ ฉันปวดหัวด้วย",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "No, just dizziness.",
+            "phonetic": "โน จัสท์ ดิส-ซิ-เนส",
+            "thai": "ไม่มีค่ะ แค่เวียนศีรษะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I like my new shoes.",
+            "phonetic": "ไอ ไลค์ มาย นิว ชูส์",
+            "thai": "ฉันชอบรองเท้าคู่ใหม่ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Let's check your temperature.",
+          "phonetic": "เล็ทส์ เช็ค ยัวร์ เทม-เพอ-ระ-เจอร์",
+          "thai": "มาวัดอุณหภูมิกันก่อนนะคะ"
+        },
+        "options": [
+          {
+            "text": "Okay, thank you for checking.",
+            "phonetic": "โอ-เค แธงค์ ยู ฟอร์ เช็ค-กิ้ง",
+            "thai": "โอเคค่ะ ขอบคุณที่ช่วยตรวจ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Should I take some medicine?",
+            "phonetic": "ชุด ไอ เทค ซัม เมด-ดิ-ซิน",
+            "thai": "ฉันควรกินยาไหมคะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I forgot my umbrella.",
+            "phonetic": "ไอ ฟอร์-กอท มาย อัม-เบรล-ล่า",
+            "thai": "ฉันลืมร่มค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "I think you should rest and see a doctor.",
+          "phonetic": "ไอ ธิงค์ ยู ชุด เรสท์ แอนด์ ซี อะ ด็อก-เตอร์",
+          "thai": "ฉันคิดว่าคุณควรพักและไปหาหมอนะคะ"
+        },
+        "options": [
+          {
+            "text": "Okay, I'll go to the clinic.",
+            "phonetic": "โอ-เค ไอล์ โก ทู เดอะ คลิน-นิค",
+            "thai": "โอเคค่ะ ฉันจะไปคลินิก",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Can someone call an ambulance if it gets worse?",
+            "phonetic": "แคน ซัม-วัน คอล แอน แอม-บิว-แลนซ์ อิฟ อิท เก็ทส์ เวิร์ส",
+            "thai": "ถ้าอาการแย่ลง ให้ใครเรียกรถพยาบาลได้ไหมคะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I want to finish my work first.",
+            "phonetic": "ไอ วอนท์ ทู ฟิน-นิช มาย เวิร์ค เฟิร์สท์",
+            "thai": "ฉันอยากทำงานให้เสร็จก่อนค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Good. Take care of yourself and get some rest.",
+          "phonetic": "กู๊ด เทค แคร์ ออฟ ยัวร์-เซลฟ์ แอนด์ เก็ท ซัม เรสท์",
+          "thai": "ดีค่ะ ดูแลตัวเองและพักผ่อนเยอะๆ นะคะ"
+        },
+        "options": [
+          {
+            "text": "Thank you for your concern.",
+            "phonetic": "แธงค์ ยู ฟอร์ ยัวร์ คอน-เซิร์น",
+            "thai": "ขอบคุณที่เป็นห่วงค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I'll let you know how I feel later.",
+            "phonetic": "ไอล์ เล็ท ยู โนว์ ฮาว ไอ ฟีล เล-เทอร์",
+            "thai": "ฉันจะบอกอาการให้ทราบทีหลังค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I love hiking on weekends.",
+            "phonetic": "ไอ ลัฝ ไฮ-กิ้ง ออน วีค-เอนด์ส",
+            "thai": "ฉันชอบเดินป่าวันหยุดค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Of course, we will call one if needed.",
+          "phonetic": "ออฟ คอร์ส วี วิล คอล วัน อิฟ นี-เด็ด",
+          "thai": "ได้แน่นอนค่ะ เราจะเรียกให้ถ้าจำเป็น"
+        },
+        "options": [
+          {
+            "text": "Thank you, that makes me feel safer.",
+            "phonetic": "แธงค์ ยู แดท เมคส์ มี ฟีล เซฟ-เฟอร์",
+            "thai": "ขอบคุณค่ะ ทำให้รู้สึกปลอดภัยขึ้น",
+            "correct": true
+          },
+          {
+            "text": "I hope it's nothing serious.",
+            "phonetic": "ไอ โฮพ อิทส์ นัธ-ธิ่ง เซีย-เรียส",
+            "thai": "หวังว่าจะไม่ร้ายแรงนะคะ",
+            "correct": true
+          },
+          {
+            "text": "I don't like hospitals.",
+            "phonetic": "ไอ โดนท์ ไลค์ ฮอส-พิ-เทิลส์",
+            "thai": "ฉันไม่ชอบโรงพยาบาลค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "evacuation-procedure",
+    "title": "การอธิบายขั้นตอนการอพยพในเหตุฉุกเฉิน",
+    "emoji": "🏃",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "What should we do if there's an emergency?",
+          "phonetic": "วอท ชุด วี ดู อิฟ แดร์ส แอน อิ-เมอร์-เจน-ซี่",
+          "thai": "ถ้าเกิดเหตุฉุกเฉิน เราควรทำอย่างไรคะ"
+        },
+        "options": [
+          {
+            "text": "First, stay calm and don't panic.",
+            "phonetic": "เฟิร์สท์ สเทย์ คาล์ม แอนด์ โดนท์ แพน-นิค",
+            "thai": "อย่างแรกคือใจเย็นๆ อย่าตื่นตระหนกค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Walk quickly to the nearest emergency exit.",
+            "phonetic": "วอค ควิค-ลี่ ทู เดอะ เนีย-เรสท์ อิ-เมอร์-เจน-ซี่ เอ็ก-ซิท",
+            "thai": "เดินเร็วๆ ไปทางออกฉุกเฉินที่ใกล้ที่สุดค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "Finish your lunch first.",
+            "phonetic": "ฟิน-นิช ยัวร์ ลันช์ เฟิร์สท์",
+            "thai": "ทานข้าวกลางวันให้เสร็จก่อนค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Okay, what should we do next?",
+          "phonetic": "โอ-เค วอท ชุด วี ดู เน็กซ์ท์",
+          "thai": "โอเคค่ะ แล้วต้องทำอะไรต่อคะ"
+        },
+        "options": [
+          {
+            "text": "Follow the evacuation signs to the exit.",
+            "phonetic": "ฟอล-โลว์ เดอะ อี-แวค-คิว-เอ-ชั่น ไซน์ส ทู เดอะ เอ็ก-ซิท",
+            "thai": "เดินตามป้ายอพยพไปทางออกค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Help anyone who needs assistance.",
+            "phonetic": "เฮลพ์ เอน-นี่-วัน ฮู นีดส์ อะ-ซิส-เทินซ์",
+            "thai": "ช่วยเหลือคนที่ต้องการความช่วยเหลือค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Take a photo of the fire.",
+            "phonetic": "เทค อะ โฟ-โท ออฟ เดอะ ไฟร์",
+            "thai": "ถ่ายรูปไฟไหม้ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Should we use the elevator?",
+          "phonetic": "ชุด วี ยูส เดอะ เอล-ลิ-เว-เทอร์",
+          "thai": "เราควรใช้ลิฟต์ไหมคะ"
+        },
+        "options": [
+          {
+            "text": "No, never use the elevator in an emergency.",
+            "phonetic": "โน เน-เวอร์ ยูส เดอะ เอล-ลิ-เว-เทอร์ อิน แอน อิ-เมอร์-เจน-ซี่",
+            "thai": "ไม่ควรค่ะ ห้ามใช้ลิฟต์ตอนเกิดเหตุฉุกเฉิน",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "No, always use the stairs.",
+            "phonetic": "โน ออล-เวย์ส ยูส เดอะ สแตร์ส",
+            "thai": "ไม่ค่ะ ให้ใช้บันไดเสมอ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Yes, it's faster.",
+            "phonetic": "เยส อิทส์ ฟาสท์-เทอร์",
+            "thai": "ค่ะ มันเร็วกว่าค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Where should we meet after we leave the building?",
+          "phonetic": "แวร์ ชุด วี มีท อาฟ-เทอร์ วี ลีฝ เดอะ บิล-ดิ้ง",
+          "thai": "หลังออกจากอาคารแล้ว เราควรไปรวมตัวกันที่ไหนคะ"
+        },
+        "options": [
+          {
+            "text": "At the assembly point in the parking lot.",
+            "phonetic": "แอท เดอะ อะ-เซม-บลี่ พอยท์ อิน เดอะ พาร์ค-กิ้ง ล็อท",
+            "thai": "ที่จุดรวมพลในลานจอดรถค่ะ",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Wait for the safety officer to check everyone.",
+            "phonetic": "เวท ฟอร์ เดอะ เซฟ-ตี้ ออฟ-ฟิ-เซอร์ ทู เช็ค เอฟ-วรี่-วัน",
+            "thai": "รอเจ้าหน้าที่ความปลอดภัยตรวจนับทุกคนค่ะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "Go back inside to get your bag.",
+            "phonetic": "โก แบ็ค อิน-ไซด์ ทู เก็ท ยัวร์ แบ็ก",
+            "thai": "กลับเข้าไปหยิบกระเป๋าค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Good. That's the correct meeting point.",
+          "phonetic": "กู๊ด แดทส์ เดอะ คอ-เร็คท์ มี-ทิ่ง พอยท์",
+          "thai": "ดีค่ะ นั่นคือจุดรวมพลที่ถูกต้อง"
+        },
+        "options": [
+          {
+            "text": "Thank you for explaining the procedure.",
+            "phonetic": "แธงค์ ยู ฟอร์ เอ็กซ์-เพลน-นิ่ง เดอะ โพร-ซี-เจอร์",
+            "thai": "ขอบคุณที่อธิบายขั้นตอนค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I feel more prepared now.",
+            "phonetic": "ไอ ฟีล มอร์ พรี-แพร์ด นาว",
+            "thai": "ตอนนี้ฉันรู้สึกพร้อมมากขึ้นค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I want to go back to work now.",
+            "phonetic": "ไอ วอนท์ ทู โก แบ็ค ทู เวิร์ค นาว",
+            "thai": "ฉันอยากกลับไปทำงานตอนนี้เลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Yes, that's very important for everyone's safety.",
+          "phonetic": "เยส แดทส์ เว-รี่ อิม-พอร์-เทินท์ ฟอร์ เอฟ-วรี่-วันส์ เซฟ-ตี้",
+          "thai": "ค่ะ นั่นสำคัญมากต่อความปลอดภัยของทุกคน"
+        },
+        "options": [
+          {
+            "text": "I understand, safety first.",
+            "phonetic": "ไอ อัน-เดอร์-สแตนด์ เซฟ-ตี้ เฟิร์สท์",
+            "thai": "เข้าใจค่ะ ความปลอดภัยต้องมาก่อน",
+            "correct": true
+          },
+          {
+            "text": "I will remember this procedure.",
+            "phonetic": "ไอ วิล รี-เมม-เบอร์ ดิส โพร-ซี-เจอร์",
+            "thai": "ฉันจะจำขั้นตอนนี้ไว้ค่ะ",
+            "correct": true
+          },
+          {
+            "text": "Let's skip that step next time.",
+            "phonetic": "เล็ทส์ สคิพ แดท สเต็พ เน็กซ์ท์ ไทม์",
+            "thai": "คราวหน้าข้ามขั้นตอนนี้ไปเถอะค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ppe-instruction",
+    "title": "การสอนพนักงานใช้อุปกรณ์ป้องกันส่วนบุคคลอย่างถูกต้อง",
+    "emoji": "🥽",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "You need to wear your helmet before entering this area.",
+          "phonetic": "ยู นีด ทู แวร์ ยัวร์ เฮล-เม็ท บิ-ฟอร์ เอน-เทอ-ริ่ง ดิส แอ-เรีย",
+          "thai": "คุณต้องใส่หมวกนิรภัยก่อนเข้าพื้นที่นี้นะคะ"
+        },
+        "options": [
+          {
+            "text": "Okay, I'll put it on now.",
+            "phonetic": "โอ-เค ไอล์ พุท อิท ออน นาว",
+            "thai": "โอเคค่ะ ฉันจะใส่เลยตอนนี้",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Do I need gloves too?",
+            "phonetic": "ดู ไอ นีด กลัฟส์ ทู",
+            "thai": "ฉันต้องใส่ถุงมือด้วยไหมคะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I don't think it's necessary.",
+            "phonetic": "ไอ โดนท์ ธิงค์ อิทส์ เนส-เซส-เซ-รี่",
+            "thai": "ฉันคิดว่าไม่จำเป็นค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Good. Make sure it fits properly.",
+          "phonetic": "กู๊ด เมค ชัวร์ อิท ฟิทส์ พรอพ-เพอร์-ลี่",
+          "thai": "ดีค่ะ ตรวจให้แน่ใจว่าใส่พอดี"
+        },
+        "options": [
+          {
+            "text": "It feels a little loose.",
+            "phonetic": "อิท ฟีลส์ อะ ลิท-เทิล ลูส",
+            "thai": "รู้สึกหลวมนิดหน่อยค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Yes, it fits well.",
+            "phonetic": "เยส อิท ฟิทส์ เวล",
+            "thai": "ค่ะ พอดีเลย",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I like the color of the helmet.",
+            "phonetic": "ไอ ไลค์ เดอะ คัล-เลอร์ ออฟ เดอะ เฮล-เม็ท",
+            "thai": "ฉันชอบสีของหมวกค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Yes, and safety glasses as well.",
+          "phonetic": "เยส แอนด์ เซฟ-ตี้ กลาส-เซส แอส เวล",
+          "thai": "ค่ะ และต้องใส่แว่นนิรภัยด้วย"
+        },
+        "options": [
+          {
+            "text": "Okay, I'll wear all of them.",
+            "phonetic": "โอ-เค ไอล์ แวร์ ออล ออฟ เดม",
+            "thai": "โอเคค่ะ ฉันจะใส่ทั้งหมดเลย",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Where can I find safety glasses?",
+            "phonetic": "แวร์ แคน ไอ ไฟนด์ เซฟ-ตี้ กลาส-เซส",
+            "thai": "หาแว่นนิรภัยได้ที่ไหนคะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't like wearing glasses.",
+            "phonetic": "ไอ โดนท์ ไลค์ แวร์-ริ่ง กลาส-เซส",
+            "thai": "ฉันไม่ชอบใส่แว่นค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "This equipment protects you from injury.",
+          "phonetic": "ดิส อิ-ควิพ-เมินท์ โพร-เท็คท์ส์ ยู ฟรอม อิน-จู-รี่",
+          "thai": "อุปกรณ์นี้ช่วยปกป้องคุณจากการบาดเจ็บนะคะ"
+        },
+        "options": [
+          {
+            "text": "I understand, safety is important.",
+            "phonetic": "ไอ อัน-เดอร์-สแตนด์ เซฟ-ตี้ อิส อิม-พอร์-เทินท์",
+            "thai": "เข้าใจค่ะ ความปลอดภัยสำคัญมาก",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "What happens if I don't wear it?",
+            "phonetic": "วอท แฮพ-เพินส์ อิฟ ไอ โดนท์ แวร์ อิท",
+            "thai": "ถ้าไม่ใส่จะเกิดอะไรขึ้นคะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "It looks uncomfortable.",
+            "phonetic": "อิท ลุคส์ อัน-คัม-เฟอร์-ทะ-เบิล",
+            "thai": "ดูใส่แล้วไม่สบายเลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Exactly. Please wear it every time you work here.",
+          "phonetic": "เอ็ก-แซ็คท์-ลี่ พลีส แวร์ อิท เอฟ-วรี่ ไทม์ ยู เวิร์ค เฮียร์",
+          "thai": "ถูกต้องค่ะ กรุณาใส่ทุกครั้งที่ทำงานที่นี่"
+        },
+        "options": [
+          {
+            "text": "I will, thank you for reminding me.",
+            "phonetic": "ไอ วิล แธงค์ ยู ฟอร์ รี-ไมนด์-ดิ่ง มี",
+            "thai": "ฉันจะใส่ค่ะ ขอบคุณที่เตือน",
+            "correct": true
+          },
+          {
+            "text": "I'll check it every morning.",
+            "phonetic": "ไอล์ เช็ค อิท เอฟ-วรี่ มอร์-นิ่ง",
+            "thai": "ฉันจะเช็กทุกเช้าค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I don't have time for that.",
+            "phonetic": "ไอ โดนท์ แฮฟ ไทม์ ฟอร์ แดท",
+            "thai": "ฉันไม่มีเวลาทำแบบนั้นค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "You could get seriously injured. It's a big risk.",
+          "phonetic": "ยู คุด เก็ท เซีย-เรียส-ลี่ อิน-เจอร์ด อิทส์ อะ บิก ริสค์",
+          "thai": "คุณอาจบาดเจ็บสาหัสได้ นั่นเป็นความเสี่ยงที่ใหญ่มาก"
+        },
+        "options": [
+          {
+            "text": "I understand the danger now.",
+            "phonetic": "ไอ อัน-เดอร์-สแตนด์ เดอะ เดน-เจอร์ นาว",
+            "thai": "ตอนนี้ฉันเข้าใจอันตรายแล้วค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I will always wear my PPE.",
+            "phonetic": "ไอ วิล ออล-เวย์ส แวร์ มาย พี-พี-อี",
+            "thai": "ฉันจะใส่อุปกรณ์ป้องกันเสมอค่ะ",
+            "correct": true
+          },
+          {
+            "text": "That sounds unlikely.",
+            "phonetic": "แดท ซาวด์ส อัน-ไลค์-ลี่",
+            "thai": "ฟังดูไม่น่าจะเกิดขึ้นค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "recovery-followup",
+    "title": "การติดตามอาการฟื้นตัวของพนักงานหลังการรักษา",
+    "emoji": "💊",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "How are you feeling after your treatment?",
+          "phonetic": "ฮาว อาร์ ยู ฟี-ลิ่ง อาฟ-เทอร์ ยัวร์ ทรีท-เมินท์",
+          "thai": "หลังการรักษา คุณรู้สึกเป็นอย่างไรบ้างคะ"
+        },
+        "options": [
+          {
+            "text": "Much better, thank you for asking.",
+            "phonetic": "มัช เบท-เทอร์ แธงค์ ยู ฟอร์ อาส-กิ้ง",
+            "thai": "ดีขึ้นมากค่ะ ขอบคุณที่ถาม",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Still a little tired, but recovering.",
+            "phonetic": "สทิล อะ ลิท-เทิล ไทร์ด บัท รี-คัฟ-เวอ-ริ่ง",
+            "thai": "ยังเหนื่อยนิดหน่อย แต่กำลังฟื้นตัวค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I forgot about the treatment.",
+            "phonetic": "ไอ ฟอร์-กอท อะ-เบาท์ เดอะ ทรีท-เมินท์",
+            "thai": "ฉันลืมเรื่องการรักษาไปแล้วค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "That's great news. Are you ready to come back to work?",
+          "phonetic": "แดทส์ เกรท นิวส์ อาร์ ยู เร็ด-ดี้ ทู คัม แบ็ค ทู เวิร์ค",
+          "thai": "ข่าวดีมากค่ะ พร้อมกลับมาทำงานหรือยังคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, I feel ready now.",
+            "phonetic": "เยส ไอ ฟีล เร็ด-ดี้ นาว",
+            "thai": "ค่ะ ตอนนี้ฉันพร้อมแล้ว",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I need a few more days to recover.",
+            "phonetic": "ไอ นีด อะ ฟิว มอร์ เดย์ส ทู รี-คัฟ-เวอร์",
+            "thai": "ฉันต้องการเวลาฟื้นตัวอีกสองสามวันค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't want to work anymore.",
+            "phonetic": "ไอ โดนท์ วอนท์ ทู เวิร์ค เอน-นี่-มอร์",
+            "thai": "ฉันไม่อยากทำงานอีกแล้วค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Take your time. Your health is important.",
+          "phonetic": "เทค ยัวร์ ไทม์ ยัวร์ เฮลธ์ อิส อิม-พอร์-เทินท์",
+          "thai": "ค่อยๆ พักไปนะคะ สุขภาพของคุณสำคัญที่สุด"
+        },
+        "options": [
+          {
+            "text": "Thank you for understanding.",
+            "phonetic": "แธงค์ ยู ฟอร์ อัน-เดอร์-สแทน-ดิ่ง",
+            "thai": "ขอบคุณที่เข้าใจค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I hope to be fully recovered soon.",
+            "phonetic": "ไอ โฮพ ทู บี ฟุล-ลี่ รี-คัฟ-เวอร์ด ซูน",
+            "thai": "หวังว่าจะฟื้นตัวเต็มที่เร็วๆ นี้ค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Let's talk about something else.",
+            "phonetic": "เล็ทส์ ทอค อะ-เบาท์ ซัม-ธิ่ง เอลส์",
+            "thai": "คุยเรื่องอื่นกันเถอะค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Do you have any side effects from the medicine?",
+          "phonetic": "ดู ยู แฮฟ เอน-นี่ ไซด์ เอฟ-เฟ็คท์ส์ ฟรอม เดอะ เมด-ดิ-ซิน",
+          "thai": "มีผลข้างเคียงจากยาไหมคะ"
+        },
+        "options": [
+          {
+            "text": "No side effects so far.",
+            "phonetic": "โน ไซด์ เอฟ-เฟ็คท์ส์ โซ ฟาร์",
+            "thai": "ยังไม่มีผลข้างเคียงเลยค่ะ",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "I feel a little dizzy sometimes.",
+            "phonetic": "ไอ ฟีล อะ ลิท-เทิล ดิส-ซี่ ซัม-ไทม์ส",
+            "thai": "บางครั้งฉันรู้สึกเวียนศีรษะนิดหน่อยค่ะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't take any medicine.",
+            "phonetic": "ไอ โดนท์ เทค เอน-นี่ เมด-ดิ-ซิน",
+            "thai": "ฉันไม่ได้กินยาเลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Good. Please let us know if anything changes.",
+          "phonetic": "กู๊ด พลีส เล็ท อัส โนว์ อิฟ เอน-นี่-ธิ่ง เชนจ์-เจส",
+          "thai": "ดีค่ะ ถ้ามีอะไรเปลี่ยนแปลงบอกเราด้วยนะคะ"
+        },
+        "options": [
+          {
+            "text": "I will, thank you.",
+            "phonetic": "ไอ วิล แธงค์ ยู",
+            "thai": "จะบอกแน่นอนค่ะ ขอบคุณค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I appreciate your support.",
+            "phonetic": "ไอ แอพ-พรี-ชี-เอท ยัวร์ ซัพ-พอร์ท",
+            "thai": "ขอบคุณสำหรับการดูแลนะคะ",
+            "correct": true
+          },
+          {
+            "text": "I don't need any help.",
+            "phonetic": "ไอ โดนท์ นีด เอน-นี่ เฮลพ์",
+            "thai": "ฉันไม่ต้องการความช่วยเหลือค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Please tell your doctor about that at your next check-up.",
+          "phonetic": "พลีส เทล ยัวร์ ด็อก-เตอร์ อะ-เบาท์ แดท แอท ยัวร์ เน็กซ์ท์ เช็ค อัพ",
+          "thai": "บอกหมอเรื่องนี้ตอนตรวจสุขภาพครั้งหน้าด้วยนะคะ"
+        },
+        "options": [
+          {
+            "text": "Okay, I'll mention it.",
+            "phonetic": "โอ-เค ไอล์ เมน-ชั่น อิท",
+            "thai": "โอเคค่ะ ฉันจะบอกหมอค่ะ",
+            "correct": true
+          },
+          {
+            "text": "Thank you for the advice.",
+            "phonetic": "แธงค์ ยู ฟอร์ เดอะ แอด-ไวซ์",
+            "thai": "ขอบคุณสำหรับคำแนะนำค่ะ",
+            "correct": true
+          },
+          {
+            "text": "It's probably nothing.",
+            "phonetic": "อิทส์ พรอบ-บับ-ลี่ นัธ-ธิ่ง",
+            "thai": "คงไม่มีอะไรหรอกค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "safety-inspection",
+    "title": "การตรวจสอบความปลอดภัยในสถานที่ทำงาน",
+    "emoji": "🔍",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "I'm here to do the monthly safety check-up. Is that okay?",
+          "phonetic": "ไอม์ เฮียร์ ทู ดู เดอะ มันธ์-ลี่ เซฟ-ตี้ เช็ค อัพ อิส แดท โอ-เค",
+          "thai": "ฉันมาตรวจความปลอดภัยประจำเดือนค่ะ สะดวกไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, please go ahead.",
+            "phonetic": "เยส พลีส โก อะ-เฮด",
+            "thai": "ค่ะ เชิญตรวจได้เลยค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Sure, let me show you around.",
+            "phonetic": "ชัวร์ เล็ท มี โชว์ ยู อะ-ราวด์",
+            "thai": "ได้ค่ะ ฉันจะพาไปดูรอบๆ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I'm too busy right now.",
+            "phonetic": "ไอม์ ทู บิส-ซี่ ไรท์ นาว",
+            "thai": "ตอนนี้ฉันยุ่งมากค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Let's start with the emergency exits.",
+          "phonetic": "เล็ทส์ สทาร์ท วิธ เดอะ อิ-เมอร์-เจน-ซี่ เอ็ก-ซิทส์",
+          "thai": "เริ่มจากทางออกฉุกเฉินก่อนนะคะ"
+        },
+        "options": [
+          {
+            "text": "This way, they are clearly marked.",
+            "phonetic": "ดิส เวย์ เดย์ อาร์ เคลียร์-ลี่ มาร์คท์",
+            "thai": "ทางนี้ค่ะ มีป้ายบอกชัดเจน",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "All exits are unlocked and clear.",
+            "phonetic": "ออล เอ็ก-ซิทส์ อาร์ อัน-ล็อคท์ แอนด์ เคลียร์",
+            "thai": "ทางออกทุกทางไม่ล็อกและไม่มีสิ่งกีดขวางค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't know where they are.",
+            "phonetic": "ไอ โดนท์ โนว์ แวร์ เดย์ อาร์",
+            "thai": "ฉันไม่รู้ว่าอยู่ที่ไหนค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Let's check the fire extinguishers first.",
+          "phonetic": "เล็ทส์ เช็ค เดอะ ไฟร์ เอ็กซ์-ทิง-กวิช-เชอร์ส เฟิร์สท์",
+          "thai": "มาตรวจถังดับเพลิงก่อนนะคะ"
+        },
+        "options": [
+          {
+            "text": "They were checked last month.",
+            "phonetic": "เดย์ เวอร์ เช็คท์ ลาสท์ มันธ์",
+            "thai": "ตรวจไปแล้วเมื่อเดือนที่แล้วค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "This one needs to be replaced.",
+            "phonetic": "ดิส วัน นีดส์ ทู บี รี-เพลสท์",
+            "thai": "อันนี้ต้องเปลี่ยนใหม่ค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "We don't have any extinguishers.",
+            "phonetic": "วี โดนท์ แฮฟ เอน-นี่ เอ็กซ์-ทิง-กวิช-เชอร์ส",
+            "thai": "เราไม่มีถังดับเพลิงเลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "I noticed a few hazards. Can we discuss them?",
+          "phonetic": "ไอ โน-ทิสท์ อะ ฟิว แฮ-เซิร์ดส์ แคน วี ดิส-คัส เดม",
+          "thai": "ฉันสังเกตเห็นสิ่งเสี่ยงบางอย่าง คุยกันได้ไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, please tell me what you found.",
+            "phonetic": "เยส พลีส เทล มี วอท ยู ฟาวนด์",
+            "thai": "ได้ค่ะ บอกได้เลยว่าเจออะไรบ้าง",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Is it something dangerous?",
+            "phonetic": "อิส อิท ซัม-ธิ่ง เดน-เจอ-รัส",
+            "thai": "เป็นอะไรที่อันตรายไหมคะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't want to hear about it.",
+            "phonetic": "ไอ โดนท์ วอนท์ ทู เฮียร์ อะ-เบาท์ อิท",
+            "thai": "ฉันไม่อยากฟังเรื่องนี้ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "There are some wires on the floor near the exit.",
+          "phonetic": "แดร์ อาร์ ซัม ไวร์ส ออน เดอะ ฟลอร์ เนียร์ เดอะ เอ็ก-ซิท",
+          "thai": "มีสายไฟอยู่บนพื้นใกล้ทางออกค่ะ"
+        },
+        "options": [
+          {
+            "text": "I'll get someone to fix that today.",
+            "phonetic": "ไอล์ เก็ท ซัม-วัน ทู ฟิกซ์ แดท ทู-เดย์",
+            "thai": "ฉันจะให้คนมาแก้ไขวันนี้เลยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "Thank you for pointing that out.",
+            "phonetic": "แธงค์ ยู ฟอร์ พอยท์-ติ่ง แดท เอาท์",
+            "thai": "ขอบคุณที่ชี้ให้เห็นค่ะ",
+            "correct": true
+          },
+          {
+            "text": "That's not a big problem.",
+            "phonetic": "แดทส์ น็อท อะ บิก พรอบ-เบลิม",
+            "thai": "นั่นไม่ใช่ปัญหาใหญ่ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "It could cause someone to trip and fall.",
+          "phonetic": "อิท คุด คอส ซัม-วัน ทู ทริพ แอนด์ ฟอล",
+          "thai": "มันอาจทำให้มีคนสะดุดล้มได้ค่ะ"
+        },
+        "options": [
+          {
+            "text": "I understand, we'll fix it right away.",
+            "phonetic": "ไอ อัน-เดอร์-สแตนด์ วีล ฟิกซ์ อิท ไรท์ อะ-เวย์",
+            "thai": "เข้าใจค่ะ เราจะแก้ไขทันที",
+            "correct": true
+          },
+          {
+            "text": "Thank you for the warning.",
+            "phonetic": "แธงค์ ยู ฟอร์ เดอะ วอร์น-นิ่ง",
+            "thai": "ขอบคุณสำหรับคำเตือนค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I'm sure it's fine.",
+            "phonetic": "ไอม์ ชัวร์ อิทส์ ไฟน์",
+            "thai": "ฉันมั่นใจว่าไม่เป็นไรค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "safety-briefing-new-employee",
+    "title": "การอธิบายความเสี่ยงให้พนักงานใหม่ฟัง (ปฐมนิเทศความปลอดภัย)",
+    "emoji": "📋",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Welcome! Before you start, let's talk about safety.",
+          "phonetic": "เวล-คัม บิ-ฟอร์ ยู สทาร์ท เล็ทส์ ทอค อะ-เบาท์ เซฟ-ตี้",
+          "thai": "ยินดีต้อนรับค่ะ ก่อนเริ่มงาน มาคุยเรื่องความปลอดภัยกันก่อนนะคะ"
+        },
+        "options": [
+          {
+            "text": "Okay, I'm ready to listen.",
+            "phonetic": "โอ-เค ไอม์ เร็ด-ดี้ ทู ลิส-เซิ่น",
+            "thai": "โอเคค่ะ พร้อมฟังแล้วค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "What are the main hazards here?",
+            "phonetic": "วอท อาร์ เดอะ เมน แฮ-เซิร์ดส์ เฮียร์",
+            "thai": "สิ่งเสี่ยงหลักๆ ที่นี่มีอะไรบ้างคะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "Can we do this later?",
+            "phonetic": "แคน วี ดู ดิส เล-เทอร์",
+            "thai": "ทำเรื่องนี้ทีหลังได้ไหมคะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "This factory has some risks you should know about.",
+          "phonetic": "ดิส แฟค-โท-รี่ แฮส ซัม ริสค์ส ยู ชุด โนว์ อะ-เบาท์",
+          "thai": "โรงงานนี้มีความเสี่ยงบางอย่างที่คุณควรรู้ไว้"
+        },
+        "options": [
+          {
+            "text": "What kind of risks?",
+            "phonetic": "วอท ไคนด์ ออฟ ริสค์ส",
+            "thai": "ความเสี่ยงแบบไหนคะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I want to learn how to stay safe.",
+            "phonetic": "ไอ วอนท์ ทู เลิร์น ฮาว ทู สเทย์ เซฟ",
+            "thai": "ฉันอยากเรียนรู้วิธีดูแลความปลอดภัยค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I already know everything.",
+            "phonetic": "ไอ ออล-เร-ดี้ โนว์ เอฟ-วรี่-ธิ่ง",
+            "thai": "ฉันรู้ทุกอย่างอยู่แล้วค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "The main hazards are the machines and chemicals.",
+          "phonetic": "เดอะ เมน แฮ-เซิร์ดส์ อาร์ เดอะ มะ-ชีนส์ แอนด์ เคม-มิ-เคิลส์",
+          "thai": "สิ่งเสี่ยงหลักคือเครื่องจักรและสารเคมีค่ะ"
+        },
+        "options": [
+          {
+            "text": "I'll be careful around them.",
+            "phonetic": "ไอล์ บี แคร์-ฟุล อะ-ราวด์ เดม",
+            "thai": "ฉันจะระมัดระวังเวลาอยู่ใกล้ๆ ค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Should I wear protective equipment?",
+            "phonetic": "ชุด ไอ แวร์ โพร-เท็ค-ทิฝ อิ-ควิพ-เมินท์",
+            "thai": "ฉันควรใส่อุปกรณ์ป้องกันไหมคะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "That doesn't sound dangerous.",
+            "phonetic": "แดท ดัส-เซินท์ ซาวด์ เดน-เจอ-รัส",
+            "thai": "ฟังดูไม่อันตรายเลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Always wear your helmet and gloves in this area.",
+          "phonetic": "ออล-เวย์ส แวร์ ยัวร์ เฮล-เม็ท แอนด์ กลัฟส์ อิน ดิส แอ-เรีย",
+          "thai": "ใส่หมวกนิรภัยและถุงมือเสมอเมื่ออยู่ในพื้นที่นี้นะคะ"
+        },
+        "options": [
+          {
+            "text": "I understand, I'll wear them every day.",
+            "phonetic": "ไอ อัน-เดอร์-สแตนด์ ไอล์ แวร์ เดม เอฟ-วรี่ เดย์",
+            "thai": "เข้าใจค่ะ ฉันจะใส่ทุกวัน",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Where do I find the safety equipment?",
+            "phonetic": "แวร์ ดู ไอ ไฟนด์ เดอะ เซฟ-ตี้ อิ-ควิพ-เมินท์",
+            "thai": "หาอุปกรณ์ความปลอดภัยได้ที่ไหนคะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't think I need them.",
+            "phonetic": "ไอ โดนท์ ธิงค์ ไอ นีด เดม",
+            "thai": "ฉันคิดว่าไม่จำเป็นค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Great. Safety is everyone's responsibility here.",
+          "phonetic": "เกรท เซฟ-ตี้ อิส เอฟ-วรี่-วันส์ รี-สปอน-ซิ-บิล-ลิ-ตี้ เฮียร์",
+          "thai": "ดีเลยค่ะ ความปลอดภัยเป็นความรับผิดชอบของทุกคนที่นี่"
+        },
+        "options": [
+          {
+            "text": "I'll do my part to stay safe.",
+            "phonetic": "ไอล์ ดู มาย พาร์ท ทู สเทย์ เซฟ",
+            "thai": "ฉันจะทำหน้าที่ของตัวเองเพื่อความปลอดภัยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "Thank you for the training.",
+            "phonetic": "แธงค์ ยู ฟอร์ เดอะ เทรน-นิ่ง",
+            "thai": "ขอบคุณสำหรับการอบรมค่ะ",
+            "correct": true
+          },
+          {
+            "text": "This job sounds boring.",
+            "phonetic": "ดิส จ็อบ ซาวด์ส บอ-ริ่ง",
+            "thai": "งานนี้ฟังดูน่าเบื่อค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "It's in the locker room, near the entrance.",
+          "phonetic": "อิทส์ อิน เดอะ ล็อก-เกอร์ รูม เนียร์ เดอะ เอน-เทรินซ์",
+          "thai": "อยู่ในห้องล็อกเกอร์ ใกล้ทางเข้าค่ะ"
+        },
+        "options": [
+          {
+            "text": "Thank you, I'll go get it now.",
+            "phonetic": "แธงค์ ยู ไอล์ โก เก็ท อิท นาว",
+            "thai": "ขอบคุณค่ะ ฉันจะไปเอาเลย",
+            "correct": true
+          },
+          {
+            "text": "I appreciate you showing me.",
+            "phonetic": "ไอ แอพ-พรี-ชี-เอท ยู โชว์-อิ่ง มี",
+            "thai": "ขอบคุณที่พาไปดูนะคะ",
+            "correct": true
+          },
+          {
+            "text": "I'll get it next week.",
+            "phonetic": "ไอล์ เก็ท อิท เน็กซ์ท์ วีค",
+            "thai": "ฉันจะไปเอาอาทิตย์หน้าค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "coordinate-ambulance",
+    "title": "การประสานงานกับหน่วยปฐมพยาบาลหรือรถพยาบาลในเหตุฉุกเฉิน",
+    "emoji": "🚑",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "This is the ambulance service. What's the emergency?",
+          "phonetic": "ดิส อิส เดอะ แอม-บิว-แลนซ์ เซอร์-วิส วอทส์ เดอะ อิ-เมอร์-เจน-ซี่",
+          "thai": "นี่คือหน่วยรถพยาบาลค่ะ เหตุฉุกเฉินคืออะไรคะ"
+        },
+        "options": [
+          {
+            "text": "We have an employee with a serious injury.",
+            "phonetic": "วี แฮฟ แอน เอ็ม-พลอย-อี้ วิธ อะ เซีย-เรียส อิน-จู-รี่",
+            "thai": "พนักงานของเรามีบาดเจ็บสาหัสค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Someone is having a heart attack.",
+            "phonetic": "ซัม-วัน อิส แฮฟ-วิ่ง อะ ฮาร์ท อะ-แทค",
+            "thai": "มีคนหัวใจวายค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "We need someone to fix a light.",
+            "phonetic": "วี นีด ซัม-วัน ทู ฟิกซ์ อะ ไลท์",
+            "thai": "เราต้องการคนมาซ่อมไฟค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Is the person conscious? Are they breathing?",
+          "phonetic": "อิส เดอะ เพอร์-เซิน คอน-เชิส อาร์ เดย์ บรี-ธิ่ง",
+          "thai": "คนคนนั้นยังมีสติไหมคะ หายใจอยู่ไหม"
+        },
+        "options": [
+          {
+            "text": "Yes, they are conscious and breathing.",
+            "phonetic": "เยส เดย์ อาร์ คอน-เชิส แอนด์ บรี-ธิ่ง",
+            "thai": "ค่ะ ยังมีสติและหายใจอยู่",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "No, they are unconscious.",
+            "phonetic": "โน เดย์ อาร์ อัน-คอน-เชิส",
+            "thai": "ไม่ค่ะ หมดสติไปแล้ว",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I'm not sure what that means.",
+            "phonetic": "ไอม์ น็อท ชัวร์ วอท แดท มีนส์",
+            "thai": "ฉันไม่แน่ใจว่าหมายความว่าอะไรค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "We are sending an ambulance immediately. Is someone doing CPR?",
+          "phonetic": "วี อาร์ เซนด์-ดิ่ง แอน แอม-บิว-แลนซ์ อิม-มี-เดียท-ลี่ อิส ซัม-วัน ดู-อิ่ง ซี-พี-อาร์",
+          "thai": "เรากำลังส่งรถพยาบาลไปทันทีค่ะ มีใครทำ CPR อยู่ไหม"
+        },
+        "options": [
+          {
+            "text": "Yes, our first aid officer is doing CPR now.",
+            "phonetic": "เยส อาว-เออร์ เฟิร์สท์ เอด ออฟ-ฟิ-เซอร์ อิส ดู-อิ่ง ซี-พี-อาร์ นาว",
+            "thai": "ค่ะ เจ้าหน้าที่ปฐมพยาบาลกำลังทำ CPR อยู่",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Not yet, but we will start now.",
+            "phonetic": "น็อท เยท บัท วี วิล สทาร์ท นาว",
+            "thai": "ยังค่ะ แต่เราจะเริ่มตอนนี้เลย",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "We don't know how to do that.",
+            "phonetic": "วี โดนท์ โนว์ ฮาว ทู ดู แดท",
+            "thai": "เราไม่รู้วิธีทำค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Good. Please stay on the line and keep the area clear.",
+          "phonetic": "กู๊ด พลีส สเทย์ ออน เดอะ ไลน์ แอนด์ คีพ เดอะ แอ-เรีย เคลียร์",
+          "thai": "ดีค่ะ กรุณาอย่าวางสาย และเคลียร์พื้นที่ให้โล่งด้วยนะคะ"
+        },
+        "options": [
+          {
+            "text": "Okay, we'll keep the area clear.",
+            "phonetic": "โอ-เค วีล คีพ เดอะ แอ-เรีย เคลียร์",
+            "thai": "โอเคค่ะ เราจะเคลียร์พื้นที่ให้",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "How many minutes until you arrive?",
+            "phonetic": "ฮาว เมน-นี่ มิน-นิทส์ อัน-ทิล ยู อะ-ไรฝ์",
+            "thai": "อีกกี่นาทีจะมาถึงคะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "We're going to leave now.",
+            "phonetic": "เวียร์ โก-อิ่ง ทู ลีฝ นาว",
+            "thai": "เราจะไปแล้วนะคะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "The ambulance will arrive in about five minutes.",
+          "phonetic": "เดอะ แอม-บิว-แลนซ์ วิล อะ-ไรฝ์ อิน อะ-เบาท์ ไฟว์ มิน-นิทส์",
+          "thai": "รถพยาบาลจะมาถึงในอีกประมาณห้านาทีค่ะ"
+        },
+        "options": [
+          {
+            "text": "Thank you, we'll be waiting.",
+            "phonetic": "แธงค์ ยู วีล บี เว-ทิ่ง",
+            "thai": "ขอบคุณค่ะ เราจะรอค่ะ",
+            "correct": true
+          },
+          {
+            "text": "We'll meet you at the entrance.",
+            "phonetic": "วีล มีท ยู แอท เดอะ เอน-เทรินซ์",
+            "thai": "เราจะไปรอที่ทางเข้าค่ะ",
+            "correct": true
+          },
+          {
+            "text": "That's too slow.",
+            "phonetic": "แดทส์ ทู สโลว์",
+            "thai": "ช้าเกินไปค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "About five minutes. Please stay calm.",
+          "phonetic": "อะ-เบาท์ ไฟว์ มิน-นิทส์ พลีส สเทย์ คาล์ม",
+          "thai": "ประมาณห้านาทีค่ะ ใจเย็นๆ นะคะ"
+        },
+        "options": [
+          {
+            "text": "Thank you, we will stay calm.",
+            "phonetic": "แธงค์ ยู วี วิล สเทย์ คาล์ม",
+            "thai": "ขอบคุณค่ะ เราจะใจเย็นๆ",
+            "correct": true
+          },
+          {
+            "text": "We appreciate your quick response.",
+            "phonetic": "วี แอพ-พรี-ชี-เอท ยัวร์ ควิค รี-สปอนซ์",
+            "thai": "ขอบคุณที่ตอบสนองรวดเร็วค่ะ",
+            "correct": true
+          },
+          {
+            "text": "Please hurry up.",
+            "phonetic": "พลีส เฮอ-รี่ อัพ",
+            "thai": "รีบมาด่วนเลยนะคะ",
+            "correct": false
+          }
+        ]
+      }
+    }
   }
 ]

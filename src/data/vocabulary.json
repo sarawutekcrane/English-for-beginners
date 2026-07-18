@@ -2495,5 +2495,757 @@
       "icon": "feeling-curious",
       "level": "B1"
     }
+  ],
+  "safety_officer": [
+    {
+      "id": "sf-01",
+      "word": "Accident",
+      "partOfSpeech": "n",
+      "phonetic": "แอ็ก-ซิ-เดิ้นท์",
+      "thai": "อุบัติเหตุ",
+      "icon": "sf-hazard",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-02",
+      "word": "Amputation",
+      "partOfSpeech": "n",
+      "phonetic": "แอม-พิว-เท-ชั่น",
+      "thai": "การตัดอวัยวะ",
+      "icon": "sf-critical",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-03",
+      "word": "Bleeding",
+      "partOfSpeech": "n",
+      "phonetic": "บลี-ดิ้ง",
+      "thai": "ภาวะเลือดออก",
+      "icon": "sf-critical",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-04",
+      "word": "Blindness",
+      "partOfSpeech": "n",
+      "phonetic": "ไบลนด์-เนส",
+      "thai": "ภาวะตาบอด",
+      "icon": "sf-critical",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-05",
+      "word": "Bruise",
+      "partOfSpeech": "n",
+      "phonetic": "บรูซ",
+      "thai": "รอยฟกช้ำ",
+      "icon": "sf-injury",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-06",
+      "word": "Burn",
+      "partOfSpeech": "n/v",
+      "phonetic": "เบิร์น",
+      "thai": "แผลไหม้ / แผลไฟลวก",
+      "icon": "sf-injury",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-07",
+      "word": "Choking",
+      "partOfSpeech": "n",
+      "phonetic": "โช-กิ้ง",
+      "thai": "ภาวะสำลักหรือทางเดินหายใจอุดกั้น",
+      "icon": "sf-critical",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-08",
+      "word": "Coma",
+      "partOfSpeech": "n",
+      "phonetic": "โค-มา",
+      "thai": "ภาวะหมดสติระดับโคม่า",
+      "icon": "sf-critical",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-09",
+      "word": "Contamination",
+      "partOfSpeech": "n",
+      "phonetic": "คอน-แท-มิ-เน-ชั่น",
+      "thai": "การปนเปื้อน",
+      "icon": "sf-hazard",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-10",
+      "word": "Danger",
+      "partOfSpeech": "n",
+      "phonetic": "เดน-เจอร์",
+      "thai": "อันตราย",
+      "icon": "sf-hazard",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-11",
+      "word": "Decontamination",
+      "partOfSpeech": "n",
+      "phonetic": "ดี-คอน-แท-มิ-เน-ชั่น",
+      "thai": "การขจัดการปนเปื้อน",
+      "icon": "sf-hazard",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-12",
+      "word": "Emergency",
+      "partOfSpeech": "n",
+      "phonetic": "อิ-เมอร์-เจน-ซี่",
+      "thai": "เหตุฉุกเฉิน",
+      "icon": "sf-emergency",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-13",
+      "word": "Emergency exit",
+      "partOfSpeech": "n",
+      "phonetic": "อิ-เมอร์-เจน-ซี่ เอ็ก-ซิท",
+      "thai": "ทางออกฉุกเฉิน",
+      "icon": "sf-emergency",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-14",
+      "word": "Exposure",
+      "partOfSpeech": "n",
+      "phonetic": "เอ็ก-สโพ-เชอร์",
+      "thai": "การสัมผัสหรือการได้รับปัจจัยอันตราย",
+      "icon": "sf-hazard",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-15",
+      "word": "Fatal",
+      "partOfSpeech": "adj",
+      "phonetic": "เฟ-เทิล",
+      "thai": "ร้ายแรงถึงชีวิต / ทำให้เสียชีวิต",
+      "icon": "sf-critical",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-16",
+      "word": "Fracture",
+      "partOfSpeech": "n",
+      "phonetic": "แฟรค-เชอร์",
+      "thai": "กระดูกหักหรือกระดูกร้าว",
+      "icon": "sf-injury",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-17",
+      "word": "Hazard",
+      "partOfSpeech": "n",
+      "phonetic": "แฮ-เซิร์ด",
+      "thai": "สิ่งคุกคามหรือแหล่งกำเนิดอันตราย",
+      "icon": "sf-hazard",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-18",
+      "word": "Heart attack",
+      "partOfSpeech": "n",
+      "phonetic": "ฮาร์ท อะ-แทค",
+      "thai": "ภาวะหัวใจวาย",
+      "icon": "sf-critical",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-19",
+      "word": "Injury",
+      "partOfSpeech": "n",
+      "phonetic": "อิน-จู-รี่",
+      "thai": "การบาดเจ็บ",
+      "icon": "sf-injury",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-20",
+      "word": "Overdose",
+      "partOfSpeech": "n",
+      "phonetic": "โอ-เวอร์-โดส",
+      "thai": "การได้รับยาเกินขนาด",
+      "icon": "sf-critical",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-21",
+      "word": "Precaution",
+      "partOfSpeech": "n",
+      "phonetic": "พรี-คอ-ชั่น",
+      "thai": "มาตรการป้องกันไว้ก่อน",
+      "icon": "sf-hazard",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-22",
+      "word": "Risk",
+      "partOfSpeech": "n",
+      "phonetic": "ริสค์",
+      "thai": "ความเสี่ยง",
+      "icon": "sf-hazard",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-23",
+      "word": "Safety",
+      "partOfSpeech": "n",
+      "phonetic": "เซฟ-ตี้",
+      "thai": "ความปลอดภัย",
+      "icon": "sf-hazard",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-24",
+      "word": "Toxic",
+      "partOfSpeech": "adj",
+      "phonetic": "ทอค-ซิค",
+      "thai": "เป็นพิษ",
+      "icon": "sf-hazard",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-25",
+      "word": "Ambulance",
+      "partOfSpeech": "n",
+      "phonetic": "แอม-บิว-แลนซ์",
+      "thai": "รถพยาบาล",
+      "icon": "sf-emergency",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-26",
+      "word": "Aid",
+      "partOfSpeech": "n",
+      "phonetic": "เอด",
+      "thai": "การช่วยเหลือ",
+      "icon": "sf-firstaid",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-27",
+      "word": "Anesthesia",
+      "partOfSpeech": "n",
+      "phonetic": "แอน-เนส-ธี-เซีย",
+      "thai": "การระงับความรู้สึก / ยาชา",
+      "icon": "sf-medicine",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-28",
+      "word": "Antibiotics",
+      "partOfSpeech": "n",
+      "phonetic": "แอน-ตี้-ไบ-ออ-ติคส์",
+      "thai": "ยาปฏิชีวนะ",
+      "icon": "sf-medicine",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-29",
+      "word": "Antiseptic",
+      "partOfSpeech": "n",
+      "phonetic": "แอน-ติ-เซพ-ติค",
+      "thai": "น้ำยาหรือยาฆ่าเชื้อสำหรับบาดแผล",
+      "icon": "sf-firstaid",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-30",
+      "word": "Bandage",
+      "partOfSpeech": "n",
+      "phonetic": "แบน-เดจ",
+      "thai": "ผ้าพันแผล",
+      "icon": "sf-firstaid",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-31",
+      "word": "Blood pressure",
+      "partOfSpeech": "n",
+      "phonetic": "บลัด เพรส-เชอร์",
+      "thai": "ความดันโลหิต",
+      "icon": "sf-checkup",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-32",
+      "word": "Check-up",
+      "partOfSpeech": "n",
+      "phonetic": "เช็ค-อัพ",
+      "thai": "การตรวจสุขภาพ",
+      "icon": "sf-checkup",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-33",
+      "word": "Circulation",
+      "partOfSpeech": "n",
+      "phonetic": "เซอร์-คิว-เล-ชั่น",
+      "thai": "การไหลเวียนโลหิต",
+      "icon": "sf-symptom",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-34",
+      "word": "CPR",
+      "partOfSpeech": "n",
+      "phonetic": "ซี-พี-อาร์",
+      "thai": "การช่วยฟื้นคืนชีพ",
+      "icon": "sf-firstaid",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-35",
+      "word": "Crutches",
+      "partOfSpeech": "n",
+      "phonetic": "ครัช-เชส",
+      "thai": "ไม้ค้ำยัน",
+      "icon": "sf-recovery",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-36",
+      "word": "Dehydration",
+      "partOfSpeech": "n",
+      "phonetic": "ดี-ไฮ-เดร-ชั่น",
+      "thai": "ภาวะขาดน้ำ",
+      "icon": "sf-symptom",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-37",
+      "word": "Diagnosis",
+      "partOfSpeech": "n",
+      "phonetic": "ได-แอ็ก-โน-ซิส",
+      "thai": "การวินิจฉัย",
+      "icon": "sf-checkup",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-38",
+      "word": "Disinfect",
+      "partOfSpeech": "v",
+      "phonetic": "ดิส-อิน-เฟ็คท์",
+      "thai": "ฆ่าเชื้อบนพื้นผิวหรืออุปกรณ์",
+      "icon": "sf-hygiene",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-39",
+      "word": "Dizziness",
+      "partOfSpeech": "n",
+      "phonetic": "ดิส-ซิ-เนส",
+      "thai": "อาการเวียนศีรษะ",
+      "icon": "sf-symptom",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-40",
+      "word": "Examine",
+      "partOfSpeech": "v",
+      "phonetic": "เอ็ก-แซม-มิน",
+      "thai": "ตรวจร่างกายหรือตรวจประเมิน",
+      "icon": "sf-checkup",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-41",
+      "word": "Fever",
+      "partOfSpeech": "n",
+      "phonetic": "ฟี-เวอร์",
+      "thai": "ภาวะไข้",
+      "icon": "sf-symptom",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-42",
+      "word": "First Aid",
+      "partOfSpeech": "n",
+      "phonetic": "เฟิร์สท์ เอด",
+      "thai": "การปฐมพยาบาล",
+      "icon": "sf-firstaid",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-43",
+      "word": "Inhaler",
+      "partOfSpeech": "n",
+      "phonetic": "อิน-เฮ-เลอร์",
+      "thai": "ยาสูดพ่นหรืออุปกรณ์พ่นยา",
+      "icon": "sf-medicine",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-44",
+      "word": "Life support",
+      "partOfSpeech": "n",
+      "phonetic": "ไลฟ์ ซัพ-พอร์ท",
+      "thai": "ระบบหรือเครื่องช่วยพยุงชีวิต",
+      "icon": "sf-firstaid",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-45",
+      "word": "Prescription",
+      "partOfSpeech": "n",
+      "phonetic": "พรี-สคริพ-ชั่น",
+      "thai": "ใบสั่งยาหรือคำสั่งใช้ยา",
+      "icon": "sf-medicine",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-46",
+      "word": "Recovery",
+      "partOfSpeech": "n",
+      "phonetic": "รี-คัฟ-เวอ-รี่",
+      "thai": "การฟื้นตัว",
+      "icon": "sf-recovery",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-47",
+      "word": "Resuscitate",
+      "partOfSpeech": "v",
+      "phonetic": "รี-ซัส-ซิ-เทท",
+      "thai": "ช่วยให้ฟื้นคืนชีพ",
+      "icon": "sf-firstaid",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-48",
+      "word": "Sanitize",
+      "partOfSpeech": "v",
+      "phonetic": "แซน-นิ-ไทซ์",
+      "thai": "ทำความสะอาดเพื่อลดเชื้อโรค",
+      "icon": "sf-hygiene",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-49",
+      "word": "Treatment",
+      "partOfSpeech": "n",
+      "phonetic": "ทรีท-เมินท์",
+      "thai": "การรักษา",
+      "icon": "sf-recovery",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-50",
+      "word": "X-ray",
+      "partOfSpeech": "n",
+      "phonetic": "เอ็กซ์-เรย์",
+      "thai": "การเอกซเรย์หรือการถ่ายภาพรังสี",
+      "icon": "sf-checkup",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-51",
+      "word": "Allergic",
+      "partOfSpeech": "adj",
+      "phonetic": "อะ-เลอร์-จิค",
+      "thai": "มีอาการแพ้",
+      "icon": "sf-allergy",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-52",
+      "word": "Allergy",
+      "partOfSpeech": "n",
+      "phonetic": "แอล-เลอร์-จี้",
+      "thai": "อาการแพ้หรือภาวะภูมิแพ้",
+      "icon": "sf-allergy",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-53",
+      "word": "Asthma",
+      "partOfSpeech": "n",
+      "phonetic": "แอส-มา",
+      "thai": "โรคหอบหืด",
+      "icon": "sf-allergy",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-54",
+      "word": "Chronic",
+      "partOfSpeech": "adj",
+      "phonetic": "ครอน-นิค",
+      "thai": "เรื้อรัง",
+      "icon": "sf-allergy",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-55",
+      "word": "Condition",
+      "partOfSpeech": "n",
+      "phonetic": "คอน-ดิ-ชั่น",
+      "thai": "ภาวะสุขภาพหรือสภาวะทางการแพทย์",
+      "icon": "sf-allergy",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-56",
+      "word": "Contagious",
+      "partOfSpeech": "adj",
+      "phonetic": "คอน-เท-เจียส",
+      "thai": "สามารถติดต่อหรือแพร่เชื้อได้",
+      "icon": "sf-hygiene",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-57",
+      "word": "Disability",
+      "partOfSpeech": "n",
+      "phonetic": "ดิส-อะ-บิล-ลิ-ตี้",
+      "thai": "ความพิการหรือข้อจำกัดทางร่างกาย",
+      "icon": "sf-recovery",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-58",
+      "word": "Ergonomics",
+      "partOfSpeech": "n",
+      "phonetic": "เออร์-โก-นอม-มิคส์",
+      "thai": "การยศาสตร์ / การออกแบบงานตามหลักสรีรศาสตร์",
+      "icon": "sf-ppe",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-59",
+      "word": "Exhaustion",
+      "partOfSpeech": "n",
+      "phonetic": "เอ็ก-ซอส-ชั่น",
+      "thai": "ภาวะอ่อนล้ารุนแรง",
+      "icon": "sf-wellbeing",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-60",
+      "word": "Fatigue",
+      "partOfSpeech": "n",
+      "phonetic": "ฟะ-ทีก",
+      "thai": "ความเหนื่อยล้า",
+      "icon": "sf-wellbeing",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-61",
+      "word": "Helmet",
+      "partOfSpeech": "n",
+      "phonetic": "เฮล-เม็ท",
+      "thai": "หมวกนิรภัย",
+      "icon": "sf-ppe",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-62",
+      "word": "Hygiene",
+      "partOfSpeech": "n",
+      "phonetic": "ไฮ-จีน",
+      "thai": "สุขอนามัย",
+      "icon": "sf-hygiene",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-63",
+      "word": "Immune system",
+      "partOfSpeech": "n",
+      "phonetic": "อิม-มูน ซิส-เท็ม",
+      "thai": "ระบบภูมิคุ้มกัน",
+      "icon": "sf-wellbeing",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-64",
+      "word": "Immunization",
+      "partOfSpeech": "n",
+      "phonetic": "อิม-มู-ไน-เซ-ชั่น",
+      "thai": "การสร้างภูมิคุ้มกัน",
+      "icon": "sf-wellbeing",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-65",
+      "word": "Infection",
+      "partOfSpeech": "n",
+      "phonetic": "อิน-เฟ็ค-ชั่น",
+      "thai": "การติดเชื้อ",
+      "icon": "sf-hygiene",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-66",
+      "word": "Insomnia",
+      "partOfSpeech": "n",
+      "phonetic": "อิน-ซอม-เนีย",
+      "thai": "ภาวะนอนไม่หลับ",
+      "icon": "sf-symptom",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-67",
+      "word": "Insurance",
+      "partOfSpeech": "n",
+      "phonetic": "อิน-ชัว-เรินส์",
+      "thai": "การประกันภัยหรือประกันสุขภาพ",
+      "icon": "sf-wellbeing",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-68",
+      "word": "Isolation",
+      "partOfSpeech": "n",
+      "phonetic": "ไอ-โซ-เล-ชั่น",
+      "thai": "การแยกผู้ป่วยหรือการแยกพื้นที่",
+      "icon": "sf-hygiene",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-69",
+      "word": "Mental health",
+      "partOfSpeech": "n",
+      "phonetic": "เมน-เทิล เฮลธ์",
+      "thai": "สุขภาพจิต",
+      "icon": "sf-wellbeing",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-70",
+      "word": "Nausea",
+      "partOfSpeech": "n",
+      "phonetic": "นอ-เซีย",
+      "thai": "อาการคลื่นไส้",
+      "icon": "sf-symptom",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-71",
+      "word": "Preventive care",
+      "partOfSpeech": "n",
+      "phonetic": "พรี-เวน-ทิฟ แคร์",
+      "thai": "การดูแลสุขภาพเชิงป้องกัน",
+      "icon": "sf-wellbeing",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-72",
+      "word": "Quarantine",
+      "partOfSpeech": "n",
+      "phonetic": "ควอ-รัน-ทีน",
+      "thai": "การกักกันโรคหรือการกักตัว",
+      "icon": "sf-hygiene",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-73",
+      "word": "Side effects",
+      "partOfSpeech": "n",
+      "phonetic": "ไซด์ เอฟ-เฟ็คท์ส์",
+      "thai": "ผลข้างเคียง",
+      "icon": "sf-allergy",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-74",
+      "word": "Symptom",
+      "partOfSpeech": "n",
+      "phonetic": "ซิมพ์-ทัม",
+      "thai": "อาการหรืออาการแสดง",
+      "icon": "sf-allergy",
+      "level": "B1",
+      "altScript": []
+    },
+    {
+      "id": "sf-75",
+      "word": "Vaccination",
+      "partOfSpeech": "n",
+      "phonetic": "แวค-ซิ-เน-ชั่น",
+      "thai": "การฉีดวัคซีน",
+      "icon": "sf-wellbeing",
+      "level": "B1",
+      "altScript": []
+    }
   ]
 }

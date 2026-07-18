@@ -16,6 +16,7 @@ export const VOCAB_CATEGORIES = [
   { id: "transportation", label: "การเดินทาง", emoji: "🚗" },
   { id: "hobbies", label: "งานอดิเรก", emoji: "⚽" },
   { id: "feelings", label: "ความรู้สึก", emoji: "😊" },
+  { id: "safety_officer", label: "งานความปลอดภัย (Safety Officer)", emoji: "🦺" },
 ];
 
 export function getVocab(category) {
@@ -39,6 +40,7 @@ export function toCard(entry) {
     thai: entry.thai,
     icon: entry.icon,
     level: entry.level,
+    partOfSpeech: entry.partOfSpeech,
     segments: entry.altScript,
     value: entry.value,
     hex: entry.hex,

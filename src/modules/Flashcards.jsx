@@ -94,6 +94,7 @@ function FlashcardView({ selection, onBack }) {
               <Illustration item={card} />
             </div>
             <AnnotatedText as="p" className="flashcard-text en-text" plain={card.display} segments={card.segments} />
+            {card.partOfSpeech && <p className="verb-group en-text">{card.partOfSpeech}</p>}
             {showPhonetic && <p className="flashcard-romaji">{card.reading}</p>}
             {showThai && <p className="flashcard-thai th-text">{card.thai}</p>}
             <p className="flashcard-hint th-text">แตะเพื่อฟังเสียง 🔊</p>

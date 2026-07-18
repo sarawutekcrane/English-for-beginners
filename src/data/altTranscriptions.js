@@ -14,4 +14,12 @@ export const ALT_TRANSCRIPTIONS = {
   Father: ["farther"],
   Bread: ["bred"],
   Rice: ["rise"],
+  // Phase 9: "CPR" spoken as "C" "P" "R" already matches directly (spaces
+  // strip out the same as the target's own no-space form), but browsers
+  // sometimes phonetically spell out the individual letters as words instead.
+  CPR: ["see pee are", "seepeeare"],
+  // Phase 9: "X-ray" said as "x ray" already matches directly (the hyphen
+  // and the space both strip to nothing), but "X" is sometimes transcribed
+  // as the word "ex" instead of the letter.
+  "X-ray": ["exray", "ecks ray"],
 };

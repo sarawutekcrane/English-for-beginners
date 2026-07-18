@@ -190,6 +190,7 @@ function RecallView({ category, onBack }) {
           {submitted && (
             <p className="quiz-reveal en-text">
               เฉลย: <AnnotatedText plain={card.display} segments={card.segments} />
+              {card.partOfSpeech ? ` (${card.partOfSpeech})` : ""}
             </p>
           )}
 

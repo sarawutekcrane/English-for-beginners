@@ -894,5 +894,65 @@
       "reading": "คราวด์",
       "thai": "ฝูงชน"
     }
+  ],
+  "sf-08": [
+    {
+      "id": "cf-sf-08-1",
+      "display": "Comma",
+      "audioText": "Comma",
+      "answerText": "Comma",
+      "reading": "คอม-ม่า",
+      "thai": "เครื่องหมายจุลภาค"
+    }
+  ],
+  "sf-05": [
+    {
+      "id": "cf-sf-05-1",
+      "display": "Booze",
+      "audioText": "Booze",
+      "answerText": "Booze",
+      "reading": "บูซ",
+      "thai": "เครื่องดื่มแอลกอฮอล์ (คำไม่เป็นทางการ)"
+    }
+  ],
+  "sf-07": [
+    {
+      "id": "cf-sf-07-1",
+      "display": "Joking",
+      "audioText": "Joking",
+      "answerText": "Joking",
+      "reading": "โจ-กิ้ง",
+      "thai": "การพูดเล่น"
+    }
+  ],
+  "sf-75": [
+    {
+      "id": "cf-sf-75-1",
+      "display": "Vacation",
+      "audioText": "Vacation",
+      "answerText": "Vacation",
+      "reading": "เว-เค-ชั่น",
+      "thai": "วันหยุดพักผ่อน"
+    }
+  ],
+  "sf-35": [
+    {
+      "id": "cf-sf-35-1",
+      "display": "Crushes",
+      "audioText": "Crushes",
+      "answerText": "Crushes",
+      "reading": "ครัช-เชส",
+      "thai": "บดขยี้ / แอบชอบ (คำกริยาเติม -es)"
+    }
+  ],
+  "sf-26": [
+    {
+      "id": "cf-sf-26-1",
+      "display": "Aide",
+      "audioText": "Aide",
+      "answerText": "Aide",
+      "reading": "เอด",
+      "thai": "ผู้ช่วย"
+    }
   ]
 }

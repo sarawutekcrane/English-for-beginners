@@ -185,6 +185,7 @@ function SpeakingView({ category, onBack }) {
           </div>
 
           <AnnotatedText as="p" className="flashcard-text en-text" plain={card.display} segments={card.segments} />
+          {card.partOfSpeech && <p className="verb-group en-text">{card.partOfSpeech}</p>}
 
           <button className="btn btn-outline btn-sm" onClick={hearExample}>
             🔊 ฟังตัวอย่างเสียง

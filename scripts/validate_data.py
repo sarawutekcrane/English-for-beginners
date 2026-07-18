@@ -40,6 +40,8 @@ for cat_id, entries in vocab.items():
             fail(f"empty thai in {where}")
         if "altScript" in e and e["altScript"]:
             check_altscript(e["altScript"], e.get("word", e.get("text", "")), where)
+        if cat_id == "safety_officer" and not e.get("partOfSpeech", "").strip():
+            fail(f"missing partOfSpeech in {where}")
 
 # cross-check icon keys against dispatcher files
 illus_dir = os.path.join(SRC, "illustrations")
