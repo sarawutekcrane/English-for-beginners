@@ -2,15 +2,13 @@ import { useState } from "react";
 import Mascot from "./Mascot";
 import SettingsPanel from "./SettingsPanel";
 
-// Phase 0 placeholder: real learning modules (Flashcards, Listening Quiz,
-// etc.) land in later phases. This single entry point exists only to prove
-// the app shell, Context, and data pipeline work end-to-end.
+// More learning modules (Listening Quiz, etc.) land in later phases.
 const MODULES = [
   {
-    id: "scaffoldCheck",
-    emoji: "🧪",
-    title: "ทดสอบระบบ",
-    subtitle: "หน้าทดสอบชั่วคราว (Phase 0)",
+    id: "flashcards",
+    emoji: "🎴",
+    title: "แฟลชการ์ด",
+    subtitle: "คำศัพท์ภาษาอังกฤษ",
     color: "pink",
   },
 ];

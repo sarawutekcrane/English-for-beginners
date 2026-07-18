@@ -1,4 +1,4 @@
-import { Frame, Chibi, Sun } from "./shared";
+import { Frame, Chibi, Sun, INK, Sparkle } from "./shared";
 
 export const greetingIcons = {
   "hello-wave": (id) => (
@@ -31,6 +31,18 @@ export const greetingIcons = {
         strokeLinejoin="round"
       />
       <Chibi shirt="#ffd166" armPose="bow" face="happy" />
+    </Frame>
+  ),
+  "wave-goodbye": (id) => (
+    <Frame id={id}>
+      <Chibi shirt="#8fcfff" armPose="wave" face="smile" flip />
+      <path d="M 30 60 Q 20 50 26 40" stroke={INK} strokeWidth="2.5" fill="none" opacity="0.35" />
+    </Frame>
+  ),
+  "please-hands": (id) => (
+    <Frame id={id}>
+      <Sparkle x="146" y="48" s="0.9" />
+      <Chibi shirt="#ffd6e8" armPose="praying" face="smile" />
     </Frame>
   ),
 };

@@ -1,7 +1,11 @@
 import { greetingIcons } from "./greetings";
+import { familyIcons } from "./family";
+import { foodIcons } from "./food";
 
 const VOCAB_ICONS = {
   ...greetingIcons,
+  ...familyIcons,
+  ...foodIcons,
 };
 
 /** Renders the correct flat-SVG illustration for a vocabulary card. */

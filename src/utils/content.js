@@ -1,6 +1,10 @@
 import vocabulary from "../data/vocabulary.json";
 
-export const VOCAB_CATEGORIES = [{ id: "greetings", label: "คำทักทาย", emoji: "👋" }];
+export const VOCAB_CATEGORIES = [
+  { id: "greetings", label: "คำทักทาย", emoji: "👋" },
+  { id: "family", label: "ครอบครัว", emoji: "👪" },
+  { id: "food", label: "อาหารและเครื่องดื่ม", emoji: "🍽️" },
+];
 
 export function getVocab(category) {
   return vocabulary[category] || [];

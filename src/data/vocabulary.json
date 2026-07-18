@@ -49,6 +49,131 @@
           "text": " you"
         }
       ]
+    },
+    {
+      "id": "gr-05",
+      "word": "Goodbye",
+      "phonetic": "/ˌɡʊdˈbaɪ/",
+      "thai": "ลาก่อน",
+      "icon": "wave-goodbye",
+      "level": "A2",
+      "altScript": [
+        {
+          "text": "Good"
+        },
+        {
+          "text": "BYE",
+          "reading": "bye"
+        }
+      ]
+    },
+    {
+      "id": "gr-06",
+      "word": "Please",
+      "phonetic": "/pliːz/",
+      "thai": "กรุณา",
+      "icon": "please-hands",
+      "level": "A2"
+    }
+  ],
+  "family": [
+    {
+      "id": "fa-01",
+      "word": "Mother",
+      "phonetic": "/ˈmʌðər/",
+      "thai": "แม่",
+      "icon": "family-mother",
+      "level": "A2"
+    },
+    {
+      "id": "fa-02",
+      "word": "Father",
+      "phonetic": "/ˈfɑːðər/",
+      "thai": "พ่อ",
+      "icon": "family-father",
+      "level": "A2"
+    },
+    {
+      "id": "fa-03",
+      "word": "Sister",
+      "phonetic": "/ˈsɪstər/",
+      "thai": "พี่สาว หรือ น้องสาว",
+      "icon": "family-sister",
+      "level": "A2"
+    },
+    {
+      "id": "fa-04",
+      "word": "Brother",
+      "phonetic": "/ˈbrʌðər/",
+      "thai": "พี่ชาย หรือ น้องชาย",
+      "icon": "family-brother",
+      "level": "A2"
+    },
+    {
+      "id": "fa-05",
+      "word": "Grandmother",
+      "phonetic": "/ˈɡrænˌmʌðər/",
+      "thai": "ย่า หรือ ยาย",
+      "icon": "family-grandmother",
+      "level": "B1"
+    },
+    {
+      "id": "fa-06",
+      "word": "Grandfather",
+      "phonetic": "/ˈɡrænˌfɑːðər/",
+      "thai": "ปู่ หรือ ตา",
+      "icon": "family-grandfather",
+      "level": "B1"
+    }
+  ],
+  "food": [
+    {
+      "id": "fo-01",
+      "word": "Apple",
+      "phonetic": "/ˈæpəl/",
+      "thai": "แอปเปิ้ล",
+      "icon": "food-apple",
+      "level": "A2"
+    },
+    {
+      "id": "fo-02",
+      "word": "Bread",
+      "phonetic": "/brɛd/",
+      "thai": "ขนมปัง",
+      "icon": "food-bread",
+      "level": "A2"
+    },
+    {
+      "id": "fo-03",
+      "word": "Water",
+      "phonetic": "/ˈwɔːtər/",
+      "thai": "น้ำ",
+      "icon": "food-water",
+      "level": "A2"
+    },
+    {
+      "id": "fo-04",
+      "word": "Rice",
+      "phonetic": "/raɪs/",
+      "thai": "ข้าว",
+      "icon": "food-rice",
+      "level": "A2"
+    },
+    {
+      "id": "fo-05",
+      "word": "Chicken",
+      "phonetic": "/ˈtʃɪkɪn/",
+      "thai": "ไก่",
+      "icon": "food-chicken",
+      "level": "B1"
+    },
+    {
+      "id": "fo-06",
+      "word": "Coffee",
+      "phonetic": "/ˈkɒfi/",
+      "thai": "กาแฟ",
+      "icon": "food-coffee",
+      "level": "B1"
     }
   ]
 }

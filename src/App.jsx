@@ -1,15 +1,15 @@
 import { useEffect, useState } from "react";
 import HomeMenu from "./components/HomeMenu";
 import SettingsPanel from "./components/SettingsPanel";
-import ScaffoldingPreview from "./components/ScaffoldingPreview";
+import Flashcards from "./modules/Flashcards";
 import { playClick } from "./utils/sound";
 
 // Forward-compatible with the module UI patterns future phases will add
-// (Flashcards, Listening Quiz, etc. reuse these same class names).
+// (Listening Quiz, etc. reuse these same class names).
 const CLICKABLE_SELECTOR = "button, .topic-card, .reply-option, .quiz-option, .chunk-pill";
 
 const TITLES = {
-  scaffoldCheck: "ทดสอบระบบ",
+  flashcards: "แฟลชการ์ด",
 };
 
 function App() {
@@ -51,7 +51,7 @@ function App() {
               ⚙️
             </button>
           </div>
-          {view === "scaffoldCheck" && <ScaffoldingPreview key={instanceKey} />}
+          {view === "flashcards" && <Flashcards key={instanceKey} />}
           {settingsOpen && <SettingsPanel onClose={() => setSettingsOpen(false)} />}
         </>
       )}
