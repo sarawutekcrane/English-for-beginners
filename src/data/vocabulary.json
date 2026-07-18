@@ -74,6 +74,118 @@
       "thai": "กรุณา",
       "icon": "please-hands",
       "level": "A2"
+    },
+    {
+      "id": "gr-07",
+      "word": "Good afternoon",
+      "phonetic": "/ɡʊd ˌæftərˈnuːn/",
+      "thai": "สวัสดีตอนบ่าย",
+      "icon": "sunrise",
+      "level": "A2"
+    },
+    {
+      "id": "gr-08",
+      "word": "Good night",
+      "phonetic": "/ɡʊd naɪt/",
+      "thai": "ราตรีสวัสดิ์",
+      "icon": "moon-sleep",
+      "level": "A2"
+    },
+    {
+      "id": "gr-09",
+      "word": "How are you?",
+      "phonetic": "/haʊ ɑːr juː/",
+      "thai": "สบายดีไหม",
+      "icon": "question-face",
+      "level": "A2"
+    },
+    {
+      "id": "gr-10",
+      "word": "I'm fine, thank you.",
+      "phonetic": "/aɪm faɪn, θæŋk juː/",
+      "thai": "ฉันสบายดี ขอบคุณ",
+      "icon": "happy-face",
+      "level": "A2"
+    },
+    {
+      "id": "gr-11",
+      "word": "Nice to meet you.",
+      "phonetic": "/naɪs tə miːt juː/",
+      "thai": "ยินดีที่ได้รู้จัก",
+      "icon": "handshake",
+      "level": "A2"
+    },
+    {
+      "id": "gr-12",
+      "word": "See you later.",
+      "phonetic": "/siː juː ˈleɪtər/",
+      "thai": "แล้วเจอกันใหม่",
+      "icon": "see-you-later",
+      "level": "A2"
+    },
+    {
+      "id": "gr-13",
+      "word": "Excuse me.",
+      "phonetic": "/ɪkˈskjuːz miː/",
+      "thai": "ขอโทษครับ",
+      "icon": "excuse-me-leave",
+      "level": "A2"
+    },
+    {
+      "id": "gr-14",
+      "word": "I'm sorry.",
+      "phonetic": "/aɪm ˈsɒri/",
+      "thai": "ฉันขอโทษ",
+      "icon": "sorry-sweat",
+      "level": "A2"
+    },
+    {
+      "id": "gr-15",
+      "word": "You're welcome.",
+      "phonetic": "/jʊr ˈwɛlkəm/",
+      "thai": "ยินดีต้อนรับ",
+      "icon": "youre-welcome",
+      "level": "A2"
+    },
+    {
+      "id": "gr-16",
+      "word": "What's your name?",
+      "phonetic": "/wʊts jɔːr neɪm/",
+      "thai": "คุณชื่ออะไร",
+      "icon": "question-face",
+      "level": "A2"
+    },
+    {
+      "id": "gr-17",
+      "word": "My name is Sarah.",
+      "phonetic": "/maɪ neɪm ɪz ˈsɛrə/",
+      "thai": "ฉันชื่อซาร่า",
+      "icon": "hello-wave",
+      "level": "A2"
+    },
+    {
+      "id": "gr-18",
+      "word": "Where are you from?",
+      "phonetic": "/wɛr ɑːr juː frʌm/",
+      "thai": "คุณมาจากไหน",
+      "icon": "question-face",
+      "level": "B1"
+    },
+    {
+      "id": "gr-19",
+      "word": "I don't understand.",
+      "phonetic": "/aɪ doʊnt ˌʌndərˈstænd/",
+      "thai": "ฉันไม่เข้าใจ",
+      "icon": "sad-bow",
+      "level": "B1"
+    },
+    {
+      "id": "gr-20",
+      "word": "Can you repeat that, please?",
+      "phonetic": "/kæn juː rɪˈpiːt ðæt, pliːz/",
+      "thai": "ช่วยพูดอีกครั้งได้ไหม",
+      "icon": "please-hands",
+      "level": "B1"
     }
   ],
   "family": [
@@ -124,6 +236,118 @@
       "thai": "ปู่ หรือ ตา",
       "icon": "family-grandfather",
       "level": "B1"
+    },
+    {
+      "id": "fa-07",
+      "word": "Son",
+      "phonetic": "/sʌn/",
+      "thai": "ลูกชาย",
+      "icon": "family-son",
+      "level": "A2"
+    },
+    {
+      "id": "fa-08",
+      "word": "Daughter",
+      "phonetic": "/ˈdɔːtər/",
+      "thai": "ลูกสาว",
+      "icon": "family-daughter",
+      "level": "A2"
+    },
+    {
+      "id": "fa-09",
+      "word": "Husband",
+      "phonetic": "/ˈhʌzbənd/",
+      "thai": "สามี",
+      "icon": "family-husband",
+      "level": "A2"
+    },
+    {
+      "id": "fa-10",
+      "word": "Wife",
+      "phonetic": "/waɪf/",
+      "thai": "ภรรยา",
+      "icon": "family-wife",
+      "level": "A2"
+    },
+    {
+      "id": "fa-11",
+      "word": "Aunt",
+      "phonetic": "/ænt/",
+      "thai": "ป้า น้า หรือ อา (ฝ่ายหญิง)",
+      "icon": "family-aunt",
+      "level": "B1"
+    },
+    {
+      "id": "fa-12",
+      "word": "Uncle",
+      "phonetic": "/ˈʌŋkəl/",
+      "thai": "ลุง น้า หรือ อา (ฝ่ายชาย)",
+      "icon": "family-uncle",
+      "level": "B1"
+    },
+    {
+      "id": "fa-13",
+      "word": "Cousin",
+      "phonetic": "/ˈkʌzən/",
+      "thai": "ลูกพี่ลูกน้อง",
+      "icon": "family-cousin",
+      "level": "B1"
+    },
+    {
+      "id": "fa-14",
+      "word": "Niece",
+      "phonetic": "/niːs/",
+      "thai": "หลานสาว",
+      "icon": "family-niece",
+      "level": "B1"
+    },
+    {
+      "id": "fa-15",
+      "word": "Nephew",
+      "phonetic": "/ˈnɛfjuː/",
+      "thai": "หลานชาย",
+      "icon": "family-nephew",
+      "level": "B1"
+    },
+    {
+      "id": "fa-16",
+      "word": "Baby",
+      "phonetic": "/ˈbeɪbi/",
+      "thai": "ทารก",
+      "icon": "family-baby",
+      "level": "A2"
+    },
+    {
+      "id": "fa-17",
+      "word": "Parents",
+      "phonetic": "/ˈpɛrənts/",
+      "thai": "พ่อแม่",
+      "icon": "family-parents",
+      "level": "A2"
+    },
+    {
+      "id": "fa-18",
+      "word": "Children",
+      "phonetic": "/ˈtʃɪldrən/",
+      "thai": "ลูกๆ หรือ เด็กๆ",
+      "icon": "family-children",
+      "level": "A2"
+    },
+    {
+      "id": "fa-19",
+      "word": "Grandparents",
+      "phonetic": "/ˈɡrænˌpɛrənts/",
+      "thai": "ปู่ย่าตายาย",
+      "icon": "family-grandparents",
+      "level": "B1"
+    },
+    {
+      "id": "fa-20",
+      "word": "Grandchild",
+      "phonetic": "/ˈɡrænˌtʃaɪld/",
+      "thai": "หลาน",
+      "icon": "family-grandchild",
+      "level": "B1"
     }
   ],
   "food": [
@@ -165,7 +389,7 @@
       "phonetic": "/ˈtʃɪkɪn/",
       "thai": "ไก่",
       "icon": "food-chicken",
-      "level": "B1"
+      "level": "A2"
     },
     {
       "id": "fo-06",
@@ -173,6 +397,2102 @@
       "phonetic": "/ˈkɒfi/",
       "thai": "กาแฟ",
       "icon": "food-coffee",
+      "level": "A2"
+    },
+    {
+      "id": "fo-07",
+      "word": "Milk",
+      "phonetic": "/mɪlk/",
+      "thai": "นม",
+      "icon": "food-milk",
+      "level": "A2"
+    },
+    {
+      "id": "fo-08",
+      "word": "Egg",
+      "phonetic": "/ɛɡ/",
+      "thai": "ไข่",
+      "icon": "food-egg",
+      "level": "A2"
+    },
+    {
+      "id": "fo-09",
+      "word": "Fish",
+      "phonetic": "/fɪʃ/",
+      "thai": "ปลา",
+      "icon": "food-fish",
+      "level": "A2"
+    },
+    {
+      "id": "fo-10",
+      "word": "Beef",
+      "phonetic": "/biːf/",
+      "thai": "เนื้อวัว",
+      "icon": "food-beef",
+      "level": "A2"
+    },
+    {
+      "id": "fo-11",
+      "word": "Vegetable",
+      "phonetic": "/ˈvɛdʒtəbəl/",
+      "thai": "ผัก",
+      "icon": "food-vegetable",
+      "level": "A2"
+    },
+    {
+      "id": "fo-12",
+      "word": "Fruit",
+      "phonetic": "/fruːt/",
+      "thai": "ผลไม้",
+      "icon": "food-fruit",
+      "level": "A2"
+    },
+    {
+      "id": "fo-13",
+      "word": "Tea",
+      "phonetic": "/tiː/",
+      "thai": "ชา",
+      "icon": "food-tea",
+      "level": "A2"
+    },
+    {
+      "id": "fo-14",
+      "word": "Juice",
+      "phonetic": "/dʒuːs/",
+      "thai": "น้ำผลไม้",
+      "icon": "food-juice",
+      "level": "A2"
+    },
+    {
+      "id": "fo-15",
+      "word": "Soup",
+      "phonetic": "/suːp/",
+      "thai": "ซุป",
+      "icon": "food-soup",
+      "level": "B1"
+    },
+    {
+      "id": "fo-16",
+      "word": "Salad",
+      "phonetic": "/ˈsæləd/",
+      "thai": "สลัด",
+      "icon": "food-salad",
+      "level": "B1"
+    },
+    {
+      "id": "fo-17",
+      "word": "Noodles",
+      "phonetic": "/ˈnuːdəlz/",
+      "thai": "ก๋วยเตี๋ยว",
+      "icon": "food-noodles",
+      "level": "B1"
+    },
+    {
+      "id": "fo-18",
+      "word": "Cheese",
+      "phonetic": "/tʃiːz/",
+      "thai": "ชีส",
+      "icon": "food-cheese",
+      "level": "B1"
+    },
+    {
+      "id": "fo-19",
+      "word": "Butter",
+      "phonetic": "/ˈbʌtər/",
+      "thai": "เนย",
+      "icon": "food-butter",
+      "level": "B1"
+    },
+    {
+      "id": "fo-20",
+      "word": "Sugar",
+      "phonetic": "/ˈʃʊɡər/",
+      "thai": "น้ำตาล",
+      "icon": "food-sugar",
+      "level": "B1"
+    }
+  ],
+  "numbers": [
+    {
+      "id": "nu-01",
+      "word": "One",
+      "phonetic": "/wʌn/",
+      "thai": "หนึ่ง",
+      "icon": "number",
+      "level": "A2",
+      "value": 1
+    },
+    {
+      "id": "nu-02",
+      "word": "Two",
+      "phonetic": "/tuː/",
+      "thai": "สอง",
+      "icon": "number",
+      "level": "A2",
+      "value": 2
+    },
+    {
+      "id": "nu-03",
+      "word": "Three",
+      "phonetic": "/θriː/",
+      "thai": "สาม",
+      "icon": "number",
+      "level": "A2",
+      "value": 3
+    },
+    {
+      "id": "nu-04",
+      "word": "Four",
+      "phonetic": "/fɔːr/",
+      "thai": "สี่",
+      "icon": "number",
+      "level": "A2",
+      "value": 4
+    },
+    {
+      "id": "nu-05",
+      "word": "Five",
+      "phonetic": "/faɪv/",
+      "thai": "ห้า",
+      "icon": "number",
+      "level": "A2",
+      "value": 5
+    },
+    {
+      "id": "nu-06",
+      "word": "Six",
+      "phonetic": "/sɪks/",
+      "thai": "หก",
+      "icon": "number",
+      "level": "A2",
+      "value": 6
+    },
+    {
+      "id": "nu-07",
+      "word": "Seven",
+      "phonetic": "/ˈsɛvən/",
+      "thai": "เจ็ด",
+      "icon": "number",
+      "level": "A2",
+      "value": 7
+    },
+    {
+      "id": "nu-08",
+      "word": "Eight",
+      "phonetic": "/eɪt/",
+      "thai": "แปด",
+      "icon": "number",
+      "level": "A2",
+      "value": 8
+    },
+    {
+      "id": "nu-09",
+      "word": "Nine",
+      "phonetic": "/naɪn/",
+      "thai": "เก้า",
+      "icon": "number",
+      "level": "A2",
+      "value": 9
+    },
+    {
+      "id": "nu-10",
+      "word": "Ten",
+      "phonetic": "/tɛn/",
+      "thai": "สิบ",
+      "icon": "number",
+      "level": "A2",
+      "value": 10
+    },
+    {
+      "id": "nu-11",
+      "word": "Eleven",
+      "phonetic": "/ɪˈlɛvən/",
+      "thai": "สิบเอ็ด",
+      "icon": "number",
+      "level": "A2",
+      "value": 11
+    },
+    {
+      "id": "nu-12",
+      "word": "Twelve",
+      "phonetic": "/twɛlv/",
+      "thai": "สิบสอง",
+      "icon": "number",
+      "level": "A2",
+      "value": 12
+    },
+    {
+      "id": "nu-13",
+      "word": "Thirteen",
+      "phonetic": "/ˌθɜːrˈtiːn/",
+      "thai": "สิบสาม",
+      "icon": "number",
+      "level": "A2",
+      "value": 13
+    },
+    {
+      "id": "nu-14",
+      "word": "Fourteen",
+      "phonetic": "/ˌfɔːrˈtiːn/",
+      "thai": "สิบสี่",
+      "icon": "number",
+      "level": "A2",
+      "value": 14
+    },
+    {
+      "id": "nu-15",
+      "word": "Fifteen",
+      "phonetic": "/ˌfɪfˈtiːn/",
+      "thai": "สิบห้า",
+      "icon": "number",
+      "level": "A2",
+      "value": 15
+    },
+    {
+      "id": "nu-16",
+      "word": "Sixteen",
+      "phonetic": "/ˌsɪksˈtiːn/",
+      "thai": "สิบหก",
+      "icon": "number",
+      "level": "B1",
+      "value": 16
+    },
+    {
+      "id": "nu-17",
+      "word": "Seventeen",
+      "phonetic": "/ˌsɛvənˈtiːn/",
+      "thai": "สิบเจ็ด",
+      "icon": "number",
+      "level": "B1",
+      "value": 17
+    },
+    {
+      "id": "nu-18",
+      "word": "Eighteen",
+      "phonetic": "/ˌeɪˈtiːn/",
+      "thai": "สิบแปด",
+      "icon": "number",
+      "level": "B1",
+      "value": 18
+    },
+    {
+      "id": "nu-19",
+      "word": "Nineteen",
+      "phonetic": "/ˌnaɪnˈtiːn/",
+      "thai": "สิบเก้า",
+      "icon": "number",
+      "level": "B1",
+      "value": 19
+    },
+    {
+      "id": "nu-20",
+      "word": "Twenty",
+      "phonetic": "/ˈtwɛnti/",
+      "thai": "ยี่สิบ",
+      "icon": "number",
+      "level": "B1",
+      "value": 20
+    }
+  ],
+  "colors": [
+    {
+      "id": "co-01",
+      "word": "Red",
+      "phonetic": "/rɛd/",
+      "thai": "สีแดง",
+      "icon": "color",
+      "level": "A2",
+      "hex": "#F45C5C"
+    },
+    {
+      "id": "co-02",
+      "word": "Orange",
+      "phonetic": "/ˈɒrɪndʒ/",
+      "thai": "สีส้ม",
+      "icon": "color",
+      "level": "A2",
+      "hex": "#FFA552"
+    },
+    {
+      "id": "co-03",
+      "word": "Yellow",
+      "phonetic": "/ˈjɛloʊ/",
+      "thai": "สีเหลือง",
+      "icon": "color",
+      "level": "A2",
+      "hex": "#FFD166"
+    },
+    {
+      "id": "co-04",
+      "word": "Green",
+      "phonetic": "/ɡriːn/",
+      "thai": "สีเขียว",
+      "icon": "color",
+      "level": "A2",
+      "hex": "#7BCF9E"
+    },
+    {
+      "id": "co-05",
+      "word": "Blue",
+      "phonetic": "/bluː/",
+      "thai": "สีฟ้า",
+      "icon": "color",
+      "level": "A2",
+      "hex": "#4C8DF0"
+    },
+    {
+      "id": "co-06",
+      "word": "Purple",
+      "phonetic": "/ˈpɜːrpəl/",
+      "thai": "สีม่วง",
+      "icon": "color",
+      "level": "A2",
+      "hex": "#C9A0F5"
+    },
+    {
+      "id": "co-07",
+      "word": "Pink",
+      "phonetic": "/pɪŋk/",
+      "thai": "สีชมพู",
+      "icon": "color",
+      "level": "A2",
+      "hex": "#FF9EC7"
+    },
+    {
+      "id": "co-08",
+      "word": "Brown",
+      "phonetic": "/braʊn/",
+      "thai": "สีน้ำตาล",
+      "icon": "color",
+      "level": "A2",
+      "hex": "#A2704C"
+    },
+    {
+      "id": "co-09",
+      "word": "Black",
+      "phonetic": "/blæk/",
+      "thai": "สีดำ",
+      "icon": "color",
+      "level": "A2",
+      "hex": "#3A3A3A"
+    },
+    {
+      "id": "co-10",
+      "word": "White",
+      "phonetic": "/waɪt/",
+      "thai": "สีขาว",
+      "icon": "color",
+      "level": "A2",
+      "hex": "#FDFDFD"
+    },
+    {
+      "id": "co-11",
+      "word": "Gray",
+      "phonetic": "/ɡreɪ/",
+      "thai": "สีเทา",
+      "icon": "color",
+      "level": "A2",
+      "hex": "#A9A9A9"
+    },
+    {
+      "id": "co-12",
+      "word": "Gold",
+      "phonetic": "/ɡoʊld/",
+      "thai": "สีทอง",
+      "icon": "color",
+      "level": "B1",
+      "hex": "#F6D34C"
+    },
+    {
+      "id": "co-13",
+      "word": "Silver",
+      "phonetic": "/ˈsɪlvər/",
+      "thai": "สีเงิน",
+      "icon": "color",
+      "level": "B1",
+      "hex": "#C7C7C7"
+    },
+    {
+      "id": "co-14",
+      "word": "Light blue",
+      "phonetic": "/laɪt bluː/",
+      "thai": "สีฟ้าอ่อน",
+      "icon": "color",
+      "level": "B1",
+      "hex": "#8FCFFF"
+    },
+    {
+      "id": "co-15",
+      "word": "Dark green",
+      "phonetic": "/dɑːrk ɡriːn/",
+      "thai": "สีเขียวเข้ม",
+      "icon": "color",
+      "level": "B1",
+      "hex": "#2E7D4F"
+    },
+    {
+      "id": "co-16",
+      "word": "Turquoise",
+      "phonetic": "/ˈtɜːrkwɔɪz/",
+      "thai": "สีเขียวอมฟ้า",
+      "icon": "color",
+      "level": "B1",
+      "hex": "#4FD1C5"
+    },
+    {
+      "id": "co-17",
+      "word": "Beige",
+      "phonetic": "/beɪʒ/",
+      "thai": "สีเบจ",
+      "icon": "color",
+      "level": "B1",
+      "hex": "#E8DCC0"
+    },
+    {
+      "id": "co-18",
+      "word": "Navy blue",
+      "phonetic": "/ˈneɪvi bluː/",
+      "thai": "สีกรมท่า",
+      "icon": "color",
+      "level": "B1",
+      "hex": "#1F3B73"
+    },
+    {
+      "id": "co-19",
+      "word": "Maroon",
+      "phonetic": "/məˈruːn/",
+      "thai": "สีแดงเลือดหมู",
+      "icon": "color",
+      "level": "B1",
+      "hex": "#7A1F2B"
+    },
+    {
+      "id": "co-20",
+      "word": "Lime green",
+      "phonetic": "/laɪm ɡriːn/",
+      "thai": "สีเขียวมะนาว",
+      "icon": "color",
+      "level": "B1",
+      "hex": "#A8E063"
+    }
+  ],
+  "daysTime": [
+    {
+      "id": "dt-01",
+      "word": "Monday",
+      "phonetic": "/ˈmʌndeɪ/",
+      "thai": "วันจันทร์",
+      "icon": "dayTime-monday",
+      "level": "A2"
+    },
+    {
+      "id": "dt-02",
+      "word": "Tuesday",
+      "phonetic": "/ˈtuːzdeɪ/",
+      "thai": "วันอังคาร",
+      "icon": "dayTime-tuesday",
+      "level": "A2"
+    },
+    {
+      "id": "dt-03",
+      "word": "Wednesday",
+      "phonetic": "/ˈwɛnzdeɪ/",
+      "thai": "วันพุธ",
+      "icon": "dayTime-wednesday",
+      "level": "A2"
+    },
+    {
+      "id": "dt-04",
+      "word": "Thursday",
+      "phonetic": "/ˈθɜːrzdeɪ/",
+      "thai": "วันพฤหัสบดี",
+      "icon": "dayTime-thursday",
+      "level": "A2"
+    },
+    {
+      "id": "dt-05",
+      "word": "Friday",
+      "phonetic": "/ˈfraɪdeɪ/",
+      "thai": "วันศุกร์",
+      "icon": "dayTime-friday",
+      "level": "A2"
+    },
+    {
+      "id": "dt-06",
+      "word": "Saturday",
+      "phonetic": "/ˈsætərdeɪ/",
+      "thai": "วันเสาร์",
+      "icon": "dayTime-saturday",
+      "level": "A2"
+    },
+    {
+      "id": "dt-07",
+      "word": "Sunday",
+      "phonetic": "/ˈsʌndeɪ/",
+      "thai": "วันอาทิตย์",
+      "icon": "dayTime-sunday",
+      "level": "A2"
+    },
+    {
+      "id": "dt-08",
+      "word": "Today",
+      "phonetic": "/təˈdeɪ/",
+      "thai": "วันนี้",
+      "icon": "dayTime-today",
+      "level": "A2"
+    },
+    {
+      "id": "dt-09",
+      "word": "Tomorrow",
+      "phonetic": "/təˈmɒroʊ/",
+      "thai": "พรุ่งนี้",
+      "icon": "dayTime-tomorrow",
+      "level": "A2"
+    },
+    {
+      "id": "dt-10",
+      "word": "Yesterday",
+      "phonetic": "/ˈjɛstərdeɪ/",
+      "thai": "เมื่อวาน",
+      "icon": "dayTime-yesterday",
+      "level": "A2"
+    },
+    {
+      "id": "dt-11",
+      "word": "Morning",
+      "phonetic": "/ˈmɔːrnɪŋ/",
+      "thai": "ตอนเช้า",
+      "icon": "dayTime-morning",
+      "level": "A2"
+    },
+    {
+      "id": "dt-12",
+      "word": "Afternoon",
+      "phonetic": "/ˌæftərˈnuːn/",
+      "thai": "ตอนบ่าย",
+      "icon": "dayTime-afternoon",
+      "level": "A2"
+    },
+    {
+      "id": "dt-13",
+      "word": "Evening",
+      "phonetic": "/ˈiːvnɪŋ/",
+      "thai": "ตอนเย็น",
+      "icon": "dayTime-evening",
+      "level": "A2"
+    },
+    {
+      "id": "dt-14",
+      "word": "Night",
+      "phonetic": "/naɪt/",
+      "thai": "กลางคืน",
+      "icon": "dayTime-night",
+      "level": "A2"
+    },
+    {
+      "id": "dt-15",
+      "word": "Week",
+      "phonetic": "/wiːk/",
+      "thai": "สัปดาห์",
+      "icon": "dayTime-week",
+      "level": "A2"
+    },
+    {
+      "id": "dt-16",
+      "word": "Month",
+      "phonetic": "/mʌnθ/",
+      "thai": "เดือน",
+      "icon": "dayTime-month",
+      "level": "A2"
+    },
+    {
+      "id": "dt-17",
+      "word": "Year",
+      "phonetic": "/jɪr/",
+      "thai": "ปี",
+      "icon": "dayTime-year",
+      "level": "A2"
+    },
+    {
+      "id": "dt-18",
+      "word": "Hour",
+      "phonetic": "/ˈaʊər/",
+      "thai": "ชั่วโมง",
+      "icon": "dayTime-hour",
+      "level": "B1"
+    },
+    {
+      "id": "dt-19",
+      "word": "Minute",
+      "phonetic": "/ˈmɪnɪt/",
+      "thai": "นาที",
+      "icon": "dayTime-minute",
+      "level": "B1"
+    },
+    {
+      "id": "dt-20",
+      "word": "Weekend",
+      "phonetic": "/ˈwiːkɛnd/",
+      "thai": "วันหยุดสุดสัปดาห์",
+      "icon": "dayTime-weekend",
+      "level": "B1"
+    }
+  ],
+  "weather": [
+    {
+      "id": "we-01",
+      "word": "Sunny",
+      "phonetic": "/ˈsʌni/",
+      "thai": "แดดจัด",
+      "icon": "weather-sunny",
+      "level": "A2"
+    },
+    {
+      "id": "we-02",
+      "word": "Rainy",
+      "phonetic": "/ˈreɪni/",
+      "thai": "ฝนตก",
+      "icon": "weather-rainy",
+      "level": "A2"
+    },
+    {
+      "id": "we-03",
+      "word": "Cloudy",
+      "phonetic": "/ˈklaʊdi/",
+      "thai": "มีเมฆมาก",
+      "icon": "weather-cloudy",
+      "level": "A2"
+    },
+    {
+      "id": "we-04",
+      "word": "Windy",
+      "phonetic": "/ˈwɪndi/",
+      "thai": "ลมแรง",
+      "icon": "weather-windy",
+      "level": "A2"
+    },
+    {
+      "id": "we-05",
+      "word": "Snowy",
+      "phonetic": "/ˈsnoʊi/",
+      "thai": "หิมะตก",
+      "icon": "weather-snowy",
+      "level": "A2"
+    },
+    {
+      "id": "we-06",
+      "word": "Hot",
+      "phonetic": "/hɒt/",
+      "thai": "ร้อน",
+      "icon": "weather-hot",
+      "level": "A2"
+    },
+    {
+      "id": "we-07",
+      "word": "Cold",
+      "phonetic": "/koʊld/",
+      "thai": "หนาว",
+      "icon": "weather-cold",
+      "level": "A2"
+    },
+    {
+      "id": "we-08",
+      "word": "Warm",
+      "phonetic": "/wɔːrm/",
+      "thai": "อบอุ่น",
+      "icon": "weather-warm",
+      "level": "A2"
+    },
+    {
+      "id": "we-09",
+      "word": "Cool",
+      "phonetic": "/kuːl/",
+      "thai": "เย็นสบาย",
+      "icon": "weather-cool",
+      "level": "A2"
+    },
+    {
+      "id": "we-10",
+      "word": "Rainbow",
+      "phonetic": "/ˈreɪnboʊ/",
+      "thai": "รุ้งกินน้ำ",
+      "icon": "weather-rainbow",
+      "level": "A2"
+    },
+    {
+      "id": "we-11",
+      "word": "Umbrella",
+      "phonetic": "/ʌmˈbrɛlə/",
+      "thai": "ร่ม",
+      "icon": "weather-umbrella",
+      "level": "A2"
+    },
+    {
+      "id": "we-12",
+      "word": "Spring",
+      "phonetic": "/sprɪŋ/",
+      "thai": "ฤดูใบไม้ผลิ",
+      "icon": "weather-spring",
+      "level": "A2"
+    },
+    {
+      "id": "we-13",
+      "word": "Summer",
+      "phonetic": "/ˈsʌmər/",
+      "thai": "ฤดูร้อน",
+      "icon": "weather-summer",
+      "level": "A2"
+    },
+    {
+      "id": "we-14",
+      "word": "Autumn",
+      "phonetic": "/ˈɔːtəm/",
+      "thai": "ฤดูใบไม้ร่วง",
+      "icon": "weather-autumn",
+      "level": "A2"
+    },
+    {
+      "id": "we-15",
+      "word": "Winter",
+      "phonetic": "/ˈwɪntər/",
+      "thai": "ฤดูหนาว",
+      "icon": "weather-winter",
+      "level": "A2"
+    },
+    {
+      "id": "we-16",
+      "word": "Foggy",
+      "phonetic": "/ˈfɒɡi/",
+      "thai": "มีหมอก",
+      "icon": "weather-foggy",
+      "level": "B1"
+    },
+    {
+      "id": "we-17",
+      "word": "Stormy",
+      "phonetic": "/ˈstɔːrmi/",
+      "thai": "มีพายุ",
+      "icon": "weather-stormy",
+      "level": "B1"
+    },
+    {
+      "id": "we-18",
+      "word": "Humid",
+      "phonetic": "/ˈhjuːmɪd/",
+      "thai": "ชื้น",
+      "icon": "weather-humid",
+      "level": "B1"
+    },
+    {
+      "id": "we-19",
+      "word": "Thunder",
+      "phonetic": "/ˈθʌndər/",
+      "thai": "ฟ้าร้อง",
+      "icon": "weather-thunder",
+      "level": "B1"
+    },
+    {
+      "id": "we-20",
+      "word": "Lightning",
+      "phonetic": "/ˈlaɪtnɪŋ/",
+      "thai": "ฟ้าแลบ",
+      "icon": "weather-lightning",
+      "level": "B1"
+    }
+  ],
+  "house": [
+    {
+      "id": "ho-01",
+      "word": "House",
+      "phonetic": "/haʊs/",
+      "thai": "บ้าน",
+      "icon": "house-house",
+      "level": "A2"
+    },
+    {
+      "id": "ho-02",
+      "word": "Room",
+      "phonetic": "/ruːm/",
+      "thai": "ห้อง",
+      "icon": "house-room",
+      "level": "A2"
+    },
+    {
+      "id": "ho-03",
+      "word": "Kitchen",
+      "phonetic": "/ˈkɪtʃɪn/",
+      "thai": "ห้องครัว",
+      "icon": "house-kitchen",
+      "level": "A2"
+    },
+    {
+      "id": "ho-04",
+      "word": "Bedroom",
+      "phonetic": "/ˈbɛdruːm/",
+      "thai": "ห้องนอน",
+      "icon": "house-bedroom",
+      "level": "A2"
+    },
+    {
+      "id": "ho-05",
+      "word": "Bathroom",
+      "phonetic": "/ˈbæθruːm/",
+      "thai": "ห้องน้ำ",
+      "icon": "house-bathroom",
+      "level": "A2"
+    },
+    {
+      "id": "ho-06",
+      "word": "Living room",
+      "phonetic": "/ˈlɪvɪŋ ruːm/",
+      "thai": "ห้องนั่งเล่น",
+      "icon": "house-livingroom",
+      "level": "A2"
+    },
+    {
+      "id": "ho-07",
+      "word": "Door",
+      "phonetic": "/dɔːr/",
+      "thai": "ประตู",
+      "icon": "house-door",
+      "level": "A2"
+    },
+    {
+      "id": "ho-08",
+      "word": "Window",
+      "phonetic": "/ˈwɪndoʊ/",
+      "thai": "หน้าต่าง",
+      "icon": "house-window",
+      "level": "A2"
+    },
+    {
+      "id": "ho-09",
+      "word": "Table",
+      "phonetic": "/ˈteɪbəl/",
+      "thai": "โต๊ะ",
+      "icon": "house-table",
+      "level": "A2"
+    },
+    {
+      "id": "ho-10",
+      "word": "Chair",
+      "phonetic": "/tʃɛr/",
+      "thai": "เก้าอี้",
+      "icon": "house-chair",
+      "level": "A2"
+    },
+    {
+      "id": "ho-11",
+      "word": "Bed",
+      "phonetic": "/bɛd/",
+      "thai": "เตียง",
+      "icon": "house-bed",
+      "level": "A2"
+    },
+    {
+      "id": "ho-12",
+      "word": "Sofa",
+      "phonetic": "/ˈsoʊfə/",
+      "thai": "โซฟา",
+      "icon": "house-sofa",
+      "level": "A2"
+    },
+    {
+      "id": "ho-13",
+      "word": "Television",
+      "phonetic": "/ˈtɛlɪˌvɪʒən/",
+      "thai": "โทรทัศน์",
+      "icon": "house-tv",
+      "level": "A2"
+    },
+    {
+      "id": "ho-14",
+      "word": "Lamp",
+      "phonetic": "/læmp/",
+      "thai": "โคมไฟ",
+      "icon": "house-lamp",
+      "level": "A2"
+    },
+    {
+      "id": "ho-15",
+      "word": "Mirror",
+      "phonetic": "/ˈmɪrər/",
+      "thai": "กระจก",
+      "icon": "house-mirror",
+      "level": "A2"
+    },
+    {
+      "id": "ho-16",
+      "word": "Garden",
+      "phonetic": "/ˈɡɑːrdən/",
+      "thai": "สวน",
+      "icon": "house-garden",
+      "level": "A2"
+    },
+    {
+      "id": "ho-17",
+      "word": "Key",
+      "phonetic": "/kiː/",
+      "thai": "กุญแจ",
+      "icon": "house-key",
+      "level": "A2"
+    },
+    {
+      "id": "ho-18",
+      "word": "Refrigerator",
+      "phonetic": "/rɪˈfrɪdʒəreɪtər/",
+      "thai": "ตู้เย็น",
+      "icon": "house-fridge",
+      "level": "B1"
+    },
+    {
+      "id": "ho-19",
+      "word": "Shelf",
+      "phonetic": "/ʃɛlf/",
+      "thai": "ชั้นวางของ",
+      "icon": "house-shelf",
+      "level": "B1"
+    },
+    {
+      "id": "ho-20",
+      "word": "Roof",
+      "phonetic": "/ruːf/",
+      "thai": "หลังคา",
+      "icon": "house-roof",
+      "level": "B1"
+    }
+  ],
+  "clothing": [
+    {
+      "id": "cl-01",
+      "word": "Shirt",
+      "phonetic": "/ʃɜːrt/",
+      "thai": "เสื้อเชิ้ต",
+      "icon": "clothing-shirt",
+      "level": "A2"
+    },
+    {
+      "id": "cl-02",
+      "word": "T-shirt",
+      "phonetic": "/ˈtiːʃɜːrt/",
+      "thai": "เสื้อยืด",
+      "icon": "clothing-tshirt",
+      "level": "A2"
+    },
+    {
+      "id": "cl-03",
+      "word": "Pants",
+      "phonetic": "/pænts/",
+      "thai": "กางเกง",
+      "icon": "clothing-pants",
+      "level": "A2"
+    },
+    {
+      "id": "cl-04",
+      "word": "Dress",
+      "phonetic": "/drɛs/",
+      "thai": "ชุดเดรส",
+      "icon": "clothing-dress",
+      "level": "A2"
+    },
+    {
+      "id": "cl-05",
+      "word": "Skirt",
+      "phonetic": "/skɜːrt/",
+      "thai": "กระโปรง",
+      "icon": "clothing-skirt",
+      "level": "A2"
+    },
+    {
+      "id": "cl-06",
+      "word": "Jacket",
+      "phonetic": "/ˈdʒækɪt/",
+      "thai": "แจ็คเก็ต",
+      "icon": "clothing-jacket",
+      "level": "A2"
+    },
+    {
+      "id": "cl-07",
+      "word": "Coat",
+      "phonetic": "/koʊt/",
+      "thai": "เสื้อโค้ท",
+      "icon": "clothing-coat",
+      "level": "A2"
+    },
+    {
+      "id": "cl-08",
+      "word": "Shoes",
+      "phonetic": "/ʃuːz/",
+      "thai": "รองเท้า",
+      "icon": "clothing-shoes",
+      "level": "A2"
+    },
+    {
+      "id": "cl-09",
+      "word": "Socks",
+      "phonetic": "/sɒks/",
+      "thai": "ถุงเท้า",
+      "icon": "clothing-socks",
+      "level": "A2"
+    },
+    {
+      "id": "cl-10",
+      "word": "Hat",
+      "phonetic": "/hæt/",
+      "thai": "หมวก",
+      "icon": "clothing-hat",
+      "level": "A2"
+    },
+    {
+      "id": "cl-11",
+      "word": "Jeans",
+      "phonetic": "/dʒiːnz/",
+      "thai": "กางเกงยีนส์",
+      "icon": "clothing-jeans",
+      "level": "A2"
+    },
+    {
+      "id": "cl-12",
+      "word": "Shorts",
+      "phonetic": "/ʃɔːrts/",
+      "thai": "กางเกงขาสั้น",
+      "icon": "clothing-shorts",
+      "level": "A2"
+    },
+    {
+      "id": "cl-13",
+      "word": "Gloves",
+      "phonetic": "/ɡlʌvz/",
+      "thai": "ถุงมือ",
+      "icon": "clothing-gloves",
+      "level": "B1"
+    },
+    {
+      "id": "cl-14",
+      "word": "Scarf",
+      "phonetic": "/skɑːrf/",
+      "thai": "ผ้าพันคอ",
+      "icon": "clothing-scarf",
+      "level": "B1"
+    },
+    {
+      "id": "cl-15",
+      "word": "Belt",
+      "phonetic": "/bɛlt/",
+      "thai": "เข็มขัด",
+      "icon": "clothing-belt",
+      "level": "B1"
+    },
+    {
+      "id": "cl-16",
+      "word": "Sweater",
+      "phonetic": "/ˈswɛtər/",
+      "thai": "เสื้อสเวตเตอร์",
+      "icon": "clothing-sweater",
+      "level": "B1"
+    },
+    {
+      "id": "cl-17",
+      "word": "Underwear",
+      "phonetic": "/ˈʌndərwɛr/",
+      "thai": "ชุดชั้นใน",
+      "icon": "clothing-underwear",
+      "level": "B1"
+    },
+    {
+      "id": "cl-18",
+      "word": "Boots",
+      "phonetic": "/buːts/",
+      "thai": "รองเท้าบูท",
+      "icon": "clothing-boots",
+      "level": "B1"
+    },
+    {
+      "id": "cl-19",
+      "word": "Sunglasses",
+      "phonetic": "/ˈsʌnˌɡlæsɪz/",
+      "thai": "แว่นกันแดด",
+      "icon": "clothing-sunglasses",
+      "level": "B1"
+    },
+    {
+      "id": "cl-20",
+      "word": "Pajamas",
+      "phonetic": "/pəˈdʒɑːməz/",
+      "thai": "ชุดนอน",
+      "icon": "clothing-pajamas",
+      "level": "B1"
+    }
+  ],
+  "bodyHealth": [
+    {
+      "id": "bo-01",
+      "word": "Head",
+      "phonetic": "/hɛd/",
+      "thai": "ศีรษะ",
+      "icon": "body-head",
+      "level": "A2"
+    },
+    {
+      "id": "bo-02",
+      "word": "Eye",
+      "phonetic": "/aɪ/",
+      "thai": "ตา",
+      "icon": "body-eye",
+      "level": "A2"
+    },
+    {
+      "id": "bo-03",
+      "word": "Ear",
+      "phonetic": "/ɪr/",
+      "thai": "หู",
+      "icon": "body-ear",
+      "level": "A2"
+    },
+    {
+      "id": "bo-04",
+      "word": "Nose",
+      "phonetic": "/noʊz/",
+      "thai": "จมูก",
+      "icon": "body-nose",
+      "level": "A2"
+    },
+    {
+      "id": "bo-05",
+      "word": "Mouth",
+      "phonetic": "/maʊθ/",
+      "thai": "ปาก",
+      "icon": "body-mouth",
+      "level": "A2"
+    },
+    {
+      "id": "bo-06",
+      "word": "Hand",
+      "phonetic": "/hænd/",
+      "thai": "มือ",
+      "icon": "body-hand",
+      "level": "A2"
+    },
+    {
+      "id": "bo-07",
+      "word": "Arm",
+      "phonetic": "/ɑːrm/",
+      "thai": "แขน",
+      "icon": "body-arm",
+      "level": "A2"
+    },
+    {
+      "id": "bo-08",
+      "word": "Leg",
+      "phonetic": "/lɛɡ/",
+      "thai": "ขา",
+      "icon": "body-leg",
+      "level": "A2"
+    },
+    {
+      "id": "bo-09",
+      "word": "Foot",
+      "phonetic": "/fʊt/",
+      "thai": "เท้า",
+      "icon": "body-foot",
+      "level": "A2"
+    },
+    {
+      "id": "bo-10",
+      "word": "Stomach",
+      "phonetic": "/ˈstʌmək/",
+      "thai": "ท้อง",
+      "icon": "body-stomach",
+      "level": "A2"
+    },
+    {
+      "id": "bo-11",
+      "word": "Back",
+      "phonetic": "/bæk/",
+      "thai": "หลัง",
+      "icon": "body-back",
+      "level": "A2"
+    },
+    {
+      "id": "bo-12",
+      "word": "Tooth",
+      "phonetic": "/tuːθ/",
+      "thai": "ฟัน",
+      "icon": "body-tooth",
+      "level": "A2"
+    },
+    {
+      "id": "bo-13",
+      "word": "Hair",
+      "phonetic": "/hɛr/",
+      "thai": "ผม",
+      "icon": "body-hair",
+      "level": "A2"
+    },
+    {
+      "id": "bo-14",
+      "word": "Finger",
+      "phonetic": "/ˈfɪŋɡər/",
+      "thai": "นิ้วมือ",
+      "icon": "body-finger",
+      "level": "A2"
+    },
+    {
+      "id": "bo-15",
+      "word": "Doctor",
+      "phonetic": "/ˈdɒktər/",
+      "thai": "หมอ",
+      "icon": "body-doctor",
+      "level": "A2"
+    },
+    {
+      "id": "bo-16",
+      "word": "Hospital",
+      "phonetic": "/ˈhɒspɪtəl/",
+      "thai": "โรงพยาบาล",
+      "icon": "body-hospital",
+      "level": "A2"
+    },
+    {
+      "id": "bo-17",
+      "word": "Sick",
+      "phonetic": "/sɪk/",
+      "thai": "ป่วย",
+      "icon": "body-sick",
+      "level": "A2"
+    },
+    {
+      "id": "bo-18",
+      "word": "Heart",
+      "phonetic": "/hɑːrt/",
+      "thai": "หัวใจ",
+      "icon": "body-heart",
+      "level": "B1"
+    },
+    {
+      "id": "bo-19",
+      "word": "Medicine",
+      "phonetic": "/ˈmɛdsɪn/",
+      "thai": "ยา",
+      "icon": "body-medicine",
+      "level": "B1"
+    },
+    {
+      "id": "bo-20",
+      "word": "Healthy",
+      "phonetic": "/ˈhɛlθi/",
+      "thai": "สุขภาพดี",
+      "icon": "body-healthy",
+      "level": "B1"
+    }
+  ],
+  "jobs": [
+    {
+      "id": "jo-01",
+      "word": "Teacher",
+      "phonetic": "/ˈtiːtʃər/",
+      "thai": "ครู",
+      "icon": "job-teacher",
+      "level": "A2"
+    },
+    {
+      "id": "jo-02",
+      "word": "Nurse",
+      "phonetic": "/nɜːrs/",
+      "thai": "พยาบาล",
+      "icon": "job-nurse",
+      "level": "A2"
+    },
+    {
+      "id": "jo-03",
+      "word": "Police officer",
+      "phonetic": "/pəˈliːs ˈɒfɪsər/",
+      "thai": "ตำรวจ",
+      "icon": "job-police",
+      "level": "A2"
+    },
+    {
+      "id": "jo-04",
+      "word": "Chef",
+      "phonetic": "/ʃɛf/",
+      "thai": "พ่อครัว",
+      "icon": "job-chef",
+      "level": "A2"
+    },
+    {
+      "id": "jo-05",
+      "word": "Farmer",
+      "phonetic": "/ˈfɑːrmər/",
+      "thai": "ชาวนา",
+      "icon": "job-farmer",
+      "level": "A2"
+    },
+    {
+      "id": "jo-06",
+      "word": "Driver",
+      "phonetic": "/ˈdraɪvər/",
+      "thai": "คนขับรถ",
+      "icon": "job-driver",
+      "level": "A2"
+    },
+    {
+      "id": "jo-07",
+      "word": "Artist",
+      "phonetic": "/ˈɑːrtɪst/",
+      "thai": "ศิลปิน",
+      "icon": "job-artist",
+      "level": "A2"
+    },
+    {
+      "id": "jo-08",
+      "word": "Musician",
+      "phonetic": "/mjuˈzɪʃən/",
+      "thai": "นักดนตรี",
+      "icon": "job-musician",
+      "level": "A2"
+    },
+    {
+      "id": "jo-09",
+      "word": "Writer",
+      "phonetic": "/ˈraɪtər/",
+      "thai": "นักเขียน",
+      "icon": "job-writer",
+      "level": "A2"
+    },
+    {
+      "id": "jo-10",
+      "word": "Student",
+      "phonetic": "/ˈstuːdənt/",
+      "thai": "นักเรียน",
+      "icon": "job-student",
+      "level": "A2"
+    },
+    {
+      "id": "jo-11",
+      "word": "Waiter",
+      "phonetic": "/ˈweɪtər/",
+      "thai": "พนักงานเสิร์ฟ",
+      "icon": "job-waiter",
+      "level": "A2"
+    },
+    {
+      "id": "jo-12",
+      "word": "Cashier",
+      "phonetic": "/kæˈʃɪr/",
+      "thai": "พนักงานเก็บเงิน",
+      "icon": "job-cashier",
+      "level": "A2"
+    },
+    {
+      "id": "jo-13",
+      "word": "Firefighter",
+      "phonetic": "/ˈfaɪərˌfaɪtər/",
+      "thai": "นักดับเพลิง",
+      "icon": "job-firefighter",
+      "level": "A2"
+    },
+    {
+      "id": "jo-14",
+      "word": "Engineer",
+      "phonetic": "/ˌɛndʒɪˈnɪr/",
+      "thai": "วิศวกร",
+      "icon": "job-engineer",
+      "level": "B1"
+    },
+    {
+      "id": "jo-15",
+      "word": "Lawyer",
+      "phonetic": "/ˈlɔɪər/",
+      "thai": "ทนายความ",
+      "icon": "job-lawyer",
+      "level": "B1"
+    },
+    {
+      "id": "jo-16",
+      "word": "Manager",
+      "phonetic": "/ˈmænɪdʒər/",
+      "thai": "ผู้จัดการ",
+      "icon": "job-manager",
+      "level": "B1"
+    },
+    {
+      "id": "jo-17",
+      "word": "Pilot",
+      "phonetic": "/ˈpaɪlət/",
+      "thai": "นักบิน",
+      "icon": "job-pilot",
+      "level": "B1"
+    },
+    {
+      "id": "jo-18",
+      "word": "Scientist",
+      "phonetic": "/ˈsaɪəntɪst/",
+      "thai": "นักวิทยาศาสตร์",
+      "icon": "job-scientist",
+      "level": "B1"
+    },
+    {
+      "id": "jo-19",
+      "word": "Dentist",
+      "phonetic": "/ˈdɛntɪst/",
+      "thai": "ทันตแพทย์",
+      "icon": "job-dentist",
+      "level": "B1"
+    },
+    {
+      "id": "jo-20",
+      "word": "Accountant",
+      "phonetic": "/əˈkaʊntənt/",
+      "thai": "นักบัญชี",
+      "icon": "job-accountant",
+      "level": "B1"
+    }
+  ],
+  "shopping": [
+    {
+      "id": "sh-01",
+      "word": "Money",
+      "phonetic": "/ˈmʌni/",
+      "thai": "เงิน",
+      "icon": "shop-money",
+      "level": "A2"
+    },
+    {
+      "id": "sh-02",
+      "word": "Price",
+      "phonetic": "/praɪs/",
+      "thai": "ราคา",
+      "icon": "shop-price",
+      "level": "A2"
+    },
+    {
+      "id": "sh-03",
+      "word": "Cheap",
+      "phonetic": "/tʃiːp/",
+      "thai": "ถูก",
+      "icon": "shop-cheap",
+      "level": "A2"
+    },
+    {
+      "id": "sh-04",
+      "word": "Expensive",
+      "phonetic": "/ɪkˈspɛnsɪv/",
+      "thai": "แพง",
+      "icon": "shop-expensive",
+      "level": "A2"
+    },
+    {
+      "id": "sh-05",
+      "word": "Buy",
+      "phonetic": "/baɪ/",
+      "thai": "ซื้อ",
+      "icon": "shop-buy",
+      "level": "A2"
+    },
+    {
+      "id": "sh-06",
+      "word": "Sell",
+      "phonetic": "/sɛl/",
+      "thai": "ขาย",
+      "icon": "shop-sell",
+      "level": "A2"
+    },
+    {
+      "id": "sh-07",
+      "word": "Store",
+      "phonetic": "/stɔːr/",
+      "thai": "ร้านค้า",
+      "icon": "shop-store",
+      "level": "A2"
+    },
+    {
+      "id": "sh-08",
+      "word": "Market",
+      "phonetic": "/ˈmɑːrkɪt/",
+      "thai": "ตลาด",
+      "icon": "shop-market",
+      "level": "A2"
+    },
+    {
+      "id": "sh-09",
+      "word": "Cash",
+      "phonetic": "/kæʃ/",
+      "thai": "เงินสด",
+      "icon": "shop-cash",
+      "level": "A2"
+    },
+    {
+      "id": "sh-10",
+      "word": "Bag",
+      "phonetic": "/bæɡ/",
+      "thai": "กระเป๋า",
+      "icon": "shop-bag",
+      "level": "A2"
+    },
+    {
+      "id": "sh-11",
+      "word": "Size",
+      "phonetic": "/saɪz/",
+      "thai": "ขนาด",
+      "icon": "shop-size",
+      "level": "A2"
+    },
+    {
+      "id": "sh-12",
+      "word": "Change",
+      "phonetic": "/tʃeɪndʒ/",
+      "thai": "เงินทอน",
+      "icon": "shop-change",
+      "level": "A2"
+    },
+    {
+      "id": "sh-13",
+      "word": "Sale",
+      "phonetic": "/seɪl/",
+      "thai": "ลดราคา",
+      "icon": "shop-sale",
+      "level": "A2"
+    },
+    {
+      "id": "sh-14",
+      "word": "Customer",
+      "phonetic": "/ˈkʌstəmər/",
+      "thai": "ลูกค้า",
+      "icon": "shop-customer",
+      "level": "A2"
+    },
+    {
+      "id": "sh-15",
+      "word": "Shopping cart",
+      "phonetic": "/ˈʃɒpɪŋ kɑːrt/",
+      "thai": "รถเข็นช้อปปิ้ง",
+      "icon": "shop-cart",
+      "level": "A2"
+    },
+    {
+      "id": "sh-16",
+      "word": "Wallet",
+      "phonetic": "/ˈwɒlɪt/",
+      "thai": "กระเป๋าสตางค์",
+      "icon": "shop-wallet",
+      "level": "A2"
+    },
+    {
+      "id": "sh-17",
+      "word": "Receipt",
+      "phonetic": "/rɪˈsiːt/",
+      "thai": "ใบเสร็จ",
+      "icon": "shop-receipt",
+      "level": "B1"
+    },
+    {
+      "id": "sh-18",
+      "word": "Discount",
+      "phonetic": "/ˈdɪskaʊnt/",
+      "thai": "ส่วนลด",
+      "icon": "shop-discount",
+      "level": "B1"
+    },
+    {
+      "id": "sh-19",
+      "word": "Credit card",
+      "phonetic": "/ˈkrɛdɪt kɑːrd/",
+      "thai": "บัตรเครดิต",
+      "icon": "shop-creditcard",
+      "level": "B1"
+    },
+    {
+      "id": "sh-20",
+      "word": "Coupon",
+      "phonetic": "/ˈkuːpɒn/",
+      "thai": "คูปอง",
+      "icon": "shop-coupon",
+      "level": "B1"
+    }
+  ],
+  "transportation": [
+    {
+      "id": "tr-01",
+      "word": "Car",
+      "phonetic": "/kɑːr/",
+      "thai": "รถยนต์",
+      "icon": "transport-car",
+      "level": "A2"
+    },
+    {
+      "id": "tr-02",
+      "word": "Bus",
+      "phonetic": "/bʌs/",
+      "thai": "รถบัส",
+      "icon": "transport-bus",
+      "level": "A2"
+    },
+    {
+      "id": "tr-03",
+      "word": "Train",
+      "phonetic": "/treɪn/",
+      "thai": "รถไฟ",
+      "icon": "transport-train",
+      "level": "A2"
+    },
+    {
+      "id": "tr-04",
+      "word": "Airplane",
+      "phonetic": "/ˈɛrpleɪn/",
+      "thai": "เครื่องบิน",
+      "icon": "transport-airplane",
+      "level": "A2"
+    },
+    {
+      "id": "tr-05",
+      "word": "Bicycle",
+      "phonetic": "/ˈbaɪsɪkəl/",
+      "thai": "จักรยาน",
+      "icon": "transport-bicycle",
+      "level": "A2"
+    },
+    {
+      "id": "tr-06",
+      "word": "Motorcycle",
+      "phonetic": "/ˈmoʊtərˌsaɪkəl/",
+      "thai": "มอเตอร์ไซค์",
+      "icon": "transport-motorcycle",
+      "level": "A2"
+    },
+    {
+      "id": "tr-07",
+      "word": "Taxi",
+      "phonetic": "/ˈtæksi/",
+      "thai": "แท็กซี่",
+      "icon": "transport-taxi",
+      "level": "A2"
+    },
+    {
+      "id": "tr-08",
+      "word": "Boat",
+      "phonetic": "/boʊt/",
+      "thai": "เรือ",
+      "icon": "transport-boat",
+      "level": "A2"
+    },
+    {
+      "id": "tr-09",
+      "word": "Road",
+      "phonetic": "/roʊd/",
+      "thai": "ถนน",
+      "icon": "transport-road",
+      "level": "A2"
+    },
+    {
+      "id": "tr-10",
+      "word": "Ticket",
+      "phonetic": "/ˈtɪkɪt/",
+      "thai": "ตั๋ว",
+      "icon": "transport-ticket",
+      "level": "A2"
+    },
+    {
+      "id": "tr-11",
+      "word": "Station",
+      "phonetic": "/ˈsteɪʃən/",
+      "thai": "สถานี",
+      "icon": "transport-station",
+      "level": "A2"
+    },
+    {
+      "id": "tr-12",
+      "word": "Airport",
+      "phonetic": "/ˈɛrpɔːrt/",
+      "thai": "สนามบิน",
+      "icon": "transport-airport",
+      "level": "A2"
+    },
+    {
+      "id": "tr-13",
+      "word": "Subway",
+      "phonetic": "/ˈsʌbweɪ/",
+      "thai": "รถไฟใต้ดิน",
+      "icon": "transport-subway",
+      "level": "B1"
+    },
+    {
+      "id": "tr-14",
+      "word": "Ship",
+      "phonetic": "/ʃɪp/",
+      "thai": "เรือเดินทะเล",
+      "icon": "transport-ship",
+      "level": "B1"
+    },
+    {
+      "id": "tr-15",
+      "word": "Traffic",
+      "phonetic": "/ˈtræfɪk/",
+      "thai": "การจราจร",
+      "icon": "transport-traffic",
+      "level": "B1"
+    },
+    {
+      "id": "tr-16",
+      "word": "Passenger",
+      "phonetic": "/ˈpæsɪndʒər/",
+      "thai": "ผู้โดยสาร",
+      "icon": "transport-passenger",
+      "level": "B1"
+    },
+    {
+      "id": "tr-17",
+      "word": "Traffic light",
+      "phonetic": "/ˈtræfɪk laɪt/",
+      "thai": "สัญญาณไฟจราจร",
+      "icon": "transport-trafficlight",
+      "level": "B1"
+    },
+    {
+      "id": "tr-18",
+      "word": "Parking",
+      "phonetic": "/ˈpɑːrkɪŋ/",
+      "thai": "ที่จอดรถ",
+      "icon": "transport-parking",
+      "level": "B1"
+    },
+    {
+      "id": "tr-19",
+      "word": "Highway",
+      "phonetic": "/ˈhaɪweɪ/",
+      "thai": "ทางหลวง",
+      "icon": "transport-highway",
+      "level": "B1"
+    },
+    {
+      "id": "tr-20",
+      "word": "Seatbelt",
+      "phonetic": "/ˈsiːtbɛlt/",
+      "thai": "เข็มขัดนิรภัย",
+      "icon": "transport-seatbelt",
+      "level": "B1"
+    }
+  ],
+  "hobbies": [
+    {
+      "id": "hb-01",
+      "word": "Reading",
+      "phonetic": "/ˈriːdɪŋ/",
+      "thai": "การอ่านหนังสือ",
+      "icon": "hobby-reading",
+      "level": "A2"
+    },
+    {
+      "id": "hb-02",
+      "word": "Swimming",
+      "phonetic": "/ˈswɪmɪŋ/",
+      "thai": "การว่ายน้ำ",
+      "icon": "hobby-swimming",
+      "level": "A2"
+    },
+    {
+      "id": "hb-03",
+      "word": "Running",
+      "phonetic": "/ˈrʌnɪŋ/",
+      "thai": "การวิ่ง",
+      "icon": "hobby-running",
+      "level": "A2"
+    },
+    {
+      "id": "hb-04",
+      "word": "Dancing",
+      "phonetic": "/ˈdænsɪŋ/",
+      "thai": "การเต้นรำ",
+      "icon": "hobby-dancing",
+      "level": "A2"
+    },
+    {
+      "id": "hb-05",
+      "word": "Singing",
+      "phonetic": "/ˈsɪŋɪŋ/",
+      "thai": "การร้องเพลง",
+      "icon": "hobby-singing",
+      "level": "A2"
+    },
+    {
+      "id": "hb-06",
+      "word": "Painting",
+      "phonetic": "/ˈpeɪntɪŋ/",
+      "thai": "การวาดภาพสี",
+      "icon": "hobby-painting",
+      "level": "A2"
+    },
+    {
+      "id": "hb-07",
+      "word": "Fishing",
+      "phonetic": "/ˈfɪʃɪŋ/",
+      "thai": "การตกปลา",
+      "icon": "hobby-fishing",
+      "level": "A2"
+    },
+    {
+      "id": "hb-08",
+      "word": "Gaming",
+      "phonetic": "/ˈɡeɪmɪŋ/",
+      "thai": "การเล่นเกม",
+      "icon": "hobby-gaming",
+      "level": "A2"
+    },
+    {
+      "id": "hb-09",
+      "word": "Traveling",
+      "phonetic": "/ˈtrævəlɪŋ/",
+      "thai": "การท่องเที่ยว",
+      "icon": "hobby-traveling",
+      "level": "A2"
+    },
+    {
+      "id": "hb-10",
+      "word": "Drawing",
+      "phonetic": "/ˈdrɔːɪŋ/",
+      "thai": "การวาดเส้น",
+      "icon": "hobby-drawing",
+      "level": "A2"
+    },
+    {
+      "id": "hb-11",
+      "word": "Playing football",
+      "phonetic": "/ˈpleɪɪŋ ˈfʊtbɔːl/",
+      "thai": "การเล่นฟุตบอล",
+      "icon": "hobby-football",
+      "level": "A2"
+    },
+    {
+      "id": "hb-12",
+      "word": "Playing guitar",
+      "phonetic": "/ˈpleɪɪŋ ɡɪˈtɑːr/",
+      "thai": "การเล่นกีตาร์",
+      "icon": "hobby-guitar",
+      "level": "A2"
+    },
+    {
+      "id": "hb-13",
+      "word": "Watching movies",
+      "phonetic": "/ˈwɒtʃɪŋ ˈmuːviz/",
+      "thai": "การดูหนัง",
+      "icon": "hobby-movies",
+      "level": "A2"
+    },
+    {
+      "id": "hb-14",
+      "word": "Photography",
+      "phonetic": "/fəˈtɒɡrəfi/",
+      "thai": "การถ่ายภาพ",
+      "icon": "hobby-photography",
+      "level": "B1"
+    },
+    {
+      "id": "hb-15",
+      "word": "Gardening",
+      "phonetic": "/ˈɡɑːrdənɪŋ/",
+      "thai": "การทำสวน",
+      "icon": "hobby-gardening",
+      "level": "B1"
+    },
+    {
+      "id": "hb-16",
+      "word": "Hiking",
+      "phonetic": "/ˈhaɪkɪŋ/",
+      "thai": "การเดินป่า",
+      "icon": "hobby-hiking",
+      "level": "B1"
+    },
+    {
+      "id": "hb-17",
+      "word": "Yoga",
+      "phonetic": "/ˈjoʊɡə/",
+      "thai": "โยคะ",
+      "icon": "hobby-yoga",
+      "level": "B1"
+    },
+    {
+      "id": "hb-18",
+      "word": "Camping",
+      "phonetic": "/ˈkæmpɪŋ/",
+      "thai": "การตั้งแคมป์",
+      "icon": "hobby-camping",
+      "level": "B1"
+    },
+    {
+      "id": "hb-19",
+      "word": "Cycling",
+      "phonetic": "/ˈsaɪklɪŋ/",
+      "thai": "การปั่นจักรยาน",
+      "icon": "hobby-cycling",
+      "level": "B1"
+    },
+    {
+      "id": "hb-20",
+      "word": "Knitting",
+      "phonetic": "/ˈnɪtɪŋ/",
+      "thai": "การถักไหมพรม",
+      "icon": "hobby-knitting",
+      "level": "B1"
+    }
+  ],
+  "feelings": [
+    {
+      "id": "fe-01",
+      "word": "Happy",
+      "phonetic": "/ˈhæpi/",
+      "thai": "มีความสุข",
+      "icon": "feeling-happy",
+      "level": "A2"
+    },
+    {
+      "id": "fe-02",
+      "word": "Sad",
+      "phonetic": "/sæd/",
+      "thai": "เศร้า",
+      "icon": "feeling-sad",
+      "level": "A2"
+    },
+    {
+      "id": "fe-03",
+      "word": "Angry",
+      "phonetic": "/ˈæŋɡri/",
+      "thai": "โกรธ",
+      "icon": "feeling-angry",
+      "level": "A2"
+    },
+    {
+      "id": "fe-04",
+      "word": "Excited",
+      "phonetic": "/ɪkˈsaɪtɪd/",
+      "thai": "ตื่นเต้น",
+      "icon": "feeling-excited",
+      "level": "A2"
+    },
+    {
+      "id": "fe-05",
+      "word": "Nervous",
+      "phonetic": "/ˈnɜːrvəs/",
+      "thai": "กังวล",
+      "icon": "feeling-nervous",
+      "level": "A2"
+    },
+    {
+      "id": "fe-06",
+      "word": "Tired",
+      "phonetic": "/ˈtaɪərd/",
+      "thai": "เหนื่อย",
+      "icon": "feeling-tired",
+      "level": "A2"
+    },
+    {
+      "id": "fe-07",
+      "word": "Bored",
+      "phonetic": "/bɔːrd/",
+      "thai": "เบื่อ",
+      "icon": "feeling-bored",
+      "level": "A2"
+    },
+    {
+      "id": "fe-08",
+      "word": "Surprised",
+      "phonetic": "/sərˈpraɪzd/",
+      "thai": "ประหลาดใจ",
+      "icon": "feeling-surprised",
+      "level": "A2"
+    },
+    {
+      "id": "fe-09",
+      "word": "Scared",
+      "phonetic": "/skɛrd/",
+      "thai": "กลัว",
+      "icon": "feeling-scared",
+      "level": "A2"
+    },
+    {
+      "id": "fe-10",
+      "word": "Relaxed",
+      "phonetic": "/rɪˈlækst/",
+      "thai": "ผ่อนคลาย",
+      "icon": "feeling-relaxed",
+      "level": "A2"
+    },
+    {
+      "id": "fe-11",
+      "word": "Confused",
+      "phonetic": "/kənˈfjuːzd/",
+      "thai": "สับสน",
+      "icon": "feeling-confused",
+      "level": "B1"
+    },
+    {
+      "id": "fe-12",
+      "word": "Proud",
+      "phonetic": "/praʊd/",
+      "thai": "ภูมิใจ",
+      "icon": "feeling-proud",
+      "level": "B1"
+    },
+    {
+      "id": "fe-13",
+      "word": "Embarrassed",
+      "phonetic": "/ɪmˈbærəst/",
+      "thai": "อาย",
+      "icon": "feeling-embarrassed",
+      "level": "B1"
+    },
+    {
+      "id": "fe-14",
+      "word": "Worried",
+      "phonetic": "/ˈwɜːrid/",
+      "thai": "เป็นห่วง",
+      "icon": "feeling-worried",
+      "level": "B1"
+    },
+    {
+      "id": "fe-15",
+      "word": "Confident",
+      "phonetic": "/ˈkɒnfɪdənt/",
+      "thai": "มั่นใจ",
+      "icon": "feeling-confident",
+      "level": "B1"
+    },
+    {
+      "id": "fe-16",
+      "word": "Jealous",
+      "phonetic": "/ˈdʒɛləs/",
+      "thai": "อิจฉา",
+      "icon": "feeling-jealous",
+      "level": "B1"
+    },
+    {
+      "id": "fe-17",
+      "word": "Lonely",
+      "phonetic": "/ˈloʊnli/",
+      "thai": "เหงา",
+      "icon": "feeling-lonely",
+      "level": "B1"
+    },
+    {
+      "id": "fe-18",
+      "word": "Grateful",
+      "phonetic": "/ˈɡreɪtfəl/",
+      "thai": "ซาบซึ้งใจ",
+      "icon": "feeling-grateful",
+      "level": "B1"
+    },
+    {
+      "id": "fe-19",
+      "word": "Disappointed",
+      "phonetic": "/ˌdɪsəˈpɔɪntɪd/",
+      "thai": "ผิดหวัง",
+      "icon": "feeling-disappointed",
+      "level": "B1"
+    },
+    {
+      "id": "fe-20",
+      "word": "Curious",
+      "phonetic": "/ˈkjʊəriəs/",
+      "thai": "อยากรู้อยากเห็น",
+      "icon": "feeling-curious",
       "level": "B1"
     }
   ]

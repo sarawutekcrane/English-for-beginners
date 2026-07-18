@@ -48,6 +48,16 @@ export function Sun({ cx, cy, r, color = "#ffcf6b" }) {
   );
 }
 
+export function House({ x = 100, y = 120, roof = "#ff9ec7", wall = "#fff3da", door = "#8fcfff" }) {
+  return (
+    <g transform={`translate(${x},${y})`}>
+      <rect x="-38" y="-6" width="76" height="46" rx="6" fill={wall} stroke={INK} strokeWidth="3" />
+      <path d="M -46 -6 L 0 -44 L 46 -6 Z" fill={roof} stroke={INK} strokeWidth="3" strokeLinejoin="round" />
+      <rect x="-10" y="12" width="20" height="28" rx="3" fill={door} stroke={INK} strokeWidth="2.5" />
+    </g>
+  );
+}
+
 /** Cute round-headed chibi person used as the base for greeting illustrations. */
 export function Chibi({ shirt = "#8fcfff", armPose = "down", face = "smile", flip = false }) {
   return (
@@ -115,6 +125,33 @@ function Face({ type }) {
         <path d="M 82 76 Q 88 70 94 76" stroke={INK} strokeWidth="3" fill="none" strokeLinecap="round" />
         <path d="M 106 76 Q 112 70 118 76" stroke={INK} strokeWidth="3" fill="none" strokeLinecap="round" />
         <path d="M 86 90 Q 100 102 114 90" stroke={INK} strokeWidth="3" fill="none" strokeLinecap="round" />
+      </>
+    );
+  }
+  if (type === "wink") {
+    return (
+      <>
+        <path d="M 84 78 L 94 78" stroke={INK} strokeWidth="3" strokeLinecap="round" />
+        <circle cx="112" cy="78" r="3.6" fill={INK} />
+        <path d="M 88 92 Q 100 100 112 92" stroke={INK} strokeWidth="3" fill="none" strokeLinecap="round" />
+      </>
+    );
+  }
+  if (type === "sad") {
+    return (
+      <>
+        <circle cx="88" cy="80" r="3.6" fill={INK} />
+        <circle cx="112" cy="80" r="3.6" fill={INK} />
+        <path d="M 88 98 Q 100 90 112 98" stroke={INK} strokeWidth="3" fill="none" strokeLinecap="round" />
+      </>
+    );
+  }
+  if (type === "surprised") {
+    return (
+      <>
+        <circle cx="88" cy="78" r="4" fill={INK} />
+        <circle cx="112" cy="78" r="4" fill={INK} />
+        <circle cx="100" cy="94" r="5" fill={INK} opacity="0.85" />
       </>
     );
   }

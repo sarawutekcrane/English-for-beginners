@@ -278,5 +278,2319 @@
         ]
       }
     }
+  },
+  {
+    "id": "hotel-checkin",
+    "title": "Checking into a hotel",
+    "emoji": "🏨",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Good evening! Do you have a reservation?",
+          "phonetic": "/ɡʊd ˈiːvnɪŋ! duː juː hæv ə ˌrɛzərˈveɪʃən/",
+          "thai": "สวัสดีตอนเย็นค่ะ คุณจองห้องไว้ไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, I have a reservation under Smith.",
+            "phonetic": "/jɛs, aɪ hæv ə ˌrɛzərˈveɪʃən ˈʌndər smɪθ/",
+            "thai": "ค่ะ ฉันจองไว้ในชื่อสมิธ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "No, I don't have a reservation.",
+            "phonetic": "/noʊ, aɪ doʊnt hæv ə ˌrɛzərˈveɪʃən/",
+            "thai": "ไม่ค่ะ ฉันไม่ได้จองไว้",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "The room is very clean.",
+            "phonetic": "/ðə ruːm ɪz ˈvɛri kliːn/",
+            "thai": "ห้องนี้สะอาดมากค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Great, may I see your passport, please?",
+          "phonetic": "/ɡreɪt, meɪ aɪ siː jʊər ˈpæspɔːrt, pliːz/",
+          "thai": "ได้เลยค่ะ ขอดูพาสปอร์ตหน่อยได้ไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Here you are.",
+            "phonetic": "/hɪr juː ɑːr/",
+            "thai": "นี่ค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Sure, one moment.",
+            "phonetic": "/ʃʊr, wʌn ˈmoʊmənt/",
+            "thai": "ได้ค่ะ รอสักครู่นะคะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't have a car.",
+            "phonetic": "/aɪ doʊnt hæv ə kɑːr/",
+            "thai": "ฉันไม่มีรถค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "That's okay, we have rooms available. How many nights?",
+          "phonetic": "/ðæts ˈoʊkeɪ, wiː hæv ruːmz əˈveɪləbəl. haʊ ˈmɛni naɪts/",
+          "thai": "ไม่เป็นไรค่ะ เรามีห้องว่าง จะพักกี่คืนคะ"
+        },
+        "options": [
+          {
+            "text": "Two nights, please.",
+            "phonetic": "/tuː naɪts, pliːz/",
+            "thai": "สองคืนค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Just one night.",
+            "phonetic": "/dʒʌst wʌn naɪt/",
+            "thai": "แค่คืนเดียวค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I like the beach.",
+            "phonetic": "/aɪ laɪk ðə biːtʃ/",
+            "thai": "ฉันชอบชายหาดค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Would you like a room with a city view or a sea view?",
+          "phonetic": "/wʊd juː laɪk ə ruːm wɪð ə ˈsɪti vjuː ɔːr ə siː vjuː/",
+          "thai": "อยากได้ห้องวิวเมืองหรือวิวทะเลคะ"
+        },
+        "options": [
+          {
+            "text": "City view, please.",
+            "phonetic": "/ˈsɪti vjuː, pliːz/",
+            "thai": "วิวเมืองค่ะ",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Sea view, please.",
+            "phonetic": "/siː vjuː, pliːz/",
+            "thai": "วิวทะเลค่ะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't eat seafood.",
+            "phonetic": "/aɪ doʊnt iːt ˈsiːfuːd/",
+            "thai": "ฉันไม่ทานอาหารทะเลค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Perfect. Here's your key card, room 305 on the third floor.",
+          "phonetic": "/ˈpɜːrfɪkt. hɪrz jʊər kiː kɑːrd, ruːm θriː oʊ faɪv ɒn ðə θɜːrd flɔːr/",
+          "thai": "เยี่ยมเลยค่ะ นี่คีย์การ์ด ห้อง 305 ชั้นสามค่ะ"
+        },
+        "options": [
+          {
+            "text": "Thank you very much.",
+            "phonetic": "/θæŋk juː ˈvɛri mʌtʃ/",
+            "thai": "ขอบคุณมากค่ะ",
+            "correct": true
+          },
+          {
+            "text": "What time is breakfast?",
+            "phonetic": "/wʌt taɪm ɪz ˈbrɛkfəst/",
+            "thai": "อาหารเช้าเสิร์ฟกี่โมงคะ",
+            "correct": true
+          },
+          {
+            "text": "I love pizza.",
+            "phonetic": "/aɪ lʌv ˈpiːtsə/",
+            "thai": "ฉันชอบพิซซ่าค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Perfect. Here's your key card, room 512 on the fifth floor.",
+          "phonetic": "/ˈpɜːrfɪkt. hɪrz jʊər kiː kɑːrd, ruːm faɪv wʌn tuː ɒn ðə fɪfθ flɔːr/",
+          "thai": "เยี่ยมเลยค่ะ นี่คีย์การ์ด ห้อง 512 ชั้นห้าค่ะ"
+        },
+        "options": [
+          {
+            "text": "Thank you so much.",
+            "phonetic": "/θæŋk juː soʊ mʌtʃ/",
+            "thai": "ขอบคุณมากๆ ค่ะ",
+            "correct": true
+          },
+          {
+            "text": "Is there free Wi-Fi?",
+            "phonetic": "/ɪz ðɛr friː ˈwaɪfaɪ/",
+            "thai": "มีไวไฟฟรีไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "I don't like coffee.",
+            "phonetic": "/aɪ doʊnt laɪk ˈkɒfi/",
+            "thai": "ฉันไม่ชอบกาแฟค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "clothes-shopping",
+    "title": "Shopping for clothes",
+    "emoji": "👕",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Hi! Can I help you find anything?",
+          "phonetic": "/haɪ! kæn aɪ hɛlp juː faɪnd ˈɛniθɪŋ/",
+          "thai": "สวัสดีค่ะ ให้ช่วยหาอะไรไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, I'm looking for a jacket.",
+            "phonetic": "/jɛs, aɪm ˈlʊkɪŋ fɔːr ə ˈdʒækɪt/",
+            "thai": "ค่ะ ฉันกำลังหาแจ็คเก็ตอยู่",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Yes, I need a pair of shoes.",
+            "phonetic": "/jɛs, aɪ niːd ə pɛr əv ʃuːz/",
+            "thai": "ค่ะ ฉันต้องการรองเท้าสักคู่",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "The weather is nice today.",
+            "phonetic": "/ðə ˈwɛðər ɪz naɪs təˈdeɪ/",
+            "thai": "วันนี้อากาศดีนะคะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Sure, what size do you wear?",
+          "phonetic": "/ʃʊr, wʌt saɪz duː juː wɛr/",
+          "thai": "ได้ค่ะ คุณใส่ไซซ์อะไรคะ"
+        },
+        "options": [
+          {
+            "text": "I wear a medium.",
+            "phonetic": "/aɪ wɛr ə ˈmiːdiəm/",
+            "thai": "ฉันใส่ไซซ์กลางค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I wear a large.",
+            "phonetic": "/aɪ wɛr ə lɑːrdʒ/",
+            "thai": "ฉันใส่ไซซ์ใหญ่ค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't like the color blue.",
+            "phonetic": "/aɪ doʊnt laɪk ðə ˈkʌlər bluː/",
+            "thai": "ฉันไม่ชอบสีฟ้าค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Okay, what size shoe do you need?",
+          "phonetic": "/ˈoʊkeɪ, wʌt saɪz ʃuː duː juː niːd/",
+          "thai": "โอเคค่ะ รองเท้าไซซ์อะไรคะ"
+        },
+        "options": [
+          {
+            "text": "Size 40, please.",
+            "phonetic": "/saɪz ˈfɔːrti, pliːz/",
+            "thai": "ไซซ์ 40 ค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I'm not sure, can I try one on?",
+            "phonetic": "/aɪm nɒt ʃʊr, kæn aɪ traɪ wʌn ɒn/",
+            "thai": "ฉันไม่แน่ใจค่ะ ขอลองสวมได้ไหมคะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't wear hats.",
+            "phonetic": "/aɪ doʊnt wɛr hæts/",
+            "thai": "ฉันไม่ใส่หมวกค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Here you go. Would you like to try it on?",
+          "phonetic": "/hɪr juː ɡoʊ. wʊd juː laɪk tuː traɪ ɪt ɒn/",
+          "thai": "นี่ค่ะ อยากลองสวมดูไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, where's the fitting room?",
+            "phonetic": "/jɛs, wɛrz ðə ˈfɪtɪŋ ruːm/",
+            "thai": "ค่ะ ห้องลองอยู่ตรงไหนคะ",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "No, I'll just buy it.",
+            "phonetic": "/noʊ, aɪl dʒʌst baɪ ɪt/",
+            "thai": "ไม่ค่ะ ฉันจะซื้อเลย",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't have any money.",
+            "phonetic": "/aɪ doʊnt hæv ˈɛni ˈmʌni/",
+            "thai": "ฉันไม่มีเงินเลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "It's right over there, on the left.",
+          "phonetic": "/ɪts raɪt ˈoʊvər ðɛr, ɒn ðə lɛft/",
+          "thai": "อยู่ตรงนั้นเลยค่ะ ทางซ้าย"
+        },
+        "options": [
+          {
+            "text": "Thanks, I'll go take a look.",
+            "phonetic": "/θæŋks, aɪl ɡoʊ teɪk ə lʊk/",
+            "thai": "ขอบคุณค่ะ ฉันจะไปลองดู",
+            "correct": true
+          },
+          {
+            "text": "It fits perfectly!",
+            "phonetic": "/ɪt fɪts ˈpɜːrfɪktli/",
+            "thai": "พอดีเป๊ะเลยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I don't have a car.",
+            "phonetic": "/aɪ doʊnt hæv ə kɑːr/",
+            "thai": "ฉันไม่มีรถค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Great choice! You can pay at the counter.",
+          "phonetic": "/ɡreɪt tʃɔɪs! juː kæn peɪ æt ðə ˈkaʊntər/",
+          "thai": "เลือกได้ดีค่ะ จ่ายเงินที่เคาน์เตอร์ได้เลยค่ะ"
+        },
+        "options": [
+          {
+            "text": "Do you accept credit cards?",
+            "phonetic": "/duː juː əkˈsɛpt ˈkrɛdɪt kɑːrdz/",
+            "thai": "รับบัตรเครดิตไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "Thank you, have a nice day.",
+            "phonetic": "/θæŋk juː, hæv ə naɪs deɪ/",
+            "thai": "ขอบคุณค่ะ ขอให้มีความสุขนะคะ",
+            "correct": true
+          },
+          {
+            "text": "I don't like shopping.",
+            "phonetic": "/aɪ doʊnt laɪk ˈʃɒpɪŋ/",
+            "thai": "ฉันไม่ชอบช้อปปิ้งค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "doctor-visit",
+    "title": "Visiting the doctor",
+    "emoji": "🩺",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Good morning. What's the problem today?",
+          "phonetic": "/ɡʊd ˈmɔːrnɪŋ. wʌts ðə ˈprɒbləm təˈdeɪ/",
+          "thai": "สวัสดีตอนเช้าค่ะ วันนี้มีปัญหาอะไรคะ"
+        },
+        "options": [
+          {
+            "text": "I have a headache.",
+            "phonetic": "/aɪ hæv ə ˈhɛdeɪk/",
+            "thai": "ฉันปวดหัวค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "I have a fever.",
+            "phonetic": "/aɪ hæv ə ˈfiːvər/",
+            "thai": "ฉันมีไข้ค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I like vegetables.",
+            "phonetic": "/aɪ laɪk ˈvɛdʒtəbəlz/",
+            "thai": "ฉันชอบผักค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "I see. How long have you had the headache?",
+          "phonetic": "/aɪ siː. haʊ lɒŋ hæv juː hæd ðə ˈhɛdeɪk/",
+          "thai": "เข้าใจแล้วค่ะ ปวดหัวมานานแค่ไหนแล้วคะ"
+        },
+        "options": [
+          {
+            "text": "Since yesterday.",
+            "phonetic": "/sɪns ˈjɛstərdeɪ/",
+            "thai": "ตั้งแต่เมื่อวานค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "For two days.",
+            "phonetic": "/fɔːr tuː deɪz/",
+            "thai": "สองวันแล้วค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't drink coffee.",
+            "phonetic": "/aɪ doʊnt drɪŋk ˈkɒfi/",
+            "thai": "ฉันไม่ดื่มกาแฟค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Okay. Do you have a cough as well?",
+          "phonetic": "/ˈoʊkeɪ. duː juː hæv ə kɒf æz wɛl/",
+          "thai": "โอเคค่ะ มีอาการไอด้วยไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, a little.",
+            "phonetic": "/jɛs, ə ˈlɪtəl/",
+            "thai": "ค่ะ นิดหน่อย",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "No, just the fever.",
+            "phonetic": "/noʊ, dʒʌst ðə ˈfiːvər/",
+            "thai": "ไม่มีค่ะ มีแค่ไข้",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I play tennis every week.",
+            "phonetic": "/aɪ pleɪ ˈtɛnɪs ˈɛvri wiːk/",
+            "thai": "ฉันเล่นเทนนิสทุกสัปดาห์ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Let me check your temperature. Please sit here.",
+          "phonetic": "/lɛt miː tʃɛk jʊər ˌtɛmprəˈtʃʊr. pliːz sɪt hɪr/",
+          "thai": "ขอวัดอุณหภูมิก่อนนะคะ นั่งตรงนี้ค่ะ"
+        },
+        "options": [
+          {
+            "text": "Okay, thank you, doctor.",
+            "phonetic": "/ˈoʊkeɪ, θæŋk juː, ˈdɒktər/",
+            "thai": "ค่ะ ขอบคุณค่ะคุณหมอ",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Is it serious?",
+            "phonetic": "/ɪz ɪt ˈsɪəriəs/",
+            "thai": "อาการหนักไหมคะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I love ice cream.",
+            "phonetic": "/aɪ lʌv aɪs kriːm/",
+            "thai": "ฉันชอบไอศกรีมค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "It's nothing serious. Just rest and drink plenty of water.",
+          "phonetic": "/ɪts ˈnʌθɪŋ ˈsɪəriəs. dʒʌst rɛst ænd drɪŋk ˈplɛnti əv ˈwɔːtər/",
+          "thai": "ไม่มีอะไรร้ายแรงค่ะ พักผ่อนและดื่มน้ำเยอะๆ นะคะ"
+        },
+        "options": [
+          {
+            "text": "Thank you, I will.",
+            "phonetic": "/θæŋk juː, aɪ wɪl/",
+            "thai": "ขอบคุณค่ะ ฉันจะทำตามนะคะ",
+            "correct": true
+          },
+          {
+            "text": "Do I need any medicine?",
+            "phonetic": "/duː aɪ niːd ˈɛni ˈmɛdsən/",
+            "thai": "ฉันต้องกินยาไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "See you next year.",
+            "phonetic": "/siː juː nɛkst jɪr/",
+            "thai": "แล้วเจอกันปีหน้านะคะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Don't worry, it's mild. I'll give you some medicine.",
+          "phonetic": "/doʊnt ˈwʌri, ɪts maɪld. aɪl ɡɪv juː sʌm ˈmɛdsən/",
+          "thai": "ไม่ต้องห่วงค่ะ อาการไม่หนัก ฉันจะให้ยาไปทานนะคะ"
+        },
+        "options": [
+          {
+            "text": "Thank you very much, doctor.",
+            "phonetic": "/θæŋk juː ˈvɛri mʌtʃ, ˈdɒktər/",
+            "thai": "ขอบคุณมากค่ะคุณหมอ",
+            "correct": true
+          },
+          {
+            "text": "How many times a day?",
+            "phonetic": "/haʊ ˈmɛni taɪmz ə deɪ/",
+            "thai": "วันละกี่ครั้งคะ",
+            "correct": true
+          },
+          {
+            "text": "I want to go swimming.",
+            "phonetic": "/aɪ wɒnt tuː ɡoʊ ˈswɪmɪŋ/",
+            "thai": "ฉันอยากไปว่ายน้ำค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "phone-call",
+    "title": "Making a phone call",
+    "emoji": "📞",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Hello, this is Green Cafe. How can I help you?",
+          "phonetic": "/həˈloʊ, ðɪs ɪz ɡriːn kæˈfeɪ. haʊ kæn aɪ hɛlp juː/",
+          "thai": "สวัสดีค่ะ ร้านกรีนคาเฟ่ค่ะ มีอะไรให้ช่วยไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Hi, I'd like to make a reservation.",
+            "phonetic": "/haɪ, aɪd laɪk tuː meɪk ə ˌrɛzərˈveɪʃən/",
+            "thai": "สวัสดีค่ะ อยากจะจองโต๊ะค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Hi, are you open now?",
+            "phonetic": "/haɪ, ɑːr juː ˈoʊpən naʊ/",
+            "thai": "สวัสดีค่ะ ตอนนี้เปิดอยู่ไหมคะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I lost my keys.",
+            "phonetic": "/aɪ lɒst maɪ kiːz/",
+            "thai": "ฉันทำกุญแจหายค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Sure, for how many people and what time?",
+          "phonetic": "/ʃʊr, fɔːr haʊ ˈmɛni ˈpiːpəl ænd wʌt taɪm/",
+          "thai": "ได้ค่ะ กี่ท่านและกี่โมงคะ"
+        },
+        "options": [
+          {
+            "text": "Four people, at seven o'clock.",
+            "phonetic": "/fɔːr ˈpiːpəl, æt ˈsɛvən əˈklɒk/",
+            "thai": "สี่ท่านค่ะ เวลาหนึ่งทุ่มค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Two people, at eight o'clock.",
+            "phonetic": "/tuː ˈpiːpəl, æt eɪt əˈklɒk/",
+            "thai": "สองท่านค่ะ เวลาสองทุ่มค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't have a phone.",
+            "phonetic": "/aɪ doʊnt hæv ə foʊn/",
+            "thai": "ฉันไม่มีโทรศัพท์ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Yes, we're open until ten tonight.",
+          "phonetic": "/jɛs, wɪr ˈoʊpən ənˈtɪl tɛn təˈnaɪt/",
+          "thai": "ค่ะ เราเปิดถึงสี่ทุ่มคืนนี้ค่ะ"
+        },
+        "options": [
+          {
+            "text": "Great, can I book a table too?",
+            "phonetic": "/ɡreɪt, kæn aɪ bʊk ə ˈteɪbəl tuː/",
+            "thai": "ดีเลยค่ะ ขอจองโต๊ะด้วยได้ไหมคะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Perfect, thank you.",
+            "phonetic": "/ˈpɜːrfɪkt, θæŋk juː/",
+            "thai": "เยี่ยมเลยค่ะ ขอบคุณค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "It's raining outside.",
+            "phonetic": "/ɪts ˈreɪnɪŋ aʊtˈsaɪd/",
+            "thai": "ข้างนอกฝนตกค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "May I have your name and phone number, please?",
+          "phonetic": "/meɪ aɪ hæv jʊər neɪm ænd foʊn ˈnʌmbər, pliːz/",
+          "thai": "ขอชื่อและเบอร์โทรศัพท์ด้วยได้ไหมคะ"
+        },
+        "options": [
+          {
+            "text": "My name is Anna, and my number is 0812345678.",
+            "phonetic": "/maɪ neɪm ɪz ˈænə, ænd maɪ ˈnʌmbər ɪz oʊ eɪt wʌn tuː θriː fɔːr faɪv sɪks ˈsɛvən eɪt/",
+            "thai": "ชื่อแอนนาค่ะ เบอร์โทร 0812345678",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Can I give you my email instead?",
+            "phonetic": "/kæn aɪ ɡɪv juː maɪ ˈiːmeɪl ɪnˈstɛd/",
+            "thai": "ให้อีเมลแทนได้ไหมคะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't have a name.",
+            "phonetic": "/aɪ doʊnt hæv ə neɪm/",
+            "thai": "ฉันไม่มีชื่อค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Perfect, your table is booked. See you soon!",
+          "phonetic": "/ˈpɜːrfɪkt, jʊər ˈteɪbəl ɪz bʊkt. siː juː suːn/",
+          "thai": "เรียบร้อยค่ะ จองโต๊ะให้แล้ว แล้วเจอกันนะคะ"
+        },
+        "options": [
+          {
+            "text": "Thank you, see you then.",
+            "phonetic": "/θæŋk juː, siː juː ðɛn/",
+            "thai": "ขอบคุณค่ะ แล้วเจอกันค่ะ",
+            "correct": true
+          },
+          {
+            "text": "Can I cancel later if needed?",
+            "phonetic": "/kæn aɪ ˈkænsəl ˈleɪtər ɪf ˈniːdɪd/",
+            "thai": "ถ้าจำเป็นขอยกเลิกทีหลังได้ไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "I love football.",
+            "phonetic": "/aɪ lʌv ˈfʊtbɔːl/",
+            "thai": "ฉันชอบฟุตบอลค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "That's fine, but a phone number is easier for us.",
+          "phonetic": "/ðæts faɪn, bʌt ə foʊn ˈnʌmbər ɪz ˈiːziər fɔːr ʌs/",
+          "thai": "ได้ค่ะ แต่เบอร์โทรจะสะดวกกว่าค่ะ"
+        },
+        "options": [
+          {
+            "text": "Okay, my number is 0898765432.",
+            "phonetic": "/ˈoʊkeɪ, maɪ ˈnʌmbər ɪz oʊ eɪt naɪn eɪt ˈsɛvən sɪks faɪv fɔːr θriː tuː/",
+            "thai": "โอเคค่ะ เบอร์ 0898765432",
+            "correct": true
+          },
+          {
+            "text": "Sure, I understand.",
+            "phonetic": "/ʃʊr, aɪ ˌʌndərˈstænd/",
+            "thai": "ได้ค่ะ เข้าใจแล้วค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I don't like phones.",
+            "phonetic": "/aɪ doʊnt laɪk foʊnz/",
+            "thai": "ฉันไม่ชอบโทรศัพท์ค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "new-friend",
+    "title": "Meeting someone new",
+    "emoji": "🤝",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Hi, I don't think we've met. I'm Tom.",
+          "phonetic": "/haɪ, aɪ doʊnt θɪŋk wiːv mɛt. aɪm tɒm/",
+          "thai": "สวัสดีค่ะ เราคงยังไม่เคยเจอกันนะ ผมชื่อทอมครับ"
+        },
+        "options": [
+          {
+            "text": "Nice to meet you, I'm Mai.",
+            "phonetic": "/naɪs tuː miːt juː, aɪm maɪ/",
+            "thai": "ยินดีที่ได้รู้จักค่ะ ฉันชื่อใหม่ค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Hi Tom, I'm Nick.",
+            "phonetic": "/haɪ tɒm, aɪm nɪk/",
+            "thai": "สวัสดีทอม ผมชื่อนิคครับ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "The bus is late again.",
+            "phonetic": "/ðə bʌs ɪz leɪt əˈɡɛn/",
+            "thai": "รถเมล์มาสายอีกแล้ว",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Nice to meet you too, Mai! Where are you from?",
+          "phonetic": "/naɪs tuː miːt juː tuː, maɪ! wɛr ɑːr juː frɒm/",
+          "thai": "ยินดีที่ได้รู้จักเหมือนกันค่ะ คุณมาจากไหนคะ"
+        },
+        "options": [
+          {
+            "text": "I'm from Thailand.",
+            "phonetic": "/aɪm frɒm ˈtaɪlænd/",
+            "thai": "ฉันมาจากประเทศไทยค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I'm from Chiang Mai.",
+            "phonetic": "/aɪm frɒm tʃiˈæŋ maɪ/",
+            "thai": "ฉันมาจากเชียงใหม่ค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't have a passport.",
+            "phonetic": "/aɪ doʊnt hæv ə ˈpæspɔːrt/",
+            "thai": "ฉันไม่มีพาสปอร์ตค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Nice to meet you, Nick! What do you do?",
+          "phonetic": "/naɪs tuː miːt juː, nɪk! wʌt duː juː duː/",
+          "thai": "ยินดีที่ได้รู้จักครับ นิคทำงานอะไรครับ"
+        },
+        "options": [
+          {
+            "text": "I'm a student.",
+            "phonetic": "/aɪm ə ˈstuːdənt/",
+            "thai": "ผมเป็นนักเรียนครับ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I work as an engineer.",
+            "phonetic": "/aɪ wɜːrk æz æn ˌɛndʒɪˈnɪr/",
+            "thai": "ผมทำงานเป็นวิศวกรครับ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't like my job.",
+            "phonetic": "/aɪ doʊnt laɪk maɪ dʒɒb/",
+            "thai": "ผมไม่ชอบงานของผมครับ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "That's great! What do you like to do in your free time?",
+          "phonetic": "/ðæts ɡreɪt! wʌt duː juː laɪk tuː duː ɪn jʊər friː taɪm/",
+          "thai": "เยี่ยมเลยครับ! เวลาว่างชอบทำอะไรครับ"
+        },
+        "options": [
+          {
+            "text": "I like reading books.",
+            "phonetic": "/aɪ laɪk ˈriːdɪŋ bʊks/",
+            "thai": "ฉันชอบอ่านหนังสือค่ะ",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "I like playing sports.",
+            "phonetic": "/aɪ laɪk ˈpleɪɪŋ spɔːrts/",
+            "thai": "ฉันชอบเล่นกีฬาค่ะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't have free time.",
+            "phonetic": "/aɪ doʊnt hæv friː taɪm/",
+            "thai": "ฉันไม่มีเวลาว่างเลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Me too! Do you have a favorite author?",
+          "phonetic": "/miː tuː! duː juː hæv ə ˈfeɪvərɪt ˈɔːθər/",
+          "thai": "ผมก็เหมือนกันครับ! มีนักเขียนคนโปรดไหมครับ"
+        },
+        "options": [
+          {
+            "text": "Yes, I really like mystery novels.",
+            "phonetic": "/jɛs, aɪ ˈrɪli laɪk ˈmɪstəri ˈnɒvəlz/",
+            "thai": "มีค่ะ ฉันชอบนิยายสืบสวนมากค่ะ",
+            "correct": true
+          },
+          {
+            "text": "Not really, I read all kinds of books.",
+            "phonetic": "/nɒt ˈrɪli, aɪ riːd ɔːl kaɪndz əv bʊks/",
+            "thai": "ไม่แน่ใจค่ะ ฉันอ่านหนังสือทุกประเภทค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I can't swim.",
+            "phonetic": "/aɪ kænt swɪm/",
+            "thai": "ฉันว่ายน้ำไม่เป็นค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Cool! Which sport do you play?",
+          "phonetic": "/kuːl! wɪtʃ spɔːrt duː juː pleɪ/",
+          "thai": "เจ๋งเลยครับ! เล่นกีฬาอะไรครับ"
+        },
+        "options": [
+          {
+            "text": "I play badminton every weekend.",
+            "phonetic": "/aɪ pleɪ ˈbædmɪntən ˈɛvri ˈwiːkɛnd/",
+            "thai": "ฉันเล่นแบดมินตันทุกสุดสัปดาห์ค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I usually go running.",
+            "phonetic": "/aɪ ˈjuːʒuəli ɡoʊ ˈrʌnɪŋ/",
+            "thai": "ปกติฉันไปวิ่งค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I don't own a phone.",
+            "phonetic": "/aɪ doʊnt oʊn ə foʊn/",
+            "thai": "ฉันไม่มีโทรศัพท์ค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "airport-checkin",
+    "title": "At the airport",
+    "emoji": "✈️",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Good morning. May I see your passport and ticket?",
+          "phonetic": "/ɡʊd ˈmɔːrnɪŋ. meɪ aɪ siː jʊər ˈpæspɔːrt ænd ˈtɪkɪt/",
+          "thai": "สวัสดีตอนเช้าค่ะ ขอดูพาสปอร์ตกับตั๋วด้วยค่ะ"
+        },
+        "options": [
+          {
+            "text": "Here they are.",
+            "phonetic": "/hɪr ðeɪ ɑːr/",
+            "thai": "นี่ค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "I have an e-ticket on my phone.",
+            "phonetic": "/aɪ hæv æn iː ˈtɪkɪt ɒn maɪ foʊn/",
+            "thai": "ฉันมีตั๋วอิเล็กทรอนิกส์ในโทรศัพท์ค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I don't like flying.",
+            "phonetic": "/aɪ doʊnt laɪk ˈflaɪɪŋ/",
+            "thai": "ฉันไม่ชอบขึ้นเครื่องบินค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Thank you. Do you have any luggage to check in?",
+          "phonetic": "/θæŋk juː. duː juː hæv ˈɛni ˈlʌɡɪdʒ tuː tʃɛk ɪn/",
+          "thai": "ขอบคุณค่ะ มีกระเป๋าจะโหลดไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, one suitcase.",
+            "phonetic": "/jɛs, wʌn ˈsuːtkeɪs/",
+            "thai": "มีค่ะ กระเป๋าใบเดียว",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "No, just this carry-on.",
+            "phonetic": "/noʊ, dʒʌst ðɪs ˈkæri ɒn/",
+            "thai": "ไม่มีค่ะ มีแค่กระเป๋าถือใบนี้",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I forgot my ticket.",
+            "phonetic": "/aɪ fərˈɡɒt maɪ ˈtɪkɪt/",
+            "thai": "ฉันลืมตั๋วค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "That's fine. Is this your first time flying with us?",
+          "phonetic": "/ðæts faɪn. ɪz ðɪs jʊər fɜːrst taɪm ˈflaɪɪŋ wɪð ʌs/",
+          "thai": "ได้ค่ะ นี่เป็นครั้งแรกที่บินกับเราไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, it's my first time.",
+            "phonetic": "/jɛs, ɪts maɪ fɜːrst taɪm/",
+            "thai": "ค่ะ เป็นครั้งแรกค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "No, I've flown with you before.",
+            "phonetic": "/noʊ, aɪv floʊn wɪð juː bɪˈfɔːr/",
+            "thai": "ไม่ค่ะ ฉันเคยบินกับคุณมาก่อนแล้ว",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't like the food here.",
+            "phonetic": "/aɪ doʊnt laɪk ðə fuːd hɪr/",
+            "thai": "ฉันไม่ชอบอาหารที่นี่ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Would you prefer a window seat or an aisle seat?",
+          "phonetic": "/wʊd juː prɪˈfɜːr ə ˈwɪndoʊ siːt ɔːr æn aɪl siːt/",
+          "thai": "อยากได้ที่นั่งริมหน้าต่างหรือริมทางเดินคะ"
+        },
+        "options": [
+          {
+            "text": "A window seat, please.",
+            "phonetic": "/ə ˈwɪndoʊ siːt, pliːz/",
+            "thai": "ริมหน้าต่างค่ะ",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "An aisle seat, please.",
+            "phonetic": "/æn aɪl siːt, pliːz/",
+            "thai": "ริมทางเดินค่ะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't like flying at night.",
+            "phonetic": "/aɪ doʊnt laɪk ˈflaɪɪŋ æt naɪt/",
+            "thai": "ฉันไม่ชอบบินตอนกลางคืนค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Great, here's your boarding pass. Gate B12, boarding at 3pm.",
+          "phonetic": "/ɡreɪt, hɪrz jʊər ˈbɔːrdɪŋ pæs. ɡeɪt biː twɛlv, ˈbɔːrdɪŋ æt θriː piː ɛm/",
+          "thai": "เรียบร้อยค่ะ นี่บอร์ดดิ้งพาส ประตู B12 ขึ้นเครื่องบ่ายสามโมงค่ะ"
+        },
+        "options": [
+          {
+            "text": "Thank you very much.",
+            "phonetic": "/θæŋk juː ˈvɛri mʌtʃ/",
+            "thai": "ขอบคุณมากค่ะ",
+            "correct": true
+          },
+          {
+            "text": "Where is gate B12?",
+            "phonetic": "/wɛr ɪz ɡeɪt biː twɛlv/",
+            "thai": "ประตู B12 อยู่ตรงไหนคะ",
+            "correct": true
+          },
+          {
+            "text": "I lost my wallet.",
+            "phonetic": "/aɪ lɒst maɪ ˈwɒlɪt/",
+            "thai": "ฉันทำกระเป๋าเงินหายค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Great, here's your boarding pass. Gate A5, boarding at 3pm.",
+          "phonetic": "/ɡreɪt, hɪrz jʊər ˈbɔːrdɪŋ pæs. ɡeɪt eɪ faɪv, ˈbɔːrdɪŋ æt θriː piː ɛm/",
+          "thai": "เรียบร้อยค่ะ นี่บอร์ดดิ้งพาส ประตู A5 ขึ้นเครื่องบ่ายสามโมงค่ะ"
+        },
+        "options": [
+          {
+            "text": "Thank you so much.",
+            "phonetic": "/θæŋk juː soʊ mʌtʃ/",
+            "thai": "ขอบคุณมากๆ ค่ะ",
+            "correct": true
+          },
+          {
+            "text": "How do I get to gate A5?",
+            "phonetic": "/haʊ duː aɪ ɡɛt tuː ɡeɪt eɪ faɪv/",
+            "thai": "ไปประตู A5 ยังไงคะ",
+            "correct": true
+          },
+          {
+            "text": "I like window shopping.",
+            "phonetic": "/aɪ laɪk ˈwɪndoʊ ˈʃɒpɪŋ/",
+            "thai": "ฉันชอบดูของตามร้านค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "weekend-plans",
+    "title": "Talking about weekend plans",
+    "emoji": "📅",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Do you have any plans for the weekend?",
+          "phonetic": "/duː juː hæv ˈɛni plænz fɔːr ðə ˈwiːkɛnd/",
+          "thai": "สุดสัปดาห์นี้มีแผนอะไรไหม"
+        },
+        "options": [
+          {
+            "text": "Yes, I'm going to visit my parents.",
+            "phonetic": "/jɛs, aɪm ˈɡoʊɪŋ tuː ˈvɪzɪt maɪ ˈpɛrənts/",
+            "thai": "มีค่ะ ฉันจะไปเยี่ยมพ่อแม่",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Not yet, do you have any ideas?",
+            "phonetic": "/nɒt jɛt, duː juː hæv ˈɛni aɪˈdɪəz/",
+            "thai": "ยังไม่มีเลยค่ะ มีไอเดียอะไรไหม",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I finished my homework yesterday.",
+            "phonetic": "/aɪ ˈfɪnɪʃt maɪ ˈhoʊmwɜːrk ˈjɛstərdeɪ/",
+            "thai": "ฉันทำการบ้านเสร็จเมื่อวานแล้ว",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "That sounds nice. Do they live far from here?",
+          "phonetic": "/ðæt saʊndz naɪs. duː ðeɪ lɪv fɑːr frɒm hɪr/",
+          "thai": "ฟังดูดีจังเลย บ้านเขาอยู่ไกลจากที่นี่ไหม"
+        },
+        "options": [
+          {
+            "text": "Not too far, about an hour away.",
+            "phonetic": "/nɒt tuː fɑːr, əˈbaʊt æn ˈaʊər əˈweɪ/",
+            "thai": "ไม่ไกลมากค่ะ ประมาณชั่วโมงเดียว",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Yes, it takes a whole day.",
+            "phonetic": "/jɛs, ɪt teɪks ə hoʊl deɪ/",
+            "thai": "ไกลค่ะ ใช้เวลาทั้งวันเลย",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't have any parents.",
+            "phonetic": "/aɪ doʊnt hæv ˈɛni ˈpɛrənts/",
+            "thai": "ฉันไม่มีพ่อแม่ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "How about going to the beach or watching a movie?",
+          "phonetic": "/haʊ əˈbaʊt ˈɡoʊɪŋ tuː ðə biːtʃ ɔːr ˈwɒtʃɪŋ ə ˈmuːvi/",
+          "thai": "ไปทะเลหรือไปดูหนังดีไหม"
+        },
+        "options": [
+          {
+            "text": "The beach sounds great!",
+            "phonetic": "/ðə biːtʃ saʊndz ɡreɪt/",
+            "thai": "ทะเลฟังดูดีเลยค่ะ!",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Let's watch a movie instead.",
+            "phonetic": "/lɛts wɒtʃ ə ˈmuːvi ɪnˈstɛd/",
+            "thai": "ไปดูหนังกันดีกว่าค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't like the ocean.",
+            "phonetic": "/aɪ doʊnt laɪk ðə ˈoʊʃən/",
+            "thai": "ฉันไม่ชอบทะเลค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Sounds fun! What time should we meet?",
+          "phonetic": "/saʊndz fʌn! wʌt taɪm ʃʊd wiː miːt/",
+          "thai": "ฟังดูสนุกเลย! เจอกันกี่โมงดี"
+        },
+        "options": [
+          {
+            "text": "Let's meet at ten in the morning.",
+            "phonetic": "/lɛts miːt æt tɛn ɪn ðə ˈmɔːrnɪŋ/",
+            "thai": "เจอกันสิบโมงเช้าดีไหม",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "How about two in the afternoon?",
+            "phonetic": "/haʊ əˈbaʊt tuː ɪn ðə ˌæftərˈnuːn/",
+            "thai": "บ่ายสองโมงดีไหม",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't have a watch.",
+            "phonetic": "/aɪ doʊnt hæv ə wɒtʃ/",
+            "thai": "ฉันไม่มีนาฬิกาค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Perfect, ten it is! See you then.",
+          "phonetic": "/ˈpɜːrfɪkt, tɛn ɪt ɪz! siː juː ðɛn/",
+          "thai": "เยี่ยม สิบโมงเลยนะ! แล้วเจอกัน"
+        },
+        "options": [
+          {
+            "text": "See you then!",
+            "phonetic": "/siː juː ðɛn/",
+            "thai": "แล้วเจอกันนะคะ!",
+            "correct": true
+          },
+          {
+            "text": "I can't wait!",
+            "phonetic": "/aɪ kænt weɪt/",
+            "thai": "รอไม่ไหวแล้วค่ะ!",
+            "correct": true
+          },
+          {
+            "text": "I have to work tomorrow.",
+            "phonetic": "/aɪ hæv tuː wɜːrk təˈmɒroʊ/",
+            "thai": "พรุ่งนี้ฉันต้องทำงานค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Perfect, two o'clock works for me too!",
+          "phonetic": "/ˈpɜːrfɪkt, tuː əˈklɒk wɜːrks fɔːr miː tuː/",
+          "thai": "เยี่ยม บ่ายสองก็สะดวกกับฉันด้วย!"
+        },
+        "options": [
+          {
+            "text": "Great, see you soon.",
+            "phonetic": "/ɡreɪt, siː juː suːn/",
+            "thai": "เยี่ยมเลยค่ะ แล้วเจอกันนะ",
+            "correct": true
+          },
+          {
+            "text": "I'll text you the address.",
+            "phonetic": "/aɪl tɛkst juː ðiː əˈdrɛs/",
+            "thai": "ฉันจะส่งที่อยู่ไปให้ทางข้อความนะ",
+            "correct": true
+          },
+          {
+            "text": "It's my birthday today.",
+            "phonetic": "/ɪts maɪ ˈbɜːrθdeɪ təˈdeɪ/",
+            "thai": "วันนี้เป็นวันเกิดของฉันค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "taxi-ride",
+    "title": "Taking a taxi",
+    "emoji": "🚕",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Hello! Where would you like to go?",
+          "phonetic": "/həˈloʊ! wɛr wʊd juː laɪk tuː ɡoʊ/",
+          "thai": "สวัสดีครับ จะไปที่ไหนครับ"
+        },
+        "options": [
+          {
+            "text": "To the airport, please.",
+            "phonetic": "/tuː ðiː ˈɛrpɔːrt, pliːz/",
+            "thai": "ไปสนามบินค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "To the city center, please.",
+            "phonetic": "/tuː ðə ˈsɪti ˈsɛntər, pliːz/",
+            "thai": "ไปใจกลางเมืองค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I don't have any luggage.",
+            "phonetic": "/aɪ doʊnt hæv ˈɛni ˈlʌɡɪdʒ/",
+            "thai": "ฉันไม่มีกระเป๋าเลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Sure, that will take about thirty minutes.",
+          "phonetic": "/ʃʊr, ðæt wɪl teɪk əˈbaʊt ˈθɜːrti ˈmɪnɪts/",
+          "thai": "ได้ครับ ใช้เวลาประมาณสามสิบนาทีครับ"
+        },
+        "options": [
+          {
+            "text": "That's fine, thank you.",
+            "phonetic": "/ðæts faɪn, θæŋk juː/",
+            "thai": "ได้ค่ะ ขอบคุณค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Can we go faster? My flight is soon.",
+            "phonetic": "/kæn wiː ɡoʊ ˈfæstər? maɪ flaɪt ɪz suːn/",
+            "thai": "ไปเร็วขึ้นได้ไหมคะ เที่ยวบินฉันจะออกแล้ว",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't like airplanes.",
+            "phonetic": "/aɪ doʊnt laɪk ˈɛrpleɪnz/",
+            "thai": "ฉันไม่ชอบเครื่องบินค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "No problem, it's about fifteen minutes from here.",
+          "phonetic": "/noʊ ˈprɒbləm, ɪts əˈbaʊt ˈfɪftiːn ˈmɪnɪts frɒm hɪr/",
+          "thai": "ไม่มีปัญหาครับ จากที่นี่ประมาณสิบห้านาทีครับ"
+        },
+        "options": [
+          {
+            "text": "Great, thanks.",
+            "phonetic": "/ɡreɪt, θæŋks/",
+            "thai": "เยี่ยมเลยค่ะ ขอบคุณค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Can you turn on the AC, please?",
+            "phonetic": "/kæn juː tɜːrn ɒn ðiː eɪ siː, pliːz/",
+            "thai": "เปิดแอร์ได้ไหมคะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I love spicy food.",
+            "phonetic": "/aɪ lʌv ˈspaɪsi fuːd/",
+            "thai": "ฉันชอบอาหารเผ็ดค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Of course. Would you like to pay by cash or card?",
+          "phonetic": "/əv kɔːrs. wʊd juː laɪk tuː peɪ baɪ kæʃ ɔːr kɑːrd/",
+          "thai": "ได้ครับ จะจ่ายด้วยเงินสดหรือบัตรครับ"
+        },
+        "options": [
+          {
+            "text": "By cash, please.",
+            "phonetic": "/baɪ kæʃ, pliːz/",
+            "thai": "จ่ายเงินสดค่ะ",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "By card, please.",
+            "phonetic": "/baɪ kɑːrd, pliːz/",
+            "thai": "จ่ายด้วยบัตรค่ะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't have any bags.",
+            "phonetic": "/aɪ doʊnt hæv ˈɛni bæɡz/",
+            "thai": "ฉันไม่มีกระเป๋าค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "No problem. Here we are, that will be 250 baht.",
+          "phonetic": "/noʊ ˈprɒbləm. hɪr wiː ɑːr, ðæt wɪl biː tuː ˈhʌndrəd fɪfti bɑːt/",
+          "thai": "ไม่มีปัญหาครับ ถึงแล้วครับ ค่าโดยสาร 250 บาทครับ"
+        },
+        "options": [
+          {
+            "text": "Here you go, keep the change.",
+            "phonetic": "/hɪr juː ɡoʊ, kiːp ðə tʃeɪndʒ/",
+            "thai": "นี่ค่ะ ไม่ต้องทอนค่ะ",
+            "correct": true
+          },
+          {
+            "text": "Thank you for the ride.",
+            "phonetic": "/θæŋk juː fɔːr ðə raɪd/",
+            "thai": "ขอบคุณที่ส่งนะคะ",
+            "correct": true
+          },
+          {
+            "text": "I don't like taxis.",
+            "phonetic": "/aɪ doʊnt laɪk ˈtæksiz/",
+            "thai": "ฉันไม่ชอบแท็กซี่ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "No problem. Here we are, please tap your card here.",
+          "phonetic": "/noʊ ˈprɒbləm. hɪr wiː ɑːr, pliːz tæp jʊər kɑːrd hɪr/",
+          "thai": "ไม่มีปัญหาครับ ถึงแล้วครับ แตะบัตรตรงนี้ได้เลยครับ"
+        },
+        "options": [
+          {
+            "text": "Thank you very much.",
+            "phonetic": "/θæŋk juː ˈvɛri mʌtʃ/",
+            "thai": "ขอบคุณมากค่ะ",
+            "correct": true
+          },
+          {
+            "text": "Can I get a receipt?",
+            "phonetic": "/kæn aɪ ɡɛt ə rɪˈsiːt/",
+            "thai": "ขอใบเสร็จได้ไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "I forgot my umbrella.",
+            "phonetic": "/aɪ fərˈɡɒt maɪ ʌmˈbrɛlə/",
+            "thai": "ฉันลืมร่มค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "bank-visit",
+    "title": "At the bank",
+    "emoji": "🏦",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Good afternoon. How can I help you today?",
+          "phonetic": "/ɡʊd ˌæftərˈnuːn. haʊ kæn aɪ hɛlp juː təˈdeɪ/",
+          "thai": "สวัสดีตอนบ่ายค่ะ วันนี้มีอะไรให้ช่วยคะ"
+        },
+        "options": [
+          {
+            "text": "I'd like to open a new account.",
+            "phonetic": "/aɪd laɪk tuː ˈoʊpən ə njuː əˈkaʊnt/",
+            "thai": "ฉันอยากเปิดบัญชีใหม่ค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "I'd like to withdraw some money.",
+            "phonetic": "/aɪd laɪk tuː wɪðˈdrɔː sʌm ˈmʌni/",
+            "thai": "ฉันอยากถอนเงินค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I like this song.",
+            "phonetic": "/aɪ laɪk ðɪs sɒŋ/",
+            "thai": "ฉันชอบเพลงนี้ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Sure! Do you have your ID card with you?",
+          "phonetic": "/ʃʊr! duː juː hæv jʊər aɪ diː kɑːrd wɪð juː/",
+          "thai": "ได้ค่ะ มีบัตรประชาชนติดตัวไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, here it is.",
+            "phonetic": "/jɛs, hɪr ɪt ɪz/",
+            "thai": "มีค่ะ นี่ค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Yes, and my passport too.",
+            "phonetic": "/jɛs, ænd maɪ ˈpæspɔːrt tuː/",
+            "thai": "มีค่ะ และมีพาสปอร์ตด้วยค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't have any documents.",
+            "phonetic": "/aɪ doʊnt hæv ˈɛni ˈdɒkjəmənts/",
+            "thai": "ฉันไม่มีเอกสารเลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Okay, how much would you like to withdraw?",
+          "phonetic": "/ˈoʊkeɪ, haʊ mʌtʃ wʊd juː laɪk tuː wɪðˈdrɔː/",
+          "thai": "ได้ค่ะ อยากถอนเท่าไหร่คะ"
+        },
+        "options": [
+          {
+            "text": "Two thousand baht, please.",
+            "phonetic": "/tuː ˈθaʊzənd bɑːt, pliːz/",
+            "thai": "สองพันบาทค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Five thousand baht, please.",
+            "phonetic": "/faɪv ˈθaʊzənd bɑːt, pliːz/",
+            "thai": "ห้าพันบาทค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't have a bank account.",
+            "phonetic": "/aɪ doʊnt hæv ə bæŋk əˈkaʊnt/",
+            "thai": "ฉันไม่มีบัญชีธนาคารค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Great, please fill out this form and sign here.",
+          "phonetic": "/ɡreɪt, pliːz fɪl aʊt ðɪs fɔːrm ænd saɪn hɪr/",
+          "thai": "ได้ค่ะ กรุณากรอกแบบฟอร์มนี้และเซ็นชื่อตรงนี้ค่ะ"
+        },
+        "options": [
+          {
+            "text": "Okay, one moment please.",
+            "phonetic": "/ˈoʊkeɪ, wʌn ˈmoʊmənt pliːz/",
+            "thai": "ค่ะ รอสักครู่นะคะ",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Can you help me fill it out?",
+            "phonetic": "/kæn juː hɛlp miː fɪl ɪt aʊt/",
+            "thai": "ช่วยกรอกให้หน่อยได้ไหมคะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't have a pen.",
+            "phonetic": "/aɪ doʊnt hæv ə pɛn/",
+            "thai": "ฉันไม่มีปากกาค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Take your time. Just bring it back when you're done.",
+          "phonetic": "/teɪk jʊər taɪm. dʒʌst brɪŋ ɪt bæk wɛn jʊr dʌn/",
+          "thai": "ค่อยๆ ทำนะคะ เสร็จแล้วเอามาคืนได้เลยค่ะ"
+        },
+        "options": [
+          {
+            "text": "Thank you, I'm done now.",
+            "phonetic": "/θæŋk juː, aɪm dʌn naʊ/",
+            "thai": "ขอบคุณค่ะ เสร็จแล้วค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I have a question about this part.",
+            "phonetic": "/aɪ hæv ə ˈkwɛstʃən əˈbaʊt ðɪs pɑːrt/",
+            "thai": "ฉันมีคำถามเกี่ยวกับส่วนนี้ค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I love traveling.",
+            "phonetic": "/aɪ lʌv ˈtrævəlɪŋ/",
+            "thai": "ฉันชอบท่องเที่ยวค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Of course, let me show you what to write.",
+          "phonetic": "/əv kɔːrs, lɛt miː ʃoʊ juː wʌt tuː raɪt/",
+          "thai": "ได้ค่ะ ให้ดิฉันช่วยแนะนำวิธีกรอกนะคะ"
+        },
+        "options": [
+          {
+            "text": "Thank you so much for your help.",
+            "phonetic": "/θæŋk juː soʊ mʌtʃ fɔːr jʊər hɛlp/",
+            "thai": "ขอบคุณมากๆ ที่ช่วยนะคะ",
+            "correct": true
+          },
+          {
+            "text": "What should I write here?",
+            "phonetic": "/wʌt ʃʊd aɪ raɪt hɪr/",
+            "thai": "ตรงนี้ต้องเขียนอะไรคะ",
+            "correct": true
+          },
+          {
+            "text": "I don't like paperwork.",
+            "phonetic": "/aɪ doʊnt laɪk ˈpeɪpərwɜːrk/",
+            "thai": "ฉันไม่ชอบงานเอกสารค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "weather-smalltalk",
+    "title": "Talking about the weather",
+    "emoji": "☀️",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "It's so hot today, isn't it?",
+          "phonetic": "/ɪts soʊ hɒt təˈdeɪ, ˈɪzənt ɪt/",
+          "thai": "วันนี้ร้อนมากเลยนะคะ ใช่ไหม"
+        },
+        "options": [
+          {
+            "text": "Yes, it's really hot!",
+            "phonetic": "/jɛs, ɪts ˈrɪli hɒt/",
+            "thai": "ค่ะ ร้อนมากจริงๆ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Actually, I think it's quite cool.",
+            "phonetic": "/ˈæktʃuəli, aɪ θɪŋk ɪts kwaɪt kuːl/",
+            "thai": "จริงๆ ฉันว่าค่อนข้างเย็นนะคะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I don't like coffee.",
+            "phonetic": "/aɪ doʊnt laɪk ˈkɒfi/",
+            "thai": "ฉันไม่ชอบกาแฟค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "I heard it might rain later. Did you bring an umbrella?",
+          "phonetic": "/aɪ hɜːrd ɪt maɪt reɪn ˈleɪtər. dɪd juː brɪŋ æn ʌmˈbrɛlə/",
+          "thai": "ได้ยินว่าเดี๋ยวฝนอาจจะตกนะคะ พกร่มมาไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, I always carry one.",
+            "phonetic": "/jɛs, aɪ ˈɔːlweɪz ˈkæri wʌn/",
+            "thai": "มีค่ะ ฉันพกติดตัวตลอด",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "No, I forgot it at home.",
+            "phonetic": "/noʊ, aɪ fərˈɡɒt ɪt æt hoʊm/",
+            "thai": "ไม่มีค่ะ ลืมไว้ที่บ้าน",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I love snow.",
+            "phonetic": "/aɪ lʌv snoʊ/",
+            "thai": "ฉันชอบหิมะค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Really? I guess the wind is helping today.",
+          "phonetic": "/ˈrɪli? aɪ ɡɛs ðə wɪnd ɪz ˈhɛlpɪŋ təˈdeɪ/",
+          "thai": "จริงเหรอคะ คงเป็นเพราะลมพัดวันนี้"
+        },
+        "options": [
+          {
+            "text": "Yes, the breeze feels nice.",
+            "phonetic": "/jɛs, ðə briːz fiːlz naɪs/",
+            "thai": "ค่ะ ลมเย็นสบายดีค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Maybe, or I'm just used to the heat.",
+            "phonetic": "/ˈmeɪbi, ɔːr aɪm dʒʌst juːzd tuː ðə hiːt/",
+            "thai": "อาจจะ หรือฉันชินกับความร้อนแล้วค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't like winter.",
+            "phonetic": "/aɪ doʊnt laɪk ˈwɪntər/",
+            "thai": "ฉันไม่ชอบฤดูหนาวค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "What's the weather usually like in your hometown?",
+          "phonetic": "/wʌts ðə ˈwɛðər ˈjuːʒuəli laɪk ɪn jʊər ˈhoʊmtaʊn/",
+          "thai": "ที่บ้านเกิดของคุณอากาศมักจะเป็นยังไงคะ"
+        },
+        "options": [
+          {
+            "text": "It's usually sunny and warm.",
+            "phonetic": "/ɪts ˈjuːʒuəli ˈsʌni ænd wɔːrm/",
+            "thai": "ปกติจะแดดดีและอบอุ่นค่ะ",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "It's often rainy in summer.",
+            "phonetic": "/ɪts ˈɒfən ˈreɪni ɪn ˈsʌmər/",
+            "thai": "หน้าร้อนฝนตกบ่อยค่ะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't remember my hometown.",
+            "phonetic": "/aɪ doʊnt rɪˈmɛmbər maɪ ˈhoʊmtaʊn/",
+            "thai": "ฉันจำบ้านเกิดตัวเองไม่ได้ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "That sounds lovely. I'd like to visit someday.",
+          "phonetic": "/ðæt saʊndz ˈlʌvli. aɪd laɪk tuː ˈvɪzɪt ˈsʌmdeɪ/",
+          "thai": "ฟังดูดีจังเลยค่ะ อยากไปเที่ยวสักวันเลย"
+        },
+        "options": [
+          {
+            "text": "You should! It's beautiful in December.",
+            "phonetic": "/juː ʃʊd! ɪts ˈbjuːtəfəl ɪn dɪˈsɛmbər/",
+            "thai": "ควรไปเลยค่ะ! เดือนธันวาคมสวยมากค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I'll show you some photos.",
+            "phonetic": "/aɪl ʃoʊ juː sʌm ˈfoʊtoʊz/",
+            "thai": "เดี๋ยวฉันจะให้ดูรูปนะคะ",
+            "correct": true
+          },
+          {
+            "text": "I don't have any photos.",
+            "phonetic": "/aɪ doʊnt hæv ˈɛni ˈfoʊtoʊz/",
+            "thai": "ฉันไม่มีรูปเลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "I see, so it's best to visit in winter then.",
+          "phonetic": "/aɪ siː, soʊ ɪts bɛst tuː ˈvɪzɪt ɪn ˈwɪntər ðɛn/",
+          "thai": "เข้าใจแล้วค่ะ งั้นควรไปเที่ยวหน้าหนาวดีกว่า"
+        },
+        "options": [
+          {
+            "text": "Exactly, the weather is perfect then.",
+            "phonetic": "/ɪɡˈzæktli, ðə ˈwɛðər ɪz ˈpɜːrfɪkt ðɛn/",
+            "thai": "ใช่เลยค่ะ อากาศดีมากช่วงนั้น",
+            "correct": true
+          },
+          {
+            "text": "Yes, and it's not too crowded.",
+            "phonetic": "/jɛs, ænd ɪts nɒt tuː ˈkraʊdɪd/",
+            "thai": "ค่ะ แล้วก็คนไม่เยอะด้วยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I don't like crowds.",
+            "phonetic": "/aɪ doʊnt laɪk kraʊdz/",
+            "thai": "ฉันไม่ชอบที่คนเยอะค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "birthday-invite",
+    "title": "Inviting a friend to a party",
+    "emoji": "🎉",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Hey! I'm having a birthday party on Saturday. Can you come?",
+          "phonetic": "/heɪ! aɪm ˈhævɪŋ ə ˈbɜːrθdeɪ ˈpɑːrti ɒn ˈsætərdeɪ. kæn juː kʌm/",
+          "thai": "เฮ้! ฉันจะจัดปาร์ตี้วันเกิดวันเสาร์นี้ มาได้ไหม"
+        },
+        "options": [
+          {
+            "text": "Of course! What time?",
+            "phonetic": "/əv kɔːrs! wʌt taɪm/",
+            "thai": "ได้สิ! กี่โมงคะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "I'd love to! Can I bring a friend?",
+            "phonetic": "/aɪd lʌv tuː! kæn aɪ brɪŋ ə frɛnd/",
+            "thai": "อยากไปมากเลย! พาเพื่อนไปด้วยได้ไหม",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I don't like parties.",
+            "phonetic": "/aɪ doʊnt laɪk ˈpɑːrtiz/",
+            "thai": "ฉันไม่ชอบปาร์ตี้ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "It starts at seven in the evening, at my house.",
+          "phonetic": "/ɪt stɑːrts æt ˈsɛvən ɪn ðiː ˈiːvnɪŋ, æt maɪ haʊs/",
+          "thai": "เริ่มหนึ่งทุ่มที่บ้านฉันนะ"
+        },
+        "options": [
+          {
+            "text": "Great, I'll be there!",
+            "phonetic": "/ɡreɪt, aɪl biː ðɛr/",
+            "thai": "เยี่ยม ฉันจะไปนะ!",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Should I bring anything?",
+            "phonetic": "/ʃʊd aɪ brɪŋ ˈɛniθɪŋ/",
+            "thai": "ต้องเอาอะไรไปด้วยไหม",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't have your address.",
+            "phonetic": "/aɪ doʊnt hæv jʊər əˈdrɛs/",
+            "thai": "ฉันไม่มีที่อยู่บ้านเธอเลย",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Sure, the more the merrier!",
+          "phonetic": "/ʃʊr, ðə mɔːr ðə ˈmɛriər/",
+          "thai": "ได้สิ ยิ่งเยอะยิ่งสนุก!"
+        },
+        "options": [
+          {
+            "text": "Awesome, thank you!",
+            "phonetic": "/ˈɔːsəm, θæŋk juː/",
+            "thai": "เจ๋งเลย ขอบคุณนะ!",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "What time should we arrive?",
+            "phonetic": "/wʌt taɪm ʃʊd wiː əˈraɪv/",
+            "thai": "ควรไปถึงกี่โมงดี",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't have any friends.",
+            "phonetic": "/aɪ doʊnt hæv ˈɛni frɛndz/",
+            "thai": "ฉันไม่มีเพื่อนเลย",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Just bring yourself, that's all I need!",
+          "phonetic": "/dʒʌst brɪŋ jɔːrˈsɛlf, ðæts ɔːl aɪ niːd/",
+          "thai": "แค่มาตัวเปล่าก็พอ แค่นั้นแหละที่อยากได้!"
+        },
+        "options": [
+          {
+            "text": "Okay, see you Saturday!",
+            "phonetic": "/ˈoʊkeɪ, siː juː ˈsætərdeɪ/",
+            "thai": "โอเค แล้วเจอกันวันเสาร์นะ!",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Actually, I'll bring a cake.",
+            "phonetic": "/ˈæktʃuəli, aɪl brɪŋ ə keɪk/",
+            "thai": "จริงๆ ฉันจะเอาเค้กไปด้วยนะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I have to work on Saturday.",
+            "phonetic": "/aɪ hæv tuː wɜːrk ɒn ˈsætərdeɪ/",
+            "thai": "วันเสาร์ฉันต้องทำงาน",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Perfect, I can't wait to see you!",
+          "phonetic": "/ˈpɜːrfɪkt, aɪ kænt weɪt tuː siː juː/",
+          "thai": "เยี่ยมเลย รอเจอเธออยู่นะ!"
+        },
+        "options": [
+          {
+            "text": "Me too, see you then!",
+            "phonetic": "/miː tuː, siː juː ðɛn/",
+            "thai": "เหมือนกันเลย แล้วเจอกันนะ!",
+            "correct": true
+          },
+          {
+            "text": "Happy early birthday!",
+            "phonetic": "/ˈhæpi ˈɜːrli ˈbɜːrθdeɪ/",
+            "thai": "สุขสันต์วันเกิดล่วงหน้านะ!",
+            "correct": true
+          },
+          {
+            "text": "I need to buy new shoes.",
+            "phonetic": "/aɪ niːd tuː baɪ njuː ʃuːz/",
+            "thai": "ฉันต้องไปซื้อรองเท้าใหม่",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Wow, thank you! That's so kind of you.",
+          "phonetic": "/waʊ, θæŋk juː! ðæts soʊ kaɪnd əv juː/",
+          "thai": "ว้าว ขอบคุณนะ! ใจดีมากเลย"
+        },
+        "options": [
+          {
+            "text": "No problem, see you soon!",
+            "phonetic": "/noʊ ˈprɒbləm, siː juː suːn/",
+            "thai": "ไม่เป็นไรเลย แล้วเจอกันนะ!",
+            "correct": true
+          },
+          {
+            "text": "What flavor do you like?",
+            "phonetic": "/wʌt ˈfleɪvər duː juː laɪk/",
+            "thai": "ชอบรสอะไรล่ะ?",
+            "correct": true
+          },
+          {
+            "text": "I don't know how to bake.",
+            "phonetic": "/aɪ doʊnt noʊ haʊ tuː beɪk/",
+            "thai": "ฉันทำเบเกอรี่ไม่เป็นเลย",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "lost-item",
+    "title": "Asking for help (lost item)",
+    "emoji": "🔍",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Excuse me, can I help you find something?",
+          "phonetic": "/ɪkˈskjuːz miː, kæn aɪ hɛlp juː faɪnd ˈsʌmθɪŋ/",
+          "thai": "ขอโทษค่ะ ให้ช่วยหาอะไรไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, I lost my phone.",
+            "phonetic": "/jɛs, aɪ lɒst maɪ foʊn/",
+            "thai": "ค่ะ ฉันทำโทรศัพท์หายค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Yes, I can't find my bag.",
+            "phonetic": "/jɛs, aɪ kænt faɪnd maɪ bæɡ/",
+            "thai": "ค่ะ ฉันหากระเป๋าไม่เจอค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "No, I'm just looking around.",
+            "phonetic": "/noʊ, aɪm dʒʌst ˈlʊkɪŋ əˈraʊnd/",
+            "thai": "ไม่ค่ะ แค่เดินดูเฉยๆ ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Oh no. Where did you last have it?",
+          "phonetic": "/oʊ noʊ. wɛr dɪd juː læst hæv ɪt/",
+          "thai": "โอ้ไม่นะคะ ครั้งสุดท้ายที่มีอยู่คือที่ไหนคะ"
+        },
+        "options": [
+          {
+            "text": "I think I left it on the train.",
+            "phonetic": "/aɪ θɪŋk aɪ lɛft ɪt ɒn ðə treɪn/",
+            "thai": "ฉันคิดว่าลืมไว้บนรถไฟค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "Maybe at the coffee shop.",
+            "phonetic": "/ˈmeɪbi æt ðə ˈkɒfi ʃɒp/",
+            "thai": "อาจจะที่ร้านกาแฟค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I never had a phone.",
+            "phonetic": "/aɪ ˈnɛvər hæd ə foʊn/",
+            "thai": "ฉันไม่เคยมีโทรศัพท์เลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Don't worry. What does your bag look like?",
+          "phonetic": "/doʊnt ˈwʌri. wʌt dʌz jʊər bæɡ lʊk laɪk/",
+          "thai": "ไม่ต้องกังวลค่ะ กระเป๋าของคุณหน้าตาเป็นยังไงคะ"
+        },
+        "options": [
+          {
+            "text": "It's a small black backpack.",
+            "phonetic": "/ɪts ə smɔːl blæk ˈbækpæk/",
+            "thai": "เป็นกระเป๋าเป้สีดำใบเล็กค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "It's a brown leather bag.",
+            "phonetic": "/ɪts ə braʊn ˈlɛðər bæɡ/",
+            "thai": "เป็นกระเป๋าหนังสีน้ำตาลค่ะ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't own a bag.",
+            "phonetic": "/aɪ doʊnt oʊn ə bæɡ/",
+            "thai": "ฉันไม่มีกระเป๋าค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Okay, let me check with our lost and found office.",
+          "phonetic": "/ˈoʊkeɪ, lɛt miː tʃɛk wɪð ˈaʊər lɒst ænd faʊnd ˈɒfɪs/",
+          "thai": "ได้ค่ะ ขอฉันไปเช็กที่แผนกของหายก่อนนะคะ"
+        },
+        "options": [
+          {
+            "text": "Thank you, I'll wait here.",
+            "phonetic": "/θæŋk juː, aɪl weɪt hɪr/",
+            "thai": "ขอบคุณค่ะ ฉันจะรอตรงนี้",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Can I come with you?",
+            "phonetic": "/kæn aɪ kʌm wɪð juː/",
+            "thai": "ขอไปด้วยได้ไหมคะ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I have to catch my flight now.",
+            "phonetic": "/aɪ hæv tuː kætʃ maɪ flaɪt naʊ/",
+            "thai": "ตอนนี้ฉันต้องไปขึ้นเครื่องแล้วค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Good news, we found it! Here you go.",
+          "phonetic": "/ɡʊd njuːz, wiː faʊnd ɪt! hɪr juː ɡoʊ/",
+          "thai": "ข่าวดีค่ะ เราเจอแล้ว! นี่ค่ะ"
+        },
+        "options": [
+          {
+            "text": "Thank you so much!",
+            "phonetic": "/θæŋk juː soʊ mʌtʃ/",
+            "thai": "ขอบคุณมากๆ เลยค่ะ!",
+            "correct": true
+          },
+          {
+            "text": "I'm so relieved.",
+            "phonetic": "/aɪm soʊ rɪˈliːvd/",
+            "thai": "โล่งใจมากเลยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I don't need it anymore.",
+            "phonetic": "/aɪ doʊnt niːd ɪt ˌɛniˈmɔːr/",
+            "thai": "ฉันไม่ต้องการมันแล้วค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Of course, follow me this way.",
+          "phonetic": "/əv kɔːrs, ˈfɒloʊ miː ðɪs weɪ/",
+          "thai": "ได้ค่ะ ตามฉันมาทางนี้เลยค่ะ"
+        },
+        "options": [
+          {
+            "text": "Thank you for your help.",
+            "phonetic": "/θæŋk juː fɔːr jʊər hɛlp/",
+            "thai": "ขอบคุณที่ช่วยเหลือนะคะ",
+            "correct": true
+          },
+          {
+            "text": "I really appreciate it.",
+            "phonetic": "/aɪ ˈrɪli əˈpriːʃiˌeɪt ɪt/",
+            "thai": "ฉันซาบซึ้งใจมากเลยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I don't like walking.",
+            "phonetic": "/aɪ doʊnt laɪk ˈwɔːkɪŋ/",
+            "thai": "ฉันไม่ชอบเดินค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "classroom",
+    "title": "In the classroom",
+    "emoji": "🏫",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Good morning class. Is everyone here today?",
+          "phonetic": "/ɡʊd ˈmɔːrnɪŋ klæs. ɪz ˈɛvriwʌn hɪr təˈdeɪ/",
+          "thai": "สวัสดีตอนเช้าค่ะนักเรียน วันนี้มากันครบไหมคะ"
+        },
+        "options": [
+          {
+            "text": "Yes, everyone is here.",
+            "phonetic": "/jɛs, ˈɛvriwʌn ɪz hɪr/",
+            "thai": "ครับ มากันครบแล้วครับ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "No, two students are absent.",
+            "phonetic": "/noʊ, tuː ˈstuːdənts ɑːr ˈæbsənt/",
+            "thai": "ไม่ครบครับ มีนักเรียนขาดสองคน",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I forgot my lunch.",
+            "phonetic": "/aɪ fərˈɡɒt maɪ lʌntʃ/",
+            "thai": "ผมลืมเอาข้าวกลางวันมาครับ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Great, please open your books to page ten.",
+          "phonetic": "/ɡreɪt, pliːz ˈoʊpən jʊər bʊks tuː peɪdʒ tɛn/",
+          "thai": "ดีมากค่ะ เปิดหนังสือไปหน้าสิบนะคะ"
+        },
+        "options": [
+          {
+            "text": "Okay, one moment.",
+            "phonetic": "/ˈoʊkeɪ, wʌn ˈmoʊmənt/",
+            "thai": "ครับ รอสักครู่นะครับ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I don't have my book today.",
+            "phonetic": "/aɪ doʊnt hæv maɪ bʊk təˈdeɪ/",
+            "thai": "วันนี้ผมไม่มีหนังสือครับ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I like math class.",
+            "phonetic": "/aɪ laɪk mæθ klæs/",
+            "thai": "ผมชอบวิชาคณิตศาสตร์ครับ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "I see. Does anyone know why they're absent?",
+          "phonetic": "/aɪ siː. dʌz ˈɛniwʌn noʊ waɪ ðɛr ˈæbsənt/",
+          "thai": "เข้าใจแล้วค่ะ มีใครรู้ไหมคะว่าทำไมถึงขาด"
+        },
+        "options": [
+          {
+            "text": "I think they are sick.",
+            "phonetic": "/aɪ θɪŋk ðeɪ ɑːr sɪk/",
+            "thai": "ผมคิดว่าพวกเขาป่วยครับ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "No, I don't know.",
+            "phonetic": "/noʊ, aɪ doʊnt noʊ/",
+            "thai": "ไม่ครับ ผมไม่ทราบครับ",
+            "correct": true,
+            "next": "n3"
+          },
+          {
+            "text": "I love my classmates.",
+            "phonetic": "/aɪ lʌv maɪ ˈklæsmeɪts/",
+            "thai": "ผมรักเพื่อนร่วมชั้นครับ",
+            "correct": false
+          }
+        ]
+      },
+      "n3": {
+        "system": {
+          "text": "Alright. Can someone read the first paragraph aloud?",
+          "phonetic": "/ɔːlˈraɪt. kæn ˈsʌmwʌn riːd ðə fɜːrst ˈpærəɡræf əˈlaʊd/",
+          "thai": "โอเคค่ะ มีใครอ่านย่อหน้าแรกดังๆ ให้ฟังได้ไหมคะ"
+        },
+        "options": [
+          {
+            "text": "I can read it.",
+            "phonetic": "/aɪ kæn riːd ɪt/",
+            "thai": "ผมอ่านได้ครับ",
+            "correct": true,
+            "next": "n4a"
+          },
+          {
+            "text": "Can we read it together?",
+            "phonetic": "/kæn wiː riːd ɪt təˈɡɛðər/",
+            "thai": "อ่านพร้อมกันได้ไหมครับ",
+            "correct": true,
+            "next": "n4b"
+          },
+          {
+            "text": "I don't like reading.",
+            "phonetic": "/aɪ doʊnt laɪk ˈriːdɪŋ/",
+            "thai": "ผมไม่ชอบอ่านหนังสือครับ",
+            "correct": false
+          }
+        ]
+      },
+      "n4a": {
+        "system": {
+          "text": "Great, please go ahead.",
+          "phonetic": "/ɡreɪt, pliːz ɡoʊ əˈhɛd/",
+          "thai": "ดีมากค่ะ เชิญอ่านได้เลยค่ะ"
+        },
+        "options": [
+          {
+            "text": "Okay, here I go.",
+            "phonetic": "/ˈoʊkeɪ, hɪr aɪ ɡoʊ/",
+            "thai": "ครับ เริ่มเลยนะครับ",
+            "correct": true
+          },
+          {
+            "text": "Thank you for the chance.",
+            "phonetic": "/θæŋk juː fɔːr ðə tʃæns/",
+            "thai": "ขอบคุณที่ให้โอกาสครับ",
+            "correct": true
+          },
+          {
+            "text": "I need a new pencil.",
+            "phonetic": "/aɪ niːd ə njuː ˈpɛnsəl/",
+            "thai": "ผมต้องการดินสอใหม่ครับ",
+            "correct": false
+          }
+        ]
+      },
+      "n4b": {
+        "system": {
+          "text": "Sure, that's a good idea. Everyone, follow along.",
+          "phonetic": "/ʃʊr, ðæts ə ɡʊd aɪˈdɪə. ˈɛvriwʌn, ˈfɒloʊ əˈlɒŋ/",
+          "thai": "ได้ค่ะ ความคิดดีมากค่ะ ทุกคนอ่านตามนะคะ"
+        },
+        "options": [
+          {
+            "text": "Okay, let's start.",
+            "phonetic": "/ˈoʊkeɪ, lɛts stɑːrt/",
+            "thai": "ครับ เริ่มกันเลย",
+            "correct": true
+          },
+          {
+            "text": "This is fun!",
+            "phonetic": "/ðɪs ɪz fʌn/",
+            "thai": "สนุกจังเลยครับ!",
+            "correct": true
+          },
+          {
+            "text": "I want to go home.",
+            "phonetic": "/aɪ wɒnt tuː ɡoʊ hoʊm/",
+            "thai": "ผมอยากกลับบ้านครับ",
+            "correct": false
+          }
+        ]
+      }
+    }
   }
 ]

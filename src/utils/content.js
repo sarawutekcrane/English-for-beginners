@@ -4,6 +4,18 @@ export const VOCAB_CATEGORIES = [
   { id: "greetings", label: "คำทักทาย", emoji: "👋" },
   { id: "family", label: "ครอบครัว", emoji: "👪" },
   { id: "food", label: "อาหารและเครื่องดื่ม", emoji: "🍽️" },
+  { id: "numbers", label: "ตัวเลข", emoji: "🔢" },
+  { id: "colors", label: "สีสัน", emoji: "🎨" },
+  { id: "daysTime", label: "วันและเวลา", emoji: "🕐" },
+  { id: "weather", label: "สภาพอากาศ", emoji: "☀️" },
+  { id: "house", label: "บ้านและเฟอร์นิเจอร์", emoji: "🛋️" },
+  { id: "clothing", label: "เสื้อผ้า", emoji: "👕" },
+  { id: "bodyHealth", label: "ร่างกายและสุขภาพ", emoji: "🩺" },
+  { id: "jobs", label: "อาชีพและการทำงาน", emoji: "💼" },
+  { id: "shopping", label: "การช้อปปิ้ง", emoji: "🛒" },
+  { id: "transportation", label: "การเดินทาง", emoji: "🚗" },
+  { id: "hobbies", label: "งานอดิเรก", emoji: "⚽" },
+  { id: "feelings", label: "ความรู้สึก", emoji: "😊" },
 ];
 
 export function getVocab(category) {
@@ -28,6 +40,8 @@ export function toCard(entry) {
     icon: entry.icon,
     level: entry.level,
     segments: entry.altScript,
+    value: entry.value,
+    hex: entry.hex,
   };
 }
 

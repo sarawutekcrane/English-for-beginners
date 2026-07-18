@@ -776,6 +776,16 @@
         "text": "We are working right now.",
         "phonetic": "/wiː ɑːr ˈwɜːrkɪŋ raɪt naʊ/",
         "thai": "เรากำลังทำงานอยู่ตอนนี้"
+      },
+      {
+        "text": "He is playing football in the park.",
+        "phonetic": "/hiː ɪz ˈpleɪɪŋ ˈfʊtbɔːl ɪn ðə pɑːrk/",
+        "thai": "เขากำลังเล่นฟุตบอลอยู่ที่สวนสาธารณะ"
+      },
+      {
+        "text": "I am not sleeping right now.",
+        "phonetic": "/aɪ æm nɒt ˈsliːpɪŋ raɪt naʊ/",
+        "thai": "ตอนนี้ฉันไม่ได้นอนหลับอยู่"
       }
     ],
     "wordOrderQuestions": [
@@ -917,6 +927,145 @@
         "phonetic": "/ʃiː ɪz ˈraɪtɪŋ ən ˈiːmeɪl/",
         "thai": "เธอกำลังเขียนอีเมลอยู่",
         "explanation": "Present Continuous = am/is/are + verb-ing + object."
+      },
+      {
+        "id": "present-continuous-6",
+        "promptThai": "พูดว่า: เขากำลังวิ่งไปป้ายรถบัส",
+        "chunks": [
+          {
+            "text": "to the bus stop"
+          },
+          {
+            "text": "He"
+          },
+          {
+            "text": "is"
+          },
+          {
+            "text": "running"
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "is",
+          "running",
+          "to the bus stop"
+        ],
+        "phonetic": "/hiː ɪz ˈrʌnɪŋ tuː ðə bʌs stɒp/",
+        "thai": "เขากำลังวิ่งไปป้ายรถบัส",
+        "explanation": "Present Continuous = am/is/are + verb-ing. 'He' takes 'is'."
+      },
+      {
+        "id": "present-continuous-7",
+        "promptThai": "พูดว่า: พวกเขากำลังอ่านหนังสืออยู่ที่ห้องสมุด",
+        "chunks": [
+          {
+            "text": "in the library"
+          },
+          {
+            "text": "They"
+          },
+          {
+            "text": "are"
+          },
+          {
+            "text": "studying"
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "are",
+          "studying",
+          "in the library"
+        ],
+        "phonetic": "/ðeɪ ɑːr ˈstʌdiɪŋ ɪn ðə ˈlaɪbrɛri/",
+        "thai": "พวกเขากำลังอ่านหนังสืออยู่ที่ห้องสมุด",
+        "explanation": "'They' takes 'are' before the -ing verb."
+      },
+      {
+        "id": "present-continuous-8",
+        "promptThai": "พูดว่า: ฉันไม่ได้กำลังดูทีวีอยู่",
+        "chunks": [
+          {
+            "text": "TV"
+          },
+          {
+            "text": "I"
+          },
+          {
+            "text": "am not"
+          },
+          {
+            "text": "watching"
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "am not",
+          "watching",
+          "TV"
+        ],
+        "phonetic": "/aɪ æm nɒt ˈwɒtʃɪŋ tiːˈviː/",
+        "thai": "ฉันไม่ได้กำลังดูทีวีอยู่",
+        "explanation": "The negative form adds 'not' after am/is/are: am not, isn't, aren't."
+      },
+      {
+        "id": "present-continuous-9",
+        "promptThai": "พูดว่า: เธอไม่ได้กำลังฟังเพลงอยู่",
+        "chunks": [
+          {
+            "text": "to music"
+          },
+          {
+            "text": "She"
+          },
+          {
+            "text": "isn't"
+          },
+          {
+            "text": "listening"
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "isn't",
+          "listening",
+          "to music"
+        ],
+        "phonetic": "/ʃiː ˈɪzənt ˈlɪsənɪŋ tuː ˈmjuːzɪk/",
+        "thai": "เธอไม่ได้กำลังฟังเพลงอยู่",
+        "explanation": "'Isn't' is the short negative form of 'is not'."
+      },
+      {
+        "id": "present-continuous-10",
+        "promptThai": "พูดว่า: เรากำลังทานอาหารเย็นด้วยกันอยู่",
+        "chunks": [
+          {
+            "text": "together"
+          },
+          {
+            "text": "We"
+          },
+          {
+            "text": "are"
+          },
+          {
+            "text": "having"
+          },
+          {
+            "text": "dinner"
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "are",
+          "having",
+          "dinner",
+          "together"
+        ],
+        "phonetic": "/wiː ɑːr ˈhævɪŋ ˈdɪnər təˈɡɛðər/",
+        "thai": "เรากำลังทานอาหารเย็นด้วยกันอยู่",
+        "explanation": "Present Continuous can describe an action happening right now, even for verbs like 'have' meaning 'eat'."
       }
     ]
   },
@@ -961,6 +1110,16 @@
         "text": "It is going to rain.",
         "phonetic": "/ɪt ɪz ˈɡoʊɪŋ tuː reɪn/",
         "thai": "ฝนกำลังจะตก"
+      },
+      {
+        "text": "We are not going to travel this year.",
+        "phonetic": "/wiː ɑːr nɒt ˈɡoʊɪŋ tuː ˈtrævəl ðɪs jɪr/",
+        "thai": "ปีนี้เราจะไม่เดินทาง"
+      },
+      {
+        "text": "Is she going to call you tonight?",
+        "phonetic": "/ɪz ʃiː ˈɡoʊɪŋ tuː kɔːl juː təˈnaɪt/",
+        "thai": "คืนนี้เธอจะโทรหาคุณไหม"
       }
     ],
     "wordOrderQuestions": [
@@ -1098,6 +1257,137 @@
         "phonetic": "/ʃiː ɪz ˈɡoʊɪŋ tuː kɔːl juː/",
         "thai": "เธอจะโทรหาคุณ",
         "explanation": "Subject + is going to + base verb + object."
+      },
+      {
+        "id": "going-to-6",
+        "promptThai": "พูดว่า: เราจะไปเยี่ยมประเทศญี่ปุ่น",
+        "chunks": [
+          {
+            "text": "Japan"
+          },
+          {
+            "text": "We"
+          },
+          {
+            "text": "are going to"
+          },
+          {
+            "text": "visit"
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "are going to",
+          "visit",
+          "Japan"
+        ],
+        "phonetic": "/wiː ɑːr ˈɡoʊɪŋ tuː ˈvɪzɪt dʒəˈpæn/",
+        "thai": "เราจะไปเยี่ยมประเทศญี่ปุ่น",
+        "explanation": "Subject + are going to + base verb + object."
+      },
+      {
+        "id": "going-to-7",
+        "promptThai": "พูดว่า: คืนนี้เธอจะทำพาสต้า",
+        "chunks": [
+          {
+            "text": "tonight"
+          },
+          {
+            "text": "She"
+          },
+          {
+            "text": "is going to"
+          },
+          {
+            "text": "cook"
+          },
+          {
+            "text": "pasta"
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "is going to",
+          "cook",
+          "pasta",
+          "tonight"
+        ],
+        "phonetic": "/ʃiː ɪz ˈɡoʊɪŋ tuː kʊk ˈpæstə təˈnaɪt/",
+        "thai": "คืนนี้เธอจะทำพาสต้า",
+        "explanation": "Time expressions like 'tonight' usually come at the end of the sentence."
+      },
+      {
+        "id": "going-to-8",
+        "promptThai": "พูดว่า: พวกเขาจะไม่มา",
+        "chunks": [
+          {
+            "text": "come"
+          },
+          {
+            "text": "They"
+          },
+          {
+            "text": "are not going to"
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "are not going to",
+          "come"
+        ],
+        "phonetic": "/ðeɪ ɑːr nɒt ˈɡoʊɪŋ tuː kʌm/",
+        "thai": "พวกเขาจะไม่มา",
+        "explanation": "The negative form adds 'not' after am/is/are: are not going to."
+      },
+      {
+        "id": "going-to-9",
+        "promptThai": "พูดว่า: เขาจะซื้อรถคันใหม่ไหม",
+        "chunks": [
+          {
+            "text": "a new car"
+          },
+          {
+            "text": "Is he going to"
+          },
+          {
+            "text": "buy"
+          }
+        ],
+        "correctOrder": [
+          "Is he going to",
+          "buy",
+          "a new car"
+        ],
+        "phonetic": "/ɪz hiː ˈɡoʊɪŋ tuː baɪ ə njuː kɑːr/",
+        "thai": "เขาจะซื้อรถคันใหม่ไหม",
+        "explanation": "Questions invert the subject and 'is/are': Is + subject + going to + verb?"
+      },
+      {
+        "id": "going-to-10",
+        "promptThai": "พูดว่า: ฉันจะเริ่มงานใหม่",
+        "chunks": [
+          {
+            "text": "a new job"
+          },
+          {
+            "text": "I"
+          },
+          {
+            "text": "am going to"
+          },
+          {
+            "text": "start"
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "am going to",
+          "start",
+          "a new job"
+        ],
+        "phonetic": "/aɪ æm ˈɡoʊɪŋ tuː stɑːrt ə njuː dʒɒb/",
+        "thai": "ฉันจะเริ่มงานใหม่",
+        "explanation": "'I' always takes 'am' before 'going to'."
       }
     ]
   },
@@ -1154,6 +1444,16 @@
         "text": "They won't come to the party.",
         "phonetic": "/ðeɪ woʊnt kʌm tuː ðə ˈpɑːrti/",
         "thai": "พวกเขาจะไม่มางานปาร์ตี้"
+      },
+      {
+        "text": "Will you help me with this?",
+        "phonetic": "/wɪl juː hɛlp miː wɪð ðɪs/",
+        "thai": "คุณจะช่วยฉันเรื่องนี้ไหม"
+      },
+      {
+        "text": "I think it will be sunny tomorrow.",
+        "phonetic": "/aɪ θɪŋk ɪt wɪl biː ˈsʌni təˈmɒroʊ/",
+        "thai": "ฉันคิดว่าพรุ่งนี้อากาศจะแจ่มใส"
       }
     ],
     "wordOrderQuestions": [
@@ -1303,6 +1603,137 @@
         "phonetic": "/ðeɪ woʊnt biː leɪt/",
         "thai": "พวกเขาจะไม่มาสาย",
         "explanation": "'Won't' is the short form of 'will not', used to make the future negative."
+      },
+      {
+        "id": "will-future-6",
+        "promptThai": "พูดว่า: คุณจะแต่งงานกับฉันไหม",
+        "chunks": [
+          {
+            "text": "me"
+          },
+          {
+            "text": "Will you"
+          },
+          {
+            "text": "marry"
+          }
+        ],
+        "correctOrder": [
+          "Will you",
+          "marry",
+          "me"
+        ],
+        "phonetic": "/wɪl juː ˈmæri miː/",
+        "thai": "คุณจะแต่งงานกับฉันไหม",
+        "explanation": "Yes/no questions with 'will' invert: Will + subject + base verb?"
+      },
+      {
+        "id": "will-future-7",
+        "promptThai": "พูดว่า: ฉันสัญญาว่าจะทำรายงานให้เสร็จ",
+        "chunks": [
+          {
+            "text": "the report"
+          },
+          {
+            "text": "I promise I"
+          },
+          {
+            "text": "will"
+          },
+          {
+            "text": "finish"
+          }
+        ],
+        "correctOrder": [
+          "I promise I",
+          "will",
+          "finish",
+          "the report"
+        ],
+        "phonetic": "/aɪ ˈprɒmɪs aɪ wɪl ˈfɪnɪʃ ðə rɪˈpɔːrt/",
+        "thai": "ฉันสัญญาว่าจะทำรายงานให้เสร็จ",
+        "explanation": "'Will' is often used for promises about the future."
+      },
+      {
+        "id": "will-future-8",
+        "promptThai": "พูดว่า: เธอน่าจะมาสาย",
+        "chunks": [
+          {
+            "text": "late"
+          },
+          {
+            "text": "She"
+          },
+          {
+            "text": "will probably"
+          },
+          {
+            "text": "be"
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "will probably",
+          "be",
+          "late"
+        ],
+        "phonetic": "/ʃiː wɪl ˈprɒbəbli biː leɪt/",
+        "thai": "เธอน่าจะมาสาย",
+        "explanation": "Adverbs like 'probably' usually go between 'will' and the base verb."
+      },
+      {
+        "id": "will-future-9",
+        "promptThai": "พูดว่า: ฉันจะไม่มีวันลืมวันนี้",
+        "chunks": [
+          {
+            "text": "this day"
+          },
+          {
+            "text": "I"
+          },
+          {
+            "text": "will never"
+          },
+          {
+            "text": "forget"
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "will never",
+          "forget",
+          "this day"
+        ],
+        "phonetic": "/aɪ wɪl ˈnɛvər fərˈɡɛt ðɪs deɪ/",
+        "thai": "ฉันจะไม่มีวันลืมวันนี้",
+        "explanation": "'Will never' is the negative form used for strong future predictions."
+      },
+      {
+        "id": "will-future-10",
+        "promptThai": "พูดว่า: รถไฟจะมาถึงตอนหกโมง",
+        "chunks": [
+          {
+            "text": "at six"
+          },
+          {
+            "text": "The train"
+          },
+          {
+            "text": "will"
+          },
+          {
+            "text": "arrive"
+          }
+        ],
+        "correctOrder": [
+          "The train",
+          "will",
+          "arrive",
+          "at six"
+        ],
+        "phonetic": "/ðə treɪn wɪl əˈraɪv æt sɪks/",
+        "thai": "รถไฟจะมาถึงตอนหกโมง",
+        "explanation": "'Will' is commonly used for scheduled or predicted future events."
       }
     ]
   },
@@ -1347,6 +1778,16 @@
         "text": "There aren't any apples left.",
         "phonetic": "/ðɛr ɑːrnt ˈɛni ˈæpəlz lɛft/",
         "thai": "ไม่มีแอปเปิ้ลเหลืออยู่เลย"
+      },
+      {
+        "text": "Is there a bank near here?",
+        "phonetic": "/ɪz ðɛr ə bæŋk nɪr hɪr/",
+        "thai": "แถวนี้มีธนาคารไหม"
+      },
+      {
+        "text": "There were many people at the party.",
+        "phonetic": "/ðɛr wɜːr ˈmɛni ˈpiːpəl æt ðə ˈpɑːrti/",
+        "thai": "มีคนมากมายในงานปาร์ตี้"
       }
     ],
     "wordOrderQuestions": [
@@ -1464,6 +1905,121 @@
         "phonetic": "/ðɛr ɑːr ˈmɛni ˈstuːdənts ɪn ðə klæs/",
         "thai": "มีนักเรียนหลายคนอยู่ในห้องเรียน",
         "explanation": "'There are' + plural noun + place phrase."
+      },
+      {
+        "id": "there-is-are-6",
+        "promptThai": "พูดว่า: แถวนี้มีโรงพยาบาลไหม",
+        "chunks": [
+          {
+            "text": "nearby"
+          },
+          {
+            "text": "Is there"
+          },
+          {
+            "text": "a hospital"
+          }
+        ],
+        "correctOrder": [
+          "Is there",
+          "a hospital",
+          "nearby"
+        ],
+        "phonetic": "/ɪz ðɛr ə ˈhɒspɪtəl ˈnɪrbaɪ/",
+        "thai": "แถวนี้มีโรงพยาบาลไหม",
+        "explanation": "Questions with 'there is/are' invert to 'Is/Are there'."
+      },
+      {
+        "id": "there-is-are-7",
+        "promptThai": "พูดว่า: มีนักเรียนสิบคนอยู่ในห้อง",
+        "chunks": [
+          {
+            "text": "in the room"
+          },
+          {
+            "text": "There were"
+          },
+          {
+            "text": "ten students"
+          }
+        ],
+        "correctOrder": [
+          "There were",
+          "ten students",
+          "in the room"
+        ],
+        "phonetic": "/ðɛr wɜːr tɛn ˈstuːdənts ɪn ðə ruːm/",
+        "thai": "มีนักเรียนสิบคนอยู่ในห้อง",
+        "explanation": "'There were' is the past form, used with plural nouns."
+      },
+      {
+        "id": "there-is-are-8",
+        "promptThai": "พูดว่า: ไม่มีอาหารเหลืออยู่เลย",
+        "chunks": [
+          {
+            "text": "left"
+          },
+          {
+            "text": "There wasn't"
+          },
+          {
+            "text": "any food"
+          }
+        ],
+        "correctOrder": [
+          "There wasn't",
+          "any food",
+          "left"
+        ],
+        "phonetic": "/ðɛr ˈwʌzənt ˈɛni fuːd lɛft/",
+        "thai": "ไม่มีอาหารเหลืออยู่เลย",
+        "explanation": "'There wasn't' is the past negative, used with singular/uncountable nouns."
+      },
+      {
+        "id": "there-is-are-9",
+        "promptThai": "พูดว่า: มีรถยนต์มากมายอยู่บนถนน",
+        "chunks": [
+          {
+            "text": "on the road"
+          },
+          {
+            "text": "There are"
+          },
+          {
+            "text": "a lot of cars"
+          }
+        ],
+        "correctOrder": [
+          "There are",
+          "a lot of cars",
+          "on the road"
+        ],
+        "phonetic": "/ðɛr ɑːr ə lɒt ʌv kɑːrz ɒn ðə roʊd/",
+        "thai": "มีรถยนต์มากมายอยู่บนถนน",
+        "explanation": "'A lot of' works with both countable and uncountable nouns after 'there are'."
+      },
+      {
+        "id": "there-is-are-10",
+        "promptThai": "พูดว่า: ไม่มีอะไรอยู่ในกล่องเลย",
+        "chunks": [
+          {
+            "text": "in the box"
+          },
+          {
+            "text": "There is"
+          },
+          {
+            "text": "nothing"
+          }
+        ],
+        "correctOrder": [
+          "There is",
+          "nothing",
+          "in the box"
+        ],
+        "phonetic": "/ðɛr ɪz ˈnʌθɪŋ ɪn ðə bɒks/",
+        "thai": "ไม่มีอะไรอยู่ในกล่องเลย",
+        "explanation": "'Nothing' already has a negative meaning, so 'there is' stays affirmative."
       }
     ]
   },
@@ -1512,6 +2068,16 @@
         "text": "They can't come today.",
         "phonetic": "/ðeɪ kænt kʌm təˈdeɪ/",
         "thai": "วันนี้พวกเขามาไม่ได้"
+      },
+      {
+        "text": "Could you pass me the salt?",
+        "phonetic": "/kʊd juː pæs miː ðə sɔːlt/",
+        "thai": "ช่วยส่งเกลือให้หน่อยได้ไหม"
+      },
+      {
+        "text": "Can I ask you a question?",
+        "phonetic": "/kæn aɪ æsk juː ə ˈkwɛstʃən/",
+        "thai": "ฉันขอถามคำถามได้ไหม"
       }
     ],
     "wordOrderQuestions": [
@@ -1649,6 +2215,141 @@
         "phonetic": "/ðeɪ ˈkʊdənt faɪnd ðə hoʊˈtɛl/",
         "thai": "พวกเขาหาโรงแรมไม่เจอ",
         "explanation": "'Couldn't' is the negative past form: could not find."
+      },
+      {
+        "id": "can-could-6",
+        "promptThai": "พูดว่า: คุณพูดภาษาอังกฤษได้ไหม",
+        "chunks": [
+          {
+            "text": "English"
+          },
+          {
+            "text": "Can you"
+          },
+          {
+            "text": "speak"
+          }
+        ],
+        "correctOrder": [
+          "Can you",
+          "speak",
+          "English"
+        ],
+        "phonetic": "/kæn juː spiːk ˈɪŋɡlɪʃ/",
+        "thai": "คุณพูดภาษาอังกฤษได้ไหม",
+        "explanation": "Yes/no questions with 'can' invert: Can + subject + base verb?"
+      },
+      {
+        "id": "can-could-7",
+        "promptThai": "พูดว่า: ตอนอายุห้าขวบฉันขี่จักรยานได้",
+        "chunks": [
+          {
+            "text": "when I was five"
+          },
+          {
+            "text": "I"
+          },
+          {
+            "text": "could"
+          },
+          {
+            "text": "ride"
+          },
+          {
+            "text": "a bike"
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "could",
+          "ride",
+          "a bike",
+          "when I was five"
+        ],
+        "phonetic": "/aɪ kʊd raɪd ə baɪk wɛn aɪ wɒz faɪv/",
+        "thai": "ตอนอายุห้าขวบฉันขี่จักรยานได้",
+        "explanation": "'Could' describes an ability someone had in the past."
+      },
+      {
+        "id": "can-could-8",
+        "promptThai": "พูดว่า: เธอร้องเพลงได้ไม่ค่อยดีนัก",
+        "chunks": [
+          {
+            "text": "very well"
+          },
+          {
+            "text": "She"
+          },
+          {
+            "text": "can't"
+          },
+          {
+            "text": "sing"
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "can't",
+          "sing",
+          "very well"
+        ],
+        "phonetic": "/ʃiː kænt sɪŋ ˈvɛri wɛl/",
+        "thai": "เธอร้องเพลงได้ไม่ค่อยดีนัก",
+        "explanation": "'Can't' + base verb makes the ability negative."
+      },
+      {
+        "id": "can-could-9",
+        "promptThai": "พูดว่า: ช่วยฉันสักครู่ได้ไหม",
+        "chunks": [
+          {
+            "text": "for a minute"
+          },
+          {
+            "text": "Could you"
+          },
+          {
+            "text": "help"
+          },
+          {
+            "text": "me"
+          }
+        ],
+        "correctOrder": [
+          "Could you",
+          "help",
+          "me",
+          "for a minute"
+        ],
+        "phonetic": "/kʊd juː hɛlp miː fɔːr ə ˈmɪnɪt/",
+        "thai": "ช่วยฉันสักครู่ได้ไหม",
+        "explanation": "'Could you' is also a polite way to make a request, not just talk about ability."
+      },
+      {
+        "id": "can-could-10",
+        "promptThai": "พูดว่า: เราเจอกันพรุ่งนี้ได้ถ้าคุณต้องการ",
+        "chunks": [
+          {
+            "text": "if you want"
+          },
+          {
+            "text": "We can"
+          },
+          {
+            "text": "meet"
+          },
+          {
+            "text": "tomorrow"
+          }
+        ],
+        "correctOrder": [
+          "We can",
+          "meet",
+          "tomorrow",
+          "if you want"
+        ],
+        "phonetic": "/wiː kæn miːt təˈmɒroʊ ɪf juː wɒnt/",
+        "thai": "เราเจอกันพรุ่งนี้ได้ถ้าคุณต้องการ",
+        "explanation": "'Can' is also used to talk about future possibilities, not just present ability."
       }
     ]
   },
@@ -1688,6 +2389,16 @@
         "text": "Today is worse than yesterday.",
         "phonetic": "/təˈdeɪ ɪz wɜːrs ðæn ˈjɛstərdeɪ/",
         "thai": "วันนี้แย่กว่าเมื่อวาน"
+      },
+      {
+        "text": "The weather today is worse than yesterday.",
+        "phonetic": "/ðə ˈwɛðər təˈdeɪ ɪz wɜːrs ðæn ˈjɛstərdeɪ/",
+        "thai": "อากาศวันนี้แย่กว่าเมื่อวาน"
+      },
+      {
+        "text": "This exercise is easier than the last one.",
+        "phonetic": "/ðɪs ˈɛksərsaɪz ɪz ˈiːziər ðæn ðə læst wʌn/",
+        "thai": "แบบฝึกหัดนี้ง่ายกว่าอันที่แล้ว"
       }
     ],
     "wordOrderQuestions": [
@@ -1825,6 +2536,141 @@
         "phonetic": "/ðɪs roʊd ɪz ˈseɪfər ðæn ðæt wʌn/",
         "thai": "ถนนเส้นนี้ปลอดภัยกว่าเส้นนั้น",
         "explanation": "Adjective + -er + than compares two things directly."
+      },
+      {
+        "id": "comparatives-6",
+        "promptThai": "พูดว่า: กาแฟนี้เข้มกว่าชานั้น",
+        "chunks": [
+          {
+            "text": "than that tea"
+          },
+          {
+            "text": "This coffee"
+          },
+          {
+            "text": "is"
+          },
+          {
+            "text": "stronger"
+          }
+        ],
+        "correctOrder": [
+          "This coffee",
+          "is",
+          "stronger",
+          "than that tea"
+        ],
+        "phonetic": "/ðɪs ˈkɒfi ɪz ˈstrɒŋɡər ðæn ðæt tiː/",
+        "thai": "กาแฟนี้เข้มกว่าชานั้น",
+        "explanation": "Short adjectives add -er: strong → stronger."
+      },
+      {
+        "id": "comparatives-7",
+        "promptThai": "พูดว่า: น้องชายของฉันอายุน้อยกว่าฉัน",
+        "chunks": [
+          {
+            "text": "than me"
+          },
+          {
+            "text": "My brother"
+          },
+          {
+            "text": "is"
+          },
+          {
+            "text": "younger"
+          }
+        ],
+        "correctOrder": [
+          "My brother",
+          "is",
+          "younger",
+          "than me"
+        ],
+        "phonetic": "/maɪ ˈbrʌðər ɪz ˈjʌŋɡər ðæn miː/",
+        "thai": "น้องชายของฉันอายุน้อยกว่าฉัน",
+        "explanation": "Adjective + -er + than + the person or thing being compared."
+      },
+      {
+        "id": "comparatives-8",
+        "promptThai": "พูดว่า: ข้อสอบนี้ยากกว่าที่ฉันคาดไว้",
+        "chunks": [
+          {
+            "text": "than I expected"
+          },
+          {
+            "text": "This test"
+          },
+          {
+            "text": "was"
+          },
+          {
+            "text": "more difficult"
+          }
+        ],
+        "correctOrder": [
+          "This test",
+          "was",
+          "more difficult",
+          "than I expected"
+        ],
+        "phonetic": "/ðɪs tɛst wɒz mɔːr ˈdɪfɪkəlt ðæn aɪ ɪkˈspɛktɪd/",
+        "thai": "ข้อสอบนี้ยากกว่าที่ฉันคาดไว้",
+        "explanation": "Longer adjectives use 'more' instead of -er: difficult → more difficult."
+      },
+      {
+        "id": "comparatives-9",
+        "promptThai": "พูดว่า: บ้านใหม่ของเธอเล็กกว่าหลังเก่า",
+        "chunks": [
+          {
+            "text": "than the old one"
+          },
+          {
+            "text": "Her new house"
+          },
+          {
+            "text": "is"
+          },
+          {
+            "text": "smaller"
+          }
+        ],
+        "correctOrder": [
+          "Her new house",
+          "is",
+          "smaller",
+          "than the old one"
+        ],
+        "phonetic": "/hər njuː haʊs ɪz ˈsmɔːlər ðæn ði oʊld wʌn/",
+        "thai": "บ้านใหม่ของเธอเล็กกว่าหลังเก่า",
+        "explanation": "Short adjectives ending in a single vowel + consonant sometimes double the consonant before -er, e.g. big → bigger."
+      },
+      {
+        "id": "comparatives-10",
+        "promptThai": "พูดว่า: กระเป๋าใบนี้แย่กว่าใบเก่าของฉัน",
+        "chunks": [
+          {
+            "text": "than my old one"
+          },
+          {
+            "text": "This bag"
+          },
+          {
+            "text": "is"
+          },
+          {
+            "text": "worse"
+          }
+        ],
+        "correctOrder": [
+          "This bag",
+          "is",
+          "worse",
+          "than my old one"
+        ],
+        "phonetic": "/ðɪs bæɡ ɪz wɜːrs ðæn maɪ oʊld wʌn/",
+        "thai": "กระเป๋าใบนี้แย่กว่าใบเก่าของฉัน",
+        "explanation": "'Bad' is irregular: bad → worse, not 'badder'."
       }
     ]
   },
@@ -1869,6 +2715,16 @@
         "text": "If you mix red and blue, you get purple.",
         "phonetic": "/ɪf juː mɪks rɛd ænd bluː, juː ɡɛt ˈpɜːrpəl/",
         "thai": "ถ้าคุณผสมสีแดงกับสีน้ำเงิน คุณจะได้สีม่วง"
+      },
+      {
+        "text": "If you don't water plants, they die.",
+        "phonetic": "/ɪf juː doʊnt ˈwɔːtər plænts, ðeɪ daɪ/",
+        "thai": "ถ้าคุณไม่รดน้ำต้นไม้ มันจะตาย"
+      },
+      {
+        "text": "Ice melts if the temperature rises.",
+        "phonetic": "/aɪs mɛlts ɪf ðə ˈtɛmprətʃər ˈraɪzɪz/",
+        "thai": "น้ำแข็งจะละลายถ้าอุณหภูมิสูงขึ้น"
       }
     ],
     "wordOrderQuestions": [
@@ -1990,6 +2846,101 @@
         "phonetic": "/ɪf juː tʌtʃ ˈfaɪər, ɪt hɜːrts/",
         "thai": "ถ้าคุณสัมผัสไฟ มันจะทำให้เจ็บ",
         "explanation": "The comma separates the if-clause from the result clause when 'if' starts the sentence."
+      },
+      {
+        "id": "zero-conditional-6",
+        "promptThai": "พูดว่า: ถ้าคุณต้มน้ำ มันจะระเหย",
+        "chunks": [
+          {
+            "text": "it evaporates"
+          },
+          {
+            "text": "If you boil water,"
+          }
+        ],
+        "correctOrder": [
+          "If you boil water,",
+          "it evaporates"
+        ],
+        "phonetic": "/ɪf juː bɔɪl ˈwɔːtər, ɪt ɪˈvæpəreɪts/",
+        "thai": "ถ้าคุณต้มน้ำ มันจะระเหย",
+        "explanation": "Zero conditional describes scientific facts: If + present simple, + present simple."
+      },
+      {
+        "id": "zero-conditional-7",
+        "promptThai": "พูดว่า: ถ้าดวงอาทิตย์ตก ท้องฟ้าจะมืด",
+        "chunks": [
+          {
+            "text": "it gets dark"
+          },
+          {
+            "text": "If the sun sets,"
+          }
+        ],
+        "correctOrder": [
+          "If the sun sets,",
+          "it gets dark"
+        ],
+        "phonetic": "/ɪf ðə sʌn sɛts, ɪt ɡɛts dɑːrk/",
+        "thai": "ถ้าดวงอาทิตย์ตก ท้องฟ้าจะมืด",
+        "explanation": "Both clauses use present simple, describing a general truth."
+      },
+      {
+        "id": "zero-conditional-8",
+        "promptThai": "พูดว่า: ถ้าคนนอนไม่พอ พวกเขาจะป่วย",
+        "chunks": [
+          {
+            "text": "they get sick"
+          },
+          {
+            "text": "If people don't sleep enough,"
+          }
+        ],
+        "correctOrder": [
+          "If people don't sleep enough,",
+          "they get sick"
+        ],
+        "phonetic": "/ɪf ˈpiːpəl doʊnt sliːp ɪˈnʌf, ðeɪ ɡɛt sɪk/",
+        "thai": "ถ้าคนนอนไม่พอ พวกเขาจะป่วย",
+        "explanation": "The if-clause can be negative: If + subject + don't/doesn't + base verb."
+      },
+      {
+        "id": "zero-conditional-9",
+        "promptThai": "พูดว่า: ถ้าคุณแช่แข็งน้ำ มันจะกลายเป็นน้ำแข็ง",
+        "chunks": [
+          {
+            "text": "it turns to ice"
+          },
+          {
+            "text": "If you freeze water,"
+          }
+        ],
+        "correctOrder": [
+          "If you freeze water,",
+          "it turns to ice"
+        ],
+        "phonetic": "/ɪf juː friːz ˈwɔːtər, ɪt tɜːrnz tuː aɪs/",
+        "thai": "ถ้าคุณแช่แข็งน้ำ มันจะกลายเป็นน้ำแข็ง",
+        "explanation": "Zero conditional sentences are always true under that condition, like scientific facts."
+      },
+      {
+        "id": "zero-conditional-10",
+        "promptThai": "พูดว่า: ถ้าโลหะร้อนขึ้น มันจะขยายตัว",
+        "chunks": [
+          {
+            "text": "it expands"
+          },
+          {
+            "text": "If metal gets hot,"
+          }
+        ],
+        "correctOrder": [
+          "If metal gets hot,",
+          "it expands"
+        ],
+        "phonetic": "/ɪf ˈmɛtəl ɡɛts hɒt, ɪt ɪkˈspændz/",
+        "thai": "ถ้าโลหะร้อนขึ้น มันจะขยายตัว",
+        "explanation": "The comma separates the if-clause from the result when 'if' begins the sentence."
       }
     ]
   },
@@ -2038,6 +2989,16 @@
         "text": "If we don't leave now, we will be late.",
         "phonetic": "/ɪf wiː doʊnt liːv naʊ, wiː wɪl biː leɪt/",
         "thai": "ถ้าเราไม่ออกเดินทางตอนนี้ เราจะไปสาย"
+      },
+      {
+        "text": "If it's sunny tomorrow, we will go to the beach.",
+        "phonetic": "/ɪf ɪts ˈsʌni təˈmɒroʊ, wiː wɪl ɡoʊ tuː ðə biːtʃ/",
+        "thai": "ถ้าพรุ่งนี้อากาศแจ่มใส เราจะไปทะเล"
+      },
+      {
+        "text": "If you don't practice, you won't improve.",
+        "phonetic": "/ɪf juː doʊnt ˈpræktɪs, juː woʊnt ɪmˈpruːv/",
+        "thai": "ถ้าคุณไม่ฝึกฝน คุณจะไม่พัฒนาขึ้น"
       }
     ],
     "wordOrderQuestions": [
@@ -2187,6 +3148,101 @@
         "phonetic": "/ɪf juː doʊnt ˈhʌri, juː wɪl biː leɪt/",
         "thai": "ถ้าคุณไม่รีบ คุณจะไปสาย",
         "explanation": "The if-clause can be negative too, using don't/doesn't + base verb."
+      },
+      {
+        "id": "first-conditional-6",
+        "promptThai": "พูดว่า: ถ้าฉันมีเวลา ฉันจะไปเยี่ยมคุณ",
+        "chunks": [
+          {
+            "text": "I will visit you"
+          },
+          {
+            "text": "If I have time,"
+          }
+        ],
+        "correctOrder": [
+          "If I have time,",
+          "I will visit you"
+        ],
+        "phonetic": "/ɪf aɪ hæv taɪm, aɪ wɪl ˈvɪzɪt juː/",
+        "thai": "ถ้าฉันมีเวลา ฉันจะไปเยี่ยมคุณ",
+        "explanation": "First conditional: If + present simple, + subject + will + base verb."
+      },
+      {
+        "id": "first-conditional-7",
+        "promptThai": "พูดว่า: ถ้าคุณกินมากเกินไป คุณจะรู้สึกไม่สบาย",
+        "chunks": [
+          {
+            "text": "you will feel sick"
+          },
+          {
+            "text": "If you eat too much,"
+          }
+        ],
+        "correctOrder": [
+          "If you eat too much,",
+          "you will feel sick"
+        ],
+        "phonetic": "/ɪf juː iːt tuː mʌtʃ, juː wɪl fiːl sɪk/",
+        "thai": "ถ้าคุณกินมากเกินไป คุณจะรู้สึกไม่สบาย",
+        "explanation": "The result clause always uses will + base verb for a likely future outcome."
+      },
+      {
+        "id": "first-conditional-8",
+        "promptThai": "พูดว่า: ถ้าเธอไม่รีบ เธอจะพลาดรถบัส",
+        "chunks": [
+          {
+            "text": "she will miss the bus"
+          },
+          {
+            "text": "If she doesn't hurry,"
+          }
+        ],
+        "correctOrder": [
+          "If she doesn't hurry,",
+          "she will miss the bus"
+        ],
+        "phonetic": "/ɪf ʃiː ˈdʌzənt ˈhʌri, ʃiː wɪl mɪs ðə bʌs/",
+        "thai": "ถ้าเธอไม่รีบ เธอจะพลาดรถบัส",
+        "explanation": "The if-clause can be negative too, using doesn't + base verb."
+      },
+      {
+        "id": "first-conditional-9",
+        "promptThai": "พูดว่า: ถ้าเราเก็บเงิน เราจะซื้อบ้าน",
+        "chunks": [
+          {
+            "text": "we will buy a house"
+          },
+          {
+            "text": "If we save money,"
+          }
+        ],
+        "correctOrder": [
+          "If we save money,",
+          "we will buy a house"
+        ],
+        "phonetic": "/ɪf wiː seɪv ˈmʌni, wiː wɪl baɪ ə haʊs/",
+        "thai": "ถ้าเราเก็บเงิน เราจะซื้อบ้าน",
+        "explanation": "First conditional talks about real, possible future plans."
+      },
+      {
+        "id": "first-conditional-10",
+        "promptThai": "พูดว่า: ถ้าคุณเลี้ยวซ้าย คุณจะเห็นร้านค้า",
+        "chunks": [
+          {
+            "text": "you will see the store"
+          },
+          {
+            "text": "If you turn left,"
+          }
+        ],
+        "correctOrder": [
+          "If you turn left,",
+          "you will see the store"
+        ],
+        "phonetic": "/ɪf juː tɜːrn lɛft, juː wɪl siː ðə stɔːr/",
+        "thai": "ถ้าคุณเลี้ยวซ้าย คุณจะเห็นร้านค้า",
+        "explanation": "First conditional is often used to give directions or instructions with a likely result."
       }
     ]
   }

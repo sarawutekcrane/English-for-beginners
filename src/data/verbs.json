@@ -372,5 +372,57 @@
       "presentParticiple": [],
       "negative": []
     }
+  },
+  {
+    "id": "want",
+    "dict": "want",
+    "regularity": "regular",
+    "meaningThai": "ต้องการ",
+    "forms": {
+      "present": "wants",
+      "past": "wanted",
+      "presentParticiple": "wanting",
+      "negative": "don't want"
+    },
+    "phonetic": {
+      "dict": "/wɒnt/",
+      "present": "/wɒnts/",
+      "past": "/ˈwɒntɪd/",
+      "presentParticiple": "/ˈwɒntɪŋ/",
+      "negative": "/doʊnt wɒnt/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
+  },
+  {
+    "id": "make",
+    "dict": "make",
+    "regularity": "irregular",
+    "meaningThai": "ทำ / สร้าง",
+    "forms": {
+      "present": "makes",
+      "past": "made",
+      "presentParticiple": "making",
+      "negative": "don't make"
+    },
+    "phonetic": {
+      "dict": "/meɪk/",
+      "present": "/meɪks/",
+      "past": "/meɪd/",
+      "presentParticiple": "/ˈmeɪkɪŋ/",
+      "negative": "/doʊnt meɪk/"
+    },
+    "altScript": {
+      "dict": [],
+      "present": [],
+      "past": [],
+      "presentParticiple": [],
+      "negative": []
+    }
   }
 ]
