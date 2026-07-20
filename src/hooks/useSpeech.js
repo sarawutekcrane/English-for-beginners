@@ -135,6 +135,33 @@ export function matchesEnglish(transcript, target, { allowContains = true } = {}
 const SpeechRecognitionCtor =
   typeof window !== "undefined" ? window.SpeechRecognition || window.webkitSpeechRecognition : undefined;
 
+// Investigated a "we heard: Play" report that recurred across unrelated
+// target words -- traced through every app-side step that touches a
+// recognition result (this file's onresult handler, SpeakingPractice.jsx's
+// onResult callback, and content.js's toCard()) and found no hardcoded
+// fallback, no UI-label leak, and lang is set fresh on every start() call,
+// so there's no app-side corruption to fix. That points to the raw
+// SpeechRecognition result itself already being "play" -- a known
+// characteristic of cloud speech recognizers defaulting to common,
+// heavily-trained short command words ("play", "stop", "next", the
+// media-control vocabulary voice assistants are full of) when given a
+// short or acoustically ambiguous utterance under low confidence, not
+// something this app's code produces or can fully correct for.
+// Kept permanently (opt-in, not on by default) rather than stripped after
+// investigation: this exact bug class -- a mysterious, consistent wrong
+// transcript -- is hard to diagnose again without seeing the raw browser
+// output, and future reports will want the same evidence. Enable via
+// `?debugSpeech=1` in the URL or `localStorage.setItem("debugSpeech","1")`.
+function debugSpeechEnabled() {
+  if (typeof window === "undefined") return false;
+  try {
+    if (new URLSearchParams(window.location.search).get("debugSpeech") === "1") return true;
+    return window.localStorage?.getItem("debugSpeech") === "1";
+  } catch {
+    return false;
+  }
+}
+
 // Bug 4(b) fix: 8s was firing before recognition finished on slower
 // devices/connections, producing a false "no speech detected" for an
 // attempt that was actually still in progress. 12s gives cloud-backed
@@ -216,6 +243,15 @@ export function useSpeechRecognition() {
         finish();
         const results = event.results?.[0];
         const alternatives = results ? Array.from(results).map((alt) => alt.transcript) : [];
+        if (debugSpeechEnabled()) {
+          // Raw browser API output, logged before any app processing
+          // touches it -- see the note above SpeechRecognitionCtor for why
+          // this exists and stays gated rather than removed.
+          console.log(
+            "[SpeechRecognition raw]",
+            Array.from(results || []).map((alt) => ({ transcript: alt.transcript, confidence: alt.confidence }))
+          );
+        }
         onResult?.(alternatives[0] || "", alternatives);
       };
       recognition.onerror = (event) => {

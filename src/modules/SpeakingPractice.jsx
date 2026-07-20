@@ -38,9 +38,36 @@ const STATUS = {
   error: "error",
 };
 
+// Bug-investigation note: a "we heard: Play" report was traced to the raw
+// SpeechRecognition result itself, not an app-side bug -- see useSpeech.js
+// for the full writeup. This buffer is a genuine, separate hardening found
+// during that investigation (hypothesis 3): the mic previously had no
+// guard against starting while the app's own TTS (either the manual
+// "hear example" button or the automatic post-attempt replay) was still
+// audibly playing, which could let the microphone pick up the device's
+// own speaker output. Speaker audio can also bleed into the mic for a
+// brief tail even after the utterance officially ends, hence the buffer
+// rather than just checking `speaking` at the instant it flips false.
+const TTS_COOLDOWN_MS = 400;
+
 function SpeakingView({ category, onBack }) {
-  const { speak } = useSpeak();
+  const { speak, speaking } = useSpeak();
   const { supported, listening, start } = useSpeechRecognition();
+
+  const [ttsCooldown, setTtsCooldown] = useState(false);
+  const ttsCooldownRef = useRef(null);
+  const hasSpokenRef = useRef(false);
+  useEffect(() => {
+    if (speaking) {
+      hasSpokenRef.current = true;
+      clearTimeout(ttsCooldownRef.current);
+      return;
+    }
+    if (!hasSpokenRef.current) return; // don't apply a cooldown before any TTS has ever played
+    setTtsCooldown(true);
+    ttsCooldownRef.current = setTimeout(() => setTtsCooldown(false), TTS_COOLDOWN_MS);
+    return () => clearTimeout(ttsCooldownRef.current);
+  }, [speaking]);
 
   const [shuffleOn, setShuffleOn] = useState(false);
   const baseCards = useMemo(() => getVocab(category.id).map(toCard), [category]);
@@ -89,7 +116,7 @@ function SpeakingView({ category, onBack }) {
     // read on the very next call) closes that window; the recognition hook
     // itself also aborts any in-flight instance before starting a new one
     // as a second line of defense.
-    if (listening || status === STATUS.requesting) return;
+    if (listening || status === STATUS.requesting || speaking || ttsCooldown) return;
     // "requesting" (not "listening") until the recognizer's own onstart
     // fires -- getting the mic permission prompt resolved and the
     // recognizer actually capturing audio can take a perceptible moment,
@@ -228,7 +255,7 @@ function SpeakingView({ category, onBack }) {
 
           <button
             className="btn btn-round"
-            disabled={!supported || listening || status === STATUS.requesting}
+            disabled={!supported || listening || status === STATUS.requesting || speaking || ttsCooldown}
             onClick={record}
             aria-label="พูดออกเสียง"
           >
