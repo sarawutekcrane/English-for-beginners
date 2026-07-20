@@ -18,7 +18,7 @@ export default function TopicIntro() {
 
   return (
     <div className="lesson-card">
-      <h3 className="lesson-heading">🔤 Regular verbs</h3>
+      <h3 className="lesson-heading">🔤 กริยา Regular</h3>
       <GroupCard regularity="regular" note="กริยา regular ผันเป็นอดีตด้วยการเติม -ed ท้ายคำเสมอ กฎเดียวใช้ได้กับทุกคำ">
         {regular.map((v) => (
           <button key={v.id} className="verb-chip en-text" onClick={() => speak(v.dict)}>
@@ -27,7 +27,7 @@ export default function TopicIntro() {
         ))}
       </GroupCard>
 
-      <h3 className="lesson-heading">🔤 Irregular verbs</h3>
+      <h3 className="lesson-heading">🔤 กริยา Irregular</h3>
       <GroupCard regularity="irregular" note="กริยา irregular ไม่ได้เติม -ed ในรูปอดีต ต้องจำรูปผันของแต่ละคำแยกกันไป">
         {irregular.map((v) => (
           <button key={v.id} className="verb-chip en-text" onClick={() => speak(v.dict)}>
