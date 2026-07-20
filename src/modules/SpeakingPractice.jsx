@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
 import AnnotatedText from "../components/AnnotatedText";
+import InAppBrowserNotice from "../components/InAppBrowserNotice";
 import { useSpeak, useSpeechRecognition, matchesEnglish } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
@@ -279,6 +280,14 @@ function SpeakingView({ category, onBack }) {
 export default function SpeakingPractice() {
   const [category, setCategory] = useState(null);
 
-  if (!category) return <CategoryPicker onPick={setCategory} />;
-  return <SpeakingView category={category} onBack={() => setCategory(null)} />;
+  return (
+    <>
+      <InAppBrowserNotice />
+      {!category ? (
+        <CategoryPicker onPick={setCategory} />
+      ) : (
+        <SpeakingView category={category} onBack={() => setCategory(null)} />
+      )}
+    </>
+  );
 }
