@@ -91,10 +91,21 @@ for p in patterns:
         if not ex.get("thai", "").strip():
             fail(f"empty thai in {where} example {ex.get('text')}")
     for q in p.get("wordOrderQuestions", []):
-        chunk_texts = sorted(c["text"] for c in q["chunks"])
+        # Phase 11: chunks may include extra isDistractor:true wrong-verb-form
+        # pieces (e.g. "have" alongside the correct "has") that are never
+        # part of correctOrder -- only the non-distractor chunks need to
+        # multiset-match correctOrder.
+        real_chunks = [c for c in q["chunks"] if not c.get("isDistractor")]
+        distractor_chunks = [c for c in q["chunks"] if c.get("isDistractor")]
+        chunk_texts = sorted(c["text"] for c in real_chunks)
         order_texts = sorted(q["correctOrder"])
         if chunk_texts != order_texts:
             fail(f"WOQ mismatch in {where}/{q['id']}: {chunk_texts} vs {order_texts}")
+        for c in distractor_chunks:
+            if not c.get("text", "").strip() or not c.get("phonetic", "").strip():
+                fail(f"WOQ distractor chunk missing text/phonetic in {where}/{q['id']}: {c}")
+            if c["text"] in q["correctOrder"]:
+                fail(f"WOQ distractor chunk text duplicates a correctOrder word in {where}/{q['id']}: {c['text']!r}")
         if not q.get("thai", "").strip():
             fail(f"empty thai in {where}/{q['id']}")
 

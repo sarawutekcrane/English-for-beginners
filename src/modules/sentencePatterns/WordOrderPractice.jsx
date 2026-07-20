@@ -145,7 +145,16 @@ export default function WordOrderPractice({ pattern, onBack }) {
           </div>
 
           {!submitted ? (
-            <button className="btn btn-success" onClick={submit} disabled={poolItems.length > 0}>
+            // Phase 11: the pool can now hold extra wrong-verb-form
+            // distractor chunks that are never meant to be placed (e.g.
+            // "have" alongside the correct "has"), so "pool empty" is no
+            // longer the right enable condition -- the answer slot just
+            // needs to hold exactly as many chunks as the correct sentence.
+            <button
+              className="btn btn-success"
+              onClick={submit}
+              disabled={answerItems.length !== question.correctOrder.length}
+            >
               ตรวจคำตอบ
             </button>
           ) : (

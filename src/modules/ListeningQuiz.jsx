@@ -63,8 +63,6 @@ function QuizView({ selection, onBack }) {
   const [selectedId, setSelectedId] = useState(null);
   const [revealed, setRevealed] = useState(false);
   const [score, setScore] = useState({ correct: 0, total: 0 });
-  const [showThai, setShowThai] = useState(false);
-  const [showPhonetic, setShowPhonetic] = useState(false);
 
   const question = useMemo(() => (activeAnswer ? buildQuestion(pool, activeAnswer) : null), [pool, activeAnswer]);
 
@@ -72,11 +70,11 @@ function QuizView({ selection, onBack }) {
   const answered = selectedId !== null;
   const finished = shuffleOn && review.finished;
 
-  // Auto-reveal translation/phonetic/answer on a correct answer, as if
-  // their toggles were switched on. A wrong guess never triggers this.
-  const effectiveShowThai = showThai || (answered && isCorrect);
-  const effectiveShowPhonetic = showPhonetic || (answered && isCorrect);
-  const effectiveRevealed = revealed || (answered && isCorrect);
+  // Phase 11: options are now the Thai meanings themselves, so there's no
+  // Translation/Phonetic toggle left to gate the post-answer reveal behind
+  // -- always show the full English/transliteration/meaning detail once
+  // answered, correct or not, so the learner still gets the full picture.
+  const effectiveRevealed = revealed || answered;
 
   const play = () => speak(question.answer.audioText);
 
@@ -128,8 +126,6 @@ function QuizView({ selection, onBack }) {
 
       <div className="toggle-group blue">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
-        <Toggle label="แปล" checked={showThai} onChange={setShowThai} />
-        <Toggle label="คำอ่าน" checked={showPhonetic} onChange={setShowPhonetic} />
       </div>
 
       {finished ? (
@@ -144,7 +140,7 @@ function QuizView({ selection, onBack }) {
           <button className="btn btn-round btn-blue" onClick={play} aria-label="เล่นเสียง">
             🔊
           </button>
-          <p className="th-text quiz-instruction">ฟังเสียงแล้วเลือกคำที่ตรงกัน</p>
+          <p className="th-text quiz-instruction">ฟังเสียงแล้วเลือกความหมายที่ตรงกัน</p>
 
           <div className="quiz-options">
             {question.options.map((opt) => {
@@ -155,9 +151,7 @@ function QuizView({ selection, onBack }) {
               }
               return (
                 <button key={opt.id} className={cls} onClick={() => choose(opt)} disabled={answered}>
-                  <AnnotatedText className="en-text" plain={opt.display} segments={opt.segments} />
-                  {effectiveShowPhonetic && <span className="quiz-option-hint">{opt.reading}</span>}
-                  {effectiveShowThai && <span className="quiz-option-hint th-text">{opt.thai}</span>}
+                  <span className="th-text">{opt.thai}</span>
                 </button>
               );
             })}
@@ -174,6 +168,8 @@ function QuizView({ selection, onBack }) {
               เฉลย: <AnnotatedText plain={question.answer.display} segments={question.answer.segments} />
               {question.answer.reading ? ` (${question.answer.reading})` : ""}
               {question.answer.partOfSpeech ? ` (${question.answer.partOfSpeech})` : ""}
+              {" -- "}
+              <span className="th-text">{question.answer.thai}</span>
             </p>
           )}
 

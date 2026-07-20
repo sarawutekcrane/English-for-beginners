@@ -88,6 +88,16 @@
           {
             "text": "eat",
             "phonetic": "อีท"
+          },
+          {
+            "text": "ate",
+            "phonetic": "เอท",
+            "isDistractor": true
+          },
+          {
+            "text": "eating",
+            "phonetic": "อีท-ทิ่ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -265,6 +275,11 @@
           {
             "text": "has",
             "phonetic": "แฮส"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -295,6 +310,21 @@
           {
             "text": "goes",
             "phonetic": "โกส์"
+          },
+          {
+            "text": "go",
+            "phonetic": "โก",
+            "isDistractor": true
+          },
+          {
+            "text": "going",
+            "phonetic": "โก-อิ่ง",
+            "isDistractor": true
+          },
+          {
+            "text": "went",
+            "phonetic": "เวนท์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -443,6 +473,11 @@
           {
             "text": "a car",
             "phonetic": "อะ คาร์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -469,6 +504,11 @@
           {
             "text": "a car",
             "phonetic": "อะ คาร์"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -495,6 +535,11 @@
           {
             "text": "three dogs",
             "phonetic": "ทรี ด็อกส์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -521,6 +566,11 @@
           {
             "text": "a new laptop",
             "phonetic": "อะ นิว แลป-ท็อป"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -547,6 +597,11 @@
           {
             "text": "a small apartment",
             "phonetic": "อะ สมอล อะ-พาร์ท-เมินท์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -677,6 +732,42 @@
         "phonetic": "เดย์ โดนท์ แฮฟ เอน-นี่ มัน-นี่",
         "thai": "พวกเขาไม่มีเงินเลย",
         "explanation": "'any' มักใช้แทน 'some' ในประโยคปฏิเสธและคำถาม."
+      },
+      {
+        "id": "have-has-11",
+        "promptThai": "พูดว่า: เธอมีรถหรือเปล่า",
+        "chunks": [
+          {
+            "text": "Does",
+            "phonetic": "ดัส"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "a car",
+            "phonetic": "อะ คาร์"
+          },
+          {
+            "text": "Do",
+            "phonetic": "ดู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Does",
+          "she",
+          "have",
+          "a car"
+        ],
+        "phonetic": "ดัส ชี แฮฟ อะ คาร์",
+        "thai": "เธอมีรถหรือเปล่า",
+        "explanation": "คำถามกับ she (he/she/it) ต้องขึ้นต้นด้วย Does ไม่ใช่ Do -- Do ใช้กับประธาน I/you/we/they เท่านั้น"
       }
     ]
   },
@@ -933,6 +1024,16 @@
           {
             "text": "eat",
             "phonetic": "อีท"
+          },
+          {
+            "text": "ate",
+            "phonetic": "เอท",
+            "isDistractor": true
+          },
+          {
+            "text": "eating",
+            "phonetic": "อีท-ทิ่ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1026,6 +1127,21 @@
           {
             "text": "went",
             "phonetic": "เวนท์"
+          },
+          {
+            "text": "go",
+            "phonetic": "โก",
+            "isDistractor": true
+          },
+          {
+            "text": "goes",
+            "phonetic": "โกส์",
+            "isDistractor": true
+          },
+          {
+            "text": "going",
+            "phonetic": "โก-อิ่ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1493,6 +1609,16 @@
           {
             "text": "eat",
             "phonetic": "อีท"
+          },
+          {
+            "text": "ate",
+            "phonetic": "เอท",
+            "isDistractor": true
+          },
+          {
+            "text": "eating",
+            "phonetic": "อีท-ทิ่ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2570,6 +2696,11 @@
           {
             "text": "play",
             "phonetic": "เพลย์"
+          },
+          {
+            "text": "could",
+            "phonetic": "คุด",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2601,6 +2732,11 @@
           {
             "text": "cook",
             "phonetic": "คุค"
+          },
+          {
+            "text": "could",
+            "phonetic": "คุด",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2632,6 +2768,11 @@
           {
             "text": "hear",
             "phonetic": "เฮียร์"
+          },
+          {
+            "text": "can",
+            "phonetic": "แคน",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2755,6 +2896,11 @@
           {
             "text": "a bike",
             "phonetic": "อะ ไบค์"
+          },
+          {
+            "text": "can",
+            "phonetic": "แคน",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
