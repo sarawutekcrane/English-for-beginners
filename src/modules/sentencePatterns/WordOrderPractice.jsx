@@ -99,7 +99,10 @@ export default function WordOrderPractice({ pattern, onBack }) {
           ← เปลี่ยนแพทเทิร์น
         </button>
         <h3 className="pattern-detail-title">
-          {pattern.order}. {pattern.title}
+          <span className="en-text">
+            {pattern.order}. {pattern.title}
+          </span>
+          <span className="pattern-detail-title-th th-text">{pattern.titleTh}</span>
         </h3>
         <p className="progress-label th-text">
           {shuffleOn

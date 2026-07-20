@@ -72,7 +72,7 @@
         "options": [
           {
             "text": "No, that's all, thank you.",
-            "phonetic": "โน แดทส์ ออล แธงค์ ยู",
+            "phonetic": "โน แดทส์ ออล แทงกิ้ว",
             "thai": "ไม่แล้วค่ะ ขอบคุณค่ะ",
             "correct": true
           },
@@ -221,7 +221,7 @@
         "options": [
           {
             "text": "Thank you very much!",
-            "phonetic": "แธงค์ ยู เว-รี่ มัช",
+            "phonetic": "แทงกิ้ว เว-รี่ มัช",
             "thai": "ขอบคุณมากค่ะ",
             "correct": true,
             "next": "n4",
@@ -265,7 +265,7 @@
           },
           {
             "text": "Thank you! Have a nice day!",
-            "phonetic": "แธงค์ ยู แฮฟ อะ ไนซ์ เดย์",
+            "phonetic": "แทงกิ้ว แฮฟ อะ ไนซ์ เดย์",
             "thai": "ขอบคุณค่ะ ขอให้มีความสุขนะคะ",
             "correct": true
           },
@@ -410,7 +410,7 @@
         "options": [
           {
             "text": "Thank you very much.",
-            "phonetic": "แธงค์ ยู เว-รี่ มัช",
+            "phonetic": "แทงกิ้ว เว-รี่ มัช",
             "thai": "ขอบคุณมากค่ะ",
             "correct": true
           },
@@ -437,7 +437,7 @@
         "options": [
           {
             "text": "Thank you so much.",
-            "phonetic": "แธงค์ ยู โซ มัช",
+            "phonetic": "แทงกิ้ว โซ มัช",
             "thai": "ขอบคุณมากๆ ค่ะ",
             "correct": true
           },
@@ -621,7 +621,7 @@
           },
           {
             "text": "Thank you, have a nice day.",
-            "phonetic": "แธงค์ ยู แฮฟ อะ ไนซ์ เดย์",
+            "phonetic": "แทงกิ้ว แฮฟ อะ ไนซ์ เดย์",
             "thai": "ขอบคุณค่ะ ขอให้มีความสุขนะคะ",
             "correct": true
           },
@@ -737,7 +737,7 @@
         "options": [
           {
             "text": "Okay, thank you, doctor.",
-            "phonetic": "โอ-เค แธงค์ ยู ด็อก-เตอร์",
+            "phonetic": "โอ-เค แทงกิ้ว ด็อก-เตอร์",
             "thai": "ค่ะ ขอบคุณค่ะคุณหมอ",
             "correct": true,
             "next": "n4a"
@@ -766,7 +766,7 @@
         "options": [
           {
             "text": "Thank you, I will.",
-            "phonetic": "แธงค์ ยู ไอ วิล",
+            "phonetic": "แทงกิ้ว ไอ วิล",
             "thai": "ขอบคุณค่ะ ฉันจะทำตามนะคะ",
             "correct": true
           },
@@ -793,7 +793,7 @@
         "options": [
           {
             "text": "Thank you very much, doctor.",
-            "phonetic": "แธงค์ ยู เว-รี่ มัช ด็อก-เตอร์",
+            "phonetic": "แทงกิ้ว เว-รี่ มัช ด็อก-เตอร์",
             "thai": "ขอบคุณมากค่ะคุณหมอ",
             "correct": true
           },
@@ -893,7 +893,7 @@
           },
           {
             "text": "Perfect, thank you.",
-            "phonetic": "เพอร์-เฟ็คท์ แธงค์ ยู",
+            "phonetic": "เพอร์-เฟ็คท์ แทงกิ้ว",
             "thai": "เยี่ยมเลยค่ะ ขอบคุณค่ะ",
             "correct": true,
             "next": "n3"
@@ -944,7 +944,7 @@
         "options": [
           {
             "text": "Thank you, see you then.",
-            "phonetic": "แธงค์ ยู ซี ยู เดน",
+            "phonetic": "แทงกิ้ว ซี ยู เดน",
             "thai": "ขอบคุณค่ะ แล้วเจอกันค่ะ",
             "correct": true
           },
@@ -1207,7 +1207,7 @@
       "n2a": {
         "system": {
           "text": "Thank you. Do you have any luggage to check in?",
-          "phonetic": "แธงค์ ยู ดู ยู แฮฟ เอน-นี่ ลัก-กิจ ทู เช็ค อิน",
+          "phonetic": "แทงกิ้ว ดู ยู แฮฟ เอน-นี่ ลัก-กิจ ทู เช็ค อิน",
           "thai": "ขอบคุณค่ะ มีกระเป๋าจะโหลดไหมคะ"
         },
         "options": [
@@ -1300,7 +1300,7 @@
         "options": [
           {
             "text": "Thank you very much.",
-            "phonetic": "แธงค์ ยู เว-รี่ มัช",
+            "phonetic": "แทงกิ้ว เว-รี่ มัช",
             "thai": "ขอบคุณมากค่ะ",
             "correct": true
           },
@@ -1327,7 +1327,7 @@
         "options": [
           {
             "text": "Thank you so much.",
-            "phonetic": "แธงค์ ยู โซ มัช",
+            "phonetic": "แทงกิ้ว โซ มัช",
             "thai": "ขอบคุณมากๆ ค่ะ",
             "correct": true
           },
@@ -1569,7 +1569,7 @@
         "options": [
           {
             "text": "That's fine, thank you.",
-            "phonetic": "แดทส์ ไฟน์ แธงค์ ยู",
+            "phonetic": "แดทส์ ไฟน์ แทงกิ้ว",
             "thai": "ได้ค่ะ ขอบคุณค่ะ",
             "correct": true,
             "next": "n3"
@@ -1662,7 +1662,7 @@
           },
           {
             "text": "Thank you for the ride.",
-            "phonetic": "แธงค์ ยู ฟอร์ เดอะ ไรด์",
+            "phonetic": "แทงกิ้ว ฟอร์ เดอะ ไรด์",
             "thai": "ขอบคุณที่ส่งนะคะ",
             "correct": true
           },
@@ -1683,7 +1683,7 @@
         "options": [
           {
             "text": "Thank you very much.",
-            "phonetic": "แธงค์ ยู เว-รี่ มัช",
+            "phonetic": "แทงกิ้ว เว-รี่ มัช",
             "thai": "ขอบคุณมากค่ะ",
             "correct": true
           },
@@ -1834,7 +1834,7 @@
         "options": [
           {
             "text": "Thank you, I'm done now.",
-            "phonetic": "แธงค์ ยู ไอม์ ดัน นาว",
+            "phonetic": "แทงกิ้ว ไอม์ ดัน นาว",
             "thai": "ขอบคุณค่ะ เสร็จแล้วค่ะ",
             "correct": true
           },
@@ -1861,7 +1861,7 @@
         "options": [
           {
             "text": "Thank you so much for your help.",
-            "phonetic": "แธงค์ ยู โซ มัช ฟอร์ ยัวร์ เฮลพ์",
+            "phonetic": "แทงกิ้ว โซ มัช ฟอร์ ยัวร์ เฮลพ์",
             "thai": "ขอบคุณมากๆ ที่ช่วยนะคะ",
             "correct": true
           },
@@ -2132,7 +2132,7 @@
         "options": [
           {
             "text": "Awesome, thank you!",
-            "phonetic": "ออ-ซัม แธงค์ ยู",
+            "phonetic": "ออ-ซัม แทงกิ้ว",
             "thai": "เจ๋งเลย ขอบคุณนะ!",
             "correct": true,
             "next": "n3"
@@ -2211,7 +2211,7 @@
       "n4b": {
         "system": {
           "text": "Wow, thank you! That's so kind of you.",
-          "phonetic": "วาว แธงค์ ยู แดทส์ โซ ไคนด์ ออฟ ยู",
+          "phonetic": "วาว แทงกิ้ว แดทส์ โซ ไคนด์ ออฟ ยู",
           "thai": "ว้าว ขอบคุณนะ! ใจดีมากเลย"
         },
         "options": [
@@ -2339,7 +2339,7 @@
         "options": [
           {
             "text": "Thank you, I'll wait here.",
-            "phonetic": "แธงค์ ยู ไอล์ เวท เฮียร์",
+            "phonetic": "แทงกิ้ว ไอล์ เวท เฮียร์",
             "thai": "ขอบคุณค่ะ ฉันจะรอตรงนี้",
             "correct": true,
             "next": "n4a"
@@ -2368,7 +2368,7 @@
         "options": [
           {
             "text": "Thank you so much!",
-            "phonetic": "แธงค์ ยู โซ มัช",
+            "phonetic": "แทงกิ้ว โซ มัช",
             "thai": "ขอบคุณมากๆ เลยค่ะ!",
             "correct": true
           },
@@ -2395,7 +2395,7 @@
         "options": [
           {
             "text": "Thank you for your help.",
-            "phonetic": "แธงค์ ยู ฟอร์ ยัวร์ เฮลพ์",
+            "phonetic": "แทงกิ้ว ฟอร์ ยัวร์ เฮลพ์",
             "thai": "ขอบคุณที่ช่วยเหลือนะคะ",
             "correct": true
           },
@@ -2552,7 +2552,7 @@
           },
           {
             "text": "Thank you for the chance.",
-            "phonetic": "แธงค์ ยู ฟอร์ เดอะ ชานซ์",
+            "phonetic": "แทงกิ้ว ฟอร์ เดอะ ชานซ์",
             "thai": "ขอบคุณที่ให้โอกาสครับ",
             "correct": true
           },
@@ -2718,13 +2718,13 @@
       "n4a": {
         "system": {
           "text": "Thank you. We'll clean the area and add a warning sign.",
-          "phonetic": "แธงค์ ยู วีล คลีน เดอะ แอ-เรีย แอนด์ แอด อะ วอร์น-นิ่ง ไซน์",
+          "phonetic": "แทงกิ้ว วีล คลีน เดอะ แอ-เรีย แอนด์ แอด อะ วอร์น-นิ่ง ไซน์",
           "thai": "ขอบคุณค่ะ เราจะทำความสะอาดพื้นที่และติดป้ายเตือน"
         },
         "options": [
           {
             "text": "Thank you, that sounds good.",
-            "phonetic": "แธงค์ ยู แดท ซาวด์ส กู๊ด",
+            "phonetic": "แทงกิ้ว แดท ซาวด์ส กู๊ด",
             "thai": "ขอบคุณค่ะ ฟังดูดีเลย",
             "correct": true
           },
@@ -2745,13 +2745,13 @@
       "n4b": {
         "system": {
           "text": "Thank you. We'll fix the safety guard immediately.",
-          "phonetic": "แธงค์ ยู วีล ฟิกซ์ เดอะ เซฟ-ตี้ การ์ด อิม-มี-เดียท-ลี่",
+          "phonetic": "แทงกิ้ว วีล ฟิกซ์ เดอะ เซฟ-ตี้ การ์ด อิม-มี-เดียท-ลี่",
           "thai": "ขอบคุณค่ะ เราจะซ่อมเครื่องป้องกันทันที"
         },
         "options": [
           {
             "text": "Great, thank you for taking action.",
-            "phonetic": "เกรท แธงค์ ยู ฟอร์ เท-คิ่ง แอ็ค-ชั่น",
+            "phonetic": "เกรท แทงกิ้ว ฟอร์ เท-คิ่ง แอ็ค-ชั่น",
             "thai": "ดีเลยค่ะ ขอบคุณที่จัดการให้",
             "correct": true
           },
@@ -2873,7 +2873,7 @@
         "options": [
           {
             "text": "Thank you, I will take a break.",
-            "phonetic": "แธงค์ ยู ไอ วิล เทค อะ เบรค",
+            "phonetic": "แทงกิ้ว ไอ วิล เทค อะ เบรค",
             "thai": "ขอบคุณค่ะ ฉันจะพักสักหน่อย",
             "correct": true,
             "next": "n4a"
@@ -2902,7 +2902,7 @@
         "options": [
           {
             "text": "Thank you, I appreciate it.",
-            "phonetic": "แธงค์ ยู ไอ แอพ-พรี-ชี-เอท อิท",
+            "phonetic": "แทงกิ้ว ไอ แอพ-พรี-ชี-เอท อิท",
             "thai": "ขอบคุณค่ะ ซาบซึ้งใจมาก",
             "correct": true
           },
@@ -3016,7 +3016,7 @@
       "n2b": {
         "system": {
           "text": "Thank you for reporting. Where exactly is the wire?",
-          "phonetic": "แธงค์ ยู ฟอร์ รี-พอร์ท-ติ่ง แวร์ เอ็ก-แซ็คท์-ลี่ อิส เดอะ ไวร์",
+          "phonetic": "แทงกิ้ว ฟอร์ รี-พอร์ท-ติ่ง แวร์ เอ็ก-แซ็คท์-ลี่ อิส เดอะ ไวร์",
           "thai": "ขอบคุณที่รายงานนะคะ สายไฟอยู่ตรงไหนแน่ๆ"
         },
         "options": [
@@ -3080,7 +3080,7 @@
         "options": [
           {
             "text": "Thank you for taking this seriously.",
-            "phonetic": "แธงค์ ยู ฟอร์ เท-คิ่ง ดิส เซีย-เรียส-ลี่",
+            "phonetic": "แทงกิ้ว ฟอร์ เท-คิ่ง ดิส เซีย-เรียส-ลี่",
             "thai": "ขอบคุณที่ให้ความสำคัญกับเรื่องนี้ค่ะ",
             "correct": true
           },
@@ -3113,7 +3113,7 @@
           },
           {
             "text": "Thank you for your quick action.",
-            "phonetic": "แธงค์ ยู ฟอร์ ยัวร์ ควิค แอ็ค-ชั่น",
+            "phonetic": "แทงกิ้ว ฟอร์ ยัวร์ ควิค แอ็ค-ชั่น",
             "thai": "ขอบคุณที่จัดการรวดเร็วค่ะ",
             "correct": true
           },
@@ -3200,7 +3200,7 @@
         "options": [
           {
             "text": "Okay, thank you for checking.",
-            "phonetic": "โอ-เค แธงค์ ยู ฟอร์ เช็ค-กิ้ง",
+            "phonetic": "โอ-เค แทงกิ้ว ฟอร์ เช็ค-กิ้ง",
             "thai": "โอเคค่ะ ขอบคุณที่ช่วยตรวจ",
             "correct": true,
             "next": "n3"
@@ -3258,7 +3258,7 @@
         "options": [
           {
             "text": "Thank you for your concern.",
-            "phonetic": "แธงค์ ยู ฟอร์ ยัวร์ คอน-เซิร์น",
+            "phonetic": "แทงกิ้ว ฟอร์ ยัวร์ คอน-เซิร์น",
             "thai": "ขอบคุณที่เป็นห่วงค่ะ",
             "correct": true
           },
@@ -3285,7 +3285,7 @@
         "options": [
           {
             "text": "Thank you, that makes me feel safer.",
-            "phonetic": "แธงค์ ยู แดท เมคส์ มี ฟีล เซฟ-เฟอร์",
+            "phonetic": "แทงกิ้ว แดท เมคส์ มี ฟีล เซฟ-เฟอร์",
             "thai": "ขอบคุณค่ะ ทำให้รู้สึกปลอดภัยขึ้น",
             "correct": true
           },
@@ -3436,7 +3436,7 @@
         "options": [
           {
             "text": "Thank you for explaining the procedure.",
-            "phonetic": "แธงค์ ยู ฟอร์ เอ็กซ์-เพลน-นิ่ง เดอะ โพร-ซี-เจอร์",
+            "phonetic": "แทงกิ้ว ฟอร์ เอ็กซ์-เพลน-นิ่ง เดอะ โพร-ซี-เจอร์",
             "thai": "ขอบคุณที่อธิบายขั้นตอนค่ะ",
             "correct": true
           },
@@ -3614,7 +3614,7 @@
         "options": [
           {
             "text": "I will, thank you for reminding me.",
-            "phonetic": "ไอ วิล แธงค์ ยู ฟอร์ รี-ไมนด์-ดิ่ง มี",
+            "phonetic": "ไอ วิล แทงกิ้ว ฟอร์ รี-ไมนด์-ดิ่ง มี",
             "thai": "ฉันจะใส่ค่ะ ขอบคุณที่เตือน",
             "correct": true
           },
@@ -3676,7 +3676,7 @@
         "options": [
           {
             "text": "Much better, thank you for asking.",
-            "phonetic": "มัช เบท-เทอร์ แธงค์ ยู ฟอร์ อาส-กิ้ง",
+            "phonetic": "มัช เบท-เทอร์ แทงกิ้ว ฟอร์ อาส-กิ้ง",
             "thai": "ดีขึ้นมากค่ะ ขอบคุณที่ถาม",
             "correct": true,
             "next": "n2a"
@@ -3734,7 +3734,7 @@
         "options": [
           {
             "text": "Thank you for understanding.",
-            "phonetic": "แธงค์ ยู ฟอร์ อัน-เดอร์-สแทน-ดิ่ง",
+            "phonetic": "แทงกิ้ว ฟอร์ อัน-เดอร์-สแทน-ดิ่ง",
             "thai": "ขอบคุณที่เข้าใจค่ะ",
             "correct": true,
             "next": "n3"
@@ -3792,7 +3792,7 @@
         "options": [
           {
             "text": "I will, thank you.",
-            "phonetic": "ไอ วิล แธงค์ ยู",
+            "phonetic": "ไอ วิล แทงกิ้ว",
             "thai": "จะบอกแน่นอนค่ะ ขอบคุณค่ะ",
             "correct": true
           },
@@ -3825,7 +3825,7 @@
           },
           {
             "text": "Thank you for the advice.",
-            "phonetic": "แธงค์ ยู ฟอร์ เดอะ แอด-ไวซ์",
+            "phonetic": "แทงกิ้ว ฟอร์ เดอะ แอด-ไวซ์",
             "thai": "ขอบคุณสำหรับคำแนะนำค่ะ",
             "correct": true
           },
@@ -3976,7 +3976,7 @@
           },
           {
             "text": "Thank you for pointing that out.",
-            "phonetic": "แธงค์ ยู ฟอร์ พอยท์-ติ่ง แดท เอาท์",
+            "phonetic": "แทงกิ้ว ฟอร์ พอยท์-ติ่ง แดท เอาท์",
             "thai": "ขอบคุณที่ชี้ให้เห็นค่ะ",
             "correct": true
           },
@@ -4003,7 +4003,7 @@
           },
           {
             "text": "Thank you for the warning.",
-            "phonetic": "แธงค์ ยู ฟอร์ เดอะ วอร์น-นิ่ง",
+            "phonetic": "แทงกิ้ว ฟอร์ เดอะ วอร์น-นิ่ง",
             "thai": "ขอบคุณสำหรับคำเตือนค่ะ",
             "correct": true
           },
@@ -4154,7 +4154,7 @@
           },
           {
             "text": "Thank you for the training.",
-            "phonetic": "แธงค์ ยู ฟอร์ เดอะ เทรน-นิ่ง",
+            "phonetic": "แทงกิ้ว ฟอร์ เดอะ เทรน-นิ่ง",
             "thai": "ขอบคุณสำหรับการอบรมค่ะ",
             "correct": true
           },
@@ -4175,7 +4175,7 @@
         "options": [
           {
             "text": "Thank you, I'll go get it now.",
-            "phonetic": "แธงค์ ยู ไอล์ โก เก็ท อิท นาว",
+            "phonetic": "แทงกิ้ว ไอล์ โก เก็ท อิท นาว",
             "thai": "ขอบคุณค่ะ ฉันจะไปเอาเลย",
             "correct": true
           },
@@ -4326,7 +4326,7 @@
         "options": [
           {
             "text": "Thank you, we'll be waiting.",
-            "phonetic": "แธงค์ ยู วีล บี เว-ทิ่ง",
+            "phonetic": "แทงกิ้ว วีล บี เว-ทิ่ง",
             "thai": "ขอบคุณค่ะ เราจะรอค่ะ",
             "correct": true
           },
@@ -4353,7 +4353,7 @@
         "options": [
           {
             "text": "Thank you, we will stay calm.",
-            "phonetic": "แธงค์ ยู วี วิล สเทย์ คาล์ม",
+            "phonetic": "แทงกิ้ว วี วิล สเทย์ คาล์ม",
             "thai": "ขอบคุณค่ะ เราจะใจเย็นๆ",
             "correct": true
           },

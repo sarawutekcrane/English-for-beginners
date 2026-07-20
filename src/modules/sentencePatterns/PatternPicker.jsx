@@ -6,7 +6,10 @@ function PatternButton({ pattern, onPick }) {
   return (
     <button className="pattern-list-btn" onClick={() => onPick(pattern.id)}>
       <span className="pattern-list-order">{pattern.order}</span>
-      <span className="pattern-list-title">{pattern.title}</span>
+      <span className="pattern-list-titles">
+        <span className="pattern-list-title en-text">{pattern.title}</span>
+        <span className="pattern-list-title-th th-text">{pattern.titleTh}</span>
+      </span>
     </button>
   );
 }

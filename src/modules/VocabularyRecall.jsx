@@ -48,6 +48,15 @@ function checkAnswer(typed, target) {
   const b = normalizeAnswer(target);
   if (!a) return false;
   if (a === b) return true;
+  // Never tolerate a changed first letter as a "typo", no matter the overall
+  // edit distance. Bug found in live testing: "fhree" vs "three" is exactly
+  // 1 edit away (f->t), so the distance<=1 rule alone accepted it -- but a
+  // wrong first letter/sound is a different word's onset, not a plausible
+  // slip of the finger (unlike a doubled letter, a transposed pair, or a
+  // missing/extra character elsewhere in the word). The first sound is also
+  // the pedagogically most important part of a word to get right in a
+  // spelling drill, so it gets zero tolerance even on long words.
+  if (a[0] !== b[0]) return false;
   if (b.length >= MIN_LEN_FOR_TYPO_TOLERANCE && levenshtein(a, b) <= 1) return true;
   return false;
 }

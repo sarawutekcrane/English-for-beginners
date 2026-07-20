@@ -4,6 +4,7 @@
     "order": 1,
     "level": "A2",
     "title": "Present Simple",
+    "titleTh": "ปัจจุบันกาลธรรมดา",
     "structure": "[Subject] + verb(-s) + [Object]",
     "functionWords": [
       {
@@ -519,6 +520,7 @@
   {
     "id": "have-has",
     "title": "Have / Has",
+    "titleTh": "การใช้ Have / Has (มี)",
     "level": "A2",
     "order": 2,
     "structure": "[Subject] + have/has + [Object]",
@@ -956,6 +958,7 @@
     "order": 3,
     "level": "A2",
     "title": "Past Simple",
+    "titleTh": "อดีตกาลธรรมดา",
     "structure": "[Subject] + verb(-ed / irregular past) + [Object]",
     "functionWords": [
       {
@@ -1461,6 +1464,7 @@
     "order": 4,
     "level": "A2",
     "title": "Present Continuous",
+    "titleTh": "ปัจจุบันกาลต่อเนื่อง",
     "structure": "[Subject] + am/is/are + verb-ing + [Object]",
     "functionWords": [
       {
@@ -2056,6 +2060,7 @@
     "order": 5,
     "level": "A2",
     "title": "Going-to Future",
+    "titleTh": "อนาคตกาลด้วย Going to",
     "structure": "[Subject] + am/is/are + going to + verb(base) + [Object]",
     "functionWords": [
       {
@@ -2477,6 +2482,7 @@
     "order": 6,
     "level": "A2",
     "title": "Will Future",
+    "titleTh": "อนาคตกาลด้วย Will",
     "structure": "[Subject] + will + verb(base) + [Object]",
     "functionWords": [
       {
@@ -2910,6 +2916,7 @@
     "order": 7,
     "level": "A2",
     "title": "There is / There are",
+    "titleTh": "โครงสร้าง There is / There are (มี...อยู่)",
     "structure": "There + is/are/was/were + [Subject]",
     "functionWords": [
       {
@@ -3354,6 +3361,7 @@
     "order": 8,
     "level": "A2",
     "title": "Can / Could (Ability)",
+    "titleTh": "การใช้ Can / Could (ความสามารถ)",
     "structure": "[Subject] + can/could + verb(base) + [Object]",
     "functionWords": [
       {
@@ -3804,6 +3812,7 @@
     "order": 9,
     "level": "B1",
     "title": "Comparatives",
+    "titleTh": "การเปรียบเทียบคำคุณศัพท์ (ขั้นกว่า & ขั้นสุด)",
     "structure": "[Subject A] + is + adjective-er / more adjective + than + [Subject B]",
     "functionWords": [
       {
@@ -4335,6 +4344,7 @@
     "order": 10,
     "level": "B1",
     "title": "Zero Conditional",
+    "titleTh": "ประโยคเงื่อนไขแบบที่ 0 (ความจริงทั่วไป)",
     "structure": "If + [Subject] + present simple, [Subject] + present simple",
     "functionWords": [
       {
@@ -4631,6 +4641,7 @@
     "order": 11,
     "level": "B1",
     "title": "First Conditional",
+    "titleTh": "ประโยคเงื่อนไขแบบที่ 1 (เหตุการณ์ในอนาคตที่เป็นไปได้)",
     "structure": "If + [Subject] + present simple, [Subject] + will + verb(base)",
     "functionWords": [
       {

@@ -11,7 +11,10 @@ export default function LessonView({ pattern, onBack }) {
       </button>
 
       <h3 className="pattern-detail-title">
-        {pattern.order}. {pattern.title}
+        <span className="en-text">
+          {pattern.order}. {pattern.title}
+        </span>
+        <span className="pattern-detail-title-th th-text">{pattern.titleTh}</span>
       </h3>
 
       <div className="lesson-card">

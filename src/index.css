@@ -1035,16 +1035,37 @@ button {
   font-size: 0.95rem;
 }
 
+.pattern-list-titles {
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+}
+
 .pattern-list-title {
   font-weight: 700;
   color: var(--ink);
 }
 
+.pattern-list-title-th {
+  font-size: 0.8rem;
+  color: var(--ink-soft);
+}
+
 /* ---------- Sentence Patterns: detail shell ---------- */
 .pattern-detail-title {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
   color: var(--pink-text);
   font-size: 1.15rem;
   text-align: center;
+}
+
+.pattern-detail-title-th {
+  font-size: 0.75rem;
+  font-weight: 400;
+  color: var(--ink-soft);
 }
 
 /* ---------- Lesson view ---------- */
