@@ -59,8 +59,9 @@ export default function HomeMenu({ onSelect }) {
       <header className="home-header">
         <Mascot mood="excited" size={110} />
         <h1 className="home-title">
-          English <span>for</span> Beginners
+          English <span>for</span> PUIFAI
         </h1>
+        <p className="home-subtitle th-text">ตั้งใจเรียนนะคะที่รัก❤️</p>
       </header>
 
       <div className="module-grid">
