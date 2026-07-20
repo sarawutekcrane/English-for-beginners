@@ -38,36 +38,30 @@ const STATUS = {
   error: "error",
 };
 
-// Bug-investigation note: a "we heard: Play" report was traced to the raw
-// SpeechRecognition result itself, not an app-side bug -- see useSpeech.js
-// for the full writeup. This buffer is a genuine, separate hardening found
-// during that investigation (hypothesis 3): the mic previously had no
-// guard against starting while the app's own TTS (either the manual
-// "hear example" button or the automatic post-attempt replay) was still
-// audibly playing, which could let the microphone pick up the device's
-// own speaker output. Speaker audio can also bleed into the mic for a
-// brief tail even after the utterance officially ends, hence the buffer
-// rather than just checking `speaking` at the instant it flips false.
-const TTS_COOLDOWN_MS = 400;
-
+// Investigation note (mic-flicker report): a TTS/mic-overlap guard was
+// added here to address a "we heard: Play" hypothesis, gating the mic
+// button's `disabled` on a second state (`speaking`, plus a follow-up
+// `ttsCooldown` timer set from a `useEffect` reacting to it) alongside
+// the recognition hook's own `listening` state. That guard is what
+// caused a separate, confirmed bug: `ttsCooldown` was set one render
+// cycle *after* `speaking` flipped back to false (React runs passive
+// effects after paint), so there was a genuine, observable render where
+// `disabled` evaluated false (button enabled) sandwiched between two
+// `true` renders -- a real disabled -> enabled -> disabled flicker,
+// verified via direct state-transition logging, not merely suspected.
+// No `recognition.start()` call was ever involved in that flicker (mic
+// activation stays 100% tap-initiated -- see useSpeech.js, only one call
+// site, reachable only from this component's `record()` onClick handler).
+// The reference "Japanese for Beginners" app (a known-working
+// implementation of this same module) never had this second state at
+// all: its mic button's disabled condition is `!supported || listening`,
+// full stop -- a single source of truth driven only by the recognition
+// object's own onstart/onend. Removed the guard here to match that
+// structure instead of patching the timing gap, since the simpler
+// single-state design can't reproduce this bug class by construction.
 function SpeakingView({ category, onBack }) {
-  const { speak, speaking } = useSpeak();
+  const { speak } = useSpeak();
   const { supported, listening, start } = useSpeechRecognition();
-
-  const [ttsCooldown, setTtsCooldown] = useState(false);
-  const ttsCooldownRef = useRef(null);
-  const hasSpokenRef = useRef(false);
-  useEffect(() => {
-    if (speaking) {
-      hasSpokenRef.current = true;
-      clearTimeout(ttsCooldownRef.current);
-      return;
-    }
-    if (!hasSpokenRef.current) return; // don't apply a cooldown before any TTS has ever played
-    setTtsCooldown(true);
-    ttsCooldownRef.current = setTimeout(() => setTtsCooldown(false), TTS_COOLDOWN_MS);
-    return () => clearTimeout(ttsCooldownRef.current);
-  }, [speaking]);
 
   const [shuffleOn, setShuffleOn] = useState(false);
   const baseCards = useMemo(() => getVocab(category.id).map(toCard), [category]);
@@ -116,7 +110,7 @@ function SpeakingView({ category, onBack }) {
     // read on the very next call) closes that window; the recognition hook
     // itself also aborts any in-flight instance before starting a new one
     // as a second line of defense.
-    if (listening || status === STATUS.requesting || speaking || ttsCooldown) return;
+    if (listening || status === STATUS.requesting) return;
     // "requesting" (not "listening") until the recognizer's own onstart
     // fires -- getting the mic permission prompt resolved and the
     // recognizer actually capturing audio can take a perceptible moment,
@@ -255,7 +249,7 @@ function SpeakingView({ category, onBack }) {
 
           <button
             className="btn btn-round"
-            disabled={!supported || listening || status === STATUS.requesting || speaking || ttsCooldown}
+            disabled={!supported || listening || status === STATUS.requesting}
             onClick={record}
             aria-label="พูดออกเสียง"
           >

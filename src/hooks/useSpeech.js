@@ -193,6 +193,14 @@ export function useSpeechRecognition() {
   const start = useCallback(
     ({ onResult, onError, onStart, onEnd } = {}) => {
       if (!supported) return;
+      if (debugSpeechEnabled()) {
+        // Confirms the mic is genuinely tap-initiated: this is the ONLY
+        // call site of recognition.start() in the app (grep confirms it),
+        // reachable only from SpeakingPractice.jsx's record() onClick
+        // handler -- no effect or timer calls start(). Logged so a live
+        // capture can prove that even if the source changes later.
+        console.log("[SpeechRecognition] start() called", new Date().toISOString());
+      }
       const previous = recognitionRef.current;
       clearTimeout(timeoutRef.current);
 
@@ -287,6 +295,9 @@ export function useSpeechRecognition() {
   );
 
   const stop = useCallback(() => {
+    if (debugSpeechEnabled()) {
+      console.log("[SpeechRecognition] stop() called", new Date().toISOString());
+    }
     recognitionRef.current?.stop();
   }, []);
 
