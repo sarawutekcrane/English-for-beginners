@@ -11,13 +11,27 @@ const EMPTY = [];
 // Strips only sentence-level punctuation that decorates a quiz phrase
 // (periods, commas, question/exclamation marks, semicolons, colons,
 // parentheses) -- never characters that are part of a word's actual
-// spelling. Apostrophes and hyphens are deliberately NOT stripped: several
-// real target words depend on them ("T-shirt", "X-ray", "Check-up", and the
-// greetings category's contractions like "I'm", "don't", "You're"), so
-// typing "Tshirt" or "Im" for those must be rejected, not silently accepted
-// by stripping the character that makes the spelling correct.
+// spelling. Apostrophes are deliberately NOT stripped: several real target
+// words depend on them (the greetings category's contractions like "I'm",
+// "don't", "You're"), so typing "Im" for those must be rejected, not
+// silently accepted by stripping the character that makes the spelling
+// correct.
+//
+// Hyphens and spaces ARE treated as interchangeable (by user request): a
+// hyphenated target ("T-shirt", "X-ray", "Check-up") accepts either the
+// hyphen or a space in that position ("T-shirt" or "T shirt"), since a
+// learner reasonably can't be expected to know which one a given compound
+// word uses. Collapsing both to a single canonical space, on both sides of
+// the comparison, makes this symmetric -- it does NOT make the separator
+// optional: "Tshirt" (no separator at all) still doesn't equal "t shirt",
+// so this stays spelling-strict, just flexible about hyphen-vs-space.
 function normalizeAnswer(str = "") {
-  return str.trim().toLowerCase().replace(/[.,!?;:()]/g, "");
+  return str
+    .trim()
+    .toLowerCase()
+    .replace(/[.,!?;:()]/g, "")
+    .replace(/[-\s]+/g, " ")
+    .trim();
 }
 
 // Design decision: this is a spelling-practice feature, so the whole point
