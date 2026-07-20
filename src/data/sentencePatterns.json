@@ -129,6 +129,21 @@
           {
             "text": "plays",
             "phonetic": "เพลย์ส"
+          },
+          {
+            "text": "play",
+            "phonetic": "เพลย์",
+            "isDistractor": true
+          },
+          {
+            "text": "played",
+            "phonetic": "เพลย์ด",
+            "isDistractor": true
+          },
+          {
+            "text": "playing",
+            "phonetic": "เพลย์-อิ่ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -156,6 +171,21 @@
           {
             "text": "works",
             "phonetic": "เวิร์คส์"
+          },
+          {
+            "text": "work",
+            "phonetic": "เวิร์ค",
+            "isDistractor": true
+          },
+          {
+            "text": "worked",
+            "phonetic": "เวิร์คท์",
+            "isDistractor": true
+          },
+          {
+            "text": "working",
+            "phonetic": "เวิร์ค-กิ้ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -186,6 +216,21 @@
           {
             "text": "drink",
             "phonetic": "ดริงค์"
+          },
+          {
+            "text": "drinks",
+            "phonetic": "ดริงค์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "drank",
+            "phonetic": "แดรงค์",
+            "isDistractor": true
+          },
+          {
+            "text": "drinking",
+            "phonetic": "ดริง-กิ้ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -217,6 +262,21 @@
           {
             "text": "study",
             "phonetic": "สทัด-ดี้"
+          },
+          {
+            "text": "studies",
+            "phonetic": "สทัด-ดีส",
+            "isDistractor": true
+          },
+          {
+            "text": "studied",
+            "phonetic": "สทัด-ดีด",
+            "isDistractor": true
+          },
+          {
+            "text": "studying",
+            "phonetic": "สทัด-ดี้-อิ่ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -248,6 +308,16 @@
           {
             "text": "read",
             "phonetic": "รีด"
+          },
+          {
+            "text": "reads",
+            "phonetic": "รีดส์",
+            "isDistractor": true
+          },
+          {
+            "text": "reading",
+            "phonetic": "รี-ดิ้ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -356,6 +426,21 @@
           {
             "text": "cook",
             "phonetic": "คุค"
+          },
+          {
+            "text": "cooks",
+            "phonetic": "คุคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "cooked",
+            "phonetic": "คุคท์",
+            "isDistractor": true
+          },
+          {
+            "text": "cooking",
+            "phonetic": "คุค-กิ้ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -387,6 +472,21 @@
           {
             "text": "listen",
             "phonetic": "ลิส-เซิ่น"
+          },
+          {
+            "text": "listens",
+            "phonetic": "ลิส-เซินส์",
+            "isDistractor": true
+          },
+          {
+            "text": "listened",
+            "phonetic": "ลิส-เซินด์",
+            "isDistractor": true
+          },
+          {
+            "text": "listening",
+            "phonetic": "ลิส-เซิ่น-นิ่ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -848,6 +948,21 @@
           {
             "text": "cooked",
             "phonetic": "คุคท์"
+          },
+          {
+            "text": "cook",
+            "phonetic": "คุค",
+            "isDistractor": true
+          },
+          {
+            "text": "cooks",
+            "phonetic": "คุคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "cooking",
+            "phonetic": "คุค-กิ้ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -879,6 +994,21 @@
           {
             "text": "drank",
             "phonetic": "แดรงค์"
+          },
+          {
+            "text": "drink",
+            "phonetic": "ดริงค์",
+            "isDistractor": true
+          },
+          {
+            "text": "drinks",
+            "phonetic": "ดริงค์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "drinking",
+            "phonetic": "ดริง-กิ้ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -910,6 +1040,21 @@
           {
             "text": "studied",
             "phonetic": "สทัด-ดีด"
+          },
+          {
+            "text": "study",
+            "phonetic": "สทัด-ดี้",
+            "isDistractor": true
+          },
+          {
+            "text": "studies",
+            "phonetic": "สทัด-ดีส",
+            "isDistractor": true
+          },
+          {
+            "text": "studying",
+            "phonetic": "สทัด-ดี้-อิ่ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -937,6 +1082,21 @@
           {
             "text": "spoke",
             "phonetic": "สโปค"
+          },
+          {
+            "text": "speak",
+            "phonetic": "สปีค",
+            "isDistractor": true
+          },
+          {
+            "text": "speaks",
+            "phonetic": "สปีคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "speaking",
+            "phonetic": "สปี-กิ้ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -967,6 +1127,21 @@
           {
             "text": "listened",
             "phonetic": "ลิส-เซินด์"
+          },
+          {
+            "text": "listen",
+            "phonetic": "ลิส-เซิ่น",
+            "isDistractor": true
+          },
+          {
+            "text": "listens",
+            "phonetic": "ลิส-เซินส์",
+            "isDistractor": true
+          },
+          {
+            "text": "listening",
+            "phonetic": "ลิส-เซิ่น-นิ่ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -994,6 +1169,21 @@
           {
             "text": "had",
             "phonetic": "แฮด"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "having",
+            "phonetic": "แฮฟ-วิ่ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1065,6 +1255,21 @@
           {
             "text": "worked",
             "phonetic": "เวิร์คท์"
+          },
+          {
+            "text": "work",
+            "phonetic": "เวิร์ค",
+            "isDistractor": true
+          },
+          {
+            "text": "works",
+            "phonetic": "เวิร์คส์",
+            "isDistractor": true
+          },
+          {
+            "text": "working",
+            "phonetic": "เวิร์ค-กิ้ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1096,6 +1301,16 @@
           {
             "text": "read",
             "phonetic": "รีด"
+          },
+          {
+            "text": "reads",
+            "phonetic": "รีดส์",
+            "isDistractor": true
+          },
+          {
+            "text": "reading",
+            "phonetic": "รี-ดิ้ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1233,6 +1448,26 @@
           {
             "text": "reading",
             "phonetic": "รี-ดิ้ง"
+          },
+          {
+            "text": "read",
+            "phonetic": "รีด",
+            "isDistractor": true
+          },
+          {
+            "text": "reads",
+            "phonetic": "รีดส์",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1264,6 +1499,31 @@
           {
             "text": "cooking",
             "phonetic": "คุค-กิ้ง"
+          },
+          {
+            "text": "cook",
+            "phonetic": "คุค",
+            "isDistractor": true
+          },
+          {
+            "text": "cooks",
+            "phonetic": "คุคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "cooked",
+            "phonetic": "คุคท์",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1295,6 +1555,31 @@
           {
             "text": "drinking",
             "phonetic": "ดริง-กิ้ง"
+          },
+          {
+            "text": "drink",
+            "phonetic": "ดริงค์",
+            "isDistractor": true
+          },
+          {
+            "text": "drinks",
+            "phonetic": "ดริงค์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "drank",
+            "phonetic": "แดรงค์",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1330,6 +1615,31 @@
           {
             "text": "tennis",
             "phonetic": "เทน-นิส"
+          },
+          {
+            "text": "play",
+            "phonetic": "เพลย์",
+            "isDistractor": true
+          },
+          {
+            "text": "plays",
+            "phonetic": "เพลย์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "played",
+            "phonetic": "เพลย์ด",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1362,6 +1672,31 @@
           {
             "text": "writing",
             "phonetic": "ไร-ทิ่ง"
+          },
+          {
+            "text": "write",
+            "phonetic": "ไรท์",
+            "isDistractor": true
+          },
+          {
+            "text": "writes",
+            "phonetic": "ไรทส์",
+            "isDistractor": true
+          },
+          {
+            "text": "wrote",
+            "phonetic": "โรท",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1393,6 +1728,16 @@
           {
             "text": "running",
             "phonetic": "รัน-นิ่ง"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1424,6 +1769,31 @@
           {
             "text": "studying",
             "phonetic": "สทัด-ดี้-อิ่ง"
+          },
+          {
+            "text": "study",
+            "phonetic": "สทัด-ดี้",
+            "isDistractor": true
+          },
+          {
+            "text": "studies",
+            "phonetic": "สทัด-ดีส",
+            "isDistractor": true
+          },
+          {
+            "text": "studied",
+            "phonetic": "สทัด-ดีด",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1486,6 +1856,11 @@
           {
             "text": "listening",
             "phonetic": "ลิส-เซิ่น-นิ่ง"
+          },
+          {
+            "text": "aren't",
+            "phonetic": "อาร์-เนินท์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1521,6 +1896,31 @@
           {
             "text": "dinner",
             "phonetic": "ดิน-เนอร์"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "had",
+            "phonetic": "แฮด",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1650,6 +2050,21 @@
           {
             "text": "play",
             "phonetic": "เพลย์"
+          },
+          {
+            "text": "plays",
+            "phonetic": "เพลย์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "played",
+            "phonetic": "เพลย์ด",
+            "isDistractor": true
+          },
+          {
+            "text": "playing",
+            "phonetic": "เพลย์-อิ่ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1681,6 +2096,21 @@
           {
             "text": "watch",
             "phonetic": "วอช"
+          },
+          {
+            "text": "watches",
+            "phonetic": "วอช-เชส",
+            "isDistractor": true
+          },
+          {
+            "text": "watched",
+            "phonetic": "วอชท์",
+            "isDistractor": true
+          },
+          {
+            "text": "watching",
+            "phonetic": "วอช-ชิ่ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -1809,6 +2239,21 @@
           {
             "text": "pasta",
             "phonetic": "พาส-ต้า"
+          },
+          {
+            "text": "cooks",
+            "phonetic": "คุคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "cooked",
+            "phonetic": "คุคท์",
+            "isDistractor": true
+          },
+          {
+            "text": "cooking",
+            "phonetic": "คุค-กิ้ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2099,6 +2544,21 @@
           {
             "text": "cold",
             "phonetic": "โคลด์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2131,6 +2591,21 @@
           {
             "text": "be",
             "phonetic": "บี"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2219,6 +2694,21 @@
           {
             "text": "be",
             "phonetic": "บี"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2372,6 +2862,21 @@
           {
             "text": "a book",
             "phonetic": "อะ บุค"
+          },
+          {
+            "text": "There are",
+            "phonetic": "แดร์ อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2398,6 +2903,21 @@
           {
             "text": "two cats",
             "phonetic": "ทู แคทส์"
+          },
+          {
+            "text": "There is",
+            "phonetic": "แดร์ อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2424,6 +2944,21 @@
           {
             "text": "some milk",
             "phonetic": "ซัม มิลค์"
+          },
+          {
+            "text": "There are",
+            "phonetic": "แดร์ อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2476,6 +3011,21 @@
           {
             "text": "many students",
             "phonetic": "เมน-นี่ สทิว-เดินท์ส"
+          },
+          {
+            "text": "There is",
+            "phonetic": "แดร์ อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2502,6 +3052,21 @@
           {
             "text": "a hospital",
             "phonetic": "อะ ฮอส-พิ-เทิล"
+          },
+          {
+            "text": "Are there",
+            "phonetic": "อาร์ แดร์",
+            "isDistractor": true
+          },
+          {
+            "text": "Was there",
+            "phonetic": "วอส แดร์",
+            "isDistractor": true
+          },
+          {
+            "text": "Were there",
+            "phonetic": "เวอร์ แดร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2528,6 +3093,21 @@
           {
             "text": "ten students",
             "phonetic": "เทน สทิว-เดินท์ส"
+          },
+          {
+            "text": "There is",
+            "phonetic": "แดร์ อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "There are",
+            "phonetic": "แดร์ อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2580,6 +3160,21 @@
           {
             "text": "a lot of cars",
             "phonetic": "อะ ล็อท ออฟ คาร์ส"
+          },
+          {
+            "text": "There is",
+            "phonetic": "แดร์ อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2606,6 +3201,21 @@
           {
             "text": "nothing",
             "phonetic": "นัธ-ธิ่ง"
+          },
+          {
+            "text": "There are",
+            "phonetic": "แดร์ อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2804,6 +3414,11 @@
           {
             "text": "drive",
             "phonetic": "ไดรฝ์"
+          },
+          {
+            "text": "couldn't",
+            "phonetic": "คุด-เดินท์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2835,6 +3450,11 @@
           {
             "text": "find",
             "phonetic": "ไฟนด์"
+          },
+          {
+            "text": "can't",
+            "phonetic": "แคนท์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2862,6 +3482,21 @@
           {
             "text": "speak",
             "phonetic": "สปีค"
+          },
+          {
+            "text": "speaks",
+            "phonetic": "สปีคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "spoke",
+            "phonetic": "สโปค",
+            "isDistractor": true
+          },
+          {
+            "text": "speaking",
+            "phonetic": "สปี-กิ้ง",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -2933,6 +3568,11 @@
           {
             "text": "sing",
             "phonetic": "ซิง"
+          },
+          {
+            "text": "couldn't",
+            "phonetic": "คุด-เดินท์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -3077,6 +3717,16 @@
           {
             "text": "bigger",
             "phonetic": "บิก-เกอร์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -3108,6 +3758,16 @@
           {
             "text": "happier",
             "phonetic": "แฮพ-พี้-เออร์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -3139,6 +3799,16 @@
           {
             "text": "more expensive",
             "phonetic": "มอร์ เอ็ก-สเปน-ซิฟ"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -3170,6 +3840,16 @@
           {
             "text": "better",
             "phonetic": "เบท-เทอร์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -3201,6 +3881,16 @@
           {
             "text": "safer",
             "phonetic": "เซฟ-เฟอร์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -3232,6 +3922,16 @@
           {
             "text": "stronger",
             "phonetic": "สตรอง-เกอร์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -3263,6 +3963,16 @@
           {
             "text": "younger",
             "phonetic": "ยัง-เกอร์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -3294,6 +4004,16 @@
           {
             "text": "more difficult",
             "phonetic": "มอร์ ดิฟ-ฟิ-คัลท์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -3325,6 +4045,16 @@
           {
             "text": "smaller",
             "phonetic": "สมอล-เลอร์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -3356,6 +4086,16 @@
           {
             "text": "worse",
             "phonetic": "เวิร์ส"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
@@ -3881,6 +4621,21 @@
           {
             "text": "be",
             "phonetic": "บี"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
           }
         ],
         "correctOrder": [
