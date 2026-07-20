@@ -8,57 +8,35 @@ import { useReviewQueue } from "../utils/reviewQueue";
 
 const EMPTY = [];
 
+// Strips only sentence-level punctuation that decorates a quiz phrase
+// (periods, commas, question/exclamation marks, semicolons, colons,
+// parentheses) -- never characters that are part of a word's actual
+// spelling. Apostrophes and hyphens are deliberately NOT stripped: several
+// real target words depend on them ("T-shirt", "X-ray", "Check-up", and the
+// greetings category's contractions like "I'm", "don't", "You're"), so
+// typing "Tshirt" or "Im" for those must be rejected, not silently accepted
+// by stripping the character that makes the spelling correct.
 function normalizeAnswer(str = "") {
-  return str
-    .trim()
-    .toLowerCase()
-    .replace(/[.,!?'";:()-]/g, "");
+  return str.trim().toLowerCase().replace(/[.,!?;:()]/g, "");
 }
 
-/** Classic edit-distance (insert/delete/substitute), used only for the typo-tolerance check below. */
-function levenshtein(a, b) {
-  const rows = a.length + 1;
-  const cols = b.length + 1;
-  const dp = Array.from({ length: rows }, () => new Array(cols).fill(0));
-  for (let i = 0; i < rows; i++) dp[i][0] = i;
-  for (let j = 0; j < cols; j++) dp[0][j] = j;
-  for (let i = 1; i < rows; i++) {
-    for (let j = 1; j < cols; j++) {
-      dp[i][j] =
-        a[i - 1] === b[j - 1] ? dp[i - 1][j - 1] : 1 + Math.min(dp[i - 1][j - 1], dp[i - 1][j], dp[i][j - 1]);
-    }
-  }
-  return dp[rows - 1][cols - 1];
-}
-
-// Typo tolerance decision (Phase 8 item 9): allow a single-character typo
-// (Levenshtein distance <= 1) to still count as correct, but ONLY for
-// targets of 4+ characters. Below that length a 1-edit distance can land on
-// a completely different real word ("cat" -> "bat"/"car"/"cot" are all just
-// one edit away), which would silently mark a wrong-but-similar word as
-// correct in a spelling drill -- the same "short words need exact matching"
-// principle applied to Speaking Practice's matchesEnglish() fix in this
-// phase. For longer words a 1-edit slip (a doubled letter, a transposed
-// pair, one missing/extra character) is overwhelmingly a genuine typo, so
-// forgiving it keeps A2-B1 spelling practice fair rather than punishing.
-const MIN_LEN_FOR_TYPO_TOLERANCE = 4;
-
+// Design decision: this is a spelling-practice feature, so the whole point
+// is testing correct spelling -- there is no typo tolerance of any kind
+// here, on purpose. An earlier version allowed a 1-edit-distance typo (with
+// growing restrictions: 4+ character targets only, then never on the first
+// letter), but live testing kept finding cases that still shouldn't have
+// passed as "close enough" (e.g. "for" for target "four" is a single
+// deletion with a matching first letter, so it slipped through the
+// first-letter-only guard too). Rather than keep chasing individually
+// reported false positives with ever-narrower fuzzy-match rules, the typed
+// answer must now equal the target exactly (case-insensitive) -- simplest,
+// safest, and the only rule that can't be defeated by a not-yet-reported
+// edit pattern.
 function checkAnswer(typed, target) {
   const a = normalizeAnswer(typed);
   const b = normalizeAnswer(target);
   if (!a) return false;
-  if (a === b) return true;
-  // Never tolerate a changed first letter as a "typo", no matter the overall
-  // edit distance. Bug found in live testing: "fhree" vs "three" is exactly
-  // 1 edit away (f->t), so the distance<=1 rule alone accepted it -- but a
-  // wrong first letter/sound is a different word's onset, not a plausible
-  // slip of the finger (unlike a doubled letter, a transposed pair, or a
-  // missing/extra character elsewhere in the word). The first sound is also
-  // the pedagogically most important part of a word to get right in a
-  // spelling drill, so it gets zero tolerance even on long words.
-  if (a[0] !== b[0]) return false;
-  if (b.length >= MIN_LEN_FOR_TYPO_TOLERANCE && levenshtein(a, b) <= 1) return true;
-  return false;
+  return a === b;
 }
 
 function CategoryPicker({ onPick }) {
