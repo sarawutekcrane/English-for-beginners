@@ -1,6 +1,7 @@
 import { useEffect, useMemo, useState } from "react";
 import Toggle from "../components/Toggle";
 import AnnotatedText from "../components/AnnotatedText";
+import VocabGroupPicker from "../components/VocabGroupPicker";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
@@ -51,13 +52,19 @@ function checkAnswer(typed, target) {
   return a === b;
 }
 
-function CategoryPicker({ onPick }) {
+function CategoryPicker({ group, onPick, onBack }) {
+  const categories = VOCAB_CATEGORIES.filter((c) => c.group === group.id);
   return (
     <div className="picker">
+      <button className="btn btn-outline btn-sm" onClick={onBack}>
+        ← เปลี่ยนหมวดคำศัพท์
+      </button>
       <section className="picker-section">
-        <h3 className="picker-heading">📚 เลือกหมวดหมู่คำศัพท์</h3>
+        <h3 className="picker-heading">
+          {group.emoji} {group.label} · เลือกหมวดหมู่คำศัพท์
+        </h3>
         <div className="category-grid">
-          {VOCAB_CATEGORIES.map((c) => (
+          {categories.map((c) => (
             <button key={c.id} className="category-chip" onClick={() => onPick(c)}>
               <span className="category-chip-emoji">{c.emoji}</span>
               <span className="category-chip-label th-text">{c.label}</span>
@@ -225,8 +232,12 @@ function RecallView({ category, onBack }) {
 }
 
 export default function VocabularyRecall() {
+  const [group, setGroup] = useState(null);
   const [category, setCategory] = useState(null);
 
-  if (!category) return <CategoryPicker onPick={setCategory} />;
+  if (!group) return <VocabGroupPicker onPick={setGroup} />;
+  if (!category) {
+    return <CategoryPicker group={group} onPick={setCategory} onBack={() => setGroup(null)} />;
+  }
   return <RecallView category={category} onBack={() => setCategory(null)} />;
 }

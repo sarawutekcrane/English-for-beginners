@@ -3,6 +3,7 @@ import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
 import AnnotatedText from "../components/AnnotatedText";
 import InAppBrowserNotice from "../components/InAppBrowserNotice";
+import VocabGroupPicker from "../components/VocabGroupPicker";
 import { useSpeak, useSpeechRecognition, matchesEnglish } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
@@ -10,13 +11,19 @@ import { useSinglePassSession } from "../utils/reviewQueue";
 
 const NUMERIC_ONLY = /^\d+$/;
 
-function CategoryPicker({ onPick }) {
+function CategoryPicker({ group, onPick, onBack }) {
+  const categories = VOCAB_CATEGORIES.filter((c) => c.group === group.id);
   return (
     <div className="picker">
+      <button className="btn btn-outline btn-sm" onClick={onBack}>
+        ← เปลี่ยนหมวดคำศัพท์
+      </button>
       <section className="picker-section">
-        <h3 className="picker-heading">📚 เลือกหมวดคำศัพท์เพื่อฝึกพูด</h3>
+        <h3 className="picker-heading">
+          {group.emoji} {group.label} · เลือกหมวดคำศัพท์เพื่อฝึกพูด
+        </h3>
         <div className="category-grid">
-          {VOCAB_CATEGORIES.map((c) => (
+          {categories.map((c) => (
             <button key={c.id} className="category-chip" onClick={() => onPick(c)}>
               <span className="category-chip-emoji">{c.emoji}</span>
               <span className="category-chip-label th-text">{c.label}</span>
@@ -359,13 +366,16 @@ function SpeakingView({ category, onBack }) {
 }
 
 export default function SpeakingPractice() {
+  const [group, setGroup] = useState(null);
   const [category, setCategory] = useState(null);
 
   return (
     <>
       <InAppBrowserNotice />
-      {!category ? (
-        <CategoryPicker onPick={setCategory} />
+      {!group ? (
+        <VocabGroupPicker onPick={setGroup} />
+      ) : !category ? (
+        <CategoryPicker group={group} onPick={setCategory} onBack={() => setGroup(null)} />
       ) : (
         <SpeakingView category={category} onBack={() => setCategory(null)} />
       )}

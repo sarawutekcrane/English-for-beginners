@@ -2,16 +2,23 @@ import { useEffect, useMemo, useState } from "react";
 import Illustration from "../illustrations";
 import Toggle from "../components/Toggle";
 import AnnotatedText from "../components/AnnotatedText";
+import VocabGroupPicker from "../components/VocabGroupPicker";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard, shuffle } from "../utils/content";
 
-function CategoryPicker({ onPick }) {
+function CategoryPicker({ group, onPick, onBack }) {
+  const categories = VOCAB_CATEGORIES.filter((c) => c.group === group.id);
   return (
     <div className="picker">
+      <button className="btn btn-outline btn-sm" onClick={onBack}>
+        ← เปลี่ยนหมวดคำศัพท์
+      </button>
       <section className="picker-section">
-        <h3 className="picker-heading">📚 เลือกหมวดหมู่คำศัพท์</h3>
+        <h3 className="picker-heading">
+          {group.emoji} {group.label} · เลือกหมวดหมู่คำศัพท์
+        </h3>
         <div className="category-grid">
-          {VOCAB_CATEGORIES.map((c) => (
+          {categories.map((c) => (
             <button
               key={c.id}
               className="category-chip"
@@ -118,8 +125,12 @@ function FlashcardView({ selection, onBack }) {
 }
 
 export default function Flashcards() {
+  const [group, setGroup] = useState(null);
   const [selection, setSelection] = useState(null);
 
-  if (!selection) return <CategoryPicker onPick={setSelection} />;
+  if (!group) return <VocabGroupPicker onPick={setGroup} />;
+  if (!selection) {
+    return <CategoryPicker group={group} onPick={setSelection} onBack={() => setGroup(null)} />;
+  }
   return <FlashcardView selection={selection} onBack={() => setSelection(null)} />;
 }
