@@ -96,8 +96,9 @@ function normalizeEn(str = "") {
 // accepted -- see matchesEnglish() bug 4(a) fix in the Phase 8 notes.
 const MIN_LEN_FOR_CONTAINS = 4;
 
-function looselyEqual(a, b) {
+function looselyEqual(a, b, allowContains = true) {
   if (a === b) return true;
+  if (!allowContains) return false;
   return a.length >= MIN_LEN_FOR_CONTAINS && b.length >= MIN_LEN_FOR_CONTAINS && (a.includes(b) || b.includes(a));
 }
 
@@ -111,15 +112,22 @@ function looselyEqual(a, b) {
  * the direct match fails. Deliberately has no script-folding step (the
  * source app's katakana-to-hiragana equivalent) -- English has a single
  * script, so there's nothing to fold.
+ *
+ * Phase 10 fix: `allowContains` lets the caller disable the substring
+ * fallback entirely. It defaults on, but SpeakingPractice passes it off for
+ * numeric vocabulary -- "four" is a substring of "fourteen" (and six/eight/
+ * nine/seven have the same relationship with their -teen forms), both of
+ * which are real, separately graded entries in the numbers category, so
+ * "close enough" substring matching is actively wrong for quantities.
  */
-export function matchesEnglish(transcript, target) {
+export function matchesEnglish(transcript, target, { allowContains = true } = {}) {
   const a = normalizeEn(transcript);
   const b = normalizeEn(target);
   if (!a || !b) return false;
-  if (looselyEqual(a, b)) return true;
+  if (looselyEqual(a, b, allowContains)) return true;
   const alts = ALT_TRANSCRIPTIONS[target];
   if (alts) {
-    return alts.some((alt) => looselyEqual(a, normalizeEn(alt)));
+    return alts.some((alt) => looselyEqual(a, normalizeEn(alt), allowContains));
   }
   return false;
 }

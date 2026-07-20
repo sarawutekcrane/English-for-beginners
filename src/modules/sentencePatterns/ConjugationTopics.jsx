@@ -7,11 +7,11 @@ import TopicNegative from "./topics/TopicNegative";
 import TopicComparisonVerbs from "./topics/TopicComparisonVerbs";
 
 const TOPICS = [
-  { id: "intro", emoji: "🔤", title: "Regular vs Irregular Verbs", Component: TopicIntro },
-  { id: "present", emoji: "✅", title: "Present Simple (he/she/it)", Component: TopicPresent },
-  { id: "past", emoji: "⏪", title: "Past Simple", Component: TopicPast },
-  { id: "presentParticiple", emoji: "🔗", title: "Present Continuous (-ing)", Component: TopicPresentParticiple },
-  { id: "negative", emoji: "🚫", title: "Negative (don't / doesn't)", Component: TopicNegative },
+  { id: "intro", emoji: "🔤", title: "กริยาปกติและกริยาไม่ปกติ (Regular vs Irregular)", Component: TopicIntro },
+  { id: "present", emoji: "✅", title: "ผันกริยา Present Simple (he/she/it)", Component: TopicPresent },
+  { id: "past", emoji: "⏪", title: "ผันกริยา Past Simple (อดีต)", Component: TopicPast },
+  { id: "presentParticiple", emoji: "🔗", title: "ผันกริยา Present Continuous (-ing)", Component: TopicPresentParticiple },
+  { id: "negative", emoji: "🚫", title: "รูปปฏิเสธของกริยา (don't / doesn't)", Component: TopicNegative },
   { id: "comparison", emoji: "📊", title: "ตารางเปรียบเทียบทุกรูป", Component: TopicComparisonVerbs },
 ];
 

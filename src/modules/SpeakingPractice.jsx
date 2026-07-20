@@ -93,8 +93,20 @@ function SpeakingView({ category, onBack }) {
           numericValue != null && numberWordMap[numericValue] ? numberWordMap[numericValue] : transcript;
         setHeard(displayText);
 
+        // Phase 10 fix: judge the match against the SAME text shown as "we
+        // heard" (displayText), never against a lower-ranked recognizer
+        // alternative the learner never sees. The old code checked
+        // `alternatives.some(...)` across all 5 recognizer guesses while
+        // only ever displaying the top one -- so if the top/displayed guess
+        // was a completely different word but a lower-ranked alternative
+        // happened to equal the target, the attempt was marked correct
+        // while showing the wrong "heard" word. That's exactly what
+        // real-device testing reproduced for "Five" (displayed "fight") and
+        // "Four" (displayed "fall"). Numbers also skip the substring
+        // fallback (allowContains: false) since "four" is a literal
+        // substring of "fourteen" -- both real, separately graded entries.
         const ok =
-          alternatives.some((alt) => matchesEnglish(alt, card.answerText)) ||
+          matchesEnglish(displayText, card.answerText, { allowContains: card.value == null }) ||
           (card.value != null && numericValue === card.value);
         setStatus(ok ? STATUS.match : STATUS.nomatch);
         if (ok) playCorrect();

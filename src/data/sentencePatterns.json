@@ -8,18 +8,18 @@
     "functionWords": [
       {
         "word": "Subject",
-        "role": "the person or thing doing the action"
+        "role": "ประธานของประโยค คือคนหรือสิ่งที่ทำกริยานั้น"
       },
       {
         "word": "-s / -es",
-        "role": "added to the verb when the subject is he/she/it"
+        "role": "เติมท้ายกริยา เมื่อประธานเป็น he/she/it (บุรุษที่ 3 เอกพจน์)"
       },
       {
         "word": "every day / always / usually",
-        "role": "common time words used with this pattern"
+        "role": "คำบอกเวลาที่มักใช้กับโครงสร้างนี้"
       }
     ],
-    "timeNote": "Present Simple describes habits, routines, and facts that are always true -- not what's happening right now.",
+    "timeNote": "Present Simple ใช้พูดถึงสิ่งที่ทำเป็นประจำ กิจวัตร หรือความจริงทั่วไป ไม่ใช่สิ่งที่กำลังเกิดขึ้นตอนนี้",
     "conjugationField": "present",
     "conjugationSuffix": "",
     "conjugationSuffixPhonetic": "",
@@ -380,19 +380,19 @@
     "functionWords": [
       {
         "word": "have",
-        "role": "used with I / you / we / they"
+        "role": "ใช้กับประธาน I / you / we / they"
       },
       {
         "word": "has",
-        "role": "used with he / she / it (3rd person singular)"
+        "role": "ใช้กับประธาน he / she / it (บุรุษที่ 3 เอกพจน์)"
       },
       {
         "word": "don't have / doesn't have",
-        "role": "negative forms -- don't have with I/you/we/they, doesn't have with he/she/it"
+        "role": "รูปปฏิเสธ -- ใช้ don't have กับ I/you/we/they และ doesn't have กับ he/she/it"
       },
       {
         "word": "Do ... have? / Does ... have?",
-        "role": "question forms -- Do with I/you/we/they, Does with he/she/it"
+        "role": "รูปคำถาม -- ใช้ Do กับ I/you/we/they และ Does กับ he/she/it"
       }
     ],
     "examples": [
@@ -689,18 +689,18 @@
     "functionWords": [
       {
         "word": "yesterday / last night / two days ago",
-        "role": "common past time words used with this pattern"
+        "role": "คำบอกเวลาในอดีตที่มักใช้กับโครงสร้างนี้"
       },
       {
         "word": "-ed",
-        "role": "added to regular verbs to form the past tense"
+        "role": "เติมท้ายกริยาปกติ (regular verb) เพื่อทำเป็นรูปอดีต"
       },
       {
         "word": "did not / didn't",
-        "role": "used to make past tense sentences negative"
+        "role": "ใช้ทำประโยคอดีตให้เป็นรูปปฏิเสธ"
       }
     ],
-    "timeNote": "Past Simple describes finished actions at a specific time in the past.",
+    "timeNote": "Past Simple ใช้พูดถึงเหตุการณ์ที่จบไปแล้วในอดีต ณ ช่วงเวลาใดเวลาหนึ่งที่ระบุชัดเจน",
     "conjugationField": "past",
     "conjugationSuffix": "",
     "conjugationSuffixPhonetic": "",
@@ -1049,18 +1049,18 @@
     "functionWords": [
       {
         "word": "am / is / are",
-        "role": "the 'be' verb, matched to the subject (I am, he/she/it is, you/we/they are)"
+        "role": "กริยา 'be' ที่ผันตามประธาน (I am, he/she/it is, you/we/they are)"
       },
       {
         "word": "-ing",
-        "role": "added to the main verb to show an action in progress"
+        "role": "เติมท้ายกริยาหลัก เพื่อแสดงว่ากำลังทำอยู่"
       },
       {
         "word": "right now / at the moment",
-        "role": "common time words used with this pattern"
+        "role": "คำบอกเวลาที่มักใช้กับโครงสร้างนี้"
       }
     ],
-    "timeNote": "Present Continuous describes an action happening right now, or a temporary situation around the present.",
+    "timeNote": "Present Continuous ใช้พูดถึงสิ่งที่กำลังเกิดขึ้นตอนนี้ หรือสถานการณ์ชั่วคราวในช่วงเวลาปัจจุบัน",
     "conjugationField": "presentParticiple",
     "conjugationSuffix": "",
     "conjugationSuffixPhonetic": "",
@@ -1429,14 +1429,14 @@
     "functionWords": [
       {
         "word": "am / is / are going to",
-        "role": "shows a plan or intention decided before now"
+        "role": "แสดงแผนหรือความตั้งใจที่ตัดสินใจไว้ก่อนแล้ว"
       },
       {
         "word": "verb (base form)",
-        "role": "the main verb stays in its plain dictionary form after 'going to'"
+        "role": "กริยาหลักอยู่ในรูปพื้นฐาน (dictionary form) หลังคำว่า 'going to'"
       }
     ],
-    "timeNote": "Use 'going to' for plans and intentions you already decided on, or predictions based on evidence you can see now.",
+    "timeNote": "ใช้ 'going to' กับแผนหรือความตั้งใจที่ตัดสินใจไว้ล่วงหน้า หรือการคาดการณ์จากสิ่งที่เห็นอยู่ตอนนี้",
     "conjugationField": "dict",
     "conjugationSuffix": "",
     "conjugationSuffixPhonetic": "",
@@ -1790,14 +1790,14 @@
     "functionWords": [
       {
         "word": "will",
-        "role": "shows a decision made now, a prediction, or a promise about the future -- same form for every subject"
+        "role": "แสดงการตัดสินใจ ณ ตอนนี้ การคาดการณ์ หรือคำสัญญาเกี่ยวกับอนาคต -- รูปเดียวกันทุกประธาน"
       },
       {
         "word": "won't",
-        "role": "the short negative form of 'will not'"
+        "role": "รูปย่อปฏิเสธของ 'will not'"
       }
     ],
-    "timeNote": "Use 'will' for quick decisions, promises, offers, and predictions without strong evidence.",
+    "timeNote": "ใช้ 'will' กับการตัดสินใจแบบฉับพลัน คำสัญญา การเสนอตัว และการคาดการณ์ที่ไม่มีหลักฐานชัดเจน",
     "conjugationField": "dict",
     "conjugationSuffix": "",
     "conjugationSuffixPhonetic": "",
@@ -2178,26 +2178,26 @@
     "functionWords": [
       {
         "word": "There is",
-        "role": "used before a singular or uncountable noun"
+        "role": "ใช้นำหน้าคำนามเอกพจน์หรือคำนามนับไม่ได้"
       },
       {
         "word": "There are",
-        "role": "used before a plural noun"
+        "role": "ใช้นำหน้าคำนามพหูพจน์"
       },
       {
         "word": "a / an / some / any",
-        "role": "common words used with 'there is/are' to introduce the noun"
+        "role": "คำที่มักใช้คู่กับ 'there is/are' เพื่อนำหน้าคำนาม"
       },
       {
         "word": "There was",
-        "role": "past tense, used before a singular or uncountable noun"
+        "role": "รูปอดีต ใช้นำหน้าคำนามเอกพจน์หรือคำนามนับไม่ได้"
       },
       {
         "word": "There were",
-        "role": "past tense, used before a plural noun"
+        "role": "รูปอดีต ใช้นำหน้าคำนามพหูพจน์"
       }
     ],
-    "timeNote": "'There is/are' says that something exists -- it doesn't describe an action.",
+    "timeNote": "'There is/are' บอกว่ามีสิ่งใดสิ่งหนึ่งอยู่ -- ไม่ได้บรรยายการกระทำ",
     "examples": [
       {
         "text": "There is a cat in the garden.",
@@ -2502,18 +2502,18 @@
     "functionWords": [
       {
         "word": "can",
-        "role": "shows ability in the present -- same form for every subject"
+        "role": "แสดงความสามารถในปัจจุบัน -- รูปเดียวกันทุกประธาน"
       },
       {
         "word": "could",
-        "role": "shows ability in the past"
+        "role": "แสดงความสามารถในอดีต"
       },
       {
         "word": "can't / couldn't",
-        "role": "the negative forms"
+        "role": "รูปปฏิเสธ"
       }
     ],
-    "timeNote": "'Can' is for present ability, 'could' is for past ability -- neither changes form for he/she/it.",
+    "timeNote": "'Can' ใช้กับความสามารถในปัจจุบัน ส่วน 'could' ใช้กับความสามารถในอดีต -- ทั้งสองคำไม่เปลี่ยนรูปตาม he/she/it",
     "conjugationField": "dict",
     "conjugationSuffix": "",
     "conjugationSuffixPhonetic": "",
@@ -2872,11 +2872,11 @@
     "functionWords": [
       {
         "word": "-er / more",
-        "role": "added to the adjective to compare two things"
+        "role": "เติมท้ายคำคุณศัพท์ เพื่อเปรียบเทียบสิ่งสองสิ่ง"
       },
       {
         "word": "than",
-        "role": "connects the two things being compared"
+        "role": "เชื่อมสิ่งสองสิ่งที่กำลังเปรียบเทียบกัน"
       }
     ],
     "examples": [
@@ -3233,14 +3233,14 @@
     "functionWords": [
       {
         "word": "If",
-        "role": "introduces the condition"
+        "role": "นำหน้าประโยคเงื่อนไข"
       },
       {
         "word": "present simple (both clauses)",
-        "role": "zero conditional always uses present simple in both parts -- no future tense"
+        "role": "Zero Conditional ใช้ Present Simple ทั้งสองประโยคเสมอ -- ไม่ใช้รูปอนาคต"
       }
     ],
-    "timeNote": "Use the zero conditional for facts and things that are always true, like scientific facts or general truths.",
+    "timeNote": "ใช้ Zero Conditional กับข้อเท็จจริงและสิ่งที่เป็นจริงเสมอ เช่น ข้อเท็จจริงทางวิทยาศาสตร์หรือความจริงทั่วไป",
     "conjugationField": "present",
     "conjugationSuffix": "",
     "conjugationSuffixPhonetic": "",
@@ -3529,18 +3529,18 @@
     "functionWords": [
       {
         "word": "If",
-        "role": "introduces a possible future condition"
+        "role": "นำหน้าเงื่อนไขที่อาจเกิดขึ้นในอนาคต"
       },
       {
         "word": "present simple (if-clause)",
-        "role": "the if-clause uses present simple, even though it talks about the future"
+        "role": "ประโยคเงื่อนไข (if-clause) ใช้ Present Simple แม้จะพูดถึงอนาคตก็ตาม"
       },
       {
         "word": "will + base verb (result clause)",
-        "role": "the result clause uses 'will' for the likely future outcome"
+        "role": "ประโยคผลลัพธ์ใช้ 'will' สำหรับผลที่น่าจะเกิดขึ้นในอนาคต"
       }
     ],
-    "timeNote": "Use the first conditional for real, possible situations in the future -- not things that are impossible or purely imaginary.",
+    "timeNote": "ใช้ First Conditional กับสถานการณ์ที่เป็นไปได้จริงในอนาคต -- ไม่ใช่สิ่งที่เป็นไปไม่ได้หรือเป็นเพียงจินตนาการ",
     "conjugationField": "dict",
     "conjugationSuffix": "",
     "conjugationSuffixPhonetic": "",
