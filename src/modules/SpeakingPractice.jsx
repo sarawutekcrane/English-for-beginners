@@ -28,7 +28,14 @@ function CategoryPicker({ onPick }) {
   );
 }
 
-const STATUS = { idle: "idle", listening: "listening", match: "match", nomatch: "nomatch", error: "error" };
+const STATUS = {
+  idle: "idle",
+  requesting: "requesting",
+  listening: "listening",
+  match: "match",
+  nomatch: "nomatch",
+  error: "error",
+};
 
 function SpeakingView({ category, onBack }) {
   const { speak } = useSpeak();
@@ -74,17 +81,26 @@ function SpeakingView({ category, onBack }) {
 
   const record = () => {
     // Defensive guard against rapid repeated taps: the mic button is also
-    // `disabled` while listening, but that only takes effect after a
-    // re-render, so a very fast double-tap can still fire this handler
-    // twice before `listening` flips to true. useSpeechRecognition.start()
-    // already aborts any in-flight recognition before starting a new one,
-    // but bailing out here avoids resetting status/heard mid-listen too.
-    if (listening) return;
-    setStatus(STATUS.listening);
+    // `disabled` while requesting/listening (see the `disabled` prop
+    // below), but that only takes effect after a re-render, so a very fast
+    // double-tap can still fire this handler twice before the first
+    // re-render lands. Checking `status` here (set synchronously below,
+    // read on the very next call) closes that window; the recognition hook
+    // itself also aborts any in-flight instance before starting a new one
+    // as a second line of defense.
+    if (listening || status === STATUS.requesting) return;
+    // "requesting" (not "listening") until the recognizer's own onstart
+    // fires -- getting the mic permission prompt resolved and the
+    // recognizer actually capturing audio can take a perceptible moment,
+    // and showing "listening" before that was genuinely true is what made
+    // an early failure feel like it fired "instantly": the user believed
+    // they'd already had their chance to speak.
+    setStatus(STATUS.requesting);
     setErrorType(null);
     setHeard("");
     clearTimeout(speakTimeoutRef.current);
     start({
+      onStart: () => setStatus(STATUS.listening),
       onResult: (transcript, alternatives = [transcript]) => {
         const numericAlt = alternatives.find((alt) => NUMERIC_ONLY.test(alt.trim()));
         const numericValue = numericAlt != null ? parseInt(numericAlt, 10) : null;
@@ -209,10 +225,16 @@ function SpeakingView({ category, onBack }) {
             </p>
           )}
 
-          <button className="btn btn-round" disabled={!supported || listening} onClick={record} aria-label="พูดออกเสียง">
+          <button
+            className="btn btn-round"
+            disabled={!supported || listening || status === STATUS.requesting}
+            onClick={record}
+            aria-label="พูดออกเสียง"
+          >
             🎤
           </button>
 
+          {status === STATUS.requesting && <p className="th-text">กำลังขอสิทธิ์ใช้ไมโครโฟน...</p>}
           {status === STATUS.listening && <p className="th-text">กำลังฟัง... พูดคำศัพท์ได้เลย</p>}
 
           {status === STATUS.match && (

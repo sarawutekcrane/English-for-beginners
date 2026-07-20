@@ -142,20 +142,32 @@ const SpeechRecognitionCtor =
 // bounding the worst case so the UI can't hang indefinitely.
 const RECOGNITION_TIMEOUT_MS = 12000;
 
-/** Wraps the Web Speech API's SpeechRecognition for English speaking practice. */
+/**
+ * Wraps the Web Speech API's SpeechRecognition for English speaking practice.
+ *
+ * Root cause of the "immediate no-speech error" bug: the defensive timeout
+ * used to start counting from the moment `recognition.start()` was CALLED,
+ * not from the recognizer's genuine `onstart` signal -- so any setup
+ * latency (the mic permission prompt, connecting to a cloud recognizer)
+ * silently ate into the window before the user had a real chance to speak.
+ * Worse, the "settled" flag and timeout handle were held in refs SHARED
+ * across every start() call, not scoped to one recognition instance -- so
+ * a stale instance being aborted (e.g. by a rapid re-tap re-entering
+ * start()) fired its onend against the flag the NEW call had just reset to
+ * false, misreporting the old instance's abort as "no speech" for an
+ * attempt the user never actually got to make.
+ */
 export function useSpeechRecognition() {
   const supported = !!SpeechRecognitionCtor;
   const [listening, setListening] = useState(false);
   const recognitionRef = useRef(null);
   const timeoutRef = useRef(null);
-  const settledRef = useRef(false);
 
   const start = useCallback(
-    ({ onResult, onError, onEnd } = {}) => {
+    ({ onResult, onError, onStart, onEnd } = {}) => {
       if (!supported) return;
-      recognitionRef.current?.abort();
+      const previous = recognitionRef.current;
       clearTimeout(timeoutRef.current);
-      settledRef.current = false;
 
       const recognition = new SpeechRecognitionCtor();
       recognition.lang = PREFERRED_LOCALE;
@@ -170,43 +182,70 @@ export function useSpeechRecognition() {
       // bug to look for.
       recognition.maxAlternatives = 5;
 
+      // Own settled-flag per instance (a closure variable, not a shared
+      // ref) -- fixes the cross-instance race described above. `isCurrent`
+      // lets a stale instance's late-arriving events (fired after it was
+      // aborted to make room for a newer start() call) no-op instead of
+      // reporting a spurious error for an attempt the user never made.
+      let settled = false;
+      const isCurrent = () => recognitionRef.current === recognition;
+
       const finish = () => {
         clearTimeout(timeoutRef.current);
-        settledRef.current = true;
+        settled = true;
       };
 
-      recognition.onstart = () => setListening(true);
+      recognition.onstart = () => {
+        if (!isCurrent()) return;
+        setListening(true);
+        onStart?.();
+        // The defensive timeout now starts counting from here -- the
+        // recognizer's genuine "listening" signal -- instead of from the
+        // moment start() was called, so mic-permission-prompt time or
+        // cloud-recognizer connection time is never silently deducted from
+        // the window the user actually gets to speak in.
+        timeoutRef.current = setTimeout(() => {
+          if (settled || !isCurrent()) return;
+          settled = true;
+          recognition.abort();
+          onError?.("timeout");
+        }, RECOGNITION_TIMEOUT_MS);
+      };
       recognition.onresult = (event) => {
+        if (!isCurrent()) return;
         finish();
         const results = event.results?.[0];
         const alternatives = results ? Array.from(results).map((alt) => alt.transcript) : [];
         onResult?.(alternatives[0] || "", alternatives);
       };
       recognition.onerror = (event) => {
+        if (!isCurrent()) return;
         finish();
         onError?.(event.error);
       };
       recognition.onend = () => {
+        if (!isCurrent()) return;
         setListening(false);
         clearTimeout(timeoutRef.current);
         // Some browsers end the session without ever firing onresult/onerror
         // (e.g. permission hiccups). Without this, the UI looks "frozen".
-        if (!settledRef.current) {
-          settledRef.current = true;
+        if (!settled) {
+          settled = true;
           onError?.("no-speech");
         }
         onEnd?.();
       };
+      // Point the ref at the new instance BEFORE aborting the old one --
+      // some implementations fire `onend` synchronously from abort(), and
+      // if that happened while the ref still pointed at the old instance,
+      // its own `isCurrent()` check would (wrongly) still read true,
+      // letting a stale instance report a spurious error for an attempt
+      // the user never got to make. Reassigning first makes the old
+      // instance's `isCurrent()` correctly read false no matter when its
+      // onend actually fires.
       recognitionRef.current = recognition;
+      previous?.abort();
       recognition.start();
-
-      // Defensive timeout in case no browser event ever fires.
-      timeoutRef.current = setTimeout(() => {
-        if (settledRef.current) return;
-        settledRef.current = true;
-        recognition.abort();
-        onError?.("timeout");
-      }, RECOGNITION_TIMEOUT_MS);
     },
     [supported]
   );
