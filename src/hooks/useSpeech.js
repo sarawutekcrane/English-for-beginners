@@ -193,6 +193,25 @@ export function useSpeechRecognition() {
   const start = useCallback(
     ({ onResult, onError, onStart, onEnd } = {}) => {
       if (!supported) return;
+      // Airtight TTS/mic feedback-loop guard: reject synchronously, in the
+      // same tick as the call, if speechSynthesis is currently producing
+      // audio anywhere in the app. Checked against the browser's own live
+      // `speaking` flag -- not app-tracked React state, which only updates
+      // on the next render and reintroduces exactly the timing gap that
+      // caused the earlier `speaking`/`ttsCooldown` flicker bug (see
+      // SpeakingPractice.jsx's investigation note). This is the ONLY call
+      // site of recognition.start() in the app (see the caller-side note
+      // below), so gating here makes the guard airtight regardless of which
+      // UI element ends up calling start() in the future -- a disabled
+      // button attribute alone can't close a race between a queued click
+      // and a re-render, but this synchronous check can't be raced.
+      if (typeof window !== "undefined" && window.speechSynthesis?.speaking) {
+        if (debugSpeechEnabled()) {
+          console.log("[SpeechRecognition] start() rejected -- speechSynthesis still speaking", new Date().toISOString());
+        }
+        onError?.("tts-active");
+        return;
+      }
       if (debugSpeechEnabled()) {
         // Confirms the mic is genuinely tap-initiated: this is the ONLY
         // call site of recognition.start() in the app (grep confirms it),

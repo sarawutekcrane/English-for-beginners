@@ -59,8 +59,34 @@ const STATUS = {
 // object's own onstart/onend. Removed the guard here to match that
 // structure instead of patching the timing gap, since the simpler
 // single-state design can't reproduce this bug class by construction.
+//
+// Follow-up (confirmed live: mic flickers during "hear example" AND the
+// post-answer reveal audio; recognized transcripts unrelated to what was
+// said, e.g. "red" -> "black"/"play"): re-checked the Japanese reference
+// app again, specifically for a shared TTS-active gate this time. It has
+// NONE -- its mic `disabled` is `!supported || listening`, same as here,
+// and nothing in its `record()`/`hearExample()` ever checks `speaking`.
+// So this isn't a porting regression or a divergence from the reference;
+// it's a real gap present in BOTH apps' architecture that the earlier fix
+// correctly left alone (removing the flicker-causing second state was
+// still right) but didn't address: nothing stopped `recognition.start()`
+// firing while TTS audio was still audible (a fast tap on this button
+// while `hearExample`'s or the reveal's speech was still playing), which
+// lets the mic pick up the device's own TTS output -- a textbook feedback
+// loop, and a much better explanation for "red" transcribing as an
+// unrelated word than generic recognizer inaccuracy. Fixed independently
+// (no reference structure to port here) with a synchronous guard in
+// useSpeech.js's start() against the browser's own live
+// `speechSynthesis.speaking`, mirrored here for early-exit + UX, plus
+// disabling "hear example" while the mic is active so TTS can't play into
+// a live recognition either. The mic button's disabled/pressed appearance
+// still comes only from `listening`/`status` (recognition's own events),
+// per the same single-source-of-truth principle -- `speaking` is added to
+// `disabled` only (grays the button out), never to any "active/pressed"
+// look, and is read directly with no derived second state, so it can't
+// reproduce the earlier two-hop `ttsCooldown` timing bug.
 function SpeakingView({ category, onBack }) {
-  const { speak } = useSpeak();
+  const { speak, speaking } = useSpeak();
   const { supported, listening, start } = useSpeechRecognition();
 
   const [shuffleOn, setShuffleOn] = useState(false);
@@ -95,7 +121,13 @@ function SpeakingView({ category, onBack }) {
     return map;
   }, [baseCards]);
 
-  const hearExample = () => speak(card.audioText);
+  // Guarded (not just visually disabled below) so TTS can never play into
+  // a live recognition attempt -- see the feedback-loop investigation note
+  // above this component.
+  const hearExample = () => {
+    if (listening || status === STATUS.requesting) return;
+    speak(card.audioText);
+  };
 
   const speakTimeoutRef = useRef(null);
 
@@ -111,6 +143,14 @@ function SpeakingView({ category, onBack }) {
     // itself also aborts any in-flight instance before starting a new one
     // as a second line of defense.
     if (listening || status === STATUS.requesting) return;
+    // Mirrors the synchronous guard inside useSpeech.js's start() (the
+    // actual airtight enforcement point) so a blocked tap here fails fast
+    // with a clear message instead of round-tripping through start() first.
+    if (typeof window !== "undefined" && window.speechSynthesis?.speaking) {
+      setErrorType("tts-active");
+      setStatus(STATUS.error);
+      return;
+    }
     // "requesting" (not "listening") until the recognizer's own onstart
     // fires -- getting the mic permission prompt resolved and the
     // recognizer actually capturing audio can take a perceptible moment,
@@ -179,6 +219,7 @@ function SpeakingView({ category, onBack }) {
     timeout: "ใช้เวลานานเกินไป กรุณาลองใหม่อีกครั้ง",
     "audio-capture": "ไม่พบไมโครโฟน กรุณาตรวจสอบอุปกรณ์แล้วลองใหม่อีกครั้ง",
     network: "การเชื่อมต่อมีปัญหา กรุณาลองใหม่อีกครั้ง",
+    "tts-active": "กรุณารอให้เสียงตัวอย่างเล่นจบก่อน แล้วลองใหม่อีกครั้ง",
   };
   const errorMessage = ERROR_MESSAGES[errorType] || "เกิดข้อผิดพลาด กรุณาลองใหม่อีกครั้ง";
 
@@ -237,7 +278,11 @@ function SpeakingView({ category, onBack }) {
           <AnnotatedText as="p" className="flashcard-text en-text" plain={card.display} segments={card.segments} />
           {card.partOfSpeech && <p className="verb-group en-text">{card.partOfSpeech}</p>}
 
-          <button className="btn btn-outline btn-sm" onClick={hearExample}>
+          <button
+            className="btn btn-outline btn-sm"
+            onClick={hearExample}
+            disabled={listening || status === STATUS.requesting}
+          >
             🔊 ฟังตัวอย่างเสียง
           </button>
 
@@ -249,7 +294,7 @@ function SpeakingView({ category, onBack }) {
 
           <button
             className="btn btn-round"
-            disabled={!supported || listening || status === STATUS.requesting}
+            disabled={!supported || listening || status === STATUS.requesting || speaking}
             onClick={record}
             aria-label="พูดออกเสียง"
           >
