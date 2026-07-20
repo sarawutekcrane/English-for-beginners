@@ -4,9 +4,7 @@ import AnnotatedText from "../components/AnnotatedText";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
-import { useReviewQueue } from "../utils/reviewQueue";
-
-const EMPTY = [];
+import { useSinglePassSession } from "../utils/reviewQueue";
 
 // Strips only sentence-level punctuation that decorates a quiz phrase
 // (periods, commas, question/exclamation marks, semicolons, colons,
@@ -75,20 +73,17 @@ function RecallView({ category, onBack }) {
   const { speak } = useSpeak();
   const [shuffleOn, setShuffleOn] = useState(false);
   const baseCards = useMemo(() => getVocab(category.id).map(toCard), [category]);
-  const review = useReviewQueue(shuffleOn ? baseCards : EMPTY);
-  const [index, setIndex] = useState(0);
-  const finished = shuffleOn && review.finished;
-  const card = shuffleOn ? review.current : baseCards[index % baseCards.length];
+  const session = useSinglePassSession(baseCards, shuffleOn);
+  const finished = session.finished;
+  const card = session.current;
 
   const [input, setInput] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
-  const [score, setScore] = useState({ correct: 0, total: 0 });
   const [showThai, setShowThai] = useState(false);
   const [showPhonetic, setShowPhonetic] = useState(false);
 
   useEffect(() => {
-    setIndex(0);
     setInput("");
     setSubmitted(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
@@ -110,22 +105,24 @@ function RecallView({ category, onBack }) {
     const ok = checkAnswer(input, card.answerText);
     setIsCorrect(ok);
     setSubmitted(true);
-    setScore((s) => ({ correct: s.correct + (ok ? 1 : 0), total: s.total + 1 }));
     if (ok) playCorrect();
     else playIncorrect();
   };
 
   const next = () => {
-    if (shuffleOn) review.submit(isCorrect);
-    else setIndex((i) => i + 1);
+    session.submit(isCorrect);
     setInput("");
     setSubmitted(false);
   };
 
   const restart = () => {
-    review.restart();
-    setIndex(0);
-    setScore({ correct: 0, total: 0 });
+    session.restart();
+    setInput("");
+    setSubmitted(false);
+  };
+
+  const retryWrongOnly = () => {
+    session.retryWrongOnly();
     setInput("");
     setSubmitted(false);
   };
@@ -137,8 +134,8 @@ function RecallView({ category, onBack }) {
       </button>
 
       <p className="progress-label th-text">
-        {category.label} · คะแนน {score.correct} / {score.total}
-        {shuffleOn && ` · ตอบถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}`}
+        {category.label} · ทำไปแล้ว {session.score.total}/{session.total} ข้อ · คะแนน {session.score.correct}/
+        {session.total}
       </p>
 
       <div className="toggle-group blue">
@@ -149,10 +146,26 @@ function RecallView({ category, onBack }) {
 
       {finished ? (
         <div className="quiz-card">
-          <p className="th-text session-complete-text">เก่งมาก! คุณสะกดคำถูกครบทุกคำในชุดนี้แล้ว 🎉📘</p>
-          <button className="btn btn-success btn-sm" onClick={restart}>
-            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
-          </button>
+          {session.wrongCount === 0 ? (
+            <>
+              <p className="th-text session-complete-text">เก่งมาก! คุณสะกดคำถูกครบทุกคำในชุดนี้แล้ว 🎉📘</p>
+              <button className="btn btn-success btn-sm" onClick={restart}>
+                🔁 เริ่มใหม่
+              </button>
+            </>
+          ) : (
+            <>
+              <p className="th-text session-complete-text">
+                คะแนน {session.score.correct}/{session.score.total}
+              </p>
+              <button className="btn btn-outline btn-sm" onClick={retryWrongOnly}>
+                🔁 ลองทำเฉพาะข้อที่ตอบผิด
+              </button>
+              <button className="btn btn-success btn-sm" onClick={restart}>
+                🔁 เริ่มใหม่
+              </button>
+            </>
+          )}
         </div>
       ) : (
         <div className="quiz-card">

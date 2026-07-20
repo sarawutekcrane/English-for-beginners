@@ -4,9 +4,7 @@ import AnnotatedText from "../../components/AnnotatedText";
 import { useSpeak } from "../../hooks/useSpeech";
 import { shuffle } from "../../utils/content";
 import { playCorrect, playIncorrect } from "../../utils/sound";
-import { useReviewQueue } from "../../utils/reviewQueue";
-
-const EMPTY = [];
+import { useSinglePassSession } from "../../utils/reviewQueue";
 
 // `makeItems` only ever reads each chunk's OWN `phonetic` field -- never
 // the question-level `phonetic`/`correctOrder` (the assembled full
@@ -22,13 +20,11 @@ export default function WordOrderPractice({ pattern, onBack }) {
   const { speak } = useSpeak();
   const [shuffleOn, setShuffleOn] = useState(false);
   const [showPhonetic, setShowPhonetic] = useState(false);
-  const [score, setScore] = useState({ correct: 0, total: 0 });
 
   const baseQuestions = useMemo(() => pattern.wordOrderQuestions, [pattern]);
-  const review = useReviewQueue(shuffleOn ? baseQuestions : EMPTY);
-  const [index, setIndex] = useState(0);
-  const finished = shuffleOn && review.finished;
-  const question = shuffleOn ? review.current : baseQuestions[index % baseQuestions.length];
+  const session = useSinglePassSession(baseQuestions, shuffleOn);
+  const finished = session.finished;
+  const question = session.current;
 
   const [poolItems, setPoolItems] = useState(() => (question ? makeItems(question.chunks) : []));
   const [answerItems, setAnswerItems] = useState([]);
@@ -42,11 +38,6 @@ export default function WordOrderPractice({ pattern, onBack }) {
     setSubmitted(false);
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [question]);
-
-  useEffect(() => {
-    setIndex(0);
-    // eslint-disable-next-line react-hooks/exhaustive-deps
-  }, [pattern, shuffleOn]);
 
   const tapPool = (item) => {
     if (submitted) return;
@@ -69,7 +60,6 @@ export default function WordOrderPractice({ pattern, onBack }) {
     const correct = JSON.stringify(userOrder) === JSON.stringify(question.correctOrder);
     setIsCorrect(correct);
     setSubmitted(true);
-    setScore((s) => ({ correct: s.correct + (correct ? 1 : 0), total: s.total + 1 }));
     if (correct) playCorrect();
     else playIncorrect();
     clearTimeout(speakTimeoutRef.current);
@@ -80,14 +70,15 @@ export default function WordOrderPractice({ pattern, onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    if (shuffleOn) review.submit(isCorrect);
-    else setIndex((i) => i + 1);
+    session.submit(isCorrect);
   };
 
   const restart = () => {
-    review.restart();
-    setIndex(0);
-    setScore({ correct: 0, total: 0 });
+    session.restart();
+  };
+
+  const retryWrongOnly = () => {
+    session.retryWrongOnly();
   };
 
   const playCorrectSentence = () => speak(question.correctOrder.join(" "));
@@ -105,10 +96,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
           <span className="pattern-detail-title-th th-text">{pattern.titleTh}</span>
         </h3>
         <p className="progress-label th-text">
-          {shuffleOn
-            ? `เรียงถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}`
-            : `${(index % baseQuestions.length) + 1} / ${baseQuestions.length}`}{" "}
-          · คะแนน {score.correct}/{score.total}
+          ทำไปแล้ว {session.score.total}/{session.total} ข้อ · คะแนน {session.score.correct}/{session.total}
         </p>
       </div>
 
@@ -119,10 +107,26 @@ export default function WordOrderPractice({ pattern, onBack }) {
 
       {finished ? (
         <div className="practice-card">
-          <p className="th-text session-complete-text">เก่งมาก! คุณเรียงประโยคถูกครบทุกข้อในชุดนี้แล้ว 🎉📘</p>
-          <button className="btn btn-success btn-sm" onClick={restart}>
-            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
-          </button>
+          {session.wrongCount === 0 ? (
+            <>
+              <p className="th-text session-complete-text">เก่งมาก! คุณเรียงประโยคถูกครบทุกข้อในชุดนี้แล้ว 🎉📘</p>
+              <button className="btn btn-success btn-sm" onClick={restart}>
+                🔁 เริ่มใหม่
+              </button>
+            </>
+          ) : (
+            <>
+              <p className="th-text session-complete-text">
+                คะแนน {session.score.correct}/{session.score.total}
+              </p>
+              <button className="btn btn-outline btn-sm" onClick={retryWrongOnly}>
+                🔁 ลองทำเฉพาะข้อที่ตอบผิด
+              </button>
+              <button className="btn btn-success btn-sm" onClick={restart}>
+                🔁 เริ่มใหม่
+              </button>
+            </>
+          )}
         </div>
       ) : (
         <div className="practice-card">

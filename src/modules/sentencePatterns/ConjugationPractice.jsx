@@ -3,28 +3,20 @@ import Toggle from "../../components/Toggle";
 import { useSpeak } from "../../hooks/useSpeech";
 import { getAllVerbConjugationQuestions, regularityLabel } from "../../utils/grammar";
 import { playCorrect, playIncorrect } from "../../utils/sound";
-import { useReviewQueue } from "../../utils/reviewQueue";
+import { useSinglePassSession } from "../../utils/reviewQueue";
 
 const BASE_QUESTIONS = getAllVerbConjugationQuestions();
-const EMPTY = [];
 
 export default function ConjugationPractice({ onBack }) {
   const { speak } = useSpeak();
   const [shuffleOn, setShuffleOn] = useState(false);
   const [showThai, setShowThai] = useState(false);
   const [showPhonetic, setShowPhonetic] = useState(false);
-  const [score, setScore] = useState({ correct: 0, total: 0 });
 
-  const review = useReviewQueue(shuffleOn ? BASE_QUESTIONS : EMPTY);
-  const [index, setIndex] = useState(0);
-  const finished = shuffleOn && review.finished;
-  const question = shuffleOn ? review.current : BASE_QUESTIONS[index % BASE_QUESTIONS.length];
+  const session = useSinglePassSession(BASE_QUESTIONS, shuffleOn);
+  const finished = session.finished;
+  const question = session.current;
   const [selected, setSelected] = useState(null);
-
-  useEffect(() => {
-    setIndex(0);
-    setSelected(null);
-  }, [shuffleOn]);
 
   useEffect(() => {
     setSelected(null);
@@ -40,7 +32,6 @@ export default function ConjugationPractice({ onBack }) {
   const choose = (opt) => {
     if (answered) return;
     setSelected(opt);
-    setScore((s) => ({ correct: s.correct + (opt === question.correct ? 1 : 0), total: s.total + 1 }));
     if (opt === question.correct) playCorrect();
     else playIncorrect();
     clearTimeout(speakTimeoutRef.current);
@@ -51,15 +42,18 @@ export default function ConjugationPractice({ onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    if (shuffleOn) review.submit(isCorrect);
-    else setIndex((i) => i + 1);
+    session.submit(isCorrect);
+    setSelected(null);
   };
 
   const restart = () => {
-    review.restart();
-    setIndex(0);
+    session.restart();
     setSelected(null);
-    setScore({ correct: 0, total: 0 });
+  };
+
+  const retryWrongOnly = () => {
+    session.retryWrongOnly();
+    setSelected(null);
   };
 
   return (
@@ -69,10 +63,7 @@ export default function ConjugationPractice({ onBack }) {
           ← กลับ
         </button>
         <p className="progress-label th-text">
-          {shuffleOn
-            ? `ผันถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}`
-            : `${(index % BASE_QUESTIONS.length) + 1} / ${BASE_QUESTIONS.length}`}{" "}
-          · คะแนน {score.correct}/{score.total}
+          ทำไปแล้ว {session.score.total}/{session.total} ข้อ · คะแนน {session.score.correct}/{session.total}
         </p>
       </div>
 
@@ -84,10 +75,26 @@ export default function ConjugationPractice({ onBack }) {
 
       {finished ? (
         <div className="practice-card blue">
-          <p className="th-text session-complete-text">เก่งมาก! คุณผันกริยาถูกครบทุกข้อในชุดนี้แล้ว 🎉📘</p>
-          <button className="btn btn-success btn-sm" onClick={restart}>
-            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
-          </button>
+          {session.wrongCount === 0 ? (
+            <>
+              <p className="th-text session-complete-text">เก่งมาก! คุณผันกริยาถูกครบทุกข้อในชุดนี้แล้ว 🎉📘</p>
+              <button className="btn btn-success btn-sm" onClick={restart}>
+                🔁 เริ่มใหม่
+              </button>
+            </>
+          ) : (
+            <>
+              <p className="th-text session-complete-text">
+                คะแนน {session.score.correct}/{session.score.total}
+              </p>
+              <button className="btn btn-outline btn-sm" onClick={retryWrongOnly}>
+                🔁 ลองทำเฉพาะข้อที่ตอบผิด
+              </button>
+              <button className="btn btn-success btn-sm" onClick={restart}>
+                🔁 เริ่มใหม่
+              </button>
+            </>
+          )}
         </div>
       ) : (
         <div className="practice-card blue">

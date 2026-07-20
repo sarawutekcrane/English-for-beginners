@@ -6,10 +6,9 @@ import InAppBrowserNotice from "../components/InAppBrowserNotice";
 import { useSpeak, useSpeechRecognition, matchesEnglish } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
-import { useReviewQueue } from "../utils/reviewQueue";
+import { useSinglePassSession } from "../utils/reviewQueue";
 
 const NUMERIC_ONLY = /^\d+$/;
-const EMPTY = [];
 
 function CategoryPicker({ onPick }) {
   return (
@@ -91,8 +90,7 @@ function SpeakingView({ category, onBack }) {
 
   const [shuffleOn, setShuffleOn] = useState(false);
   const baseCards = useMemo(() => getVocab(category.id).map(toCard), [category]);
-  const review = useReviewQueue(shuffleOn ? baseCards : EMPTY);
-  const [index, setIndex] = useState(0);
+  const session = useSinglePassSession(baseCards, shuffleOn);
   const [status, setStatus] = useState(STATUS.idle);
   const [errorType, setErrorType] = useState(null);
   const [heard, setHeard] = useState("");
@@ -100,13 +98,12 @@ function SpeakingView({ category, onBack }) {
   const [showPhonetic, setShowPhonetic] = useState(false);
 
   useEffect(() => {
-    setIndex(0);
     setStatus(STATUS.idle);
     setHeard("");
   }, [category, shuffleOn]);
 
-  const finished = shuffleOn && review.finished;
-  const card = shuffleOn ? review.current : baseCards[index % baseCards.length];
+  const finished = session.finished;
+  const card = session.current;
 
   // Chrome's speech recognition sometimes transcribes spoken number words
   // (e.g. "three") as bare Arabic numerals (e.g. "3"). This maps each
@@ -225,15 +222,19 @@ function SpeakingView({ category, onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    if (shuffleOn) review.submit(status === STATUS.match);
-    else setIndex((i) => (i + 1) % baseCards.length);
+    session.submit(status === STATUS.match);
     setStatus(STATUS.idle);
     setHeard("");
   };
 
   const restart = () => {
-    review.restart();
-    setIndex(0);
+    session.restart();
+    setStatus(STATUS.idle);
+    setHeard("");
+  };
+
+  const retryWrongOnly = () => {
+    session.retryWrongOnly();
     setStatus(STATUS.idle);
     setHeard("");
   };
@@ -250,10 +251,8 @@ function SpeakingView({ category, onBack }) {
       </button>
 
       <p className="progress-label th-text">
-        {category.label} ·{" "}
-        {shuffleOn
-          ? `ตอบถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}`
-          : `${index + 1} / ${baseCards.length}`}
+        {category.label} · ทำไปแล้ว {session.score.total}/{session.total} ข้อ · คะแนน {session.score.correct}/
+        {session.total}
       </p>
 
       <div className="toggle-group">
@@ -264,10 +263,26 @@ function SpeakingView({ category, onBack }) {
 
       {finished ? (
         <div className="speaking-card">
-          <p className="th-text session-complete-text">เก่งมาก! คุณฝึกพูดครบทุกคำในหมวดนี้แล้ว 🎉📘</p>
-          <button className="btn btn-success btn-sm" onClick={restart}>
-            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
-          </button>
+          {session.wrongCount === 0 ? (
+            <>
+              <p className="th-text session-complete-text">เก่งมาก! คุณฝึกพูดครบทุกคำในหมวดนี้แล้ว 🎉📘</p>
+              <button className="btn btn-success btn-sm" onClick={restart}>
+                🔁 เริ่มใหม่
+              </button>
+            </>
+          ) : (
+            <>
+              <p className="th-text session-complete-text">
+                คะแนน {session.score.correct}/{session.score.total}
+              </p>
+              <button className="btn btn-outline btn-sm" onClick={retryWrongOnly}>
+                🔁 ลองทำเฉพาะข้อที่ตอบผิด
+              </button>
+              <button className="btn btn-success btn-sm" onClick={restart}>
+                🔁 เริ่มใหม่
+              </button>
+            </>
+          )}
         </div>
       ) : (
         <div className="speaking-card">

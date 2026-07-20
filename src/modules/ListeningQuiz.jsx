@@ -4,10 +4,8 @@ import AnnotatedText from "../components/AnnotatedText";
 import { useSpeak } from "../hooks/useSpeech";
 import { VOCAB_CATEGORIES, getVocab, toCard, sample, shuffle } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
-import { useReviewQueue } from "../utils/reviewQueue";
+import { useSinglePassSession } from "../utils/reviewQueue";
 import PHONETIC_CONFUSIONS from "../data/phoneticConfusions.json";
-
-const EMPTY = [];
 
 function PoolPicker({ onPick }) {
   return (
@@ -56,19 +54,17 @@ function QuizView({ selection, onBack }) {
   const [shuffleOn, setShuffleOn] = useState(false);
   const [pool] = useState(() => getVocab(selection.category).map(toCard));
 
-  const [cursor, setCursor] = useState(0);
-  const review = useReviewQueue(shuffleOn ? pool : EMPTY);
-  const activeAnswer = shuffleOn ? review.current : pool[cursor % pool.length];
+  const session = useSinglePassSession(pool, shuffleOn);
+  const activeAnswer = session.current;
 
   const [selectedId, setSelectedId] = useState(null);
   const [revealed, setRevealed] = useState(false);
-  const [score, setScore] = useState({ correct: 0, total: 0 });
 
   const question = useMemo(() => (activeAnswer ? buildQuestion(pool, activeAnswer) : null), [pool, activeAnswer]);
 
   const isCorrect = question && selectedId === question.answer.id;
   const answered = selectedId !== null;
-  const finished = shuffleOn && review.finished;
+  const finished = session.finished;
 
   // Phase 11: options are now the Thai meanings themselves, so there's no
   // Translation/Phonetic toggle left to gate the post-answer reveal behind
@@ -91,7 +87,6 @@ function QuizView({ selection, onBack }) {
   const choose = (opt) => {
     if (answered) return;
     setSelectedId(opt.id);
-    setScore((s) => ({ correct: s.correct + (opt.id === question.answer.id ? 1 : 0), total: s.total + 1 }));
     if (opt.id === question.answer.id) playCorrect();
     else playIncorrect();
     clearTimeout(speakTimeoutRef.current);
@@ -100,15 +95,19 @@ function QuizView({ selection, onBack }) {
 
   const next = () => {
     clearTimeout(speakTimeoutRef.current);
-    if (shuffleOn) review.submit(isCorrect);
-    else setCursor((c) => c + 1);
+    session.submit(isCorrect);
     setSelectedId(null);
     setRevealed(false);
   };
 
   const restart = () => {
-    review.restart();
-    setScore({ correct: 0, total: 0 });
+    session.restart();
+    setSelectedId(null);
+    setRevealed(false);
+  };
+
+  const retryWrongOnly = () => {
+    session.retryWrongOnly();
     setSelectedId(null);
     setRevealed(false);
   };
@@ -120,8 +119,8 @@ function QuizView({ selection, onBack }) {
       </button>
 
       <p className="progress-label th-text">
-        {selection.label} · คะแนน {score.correct} / {score.total}
-        {shuffleOn && ` · ตอบถูกครบแล้ว ${review.totalCount - review.remainingCount} / ${review.totalCount}`}
+        {selection.label} · ทำไปแล้ว {session.score.total}/{session.total} ข้อ · คะแนน {session.score.correct}/
+        {session.total}
       </p>
 
       <div className="toggle-group blue">
@@ -130,10 +129,26 @@ function QuizView({ selection, onBack }) {
 
       {finished ? (
         <div className="quiz-card">
-          <p className="th-text session-complete-text">เก่งมาก! คุณตอบถูกครบทุกคำในชุดนี้แล้ว 🎉📘</p>
-          <button className="btn btn-success btn-sm" onClick={restart}>
-            🔁 เริ่มรอบใหม่ (สุ่มใหม่)
-          </button>
+          {session.wrongCount === 0 ? (
+            <>
+              <p className="th-text session-complete-text">เก่งมาก! คุณตอบถูกครบทุกคำในชุดนี้แล้ว 🎉📘</p>
+              <button className="btn btn-success btn-sm" onClick={restart}>
+                🔁 เริ่มใหม่
+              </button>
+            </>
+          ) : (
+            <>
+              <p className="th-text session-complete-text">
+                คะแนน {session.score.correct}/{session.score.total}
+              </p>
+              <button className="btn btn-outline btn-sm" onClick={retryWrongOnly}>
+                🔁 ลองทำเฉพาะข้อที่ตอบผิด
+              </button>
+              <button className="btn btn-success btn-sm" onClick={restart}>
+                🔁 เริ่มใหม่
+              </button>
+            </>
+          )}
         </div>
       ) : (
         <div className="quiz-card">
