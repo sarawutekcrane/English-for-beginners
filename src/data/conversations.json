@@ -5649,9 +5649,9 @@
             "next": "n3a"
           },
           {
-            "text": "I will attach the document again, just in case.",
-            "phonetic": "ไอ วิล อะ-แทช เดอะ ด็อค-คิว-เมนท์ อะ-เกน จัสท์ อิน เคส",
-            "thai": "ฉันจะแนบเอกสารไปอีกครั้งเผื่อไว้ค่ะ",
+            "text": "I will mark the document as confidential, just in case.",
+            "phonetic": "/aɪ wɪl mɑːrk ðə ˈdɒkjʊmənt æz ˌkɒnfɪˈdɛnʃl, dʒʌst ɪn keɪs/",
+            "thai": "ฉันจะทำเครื่องหมายเอกสารเป็นความลับเผื่อไว้ค่ะ",
             "correct": true,
             "next": "n3a"
           },
@@ -5677,9 +5677,9 @@
             "correct": true
           },
           {
-            "text": "I will forward their reply to you too.",
-            "phonetic": "ไอ วิล ฟอร์-เวิร์ด แดร์ รี-พลาย ทู ยู ทู",
-            "thai": "ฉันจะส่งต่อคำตอบให้คุณด้วยค่ะ",
+            "text": "I will circulate their reply to the team too.",
+            "phonetic": "/aɪ wɪl ˈsɜːrkjəleɪt ðɛr rɪˈplaɪ tuː ðə tiːm tuː/",
+            "thai": "ฉันจะส่งเวียนคำตอบให้ทีมด้วยค่ะ",
             "correct": true
           },
           {

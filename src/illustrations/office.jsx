@@ -71,4 +71,16 @@ export const officeIcons = {
       <circle cx="100" cy="144" r="5" fill="#fff8ea" />
     </Frame>
   ),
+  // Added for Proactive -- none of the other 8 concepts (meeting, calendar,
+  // deadline, email, feedback, handshake, document, phone) fit an
+  // attitude/initiative word, so this is the one genuinely new icon in
+  // this vocabulary-difficulty-upgrade pass.
+  "office-target": (id) => (
+    <Frame id={id}>
+      <circle cx="100" cy="106" r="46" fill="#fff8ea" stroke={INK} strokeWidth="3.5" />
+      <circle cx="100" cy="106" r="30" fill="#ffd6e8" stroke={INK} strokeWidth="3" />
+      <circle cx="100" cy="106" r="14" fill="#ff9ec7" stroke={INK} strokeWidth="3" />
+      <path d="M 100 46 L 108 66 L 128 60 L 118 78" fill="#8fcfff" stroke={INK} strokeWidth="2.5" strokeLinejoin="round" />
+    </Frame>
+  ),
 };
