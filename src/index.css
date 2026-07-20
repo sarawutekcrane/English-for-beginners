@@ -67,6 +67,19 @@ p {
 button {
   font-family: var(--font-en);
   cursor: pointer;
+  /* Mobile touch-bleed-through fix: without this, some mobile browsers/
+     WebViews apply their own default tap-highlight overlay to whatever
+     button ends up under the finger at touch-end, even on a button that
+     just mounted a moment ago as part of a screen transition (e.g. a
+     TopicPicker card tap swapping in a DialogueView whose first reply
+     option happens to land at the same screen coordinates) -- producing a
+     highlighted-looking button with no real click ever registered. This
+     native overlay is a separate mechanism from the :hover-stickiness fix
+     below (see the `@media (hover: hover)` wrapper), and both flavors of
+     the bug get fixed together here since they produce the same symptom.
+     Real active/pressed feedback still comes from each button's own
+     `:active` styles (e.g. .btn:active), which are unaffected by this. */
+  -webkit-tap-highlight-color: transparent;
 }
 
 .en-text {
@@ -104,8 +117,18 @@ button {
   gap: 8px;
 }
 
-.btn:hover {
-  transform: translateY(-2px);
+/* Mobile touch-bleed-through fix: every :hover rule in this file is gated
+   behind `(hover: hover) and (pointer: fine)` so it can only ever match on
+   a device with a real hover-capable pointer (mouse/trackpad). Touch-only
+   devices report `hover: none`, so these rules structurally can't match a
+   tap at all -- eliminating the whole "a touch tap leaves a hover style
+   stuck on whatever button is now under the finger" bug class app-wide,
+   not just for one component. Desktop mouse-hover behavior is unaffected
+   (real hover-capable pointers still match normally). */
+@media (hover: hover) and (pointer: fine) {
+  .btn:hover {
+    transform: translateY(-2px);
+  }
 }
 
 .btn:active {
@@ -376,8 +399,10 @@ button {
   transition: transform 0.15s ease, box-shadow 0.15s ease;
 }
 
-.module-card:hover {
-  transform: translateY(-4px) scale(1.02);
+@media (hover: hover) and (pointer: fine) {
+  .module-card:hover {
+    transform: translateY(-4px) scale(1.02);
+  }
 }
 
 .module-card:active {
@@ -468,8 +493,10 @@ button {
   transition: transform 0.15s ease;
 }
 
-.category-chip:hover {
-  transform: translateY(-3px);
+@media (hover: hover) and (pointer: fine) {
+  .category-chip:hover {
+    transform: translateY(-3px);
+  }
 }
 
 .category-chip-emoji {
@@ -627,8 +654,10 @@ button {
   line-height: 1.3;
 }
 
-.quiz-option:not(:disabled):hover {
-  transform: translateY(-2px);
+@media (hover: hover) and (pointer: fine) {
+  .quiz-option:not(:disabled):hover {
+    transform: translateY(-2px);
+  }
 }
 
 .quiz-option.correct {
@@ -916,8 +945,17 @@ button {
   box-shadow: var(--shadow-soft);
 }
 
-.reply-option:hover {
-  background: var(--pink);
+/* Directly reported bug: the topic picker -> DialogueView transition
+   lands a freshly-mounted .reply-option button at the same screen
+   coordinates as the tapped topic card, and mobile browsers were
+   triggering :hover here from the tail end of that same touch (no click
+   ever completing) -- a pink "selected-looking" highlight with no state
+   change. Gating behind (hover: hover) fixes it at the root: touch-only
+   devices never match this rule at all. */
+@media (hover: hover) and (pointer: fine) {
+  .reply-option:hover {
+    background: var(--pink);
+  }
 }
 
 .reply-option .en-text {
@@ -1424,6 +1462,8 @@ button {
   font-weight: 600;
 }
 
-.comparison-cell:hover {
-  background: var(--cream);
+@media (hover: hover) and (pointer: fine) {
+  .comparison-cell:hover {
+    background: var(--cream);
+  }
 }
