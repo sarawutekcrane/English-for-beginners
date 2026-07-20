@@ -186,6 +186,86 @@
       "thai": "ช่วยพูดอีกครั้งได้ไหม",
       "icon": "please-hands",
       "level": "B1"
+    },
+    {
+      "id": "gr-21",
+      "word": "Long time no see!",
+      "phonetic": "ลอง ไทม์ โน ซี",
+      "thai": "ไม่เจอกันนานเลยนะ",
+      "icon": "see-you-later",
+      "level": "B2"
+    },
+    {
+      "id": "gr-22",
+      "word": "Take care of yourself.",
+      "phonetic": "เทค แคร์ ออฟ ยัวร์เซลฟ์",
+      "thai": "ดูแลตัวเองด้วยนะ",
+      "icon": "thanks-heart",
+      "level": "B2"
+    },
+    {
+      "id": "gr-23",
+      "word": "I really appreciate it.",
+      "phonetic": "ไอ เรียล-ลี่ แอพ-พรี-ชี-เอท อิท",
+      "thai": "ฉันซาบซึ้งใจมากจริงๆ",
+      "icon": "thanks-heart",
+      "level": "B2"
+    },
+    {
+      "id": "gr-24",
+      "word": "I'm terribly sorry.",
+      "phonetic": "แอม เท-ริ-เบิล-ลี่ ซอร์-รี่",
+      "thai": "ฉันขอโทษจริงๆ",
+      "icon": "sorry-sweat",
+      "level": "B2"
+    },
+    {
+      "id": "gr-25",
+      "word": "Could you bear with me for a moment?",
+      "phonetic": "คุด ยู แบร์ วิธ มี ฟอร์ อะ โม-เม้นท์",
+      "thai": "ช่วยรอสักครู่ได้ไหมคะ",
+      "icon": "please-hands",
+      "level": "B2"
+    },
+    {
+      "id": "gr-26",
+      "word": "It's been a while.",
+      "phonetic": "อิทส์ บีน อะ ไวล์",
+      "thai": "ห่างหายไปนานเลย",
+      "icon": "see-you-later",
+      "level": "B2"
+    },
+    {
+      "id": "gr-27",
+      "word": "I couldn't agree more.",
+      "phonetic": "ไอ คูด-เดิ่นท์ อะ-กรี มอร์",
+      "thai": "ฉันเห็นด้วยอย่างยิ่ง",
+      "icon": "happy-face",
+      "level": "B2"
+    },
+    {
+      "id": "gr-28",
+      "word": "I'd rather not say.",
+      "phonetic": "ไอด์ แร-เธอร์ นอท เซ",
+      "thai": "ฉันขอไม่พูดดีกว่า",
+      "icon": "question-face",
+      "level": "B2"
+    },
+    {
+      "id": "gr-29",
+      "word": "Let's catch up sometime.",
+      "phonetic": "เล็ทส์ แคทช์ อัพ ซัม-ไทม์",
+      "thai": "ไว้มาอัพเดทชีวิตกันนะ",
+      "icon": "see-you-later",
+      "level": "B2"
+    },
+    {
+      "id": "gr-30",
+      "word": "I apologize for the inconvenience.",
+      "phonetic": "ไอ อะ-พอล-โล-ไจส์ ฟอร์ ดิ อิน-คอน-วี-เนียนซ์",
+      "thai": "ฉันขออภัยในความไม่สะดวก",
+      "icon": "sorry-sweat",
+      "level": "B2"
     }
   ],
   "family": [
@@ -348,6 +428,86 @@
       "thai": "หลาน",
       "icon": "family-grandchild",
       "level": "B1"
+    },
+    {
+      "id": "fa-21",
+      "word": "Stepfather",
+      "phonetic": "สแท็พ-ฟา-เธอร์",
+      "thai": "พ่อเลี้ยง",
+      "icon": "family-father",
+      "level": "B2"
+    },
+    {
+      "id": "fa-22",
+      "word": "Stepmother",
+      "phonetic": "สแท็พ-มา-เธอร์",
+      "thai": "แม่เลี้ยง",
+      "icon": "family-mother",
+      "level": "B2"
+    },
+    {
+      "id": "fa-23",
+      "word": "In-laws",
+      "phonetic": "อิน-ลอส์",
+      "thai": "ญาติฝ่ายคู่สมรส",
+      "icon": "family-parents",
+      "level": "B2"
+    },
+    {
+      "id": "fa-24",
+      "word": "Sibling",
+      "phonetic": "ซิบ-ลิ่ง",
+      "thai": "พี่น้อง",
+      "icon": "family-brother",
+      "level": "B2"
+    },
+    {
+      "id": "fa-25",
+      "word": "Twins",
+      "phonetic": "ทวินส์",
+      "thai": "ฝาแฝด",
+      "icon": "family-children",
+      "level": "B2"
+    },
+    {
+      "id": "fa-26",
+      "word": "Widow",
+      "phonetic": "วิด-โด",
+      "thai": "แม่ม่าย",
+      "icon": "family-mother",
+      "level": "B2"
+    },
+    {
+      "id": "fa-27",
+      "word": "Widower",
+      "phonetic": "วิด-โด-เออร์",
+      "thai": "พ่อม่าย",
+      "icon": "family-father",
+      "level": "B2"
+    },
+    {
+      "id": "fa-28",
+      "word": "Fiancé",
+      "phonetic": "ฟี-ยอน-เซ",
+      "thai": "คู่หมั้น (ฝ่ายชาย)",
+      "icon": "family-husband",
+      "level": "B2"
+    },
+    {
+      "id": "fa-29",
+      "word": "Fiancée",
+      "phonetic": "ฟี-ยอน-เซ",
+      "thai": "คู่หมั้น (ฝ่ายหญิง)",
+      "icon": "family-wife",
+      "level": "B2"
+    },
+    {
+      "id": "fa-30",
+      "word": "Extended family",
+      "phonetic": "เอ็กซ์-เทน-ดิด แฟ-มิ-ลี่",
+      "thai": "ครอบครัวขยาย",
+      "icon": "family-grandparents",
+      "level": "B2"
     }
   ],
   "food": [
@@ -510,6 +670,86 @@
       "thai": "น้ำตาล",
       "icon": "food-sugar",
       "level": "B1"
+    },
+    {
+      "id": "fo-21",
+      "word": "Garlic",
+      "phonetic": "การ์-ลิค",
+      "thai": "กระเทียม",
+      "icon": "food-vegetable",
+      "level": "B2"
+    },
+    {
+      "id": "fo-22",
+      "word": "Onion",
+      "phonetic": "อัน-เยิ่น",
+      "thai": "หัวหอม",
+      "icon": "food-vegetable",
+      "level": "B2"
+    },
+    {
+      "id": "fo-23",
+      "word": "Seasoning",
+      "phonetic": "ซี-ซั่น-นิ่ง",
+      "thai": "เครื่องปรุงรส",
+      "icon": "food-sugar",
+      "level": "B2"
+    },
+    {
+      "id": "fo-24",
+      "word": "Broth",
+      "phonetic": "บรอธ",
+      "thai": "น้ำซุป",
+      "icon": "food-soup",
+      "level": "B2"
+    },
+    {
+      "id": "fo-25",
+      "word": "Appetizer",
+      "phonetic": "แอพ-พิ-ไท-เซอร์",
+      "thai": "อาหารเรียกน้ำย่อย",
+      "icon": "food-salad",
+      "level": "B2"
+    },
+    {
+      "id": "fo-26",
+      "word": "Leftovers",
+      "phonetic": "เลฟท์-โอ-เวอร์ส",
+      "thai": "อาหารที่เหลือ",
+      "icon": "food-rice",
+      "level": "B2"
+    },
+    {
+      "id": "fo-27",
+      "word": "Cuisine",
+      "phonetic": "ควิ-ซีน",
+      "thai": "อาหารประจำชาติ/สไตล์การทำอาหาร",
+      "icon": "food-noodles",
+      "level": "B2"
+    },
+    {
+      "id": "fo-28",
+      "word": "Nutritious",
+      "phonetic": "นู-ทริช-เชิส",
+      "thai": "มีคุณค่าทางโภชนาการ",
+      "icon": "food-fruit",
+      "level": "B2"
+    },
+    {
+      "id": "fo-29",
+      "word": "Beverage",
+      "phonetic": "เบฟ-เวอ-ริจ",
+      "thai": "เครื่องดื่ม",
+      "icon": "food-juice",
+      "level": "B2"
+    },
+    {
+      "id": "fo-30",
+      "word": "Ingredient",
+      "phonetic": "อิน-กรี-เดี้ยนท์",
+      "thai": "ส่วนผสม",
+      "icon": "food-egg",
+      "level": "B2"
     }
   ],
   "numbers": [
@@ -692,6 +932,96 @@
       "icon": "number",
       "level": "B1",
       "value": 20
+    },
+    {
+      "id": "nu-21",
+      "word": "Thirty",
+      "phonetic": "เธอร์-ที",
+      "thai": "สามสิบ",
+      "icon": "number",
+      "level": "B2",
+      "value": 30
+    },
+    {
+      "id": "nu-22",
+      "word": "Forty",
+      "phonetic": "ฟอร์-ที",
+      "thai": "สี่สิบ",
+      "icon": "number",
+      "level": "B2",
+      "value": 40
+    },
+    {
+      "id": "nu-23",
+      "word": "Fifty",
+      "phonetic": "ฟิฟ-ที",
+      "thai": "ห้าสิบ",
+      "icon": "number",
+      "level": "B2",
+      "value": 50
+    },
+    {
+      "id": "nu-24",
+      "word": "Sixty",
+      "phonetic": "ซิก-ที",
+      "thai": "หกสิบ",
+      "icon": "number",
+      "level": "B2",
+      "value": 60
+    },
+    {
+      "id": "nu-25",
+      "word": "Seventy",
+      "phonetic": "เซฟ-เวิน-ที",
+      "thai": "เจ็ดสิบ",
+      "icon": "number",
+      "level": "B2",
+      "value": 70
+    },
+    {
+      "id": "nu-26",
+      "word": "Eighty",
+      "phonetic": "เอ-ที",
+      "thai": "แปดสิบ",
+      "icon": "number",
+      "level": "B2",
+      "value": 80
+    },
+    {
+      "id": "nu-27",
+      "word": "Ninety",
+      "phonetic": "ไนน์-ที",
+      "thai": "เก้าสิบ",
+      "icon": "number",
+      "level": "B2",
+      "value": 90
+    },
+    {
+      "id": "nu-28",
+      "word": "Hundred",
+      "phonetic": "ฮัน-เดรด",
+      "thai": "หนึ่งร้อย",
+      "icon": "number",
+      "level": "B2",
+      "value": 100
+    },
+    {
+      "id": "nu-29",
+      "word": "Thousand",
+      "phonetic": "เธา-แซนด์",
+      "thai": "หนึ่งพัน",
+      "icon": "number",
+      "level": "B2",
+      "value": 1000
+    },
+    {
+      "id": "nu-30",
+      "word": "Dozen",
+      "phonetic": "ดัซ-เซ่น",
+      "thai": "โหล (สิบสองชิ้น)",
+      "icon": "number",
+      "level": "B2",
+      "value": 12
     }
   ],
   "colors": [
@@ -874,6 +1204,96 @@
       "icon": "color",
       "level": "B1",
       "hex": "#A8E063"
+    },
+    {
+      "id": "co-21",
+      "word": "Teal",
+      "phonetic": "ทีล",
+      "thai": "สีเขียวอมฟ้า",
+      "icon": "color",
+      "level": "B2",
+      "hex": "#2A9D8F"
+    },
+    {
+      "id": "co-22",
+      "word": "Coral",
+      "phonetic": "คอ-รัล",
+      "thai": "สีส้มปะการัง",
+      "icon": "color",
+      "level": "B2",
+      "hex": "#FF7F6B"
+    },
+    {
+      "id": "co-23",
+      "word": "Lavender",
+      "phonetic": "แลฟ-เวน-เดอร์",
+      "thai": "สีม่วงลาเวนเดอร์",
+      "icon": "color",
+      "level": "B2",
+      "hex": "#C8A2E0"
+    },
+    {
+      "id": "co-24",
+      "word": "Charcoal",
+      "phonetic": "ชาร์-โคล",
+      "thai": "สีเทาถ่าน",
+      "icon": "color",
+      "level": "B2",
+      "hex": "#4A4A4A"
+    },
+    {
+      "id": "co-25",
+      "word": "Crimson",
+      "phonetic": "คริม-ซัน",
+      "thai": "สีแดงเข้ม",
+      "icon": "color",
+      "level": "B2",
+      "hex": "#B03052"
+    },
+    {
+      "id": "co-26",
+      "word": "Mustard",
+      "phonetic": "มัส-ทาร์ด",
+      "thai": "สีเหลืองมัสตาร์ด",
+      "icon": "color",
+      "level": "B2",
+      "hex": "#E1AD3A"
+    },
+    {
+      "id": "co-27",
+      "word": "Mint",
+      "phonetic": "มินท์",
+      "thai": "สีเขียวมิ้นท์",
+      "icon": "color",
+      "level": "B2",
+      "hex": "#98D8C8"
+    },
+    {
+      "id": "co-28",
+      "word": "Peach",
+      "phonetic": "พีช",
+      "thai": "สีส้มพีช",
+      "icon": "color",
+      "level": "B2",
+      "hex": "#FFCBA4"
+    },
+    {
+      "id": "co-29",
+      "word": "Indigo",
+      "phonetic": "อิน-ดิ-โก",
+      "thai": "สีน้ำเงินคราม",
+      "icon": "color",
+      "level": "B2",
+      "hex": "#5B4E9E"
+    },
+    {
+      "id": "co-30",
+      "word": "Olive",
+      "phonetic": "ออล-ลิฟ",
+      "thai": "สีเขียวมะกอก",
+      "icon": "color",
+      "level": "B2",
+      "hex": "#7C7C3A"
     }
   ],
   "daysTime": [
@@ -1036,6 +1456,86 @@
       "thai": "วันหยุดสุดสัปดาห์",
       "icon": "dayTime-weekend",
       "level": "B1"
+    },
+    {
+      "id": "dt-21",
+      "word": "Decade",
+      "phonetic": "เด-เคด",
+      "thai": "ทศวรรษ (สิบปี)",
+      "icon": "dayTime-year",
+      "level": "B2"
+    },
+    {
+      "id": "dt-22",
+      "word": "Century",
+      "phonetic": "เซน-ชู-รี่",
+      "thai": "ศตวรรษ (ร้อยปี)",
+      "icon": "dayTime-year",
+      "level": "B2"
+    },
+    {
+      "id": "dt-23",
+      "word": "Deadline",
+      "phonetic": "เด้ด-ไลน์",
+      "thai": "เส้นตาย/กำหนดส่ง",
+      "icon": "dayTime-today",
+      "level": "B2"
+    },
+    {
+      "id": "dt-24",
+      "word": "Punctual",
+      "phonetic": "พังค์-ชวล",
+      "thai": "ตรงต่อเวลา",
+      "icon": "dayTime-hour",
+      "level": "B2"
+    },
+    {
+      "id": "dt-25",
+      "word": "Overdue",
+      "phonetic": "โอ-เวอร์-ดิว",
+      "thai": "เลยกำหนด",
+      "icon": "dayTime-today",
+      "level": "B2"
+    },
+    {
+      "id": "dt-26",
+      "word": "Fortnight",
+      "phonetic": "ฟอร์ท-ไนท์",
+      "thai": "สองสัปดาห์",
+      "icon": "dayTime-week",
+      "level": "B2"
+    },
+    {
+      "id": "dt-27",
+      "word": "Simultaneously",
+      "phonetic": "ไซ-มัล-เท-เนียส-ลี่",
+      "thai": "พร้อมกัน/ในเวลาเดียวกัน",
+      "icon": "dayTime-minute",
+      "level": "B2"
+    },
+    {
+      "id": "dt-28",
+      "word": "Interval",
+      "phonetic": "อิน-เทอร์-วัล",
+      "thai": "ช่วงเวลา/ช่วงพัก",
+      "icon": "dayTime-hour",
+      "level": "B2"
+    },
+    {
+      "id": "dt-29",
+      "word": "Eventually",
+      "phonetic": "อิ-เวน-ชวล-ลี่",
+      "thai": "ในที่สุด",
+      "icon": "dayTime-tomorrow",
+      "level": "B2"
+    },
+    {
+      "id": "dt-30",
+      "word": "Beforehand",
+      "phonetic": "บิ-ฟอร์-แฮนด์",
+      "thai": "ล่วงหน้า",
+      "icon": "dayTime-yesterday",
+      "level": "B2"
     }
   ],
   "weather": [
@@ -1198,6 +1698,86 @@
       "thai": "ฟ้าแลบ",
       "icon": "weather-lightning",
       "level": "B1"
+    },
+    {
+      "id": "we-21",
+      "word": "Drizzle",
+      "phonetic": "ดริซ-เซิล",
+      "thai": "ฝนตกปรอยๆ",
+      "icon": "weather-rainy",
+      "level": "B2"
+    },
+    {
+      "id": "we-22",
+      "word": "Overcast",
+      "phonetic": "โอ-เวอร์-คาสท์",
+      "thai": "ท้องฟ้ามืดครึ้ม",
+      "icon": "weather-cloudy",
+      "level": "B2"
+    },
+    {
+      "id": "we-23",
+      "word": "Heatwave",
+      "phonetic": "ฮีท-เวฟ",
+      "thai": "คลื่นความร้อน",
+      "icon": "weather-hot",
+      "level": "B2"
+    },
+    {
+      "id": "we-24",
+      "word": "Blizzard",
+      "phonetic": "บลิซ-ซาร์ด",
+      "thai": "พายุหิมะ",
+      "icon": "weather-snowy",
+      "level": "B2"
+    },
+    {
+      "id": "we-25",
+      "word": "Drought",
+      "phonetic": "เดราท์",
+      "thai": "ภัยแล้ง",
+      "icon": "weather-hot",
+      "level": "B2"
+    },
+    {
+      "id": "we-26",
+      "word": "Forecast",
+      "phonetic": "ฟอร์-คาสท์",
+      "thai": "การพยากรณ์อากาศ",
+      "icon": "weather-sunny",
+      "level": "B2"
+    },
+    {
+      "id": "we-27",
+      "word": "Gale",
+      "phonetic": "เกล",
+      "thai": "ลมพายุแรง",
+      "icon": "weather-windy",
+      "level": "B2"
+    },
+    {
+      "id": "we-28",
+      "word": "Muggy",
+      "phonetic": "มัก-กี้",
+      "thai": "อบอ้าว/ร้อนชื้น",
+      "icon": "weather-humid",
+      "level": "B2"
+    },
+    {
+      "id": "we-29",
+      "word": "Frost",
+      "phonetic": "ฟรอสท์",
+      "thai": "น้ำค้างแข็ง",
+      "icon": "weather-cold",
+      "level": "B2"
+    },
+    {
+      "id": "we-30",
+      "word": "Breeze",
+      "phonetic": "บรีซ",
+      "thai": "ลมโชยเย็นๆ",
+      "icon": "weather-cool",
+      "level": "B2"
     }
   ],
   "house": [
@@ -1360,6 +1940,86 @@
       "thai": "หลังคา",
       "icon": "house-roof",
       "level": "B1"
+    },
+    {
+      "id": "ho-21",
+      "word": "Balcony",
+      "phonetic": "แบล-โค-นี่",
+      "thai": "ระเบียง",
+      "icon": "house-window",
+      "level": "B2"
+    },
+    {
+      "id": "ho-22",
+      "word": "Staircase",
+      "phonetic": "สแตร์-เคส",
+      "thai": "บันได",
+      "icon": "house-door",
+      "level": "B2"
+    },
+    {
+      "id": "ho-23",
+      "word": "Basement",
+      "phonetic": "เบส-เมนท์",
+      "thai": "ห้องใต้ดิน",
+      "icon": "house-room",
+      "level": "B2"
+    },
+    {
+      "id": "ho-24",
+      "word": "Attic",
+      "phonetic": "แอท-ทิค",
+      "thai": "ห้องใต้หลังคา",
+      "icon": "house-roof",
+      "level": "B2"
+    },
+    {
+      "id": "ho-25",
+      "word": "Furniture",
+      "phonetic": "เฟอร์-นิ-เจอร์",
+      "thai": "เฟอร์นิเจอร์",
+      "icon": "house-sofa",
+      "level": "B2"
+    },
+    {
+      "id": "ho-26",
+      "word": "Renovate",
+      "phonetic": "เร-โน-เวท",
+      "thai": "ปรับปรุง/รีโนเวท",
+      "icon": "house-house",
+      "level": "B2"
+    },
+    {
+      "id": "ho-27",
+      "word": "Landlord",
+      "phonetic": "แลนด์-ลอร์ด",
+      "thai": "เจ้าของบ้านเช่า",
+      "icon": "house-key",
+      "level": "B2"
+    },
+    {
+      "id": "ho-28",
+      "word": "Tenant",
+      "phonetic": "เท-แนนท์",
+      "thai": "ผู้เช่า",
+      "icon": "house-key",
+      "level": "B2"
+    },
+    {
+      "id": "ho-29",
+      "word": "Appliance",
+      "phonetic": "อะ-พลาย-แอนซ์",
+      "thai": "เครื่องใช้ไฟฟ้า",
+      "icon": "house-fridge",
+      "level": "B2"
+    },
+    {
+      "id": "ho-30",
+      "word": "Spacious",
+      "phonetic": "สเป-เชิส",
+      "thai": "กว้างขวาง",
+      "icon": "house-livingroom",
+      "level": "B2"
     }
   ],
   "clothing": [
@@ -1522,6 +2182,86 @@
       "thai": "ชุดนอน",
       "icon": "clothing-pajamas",
       "level": "B1"
+    },
+    {
+      "id": "cl-21",
+      "word": "Formal wear",
+      "phonetic": "ฟอร์-มัล แวร์",
+      "thai": "ชุดทางการ",
+      "icon": "clothing-shirt",
+      "level": "B2"
+    },
+    {
+      "id": "cl-22",
+      "word": "Casual wear",
+      "phonetic": "แคช-ชวล แวร์",
+      "thai": "ชุดลำลอง",
+      "icon": "clothing-tshirt",
+      "level": "B2"
+    },
+    {
+      "id": "cl-23",
+      "word": "Tailored",
+      "phonetic": "เท-เลอร์ด",
+      "thai": "ตัดเย็บพอดีตัว",
+      "icon": "clothing-jacket",
+      "level": "B2"
+    },
+    {
+      "id": "cl-24",
+      "word": "Accessory",
+      "phonetic": "แอค-เซส-ซอ-รี่",
+      "thai": "เครื่องประดับ",
+      "icon": "clothing-scarf",
+      "level": "B2"
+    },
+    {
+      "id": "cl-25",
+      "word": "Outfit",
+      "phonetic": "เอ้าท์-ฟิท",
+      "thai": "ชุดแต่งกาย",
+      "icon": "clothing-dress",
+      "level": "B2"
+    },
+    {
+      "id": "cl-26",
+      "word": "Fabric",
+      "phonetic": "แฟบ-ริค",
+      "thai": "ผ้า/เนื้อผ้า",
+      "icon": "clothing-sweater",
+      "level": "B2"
+    },
+    {
+      "id": "cl-27",
+      "word": "Wardrobe",
+      "phonetic": "วอร์ด-โรบ",
+      "thai": "ตู้เสื้อผ้า/ชุดเสื้อผ้าทั้งหมด",
+      "icon": "clothing-jeans",
+      "level": "B2"
+    },
+    {
+      "id": "cl-28",
+      "word": "Fashionable",
+      "phonetic": "แฟช-ชั่น-เนเบิล",
+      "thai": "ทันสมัย/เก๋",
+      "icon": "clothing-hat",
+      "level": "B2"
+    },
+    {
+      "id": "cl-29",
+      "word": "Wrinkled",
+      "phonetic": "ริง-เคิลด์",
+      "thai": "ยับ/ย่น",
+      "icon": "clothing-shirt",
+      "level": "B2"
+    },
+    {
+      "id": "cl-30",
+      "word": "Loose-fitting",
+      "phonetic": "ลูส ฟิท-ติ้ง",
+      "thai": "หลวม/ไม่รัดรูป",
+      "icon": "clothing-shorts",
+      "level": "B2"
     }
   ],
   "bodyHealth": [
@@ -1684,6 +2424,86 @@
       "thai": "สุขภาพดี",
       "icon": "body-healthy",
       "level": "B1"
+    },
+    {
+      "id": "bo-21",
+      "word": "Immune system",
+      "phonetic": "อิม-มูน ซิส-เต็ม",
+      "thai": "ระบบภูมิคุ้มกัน",
+      "icon": "body-healthy",
+      "level": "B2"
+    },
+    {
+      "id": "bo-22",
+      "word": "Symptom",
+      "phonetic": "ซิมพ์-เทิม",
+      "thai": "อาการ",
+      "icon": "body-sick",
+      "level": "B2"
+    },
+    {
+      "id": "bo-23",
+      "word": "Diagnosis",
+      "phonetic": "ได-แอก-โน-ซิส",
+      "thai": "การวินิจฉัยโรค",
+      "icon": "body-doctor",
+      "level": "B2"
+    },
+    {
+      "id": "bo-24",
+      "word": "Prescription",
+      "phonetic": "พรี-สคริพ-ชั่น",
+      "thai": "ใบสั่งยา",
+      "icon": "body-medicine",
+      "level": "B2"
+    },
+    {
+      "id": "bo-25",
+      "word": "Chronic",
+      "phonetic": "ครอน-นิค",
+      "thai": "เรื้อรัง",
+      "icon": "body-sick",
+      "level": "B2"
+    },
+    {
+      "id": "bo-26",
+      "word": "Recover",
+      "phonetic": "รี-คัฟ-เวอร์",
+      "thai": "ฟื้นตัว/หายป่วย",
+      "icon": "body-healthy",
+      "level": "B2"
+    },
+    {
+      "id": "bo-27",
+      "word": "Exhausted",
+      "phonetic": "เอ็ก-ซอส-ทิด",
+      "thai": "อ่อนเพลียมาก",
+      "icon": "body-sick",
+      "level": "B2"
+    },
+    {
+      "id": "bo-28",
+      "word": "Nutrition",
+      "phonetic": "นู-ทริช-ชั่น",
+      "thai": "โภชนาการ",
+      "icon": "body-healthy",
+      "level": "B2"
+    },
+    {
+      "id": "bo-29",
+      "word": "Allergic",
+      "phonetic": "อะ-เลอร์-จิค",
+      "thai": "แพ้",
+      "icon": "body-sick",
+      "level": "B2"
+    },
+    {
+      "id": "bo-30",
+      "word": "Physical therapy",
+      "phonetic": "ฟิ-สิ-เคิล แธ-เร-พี่",
+      "thai": "กายภาพบำบัด",
+      "icon": "body-hospital",
+      "level": "B2"
     }
   ],
   "jobs": [
@@ -1846,6 +2666,86 @@
       "thai": "นักบัญชี",
       "icon": "job-accountant",
       "level": "B1"
+    },
+    {
+      "id": "jo-21",
+      "word": "Entrepreneur",
+      "phonetic": "อ็อน-เทร-พรี-เนอร์",
+      "thai": "ผู้ประกอบการ",
+      "icon": "job-manager",
+      "level": "B2"
+    },
+    {
+      "id": "jo-22",
+      "word": "Freelancer",
+      "phonetic": "ฟรี-แลน-เซอร์",
+      "thai": "ฟรีแลนซ์",
+      "icon": "job-writer",
+      "level": "B2"
+    },
+    {
+      "id": "jo-23",
+      "word": "Colleague",
+      "phonetic": "คอล-ลีก",
+      "thai": "เพื่อนร่วมงาน",
+      "icon": "job-manager",
+      "level": "B2"
+    },
+    {
+      "id": "jo-24",
+      "word": "Supervisor",
+      "phonetic": "ซู-เพอร์-ไว-เซอร์",
+      "thai": "หัวหน้างาน",
+      "icon": "job-manager",
+      "level": "B2"
+    },
+    {
+      "id": "jo-25",
+      "word": "Resign",
+      "phonetic": "รี-ไซน์",
+      "thai": "ลาออก",
+      "icon": "job-writer",
+      "level": "B2"
+    },
+    {
+      "id": "jo-26",
+      "word": "Promotion",
+      "phonetic": "โพร-โม-ชั่น",
+      "thai": "การเลื่อนตำแหน่ง",
+      "icon": "job-manager",
+      "level": "B2"
+    },
+    {
+      "id": "jo-27",
+      "word": "Internship",
+      "phonetic": "อิน-เทิร์น-ชิพ",
+      "thai": "การฝึกงาน",
+      "icon": "job-student",
+      "level": "B2"
+    },
+    {
+      "id": "jo-28",
+      "word": "Qualification",
+      "phonetic": "ควอ-ลิ-ฟิ-เค-ชั่น",
+      "thai": "คุณสมบัติ",
+      "icon": "job-scientist",
+      "level": "B2"
+    },
+    {
+      "id": "jo-29",
+      "word": "Occupation",
+      "phonetic": "ออค-คิว-เพ-ชั่น",
+      "thai": "อาชีพ",
+      "icon": "job-engineer",
+      "level": "B2"
+    },
+    {
+      "id": "jo-30",
+      "word": "Workforce",
+      "phonetic": "เวิร์ค-ฟอร์ส",
+      "thai": "กำลังแรงงาน",
+      "icon": "job-manager",
+      "level": "B2"
     }
   ],
   "shopping": [
@@ -2008,6 +2908,86 @@
       "thai": "คูปอง",
       "icon": "shop-coupon",
       "level": "B1"
+    },
+    {
+      "id": "sh-21",
+      "word": "Refund",
+      "phonetic": "รี-ฟันด์",
+      "thai": "การคืนเงิน",
+      "icon": "shop-cash",
+      "level": "B2"
+    },
+    {
+      "id": "sh-22",
+      "word": "Warranty",
+      "phonetic": "วอ-รัน-ที่",
+      "thai": "การรับประกัน",
+      "icon": "shop-receipt",
+      "level": "B2"
+    },
+    {
+      "id": "sh-23",
+      "word": "Bargain",
+      "phonetic": "บาร์-เกน",
+      "thai": "การต่อรองราคา/ของราคาถูก",
+      "icon": "shop-discount",
+      "level": "B2"
+    },
+    {
+      "id": "sh-24",
+      "word": "Installment",
+      "phonetic": "อิน-สทอล-เม้นท์",
+      "thai": "การผ่อนชำระ",
+      "icon": "shop-creditcard",
+      "level": "B2"
+    },
+    {
+      "id": "sh-25",
+      "word": "Retailer",
+      "phonetic": "รี-เทล-เลอร์",
+      "thai": "ผู้ค้าปลีก",
+      "icon": "shop-store",
+      "level": "B2"
+    },
+    {
+      "id": "sh-26",
+      "word": "Wholesale",
+      "phonetic": "โฮล-เซล",
+      "thai": "ขายส่ง",
+      "icon": "shop-market",
+      "level": "B2"
+    },
+    {
+      "id": "sh-27",
+      "word": "Inventory",
+      "phonetic": "อิน-เวน-โท-รี่",
+      "thai": "สินค้าคงคลัง",
+      "icon": "shop-cart",
+      "level": "B2"
+    },
+    {
+      "id": "sh-28",
+      "word": "Transaction",
+      "phonetic": "แทรน-แซค-ชั่น",
+      "thai": "ธุรกรรม",
+      "icon": "shop-creditcard",
+      "level": "B2"
+    },
+    {
+      "id": "sh-29",
+      "word": "Overpriced",
+      "phonetic": "โอ-เวอร์-ไพรซ์ด",
+      "thai": "ราคาแพงเกินไป",
+      "icon": "shop-expensive",
+      "level": "B2"
+    },
+    {
+      "id": "sh-30",
+      "word": "Affordable",
+      "phonetic": "อะ-ฟอร์-ดา-เบิล",
+      "thai": "ราคาที่จ่ายไหว",
+      "icon": "shop-cheap",
+      "level": "B2"
     }
   ],
   "transportation": [
@@ -2170,6 +3150,86 @@
       "thai": "เข็มขัดนิรภัย",
       "icon": "transport-seatbelt",
       "level": "B1"
+    },
+    {
+      "id": "tr-21",
+      "word": "Commute",
+      "phonetic": "คอม-มิวท์",
+      "thai": "เดินทางไป-กลับที่ทำงาน",
+      "icon": "transport-car",
+      "level": "B2"
+    },
+    {
+      "id": "tr-22",
+      "word": "Congestion",
+      "phonetic": "คอน-เจส-ชั่น",
+      "thai": "การจราจรติดขัด",
+      "icon": "transport-traffic",
+      "level": "B2"
+    },
+    {
+      "id": "tr-23",
+      "word": "Detour",
+      "phonetic": "ดี-ทัวร์",
+      "thai": "ทางอ้อม",
+      "icon": "transport-road",
+      "level": "B2"
+    },
+    {
+      "id": "tr-24",
+      "word": "Pedestrian",
+      "phonetic": "พิ-เดส-เทรียน",
+      "thai": "คนเดินเท้า",
+      "icon": "transport-passenger",
+      "level": "B2"
+    },
+    {
+      "id": "tr-25",
+      "word": "Vehicle",
+      "phonetic": "วี-ฮิ-เคิล",
+      "thai": "ยานพาหนะ",
+      "icon": "transport-car",
+      "level": "B2"
+    },
+    {
+      "id": "tr-26",
+      "word": "Fare",
+      "phonetic": "แฟร์",
+      "thai": "ค่าโดยสาร",
+      "icon": "transport-ticket",
+      "level": "B2"
+    },
+    {
+      "id": "tr-27",
+      "word": "Terminal",
+      "phonetic": "เทอร์-มิ-นัล",
+      "thai": "สถานีปลายทาง",
+      "icon": "transport-station",
+      "level": "B2"
+    },
+    {
+      "id": "tr-28",
+      "word": "Departure",
+      "phonetic": "ดี-พาร์-เชอร์",
+      "thai": "การออกเดินทาง",
+      "icon": "transport-airport",
+      "level": "B2"
+    },
+    {
+      "id": "tr-29",
+      "word": "Punctuality",
+      "phonetic": "พังค์-ชวล-อะ-ตี้",
+      "thai": "ความตรงต่อเวลา",
+      "icon": "transport-trafficlight",
+      "level": "B2"
+    },
+    {
+      "id": "tr-30",
+      "word": "Roundabout",
+      "phonetic": "เราน์ด-อะ-เบาท์",
+      "thai": "วงเวียน",
+      "icon": "transport-highway",
+      "level": "B2"
     }
   ],
   "hobbies": [
@@ -2332,6 +3392,86 @@
       "thai": "การถักไหมพรม",
       "icon": "hobby-knitting",
       "level": "B1"
+    },
+    {
+      "id": "hb-21",
+      "word": "Enthusiast",
+      "phonetic": "เอน-ธู-ซี-แอสท์",
+      "thai": "ผู้ที่หลงใหล/แฟนตัวยง",
+      "icon": "hobby-reading",
+      "level": "B2"
+    },
+    {
+      "id": "hb-22",
+      "word": "Leisure",
+      "phonetic": "เล-เชอร์",
+      "thai": "เวลาว่าง/การพักผ่อน",
+      "icon": "hobby-reading",
+      "level": "B2"
+    },
+    {
+      "id": "hb-23",
+      "word": "Meditation",
+      "phonetic": "เม-ดิ-เท-ชั่น",
+      "thai": "การทำสมาธิ",
+      "icon": "hobby-yoga",
+      "level": "B2"
+    },
+    {
+      "id": "hb-24",
+      "word": "Collecting",
+      "phonetic": "คอล-เล็ค-ติ้ง",
+      "thai": "การสะสม",
+      "icon": "hobby-photography",
+      "level": "B2"
+    },
+    {
+      "id": "hb-25",
+      "word": "Craft",
+      "phonetic": "คราฟท์",
+      "thai": "งานฝีมือ",
+      "icon": "hobby-knitting",
+      "level": "B2"
+    },
+    {
+      "id": "hb-26",
+      "word": "Recreational",
+      "phonetic": "เร็ค-รี-เอ-ชั่น-แนล",
+      "thai": "เพื่อการพักผ่อนหย่อนใจ",
+      "icon": "hobby-camping",
+      "level": "B2"
+    },
+    {
+      "id": "hb-27",
+      "word": "Sculpting",
+      "phonetic": "สคัลพ์-ติ้ง",
+      "thai": "การปั้น/แกะสลัก",
+      "icon": "hobby-painting",
+      "level": "B2"
+    },
+    {
+      "id": "hb-28",
+      "word": "Volunteer",
+      "phonetic": "วอ-ลัน-เทียร์",
+      "thai": "อาสาสมัคร",
+      "icon": "hobby-gardening",
+      "level": "B2"
+    },
+    {
+      "id": "hb-29",
+      "word": "Competitive",
+      "phonetic": "คอม-เพ-ทิ-ทิฟ",
+      "thai": "ที่มีการแข่งขัน",
+      "icon": "hobby-running",
+      "level": "B2"
+    },
+    {
+      "id": "hb-30",
+      "word": "Skillful",
+      "phonetic": "สกิล-ฟูล",
+      "thai": "มีทักษะ/ชำนาญ",
+      "icon": "hobby-guitar",
+      "level": "B2"
     }
   ],
   "feelings": [
@@ -2494,6 +3634,86 @@
       "thai": "อยากรู้อยากเห็น",
       "icon": "feeling-curious",
       "level": "B1"
+    },
+    {
+      "id": "fe-21",
+      "word": "Overwhelmed",
+      "phonetic": "โอ-เวอร์-เวล์มด",
+      "thai": "รู้สึกท่วมท้น/รับมือไม่ไหว",
+      "icon": "feeling-nervous",
+      "level": "B2"
+    },
+    {
+      "id": "fe-22",
+      "word": "Ambivalent",
+      "phonetic": "แอม-บิฟ-วะ-เลนท์",
+      "thai": "รู้สึกสองจิตสองใจ",
+      "icon": "feeling-confused",
+      "level": "B2"
+    },
+    {
+      "id": "fe-23",
+      "word": "Resentful",
+      "phonetic": "รี-เซนท์-ฟูล",
+      "thai": "รู้สึกไม่พอใจ/แค้นเคือง",
+      "icon": "feeling-angry",
+      "level": "B2"
+    },
+    {
+      "id": "fe-24",
+      "word": "Melancholy",
+      "phonetic": "เมล-แลน-คอล-ลี่",
+      "thai": "เศร้าสร้อย/หม่นหมอง",
+      "icon": "feeling-sad",
+      "level": "B2"
+    },
+    {
+      "id": "fe-25",
+      "word": "Content",
+      "phonetic": "คอน-เทนท์",
+      "thai": "พึงพอใจ",
+      "icon": "feeling-relaxed",
+      "level": "B2"
+    },
+    {
+      "id": "fe-26",
+      "word": "Apprehensive",
+      "phonetic": "แอพ-พรี-เฮน-ซิฟ",
+      "thai": "วิตกกังวล/หวาดหวั่น",
+      "icon": "feeling-worried",
+      "level": "B2"
+    },
+    {
+      "id": "fe-27",
+      "word": "Euphoric",
+      "phonetic": "ยู-ฟอ-ริค",
+      "thai": "รู้สึกปีติยินดีอย่างมาก",
+      "icon": "feeling-excited",
+      "level": "B2"
+    },
+    {
+      "id": "fe-28",
+      "word": "Indifferent",
+      "phonetic": "อิน-ดิฟ-เฟอ-เรินท์",
+      "thai": "เฉยเมย/ไม่สนใจ",
+      "icon": "feeling-bored",
+      "level": "B2"
+    },
+    {
+      "id": "fe-29",
+      "word": "Homesick",
+      "phonetic": "โฮม-ซิค",
+      "thai": "คิดถึงบ้าน",
+      "icon": "feeling-lonely",
+      "level": "B2"
+    },
+    {
+      "id": "fe-30",
+      "word": "Optimistic",
+      "phonetic": "ออพ-ทิ-มิส-ทิค",
+      "thai": "มองโลกในแง่ดี",
+      "icon": "feeling-confident",
+      "level": "B2"
     }
   ],
   "safety_officer": [
@@ -3246,6 +4466,345 @@
       "icon": "sf-wellbeing",
       "level": "B1",
       "altScript": []
+    },
+    {
+      "id": "sf-76",
+      "word": "Contingency plan",
+      "phonetic": "คอน-ทิน-เจน-ซี่ แพลน",
+      "thai": "แผนฉุกเฉินสำรอง",
+      "icon": "sf-emergency",
+      "level": "B2",
+      "partOfSpeech": "n"
+    },
+    {
+      "id": "sf-77",
+      "word": "Root cause analysis",
+      "phonetic": "รูท คอส อะ-แนล-ลิ-ซิส",
+      "thai": "การวิเคราะห์หาสาเหตุที่แท้จริง",
+      "icon": "sf-hazard",
+      "level": "B2",
+      "partOfSpeech": "n"
+    },
+    {
+      "id": "sf-78",
+      "word": "Compliance",
+      "phonetic": "คอม-ไพล-เอิ้นซ์",
+      "thai": "การปฏิบัติตามกฎระเบียบ",
+      "icon": "sf-checkup",
+      "level": "B2",
+      "partOfSpeech": "n"
+    },
+    {
+      "id": "sf-79",
+      "word": "Negligence",
+      "phonetic": "เนก-ลิ-เจินซ์",
+      "thai": "ความประมาทเลินเล่อ",
+      "icon": "sf-hazard",
+      "level": "B2",
+      "partOfSpeech": "n"
+    },
+    {
+      "id": "sf-80",
+      "word": "Mitigation",
+      "phonetic": "มิ-ทิ-เก-ชั่น",
+      "thai": "การบรรเทา/ลดความรุนแรง",
+      "icon": "sf-firstaid",
+      "level": "B2",
+      "partOfSpeech": "n"
+    },
+    {
+      "id": "sf-81",
+      "word": "Occupational hazard",
+      "phonetic": "อ็อค-คิว-เพ-ชั่น-แนล แฮ-เซิร์ด",
+      "thai": "อันตรายจากการทำงาน",
+      "icon": "sf-hazard",
+      "level": "B2",
+      "partOfSpeech": "n"
+    },
+    {
+      "id": "sf-82",
+      "word": "Incident report",
+      "phonetic": "อิน-ซิ-เดินท์ รี-พอร์ท",
+      "thai": "รายงานเหตุการณ์",
+      "icon": "sf-checkup",
+      "level": "B2",
+      "partOfSpeech": "n"
+    },
+    {
+      "id": "sf-83",
+      "word": "Liability",
+      "phonetic": "ไล-อะ-บิล-ลิ-ตี้",
+      "thai": "ความรับผิดชอบทางกฎหมาย",
+      "icon": "sf-critical",
+      "level": "B2",
+      "partOfSpeech": "n"
+    },
+    {
+      "id": "sf-84",
+      "word": "Ventilation",
+      "phonetic": "เวน-ทิ-เล-ชั่น",
+      "thai": "การระบายอากาศ",
+      "icon": "sf-wellbeing",
+      "level": "B2",
+      "partOfSpeech": "n"
+    },
+    {
+      "id": "sf-85",
+      "word": "Rehabilitation",
+      "phonetic": "รี-ฮะ-บิล-ลิ-เท-ชั่น",
+      "thai": "การฟื้นฟูสมรรถภาพ",
+      "icon": "sf-recovery",
+      "level": "B2",
+      "partOfSpeech": "n"
+    }
+  ],
+  "office_communication": [
+    {
+      "id": "oc-01",
+      "word": "Meeting",
+      "phonetic": "มี-ทิ่ง",
+      "thai": "การประชุม",
+      "icon": "office-meeting",
+      "level": "B1"
+    },
+    {
+      "id": "oc-02",
+      "word": "Agenda",
+      "phonetic": "อะ-เจน-ดา",
+      "thai": "วาระการประชุม",
+      "icon": "office-meeting",
+      "level": "B2"
+    },
+    {
+      "id": "oc-03",
+      "word": "Schedule",
+      "phonetic": "สเก็ด-จูล",
+      "thai": "กำหนดเวลา/จัดตาราง",
+      "icon": "office-calendar",
+      "level": "B1",
+      "partOfSpeech": "v"
+    },
+    {
+      "id": "oc-04",
+      "word": "Reschedule",
+      "phonetic": "รี-สเก็ด-จูล",
+      "thai": "เลื่อนนัด/จัดตารางใหม่",
+      "icon": "office-calendar",
+      "level": "B2",
+      "partOfSpeech": "v"
+    },
+    {
+      "id": "oc-05",
+      "word": "Deadline",
+      "phonetic": "เด้ด-ไลน์",
+      "thai": "เส้นตาย/กำหนดส่งงาน",
+      "icon": "office-deadline",
+      "level": "B1"
+    },
+    {
+      "id": "oc-06",
+      "word": "Postpone",
+      "phonetic": "โพส-โพน",
+      "thai": "เลื่อนออกไป",
+      "icon": "office-calendar",
+      "level": "B2",
+      "partOfSpeech": "v"
+    },
+    {
+      "id": "oc-07",
+      "word": "Email",
+      "phonetic": "อี-เมล",
+      "thai": "อีเมล",
+      "icon": "office-email",
+      "level": "B1"
+    },
+    {
+      "id": "oc-08",
+      "word": "Attachment",
+      "phonetic": "อะ-แทช-เมินท์",
+      "thai": "ไฟล์แนบ",
+      "icon": "office-email",
+      "level": "B1"
+    },
+    {
+      "id": "oc-09",
+      "word": "Forward",
+      "phonetic": "ฟอร์-เวิร์ด",
+      "thai": "ส่งต่อ",
+      "icon": "office-email",
+      "level": "B1",
+      "partOfSpeech": "v"
+    },
+    {
+      "id": "oc-10",
+      "word": "CC (carbon copy)",
+      "phonetic": "ซี-ซี",
+      "thai": "สำเนาถึง",
+      "icon": "office-email",
+      "level": "B2"
+    },
+    {
+      "id": "oc-11",
+      "word": "Feedback",
+      "phonetic": "ฟีด-แบ็ค",
+      "thai": "ข้อเสนอแนะ",
+      "icon": "office-feedback",
+      "level": "B1"
+    },
+    {
+      "id": "oc-12",
+      "word": "Constructive",
+      "phonetic": "คอน-สตรัค-ทิฟ",
+      "thai": "เชิงสร้างสรรค์",
+      "icon": "office-feedback",
+      "level": "B2"
+    },
+    {
+      "id": "oc-13",
+      "word": "Collaborate",
+      "phonetic": "คอล-แลบ-โบ-เรท",
+      "thai": "ร่วมมือ/ทำงานร่วมกัน",
+      "icon": "office-handshake",
+      "level": "B2",
+      "partOfSpeech": "v"
+    },
+    {
+      "id": "oc-14",
+      "word": "Colleague",
+      "phonetic": "คอล-ลีก",
+      "thai": "เพื่อนร่วมงาน",
+      "icon": "office-handshake",
+      "level": "B1"
+    },
+    {
+      "id": "oc-15",
+      "word": "Deadline extension",
+      "phonetic": "เด้ด-ไลน์ เอ็ก-สเทน-ชั่น",
+      "thai": "การขยายเวลาส่งงาน",
+      "icon": "office-deadline",
+      "level": "B2"
+    },
+    {
+      "id": "oc-16",
+      "word": "Report",
+      "phonetic": "รี-พอร์ท",
+      "thai": "รายงาน",
+      "icon": "office-document",
+      "level": "B1"
+    },
+    {
+      "id": "oc-17",
+      "word": "Draft",
+      "phonetic": "แดรฟท์",
+      "thai": "ร่างเอกสาร",
+      "icon": "office-document",
+      "level": "B2"
+    },
+    {
+      "id": "oc-18",
+      "word": "Proofread",
+      "phonetic": "พรูฟ-รีด",
+      "thai": "ตรวจทานแก้ไข",
+      "icon": "office-document",
+      "level": "B2",
+      "partOfSpeech": "v"
+    },
+    {
+      "id": "oc-19",
+      "word": "Status update",
+      "phonetic": "สเต-ทัส อัพ-เดท",
+      "thai": "รายงานความคืบหน้า",
+      "icon": "office-document",
+      "level": "B2"
+    },
+    {
+      "id": "oc-20",
+      "word": "Request",
+      "phonetic": "รี-เควสท์",
+      "thai": "ขอร้อง/ร้องขอ",
+      "icon": "office-meeting",
+      "level": "B1",
+      "partOfSpeech": "v"
+    },
+    {
+      "id": "oc-21",
+      "word": "Approval",
+      "phonetic": "อะ-พรู-เวิล",
+      "thai": "การอนุมัติ",
+      "icon": "office-document",
+      "level": "B2"
+    },
+    {
+      "id": "oc-22",
+      "word": "Follow up",
+      "phonetic": "ฟอล-โลว์ อัพ",
+      "thai": "ติดตามผล",
+      "icon": "office-email",
+      "level": "B2"
+    },
+    {
+      "id": "oc-23",
+      "word": "Conference call",
+      "phonetic": "คอน-เฟอ-เรินซ์ คอล",
+      "thai": "การประชุมทางโทรศัพท์",
+      "icon": "office-phone",
+      "level": "B2"
+    },
+    {
+      "id": "oc-24",
+      "word": "Voicemail",
+      "phonetic": "วอยซ์-เมล",
+      "thai": "ข้อความเสียง",
+      "icon": "office-phone",
+      "level": "B1"
+    },
+    {
+      "id": "oc-25",
+      "word": "Small talk",
+      "phonetic": "สมอล ทอล์ค",
+      "thai": "การพูดคุยทั่วไป",
+      "icon": "office-handshake",
+      "level": "B1"
+    },
+    {
+      "id": "oc-26",
+      "word": "Onboarding",
+      "phonetic": "ออน-บอร์ด-ดิ่ง",
+      "thai": "กระบวนการปฐมนิเทศพนักงานใหม่",
+      "icon": "office-handshake",
+      "level": "B2"
+    },
+    {
+      "id": "oc-27",
+      "word": "Time off",
+      "phonetic": "ไทม์ ออฟ",
+      "thai": "การลาหยุด",
+      "icon": "office-calendar",
+      "level": "B1"
+    },
+    {
+      "id": "oc-28",
+      "word": "Overtime",
+      "phonetic": "โอ-เวอร์-ไทม์",
+      "thai": "การทำงานล่วงเวลา",
+      "icon": "office-calendar",
+      "level": "B1"
+    },
+    {
+      "id": "oc-29",
+      "word": "Punctual",
+      "phonetic": "พังค์-ชวล",
+      "thai": "ตรงต่อเวลา",
+      "icon": "office-meeting",
+      "level": "B1"
+    },
+    {
+      "id": "oc-30",
+      "word": "Workload",
+      "phonetic": "เวิร์ค-โหลด",
+      "thai": "ปริมาณงาน",
+      "icon": "office-document",
+      "level": "B2"
     }
   ]
 }

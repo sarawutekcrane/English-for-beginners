@@ -146,7 +146,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "shopping_services"
   },
   {
     "id": "ask-directions",
@@ -277,7 +278,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "travel"
   },
   {
     "id": "hotel-checkin",
@@ -455,7 +457,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "travel"
   },
   {
     "id": "clothes-shopping",
@@ -633,7 +636,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "shopping_services"
   },
   {
     "id": "doctor-visit",
@@ -811,7 +815,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "shopping_services"
   },
   {
     "id": "phone-call",
@@ -989,7 +994,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "social"
   },
   {
     "id": "new-friend",
@@ -1167,7 +1173,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "social"
   },
   {
     "id": "airport-checkin",
@@ -1345,7 +1352,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "travel"
   },
   {
     "id": "weekend-plans",
@@ -1523,7 +1531,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "social"
   },
   {
     "id": "taxi-ride",
@@ -1701,7 +1710,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "travel"
   },
   {
     "id": "bank-visit",
@@ -1879,7 +1889,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "shopping_services"
   },
   {
     "id": "weather-smalltalk",
@@ -2057,7 +2068,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "social"
   },
   {
     "id": "birthday-invite",
@@ -2235,7 +2247,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "social"
   },
   {
     "id": "lost-item",
@@ -2413,7 +2426,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "shopping_services"
   },
   {
     "id": "classroom",
@@ -2591,7 +2605,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "shopping_services"
   },
   {
     "id": "report-accident",
@@ -2769,7 +2784,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "safety_officer"
   },
   {
     "id": "ask-coworker-injury",
@@ -2947,7 +2963,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "safety_officer"
   },
   {
     "id": "near-miss",
@@ -3125,7 +3142,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "safety_officer"
   },
   {
     "id": "sudden-illness",
@@ -3303,7 +3321,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "safety_officer"
   },
   {
     "id": "evacuation-procedure",
@@ -3481,7 +3500,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "safety_officer"
   },
   {
     "id": "ppe-instruction",
@@ -3659,7 +3679,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "safety_officer"
   },
   {
     "id": "recovery-followup",
@@ -3837,7 +3858,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "safety_officer"
   },
   {
     "id": "safety-inspection",
@@ -4015,7 +4037,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "safety_officer"
   },
   {
     "id": "safety-briefing-new-employee",
@@ -4193,7 +4216,8 @@
           }
         ]
       }
-    }
+    },
+    "group": "safety_officer"
   },
   {
     "id": "coordinate-ambulance",
@@ -4367,6 +4391,1507 @@
             "text": "Please hurry up.",
             "phonetic": "พลีส เฮอ-รี่ อัพ",
             "thai": "รีบมาด่วนเลยนะคะ",
+            "correct": false
+          }
+        ]
+      }
+    },
+    "group": "safety_officer"
+  },
+  {
+    "id": "schedule-meeting",
+    "title": "การนัดหมายประชุม",
+    "emoji": "📅",
+    "group": "office_communication",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Hi, do you have a minute? I'd like to schedule our project meeting.",
+          "phonetic": "ไฮ ดู ยู แฮฟ อะ มิ-นิท ไอด์ ไลค์ ทู สเก็ด-จูล เอาร์ พรอ-เจ็คท์ มี-ทิ่ง",
+          "thai": "สวัสดีค่ะ มีเวลาสักครู่ไหม ฉันอยากนัดประชุมโปรเจกต์ของเรา"
+        },
+        "options": [
+          {
+            "text": "Sure, could we meet on Thursday morning?",
+            "phonetic": "ชัวร์ คุด วี มีท ออน เธิร์ส-เดย์ มอร์-นิ่ง",
+            "thai": "ได้ค่ะ เราประชุมวันพฤหัสฯ ตอนเช้าได้ไหม",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Could we move it to 3pm instead?",
+            "phonetic": "คุด วี มูฟ อิท ทู ธรี พีเอ็ม อิน-สเทด",
+            "thai": "ขอเลื่อนเป็นบ่ายสามแทนได้ไหมคะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I already had lunch, thanks.",
+            "phonetic": "ไอ ออล-เร-ดี้ แฮด ลันช์ แธงค์ส",
+            "thai": "ฉันทานข้าวเที่ยงไปแล้วค่ะ ขอบคุณ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Thursday morning works. Could you also invite the design team?",
+          "phonetic": "เธิร์ส-เดย์ มอร์-นิ่ง เวิร์คส์ คุด ยู ออล-โซ อิน-ไวท์ เดอะ ดี-ไซน์ ทีม",
+          "thai": "เช้าวันพฤหัสฯ ได้ค่ะ ช่วยเชิญทีมดีไซน์เข้ามาด้วยได้ไหม"
+        },
+        "options": [
+          {
+            "text": "Sure, I'll send them the invite now.",
+            "phonetic": "ชัวร์ ไอล์ เซนด์ เดม ดิ อิน-ไวท์ นาว",
+            "thai": "ได้ค่ะ ฉันจะส่งคำเชิญให้พวกเขาตอนนี้เลย",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "Could you send them the invite instead?",
+            "phonetic": "คุด ยู เซนด์ เดม ดิ อิน-ไวท์ อิน-สเทด",
+            "thai": "ช่วยส่งคำเชิญให้พวกเขาแทนได้ไหมคะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "The office is on the fifth floor.",
+            "phonetic": "ดิ ออฟ-ฟิส อิส ออน เดอะ ฟิฟธ์ ฟลอร์",
+            "thai": "ออฟฟิศอยู่ชั้นห้าค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3a": {
+        "system": {
+          "text": "Great, everything's set for Thursday. Thanks for arranging this!",
+          "phonetic": "เกรท เอฟ-ริ-ธิ่ง อีส เซ็ท ฟอร์ เธิร์ส-เดย์ แธงค์ส ฟอร์ อะ-เรน-จิ่ง ดิส",
+          "thai": "เยี่ยมเลยค่ะ ทุกอย่างพร้อมสำหรับวันพฤหัสฯ ขอบคุณที่จัดการเรื่องนี้นะ"
+        },
+        "options": [
+          {
+            "text": "No problem, see you there.",
+            "phonetic": "โน พรอบ-เล็ม ซี ยู แดร์",
+            "thai": "ไม่เป็นไรค่ะ แล้วเจอกันนะ",
+            "correct": true
+          },
+          {
+            "text": "Could you confirm the meeting room too?",
+            "phonetic": "คุด ยู คอน-เฟิร์ม เดอะ มี-ทิ่ง รูม ทู",
+            "thai": "ช่วยยืนยันห้องประชุมด้วยได้ไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "I love pizza on Fridays.",
+            "phonetic": "ไอ ลัฟ พิซ-ซ่า ออน ไฟร-เดย์ส",
+            "thai": "ฉันชอบกินพิซซ่าทุกวันศุกร์",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "3pm works for me too. Could you book the small meeting room?",
+          "phonetic": "ธรี พีเอ็ม เวิร์คส์ ฟอร์ มี ทู คุด ยู บุ๊ค เดอะ สมอล มี-ทิ่ง รูม",
+          "thai": "บ่ายสามฉันก็สะดวกค่ะ ช่วยจองห้องประชุมเล็กให้ด้วยได้ไหม"
+        },
+        "options": [
+          {
+            "text": "Sure, I'll book it right away.",
+            "phonetic": "ชัวร์ ไอล์ บุ๊ค อิท ไรท์ อะ-เวย์",
+            "thai": "ได้เลยค่ะ ฉันจะจองให้ทันที",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "Could the design team book it instead?",
+            "phonetic": "คุด เดอะ ดี-ไซน์ ทีม บุ๊ค อิท อิน-สเทด",
+            "thai": "ให้ทีมดีไซน์จองแทนได้ไหมคะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I forgot my umbrella today.",
+            "phonetic": "ไอ ฟอร์-กอท มาย อัม-เบรล-ล่า ทู-เดย์",
+            "thai": "วันนี้ฉันลืมเอาร่มมาค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3b": {
+        "system": {
+          "text": "Perfect, the room is booked for 3pm on Thursday.",
+          "phonetic": "เพอร์-เฟ็คท์ เดอะ รูม อีส บุ๊คท์ ฟอร์ ธรี พีเอ็ม ออน เธิร์ส-เดย์",
+          "thai": "เยี่ยมเลยค่ะ ห้องประชุมจองไว้แล้วสำหรับบ่ายสามวันพฤหัสฯ"
+        },
+        "options": [
+          {
+            "text": "Thanks, see you then.",
+            "phonetic": "แธงค์ส ซี ยู เดน",
+            "thai": "ขอบคุณค่ะ แล้วเจอกันนะ",
+            "correct": true
+          },
+          {
+            "text": "Could we also share the agenda beforehand?",
+            "phonetic": "คุด วี ออล-โซ แชร์ ดิ อะ-เจน-ดา บิ-ฟอร์-แฮนด์",
+            "thai": "ขอวาระการประชุมล่วงหน้าด้วยได้ไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "My computer is very old.",
+            "phonetic": "มาย คอม-พิว-เทอร์ อีส เว-รี่ โอลด์",
+            "thai": "คอมพิวเตอร์ของฉันเก่ามากเลยค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "request-time-off",
+    "title": "การขอลาหยุดงาน",
+    "emoji": "🏖️",
+    "group": "office_communication",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Hi, what can I do for you?",
+          "phonetic": "ไฮ วอท แคน ไอ ดู ฟอร์ ยู",
+          "thai": "สวัสดีค่ะ มีอะไรให้ช่วยไหม"
+        },
+        "options": [
+          {
+            "text": "I'm going to take next Monday off, if that's okay.",
+            "phonetic": "แอม โก-อิ่ง ทู เทค เน็กซท์ มัน-เดย์ ออฟ อิฟ แดทส์ โอ-เค",
+            "thai": "ฉันจะขอลาหยุดวันจันทร์หน้าค่ะ ถ้าโอเค",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "I'm going to need a week off for a family trip.",
+            "phonetic": "แอม โก-อิ่ง ทู นีด อะ วีค ออฟ ฟอร์ อะ แฟ-มิ-ลี่ ทริพ",
+            "thai": "ฉันจะขอลาหนึ่งสัปดาห์เพื่อไปเที่ยวกับครอบครัวค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I really like the new coffee machine.",
+            "phonetic": "ไอ เรียล-ลี่ ไลค์ เดอะ นิว คอฟ-ฟี่ มะ-ชีน",
+            "thai": "ฉันชอบเครื่องชงกาแฟใหม่มากเลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "That should be fine. Are you going to finish your report before then?",
+          "phonetic": "แดท ชุด บี ไฟน์ อาร์ ยู โก-อิ่ง ทู ฟิ-นิช ยัวร์ รี-พอร์ท บิ-ฟอร์ เดน",
+          "thai": "น่าจะได้ค่ะ คุณจะทำรายงานเสร็จก่อนหน้านั้นไหม"
+        },
+        "options": [
+          {
+            "text": "Yes, I'm going to finish it by Friday.",
+            "phonetic": "เยส แอม โก-อิ่ง ทู ฟิ-นิช อิท บาย ไฟร-เดย์",
+            "thai": "ค่ะ ฉันจะทำเสร็จภายในวันศุกร์",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I'm going to ask my colleague to help finish it.",
+            "phonetic": "แอม โก-อิ่ง ทู อาสค์ มาย คอล-ลีก ทู เฮลพ์ ฟิ-นิช อิท",
+            "thai": "ฉันจะขอให้เพื่อนร่วมงานช่วยทำให้เสร็จค่ะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "The weather looks nice today.",
+            "phonetic": "เดอะ เว-เธอร์ ลุคส์ ไนซ์ ทู-เดย์",
+            "thai": "วันนี้อากาศดูดีนะคะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3a": {
+        "system": {
+          "text": "Great, I'll approve your day off then.",
+          "phonetic": "เกรท ไอล์ อะ-พรูฟ ยัวร์ เดย์ ออฟ เดน",
+          "thai": "เยี่ยมเลยค่ะ งั้นฉันจะอนุมัติวันลาให้"
+        },
+        "options": [
+          {
+            "text": "Thank you so much!",
+            "phonetic": "แธงค์ ยู โซ มัช",
+            "thai": "ขอบคุณมากเลยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I'm going to submit the leave form today.",
+            "phonetic": "แอม โก-อิ่ง ทู ซับ-มิท เดอะ ลีฟ ฟอร์ม ทู-เดย์",
+            "thai": "ฉันจะส่งใบลาให้วันนี้เลยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "My favorite color is blue.",
+            "phonetic": "มาย เฟ-เวอ-ริท คัล-เลอร์ อีส บลู",
+            "thai": "สีโปรดของฉันคือสีฟ้าค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "A week is a bit long. Are you going to be reachable by email?",
+          "phonetic": "อะ วีค อีส อะ บิท ลอง อาร์ ยู โก-อิ่ง ทู บี รี-ชะ-เบิล บาย อี-เมล",
+          "thai": "หนึ่งสัปดาห์นานสักหน่อยนะคะ คุณจะติดต่อทางอีเมลได้ไหม"
+        },
+        "options": [
+          {
+            "text": "Yes, I'm going to check my email once a day.",
+            "phonetic": "เยส แอม โก-อิ่ง ทู เช็ค มาย อี-เมล วันซ์ อะ เดย์",
+            "thai": "ได้ค่ะ ฉันจะเช็คอีเมลวันละครั้ง",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I'm going to hand everything over to my colleague first.",
+            "phonetic": "แอม โก-อิ่ง ทู แฮนด์ เอฟ-ริ-ธิ่ง โอ-เวอร์ ทู มาย คอล-ลีก เฟิร์สท์",
+            "thai": "ฉันจะส่งมอบงานให้เพื่อนร่วมงานก่อนค่ะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I don't have a car.",
+            "phonetic": "ไอ โด้นท์ แฮฟ อะ คาร์",
+            "thai": "ฉันไม่มีรถค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3b": {
+        "system": {
+          "text": "Sounds good. Enjoy your trip!",
+          "phonetic": "เซาน์ดส์ กู๊ด เอน-จอย ยัวร์ ทริพ",
+          "thai": "ฟังดูดีค่ะ ขอให้เที่ยวให้สนุกนะ"
+        },
+        "options": [
+          {
+            "text": "Thank you, I will!",
+            "phonetic": "แธงค์ ยู ไอ วิล",
+            "thai": "ขอบคุณค่ะ จะไปให้สนุกเลย",
+            "correct": true
+          },
+          {
+            "text": "I'm going to bring you a souvenir.",
+            "phonetic": "แอม โก-อิ่ง ทู บริง ยู อะ ซู-เวอ-เนียร์",
+            "thai": "ฉันจะซื้อของฝากมาให้ด้วยนะคะ",
+            "correct": true
+          },
+          {
+            "text": "The printer is out of paper.",
+            "phonetic": "เดอะ พริน-เทอร์ อีส เอาท์ ออฟ เพ-เพอร์",
+            "thai": "เครื่องพิมพ์กระดาษหมดค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "give-status-update",
+    "title": "การรายงานความคืบหน้างาน",
+    "emoji": "📊",
+    "group": "office_communication",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "How's the project going? Can you give me a quick update?",
+          "phonetic": "ฮาวส์ เดอะ พรอ-เจ็คท์ โก-อิ่ง แคน ยู กิฟ มี อะ ควิค อัพ-เดท",
+          "thai": "โปรเจกต์เป็นยังไงบ้างคะ ขออัพเดทสั้นๆ ได้ไหม"
+        },
+        "options": [
+          {
+            "text": "I'm currently working on the report.",
+            "phonetic": "แอม เคอ-เรินท์-ลี่ เวิร์ค-กิ่ง ออน เดอะ รี-พอร์ท",
+            "thai": "ตอนนี้ฉันกำลังทำรายงานอยู่ค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "I'm still waiting for feedback from the client.",
+            "phonetic": "แอม สทิล เว-ทิ่ง ฟอร์ ฟีด-แบ็ค ฟรอม เดอะ ไคลเอินท์",
+            "thai": "ตอนนี้ฉันกำลังรอฟีดแบ็คจากลูกค้าอยู่ค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I usually eat lunch at noon.",
+            "phonetic": "ไอ ยู-ชวล-ลี่ อีท ลันช์ แอท นูน",
+            "thai": "ปกติฉันทานข้าวเที่ยงตอนเที่ยงค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Good. Are you facing any problems right now?",
+          "phonetic": "กู๊ด อาร์ ยู เฟ-ซิ่ง เอ-นี่ พรอบ-เล็มส์ ไรท์ นาว",
+          "thai": "ดีค่ะ ตอนนี้เจอปัญหาอะไรอยู่ไหม"
+        },
+        "options": [
+          {
+            "text": "No, I'm making good progress.",
+            "phonetic": "โน แอม เม-กิ่ง กู๊ด พรอ-เกรส",
+            "thai": "ไม่มีค่ะ ตอนนี้คืบหน้าไปด้วยดี",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I'm running a bit behind schedule.",
+            "phonetic": "แอม รัน-นิ่ง อะ บิท บิ-ไฮนด์ สเก็ด-จูล",
+            "thai": "ตอนนี้ฉันช้ากว่ากำหนดนิดหน่อยค่ะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I really enjoy hiking on weekends.",
+            "phonetic": "ไอ เรียล-ลี่ เอน-จอย ไฮ-กิ่ง ออน วีค-เอนด์ส",
+            "thai": "ฉันชอบไปเดินป่าช่วงสุดสัปดาห์ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3a": {
+        "system": {
+          "text": "Alright, keep me posted. Thanks for the update.",
+          "phonetic": "ออล-ไรท์ คีพ มี โพส-ทิด แธงค์ส ฟอร์ ดิ อัพ-เดท",
+          "thai": "โอเคค่ะ อัพเดทให้ทราบเรื่อยๆ นะ ขอบคุณสำหรับข้อมูล"
+        },
+        "options": [
+          {
+            "text": "Sure, I'll let you know tomorrow.",
+            "phonetic": "ชัวร์ ไอล์ เล็ท ยู โนว์ ทู-มอร์-โรว์",
+            "thai": "ได้ค่ะ พรุ่งนี้จะแจ้งให้ทราบนะคะ",
+            "correct": true
+          },
+          {
+            "text": "I'm currently drafting the summary too.",
+            "phonetic": "แอม เคอ-เรินท์-ลี่ แดรฟ-ติ่ง เดอะ ซัม-มา-รี่ ทู",
+            "thai": "ตอนนี้ฉันกำลังร่างสรุปด้วยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "The coffee here is too strong.",
+            "phonetic": "เดอะ คอฟ-ฟี่ เฮียร์ อีส ทู สตรอง",
+            "thai": "กาแฟที่นี่เข้มไปหน่อยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "I see. Are you doing anything else while you wait?",
+          "phonetic": "ไอ ซี อาร์ ยู ดู-อิ่ง เอ-นี่-ธิ่ง เอลส์ ไวล์ ยู เวท",
+          "thai": "เข้าใจแล้วค่ะ ระหว่างรอมีทำอย่างอื่นด้วยไหม"
+        },
+        "options": [
+          {
+            "text": "Yes, I'm preparing the next phase in the meantime.",
+            "phonetic": "เยส แอม พรี-แพ-ริ่ง เดอะ เน็กซท์ เฟส อิน เดอะ มีน-ไทม์",
+            "thai": "ค่ะ ระหว่างนี้ฉันกำลังเตรียมเฟสถัดไปอยู่",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I'm following up with the client every two days.",
+            "phonetic": "แอม ฟอล-โล-อิ่ง อัพ วิธ เดอะ ไคลเอินท์ เอฟ-รี่ ทู เดย์ส",
+            "thai": "ฉันกำลังติดตามลูกค้าทุกสองวันค่ะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I forgot to bring my umbrella.",
+            "phonetic": "ไอ ฟอร์-กอท ทู บริง มาย อัม-เบรล-ล่า",
+            "thai": "ฉันลืมเอาร่มมาค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3b": {
+        "system": {
+          "text": "Good thinking. Please update me once you hear back.",
+          "phonetic": "กู๊ด ธิงค์-กิ่ง พลีส อัพ-เดท มี วันซ์ ยู เฮียร์ แบ็ค",
+          "thai": "คิดได้ดีค่ะ พอได้คำตอบแล้วช่วยแจ้งฉันด้วยนะ"
+        },
+        "options": [
+          {
+            "text": "Of course, I'll let you know right away.",
+            "phonetic": "ออฟ คอร์ส ไอล์ เล็ท ยู โนว์ ไรท์ อะ-เวย์",
+            "thai": "ได้เลยค่ะ พอรู้จะแจ้งทันที",
+            "correct": true
+          },
+          {
+            "text": "I'm also updating the shared document now.",
+            "phonetic": "แอม ออล-โซ อัพ-เด-ทิ่ง เดอะ แชร์ด ด็อค-คิว-เมนท์ นาว",
+            "thai": "ตอนนี้ฉันกำลังอัพเดทเอกสารที่แชร์ไว้ด้วยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I don't like spicy food.",
+            "phonetic": "ไอ โด้นท์ ไลค์ สไป-ซี่ ฟู้ด",
+            "thai": "ฉันไม่ชอบอาหารเผ็ดค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "ask-colleague-help",
+    "title": "การขอให้เพื่อนร่วมงานช่วยเหลือ",
+    "emoji": "🙋",
+    "group": "office_communication",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Hey, you look busy. What's up?",
+          "phonetic": "เฮย์ ยู ลุค บิ-ซี่ วอทส์ อัพ",
+          "thai": "เฮ้ ดูยุ่งๆ นะ มีอะไรเหรอ"
+        },
+        "options": [
+          {
+            "text": "Do you have a minute to help me with this file?",
+            "phonetic": "ดู ยู แฮฟ อะ มิ-นิท ทู เฮลพ์ มี วิธ ดิส ไฟล์",
+            "thai": "คุณมีเวลาสักครู่ช่วยฉันดูไฟล์นี้ไหม",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Do you have experience with this software?",
+            "phonetic": "ดู ยู แฮฟ เอ็กซ์-พี-เรียนซ์ วิธ ดิส ซอฟท์-แวร์",
+            "thai": "คุณมีประสบการณ์ใช้ซอฟต์แวร์นี้ไหม",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I have a new phone.",
+            "phonetic": "ไอ แฮฟ อะ นิว โฟน",
+            "thai": "ฉันมีโทรศัพท์เครื่องใหม่",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Sure, what seems to be the problem?",
+          "phonetic": "ชัวร์ วอท ซีมส์ ทู บี เดอะ พรอบ-เล็ม",
+          "thai": "ได้เลย มีปัญหาอะไรเหรอ"
+        },
+        "options": [
+          {
+            "text": "I don't have the right format for this table.",
+            "phonetic": "ไอ โด้นท์ แฮฟ เดอะ ไรท์ ฟอร์-แมท ฟอร์ ดิส เท-เบิล",
+            "thai": "ฉันไม่มีรูปแบบตารางที่ถูกต้องค่ะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I have some numbers that don't match.",
+            "phonetic": "ไอ แฮฟ ซัม นัม-เบอร์ส แดท โด้นท์ แมทช์",
+            "thai": "ฉันมีตัวเลขบางส่วนที่ไม่ตรงกันค่ะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I have three cats at home.",
+            "phonetic": "ไอ แฮฟ ธรี แคทส์ แอท โฮม",
+            "thai": "ฉันมีแมวสามตัวที่บ้าน",
+            "correct": false
+          }
+        ]
+      },
+      "n3a": {
+        "system": {
+          "text": "Ah, I see it now. Let's fix it together.",
+          "phonetic": "อาห์ ไอ ซี อิท นาว เล็ทส์ ฟิกซ์ อิท ทู-เก-เธอร์",
+          "thai": "อ๋อ เห็นแล้วค่ะ มาแก้ด้วยกันนะ"
+        },
+        "options": [
+          {
+            "text": "Thank you so much, I really appreciate it.",
+            "phonetic": "แธงค์ ยู โซ มัช ไอ เรียล-ลี่ แอพ-พรี-ชี-เอท อิท",
+            "thai": "ขอบคุณมากเลยค่ะ ซาบซึ้งใจจริงๆ",
+            "correct": true
+          },
+          {
+            "text": "Do you have time tomorrow to check it again?",
+            "phonetic": "ดู ยู แฮฟ ไทม์ ทู-มอร์-โรว์ ทู เช็ค อิท อะ-เกน",
+            "thai": "พรุ่งนี้มีเวลาช่วยเช็คให้อีกครั้งไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "I have a headache today.",
+            "phonetic": "ไอ แฮฟ อะ เฮด-เอค ทู-เดย์",
+            "thai": "วันนี้ฉันปวดหัวค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Yes, I use it every day. What do you need to know?",
+          "phonetic": "เยส ไอ ยูส อิท เอฟ-ริ เดย์ วอท ดู ยู นีด ทู โนว์",
+          "thai": "ค่ะ ฉันใช้ทุกวันเลย อยากรู้อะไรเหรอ"
+        },
+        "options": [
+          {
+            "text": "I don't have access to this feature.",
+            "phonetic": "ไอ โด้นท์ แฮฟ แอค-เซส ทู ดิส ฟี-เชอร์",
+            "thai": "ฉันไม่มีสิทธิ์เข้าถึงฟีเจอร์นี้ค่ะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I don't have a clear idea how to export this.",
+            "phonetic": "ไอ โด้นท์ แฮฟ อะ เคลียร์ ไอ-เดีย ฮาว ทู เอ็ก-สปอร์ท ดิส",
+            "thai": "ฉันไม่รู้วิธีเอ็กซ์พอร์ตไฟล์นี้ค่ะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I have a meeting at noon.",
+            "phonetic": "ไอ แฮฟ อะ มี-ทิ่ง แอท นูน",
+            "thai": "ฉันมีประชุมตอนเที่ยงค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3b": {
+        "system": {
+          "text": "No problem, let me show you step by step.",
+          "phonetic": "โน พรอบ-เล็ม เล็ท มี โชว์ ยู สเต็พ บาย สเต็พ",
+          "thai": "ไม่มีปัญหาเลย เดี๋ยวสอนทีละขั้นตอนนะ"
+        },
+        "options": [
+          {
+            "text": "That would be great, thank you.",
+            "phonetic": "แดท วุด บี เกรท แธงค์ ยู",
+            "thai": "ดีเลยค่ะ ขอบคุณมากนะ",
+            "correct": true
+          },
+          {
+            "text": "Do you have a few extra minutes for this?",
+            "phonetic": "ดู ยู แฮฟ อะ ฟิว เอ็กซ์-ทรา มิ-นิทส์ ฟอร์ ดิส",
+            "thai": "มีเวลาว่างอีกสักหน่อยไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "I have a big dog at home.",
+            "phonetic": "ไอ แฮฟ อะ บิก ดอก แอท โฮม",
+            "thai": "ฉันมีหมาตัวใหญ่ที่บ้านค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "respond-to-feedback",
+    "title": "การตอบรับข้อเสนอแนะ",
+    "emoji": "💬",
+    "group": "office_communication",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "I reviewed your report. I have some feedback for you.",
+          "phonetic": "ไอ รี-วิว ยัวร์ รี-พอร์ท ไอ แฮฟ ซัม ฟีด-แบ็ค ฟอร์ ยู",
+          "thai": "ฉันตรวจรายงานของคุณแล้ว มีข้อเสนอแนะให้นิดหน่อย"
+        },
+        "options": [
+          {
+            "text": "Thanks, I appreciated your comments yesterday too.",
+            "phonetic": "แธงค์ส ไอ แอพ-พรี-ชี-เอ-ทิด ยัวร์ คอม-เมนท์ส เยส-เทอร์-เดย์ ทู",
+            "thai": "ขอบคุณค่ะ เมื่อวานฉันก็ซาบซึ้งกับความเห็นของคุณเหมือนกัน",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Sure, I fixed the numbers you mentioned last week.",
+            "phonetic": "ชัวร์ ไอ ฟิกซ์ด เดอะ นัม-เบอร์ส ยู เมน-ชั่นด์ ลาสท์ วีค",
+            "thai": "ได้ค่ะ ฉันแก้ตัวเลขที่คุณพูดถึงเมื่อสัปดาห์ก่อนแล้ว",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I watched a movie last night.",
+            "phonetic": "ไอ วอทช์ท อะ มู-วี่ ลาสท์ ไนท์",
+            "thai": "เมื่อคืนฉันดูหนังมาค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Good. I noticed the summary was a bit unclear.",
+          "phonetic": "กู๊ด ไอ โน-ทิสท์ เดอะ ซัม-มา-รี่ วอส อะ บิท อัน-เคลียร์",
+          "thai": "ดีค่ะ ฉันสังเกตว่าส่วนสรุปยังไม่ค่อยชัดเจน"
+        },
+        "options": [
+          {
+            "text": "I wrote it quickly, so I'll revise it today.",
+            "phonetic": "ไอ โรท อิท ควิค-ลี่ โซ ไอล์ รี-ไวส์ อิท ทู-เดย์",
+            "thai": "ฉันเขียนเร็วไปหน่อยค่ะ วันนี้จะแก้ไขให้",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I finished that section last, so I rushed it.",
+            "phonetic": "ไอ ฟิ-นิชท์ แดท เซ็ค-ชั่น ลาสท์ โซ ไอ รัชท์ อิท",
+            "thai": "ฉันทำส่วนนั้นเสร็จทีหลัง เลยรีบไปหน่อยค่ะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I like tea more than coffee.",
+            "phonetic": "ไอ ไลค์ ที มอร์ แดน คอฟ-ฟี่",
+            "thai": "ฉันชอบชามากกว่ากาแฟค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3a": {
+        "system": {
+          "text": "That's understandable. Thanks for taking the feedback well.",
+          "phonetic": "แดทส์ อัน-เดอร์-สแทน-ดะ-เบิล แธงค์ส ฟอร์ เท-กิ่ง เดอะ ฟีด-แบ็ค เวล",
+          "thai": "เข้าใจได้ค่ะ ขอบคุณที่รับฟังข้อเสนอแนะด้วยดีนะ"
+        },
+        "options": [
+          {
+            "text": "Thank you, I always try to improve.",
+            "phonetic": "แธงค์ ยู ไอ ออล-เวส์ ทราย ทู อิม-พรูฟ",
+            "thai": "ขอบคุณค่ะ ฉันพยายามพัฒนาตัวเองเสมอ",
+            "correct": true
+          },
+          {
+            "text": "I finished the revision this afternoon.",
+            "phonetic": "ไอ ฟิ-นิชท์ เดอะ รี-วิ-ชั่น ดิส แอฟ-เทอร์-นูน",
+            "thai": "บ่ายนี้ฉันแก้ไขเสร็จแล้วค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I lived in Chiang Mai for two years.",
+            "phonetic": "ไอ ลิฟด์ อิน เชียง ไม ฟอร์ ทู เยียร์ส",
+            "thai": "ฉันเคยอยู่เชียงใหม่สองปีค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Perfect. I also checked the new version this morning.",
+          "phonetic": "เพอร์-เฟ็คท์ ไอ ออล-โซ เช็คท์ เดอะ นิว เวอร์-ชั่น ดิส มอร์-นิ่ง",
+          "thai": "เยี่ยมเลยค่ะ เมื่อเช้าฉันก็ตรวจเวอร์ชันใหม่ไปแล้วด้วย"
+        },
+        "options": [
+          {
+            "text": "Great, I double-checked it myself too.",
+            "phonetic": "เกรท ไอ ดับ-เบิล-เช็คท์ อิท มาย-เซลฟ์ ทู",
+            "thai": "เยี่ยมค่ะ ฉันก็เช็คซ้ำด้วยตัวเองแล้วเหมือนกัน",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I asked a colleague to review it as well.",
+            "phonetic": "ไอ อาสค์ท อะ คอล-ลีก ทู รี-วิว อิท แอส เวล",
+            "thai": "ฉันให้เพื่อนร่วมงานช่วยตรวจด้วยค่ะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I bought new shoes yesterday.",
+            "phonetic": "ไอ บอท นิว ชูส์ เยส-เทอร์-เดย์",
+            "thai": "เมื่อวานฉันซื้อรองเท้าคู่ใหม่มาค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3b": {
+        "system": {
+          "text": "Excellent work. I'm happy with the changes.",
+          "phonetic": "เอ็ก-เซล-เลินท์ เวิร์ค แอม แฮพ-พี วิธ เดอะ เชนจ์-เจส",
+          "thai": "ทำได้ดีมากเลยค่ะ ฉันพอใจกับการแก้ไขนี้"
+        },
+        "options": [
+          {
+            "text": "Thank you, that means a lot.",
+            "phonetic": "แธงค์ ยู แดท มีนส์ อะ ลอท",
+            "thai": "ขอบคุณค่ะ มีความหมายกับฉันมากเลย",
+            "correct": true
+          },
+          {
+            "text": "I really learned a lot from your feedback.",
+            "phonetic": "ไอ เรียล-ลี่ เลิร์นด์ อะ ลอท ฟรอม ยัวร์ ฟีด-แบ็ค",
+            "thai": "ฉันได้เรียนรู้อะไรเยอะมากจากข้อเสนอแนะของคุณค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I forgot my badge at home.",
+            "phonetic": "ไอ ฟอร์-กอท มาย แบดจ์ แอท โฮม",
+            "thai": "ฉันลืมบัตรพนักงานไว้ที่บ้านค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "clarify-deadline",
+    "title": "การสอบถามและยืนยันกำหนดส่งงาน",
+    "emoji": "⏰",
+    "group": "office_communication",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Just checking, when is this task due?",
+          "phonetic": "จัสท์ เช็ค-กิ่ง เวน อีส ดิส ทาสค์ ดิว",
+          "thai": "ขอถามหน่อยค่ะ งานนี้กำหนดส่งเมื่อไหร่"
+        },
+        "options": [
+          {
+            "text": "If you finish it by Friday, that will be perfect.",
+            "phonetic": "อิฟ ยู ฟิ-นิช อิท บาย ไฟร-เดย์ แดท วิล บี เพอร์-เฟ็คท์",
+            "thai": "ถ้าคุณทำเสร็จภายในวันศุกร์ก็จะดีมากเลย",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "If it's not urgent, next Monday is fine too.",
+            "phonetic": "อิฟ อิทส์ นอท เออร์-เจนท์ เน็กซท์ มัน-เดย์ อีส ไฟน์ ทู",
+            "thai": "ถ้าไม่เร่งด่วน วันจันทร์หน้าก็ได้เหมือนกัน",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "The office plants need more water.",
+            "phonetic": "ดิ ออฟ-ฟิส แพลนท์ส นีด มอร์ วอ-เทอร์",
+            "thai": "ต้นไม้ในออฟฟิศต้องการน้ำเพิ่มค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Okay. If I finish it early, I'll send it to you right away.",
+          "phonetic": "โอ-เค อิฟ ไอ ฟิ-นิช อิท เอิร์ล-ลี่ ไอล์ เซนด์ อิท ทู ยู ไรท์ อะ-เวย์",
+          "thai": "โอเคค่ะ ถ้าฉันทำเสร็จก่อน จะส่งให้ทันทีเลย"
+        },
+        "options": [
+          {
+            "text": "If you need more time, just let me know.",
+            "phonetic": "อิฟ ยู นีด มอร์ ไทม์ จัสท์ เล็ท มี โนว์",
+            "thai": "ถ้าต้องการเวลาเพิ่ม บอกฉันได้เลยนะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "If there's any problem, I'll help you right away.",
+            "phonetic": "อิฟ แดร์ส เอ-นี่ พรอบ-เล็ม ไอล์ เฮลพ์ ยู ไรท์ อะ-เวย์",
+            "thai": "ถ้ามีปัญหาอะไร ฉันจะช่วยทันทีเลยค่ะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I like the new office chairs.",
+            "phonetic": "ไอ ไลค์ เดอะ นิว ออฟ-ฟิส แชร์ส",
+            "thai": "ฉันชอบเก้าอี้ออฟฟิศตัวใหม่ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3a": {
+        "system": {
+          "text": "Thanks, I'll do my best to meet the deadline.",
+          "phonetic": "แธงค์ส ไอล์ ดู มาย เบสท์ ทู มีท เดอะ เด้ด-ไลน์",
+          "thai": "ขอบคุณค่ะ ฉันจะพยายามอย่างเต็มที่ให้ทันกำหนดส่ง"
+        },
+        "options": [
+          {
+            "text": "Great, I trust you.",
+            "phonetic": "เกรท ไอ ทรัสท์ ยู",
+            "thai": "เยี่ยมเลยค่ะ ฉันเชื่อใจคุณนะ",
+            "correct": true
+          },
+          {
+            "text": "If anything changes, I'll update you first.",
+            "phonetic": "อิฟ เอ-นี่-ธิ่ง เชนจ์-เจส ไอล์ อัพ-เดท ยู เฟิร์สท์",
+            "thai": "ถ้ามีอะไรเปลี่ยนแปลง ฉันจะแจ้งคุณก่อนเลยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "The parking lot is full today.",
+            "phonetic": "เดอะ พาร์-กิ้ง ลอท อีส ฟูล ทู-เดย์",
+            "thai": "วันนี้ที่จอดรถเต็มค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Sounds good. If your plans change, please tell me.",
+          "phonetic": "เซาน์ดส์ กู๊ด อิฟ ยัวร์ แพลนส์ เชนจ์ พลีส เทล มี",
+          "thai": "ฟังดูดีค่ะ ถ้าแผนของคุณเปลี่ยน ช่วยบอกฉันด้วยนะ"
+        },
+        "options": [
+          {
+            "text": "If I finish it sooner, I'll let you know.",
+            "phonetic": "อิฟ ไอ ฟิ-นิช อิท ซู-เนอร์ ไอล์ เล็ท ยู โนว์",
+            "thai": "ถ้าฉันทำเสร็จเร็วกว่านั้น จะแจ้งให้ทราบค่ะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "If Monday isn't enough, I'll ask for one more day.",
+            "phonetic": "อิฟ มัน-เดย์ อิสซึ่นท์ อี-นัฟ ไอล์ อาสค์ ฟอร์ วัน มอร์ เดย์",
+            "thai": "ถ้าวันจันทร์ไม่พอ ฉันจะขอเพิ่มอีกหนึ่งวันค่ะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I forgot to lock my desk drawer.",
+            "phonetic": "ไอ ฟอร์-กอท ทู ล็อค มาย เดสค์ ดรอ-เออร์",
+            "thai": "ฉันลืมล็อกลิ้นชักโต๊ะทำงานค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3b": {
+        "system": {
+          "text": "That works for me. Thanks for the clear plan.",
+          "phonetic": "แดท เวิร์คส์ ฟอร์ มี แธงค์ส ฟอร์ เดอะ เคลียร์ แพลน",
+          "thai": "โอเคเลยค่ะ ขอบคุณที่วางแผนไว้ชัดเจนนะ"
+        },
+        "options": [
+          {
+            "text": "No problem, thanks for understanding.",
+            "phonetic": "โน พรอบ-เล็ม แธงค์ส ฟอร์ อัน-เดอร์-สแทน-ดิ่ง",
+            "thai": "ไม่เป็นไรค่ะ ขอบคุณที่เข้าใจนะ",
+            "correct": true
+          },
+          {
+            "text": "If I need help, I'll ask you first.",
+            "phonetic": "อิฟ ไอ นีด เฮลพ์ ไอล์ อาสค์ ยู เฟิร์สท์",
+            "thai": "ถ้าฉันต้องการความช่วยเหลือ จะขอคุณก่อนเลยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "The vending machine is out of order.",
+            "phonetic": "เดอะ เวน-ดิ่ง มะ-ชีน อีส เอาท์ ออฟ ออร์-เดอร์",
+            "thai": "ตู้กดเครื่องดื่มเสียค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "coworker-smalltalk",
+    "title": "การพูดคุยเล็กๆ น้อยๆ กับเพื่อนร่วมงาน",
+    "emoji": "☕",
+    "group": "office_communication",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Good morning! Do you usually get coffee before work?",
+          "phonetic": "กู๊ด มอร์-นิ่ง ดู ยู ยู-ชวล-ลี่ เก็ท คอฟ-ฟี่ บิ-ฟอร์ เวิร์ค",
+          "thai": "อรุณสวัสดิ์ค่ะ ปกติคุณซื้อกาแฟก่อนมาทำงานไหม"
+        },
+        "options": [
+          {
+            "text": "Yes, I usually stop by the cafe downstairs.",
+            "phonetic": "เยส ไอ ยู-ชวล-ลี่ สทอพ บาย เดอะ คา-เฟ่ ดาวน์-สแตร์ส",
+            "thai": "ค่ะ ปกติฉันแวะร้านกาแฟชั้นล่างก่อนค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "I usually make coffee at my desk instead.",
+            "phonetic": "ไอ ยู-ชวล-ลี่ เมค คอฟ-ฟี่ แอท มาย เดสค์ อิน-สเทด",
+            "thai": "ปกติฉันชงกาแฟกินที่โต๊ะทำงานแทนค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I don't have a car.",
+            "phonetic": "ไอ โด้นท์ แฮฟ อะ คาร์",
+            "thai": "ฉันไม่มีรถค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Nice! What do you usually order there?",
+          "phonetic": "ไนซ์ วอท ดู ยู ยู-ชวล-ลี่ ออร์-เดอร์ แดร์",
+          "thai": "ดีจังค่ะ ปกติสั่งอะไรที่ร้านนั้นเหรอ"
+        },
+        "options": [
+          {
+            "text": "I usually order a latte with less sugar.",
+            "phonetic": "ไอ ยู-ชวล-ลี่ ออร์-เดอร์ อะ ลา-เต้ วิธ เลส ชู-การ์",
+            "thai": "ปกติฉันสั่งลาเต้หวานน้อยค่ะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I usually try something new every week.",
+            "phonetic": "ไอ ยู-ชวล-ลี่ ทราย ซัม-ธิ่ง นิว เอฟ-ริ วีค",
+            "thai": "ปกติฉันลองอะไรใหม่ๆ ทุกสัปดาห์เลยค่ะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I go to the gym every night.",
+            "phonetic": "ไอ โก ทู เดอะ จิม เอฟ-ริ ไนท์",
+            "thai": "ฉันไปยิมทุกคืนค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3a": {
+        "system": {
+          "text": "Sounds great, maybe I'll join you sometime.",
+          "phonetic": "เซาน์ดส์ เกรท เมย์บี ไอล์ จอยน์ ยู ซัม-ไทม์",
+          "thai": "ฟังดูดีเลยค่ะ ไว้วันหลังขอไปด้วยนะ"
+        },
+        "options": [
+          {
+            "text": "Sure, I usually go around 8am.",
+            "phonetic": "ชัวร์ ไอ ยู-ชวล-ลี่ โก อะ-ราวนด์ เอท เอเอ็ม",
+            "thai": "ได้เลยค่ะ ปกติฉันไปประมาณแปดโมงเช้า",
+            "correct": true
+          },
+          {
+            "text": "That would be fun!",
+            "phonetic": "แดท วุด บี ฟัน",
+            "thai": "สนุกแน่เลยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "My computer restarted this morning.",
+            "phonetic": "มาย คอม-พิว-เทอร์ รี-สตาร์ท-ทิด ดิส มอร์-นิ่ง",
+            "thai": "เมื่อเช้าคอมพิวเตอร์ของฉันรีสตาร์ทค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "That's nice. Does your desk have a coffee maker?",
+          "phonetic": "แดทส์ ไนซ์ ดัส ยัวร์ เดสค์ แฮฟ อะ คอฟ-ฟี่ เม-เคอร์",
+          "thai": "ดีจังค่ะ ที่โต๊ะคุณมีเครื่องชงกาแฟด้วยเหรอ"
+        },
+        "options": [
+          {
+            "text": "Yes, I bring a small one from home.",
+            "phonetic": "เยส ไอ บริง อะ สมอล วัน ฟรอม โฮม",
+            "thai": "ค่ะ ฉันเอาเครื่องเล็กๆ มาจากบ้านค่ะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I usually just use the pantry instead.",
+            "phonetic": "ไอ ยู-ชวล-ลี่ จัสท์ ยูส เดอะ แพน-ทรี่ อิน-สเทด",
+            "thai": "ปกติฉันใช้ห้องครัวออฟฟิศแทนค่ะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I have two brothers.",
+            "phonetic": "ไอ แฮฟ ทู บรา-เธอร์ส",
+            "thai": "ฉันมีพี่ชายสองคนค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3b": {
+        "system": {
+          "text": "That's a good idea, I might try that too.",
+          "phonetic": "แดทส์ อะ กู๊ด ไอ-เดีย ไอ ไมท์ ทราย แดท ทู",
+          "thai": "ไอเดียดีเลยค่ะ ฉันอาจจะลองทำแบบนั้นบ้าง"
+        },
+        "options": [
+          {
+            "text": "You should! It's very convenient.",
+            "phonetic": "ยู ชุด อิทส์ เว-รี่ คอน-วี-เนียนท์",
+            "thai": "ลองดูเลยค่ะ สะดวกมากเลยนะ",
+            "correct": true
+          },
+          {
+            "text": "I usually clean it every Friday.",
+            "phonetic": "ไอ ยู-ชวล-ลี่ คลีน อิท เอฟ-ริ ไฟร-เดย์",
+            "thai": "ปกติฉันทำความสะอาดมันทุกวันศุกร์ค่ะ",
+            "correct": true
+          },
+          {
+            "text": "The elevator is broken today.",
+            "phonetic": "ดิ เอล-ลิ-เว-เทอร์ อีส โบร-เคน ทู-เดย์",
+            "thai": "วันนี้ลิฟต์เสียค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "report-problem-manager",
+    "title": "การรายงานปัญหาให้หัวหน้าทราบ",
+    "emoji": "🚩",
+    "group": "office_communication",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "You wanted to see me? What's going on?",
+          "phonetic": "ยู วอน-ทิด ทู ซี มี วอทส์ โก-อิ่ง ออน",
+          "thai": "อยากพบฉันเหรอคะ มีอะไรเหรอ"
+        },
+        "options": [
+          {
+            "text": "If the server overloads, it shuts down automatically.",
+            "phonetic": "อิฟ เดอะ เซิร์ฟ-เวอร์ โอ-เวอร์-โหลดส์ อิท ชัทส์ ดาวน์ ออ-โท-แมท-ทิค-เคิล-ลี่",
+            "thai": "ถ้าเซิร์ฟเวอร์โหลดหนักเกินไป มันจะปิดตัวเองอัตโนมัติค่ะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "If we don't fix this today, the client will be upset.",
+            "phonetic": "อิฟ วี โด้นท์ ฟิกซ์ ดิส ทู-เดย์ เดอะ ไคลเอินท์ วิล บี อัพ-เซท",
+            "thai": "ถ้าเราไม่แก้วันนี้ ลูกค้าจะไม่พอใจแน่ค่ะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I really like this office building.",
+            "phonetic": "ไอ เรียล-ลี่ ไลค์ ดิส ออฟ-ฟิส บิล-ดิ่ง",
+            "thai": "ฉันชอบตึกออฟฟิศนี้มากเลยค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "That sounds serious. How often does it happen?",
+          "phonetic": "แดท เซาน์ดส์ ซี-เรียส ฮาว ออฟ-เฟิ่น ดัส อิท แฮพ-เพิ่น",
+          "thai": "ฟังดูจริงจังนะคะ เกิดขึ้นบ่อยแค่ไหน"
+        },
+        "options": [
+          {
+            "text": "If too many users log in, it happens every day.",
+            "phonetic": "อิฟ ทู เม-นี่ ยู-เซอร์ส ล็อก อิน อิท แฮพ-เพิ่นส์ เอฟ-ริ เดย์",
+            "thai": "ถ้ามีผู้ใช้ล็อกอินเยอะเกินไป มันเกิดขึ้นทุกวันเลยค่ะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "If it's peak hours, it happens almost every time.",
+            "phonetic": "อิฟ อิทส์ พีค อาว-เออร์ส อิท แฮพ-เพิ่นส์ ออล-โมสท์ เอฟ-ริ ไทม์",
+            "thai": "ถ้าเป็นช่วงชั่วโมงเร่งด่วน แทบจะเกิดขึ้นทุกครั้งเลยค่ะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I had lunch at a new restaurant.",
+            "phonetic": "ไอ แฮด ลันช์ แอท อะ นิว เรส-เทอ-รอนท์",
+            "thai": "ฉันไปทานข้าวเที่ยงร้านใหม่มาค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3a": {
+        "system": {
+          "text": "Okay, I'll get the IT team involved right away.",
+          "phonetic": "โอ-เค ไอล์ เก็ท เดอะ ไอ-ที ทีม อิน-วอลฟด์ ไรท์ อะ-เวย์",
+          "thai": "โอเคค่ะ ฉันจะให้ทีมไอทีเข้ามาช่วยทันที"
+        },
+        "options": [
+          {
+            "text": "Thank you, I'll monitor it closely too.",
+            "phonetic": "แธงค์ ยู ไอล์ มอน-นิ-เทอร์ อิท โคลส-ลี่ ทู",
+            "thai": "ขอบคุณค่ะ ฉันจะคอยติดตามอย่างใกล้ชิดด้วยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "If it happens again, I'll report it immediately.",
+            "phonetic": "อิฟ อิท แฮพ-เพิ่นส์ อะ-เกน ไอล์ รี-พอร์ท อิท อิม-มี-เดียท-ลี่",
+            "thai": "ถ้าเกิดขึ้นอีก ฉันจะรายงานทันทีเลยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I bought a new bag yesterday.",
+            "phonetic": "ไอ บอท อะ นิว แบก เยส-เทอร์-เดย์",
+            "thai": "เมื่อวานฉันซื้อกระเป๋าใบใหม่มาค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "I understand. What do you suggest we do?",
+          "phonetic": "ไอ อัน-เดอร์-สแทนด์ วอท ดู ยู ซัก-เจสท์ วี ดู",
+          "thai": "เข้าใจแล้วค่ะ คิดว่าเราควรทำยังไงดี"
+        },
+        "options": [
+          {
+            "text": "If we work overtime tonight, we can finish it.",
+            "phonetic": "อิฟ วี เวิร์ค โอ-เวอร์-ไทม์ ทู-ไนท์ วี แคน ฟิ-นิช อิท",
+            "thai": "ถ้าเราทำงานล่วงเวลาคืนนี้ เราจะทำเสร็จทันค่ะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "If you approve it, I'll ask two colleagues to help.",
+            "phonetic": "อิฟ ยู อะ-พรูฟ อิท ไอล์ อาสค์ ทู คอล-ลีกส์ ทู เฮลพ์",
+            "thai": "ถ้าคุณอนุมัติ ฉันจะขอเพื่อนร่วมงานอีกสองคนมาช่วยค่ะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I enjoy watching movies on weekends.",
+            "phonetic": "ไอ เอน-จอย วอทช์-อิ่ง มู-วีส์ ออน วีค-เอนด์ส",
+            "thai": "ฉันชอบดูหนังช่วงสุดสัปดาห์ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3b": {
+        "system": {
+          "text": "Good plan, let's do that. Thanks for flagging this.",
+          "phonetic": "กู๊ด แพลน เล็ทส์ ดู แดท แธงค์ส ฟอร์ แฟล็ก-กิ่ง ดิส",
+          "thai": "แผนดีค่ะ ทำแบบนั้นเลย ขอบคุณที่แจ้งให้ทราบนะ"
+        },
+        "options": [
+          {
+            "text": "No problem, I'll keep you updated.",
+            "phonetic": "โน พรอบ-เล็ม ไอล์ คีพ ยู อัพ-เด-ทิด",
+            "thai": "ไม่เป็นไรค่ะ ฉันจะอัพเดทให้ทราบเรื่อยๆ",
+            "correct": true
+          },
+          {
+            "text": "If anything else comes up, I'll let you know.",
+            "phonetic": "อิฟ เอ-นี่-ธิ่ง เอลส์ คัมส์ อัพ ไอล์ เล็ท ยู โนว์",
+            "thai": "ถ้ามีอะไรเพิ่มเติม ฉันจะแจ้งให้ทราบค่ะ",
+            "correct": true
+          },
+          {
+            "text": "The vending machine ran out of snacks.",
+            "phonetic": "เดอะ เวน-ดิ่ง มะ-ชีน แรน เอาท์ ออฟ สแนคส์",
+            "thai": "ตู้ขายขนมของว่างหมดค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "follow-up-email",
+    "title": "การติดตามผลทางอีเมล",
+    "emoji": "📧",
+    "group": "office_communication",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Did you get a reply to the email you sent last week?",
+          "phonetic": "ดิด ยู เก็ท อะ รี-พลาย ทู ดิ อี-เมล ยู เซนท์ ลาสท์ วีค",
+          "thai": "อีเมลที่ส่งไปเมื่อสัปดาห์ก่อนได้รับคำตอบหรือยังคะ"
+        },
+        "options": [
+          {
+            "text": "Not yet. I will send a follow-up email today.",
+            "phonetic": "นอท เยท ไอ วิล เซนด์ อะ ฟอล-โลว์-อัพ อี-เมล ทู-เดย์",
+            "thai": "ยังเลยค่ะ วันนี้ฉันจะส่งอีเมลติดตามไป",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Not yet. I will call them instead.",
+            "phonetic": "นอท เยท ไอ วิล คอล เดม อิน-สเทด",
+            "thai": "ยังเลยค่ะ ฉันจะโทรหาเขาแทนดีกว่า",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "I sent a package last month.",
+            "phonetic": "ไอ เซนท์ อะ แพ็ค-เคจ ลาสท์ มันธ์",
+            "thai": "เดือนที่แล้วฉันส่งพัสดุไปค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Good idea. What will you write in the email?",
+          "phonetic": "กู๊ด ไอ-เดีย วอท วิล ยู ไรท์ อิน ดิ อี-เมล",
+          "thai": "ไอเดียดีค่ะ จะเขียนอะไรในอีเมลบ้าง"
+        },
+        "options": [
+          {
+            "text": "I will politely ask for an update.",
+            "phonetic": "ไอ วิล โพ-ไลท์-ลี่ อาสค์ ฟอร์ แอน อัพ-เดท",
+            "thai": "ฉันจะสอบถามความคืบหน้าอย่างสุภาพค่ะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I will attach the document again, just in case.",
+            "phonetic": "ไอ วิล อะ-แทช เดอะ ด็อค-คิว-เมนท์ อะ-เกน จัสท์ อิน เคส",
+            "thai": "ฉันจะแนบเอกสารไปอีกครั้งเผื่อไว้ค่ะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "I will buy a new laptop soon.",
+            "phonetic": "ไอ วิล บาย อะ นิว แลป-ทอพ ซูน",
+            "thai": "เร็วๆ นี้ฉันจะซื้อโน้ตบุ๊กเครื่องใหม่ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3a": {
+        "system": {
+          "text": "Sounds good. Let me know if you hear back.",
+          "phonetic": "เซาน์ดส์ กู๊ด เล็ท มี โนว์ อิฟ ยู เฮียร์ แบ็ค",
+          "thai": "ฟังดูดีค่ะ ถ้าได้รับคำตอบแล้วบอกฉันด้วยนะ"
+        },
+        "options": [
+          {
+            "text": "I will, as soon as they reply.",
+            "phonetic": "ไอ วิล แอส ซูน แอส เดย์ รี-พลาย",
+            "thai": "ได้ค่ะ พอเขาตอบกลับมาจะแจ้งทันที",
+            "correct": true
+          },
+          {
+            "text": "I will forward their reply to you too.",
+            "phonetic": "ไอ วิล ฟอร์-เวิร์ด แดร์ รี-พลาย ทู ยู ทู",
+            "thai": "ฉันจะส่งต่อคำตอบให้คุณด้วยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I will visit my parents this weekend.",
+            "phonetic": "ไอ วิล วิ-สิท มาย แพ-เรินท์ส ดิส วีค-เอนด์",
+            "thai": "สุดสัปดาห์นี้ฉันจะไปหาพ่อแม่ค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Okay. Do you have their phone number?",
+          "phonetic": "โอ-เค ดู ยู แฮฟ แดร์ โฟน นัม-เบอร์",
+          "thai": "โอเคค่ะ คุณมีเบอร์โทรของเขาไหม"
+        },
+        "options": [
+          {
+            "text": "Yes, I will call right after this meeting.",
+            "phonetic": "เยส ไอ วิล คอล ไรท์ อาฟ-เตอร์ ดิส มี-ทิ่ง",
+            "thai": "มีค่ะ ฉันจะโทรทันทีหลังประชุมนี้เสร็จ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I will ask my manager for it first.",
+            "phonetic": "ไอ วิล อาสค์ มาย แม-เนเจอร์ ฟอร์ อิท เฟิร์สท์",
+            "thai": "ฉันจะขอเบอร์จากหัวหน้าก่อนค่ะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "I will cook dinner tonight.",
+            "phonetic": "ไอ วิล คุค ดิน-เนอร์ ทู-ไนท์",
+            "thai": "คืนนี้ฉันจะทำอาหารเย็นเองค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3b": {
+        "system": {
+          "text": "Great, please update me after the call.",
+          "phonetic": "เกรท พลีส อัพ-เดท มี อาฟ-เตอร์ เดอะ คอล",
+          "thai": "เยี่ยมเลยค่ะ พอโทรเสร็จช่วยอัพเดทฉันด้วยนะ"
+        },
+        "options": [
+          {
+            "text": "I will, right after I hang up.",
+            "phonetic": "ไอ วิล ไรท์ อาฟ-เตอร์ ไอ แฮง อัพ",
+            "thai": "ได้ค่ะ พอวางสายจะแจ้งทันทีเลย",
+            "correct": true
+          },
+          {
+            "text": "I will send you a short summary too.",
+            "phonetic": "ไอ วิล เซนด์ ยู อะ ชอร์ท ซัม-มา-รี่ ทู",
+            "thai": "ฉันจะส่งสรุปสั้นๆ ให้คุณด้วยค่ะ",
+            "correct": true
+          },
+          {
+            "text": "I will take the bus home today.",
+            "phonetic": "ไอ วิล เทค เดอะ บัส โฮม ทู-เดย์",
+            "thai": "วันนี้ฉันจะนั่งรถเมล์กลับบ้านค่ะ",
+            "correct": false
+          }
+        ]
+      }
+    }
+  },
+  {
+    "id": "welcome-new-colleague",
+    "title": "การต้อนรับพนักงานใหม่",
+    "emoji": "🎊",
+    "group": "office_communication",
+    "start": "n1",
+    "nodes": {
+      "n1": {
+        "system": {
+          "text": "Welcome to the team! Let me show you around.",
+          "phonetic": "เวล-คัม ทู เดอะ ทีม เล็ท มี โชว์ ยู อะ-ราวนด์",
+          "thai": "ยินดีต้อนรับเข้าทีมค่ะ เดี๋ยวฉันพาไปดูรอบๆ นะ"
+        },
+        "options": [
+          {
+            "text": "Thanks! Is there a place to keep my things?",
+            "phonetic": "แธงค์ส อีส แดร์ อะ เพลส ทู คีพ มาย ธิ่งส์",
+            "thai": "ขอบคุณค่ะ มีที่เก็บของส่วนตัวไหมคะ",
+            "correct": true,
+            "next": "n2a"
+          },
+          {
+            "text": "Thanks! Is there a manual I should read first?",
+            "phonetic": "แธงค์ส อีส แดร์ อะ แมน-นวล ไอ ชุด รีด เฟิร์สท์",
+            "thai": "ขอบคุณค่ะ มีคู่มือที่ควรอ่านก่อนไหมคะ",
+            "correct": true,
+            "next": "n2b"
+          },
+          {
+            "text": "There is a park near my house.",
+            "phonetic": "แดร์ อีส อะ พาร์ค เนียร์ มาย เฮาส์",
+            "thai": "มีสวนสาธารณะใกล้บ้านฉันค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2a": {
+        "system": {
+          "text": "Yes, there is a locker for every new employee.",
+          "phonetic": "เยส แดร์ อีส อะ ลอค-เกอร์ ฟอร์ เอฟ-ริ นิว เอม-พลอย-อี",
+          "thai": "มีค่ะ มีล็อกเกอร์สำหรับพนักงานใหม่ทุกคนเลย"
+        },
+        "options": [
+          {
+            "text": "Great, is there a key I need to keep safe?",
+            "phonetic": "เกรท อีส แดร์ อะ คี ไอ นีด ทู คีพ เซฟ",
+            "thai": "เยี่ยมเลยค่ะ มีกุญแจที่ต้องเก็บให้ดีไหม",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "Is there someone I should ask for the code?",
+            "phonetic": "อีส แดร์ ซัม-วัน ไอ ชุด อาสค์ ฟอร์ เดอะ โค้ด",
+            "thai": "ต้องถามรหัสจากใครคะ",
+            "correct": true,
+            "next": "n3a"
+          },
+          {
+            "text": "There is a coffee shop across the street.",
+            "phonetic": "แดร์ อีส อะ คอฟ-ฟี่ ช็อพ อะ-ครอส เดอะ สตรีท",
+            "thai": "มีร้านกาแฟอยู่ฝั่งตรงข้ามถนนค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3a": {
+        "system": {
+          "text": "There is a key, and I'll help you set it up now.",
+          "phonetic": "แดร์ อีส อะ คี แอนด์ ไอล์ เฮลพ์ ยู เซ็ท อิท อัพ นาว",
+          "thai": "มีกุญแจค่ะ เดี๋ยวฉันช่วยจัดการให้เลยตอนนี้"
+        },
+        "options": [
+          {
+            "text": "Thank you, that's very kind of you.",
+            "phonetic": "แธงค์ ยู แดทส์ เว-รี่ ไคนด์ ออฟ ยู",
+            "thai": "ขอบคุณมากค่ะ ใจดีมากเลย",
+            "correct": true
+          },
+          {
+            "text": "Is there anything else I should know today?",
+            "phonetic": "อีส แดร์ เอ-นี่-ธิ่ง เอลส์ ไอ ชุด โนว์ ทู-เดย์",
+            "thai": "มีอะไรอีกที่ควรรู้วันนี้ไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "There are many restaurants downtown.",
+            "phonetic": "แดร์ อาร์ เม-นี่ เรส-เทอ-รอนท์ส ดาวน์-ทาวน์",
+            "thai": "มีร้านอาหารเยอะแยะในตัวเมืองค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n2b": {
+        "system": {
+          "text": "Yes, there is a short handbook I'll send you.",
+          "phonetic": "เยส แดร์ อีส อะ ชอร์ท แฮนด์-บุค ไอล์ เซนด์ ยู",
+          "thai": "มีค่ะ มีคู่มือสั้นๆ ที่ฉันจะส่งให้"
+        },
+        "options": [
+          {
+            "text": "Thank you, is there anyone I should meet first?",
+            "phonetic": "แธงค์ ยู อีส แดร์ เอ-นี่-วัน ไอ ชุด มีท เฟิร์สท์",
+            "thai": "ขอบคุณค่ะ มีใครที่ควรไปทักทายก่อนไหมคะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "Is there a deadline to finish reading it?",
+            "phonetic": "อีส แดร์ อะ เด้ด-ไลน์ ทู ฟิ-นิช รี-ดิ่ง อิท",
+            "thai": "มีกำหนดเวลาต้องอ่านให้จบไหมคะ",
+            "correct": true,
+            "next": "n3b"
+          },
+          {
+            "text": "There is a printer on every floor.",
+            "phonetic": "แดร์ อีส อะ พริน-เทอร์ ออน เอฟ-ริ ฟลอร์",
+            "thai": "มีเครื่องพิมพ์อยู่ทุกชั้นค่ะ",
+            "correct": false
+          }
+        ]
+      },
+      "n3b": {
+        "system": {
+          "text": "There is no rush, take your time to settle in.",
+          "phonetic": "แดร์ อีส โน รัช เทค ยัวร์ ไทม์ ทู เซ็ท-เทิล อิน",
+          "thai": "ไม่ต้องรีบค่ะ ค่อยๆ ปรับตัวไปนะ"
+        },
+        "options": [
+          {
+            "text": "Thank you, I really appreciate that.",
+            "phonetic": "แธงค์ ยู ไอ เรียล-ลี่ แอพ-พรี-ชี-เอท แดท",
+            "thai": "ขอบคุณมากค่ะ ซาบซึ้งใจจริงๆ",
+            "correct": true
+          },
+          {
+            "text": "Is there a team lunch I could join?",
+            "phonetic": "อีส แดร์ อะ ทีม ลันช์ ไอ คุด จอยน์",
+            "thai": "มีมื้อเที่ยงทีมที่ฉันร่วมได้ไหมคะ",
+            "correct": true
+          },
+          {
+            "text": "There is a big storm coming this weekend.",
+            "phonetic": "แดร์ อีส อะ บิก สตอร์ม คัม-มิ่ง ดิส วีค-เอนด์",
+            "thai": "สุดสัปดาห์นี้จะมีพายุใหญ่เข้าค่ะ",
             "correct": false
           }
         ]

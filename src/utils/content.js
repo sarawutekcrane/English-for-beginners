@@ -17,6 +17,7 @@ export const VOCAB_CATEGORIES = [
   { id: "hobbies", label: "งานอดิเรก", emoji: "⚽" },
   { id: "feelings", label: "ความรู้สึก", emoji: "😊" },
   { id: "safety_officer", label: "งานความปลอดภัย (Safety Officer)", emoji: "🦺" },
+  { id: "office_communication", label: "การสื่อสารในที่ทำงาน", emoji: "💼" },
 ];
 
 export function getVocab(category) {

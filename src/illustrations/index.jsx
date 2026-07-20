@@ -12,6 +12,7 @@ import { transportationIcons } from "./transportation";
 import { hobbiesIcons } from "./hobbies";
 import { feelingsIcons } from "./feelings";
 import { safetyOfficerIcons } from "./safetyOfficer";
+import { officeIcons } from "./office";
 import NumberIllustration from "./NumberIllustration";
 import ColorIllustration from "./ColorIllustration";
 
@@ -30,6 +31,7 @@ const VOCAB_ICONS = {
   ...hobbiesIcons,
   ...feelingsIcons,
   ...safetyOfficerIcons,
+  ...officeIcons,
 };
 
 /** Renders the correct flat-SVG illustration for a vocabulary card. */

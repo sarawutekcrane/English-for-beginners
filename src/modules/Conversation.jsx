@@ -14,13 +14,49 @@ const MISUNDERSTANDING = {
   thai: "ขอโทษค่ะ ช่วยพูดอีกครั้งได้ไหมคะ",
 };
 
-function TopicPicker({ onPick }) {
+// Local registry mirroring SectionPicker.jsx's pattern (a single consumer,
+// so this lives beside Conversation.jsx rather than in the shared
+// content.js VOCAB_CATEGORIES registry, which is read by four modules).
+const CONVERSATION_GROUPS = [
+  { id: "travel", emoji: "🧳", title: "การเดินทางและท่องเที่ยว", subtitle: "ถนน โรงแรม สนามบิน แท็กซี่" },
+  { id: "shopping_services", emoji: "🛍️", title: "ช้อปปิ้งและบริการต่างๆ", subtitle: "ร้านอาหาร เสื้อผ้า ธนาคาร คลินิก" },
+  { id: "social", emoji: "🗣️", title: "การเข้าสังคมและพูดคุยทั่วไป", subtitle: "ทำความรู้จัก นัดหมาย พูดคุยเล่น" },
+  { id: "safety_officer", emoji: "🦺", title: "งานเซฟตี้", subtitle: "Safety Officer" },
+  { id: "office_communication", emoji: "💼", title: "งานสื่อสารในออฟฟิศ", subtitle: "Office Communication" },
+];
+
+function GroupPicker({ onPick }) {
   return (
     <div className="picker">
       <section className="picker-section">
-        <h3 className="picker-heading">💬 เลือกสถานการณ์ที่อยากฝึก</h3>
+        <h3 className="picker-heading">💬 เลือกหมวดสถานการณ์</h3>
+        <div className="module-grid">
+          {CONVERSATION_GROUPS.map((g) => (
+            <button key={g.id} className="module-card" onClick={() => onPick(g)}>
+              <span className="module-emoji">{g.emoji}</span>
+              <span className="module-title th-text">{g.title}</span>
+              <span className="module-subtitle th-text">{g.subtitle}</span>
+            </button>
+          ))}
+        </div>
+      </section>
+    </div>
+  );
+}
+
+function TopicPicker({ group, onPick, onBack }) {
+  const topics = conversations.filter((t) => t.group === group.id);
+  return (
+    <div className="picker">
+      <button className="btn btn-outline btn-sm" onClick={onBack}>
+        ← เปลี่ยนหมวดสถานการณ์
+      </button>
+      <section className="picker-section">
+        <h3 className="picker-heading">
+          {group.emoji} {group.title} · เลือกสถานการณ์ที่อยากฝึก
+        </h3>
         <div className="topic-grid">
-          {conversations.map((topic) => (
+          {topics.map((topic) => (
             <button key={topic.id} className="topic-card" onClick={() => onPick(topic)}>
               <span className="module-emoji">{topic.emoji}</span>
               <span className="module-title th-text">{topic.title}</span>
@@ -207,8 +243,10 @@ function DialogueView({ topic, onBack }) {
 }
 
 export default function Conversation() {
+  const [group, setGroup] = useState(null);
   const [topic, setTopic] = useState(null);
 
-  if (!topic) return <TopicPicker onPick={setTopic} />;
+  if (!group) return <GroupPicker onPick={setGroup} />;
+  if (!topic) return <TopicPicker group={group} onPick={setTopic} onBack={() => setGroup(null)} />;
   return <DialogueView topic={topic} onBack={() => setTopic(null)} />;
 }
