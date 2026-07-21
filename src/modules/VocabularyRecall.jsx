@@ -1,4 +1,4 @@
-import { useEffect, useMemo, useState } from "react";
+import { useEffect, useMemo, useRef, useState } from "react";
 import Toggle from "../components/Toggle";
 import AnnotatedText from "../components/AnnotatedText";
 import VocabGroupPicker from "../components/VocabGroupPicker";
@@ -87,8 +87,6 @@ function RecallView({ category, onBack }) {
   const [input, setInput] = useState("");
   const [submitted, setSubmitted] = useState(false);
   const [isCorrect, setIsCorrect] = useState(false);
-  const [showThai, setShowThai] = useState(false);
-  const [showPhonetic, setShowPhonetic] = useState(false);
 
   useEffect(() => {
     setInput("");
@@ -106,6 +104,10 @@ function RecallView({ category, onBack }) {
 
   const hearAgain = () => card && speak(card.audioText);
 
+  const speakTimeoutRef = useRef(null);
+
+  useEffect(() => () => clearTimeout(speakTimeoutRef.current), []);
+
   const submit = (e) => {
     e.preventDefault();
     if (submitted || !card || !input.trim()) return;
@@ -114,21 +116,29 @@ function RecallView({ category, onBack }) {
     setSubmitted(true);
     if (ok) playCorrect();
     else playIncorrect();
+    // Reveal audio, matching Listening Quiz's reveal pattern: a short delay
+    // so the correct/incorrect sound effect isn't talked over, then play
+    // the word's pronunciation regardless of whether the answer was right.
+    clearTimeout(speakTimeoutRef.current);
+    speakTimeoutRef.current = setTimeout(() => speak(card.audioText), 500);
   };
 
   const next = () => {
+    clearTimeout(speakTimeoutRef.current);
     session.submit(isCorrect);
     setInput("");
     setSubmitted(false);
   };
 
   const restart = () => {
+    clearTimeout(speakTimeoutRef.current);
     session.restart();
     setInput("");
     setSubmitted(false);
   };
 
   const retryWrongOnly = () => {
+    clearTimeout(speakTimeoutRef.current);
     session.retryWrongOnly();
     setInput("");
     setSubmitted(false);
@@ -147,8 +157,6 @@ function RecallView({ category, onBack }) {
 
       <div className="toggle-group blue">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
-        <Toggle label="แปล" checked={showThai} onChange={setShowThai} />
-        <Toggle label="คำอ่าน" checked={showPhonetic} onChange={setShowPhonetic} />
       </div>
 
       {finished ? (
@@ -215,8 +223,15 @@ function RecallView({ category, onBack }) {
             </p>
           )}
 
-          {submitted && showPhonetic && <p className="flashcard-romaji">{card.reading}</p>}
-          {submitted && showThai && <p className="flashcard-thai th-text">{card.thai}</p>}
+          {/* Always shown once submitted, correct or not -- this is the
+              reveal step, not a during-attempt hint, so there's no toggle
+              to gate it behind (a "แปล"/"คำอ่าน" toggle pair used to gate
+              this and defaulted to off, which was the actual bug: nothing
+              ever showed unless the learner happened to flip them on
+              first). Matches Listening Quiz's post-answer reveal, which
+              made the identical change for the identical reason. */}
+          {submitted && <p className="flashcard-romaji">{card.reading}</p>}
+          {submitted && <p className="flashcard-thai th-text">{card.thai}</p>}
 
           {submitted && (
             <div className="quiz-actions">

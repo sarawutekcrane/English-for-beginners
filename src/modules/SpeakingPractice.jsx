@@ -92,7 +92,7 @@ const STATUS = {
 // look, and is read directly with no derived second state, so it can't
 // reproduce the earlier two-hop `ttsCooldown` timing bug.
 function SpeakingView({ category, onBack }) {
-  const { speak, speaking } = useSpeak();
+  const { speak, speaking, primeSpeechEngine } = useSpeak();
   const { supported, listening, start } = useSpeechRecognition();
 
   const [shuffleOn, setShuffleOn] = useState(false);
@@ -155,6 +155,14 @@ function SpeakingView({ category, onBack }) {
       setStatus(STATUS.error);
       return;
     }
+    // Bug fix: if "hear example" is never tapped, the reveal audio after
+    // this attempt (fired later, async, from the recognition result
+    // handler below) was the first speechSynthesis call of the session --
+    // some browsers silently drop that first call unless it's triggered
+    // directly inside a synchronous user gesture. This tap is one, so
+    // priming here unlocks the engine the same way tapping "hear example"
+    // already did, regardless of whether the learner ever tapped it.
+    primeSpeechEngine();
     // "requesting" (not "listening") until the recognizer's own onstart
     // fires -- getting the mic permission prompt resolved and the
     // recognizer actually capturing audio can take a perceptible moment,

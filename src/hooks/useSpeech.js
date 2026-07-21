@@ -64,7 +64,39 @@ export function useSpeak() {
     [supported, speechRate]
   );
 
-  return { speak, speaking, supported };
+  // Several browsers (Chrome especially) silently drop the FIRST
+  // speechSynthesis utterance ever queued in a page unless it's triggered
+  // directly inside a synchronous user-gesture handler (a click/tap) --
+  // once any utterance has played successfully, later speak() calls work
+  // fine even from async code (a setTimeout, a Speech Recognition result
+  // callback), but if the *first* one is async, it can fail with no error
+  // and no sound. In Speaking Practice, tapping "hear example" first
+  // happens to satisfy this by accident (its speak() call is synchronous
+  // inside its own click handler); going straight to the mic does not,
+  // since the reveal audio only fires later from an async recognition
+  // result. Call this synchronously from any other user-gesture handler
+  // that might be the first TTS trigger of the session (e.g. the mic
+  // button) to "unlock" the engine the same way, independent of whether
+  // "hear example" was ever tapped. Silent/near-instant on purpose -- it's
+  // not meant to be heard, just to satisfy the browser's gesture
+  // requirement before the real (possibly async) speak() call happens.
+  const primeSpeechEngine = useCallback(() => {
+    if (!supported) return;
+    const primer = new SpeechSynthesisUtterance(" ");
+    primer.volume = 0;
+    window.speechSynthesis.speak(primer);
+    // `speechSynthesis.speaking` flips to true synchronously the instant
+    // speak() is called, before the utterance even starts -- cancelling
+    // right away resets it before any caller-side "is TTS active?" guard
+    // checked later in this same tick (e.g. useSpeechRecognition's start())
+    // sees it and wrongly thinks the primer itself is "real" TTS blocking
+    // the mic. The engine only needs to have been touched by a speak()
+    // call inside a user gesture at least once -- it doesn't need to
+    // actually finish (or even audibly start) playing.
+    window.speechSynthesis.cancel();
+  }, [supported]);
+
+  return { speak, speaking, supported, primeSpeechEngine };
 }
 
 // The recognizer commonly prepends a filler article before the target word
