@@ -514,6 +514,451 @@
         "phonetic": "เดย์ ลิส-เซิ่น ทู มิว-สิค เอฟ-วรี่ เดย์",
         "thai": "พวกเขาฟังเพลงทุกวัน",
         "explanation": "เรียงประโยคแบบ Subject-Verb-Object เช่นเดิม โดยวางวลีบอกเวลา 'every day' ไว้ท้ายประโยค"
+      },
+      {
+        "id": "present-simple-11",
+        "promptThai": "พูดว่า: คุณเขียนจดหมายทุกสัปดาห์",
+        "chunks": [
+          {
+            "text": "You",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "write",
+            "phonetic": "ไรท์"
+          },
+          {
+            "text": "letters",
+            "phonetic": "เล็ท-เทอร์ส"
+          },
+          {
+            "text": "every week",
+            "phonetic": "เอฟ-วรี่ วีค"
+          },
+          {
+            "text": "writes",
+            "phonetic": "ไรทส์",
+            "isDistractor": true
+          },
+          {
+            "text": "wrote",
+            "phonetic": "โรท",
+            "isDistractor": true
+          },
+          {
+            "text": "writing",
+            "phonetic": "ไร-ทิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "You",
+          "write",
+          "letters",
+          "every week"
+        ],
+        "phonetic": "ยู ไรท์ เล็ท-เทอร์ส เอฟ-วรี่ วีค",
+        "thai": "คุณเขียนจดหมายทุกสัปดาห์",
+        "explanation": "'You' ไม่ต้องเติม -s ที่กริยา เพราะกฎเติม -s ใช้กับประธาน he/she/it เท่านั้น"
+      },
+      {
+        "id": "present-simple-12",
+        "promptThai": "พูดว่า: เขาพูดได้สามภาษา",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "speaks",
+            "phonetic": "สปีคส์"
+          },
+          {
+            "text": "three languages",
+            "phonetic": "ธรี แลง-กวิด-เจส"
+          },
+          {
+            "text": "speak",
+            "phonetic": "สปีค",
+            "isDistractor": true
+          },
+          {
+            "text": "spoke",
+            "phonetic": "สโปค",
+            "isDistractor": true
+          },
+          {
+            "text": "speaking",
+            "phonetic": "สปี-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "speaks",
+          "three languages"
+        ],
+        "phonetic": "ฮี สปีคส์ ธรี แลง-กวิด-เจส",
+        "thai": "เขาพูดได้สามภาษา",
+        "explanation": "'He' เป็นประธานบุรุษที่สามเอกพจน์ กริยาจึงต้องเติม -s: speak → speaks"
+      },
+      {
+        "id": "present-simple-13",
+        "promptThai": "พูดว่า: เธอดูข่าวทุกเย็น",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "watches",
+            "phonetic": "วอช-เชส"
+          },
+          {
+            "text": "the news",
+            "phonetic": "เดอะ นิวส์"
+          },
+          {
+            "text": "every evening",
+            "phonetic": "เอฟ-วรี่ อีฟ-นิ่ง"
+          },
+          {
+            "text": "watch",
+            "phonetic": "วอช",
+            "isDistractor": true
+          },
+          {
+            "text": "watched",
+            "phonetic": "วอชท์",
+            "isDistractor": true
+          },
+          {
+            "text": "watching",
+            "phonetic": "วอช-ชิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "watches",
+          "the news",
+          "every evening"
+        ],
+        "phonetic": "ชี วอช-เชส เดอะ นิวส์ เอฟ-วรี่ อีฟ-นิ่ง",
+        "thai": "เธอดูข่าวทุกเย็น",
+        "explanation": "กริยาที่ลงท้ายด้วย -ch เติม -es แทน -s เมื่อใช้กับประธานบุรุษที่สามเอกพจน์: watch → watches"
+      },
+      {
+        "id": "present-simple-14",
+        "promptThai": "พูดว่า: ฉันอยากได้โทรศัพท์เครื่องใหม่",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "want",
+            "phonetic": "วอนท์"
+          },
+          {
+            "text": "a new phone",
+            "phonetic": "อะ นิว โฟน"
+          },
+          {
+            "text": "wants",
+            "phonetic": "วอนท์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "wanted",
+            "phonetic": "วอน-ทิด",
+            "isDistractor": true
+          },
+          {
+            "text": "wanting",
+            "phonetic": "วอน-ทิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "want",
+          "a new phone"
+        ],
+        "phonetic": "ไอ วอนท์ อะ นิว โฟน",
+        "thai": "ฉันอยากได้โทรศัพท์เครื่องใหม่",
+        "explanation": "'I' ใช้กริยารูปพื้นฐานเสมอ ไม่เติม -s"
+      },
+      {
+        "id": "present-simple-15",
+        "promptThai": "พูดว่า: เราทำอาหารเช้าทุกเช้า",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "make",
+            "phonetic": "เมค"
+          },
+          {
+            "text": "breakfast",
+            "phonetic": "เบรค-ฟาสท์"
+          },
+          {
+            "text": "every morning",
+            "phonetic": "เอฟ-วรี่ มอร์-นิ่ง"
+          },
+          {
+            "text": "makes",
+            "phonetic": "เมคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "made",
+            "phonetic": "เมด",
+            "isDistractor": true
+          },
+          {
+            "text": "making",
+            "phonetic": "เม-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "make",
+          "breakfast",
+          "every morning"
+        ],
+        "phonetic": "วี เมค เบรค-ฟาสท์ เอฟ-วรี่ มอร์-นิ่ง",
+        "thai": "เราทำอาหารเช้าทุกเช้า",
+        "explanation": "'We' ไม่ต้องเติม -s ที่กริยา เพราะกฎเติม -s ใช้กับประธาน he/she/it เท่านั้น"
+      },
+      {
+        "id": "present-simple-16",
+        "promptThai": "พูดว่า: เขาล้างจานทุกคืน",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "does",
+            "phonetic": "ดัส"
+          },
+          {
+            "text": "the dishes",
+            "phonetic": "เดอะ ดิช-เชส"
+          },
+          {
+            "text": "every night",
+            "phonetic": "เอฟ-วรี่ ไนท์"
+          },
+          {
+            "text": "do",
+            "phonetic": "ดู",
+            "isDistractor": true
+          },
+          {
+            "text": "did",
+            "phonetic": "ดิด",
+            "isDistractor": true
+          },
+          {
+            "text": "doing",
+            "phonetic": "ดู-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "does",
+          "the dishes",
+          "every night"
+        ],
+        "phonetic": "ฮี ดัส เดอะ ดิช-เชส เอฟ-วรี่ ไนท์",
+        "thai": "เขาล้างจานทุกคืน",
+        "explanation": "'He' เป็นประธานบุรุษที่สามเอกพจน์ กริยา do จึงเปลี่ยนเป็น does"
+      },
+      {
+        "id": "present-simple-17",
+        "promptThai": "พูดว่า: พวกเขากินก๋วยเตี๋ยวเป็นอาหารกลางวัน",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "eat",
+            "phonetic": "อีท"
+          },
+          {
+            "text": "noodles",
+            "phonetic": "นู-เดิลส์"
+          },
+          {
+            "text": "for lunch",
+            "phonetic": "ฟอร์ ลันช์"
+          },
+          {
+            "text": "eats",
+            "phonetic": "อีทส์",
+            "isDistractor": true
+          },
+          {
+            "text": "ate",
+            "phonetic": "เอท",
+            "isDistractor": true
+          },
+          {
+            "text": "eating",
+            "phonetic": "อีท-ทิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "eat",
+          "noodles",
+          "for lunch"
+        ],
+        "phonetic": "เดย์ อีท นู-เดิลส์ ฟอร์ ลันช์",
+        "thai": "พวกเขากินก๋วยเตี๋ยวเป็นอาหารกลางวัน",
+        "explanation": "'They' ใช้กริยารูปพื้นฐานเสมอ ไม่เติม -s"
+      },
+      {
+        "id": "present-simple-18",
+        "promptThai": "พูดว่า: คุณดื่มชาทุกบ่าย",
+        "chunks": [
+          {
+            "text": "You",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "drink",
+            "phonetic": "ดริงค์"
+          },
+          {
+            "text": "tea",
+            "phonetic": "ที"
+          },
+          {
+            "text": "every afternoon",
+            "phonetic": "เอฟ-วรี่ แอฟ-เทอร์-นูน"
+          },
+          {
+            "text": "drinks",
+            "phonetic": "ดริงค์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "drank",
+            "phonetic": "แดรงค์",
+            "isDistractor": true
+          },
+          {
+            "text": "drinking",
+            "phonetic": "ดริง-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "You",
+          "drink",
+          "tea",
+          "every afternoon"
+        ],
+        "phonetic": "ยู ดริงค์ ที เอฟ-วรี่ แอฟ-เทอร์-นูน",
+        "thai": "คุณดื่มชาทุกบ่าย",
+        "explanation": "'You' ไม่ต้องเติม -s ที่กริยา ไม่ว่าจะหมายถึงคนเดียวหรือหลายคน"
+      },
+      {
+        "id": "present-simple-19",
+        "promptThai": "พูดว่า: เธออ่านนิตยสารในวันหยุดสุดสัปดาห์",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "reads",
+            "phonetic": "รีดส์"
+          },
+          {
+            "text": "magazines",
+            "phonetic": "แมก-กะ-ซีนส์"
+          },
+          {
+            "text": "on the weekend",
+            "phonetic": "ออน เดอะ วีค-เอนด์"
+          },
+          {
+            "text": "read",
+            "phonetic": "รีด",
+            "isDistractor": true
+          },
+          {
+            "text": "reading",
+            "phonetic": "รี-ดิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "reads",
+          "magazines",
+          "on the weekend"
+        ],
+        "phonetic": "ชี รีดส์ แมก-กะ-ซีนส์ ออน เดอะ วีค-เอนด์",
+        "thai": "เธออ่านนิตยสารในวันหยุดสุดสัปดาห์",
+        "explanation": "'She' เป็นประธานบุรุษที่สามเอกพจน์ กริยา read เติม -s เป็น reads (สะกดเหมือนรูปพื้นฐานแต่ไม่ใช่)"
+      },
+      {
+        "id": "present-simple-20",
+        "promptThai": "พูดว่า: เราเรียนภาษาสเปนที่มหาวิทยาลัย",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "study",
+            "phonetic": "สทัด-ดี้"
+          },
+          {
+            "text": "Spanish",
+            "phonetic": "สแปน-นิช"
+          },
+          {
+            "text": "at the university",
+            "phonetic": "แอท เดอะ ยู-นิ-เวอร์-ซิ-ที"
+          },
+          {
+            "text": "studies",
+            "phonetic": "สทัด-ดีส",
+            "isDistractor": true
+          },
+          {
+            "text": "studied",
+            "phonetic": "สทัด-ดีด",
+            "isDistractor": true
+          },
+          {
+            "text": "studying",
+            "phonetic": "สทัด-ดี้-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "study",
+          "Spanish",
+          "at the university"
+        ],
+        "phonetic": "วี สทัด-ดี้ สแปน-นิช แอท เดอะ ยู-นิ-เวอร์-ซิ-ที",
+        "thai": "เราเรียนภาษาสเปนที่มหาวิทยาลัย",
+        "explanation": "'We' ไม่ต้องเติม -s ที่กริยา เพราะกฎเติม -s ใช้กับประธาน he/she/it เท่านั้น"
       }
     ]
   },
@@ -950,6 +1395,335 @@
         "phonetic": "ดัส ชี แฮฟ อะ คาร์",
         "thai": "เธอมีรถหรือเปล่า",
         "explanation": "คำถามกับ she (he/she/it) ต้องขึ้นต้นด้วย Does ไม่ใช่ Do -- Do ใช้กับประธาน I/you/we/they เท่านั้น"
+      },
+      {
+        "id": "have-has-12",
+        "promptThai": "พูดว่า: เรามีลูกสองคน",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "two children",
+            "phonetic": "ทู ชิล-เดรน"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "had",
+            "phonetic": "แฮด",
+            "isDistractor": true
+          },
+          {
+            "text": "having",
+            "phonetic": "แฮฟ-วิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "have",
+          "two children"
+        ],
+        "phonetic": "วี แฮฟ ทู ชิล-เดรน",
+        "thai": "เรามีลูกสองคน",
+        "explanation": "'We' ใช้กับ have เสมอ ไม่ใช่ has (have ไม่เปลี่ยนรูปตามประธาน we/you/they/I)"
+      },
+      {
+        "id": "have-has-13",
+        "promptThai": "พูดว่า: เขามีครอบครัวใหญ่",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส"
+          },
+          {
+            "text": "a big family",
+            "phonetic": "อะ บิก แฟม-มิ-ลี่"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "had",
+            "phonetic": "แฮด",
+            "isDistractor": true
+          },
+          {
+            "text": "having",
+            "phonetic": "แฮฟ-วิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "has",
+          "a big family"
+        ],
+        "phonetic": "ฮี แฮส อะ บิก แฟม-มิ-ลี่",
+        "thai": "เขามีครอบครัวใหญ่",
+        "explanation": "'He' เป็นประธานเอกพจน์บุรุษที่สาม ใช้ has ไม่ใช่ have"
+      },
+      {
+        "id": "have-has-14",
+        "promptThai": "พูดว่า: คุณมีความคิดที่ดี",
+        "chunks": [
+          {
+            "text": "You",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "a good idea",
+            "phonetic": "อะ กู๊ด ไอ-เดีย"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "had",
+            "phonetic": "แฮด",
+            "isDistractor": true
+          },
+          {
+            "text": "having",
+            "phonetic": "แฮฟ-วิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "You",
+          "have",
+          "a good idea"
+        ],
+        "phonetic": "ยู แฮฟ อะ กู๊ด ไอ-เดีย",
+        "thai": "คุณมีความคิดที่ดี",
+        "explanation": "'You' ใช้กับ have เสมอไม่ว่าจะเป็นเอกพจน์หรือพหูพจน์"
+      },
+      {
+        "id": "have-has-15",
+        "promptThai": "พูดว่า: พวกเขามีผู้จัดการคนใหม่",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "a new manager",
+            "phonetic": "อะ นิว แมน-เนจ-เจอร์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "had",
+            "phonetic": "แฮด",
+            "isDistractor": true
+          },
+          {
+            "text": "having",
+            "phonetic": "แฮฟ-วิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "have",
+          "a new manager"
+        ],
+        "phonetic": "เดย์ แฮฟ อะ นิว แมน-เนจ-เจอร์",
+        "thai": "พวกเขามีผู้จัดการคนใหม่",
+        "explanation": "'They' เป็นประธานพหูพจน์ ใช้ have ไม่ใช่ has"
+      },
+      {
+        "id": "have-has-16",
+        "promptThai": "พูดว่า: เธอปวดหัว",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส"
+          },
+          {
+            "text": "a headache",
+            "phonetic": "อะ เฮด-เอค"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "had",
+            "phonetic": "แฮด",
+            "isDistractor": true
+          },
+          {
+            "text": "having",
+            "phonetic": "แฮฟ-วิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "has",
+          "a headache"
+        ],
+        "phonetic": "ชี แฮส อะ เฮด-เอค",
+        "thai": "เธอปวดหัว",
+        "explanation": "'She' เป็นประธานเอกพจน์บุรุษที่สาม ใช้ has ไม่ใช่ have"
+      },
+      {
+        "id": "have-has-17",
+        "promptThai": "พูดว่า: เราไม่มีเวลาเลย",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "don't have",
+            "phonetic": "โดนท์ แฮฟ"
+          },
+          {
+            "text": "any time",
+            "phonetic": "เอ-นี่ ไทม์"
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "don't have",
+          "any time"
+        ],
+        "phonetic": "วี โดนท์ แฮฟ เอ-นี่ ไทม์",
+        "thai": "เราไม่มีเวลาเลย",
+        "explanation": "การปฏิเสธของ have กับ we ใช้ don't have เหมือนกับ I/you/they"
+      },
+      {
+        "id": "have-has-18",
+        "promptThai": "พูดว่า: เขาไม่มีคอมพิวเตอร์",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "doesn't have",
+            "phonetic": "ดัส-เซินท์ แฮฟ"
+          },
+          {
+            "text": "a computer",
+            "phonetic": "อะ คอม-พิว-เทอร์"
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "doesn't have",
+          "a computer"
+        ],
+        "phonetic": "ฮี ดัส-เซินท์ แฮฟ อะ คอม-พิว-เทอร์",
+        "thai": "เขาไม่มีคอมพิวเตอร์",
+        "explanation": "การปฏิเสธของ has กับ he ใช้ doesn't have (has กลับเป็นรูปเดิม have) ไม่ใช่ 'has not' หรือ 'don't has'"
+      },
+      {
+        "id": "have-has-19",
+        "promptThai": "พูดว่า: พวกเขามีประชุมวันนี้ไหม",
+        "chunks": [
+          {
+            "text": "Do they have",
+            "phonetic": "ดู เดย์ แฮฟ"
+          },
+          {
+            "text": "a meeting today",
+            "phonetic": "อะ มี-ทิ่ง ทู-เดย์"
+          }
+        ],
+        "correctOrder": [
+          "Do they have",
+          "a meeting today"
+        ],
+        "phonetic": "ดู เดย์ แฮฟ อะ มี-ทิ่ง ทู-เดย์",
+        "thai": "พวกเขามีประชุมวันนี้ไหม",
+        "explanation": "คำถามกับ they ขึ้นต้นด้วย Do เหมือนกับ I/you/we"
+      },
+      {
+        "id": "have-has-20",
+        "promptThai": "พูดว่า: เขามีลูกไหม",
+        "chunks": [
+          {
+            "text": "Does",
+            "phonetic": "ดัส"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "children",
+            "phonetic": "ชิล-เดรน"
+          },
+          {
+            "text": "Do",
+            "phonetic": "ดู",
+            "isDistractor": true
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "had",
+            "phonetic": "แฮด",
+            "isDistractor": true
+          },
+          {
+            "text": "having",
+            "phonetic": "แฮฟ-วิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Does",
+          "he",
+          "have",
+          "children"
+        ],
+        "phonetic": "ดัส ฮี แฮฟ ชิล-เดรน",
+        "thai": "เขามีลูกไหม",
+        "explanation": "คำถามกับ he ขึ้นต้นด้วย Does ไม่ใช่ Do และ have ต้องกลับเป็นรูปเดิม ไม่ใช่ has"
       }
     ]
   },
@@ -1456,6 +2230,446 @@
         "phonetic": "เดย์ เวนท์ โฮม เออร์-ลี่",
         "thai": "พวกเขากลับบ้านเร็ว",
         "explanation": "'Go' เป็นกริยาอปกติ: go → went"
+      },
+      {
+        "id": "past-simple-11",
+        "promptThai": "พูดว่า: ฉันเขียนอีเมลเมื่อวาน",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "wrote",
+            "phonetic": "โรท"
+          },
+          {
+            "text": "an email",
+            "phonetic": "แอน อี-เมล"
+          },
+          {
+            "text": "yesterday",
+            "phonetic": "เยส-เทอร์-เดย์"
+          },
+          {
+            "text": "write",
+            "phonetic": "ไรท์",
+            "isDistractor": true
+          },
+          {
+            "text": "writes",
+            "phonetic": "ไรทส์",
+            "isDistractor": true
+          },
+          {
+            "text": "writing",
+            "phonetic": "ไร-ทิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "wrote",
+          "an email",
+          "yesterday"
+        ],
+        "phonetic": "ไอ โรท แอน อี-เมล เยส-เทอร์-เดย์",
+        "thai": "ฉันเขียนอีเมลเมื่อวาน",
+        "explanation": "write เป็นกริยาไม่ปกติ: write → wrote ในรูปอดีต ไม่เติม -ed"
+      },
+      {
+        "id": "past-simple-12",
+        "promptThai": "พูดว่า: พวกเขาดูหนังเมื่อสุดสัปดาห์ที่แล้ว",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "watched",
+            "phonetic": "วอชท์"
+          },
+          {
+            "text": "a movie",
+            "phonetic": "อะ มู-วี่"
+          },
+          {
+            "text": "last weekend",
+            "phonetic": "ลาสท์ วีค-เอนด์"
+          },
+          {
+            "text": "watch",
+            "phonetic": "วอช",
+            "isDistractor": true
+          },
+          {
+            "text": "watches",
+            "phonetic": "วอช-เชส",
+            "isDistractor": true
+          },
+          {
+            "text": "watching",
+            "phonetic": "วอช-ชิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "watched",
+          "a movie",
+          "last weekend"
+        ],
+        "phonetic": "เดย์ วอชท์ อะ มู-วี่ ลาสท์ วีค-เอนด์",
+        "thai": "พวกเขาดูหนังเมื่อสุดสัปดาห์ที่แล้ว",
+        "explanation": "watch เป็นกริยาปกติ เติม -ed ในรูปอดีต: watch → watched"
+      },
+      {
+        "id": "past-simple-13",
+        "promptThai": "พูดว่า: เธอทำการบ้านก่อนอาหารเย็น",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "did",
+            "phonetic": "ดิด"
+          },
+          {
+            "text": "her homework",
+            "phonetic": "เฮอร์ โฮม-เวิร์ค"
+          },
+          {
+            "text": "before dinner",
+            "phonetic": "บิ-ฟอร์ ดิน-เนอร์"
+          },
+          {
+            "text": "do",
+            "phonetic": "ดู",
+            "isDistractor": true
+          },
+          {
+            "text": "does",
+            "phonetic": "ดัส",
+            "isDistractor": true
+          },
+          {
+            "text": "doing",
+            "phonetic": "ดู-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "did",
+          "her homework",
+          "before dinner"
+        ],
+        "phonetic": "ชี ดิด เฮอร์ โฮม-เวิร์ค บิ-ฟอร์ ดิน-เนอร์",
+        "thai": "เธอทำการบ้านก่อนอาหารเย็น",
+        "explanation": "do เป็นกริยาไม่ปกติ: do → did ในรูปอดีต ใช้รูปเดียวกันกับทุกประธาน"
+      },
+      {
+        "id": "past-simple-14",
+        "promptThai": "พูดว่า: เราต้องการบ้านหลังใหญ่กว่านี้",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "wanted",
+            "phonetic": "วอน-ทิด"
+          },
+          {
+            "text": "a bigger house",
+            "phonetic": "อะ บิก-เกอร์ เฮาส์"
+          },
+          {
+            "text": "want",
+            "phonetic": "วอนท์",
+            "isDistractor": true
+          },
+          {
+            "text": "wants",
+            "phonetic": "วอนท์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "wanting",
+            "phonetic": "วอน-ทิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "wanted",
+          "a bigger house"
+        ],
+        "phonetic": "วี วอน-ทิด อะ บิก-เกอร์ เฮาส์",
+        "thai": "เราต้องการบ้านหลังใหญ่กว่านี้",
+        "explanation": "want เป็นกริยาปกติ เติม -ed ในรูปอดีต: want → wanted"
+      },
+      {
+        "id": "past-simple-15",
+        "promptThai": "พูดว่า: เขาทำผิดพลาดในรายงาน",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "made",
+            "phonetic": "เมด"
+          },
+          {
+            "text": "a mistake in the report",
+            "phonetic": "อะ มิส-เทค อิน เดอะ รี-พอร์ท"
+          },
+          {
+            "text": "make",
+            "phonetic": "เมค",
+            "isDistractor": true
+          },
+          {
+            "text": "makes",
+            "phonetic": "เมคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "making",
+            "phonetic": "เม-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "made",
+          "a mistake in the report"
+        ],
+        "phonetic": "ฮี เมด อะ มิส-เทค อิน เดอะ รี-พอร์ท",
+        "thai": "เขาทำผิดพลาดในรายงาน",
+        "explanation": "make เป็นกริยาไม่ปกติ: make → made ในรูปอดีต ไม่เติม -ed"
+      },
+      {
+        "id": "past-simple-16",
+        "promptThai": "พูดว่า: ฉันเล่นฟุตบอลกับเพื่อนๆ",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "played",
+            "phonetic": "เพลย์ด"
+          },
+          {
+            "text": "football with my friends",
+            "phonetic": "ฟุต-บอล วิธ มาย เฟรนด์ส"
+          },
+          {
+            "text": "play",
+            "phonetic": "เพลย์",
+            "isDistractor": true
+          },
+          {
+            "text": "plays",
+            "phonetic": "เพลย์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "playing",
+            "phonetic": "เพลย์-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "played",
+          "football with my friends"
+        ],
+        "phonetic": "ไอ เพลย์ด ฟุต-บอล วิธ มาย เฟรนด์ส",
+        "thai": "ฉันเล่นฟุตบอลกับเพื่อนๆ",
+        "explanation": "play เป็นกริยาปกติ เติม -ed ในรูปอดีต: play → played"
+      },
+      {
+        "id": "past-simple-17",
+        "promptThai": "พูดว่า: พวกเขาไม่ได้ทำอาหารเย็นเมื่อคืนนี้",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "didn't",
+            "phonetic": "ดิด-เดินท์"
+          },
+          {
+            "text": "cook",
+            "phonetic": "คุค"
+          },
+          {
+            "text": "dinner last night",
+            "phonetic": "ดิน-เนอร์ ลาสท์ ไนท์"
+          },
+          {
+            "text": "cooks",
+            "phonetic": "คุคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "cooked",
+            "phonetic": "คุคท์",
+            "isDistractor": true
+          },
+          {
+            "text": "cooking",
+            "phonetic": "คุค-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "didn't",
+          "cook",
+          "dinner last night"
+        ],
+        "phonetic": "เดย์ ดิด-เดินท์ คุค ดิน-เนอร์ ลาสท์ ไนท์",
+        "thai": "พวกเขาไม่ได้ทำอาหารเย็นเมื่อคืนนี้",
+        "explanation": "ประโยคปฏิเสธในอดีตใช้ didn't + กริยารูปพื้นฐาน (base form) ไม่ใช่รูปอดีต"
+      },
+      {
+        "id": "past-simple-18",
+        "promptThai": "พูดว่า: เราไม่ได้ดูข่าวเมื่อวาน",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "didn't",
+            "phonetic": "ดิด-เดินท์"
+          },
+          {
+            "text": "watch",
+            "phonetic": "วอช"
+          },
+          {
+            "text": "the news yesterday",
+            "phonetic": "เดอะ นิวส์ เยส-เทอร์-เดย์"
+          },
+          {
+            "text": "watches",
+            "phonetic": "วอช-เชส",
+            "isDistractor": true
+          },
+          {
+            "text": "watched",
+            "phonetic": "วอชท์",
+            "isDistractor": true
+          },
+          {
+            "text": "watching",
+            "phonetic": "วอช-ชิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "didn't",
+          "watch",
+          "the news yesterday"
+        ],
+        "phonetic": "วี ดิด-เดินท์ วอช เดอะ นิวส์ เยส-เทอร์-เดย์",
+        "thai": "เราไม่ได้ดูข่าวเมื่อวาน",
+        "explanation": "ประโยคปฏิเสธในอดีตใช้ didn't + กริยารูปพื้นฐาน (base form) ไม่ใช่รูปอดีต"
+      },
+      {
+        "id": "past-simple-19",
+        "promptThai": "พูดว่า: เธอพูดคุยกับผู้จัดการเกี่ยวกับปัญหา",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "spoke",
+            "phonetic": "สโปค"
+          },
+          {
+            "text": "to her manager about the problem",
+            "phonetic": "ทู เฮอร์ แมน-นิ-เจอร์ อะ-เบาท์ เดอะ พรอบ-เบลม"
+          },
+          {
+            "text": "speak",
+            "phonetic": "สปีค",
+            "isDistractor": true
+          },
+          {
+            "text": "speaks",
+            "phonetic": "สปีคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "speaking",
+            "phonetic": "สปี-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "spoke",
+          "to her manager about the problem"
+        ],
+        "phonetic": "ชี สโปค ทู เฮอร์ แมน-นิ-เจอร์ อะ-เบาท์ เดอะ พรอบ-เบลม",
+        "thai": "เธอพูดคุยกับผู้จัดการเกี่ยวกับปัญหา",
+        "explanation": "speak เป็นกริยาไม่ปกติ: speak → spoke ในรูปอดีต ไม่เติม -ed"
+      },
+      {
+        "id": "past-simple-20",
+        "promptThai": "พูดว่า: เขาดื่มกาแฟสองแก้วเมื่อบ่ายนี้",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "drank",
+            "phonetic": "แดรงค์"
+          },
+          {
+            "text": "two cups of coffee",
+            "phonetic": "ทู คัพส์ ออฟ คอฟ-ฟี่"
+          },
+          {
+            "text": "this afternoon",
+            "phonetic": "ดิส แอฟ-เทอร์-นูน"
+          },
+          {
+            "text": "drink",
+            "phonetic": "ดริงค์",
+            "isDistractor": true
+          },
+          {
+            "text": "drinks",
+            "phonetic": "ดริงค์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "drinking",
+            "phonetic": "ดริง-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "drank",
+          "two cups of coffee",
+          "this afternoon"
+        ],
+        "phonetic": "ฮี แดรงค์ ทู คัพส์ ออฟ คอฟ-ฟี่ ดิส แอฟ-เทอร์-นูน",
+        "thai": "เขาดื่มกาแฟสองแก้วเมื่อบ่ายนี้",
+        "explanation": "drink เป็นกริยาไม่ปกติ: drink → drank ในรูปอดีต ไม่เติม -ed"
       }
     ]
   },
@@ -2052,6 +3266,551 @@
         "phonetic": "วี อาร์ แฮฟ-วิ่ง ดิน-เนอร์ ทู-เกท-เธอร์",
         "thai": "เรากำลังทานอาหารเย็นด้วยกันอยู่",
         "explanation": "Present Continuous บรรยายเหตุการณ์ที่กำลังเกิดขึ้นตอนนี้ได้ แม้แต่กับกริยาอย่าง 'have' เมื่อใช้ในความหมาย 'ทาน' (have dinner = กำลังทานอาหารเย็นอยู่)"
+      },
+      {
+        "id": "present-continuous-11",
+        "promptThai": "พูดว่า: เธอกำลังกินอาหารเช้าอยู่",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "eating",
+            "phonetic": "อีท-ทิ่ง"
+          },
+          {
+            "text": "breakfast",
+            "phonetic": "เบรค-ฟาสท์"
+          },
+          {
+            "text": "eat",
+            "phonetic": "อีท",
+            "isDistractor": true
+          },
+          {
+            "text": "eats",
+            "phonetic": "อีทส์",
+            "isDistractor": true
+          },
+          {
+            "text": "ate",
+            "phonetic": "เอท",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "is",
+          "eating",
+          "breakfast"
+        ],
+        "phonetic": "ชี อิส อีท-ทิ่ง เบรค-ฟาสท์",
+        "thai": "เธอกำลังกินอาหารเช้าอยู่",
+        "explanation": "Present Continuous = am/is/are + กริยาเติม -ing ประธาน 'She' ใช้กับ 'is' เสมอ"
+      },
+      {
+        "id": "present-continuous-12",
+        "promptThai": "พูดว่า: ฉันกำลังทำการบ้านอยู่",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม"
+          },
+          {
+            "text": "doing",
+            "phonetic": "ดู-อิ่ง"
+          },
+          {
+            "text": "my homework",
+            "phonetic": "มาย โฮม-เวิร์ค"
+          },
+          {
+            "text": "do",
+            "phonetic": "ดู",
+            "isDistractor": true
+          },
+          {
+            "text": "does",
+            "phonetic": "ดัส",
+            "isDistractor": true
+          },
+          {
+            "text": "did",
+            "phonetic": "ดิด",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "am",
+          "doing",
+          "my homework"
+        ],
+        "phonetic": "ไอ แอม ดู-อิ่ง มาย โฮม-เวิร์ค",
+        "thai": "ฉันกำลังทำการบ้านอยู่",
+        "explanation": "ประธาน 'I' ใช้กับ 'am' เสมอ ไม่ใช่ is หรือ are"
+      },
+      {
+        "id": "present-continuous-13",
+        "promptThai": "พูดว่า: เรากำลังพูดคุยกับผู้จัดการอยู่",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์"
+          },
+          {
+            "text": "speaking",
+            "phonetic": "สปี-กิ้ง"
+          },
+          {
+            "text": "to the manager",
+            "phonetic": "ทู เดอะ แมน-นิ-เจอร์"
+          },
+          {
+            "text": "speak",
+            "phonetic": "สปีค",
+            "isDistractor": true
+          },
+          {
+            "text": "speaks",
+            "phonetic": "สปีคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "spoke",
+            "phonetic": "สโปค",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "are",
+          "speaking",
+          "to the manager"
+        ],
+        "phonetic": "วี อาร์ สปี-กิ้ง ทู เดอะ แมน-นิ-เจอร์",
+        "thai": "เรากำลังพูดคุยกับผู้จัดการอยู่",
+        "explanation": "ประธานพหูพจน์ 'We' ใช้กับ 'are' เสมอ"
+      },
+      {
+        "id": "present-continuous-14",
+        "promptThai": "พูดว่า: เขากำลังทำงานโปรเจกต์ใหม่อยู่",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "working",
+            "phonetic": "เวิร์ค-กิ้ง"
+          },
+          {
+            "text": "on a new project",
+            "phonetic": "ออน อะ นิว พรอ-เจ็คท์"
+          },
+          {
+            "text": "work",
+            "phonetic": "เวิร์ค",
+            "isDistractor": true
+          },
+          {
+            "text": "works",
+            "phonetic": "เวิร์คส์",
+            "isDistractor": true
+          },
+          {
+            "text": "worked",
+            "phonetic": "เวิร์คท์",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "is",
+          "working",
+          "on a new project"
+        ],
+        "phonetic": "ฮี อิส เวิร์ค-กิ้ง ออน อะ นิว พรอ-เจ็คท์",
+        "thai": "เขากำลังทำงานโปรเจกต์ใหม่อยู่",
+        "explanation": "ประธาน 'He' ใช้กับ 'is' เสมอ"
+      },
+      {
+        "id": "present-continuous-15",
+        "promptThai": "พูดว่า: พวกเขากำลังทำอาหารเย็นด้วยกันอยู่",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์"
+          },
+          {
+            "text": "making",
+            "phonetic": "เม-กิ้ง"
+          },
+          {
+            "text": "dinner together",
+            "phonetic": "ดิน-เนอร์ ทู-เกท-เธอร์"
+          },
+          {
+            "text": "make",
+            "phonetic": "เมค",
+            "isDistractor": true
+          },
+          {
+            "text": "makes",
+            "phonetic": "เมคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "made",
+            "phonetic": "เมด",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "are",
+          "making",
+          "dinner together"
+        ],
+        "phonetic": "เดย์ อาร์ เม-กิ้ง ดิน-เนอร์ ทู-เกท-เธอร์",
+        "thai": "พวกเขากำลังทำอาหารเย็นด้วยกันอยู่",
+        "explanation": "ประธานพหูพจน์ 'They' ใช้กับ 'are' เสมอ"
+      },
+      {
+        "id": "present-continuous-16",
+        "promptThai": "พูดว่า: ฉันกำลังดื่มชาอยู่ตอนนี้",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม"
+          },
+          {
+            "text": "drinking",
+            "phonetic": "ดริง-กิ้ง"
+          },
+          {
+            "text": "tea right now",
+            "phonetic": "ที ไรท์ นาว"
+          },
+          {
+            "text": "drink",
+            "phonetic": "ดริงค์",
+            "isDistractor": true
+          },
+          {
+            "text": "drinks",
+            "phonetic": "ดริงค์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "drank",
+            "phonetic": "แดรงค์",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "am",
+          "drinking",
+          "tea right now"
+        ],
+        "phonetic": "ไอ แอม ดริง-กิ้ง ที ไรท์ นาว",
+        "thai": "ฉันกำลังดื่มชาอยู่ตอนนี้",
+        "explanation": "ประธาน 'I' ใช้กับ 'am' เสมอ ไม่ใช่ is หรือ are"
+      },
+      {
+        "id": "present-continuous-17",
+        "promptThai": "พูดว่า: เขากำลังอ่านหนังสือพิมพ์อยู่",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "reading",
+            "phonetic": "รี-ดิ้ง"
+          },
+          {
+            "text": "the newspaper",
+            "phonetic": "เดอะ นิวส์-เพ-เพอร์"
+          },
+          {
+            "text": "read",
+            "phonetic": "รีด",
+            "isDistractor": true
+          },
+          {
+            "text": "reads",
+            "phonetic": "รีดส์",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "is",
+          "reading",
+          "the newspaper"
+        ],
+        "phonetic": "ฮี อิส รี-ดิ้ง เดอะ นิวส์-เพ-เพอร์",
+        "thai": "เขากำลังอ่านหนังสือพิมพ์อยู่",
+        "explanation": "ประธาน 'He' ใช้กับ 'is' เสมอ"
+      },
+      {
+        "id": "present-continuous-18",
+        "promptThai": "พูดว่า: เธอไม่ได้กำลังทำอาหารกลางวันอยู่",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "isn't",
+            "phonetic": "อิส-เซินท์"
+          },
+          {
+            "text": "cooking",
+            "phonetic": "คุค-กิ้ง"
+          },
+          {
+            "text": "lunch today",
+            "phonetic": "ลันช์ ทู-เดย์"
+          },
+          {
+            "text": "aren't",
+            "phonetic": "อาร์-เนินท์",
+            "isDistractor": true
+          },
+          {
+            "text": "cook",
+            "phonetic": "คุค",
+            "isDistractor": true
+          },
+          {
+            "text": "cooks",
+            "phonetic": "คุคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "cooked",
+            "phonetic": "คุคท์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "isn't",
+          "cooking",
+          "lunch today"
+        ],
+        "phonetic": "ชี อิส-เซินท์ คุค-กิ้ง ลันช์ ทู-เดย์",
+        "thai": "เธอไม่ได้กำลังทำอาหารกลางวันอยู่",
+        "explanation": "'Isn't' คือรูปย่อของ 'is not' ใช้กับ he/she/it"
+      },
+      {
+        "id": "present-continuous-19",
+        "promptThai": "พูดว่า: ตอนนี้พวกเราไม่ได้กำลังเล่นเทนนิสอยู่",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "aren't",
+            "phonetic": "อาร์-เนินท์"
+          },
+          {
+            "text": "playing",
+            "phonetic": "เพลย์-อิ่ง"
+          },
+          {
+            "text": "tennis right now",
+            "phonetic": "เทน-นิส ไรท์ นาว"
+          },
+          {
+            "text": "isn't",
+            "phonetic": "อิส-เซินท์",
+            "isDistractor": true
+          },
+          {
+            "text": "play",
+            "phonetic": "เพลย์",
+            "isDistractor": true
+          },
+          {
+            "text": "plays",
+            "phonetic": "เพลย์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "played",
+            "phonetic": "เพลย์ด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "aren't",
+          "playing",
+          "tennis right now"
+        ],
+        "phonetic": "วี อาร์-เนินท์ เพลย์-อิ่ง เทน-นิส ไรท์ นาว",
+        "thai": "ตอนนี้พวกเราไม่ได้กำลังเล่นเทนนิสอยู่",
+        "explanation": "'Aren't' คือรูปย่อของ 'are not' ใช้กับ we/you/they"
+      },
+      {
+        "id": "present-continuous-20",
+        "promptThai": "พูดว่า: ตอนนี้พวกเขากำลังเขียนรายงานอยู่",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์"
+          },
+          {
+            "text": "writing",
+            "phonetic": "ไร-ทิ่ง"
+          },
+          {
+            "text": "a report now",
+            "phonetic": "อะ รี-พอร์ท นาว"
+          },
+          {
+            "text": "write",
+            "phonetic": "ไรท์",
+            "isDistractor": true
+          },
+          {
+            "text": "writes",
+            "phonetic": "ไรทส์",
+            "isDistractor": true
+          },
+          {
+            "text": "wrote",
+            "phonetic": "โรท",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "are",
+          "writing",
+          "a report now"
+        ],
+        "phonetic": "เดย์ อาร์ ไร-ทิ่ง อะ รี-พอร์ท นาว",
+        "thai": "ตอนนี้พวกเขากำลังเขียนรายงานอยู่",
+        "explanation": "ประธานพหูพจน์ 'They' ใช้กับ 'are' เสมอ"
       }
     ]
   },
@@ -2474,6 +4233,361 @@
         "phonetic": "ไอ แอม โก-อิ่ง ทู สทาร์ท อะ นิว จ็อบ",
         "thai": "ฉันจะเริ่มงานใหม่",
         "explanation": "ประธาน 'I' ใช้กับ 'am' เสมอ ก่อน 'going to'"
+      },
+      {
+        "id": "going-to-11",
+        "promptThai": "พูดว่า: เธอจะเขียนจดหมายถึงเพื่อนของเธอ",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "is going to",
+            "phonetic": "อิส โก-อิ่ง ทู"
+          },
+          {
+            "text": "write",
+            "phonetic": "ไรท์"
+          },
+          {
+            "text": "a letter to her friend",
+            "phonetic": "อะ เล็ท-เทอร์ ทู เฮอร์ เฟรนด์"
+          },
+          {
+            "text": "writes",
+            "phonetic": "ไรทส์",
+            "isDistractor": true
+          },
+          {
+            "text": "wrote",
+            "phonetic": "โรท",
+            "isDistractor": true
+          },
+          {
+            "text": "writing",
+            "phonetic": "ไร-ทิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "is going to",
+          "write",
+          "a letter to her friend"
+        ],
+        "phonetic": "ชี อิส โก-อิ่ง ทู ไรท์ อะ เล็ท-เทอร์ ทู เฮอร์ เฟรนด์",
+        "thai": "เธอจะเขียนจดหมายถึงเพื่อนของเธอ",
+        "explanation": "'Going to' + กริยารูปพื้นฐาน แสดงแผนการที่ตัดสินใจไว้ล่วงหน้า"
+      },
+      {
+        "id": "going-to-12",
+        "promptThai": "พูดว่า: เราจะทานอาหารกลางวันด้วยกัน",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "are going to",
+            "phonetic": "อาร์ โก-อิ่ง ทู"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "lunch together",
+            "phonetic": "ลันช์ ทู-เกท-เธอร์"
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "are going to",
+          "have",
+          "lunch together"
+        ],
+        "phonetic": "วี อาร์ โก-อิ่ง ทู แฮฟ ลันช์ ทู-เกท-เธอร์",
+        "thai": "เราจะทานอาหารกลางวันด้วยกัน",
+        "explanation": "'Am/is/are going to' + กริยารูปพื้นฐาน ใช้ 'are' กับประธานพหูพจน์ we"
+      },
+      {
+        "id": "going-to-13",
+        "promptThai": "พูดว่า: พวกเขาจะไปพูดคุยกับครู",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "are going to",
+            "phonetic": "อาร์ โก-อิ่ง ทู"
+          },
+          {
+            "text": "speak",
+            "phonetic": "สปีค"
+          },
+          {
+            "text": "to the teacher",
+            "phonetic": "ทู เดอะ ที-เชอร์"
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "are going to",
+          "speak",
+          "to the teacher"
+        ],
+        "phonetic": "เดย์ อาร์ โก-อิ่ง ทู สปีค ทู เดอะ ที-เชอร์",
+        "thai": "พวกเขาจะไปพูดคุยกับครู",
+        "explanation": "'Am/is/are going to' + กริยารูปพื้นฐาน ใช้ 'are' กับประธานพหูพจน์ they"
+      },
+      {
+        "id": "going-to-14",
+        "promptThai": "พูดว่า: เขาจะทำงานจากที่บ้านสัปดาห์หน้า",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "is going to",
+            "phonetic": "อิส โก-อิ่ง ทู"
+          },
+          {
+            "text": "work",
+            "phonetic": "เวิร์ค"
+          },
+          {
+            "text": "from home next week",
+            "phonetic": "ฟรอม โฮม เน็กซ์ท์ วีค"
+          },
+          {
+            "text": "works",
+            "phonetic": "เวิร์คส์",
+            "isDistractor": true
+          },
+          {
+            "text": "worked",
+            "phonetic": "เวิร์คท์",
+            "isDistractor": true
+          },
+          {
+            "text": "working",
+            "phonetic": "เวิร์ค-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "is going to",
+          "work",
+          "from home next week"
+        ],
+        "phonetic": "ฮี อิส โก-อิ่ง ทู เวิร์ค ฟรอม โฮม เน็กซ์ท์ วีค",
+        "thai": "เขาจะทำงานจากที่บ้านสัปดาห์หน้า",
+        "explanation": "'Going to' + กริยารูปพื้นฐาน ไม่ใช่รูปเติม -s หรือ -ing"
+      },
+      {
+        "id": "going-to-15",
+        "promptThai": "พูดว่า: ฉันจะดื่มน้ำให้มากขึ้น",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "am going to",
+            "phonetic": "แอม โก-อิ่ง ทู"
+          },
+          {
+            "text": "drink",
+            "phonetic": "ดริงค์"
+          },
+          {
+            "text": "more water",
+            "phonetic": "มอร์ วอ-เทอร์"
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "am going to",
+          "drink",
+          "more water"
+        ],
+        "phonetic": "ไอ แอม โก-อิ่ง ทู ดริงค์ มอร์ วอ-เทอร์",
+        "thai": "ฉันจะดื่มน้ำให้มากขึ้น",
+        "explanation": "'Am/is/are going to' + กริยารูปพื้นฐาน ใช้ 'am' กับประธาน I"
+      },
+      {
+        "id": "going-to-16",
+        "promptThai": "พูดว่า: เธอจะไปเรียนต่อต่างประเทศปีหน้า",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "is going to",
+            "phonetic": "อิส โก-อิ่ง ทู"
+          },
+          {
+            "text": "study",
+            "phonetic": "สทัด-ดี้"
+          },
+          {
+            "text": "abroad next year",
+            "phonetic": "อะ-บรอด เน็กซ์ท์ เยียร์"
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "is going to",
+          "study",
+          "abroad next year"
+        ],
+        "phonetic": "ชี อิส โก-อิ่ง ทู สทัด-ดี้ อะ-บรอด เน็กซ์ท์ เยียร์",
+        "thai": "เธอจะไปเรียนต่อต่างประเทศปีหน้า",
+        "explanation": "'Am/is/are going to' + กริยารูปพื้นฐาน ใช้ 'is' กับประธานเอกพจน์ she"
+      },
+      {
+        "id": "going-to-17",
+        "promptThai": "พูดว่า: เราจะทำเค้กสำหรับงานปาร์ตี้",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "are going to",
+            "phonetic": "อาร์ โก-อิ่ง ทู"
+          },
+          {
+            "text": "make",
+            "phonetic": "เมค"
+          },
+          {
+            "text": "a cake for the party",
+            "phonetic": "อะ เค้ก ฟอร์ เดอะ พาร์-ที่"
+          },
+          {
+            "text": "makes",
+            "phonetic": "เมคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "made",
+            "phonetic": "เมด",
+            "isDistractor": true
+          },
+          {
+            "text": "making",
+            "phonetic": "เม-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "are going to",
+          "make",
+          "a cake for the party"
+        ],
+        "phonetic": "วี อาร์ โก-อิ่ง ทู เมค อะ เค้ก ฟอร์ เดอะ พาร์-ที่",
+        "thai": "เราจะทำเค้กสำหรับงานปาร์ตี้",
+        "explanation": "'Going to' + กริยารูปพื้นฐาน ไม่ใช่รูปเติม -s หรือ -ed"
+      },
+      {
+        "id": "going-to-18",
+        "promptThai": "พูดว่า: พวกเขาจะกินที่นี่ไหม",
+        "chunks": [
+          {
+            "text": "Are they going to",
+            "phonetic": "อาร์ เดย์ โก-อิ่ง ทู"
+          },
+          {
+            "text": "eat here",
+            "phonetic": "อีท เฮียร์"
+          }
+        ],
+        "correctOrder": [
+          "Are they going to",
+          "eat here"
+        ],
+        "phonetic": "อาร์ เดย์ โก-อิ่ง ทู อีท เฮียร์",
+        "thai": "พวกเขาจะกินที่นี่ไหม",
+        "explanation": "คำถามใช้ Am/Is/Are ขึ้นต้นประโยค: Are they going to...?"
+      },
+      {
+        "id": "going-to-19",
+        "promptThai": "พูดว่า: เธอจะไม่ดูเกมนี้",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "is not going to",
+            "phonetic": "อิส น็อท โก-อิ่ง ทู"
+          },
+          {
+            "text": "watch",
+            "phonetic": "วอช"
+          },
+          {
+            "text": "the game",
+            "phonetic": "เดอะ เกม"
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "is not going to",
+          "watch",
+          "the game"
+        ],
+        "phonetic": "ชี อิส น็อท โก-อิ่ง ทู วอช เดอะ เกม",
+        "thai": "เธอจะไม่ดูเกมนี้",
+        "explanation": "ประโยคปฏิเสธเติม not หลัง am/is/are: is not going to"
+      },
+      {
+        "id": "going-to-20",
+        "promptThai": "พูดว่า: เขาจะอ่านหนังสือเล่มใหม่สุดสัปดาห์นี้",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "is going to",
+            "phonetic": "อิส โก-อิ่ง ทู"
+          },
+          {
+            "text": "read",
+            "phonetic": "รีด"
+          },
+          {
+            "text": "a new book this weekend",
+            "phonetic": "อะ นิว บุค ดิส วีค-เอนด์"
+          },
+          {
+            "text": "reads",
+            "phonetic": "รีดส์",
+            "isDistractor": true
+          },
+          {
+            "text": "reading",
+            "phonetic": "รี-ดิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "is going to",
+          "read",
+          "a new book this weekend"
+        ],
+        "phonetic": "ฮี อิส โก-อิ่ง ทู รีด อะ นิว บุค ดิส วีค-เอนด์",
+        "thai": "เขาจะอ่านหนังสือเล่มใหม่สุดสัปดาห์นี้",
+        "explanation": "'Going to' + กริยารูปพื้นฐาน 'read' สะกดเหมือนรูปอดีตแต่ในที่นี้เป็นรูปพื้นฐาน"
       }
     ]
   },
@@ -2908,6 +5022,346 @@
         "phonetic": "เดอะ เทรน วิล อะ-ไรฝ์ แอท ซิกซ์",
         "thai": "รถไฟจะมาถึงตอนหกโมง",
         "explanation": "'Will' มักใช้พูดถึงเหตุการณ์ในอนาคตที่กำหนดไว้แล้วหรือคาดการณ์ได้ เช่น ตารางเวลา"
+      },
+      {
+        "id": "will-future-11",
+        "promptThai": "พูดว่า: ฉันจะทำโปรเจกต์นี้ให้เสร็จภายในวันศุกร์",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "finish",
+            "phonetic": "ฟิน-นิช"
+          },
+          {
+            "text": "this project by Friday",
+            "phonetic": "ดิส พรอ-เจ็คท์ บาย ไฟร-เดย์"
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "will",
+          "finish",
+          "this project by Friday"
+        ],
+        "phonetic": "ไอ วิล ฟิน-นิช ดิส พรอ-เจ็คท์ บาย ไฟร-เดย์",
+        "thai": "ฉันจะทำโปรเจกต์นี้ให้เสร็จภายในวันศุกร์",
+        "explanation": "'Will' + กริยารูปพื้นฐาน ใช้รูปเดียวกันกับทุกประธาน"
+      },
+      {
+        "id": "will-future-12",
+        "promptThai": "พูดว่า: เธอจะดีใจมากเมื่อได้ยินข่าวนี้",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "be",
+            "phonetic": "บี"
+          },
+          {
+            "text": "very happy about the news",
+            "phonetic": "เว-รี่ แฮพ-พี อะ-เบาท์ เดอะ นิวส์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "will",
+          "be",
+          "very happy about the news"
+        ],
+        "phonetic": "ชี วิล บี เว-รี่ แฮพ-พี อะ-เบาท์ เดอะ นิวส์",
+        "thai": "เธอจะดีใจมากเมื่อได้ยินข่าวนี้",
+        "explanation": "หลัง 'will' ใช้กริยารูปพื้นฐานเสมอคือ 'be' ไม่ผัน am/is/are"
+      },
+      {
+        "id": "will-future-13",
+        "promptThai": "พูดว่า: เราจะไปเจอกันที่สถานี",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "meet",
+            "phonetic": "มีท"
+          },
+          {
+            "text": "at the station",
+            "phonetic": "แอท เดอะ สเท-ชั่น"
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "will",
+          "meet",
+          "at the station"
+        ],
+        "phonetic": "วี วิล มีท แอท เดอะ สเท-ชั่น",
+        "thai": "เราจะไปเจอกันที่สถานี",
+        "explanation": "'Will' + กริยารูปพื้นฐาน ใช้รูปเดียวกันกับทุกประธาน"
+      },
+      {
+        "id": "will-future-14",
+        "promptThai": "พูดว่า: พวกเขาจะเริ่มประชุมเร็วๆ นี้",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "start",
+            "phonetic": "สทาร์ท"
+          },
+          {
+            "text": "the meeting soon",
+            "phonetic": "เดอะ มี-ทิ่ง ซูน"
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "will",
+          "start",
+          "the meeting soon"
+        ],
+        "phonetic": "เดย์ วิล สทาร์ท เดอะ มี-ทิ่ง ซูน",
+        "thai": "พวกเขาจะเริ่มประชุมเร็วๆ นี้",
+        "explanation": "'Will' + กริยารูปพื้นฐาน ใช้รูปเดียวกันกับทุกประธาน"
+      },
+      {
+        "id": "will-future-15",
+        "promptThai": "พูดว่า: พรุ่งนี้เขาจะไม่อยู่ที่ออฟฟิศ",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "won't",
+            "phonetic": "โวนท์"
+          },
+          {
+            "text": "be",
+            "phonetic": "บี"
+          },
+          {
+            "text": "at the office tomorrow",
+            "phonetic": "แอท ดิ ออฟ-ฟิส ทู-มอร์-โรว์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "won't",
+          "be",
+          "at the office tomorrow"
+        ],
+        "phonetic": "ฮี โวนท์ บี แอท ดิ ออฟ-ฟิส ทู-มอร์-โรว์",
+        "thai": "พรุ่งนี้เขาจะไม่อยู่ที่ออฟฟิศ",
+        "explanation": "'Won't' คือรูปย่อของ 'will not' หลัง won't ใช้กริยารูปพื้นฐานคือ 'be'"
+      },
+      {
+        "id": "will-future-16",
+        "promptThai": "พูดว่า: ฉันจะส่งไฟล์ให้คุณคืนนี้",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "send",
+            "phonetic": "เซนด์"
+          },
+          {
+            "text": "you the file tonight",
+            "phonetic": "ยู เดอะ ไฟล์ ทู-ไนท์"
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "will",
+          "send",
+          "you the file tonight"
+        ],
+        "phonetic": "ไอ วิล เซนด์ ยู เดอะ ไฟล์ ทู-ไนท์",
+        "thai": "ฉันจะส่งไฟล์ให้คุณคืนนี้",
+        "explanation": "'Will' + กริยารูปพื้นฐาน ใช้รูปเดียวกันกับทุกประธาน"
+      },
+      {
+        "id": "will-future-17",
+        "promptThai": "พูดว่า: เธอจะมาทานอาหารเย็นกับเราไหม",
+        "chunks": [
+          {
+            "text": "Will she",
+            "phonetic": "วิล ชี"
+          },
+          {
+            "text": "join us for dinner",
+            "phonetic": "จอยน์ อัส ฟอร์ ดิน-เนอร์"
+          }
+        ],
+        "correctOrder": [
+          "Will she",
+          "join us for dinner"
+        ],
+        "phonetic": "วิล ชี จอยน์ อัส ฟอร์ ดิน-เนอร์",
+        "thai": "เธอจะมาทานอาหารเย็นกับเราไหม",
+        "explanation": "คำถามกับ will ขึ้นต้นด้วย Will เสมอ ไม่ว่าประธานจะเป็นใคร"
+      },
+      {
+        "id": "will-future-18",
+        "promptThai": "พูดว่า: สุดสัปดาห์นี้คงจะยุ่งมาก",
+        "chunks": [
+          {
+            "text": "It",
+            "phonetic": "อิท"
+          },
+          {
+            "text": "will probably",
+            "phonetic": "วิล พรอบ-บับ-ลี่"
+          },
+          {
+            "text": "be",
+            "phonetic": "บี"
+          },
+          {
+            "text": "busy this weekend",
+            "phonetic": "บิส-ซี่ ดิส วีค-เอนด์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "It",
+          "will probably",
+          "be",
+          "busy this weekend"
+        ],
+        "phonetic": "อิท วิล พรอบ-บับ-ลี่ บี บิส-ซี่ ดิส วีค-เอนด์",
+        "thai": "สุดสัปดาห์นี้คงจะยุ่งมาก",
+        "explanation": "'Will probably' บอกความเป็นไปได้ค่อนข้างแน่ หลังจากนั้นใช้กริยารูปพื้นฐานคือ 'be'"
+      },
+      {
+        "id": "will-future-19",
+        "promptThai": "พูดว่า: เราจะไม่มีวันยอมแพ้",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "will never",
+            "phonetic": "วิล เน-เวอร์"
+          },
+          {
+            "text": "give up",
+            "phonetic": "กิฝ อัพ"
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "will never",
+          "give up"
+        ],
+        "phonetic": "วี วิล เน-เวอร์ กิฝ อัพ",
+        "thai": "เราจะไม่มีวันยอมแพ้",
+        "explanation": "'Will never' วางไว้ระหว่างประธานกับกริยา แสดงความหนักแน่น"
+      },
+      {
+        "id": "will-future-20",
+        "promptThai": "พูดว่า: เครื่องบินจะลงจอดในอีกสิบนาที",
+        "chunks": [
+          {
+            "text": "The plane",
+            "phonetic": "เดอะ เพลน"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "land",
+            "phonetic": "แลนด์"
+          },
+          {
+            "text": "in ten minutes",
+            "phonetic": "อิน เทน มิน-นิทส์"
+          }
+        ],
+        "correctOrder": [
+          "The plane",
+          "will",
+          "land",
+          "in ten minutes"
+        ],
+        "phonetic": "เดอะ เพลน วิล แลนด์ อิน เทน มิน-นิทส์",
+        "thai": "เครื่องบินจะลงจอดในอีกสิบนาที",
+        "explanation": "'Will' + กริยารูปพื้นฐาน ใช้รูปเดียวกันกับทุกประธาน แม้เป็นสิ่งของ"
       }
     ]
   },
@@ -3353,6 +5807,381 @@
         "phonetic": "แดร์ อิส นัธ-ธิ่ง อิน เดอะ บ็อกซ์",
         "thai": "ไม่มีอะไรอยู่ในกล่องเลย",
         "explanation": "'Nothing' มีความหมายปฏิเสธอยู่ในตัวแล้ว ประโยคจึงยังใช้ 'there is' รูปบอกเล่าตามปกติ"
+      },
+      {
+        "id": "there-is-are-11",
+        "promptThai": "พูดว่า: มีคอมพิวเตอร์อยู่บนโต๊ะทำงาน",
+        "chunks": [
+          {
+            "text": "There is",
+            "phonetic": "แดร์ อิส"
+          },
+          {
+            "text": "a computer",
+            "phonetic": "อะ คอม-พิว-เทอร์"
+          },
+          {
+            "text": "on the desk",
+            "phonetic": "ออน เดอะ เดสค์"
+          },
+          {
+            "text": "There are",
+            "phonetic": "แดร์ อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "There is",
+          "a computer",
+          "on the desk"
+        ],
+        "phonetic": "แดร์ อิส อะ คอม-พิว-เทอร์ ออน เดอะ เดสค์",
+        "thai": "มีคอมพิวเตอร์อยู่บนโต๊ะทำงาน",
+        "explanation": "'There is' + คำนามเอกพจน์ ใช้บอกว่ามีสิ่งใดสิ่งหนึ่งอยู่"
+      },
+      {
+        "id": "there-is-are-12",
+        "promptThai": "พูดว่า: มีเก้าอี้สามตัวอยู่ในห้อง",
+        "chunks": [
+          {
+            "text": "There are",
+            "phonetic": "แดร์ อาร์"
+          },
+          {
+            "text": "three chairs",
+            "phonetic": "ธรี แชร์ส"
+          },
+          {
+            "text": "in the room",
+            "phonetic": "อิน เดอะ รูม"
+          },
+          {
+            "text": "There is",
+            "phonetic": "แดร์ อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "There are",
+          "three chairs",
+          "in the room"
+        ],
+        "phonetic": "แดร์ อาร์ ธรี แชร์ส อิน เดอะ รูม",
+        "thai": "มีเก้าอี้สามตัวอยู่ในห้อง",
+        "explanation": "'There are' + คำนามพหูพจน์ ใช้บอกว่ามีสิ่งของหลายชิ้นอยู่"
+      },
+      {
+        "id": "there-is-are-13",
+        "promptThai": "พูดว่า: มีสวนสาธารณะอยู่ใกล้บ้านของฉัน",
+        "chunks": [
+          {
+            "text": "There is",
+            "phonetic": "แดร์ อิส"
+          },
+          {
+            "text": "a park",
+            "phonetic": "อะ พาร์ค"
+          },
+          {
+            "text": "near my house",
+            "phonetic": "เนียร์ มาย เฮาส์"
+          },
+          {
+            "text": "There are",
+            "phonetic": "แดร์ อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "There is",
+          "a park",
+          "near my house"
+        ],
+        "phonetic": "แดร์ อิส อะ พาร์ค เนียร์ มาย เฮาส์",
+        "thai": "มีสวนสาธารณะอยู่ใกล้บ้านของฉัน",
+        "explanation": "'There is' + คำนามเอกพจน์ ใช้บอกว่ามีสิ่งใดสิ่งหนึ่งอยู่"
+      },
+      {
+        "id": "there-is-are-14",
+        "promptThai": "พูดว่า: ไม่มีไข่เหลืออยู่ในตู้เย็นเลย",
+        "chunks": [
+          {
+            "text": "There aren't",
+            "phonetic": "แดร์ อาร์-เนินท์"
+          },
+          {
+            "text": "any eggs",
+            "phonetic": "เอน-นี่ เอ็กส์"
+          },
+          {
+            "text": "in the fridge",
+            "phonetic": "อิน เดอะ ฟริดจ์"
+          }
+        ],
+        "correctOrder": [
+          "There aren't",
+          "any eggs",
+          "in the fridge"
+        ],
+        "phonetic": "แดร์ อาร์-เนินท์ เอน-นี่ เอ็กส์ อิน เดอะ ฟริดจ์",
+        "thai": "ไม่มีไข่เหลืออยู่ในตู้เย็นเลย",
+        "explanation": "'There aren't any' ใช้กับคำนามพหูพจน์ในประโยคปฏิเสธ"
+      },
+      {
+        "id": "there-is-are-15",
+        "promptThai": "พูดว่า: มีร้านอาหารสองสามร้านอยู่ใกล้ออฟฟิศ",
+        "chunks": [
+          {
+            "text": "There are",
+            "phonetic": "แดร์ อาร์"
+          },
+          {
+            "text": "a few restaurants",
+            "phonetic": "อะ ฟิว เรส-เทอ-รอนท์ส"
+          },
+          {
+            "text": "near the office",
+            "phonetic": "เนียร์ ดิ ออฟ-ฟิส"
+          },
+          {
+            "text": "There is",
+            "phonetic": "แดร์ อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "There are",
+          "a few restaurants",
+          "near the office"
+        ],
+        "phonetic": "แดร์ อาร์ อะ ฟิว เรส-เทอ-รอนท์ส เนียร์ ดิ ออฟ-ฟิส",
+        "thai": "มีร้านอาหารสองสามร้านอยู่ใกล้ออฟฟิศ",
+        "explanation": "'There are' + คำนามพหูพจน์ ใช้บอกว่ามีสิ่งของหลายชิ้นอยู่"
+      },
+      {
+        "id": "there-is-are-16",
+        "promptThai": "พูดว่า: ยังมีตั๋วเหลืออยู่ไหม",
+        "chunks": [
+          {
+            "text": "Are there",
+            "phonetic": "อาร์ แดร์"
+          },
+          {
+            "text": "any tickets left",
+            "phonetic": "เอน-นี่ ทิค-เค็ทส์ เลฟท์"
+          },
+          {
+            "text": "Is there",
+            "phonetic": "อิส แดร์",
+            "isDistractor": true
+          },
+          {
+            "text": "Was there",
+            "phonetic": "วอส แดร์",
+            "isDistractor": true
+          },
+          {
+            "text": "Were there",
+            "phonetic": "เวอร์ แดร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Are there",
+          "any tickets left"
+        ],
+        "phonetic": "อาร์ แดร์ เอน-นี่ ทิค-เค็ทส์ เลฟท์",
+        "thai": "ยังมีตั๋วเหลืออยู่ไหม",
+        "explanation": "คำถามกับคำนามพหูพจน์ใช้ 'Are there' ขึ้นต้นประโยค"
+      },
+      {
+        "id": "there-is-are-17",
+        "promptThai": "พูดว่า: มีพายุใหญ่เมื่อสัปดาห์ที่แล้ว",
+        "chunks": [
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส"
+          },
+          {
+            "text": "a big storm",
+            "phonetic": "อะ บิก สตอร์ม"
+          },
+          {
+            "text": "last week",
+            "phonetic": "ลาสท์ วีค"
+          },
+          {
+            "text": "There is",
+            "phonetic": "แดร์ อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "There are",
+            "phonetic": "แดร์ อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "There was",
+          "a big storm",
+          "last week"
+        ],
+        "phonetic": "แดร์ วอส อะ บิก สตอร์ม ลาสท์ วีค",
+        "thai": "มีพายุใหญ่เมื่อสัปดาห์ที่แล้ว",
+        "explanation": "'There was' ใช้กับคำนามเอกพจน์ในอดีต"
+      },
+      {
+        "id": "there-is-are-18",
+        "promptThai": "พูดว่า: ไม่มีเวลาพอที่จะทำให้เสร็จ",
+        "chunks": [
+          {
+            "text": "There wasn't",
+            "phonetic": "แดร์ วอส-เซินท์"
+          },
+          {
+            "text": "enough time",
+            "phonetic": "อี-นัฟ ไทม์"
+          },
+          {
+            "text": "to finish",
+            "phonetic": "ทู ฟิน-นิช"
+          }
+        ],
+        "correctOrder": [
+          "There wasn't",
+          "enough time",
+          "to finish"
+        ],
+        "phonetic": "แดร์ วอส-เซินท์ อี-นัฟ ไทม์ ทู ฟิน-นิช",
+        "thai": "ไม่มีเวลาพอที่จะทำให้เสร็จ",
+        "explanation": "'There wasn't' ใช้กับคำนามนับไม่ได้หรือเอกพจน์ในประโยคปฏิเสธอดีต"
+      },
+      {
+        "id": "there-is-are-19",
+        "promptThai": "พูดว่า: มีคนจำนวนมากอยู่ที่คอนเสิร์ต",
+        "chunks": [
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์"
+          },
+          {
+            "text": "many people",
+            "phonetic": "เมน-นี่ พี-เพิล"
+          },
+          {
+            "text": "at the concert",
+            "phonetic": "แอท เดอะ คอน-เสิร์ท"
+          },
+          {
+            "text": "There is",
+            "phonetic": "แดร์ อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "There are",
+            "phonetic": "แดร์ อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "There were",
+          "many people",
+          "at the concert"
+        ],
+        "phonetic": "แดร์ เวอร์ เมน-นี่ พี-เพิล แอท เดอะ คอน-เสิร์ท",
+        "thai": "มีคนจำนวนมากอยู่ที่คอนเสิร์ต",
+        "explanation": "'There were' ใช้กับคำนามพหูพจน์ในอดีต"
+      },
+      {
+        "id": "there-is-are-20",
+        "promptThai": "พูดว่า: ตอนนี้ไม่มีใครอยู่ในออฟฟิศเลย",
+        "chunks": [
+          {
+            "text": "There is",
+            "phonetic": "แดร์ อิส"
+          },
+          {
+            "text": "nobody",
+            "phonetic": "โน-บอ-ดี้"
+          },
+          {
+            "text": "in the office right now",
+            "phonetic": "อิน ดิ ออฟ-ฟิส ไรท์ นาว"
+          },
+          {
+            "text": "There are",
+            "phonetic": "แดร์ อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "There was",
+            "phonetic": "แดร์ วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "There were",
+            "phonetic": "แดร์ เวอร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "There is",
+          "nobody",
+          "in the office right now"
+        ],
+        "phonetic": "แดร์ อิส โน-บอ-ดี้ อิน ดิ ออฟ-ฟิส ไรท์ นาว",
+        "thai": "ตอนนี้ไม่มีใครอยู่ในออฟฟิศเลย",
+        "explanation": "'Nobody' เป็นคำนามเอกพจน์เสมอ จึงใช้กับ 'There is'"
       }
     ]
   },
@@ -3804,6 +6633,401 @@
         "phonetic": "วี แคน มีท ทู-มอร์-โรว์ อิฟ ยู วอนท์",
         "thai": "เราเจอกันพรุ่งนี้ได้ถ้าคุณต้องการ",
         "explanation": "'Can' ยังใช้พูดถึงความเป็นไปได้ในอนาคตได้ ไม่ใช่แค่ความสามารถในปัจจุบัน"
+      },
+      {
+        "id": "can-could-11",
+        "promptThai": "พูดว่า: เขาเขียนรายงานได้อย่างรวดเร็ว",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "write",
+            "phonetic": "ไรท์"
+          },
+          {
+            "text": "reports quickly",
+            "phonetic": "รี-พอร์ทส์ ควิค-ลี่"
+          },
+          {
+            "text": "could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "writes",
+            "phonetic": "ไรทส์",
+            "isDistractor": true
+          },
+          {
+            "text": "wrote",
+            "phonetic": "โรท",
+            "isDistractor": true
+          },
+          {
+            "text": "writing",
+            "phonetic": "ไร-ทิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "can",
+          "write",
+          "reports quickly"
+        ],
+        "phonetic": "ฮี แคน ไรท์ รี-พอร์ทส์ ควิค-ลี่",
+        "thai": "เขาเขียนรายงานได้อย่างรวดเร็ว",
+        "explanation": "'Can' + กริยารูปพื้นฐาน แสดงความสามารถในปัจจุบัน และ 'can' ไม่เปลี่ยนรูปตามประธาน"
+      },
+      {
+        "id": "can-could-12",
+        "promptThai": "พูดว่า: ฉันอ่านหนังสือได้ตั้งแต่ก่อนอายุห้าขวบ",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "could",
+            "phonetic": "คุด"
+          },
+          {
+            "text": "read",
+            "phonetic": "รีด"
+          },
+          {
+            "text": "before I was five",
+            "phonetic": "บิ-ฟอร์ ไอ วอส ไฟว์"
+          },
+          {
+            "text": "can",
+            "phonetic": "แคน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "could",
+          "read",
+          "before I was five"
+        ],
+        "phonetic": "ไอ คุด รีด บิ-ฟอร์ ไอ วอส ไฟว์",
+        "thai": "ฉันอ่านหนังสือได้ตั้งแต่ก่อนอายุห้าขวบ",
+        "explanation": "'Could' ใช้พูดถึงความสามารถในอดีต ตรงข้ามกับ 'can' ที่ใช้กับปัจจุบัน"
+      },
+      {
+        "id": "can-could-13",
+        "promptThai": "พูดว่า: เราทำงานร่วมกันในโปรเจกต์นี้ได้",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "work",
+            "phonetic": "เวิร์ค"
+          },
+          {
+            "text": "together on this project",
+            "phonetic": "ทู-เกท-เธอร์ ออน ดิส พรอ-เจ็คท์"
+          },
+          {
+            "text": "could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "works",
+            "phonetic": "เวิร์คส์",
+            "isDistractor": true
+          },
+          {
+            "text": "worked",
+            "phonetic": "เวิร์คท์",
+            "isDistractor": true
+          },
+          {
+            "text": "working",
+            "phonetic": "เวิร์ค-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "can",
+          "work",
+          "together on this project"
+        ],
+        "phonetic": "วี แคน เวิร์ค ทู-เกท-เธอร์ ออน ดิส พรอ-เจ็คท์",
+        "thai": "เราทำงานร่วมกันในโปรเจกต์นี้ได้",
+        "explanation": "'Can' + กริยารูปพื้นฐาน แสดงความสามารถในปัจจุบัน"
+      },
+      {
+        "id": "can-could-14",
+        "promptThai": "พูดว่า: พวกเขาทำอาหารอิตาเลียนไม่เป็น",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "can't",
+            "phonetic": "แคนท์"
+          },
+          {
+            "text": "cook",
+            "phonetic": "คุค"
+          },
+          {
+            "text": "Italian food",
+            "phonetic": "อิ-แทล-เยิน ฟูด"
+          },
+          {
+            "text": "couldn't",
+            "phonetic": "คุด-เดินท์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "can't",
+          "cook",
+          "Italian food"
+        ],
+        "phonetic": "เดย์ แคนท์ คุค อิ-แทล-เยิน ฟูด",
+        "thai": "พวกเขาทำอาหารอิตาเลียนไม่เป็น",
+        "explanation": "'Can't' เป็นรูปปฏิเสธของ can ในปัจจุบัน ตรงข้ามกับ couldn't ที่ใช้กับอดีต"
+      },
+      {
+        "id": "can-could-15",
+        "promptThai": "พูดว่า: เมื่อวานเขาหากุญแจของเขาไม่เจอ",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "couldn't",
+            "phonetic": "คุด-เดินท์"
+          },
+          {
+            "text": "find",
+            "phonetic": "ไฟนด์"
+          },
+          {
+            "text": "his keys yesterday",
+            "phonetic": "ฮิส คีส์ เยส-เทอร์-เดย์"
+          },
+          {
+            "text": "can't",
+            "phonetic": "แคนท์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "couldn't",
+          "find",
+          "his keys yesterday"
+        ],
+        "phonetic": "ฮี คุด-เดินท์ ไฟนด์ ฮิส คีส์ เยส-เทอร์-เดย์",
+        "thai": "เมื่อวานเขาหากุญแจของเขาไม่เจอ",
+        "explanation": "'Couldn't' เป็นรูปปฏิเสธของ could ในอดีต ตรงข้ามกับ can't ที่ใช้กับปัจจุบัน"
+      },
+      {
+        "id": "can-could-16",
+        "promptThai": "พูดว่า: เธอขับรถเป็นไหม",
+        "chunks": [
+          {
+            "text": "Can she",
+            "phonetic": "แคน ชี"
+          },
+          {
+            "text": "drive",
+            "phonetic": "ไดรฝ์"
+          },
+          {
+            "text": "a car",
+            "phonetic": "อะ คาร์"
+          },
+          {
+            "text": "drives",
+            "phonetic": "ไดรฝ์ส",
+            "isDistractor": true
+          },
+          {
+            "text": "drove",
+            "phonetic": "โดรฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "driving",
+            "phonetic": "ไดร-ฝิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Can she",
+          "drive",
+          "a car"
+        ],
+        "phonetic": "แคน ชี ไดรฝ์ อะ คาร์",
+        "thai": "เธอขับรถเป็นไหม",
+        "explanation": "คำถามกับ can ขึ้นต้นด้วย Can เสมอ ตามด้วยกริยารูปพื้นฐาน"
+      },
+      {
+        "id": "can-could-17",
+        "promptThai": "พูดว่า: ช่วยส่งเกลือให้ฉันหน่อยได้ไหม",
+        "chunks": [
+          {
+            "text": "Could you",
+            "phonetic": "คุด ยู"
+          },
+          {
+            "text": "pass",
+            "phonetic": "พาส"
+          },
+          {
+            "text": "me the salt",
+            "phonetic": "มี เดอะ ซอลท์"
+          }
+        ],
+        "correctOrder": [
+          "Could you",
+          "pass",
+          "me the salt"
+        ],
+        "phonetic": "คุด ยู พาส มี เดอะ ซอลท์",
+        "thai": "ช่วยส่งเกลือให้ฉันหน่อยได้ไหม",
+        "explanation": "'Could you...?' ใช้ขอร้องอย่างสุภาพ ไม่ได้หมายถึงความสามารถในอดีตเสมอไป"
+      },
+      {
+        "id": "can-could-18",
+        "promptThai": "พูดว่า: เราไปเที่ยวญี่ปุ่นปีหน้าได้ถ้าเราเก็บเงิน",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "could",
+            "phonetic": "คุด"
+          },
+          {
+            "text": "travel",
+            "phonetic": "แทรฟ-เวิล"
+          },
+          {
+            "text": "to Japan next year if we save money",
+            "phonetic": "ทู จา-แปน เน็กซ์ท์ เยียร์ อิฟ วี เซฝ มัน-นี่"
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "could",
+          "travel",
+          "to Japan next year if we save money"
+        ],
+        "phonetic": "วี คุด แทรฟ-เวิล ทู จา-แปน เน็กซ์ท์ เยียร์ อิฟ วี เซฝ มัน-นี่",
+        "thai": "เราไปเที่ยวญี่ปุ่นปีหน้าได้ถ้าเราเก็บเงิน",
+        "explanation": "'Could' ในที่นี้ใช้แสดงความเป็นไปได้ในอนาคต ไม่ใช่ความสามารถในอดีต"
+      },
+      {
+        "id": "can-could-19",
+        "promptThai": "พูดว่า: เธอพูดได้สามภาษาอย่างคล่องแคล่ว",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "speak",
+            "phonetic": "สปีค"
+          },
+          {
+            "text": "three languages fluently",
+            "phonetic": "ธรี แลง-กวิด-เจส ฟลู-เอินท์-ลี่"
+          },
+          {
+            "text": "could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "speaks",
+            "phonetic": "สปีคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "spoke",
+            "phonetic": "สโปค",
+            "isDistractor": true
+          },
+          {
+            "text": "speaking",
+            "phonetic": "สปี-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "can",
+          "speak",
+          "three languages fluently"
+        ],
+        "phonetic": "ชี แคน สปีค ธรี แลง-กวิด-เจส ฟลู-เอินท์-ลี่",
+        "thai": "เธอพูดได้สามภาษาอย่างคล่องแคล่ว",
+        "explanation": "'Can' + กริยารูปพื้นฐาน แสดงความสามารถในปัจจุบัน และไม่เปลี่ยนรูปตามประธาน"
+      },
+      {
+        "id": "can-could-20",
+        "promptThai": "พูดว่า: เมื่อคืนนี้ฉันนอนไม่หลับ",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "couldn't",
+            "phonetic": "คุด-เดินท์"
+          },
+          {
+            "text": "sleep",
+            "phonetic": "สลีพ"
+          },
+          {
+            "text": "last night",
+            "phonetic": "ลาสท์ ไนท์"
+          },
+          {
+            "text": "can't",
+            "phonetic": "แคนท์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "couldn't",
+          "sleep",
+          "last night"
+        ],
+        "phonetic": "ไอ คุด-เดินท์ สลีพ ลาสท์ ไนท์",
+        "thai": "เมื่อคืนนี้ฉันนอนไม่หลับ",
+        "explanation": "'Couldn't' เป็นรูปปฏิเสธของ could ในอดีต ตรงข้ามกับ can't ที่ใช้กับปัจจุบัน"
       }
     ]
   },
@@ -4336,6 +7560,516 @@
         "phonetic": "ดิส แบ็ก อิส เวิร์ส แดน มาย โอลด์ วัน",
         "thai": "กระเป๋าใบนี้แย่กว่าใบเก่าของฉัน",
         "explanation": "'Bad' เป็นคำคุณศัพท์อปกติ: bad → worse ไม่ใช่ 'badder'"
+      },
+      {
+        "id": "comparatives-11",
+        "promptThai": "พูดว่า: น้องสาวของฉันสูงกว่าแม่ของฉัน",
+        "chunks": [
+          {
+            "text": "My sister",
+            "phonetic": "มาย ซิส-เทอร์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "taller",
+            "phonetic": "ทอล-เลอร์"
+          },
+          {
+            "text": "than my mother",
+            "phonetic": "แดน มาย มา-เธอร์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "tall",
+            "phonetic": "ทอล",
+            "isDistractor": true
+          },
+          {
+            "text": "tallest",
+            "phonetic": "ทอล-เลสท์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "My sister",
+          "is",
+          "taller",
+          "than my mother"
+        ],
+        "phonetic": "มาย ซิส-เทอร์ อิส ทอล-เลอร์ แดน มาย มา-เธอร์",
+        "thai": "น้องสาวของฉันสูงกว่าแม่ของฉัน",
+        "explanation": "คำคุณศัพท์สั้นเติม -er: tall → taller ตามด้วย 'than'"
+      },
+      {
+        "id": "comparatives-12",
+        "promptThai": "พูดว่า: รถคันนี้เร็วกว่าคันเก่าของฉัน",
+        "chunks": [
+          {
+            "text": "This car",
+            "phonetic": "ดิส คาร์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "faster",
+            "phonetic": "ฟาสท์-เทอร์"
+          },
+          {
+            "text": "than my old one",
+            "phonetic": "แดน มาย โอลด์ วัน"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "fast",
+            "phonetic": "ฟาสท์",
+            "isDistractor": true
+          },
+          {
+            "text": "fastest",
+            "phonetic": "ฟาสท์-เทสท์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "This car",
+          "is",
+          "faster",
+          "than my old one"
+        ],
+        "phonetic": "ดิส คาร์ อิส ฟาสท์-เทอร์ แดน มาย โอลด์ วัน",
+        "thai": "รถคันนี้เร็วกว่าคันเก่าของฉัน",
+        "explanation": "คำคุณศัพท์สั้นเติม -er: fast → faster ตามด้วย 'than'"
+      },
+      {
+        "id": "comparatives-13",
+        "promptThai": "พูดว่า: ร้านอาหารนี้ถูกกว่าโรงแรมนั้น",
+        "chunks": [
+          {
+            "text": "This restaurant",
+            "phonetic": "ดิส เรส-เทอ-รอนท์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "cheaper",
+            "phonetic": "ชี-เพอร์"
+          },
+          {
+            "text": "than that hotel",
+            "phonetic": "แดน แดท โฮ-เทล"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "cheap",
+            "phonetic": "ชีพ",
+            "isDistractor": true
+          },
+          {
+            "text": "cheapest",
+            "phonetic": "ชี-เพสท์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "This restaurant",
+          "is",
+          "cheaper",
+          "than that hotel"
+        ],
+        "phonetic": "ดิส เรส-เทอ-รอนท์ อิส ชี-เพอร์ แดน แดท โฮ-เทล",
+        "thai": "ร้านอาหารนี้ถูกกว่าโรงแรมนั้น",
+        "explanation": "คำคุณศัพท์ที่ลงท้ายด้วย -e เติมแค่ -r: cheap → cheaper ตามด้วย 'than'"
+      },
+      {
+        "id": "comparatives-14",
+        "promptThai": "พูดว่า: ชุดนี้สวยกว่าชุดอีกตัวหนึ่ง",
+        "chunks": [
+          {
+            "text": "This dress",
+            "phonetic": "ดิส เดรส"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "more beautiful",
+            "phonetic": "มอร์ บิว-ทิ-ฟุล"
+          },
+          {
+            "text": "than the other one",
+            "phonetic": "แดน ดิ อะ-เธอร์ วัน"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "beautiful",
+            "phonetic": "บิว-ทิ-ฟุล",
+            "isDistractor": true
+          },
+          {
+            "text": "most beautiful",
+            "phonetic": "โมสท์ บิว-ทิ-ฟุล",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "This dress",
+          "is",
+          "more beautiful",
+          "than the other one"
+        ],
+        "phonetic": "ดิส เดรส อิส มอร์ บิว-ทิ-ฟุล แดน ดิ อะ-เธอร์ วัน",
+        "thai": "ชุดนี้สวยกว่าชุดอีกตัวหนึ่ง",
+        "explanation": "คำคุณศัพท์ยาวใช้ 'more' นำหน้าแทนการเติม -er: beautiful → more beautiful"
+      },
+      {
+        "id": "comparatives-15",
+        "promptThai": "พูดว่า: เก้าอี้ตัวนี้นั่งสบายกว่าโซฟาตัวนั้น",
+        "chunks": [
+          {
+            "text": "This chair",
+            "phonetic": "ดิส แชร์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "more comfortable",
+            "phonetic": "มอร์ คัม-ฟอร์-เทอ-เบิล"
+          },
+          {
+            "text": "than that sofa",
+            "phonetic": "แดน แดท โซ-ฟา"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "comfortable",
+            "phonetic": "คัม-ฟอร์-เทอ-เบิล",
+            "isDistractor": true
+          },
+          {
+            "text": "most comfortable",
+            "phonetic": "โมสท์ คัม-ฟอร์-เทอ-เบิล",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "This chair",
+          "is",
+          "more comfortable",
+          "than that sofa"
+        ],
+        "phonetic": "ดิส แชร์ อิส มอร์ คัม-ฟอร์-เทอ-เบิล แดน แดท โซ-ฟา",
+        "thai": "เก้าอี้ตัวนี้นั่งสบายกว่าโซฟาตัวนั้น",
+        "explanation": "คำคุณศัพท์ยาวใช้ 'more' นำหน้าแทนการเติม -er: comfortable → more comfortable"
+      },
+      {
+        "id": "comparatives-16",
+        "promptThai": "พูดว่า: หนังสือเล่มนี้น่าสนใจกว่าเล่มที่แล้ว",
+        "chunks": [
+          {
+            "text": "This book",
+            "phonetic": "ดิส บุค"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "more interesting",
+            "phonetic": "มอร์ อิน-เทอ-เรส-ติ้ง"
+          },
+          {
+            "text": "than the last one",
+            "phonetic": "แดน เดอะ ลาสท์ วัน"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "interesting",
+            "phonetic": "อิน-เทอ-เรส-ติ้ง",
+            "isDistractor": true
+          },
+          {
+            "text": "most interesting",
+            "phonetic": "โมสท์ อิน-เทอ-เรส-ติ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "This book",
+          "is",
+          "more interesting",
+          "than the last one"
+        ],
+        "phonetic": "ดิส บุค อิส มอร์ อิน-เทอ-เรส-ติ้ง แดน เดอะ ลาสท์ วัน",
+        "thai": "หนังสือเล่มนี้น่าสนใจกว่าเล่มที่แล้ว",
+        "explanation": "คำคุณศัพท์ยาวใช้ 'more' นำหน้าแทนการเติม -er: interesting → more interesting"
+      },
+      {
+        "id": "comparatives-17",
+        "promptThai": "พูดว่า: เธอระมัดระวังกว่าน้องชายของเธอ",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "more careful",
+            "phonetic": "มอร์ แคร์-ฟุล"
+          },
+          {
+            "text": "than her brother",
+            "phonetic": "แดน เฮอร์ บรา-เธอร์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "careful",
+            "phonetic": "แคร์-ฟุล",
+            "isDistractor": true
+          },
+          {
+            "text": "most careful",
+            "phonetic": "โมสท์ แคร์-ฟุล",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "is",
+          "more careful",
+          "than her brother"
+        ],
+        "phonetic": "ชี อิส มอร์ แคร์-ฟุล แดน เฮอร์ บรา-เธอร์",
+        "thai": "เธอระมัดระวังกว่าน้องชายของเธอ",
+        "explanation": "คำคุณศัพท์ยาวใช้ 'more' นำหน้าแทนการเติม -er: careful → more careful"
+      },
+      {
+        "id": "comparatives-18",
+        "promptThai": "พูดว่า: ออฟฟิศของฉันไกลกว่าของคุณ",
+        "chunks": [
+          {
+            "text": "My office",
+            "phonetic": "มาย ออฟ-ฟิส"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "farther",
+            "phonetic": "ฟาร์-เธอร์"
+          },
+          {
+            "text": "than yours",
+            "phonetic": "แดน ยัวร์ส"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "far",
+            "phonetic": "ฟาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "farthest",
+            "phonetic": "ฟาร์-เธสท์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "My office",
+          "is",
+          "farther",
+          "than yours"
+        ],
+        "phonetic": "มาย ออฟ-ฟิส อิส ฟาร์-เธอร์ แดน ยัวร์ส",
+        "thai": "ออฟฟิศของฉันไกลกว่าของคุณ",
+        "explanation": "'Far' เป็นคำคุณศัพท์ไม่ปกติ: far → farther (ไม่ใช่ farer)"
+      },
+      {
+        "id": "comparatives-19",
+        "promptThai": "พูดว่า: กาแฟนี้ดีกว่าแก้วที่ฉันดื่มเมื่อวาน",
+        "chunks": [
+          {
+            "text": "This coffee",
+            "phonetic": "ดิส คอฟ-ฟี่"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "better",
+            "phonetic": "เบท-เทอร์"
+          },
+          {
+            "text": "than the one I had yesterday",
+            "phonetic": "แดน เดอะ วัน ไอ แฮด เยส-เทอร์-เดย์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "good",
+            "phonetic": "กู๊ด",
+            "isDistractor": true
+          },
+          {
+            "text": "best",
+            "phonetic": "เบสท์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "This coffee",
+          "is",
+          "better",
+          "than the one I had yesterday"
+        ],
+        "phonetic": "ดิส คอฟ-ฟี่ อิส เบท-เทอร์ แดน เดอะ วัน ไอ แฮด เยส-เทอร์-เดย์",
+        "thai": "กาแฟนี้ดีกว่าแก้วที่ฉันดื่มเมื่อวาน",
+        "explanation": "'Good' เป็นคำคุณศัพท์ไม่ปกติ: good → better (ไม่ใช่ gooder)"
+      },
+      {
+        "id": "comparatives-20",
+        "promptThai": "พูดว่า: ออฟฟิศใหม่ของพวกเขาใหญ่กว่าออฟฟิศเก่า",
+        "chunks": [
+          {
+            "text": "Their new office",
+            "phonetic": "แดร์ นิว ออฟ-ฟิส"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "bigger",
+            "phonetic": "บิก-เกอร์"
+          },
+          {
+            "text": "than the old one",
+            "phonetic": "แดน เดอะ โอลด์ วัน"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "big",
+            "phonetic": "บิก",
+            "isDistractor": true
+          },
+          {
+            "text": "biggest",
+            "phonetic": "บิก-เกสท์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Their new office",
+          "is",
+          "bigger",
+          "than the old one"
+        ],
+        "phonetic": "แดร์ นิว ออฟ-ฟิส อิส บิก-เกอร์ แดน เดอะ โอลด์ วัน",
+        "thai": "ออฟฟิศใหม่ของพวกเขาใหญ่กว่าออฟฟิศเก่า",
+        "explanation": "คำคุณศัพท์สั้นพยางค์เดียวที่ลงท้ายด้วยพยัญชนะ-สระ-พยัญชนะ ต้องเพิ่มตัวสะกดซ้ำก่อนเติม -er: big → bigger"
       }
     ]
   },
@@ -4633,6 +8367,271 @@
         "phonetic": "อิฟ เม-เทิล เก็ทส์ ฮอท อิท เอ็ก-สแพนด์ส",
         "thai": "ถ้าโลหะร้อนขึ้น มันจะขยายตัว",
         "explanation": "เครื่องหมายจุลภาคคั่นระหว่างประโยคเงื่อนไขกับผลลัพธ์ เมื่อ 'if' อยู่ต้นประโยค"
+      },
+      {
+        "id": "zero-conditional-11",
+        "promptThai": "พูดว่า: ถ้าคุณผสมสีน้ำเงินกับสีเหลือง คุณจะได้สีเขียว",
+        "chunks": [
+          {
+            "text": "If you mix blue and yellow,",
+            "phonetic": "อิฟ ยู มิกซ์ บลู แอนด์ เยล-โลว์"
+          },
+          {
+            "text": "you get green",
+            "phonetic": "ยู เก็ท กรีน"
+          }
+        ],
+        "correctOrder": [
+          "If you mix blue and yellow,",
+          "you get green"
+        ],
+        "phonetic": "อิฟ ยู มิกซ์ บลู แอนด์ เยล-โลว์ ยู เก็ท กรีน",
+        "thai": "ถ้าคุณผสมสีน้ำเงินกับสีเหลือง คุณจะได้สีเขียว",
+        "explanation": "Zero conditional: If + present simple, + present simple ทั้งสองประโยคย่อยพูดถึงความจริงทั่วไป"
+      },
+      {
+        "id": "zero-conditional-12",
+        "promptThai": "พูดว่า: ถ้าคุณไม่กินอาหาร คุณจะรู้สึกหิว",
+        "chunks": [
+          {
+            "text": "If you don't eat,",
+            "phonetic": "อิฟ ยู โดนท์ อีท"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "feel",
+            "phonetic": "ฟีล"
+          },
+          {
+            "text": "hungry",
+            "phonetic": "ฮัง-กรี้"
+          }
+        ],
+        "correctOrder": [
+          "If you don't eat,",
+          "you",
+          "feel",
+          "hungry"
+        ],
+        "phonetic": "อิฟ ยู โดนท์ อีท ยู ฟีล ฮัง-กรี้",
+        "thai": "ถ้าคุณไม่กินอาหาร คุณจะรู้สึกหิว",
+        "explanation": "ประโยคเงื่อนไข (if-clause) เป็นปฏิเสธได้เช่นกัน: If + ประธาน + don't/doesn't + กริยารูปพื้นฐาน"
+      },
+      {
+        "id": "zero-conditional-13",
+        "promptThai": "พูดว่า: ถ้าคนออกกำลังกายสม่ำเสมอ พวกเขาจะมีสุขภาพดี",
+        "chunks": [
+          {
+            "text": "If people exercise regularly,",
+            "phonetic": "อิฟ พี-เพิล เอ็ก-เซอร์-ไซส์ เร็ก-กิว-ลาร์-ลี่"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "stay",
+            "phonetic": "สเทย์"
+          },
+          {
+            "text": "healthy",
+            "phonetic": "เฮล-ธี่"
+          }
+        ],
+        "correctOrder": [
+          "If people exercise regularly,",
+          "they",
+          "stay",
+          "healthy"
+        ],
+        "phonetic": "อิฟ พี-เพิล เอ็ก-เซอร์-ไซส์ เร็ก-กิว-ลาร์-ลี่ เดย์ สเทย์ เฮล-ธี่",
+        "thai": "ถ้าคนออกกำลังกายสม่ำเสมอ พวกเขาจะมีสุขภาพดี",
+        "explanation": "ทั้งสองส่วนของประโยคใช้ present simple แม้ความหมายจะเป็นเรื่องทั่วไป ไม่ใช่เหตุการณ์ ณ ตอนนี้"
+      },
+      {
+        "id": "zero-conditional-14",
+        "promptThai": "พูดว่า: ถ้าคุณกดปุ่มนี้ เครื่องจักรจะหยุดทำงาน",
+        "chunks": [
+          {
+            "text": "If you press this button,",
+            "phonetic": "อิฟ ยู เพรส ดิส บัท-เทิน"
+          },
+          {
+            "text": "the machine",
+            "phonetic": "เดอะ มะ-ชีน"
+          },
+          {
+            "text": "stops",
+            "phonetic": "สทอพส์"
+          }
+        ],
+        "correctOrder": [
+          "If you press this button,",
+          "the machine",
+          "stops"
+        ],
+        "phonetic": "อิฟ ยู เพรส ดิส บัท-เทิน เดอะ มะ-ชีน สทอพส์",
+        "thai": "ถ้าคุณกดปุ่มนี้ เครื่องจักรจะหยุดทำงาน",
+        "explanation": "'The machine' เป็นประธานเอกพจน์บุรุษที่สาม กริยาในประโยคผลลัพธ์จึงเติม -s: stop → stops"
+      },
+      {
+        "id": "zero-conditional-15",
+        "promptThai": "พูดว่า: ถ้าอุณหภูมิลดลงต่ำกว่าศูนย์ น้ำจะกลายเป็นน้ำแข็ง",
+        "chunks": [
+          {
+            "text": "If the temperature drops below zero,",
+            "phonetic": "อิฟ เดอะ เทม-เพอ-เร-เจอร์ ดรอพส์ บิ-โลว์ ซี-โร่"
+          },
+          {
+            "text": "water turns to ice",
+            "phonetic": "วอ-เทอร์ เทิร์นส์ ทู ไอซ์"
+          }
+        ],
+        "correctOrder": [
+          "If the temperature drops below zero,",
+          "water turns to ice"
+        ],
+        "phonetic": "อิฟ เดอะ เทม-เพอ-เร-เจอร์ ดรอพส์ บิ-โลว์ ซี-โร่ วอ-เทอร์ เทิร์นส์ ทู ไอซ์",
+        "thai": "ถ้าอุณหภูมิลดลงต่ำกว่าศูนย์ น้ำจะกลายเป็นน้ำแข็ง",
+        "explanation": "ประโยค zero conditional เป็นจริงเสมอภายใต้เงื่อนไขนั้น เหมือนข้อเท็จจริงทางวิทยาศาสตร์"
+      },
+      {
+        "id": "zero-conditional-16",
+        "promptThai": "พูดว่า: ถ้าคุณไม่รดน้ำต้นไม้ มันจะเหี่ยวเฉา",
+        "chunks": [
+          {
+            "text": "If you don't water the plants,",
+            "phonetic": "อิฟ ยู โดนท์ วอ-เทอร์ เดอะ แพลนท์ส"
+          },
+          {
+            "text": "they wilt",
+            "phonetic": "เดย์ วิลท์"
+          }
+        ],
+        "correctOrder": [
+          "If you don't water the plants,",
+          "they wilt"
+        ],
+        "phonetic": "อิฟ ยู โดนท์ วอ-เทอร์ เดอะ แพลนท์ส เดย์ วิลท์",
+        "thai": "ถ้าคุณไม่รดน้ำต้นไม้ มันจะเหี่ยวเฉา",
+        "explanation": "ประโยคเงื่อนไขเป็นปฏิเสธได้: If + ประธาน + don't/doesn't + กริยารูปพื้นฐาน"
+      },
+      {
+        "id": "zero-conditional-17",
+        "promptThai": "พูดว่า: ถ้าเด็กๆ นอนหลับไม่พอ พวกเขาจะหงุดหงิดง่าย",
+        "chunks": [
+          {
+            "text": "If children don't sleep enough,",
+            "phonetic": "อิฟ ชิล-เดรน โดนท์ สลีพ อี-นัฟ"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "get",
+            "phonetic": "เก็ท"
+          },
+          {
+            "text": "cranky",
+            "phonetic": "แครง-กี้"
+          }
+        ],
+        "correctOrder": [
+          "If children don't sleep enough,",
+          "they",
+          "get",
+          "cranky"
+        ],
+        "phonetic": "อิฟ ชิล-เดรน โดนท์ สลีพ อี-นัฟ เดย์ เก็ท แครง-กี้",
+        "thai": "ถ้าเด็กๆ นอนหลับไม่พอ พวกเขาจะหงุดหงิดง่าย",
+        "explanation": "ประโยคเงื่อนไขเป็นปฏิเสธได้: If + ประธาน + don't/doesn't + กริยารูปพื้นฐาน"
+      },
+      {
+        "id": "zero-conditional-18",
+        "promptThai": "พูดว่า: ถ้าคุณให้ความร้อนน้ำตาล มันจะกลายเป็นคาราเมล",
+        "chunks": [
+          {
+            "text": "If you heat sugar,",
+            "phonetic": "อิฟ ยู ฮีท ชู-การ์"
+          },
+          {
+            "text": "it turns into caramel",
+            "phonetic": "อิท เทิร์นส์ อิน-ทู แคร์-รา-เมล"
+          }
+        ],
+        "correctOrder": [
+          "If you heat sugar,",
+          "it turns into caramel"
+        ],
+        "phonetic": "อิฟ ยู ฮีท ชู-การ์ อิท เทิร์นส์ อิน-ทู แคร์-รา-เมล",
+        "thai": "ถ้าคุณให้ความร้อนน้ำตาล มันจะกลายเป็นคาราเมล",
+        "explanation": "ประโยค zero conditional เป็นจริงเสมอภายใต้เงื่อนไขนั้น เหมือนข้อเท็จจริงทางวิทยาศาสตร์"
+      },
+      {
+        "id": "zero-conditional-19",
+        "promptThai": "พูดว่า: ถ้าราคาสูงขึ้น คนจะซื้อของน้อยลง",
+        "chunks": [
+          {
+            "text": "If prices go up,",
+            "phonetic": "อิฟ ไพร-เซส โก อัพ"
+          },
+          {
+            "text": "people",
+            "phonetic": "พี-เพิล"
+          },
+          {
+            "text": "buy",
+            "phonetic": "บาย"
+          },
+          {
+            "text": "less",
+            "phonetic": "เลส"
+          }
+        ],
+        "correctOrder": [
+          "If prices go up,",
+          "people",
+          "buy",
+          "less"
+        ],
+        "phonetic": "อิฟ ไพร-เซส โก อัพ พี-เพิล บาย เลส",
+        "thai": "ถ้าราคาสูงขึ้น คนจะซื้อของน้อยลง",
+        "explanation": "'People' เป็นคำนามพหูพจน์ กริยาในประโยคผลลัพธ์จึงไม่เติม -s: buy ไม่ใช่ buys"
+      },
+      {
+        "id": "zero-conditional-20",
+        "promptThai": "พูดว่า: ถ้าคุณไม่ฝึกภาษาอังกฤษ คุณจะลืมมันเร็ว",
+        "chunks": [
+          {
+            "text": "If you don't practice English,",
+            "phonetic": "อิฟ ยู โดนท์ แพรค-ทิส อิง-กลิช"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "forget",
+            "phonetic": "ฟอร์-เก็ท"
+          },
+          {
+            "text": "it quickly",
+            "phonetic": "อิท ควิค-ลี่"
+          }
+        ],
+        "correctOrder": [
+          "If you don't practice English,",
+          "you",
+          "forget",
+          "it quickly"
+        ],
+        "phonetic": "อิฟ ยู โดนท์ แพรค-ทิส อิง-กลิช ยู ฟอร์-เก็ท อิท ควิค-ลี่",
+        "thai": "ถ้าคุณไม่ฝึกภาษาอังกฤษ คุณจะลืมมันเร็ว",
+        "explanation": "ประโยคเงื่อนไขเป็นปฏิเสธได้: If + ประธาน + don't/doesn't + กริยารูปพื้นฐาน"
       }
     ]
   },
@@ -4984,6 +8983,391 @@
         "phonetic": "อิฟ ยู เทิร์น เลฟท์ ยู วิล ซี เดอะ สตอร์",
         "thai": "ถ้าคุณเลี้ยวซ้าย คุณจะเห็นร้านค้า",
         "explanation": "First conditional มักใช้บอกทางหรือให้คำแนะนำที่มีผลลัพธ์ที่น่าจะเกิดขึ้นตามมา"
+      },
+      {
+        "id": "first-conditional-11",
+        "promptThai": "พูดว่า: ถ้าคุณทำงานเสร็จเร็ว คุณจะได้กลับตรงเวลา",
+        "chunks": [
+          {
+            "text": "If you finish your work early,",
+            "phonetic": "อิฟ ยู ฟิน-นิช ยัวร์ เวิร์ค เออร์-ลี่"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "leave",
+            "phonetic": "ลีฝ"
+          },
+          {
+            "text": "on time",
+            "phonetic": "ออน ไทม์"
+          }
+        ],
+        "correctOrder": [
+          "If you finish your work early,",
+          "you",
+          "will",
+          "leave",
+          "on time"
+        ],
+        "phonetic": "อิฟ ยู ฟิน-นิช ยัวร์ เวิร์ค เออร์-ลี่ ยู วิล ลีฝ ออน ไทม์",
+        "thai": "ถ้าคุณทำงานเสร็จเร็ว คุณจะได้กลับตรงเวลา",
+        "explanation": "First conditional: If + present simple, + ประธาน + will + กริยารูปพื้นฐาน"
+      },
+      {
+        "id": "first-conditional-12",
+        "promptThai": "พูดว่า: ถ้าพรุ่งนี้หิมะตก เราจะอยู่แต่ในบ้าน",
+        "chunks": [
+          {
+            "text": "If it snows tomorrow,",
+            "phonetic": "อิฟ อิท สโนวส์ ทู-มอร์-โรว์"
+          },
+          {
+            "text": "we",
+            "phonetic": "วี"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "stay",
+            "phonetic": "สเทย์"
+          },
+          {
+            "text": "inside",
+            "phonetic": "อิน-ไซด์"
+          }
+        ],
+        "correctOrder": [
+          "If it snows tomorrow,",
+          "we",
+          "will",
+          "stay",
+          "inside"
+        ],
+        "phonetic": "อิฟ อิท สโนวส์ ทู-มอร์-โรว์ วี วิล สเทย์ อิน-ไซด์",
+        "thai": "ถ้าพรุ่งนี้หิมะตก เราจะอยู่แต่ในบ้าน",
+        "explanation": "First conditional: If + present simple, + ประธาน + will + กริยารูปพื้นฐาน"
+      },
+      {
+        "id": "first-conditional-13",
+        "promptThai": "พูดว่า: ถ้าคุณไม่ใส่เสื้อโค้ท คุณจะหนาว",
+        "chunks": [
+          {
+            "text": "If you don't wear a coat,",
+            "phonetic": "อิฟ ยู โดนท์ แวร์ อะ โคท"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "be",
+            "phonetic": "บี"
+          },
+          {
+            "text": "cold",
+            "phonetic": "โคลด์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If you don't wear a coat,",
+          "you",
+          "will",
+          "be",
+          "cold"
+        ],
+        "phonetic": "อิฟ ยู โดนท์ แวร์ อะ โคท ยู วิล บี โคลด์",
+        "thai": "ถ้าคุณไม่ใส่เสื้อโค้ท คุณจะหนาว",
+        "explanation": "หลัง 'will' ใช้กริยารูปพื้นฐานเสมอคือ 'be' ไม่ผัน am/is/are"
+      },
+      {
+        "id": "first-conditional-14",
+        "promptThai": "พูดว่า: ถ้าเขาขอความช่วยเหลือ ฉันจะช่วยเขา",
+        "chunks": [
+          {
+            "text": "If he asks for help,",
+            "phonetic": "อิฟ ฮี อาสค์ส ฟอร์ เฮลพ์"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "help",
+            "phonetic": "เฮลพ์"
+          },
+          {
+            "text": "him",
+            "phonetic": "ฮิม"
+          }
+        ],
+        "correctOrder": [
+          "If he asks for help,",
+          "I",
+          "will",
+          "help",
+          "him"
+        ],
+        "phonetic": "อิฟ ฮี อาสค์ส ฟอร์ เฮลพ์ ไอ วิล เฮลพ์ ฮิม",
+        "thai": "ถ้าเขาขอความช่วยเหลือ ฉันจะช่วยเขา",
+        "explanation": "First conditional: If + present simple, + ประธาน + will + กริยารูปพื้นฐาน"
+      },
+      {
+        "id": "first-conditional-15",
+        "promptThai": "พูดว่า: ถ้าเราออกเดินทางตอนนี้ เราจะไปถึงตรงเวลา",
+        "chunks": [
+          {
+            "text": "If we leave now,",
+            "phonetic": "อิฟ วี ลีฝ นาว"
+          },
+          {
+            "text": "we",
+            "phonetic": "วี"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "arrive",
+            "phonetic": "อะ-ไรฝ์"
+          },
+          {
+            "text": "on time",
+            "phonetic": "ออน ไทม์"
+          }
+        ],
+        "correctOrder": [
+          "If we leave now,",
+          "we",
+          "will",
+          "arrive",
+          "on time"
+        ],
+        "phonetic": "อิฟ วี ลีฝ นาว วี วิล อะ-ไรฝ์ ออน ไทม์",
+        "thai": "ถ้าเราออกเดินทางตอนนี้ เราจะไปถึงตรงเวลา",
+        "explanation": "First conditional: If + present simple, + ประธาน + will + กริยารูปพื้นฐาน"
+      },
+      {
+        "id": "first-conditional-16",
+        "promptThai": "พูดว่า: ถ้าคุณไม่ฝึกฝน คุณจะลืมทุกอย่าง",
+        "chunks": [
+          {
+            "text": "If you don't practice,",
+            "phonetic": "อิฟ ยู โดนท์ แพรค-ทิส"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "forget",
+            "phonetic": "ฟอร์-เก็ท"
+          },
+          {
+            "text": "everything",
+            "phonetic": "เอฟ-วรี่-ธิ่ง"
+          }
+        ],
+        "correctOrder": [
+          "If you don't practice,",
+          "you",
+          "will",
+          "forget",
+          "everything"
+        ],
+        "phonetic": "อิฟ ยู โดนท์ แพรค-ทิส ยู วิล ฟอร์-เก็ท เอฟ-วรี่-ธิ่ง",
+        "thai": "ถ้าคุณไม่ฝึกฝน คุณจะลืมทุกอย่าง",
+        "explanation": "ประโยคเงื่อนไขเป็นปฏิเสธได้เช่นกัน โดยใช้ don't/doesn't + กริยารูปพื้นฐาน"
+      },
+      {
+        "id": "first-conditional-17",
+        "promptThai": "พูดว่า: ถ้าเธอสอบผ่าน เธอจะภูมิใจมาก",
+        "chunks": [
+          {
+            "text": "If she passes the exam,",
+            "phonetic": "อิฟ ชี แพส-เซส ดิ เอ็ก-แซม"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "be",
+            "phonetic": "บี"
+          },
+          {
+            "text": "very proud",
+            "phonetic": "เว-รี่ พราวด์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If she passes the exam,",
+          "she",
+          "will",
+          "be",
+          "very proud"
+        ],
+        "phonetic": "อิฟ ชี แพส-เซส ดิ เอ็ก-แซม ชี วิล บี เว-รี่ พราวด์",
+        "thai": "ถ้าเธอสอบผ่าน เธอจะภูมิใจมาก",
+        "explanation": "หลัง 'will' ใช้กริยารูปพื้นฐานเสมอคือ 'be' ไม่ผัน am/is/are"
+      },
+      {
+        "id": "first-conditional-18",
+        "promptThai": "พูดว่า: ถ้าพวกเขาไม่จองล่วงหน้า ตั๋วจะขายหมด",
+        "chunks": [
+          {
+            "text": "If they don't book early,",
+            "phonetic": "อิฟ เดย์ โดนท์ บุค เออร์-ลี่"
+          },
+          {
+            "text": "the tickets",
+            "phonetic": "เดอะ ทิค-เค็ทส์"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "sell out",
+            "phonetic": "เซล เอาท์"
+          }
+        ],
+        "correctOrder": [
+          "If they don't book early,",
+          "the tickets",
+          "will",
+          "sell out"
+        ],
+        "phonetic": "อิฟ เดย์ โดนท์ บุค เออร์-ลี่ เดอะ ทิค-เค็ทส์ วิล เซล เอาท์",
+        "thai": "ถ้าพวกเขาไม่จองล่วงหน้า ตั๋วจะขายหมด",
+        "explanation": "First conditional: If + present simple, + ประธาน + will + กริยารูปพื้นฐาน แม้ประธานจะเป็นพหูพจน์ก็ไม่เติม -s ที่กริยา"
+      },
+      {
+        "id": "first-conditional-19",
+        "promptThai": "พูดว่า: ถ้าฉันทำงานเสร็จเร็ว ฉันจะโทรหาคุณ",
+        "chunks": [
+          {
+            "text": "If I finish work early,",
+            "phonetic": "อิฟ ไอ ฟิน-นิช เวิร์ค เออร์-ลี่"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "call",
+            "phonetic": "คอล"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          }
+        ],
+        "correctOrder": [
+          "If I finish work early,",
+          "I",
+          "will",
+          "call",
+          "you"
+        ],
+        "phonetic": "อิฟ ไอ ฟิน-นิช เวิร์ค เออร์-ลี่ ไอ วิล คอล ยู",
+        "thai": "ถ้าฉันทำงานเสร็จเร็ว ฉันจะโทรหาคุณ",
+        "explanation": "First conditional: If + present simple, + ประธาน + will + กริยารูปพื้นฐาน"
+      },
+      {
+        "id": "first-conditional-20",
+        "promptThai": "พูดว่า: ถ้าคุณไม่รีบ เราจะพลาดเที่ยวบิน",
+        "chunks": [
+          {
+            "text": "If you don't hurry up,",
+            "phonetic": "อิฟ ยู โดนท์ เฮอ-รี่ อัพ"
+          },
+          {
+            "text": "we",
+            "phonetic": "วี"
+          },
+          {
+            "text": "will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "miss",
+            "phonetic": "มิส"
+          },
+          {
+            "text": "the flight",
+            "phonetic": "เดอะ ไฟลท์"
+          }
+        ],
+        "correctOrder": [
+          "If you don't hurry up,",
+          "we",
+          "will",
+          "miss",
+          "the flight"
+        ],
+        "phonetic": "อิฟ ยู โดนท์ เฮอ-รี่ อัพ วี วิล มิส เดอะ ไฟลท์",
+        "thai": "ถ้าคุณไม่รีบ เราจะพลาดเที่ยวบิน",
+        "explanation": "ประโยคเงื่อนไขเป็นปฏิเสธได้เช่นกัน โดยใช้ don't/doesn't + กริยารูปพื้นฐาน"
       }
     ]
   }
