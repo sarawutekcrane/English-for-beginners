@@ -329,16 +329,14 @@ export default function WordOrderPractice({ pattern, onBack }) {
           </div>
 
           {!submitted ? (
-            // Phase 11: the pool can now hold extra wrong-verb-form
-            // distractor chunks that are never meant to be placed (e.g.
-            // "have" alongside the correct "has"), so "pool empty" is no
-            // longer the right enable condition -- the answer slot just
-            // needs to hold exactly as many chunks as the correct sentence.
-            <button
-              className="btn btn-success"
-              onClick={submit}
-              disabled={answerItems.length !== question.correctOrder.length}
-            >
+            // The learner can submit with too few or too many chunks placed
+            // (relative to correctOrder.length) -- submit() compares the
+            // full sequences via JSON.stringify, which already evaluates a
+            // length-mismatched answer as incorrect with no special-casing
+            // needed, so there's no reason to block the tap on count alone.
+            // The only guard left is a completely empty slot, which has
+            // nothing to evaluate.
+            <button className="btn btn-success" onClick={submit} disabled={answerItems.length === 0}>
               ตรวจคำตอบ
             </button>
           ) : (
