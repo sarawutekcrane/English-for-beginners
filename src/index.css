@@ -1040,6 +1040,87 @@ button {
   border-color: var(--blue-deep);
 }
 
+/* ---------- Listening Quiz: timed-answer toggle ---------- */
+.timer-stepper {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: var(--white);
+  border: 2px solid var(--blue-deep);
+  border-radius: 999px;
+  padding: 3px 8px;
+}
+
+.timer-stepper-btn {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
+  border: none;
+  border-radius: 50%;
+  background: var(--blue);
+  color: var(--blue-text);
+  font-weight: 800;
+  font-size: 1rem;
+  line-height: 1;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-stepper-btn:disabled {
+  opacity: 0.4;
+}
+
+.timer-stepper-value {
+  min-width: 32px;
+  text-align: center;
+  font-weight: 700;
+  color: var(--ink);
+  font-size: 0.8rem;
+}
+
+.timer-ring {
+  position: relative;
+  width: 60px;
+  height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.timer-ring svg {
+  transform: rotate(-90deg);
+}
+
+.timer-ring-track {
+  fill: none;
+  stroke: var(--blue);
+  stroke-width: 6;
+}
+
+.timer-ring-progress {
+  fill: none;
+  stroke: var(--blue-deep);
+  stroke-width: 6;
+  stroke-linecap: round;
+  transition: stroke-dashoffset 1s linear, stroke 0.2s ease;
+}
+
+.timer-ring.urgent .timer-ring-progress {
+  stroke: var(--error-deep);
+}
+
+.timer-ring-number {
+  position: absolute;
+  font-weight: 800;
+  font-size: 1.15rem;
+  color: var(--ink);
+}
+
+.timer-ring.urgent .timer-ring-number {
+  color: var(--error-deep);
+}
+
 /* ---------- Sentence Patterns: pattern list picker ---------- */
 .pattern-list {
   display: flex;
