@@ -48,7 +48,7 @@ export function useSpeak() {
   }, [supported]);
 
   const speak = useCallback(
-    (text, { rate = speechRate } = {}) => {
+    (text, { rate = speechRate, onEnd } = {}) => {
       if (!supported || !text) return;
       window.speechSynthesis.cancel();
       const utter = new SpeechSynthesisUtterance(text);
@@ -57,7 +57,16 @@ export function useSpeak() {
       const voice = pickEnglishVoice();
       if (voice) utter.voice = voice;
       utter.onstart = () => setSpeaking(true);
-      utter.onend = () => setSpeaking(false);
+      // `onEnd` is call-specific (unlike `speaking`, a single hook-wide
+      // boolean shared across every speak() call) -- callers that need to
+      // react to THIS particular utterance finishing (e.g. Listening
+      // Quiz's timer, which must start only after its own "hear example"
+      // playback ends, not any other TTS in the app) should use this
+      // instead of watching `speaking` transition to false.
+      utter.onend = () => {
+        setSpeaking(false);
+        onEnd?.();
+      };
       utter.onerror = () => setSpeaking(false);
       window.speechSynthesis.speak(utter);
     },

@@ -56,10 +56,14 @@ function buildQuestion(pool, answer) {
   return { answer, options };
 }
 
-const TIMER_MIN_SECONDS = 2;
-const TIMER_MAX_SECONDS = 20;
+const TIMER_MIN_SECONDS = 1;
+const TIMER_MAX_SECONDS = 10;
 const TIMER_DEFAULT_SECONDS = 3;
 const TIMER_STEP_SECONDS = 1;
+// Countdown starts this long after the "hear example" audio actually
+// finishes playing (its real onend event, not a guessed fixed delay from
+// tap time) -- keeps the start accurate regardless of the clip's length.
+const TIMER_START_DELAY_MS = 250;
 
 /** Circular countdown ring matching the app's existing SVG/pastel-token visual language. */
 function CountdownRing({ timeLeft, duration }) {
@@ -105,6 +109,9 @@ function QuizView({ selection, onBack }) {
   const [timerOn, setTimerOn] = useState(false);
   const [timerDuration, setTimerDuration] = useState(TIMER_DEFAULT_SECONDS);
   const [timeLeft, setTimeLeft] = useState(TIMER_DEFAULT_SECONDS);
+  // True only once the countdown has actually begun ticking for the
+  // current question (after "hear example" finishes + the start delay).
+  const [countdownActive, setCountdownActive] = useState(false);
 
   const question = useMemo(() => (activeAnswer ? buildQuestion(pool, activeAnswer) : null), [pool, activeAnswer]);
 
@@ -118,33 +125,73 @@ function QuizView({ selection, onBack }) {
   // answered, correct or not, so the learner still gets the full picture.
   const effectiveRevealed = revealed || answered;
 
+  // Plain replay with no side effects on the timer -- used for the
+  // automatic post-answer/post-timeout pronunciation replay, never for the
+  // "hear example" tap itself (that's hearExample below, which wires the
+  // countdown-start trigger onto its own onEnd).
   const play = () => speak(question.answer.audioText);
 
   const speakTimeoutRef = useRef(null);
   const autoAdvanceTimeoutRef = useRef(null);
-
-  useEffect(
-    () => () => {
-      clearTimeout(speakTimeoutRef.current);
-      clearTimeout(autoAdvanceTimeoutRef.current);
-    },
-    []
-  );
-
+  const countdownStartTimeoutRef = useRef(null);
+  // Guards against a replay of "hear example" restarting the countdown --
+  // set once the countdown has been triggered for the CURRENT question,
+  // reset to false at every question-change reset point below.
+  const countdownStartedRef = useRef(false);
+  // handleExampleAudioEnd is attached to a specific utterance at tap time,
+  // but doesn't actually run until that utterance's audio finishes --
+  // possibly several seconds later for a longer clip, during which the
+  // learner could toggle the timer off or answer the question outright
+  // (nothing disables the answer options while audio is merely playing).
+  // Reading these via refs instead of closing over the render-time values
+  // means both the immediate check and the delayed one inside the
+  // setTimeout below always see the LATEST state, not a stale snapshot
+  // from whenever the tap happened.
+  const timerOnRef = useRef(timerOn);
   useEffect(() => {
+    timerOnRef.current = timerOn;
+  }, [timerOn]);
+
+  const answeredRef = useRef(answered);
+  useEffect(() => {
+    answeredRef.current = answered;
+  }, [answered]);
+
+  const timerDurationRef = useRef(timerDuration);
+  useEffect(() => {
+    timerDurationRef.current = timerDuration;
+  }, [timerDuration]);
+
+  const clearAllTimers = () => {
+    clearTimeout(speakTimeoutRef.current);
+    clearTimeout(autoAdvanceTimeoutRef.current);
+    clearTimeout(countdownStartTimeoutRef.current);
+  };
+
+  useEffect(() => clearAllTimers, []);
+
+  const resetForNewQuestion = () => {
     setSelectedId(null);
     setRevealed(false);
     setTimedOut(false);
+    setCountdownActive(false);
+    countdownStartedRef.current = false;
+  };
+
+  useEffect(() => {
+    resetForNewQuestion();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [shuffleOn]);
 
   const choose = (opt) => {
     if (answered) return;
-    // A genuine tap always wins over an in-flight countdown: clearing the
-    // auto-advance timer here (in addition to the countdown effect's own
-    // cleanup, which fires on the next render once `answered` flips true)
-    // guarantees no late auto-reveal/auto-advance can land after this.
+    // A genuine tap always wins over any in-flight countdown-start delay
+    // or auto-advance: clearing both timers here (in addition to the
+    // countdown effect's own cleanup, which fires on the next render once
+    // `answered` flips true) guarantees no late auto-reveal/auto-advance,
+    // and no late countdown-start, can land after this.
     clearTimeout(autoAdvanceTimeoutRef.current);
+    clearTimeout(countdownStartTimeoutRef.current);
     setSelectedId(opt.id);
     if (opt.id === question.answer.id) playCorrect();
     else playIncorrect();
@@ -153,30 +200,21 @@ function QuizView({ selection, onBack }) {
   };
 
   const next = () => {
-    clearTimeout(speakTimeoutRef.current);
-    clearTimeout(autoAdvanceTimeoutRef.current);
+    clearAllTimers();
     session.submit(isCorrect);
-    setSelectedId(null);
-    setRevealed(false);
-    setTimedOut(false);
+    resetForNewQuestion();
   };
 
   const restart = () => {
-    clearTimeout(speakTimeoutRef.current);
-    clearTimeout(autoAdvanceTimeoutRef.current);
+    clearAllTimers();
     session.restart();
-    setSelectedId(null);
-    setRevealed(false);
-    setTimedOut(false);
+    resetForNewQuestion();
   };
 
   const retryWrongOnly = () => {
-    clearTimeout(speakTimeoutRef.current);
-    clearTimeout(autoAdvanceTimeoutRef.current);
+    clearAllTimers();
     session.retryWrongOnly();
-    setSelectedId(null);
-    setRevealed(false);
-    setTimedOut(false);
+    resetForNewQuestion();
   };
 
   // Fires when the countdown reaches zero without an answer. Reuses the
@@ -197,29 +235,51 @@ function QuizView({ selection, onBack }) {
     autoAdvanceTimeoutRef.current = setTimeout(next, 500);
   };
 
-  // Stepper adjustments apply immediately: they restart the CURRENT
-  // question's countdown at the new duration (via the ticking effect
-  // below, which has timerDuration in its dependency array), rather than
-  // waiting until the next question. Chosen for the more predictable
-  // mental model -- the displayed duration is always what's actually
-  // counting down.
+  // Fires on every "hear example" tap's audio-end event, but only the
+  // FIRST one (per question) actually starts the countdown -- every
+  // subsequent replay while the countdown is already running (or already
+  // finished) is a no-op here, matching the deliberate design requirement
+  // that replaying audio can't be used to reset/extend thinking time.
+  const handleExampleAudioEnd = () => {
+    if (!timerOnRef.current || countdownStartedRef.current || answeredRef.current) return;
+    countdownStartedRef.current = true;
+    clearTimeout(countdownStartTimeoutRef.current);
+    countdownStartTimeoutRef.current = setTimeout(() => {
+      // Re-check at fire time too: the learner could have answered during
+      // this short extra delay window.
+      if (answeredRef.current) return;
+      setTimeLeft(timerDurationRef.current);
+      setCountdownActive(true);
+    }, TIMER_START_DELAY_MS);
+  };
+
+  const hearExample = () => {
+    speak(question.answer.audioText, { onEnd: handleExampleAudioEnd });
+  };
+
+  // Duration changes apply from the next countdown-start onward (read via
+  // timerDurationRef at the moment handleExampleAudioEnd's delayed
+  // callback fires) -- not retroactively to an already-ticking countdown.
+  // Since a question's countdown can only ever start once (guarded by
+  // countdownStartedRef), "next countdown-start" in practice means the
+  // next question's first "hear example" tap.
   const adjustTimerDuration = (delta) => {
     setTimerDuration((d) => Math.min(TIMER_MAX_SECONDS, Math.max(TIMER_MIN_SECONDS, d + delta)));
   };
 
-  // Countdown ticking: (re)starts fresh whenever the timer is switched on,
-  // a new question loads, or the duration is adjusted. The cleanup clears
-  // the interval the moment any of those change OR the question becomes
-  // answered/finished/the timer is switched off -- no lingering interval
-  // can ever fire into a question the learner has already left.
+  // Countdown ticking: starts once countdownActive flips true (from
+  // handleExampleAudioEnd's delayed callback) and stops -- via this
+  // effect's own cleanup -- the moment the question becomes
+  // answered/finished, or countdownActive is reset for a new question. No
+  // lingering interval can ever fire into a question the learner has
+  // already left.
   useEffect(() => {
-    if (!timerOn || !question || answered || finished) return;
-    setTimeLeft(timerDuration);
+    if (!countdownActive || answered || finished) return;
     const intervalId = setInterval(() => {
       setTimeLeft((t) => Math.max(0, t - 1));
     }, 1000);
     return () => clearInterval(intervalId);
-  }, [timerOn, question, answered, finished, timerDuration]);
+  }, [countdownActive, answered, finished]);
 
   // Split from the ticking effect above so the zero-detection isn't inside
   // a useState updater function -- React's Strict Mode can invoke updater
@@ -227,7 +287,7 @@ function QuizView({ selection, onBack }) {
   // double-fire handleTimeout's side effects (sound, scheduling) if it
   // were called from inside setTimeLeft's callback instead.
   useEffect(() => {
-    if (!timerOn || answered || finished || !question) return;
+    if (!countdownActive || answered || finished) return;
     if (timeLeft === 0) handleTimeout();
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeLeft]);
@@ -296,11 +356,11 @@ function QuizView({ selection, onBack }) {
         </div>
       ) : (
         <div className="quiz-card">
-          <button className="btn btn-round btn-blue" onClick={play} aria-label="เล่นเสียง">
+          <button className="btn btn-round btn-blue" onClick={hearExample} aria-label="เล่นเสียง">
             🔊
           </button>
 
-          {timerOn && !answered && <CountdownRing timeLeft={timeLeft} duration={timerDuration} />}
+          {countdownActive && !answered && <CountdownRing timeLeft={timeLeft} duration={timerDuration} />}
 
           <p className="th-text quiz-instruction">ฟังเสียงแล้วเลือกความหมายที่ตรงกัน</p>
 
