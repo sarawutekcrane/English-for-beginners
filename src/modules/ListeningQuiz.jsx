@@ -132,7 +132,6 @@ function QuizView({ selection, onBack }) {
   const play = () => speak(question.answer.audioText);
 
   const speakTimeoutRef = useRef(null);
-  const autoAdvanceTimeoutRef = useRef(null);
   const countdownStartTimeoutRef = useRef(null);
   // Guards against a replay of "hear example" restarting the countdown --
   // set once the countdown has been triggered for the CURRENT question,
@@ -164,7 +163,6 @@ function QuizView({ selection, onBack }) {
 
   const clearAllTimers = () => {
     clearTimeout(speakTimeoutRef.current);
-    clearTimeout(autoAdvanceTimeoutRef.current);
     clearTimeout(countdownStartTimeoutRef.current);
   };
 
@@ -185,12 +183,10 @@ function QuizView({ selection, onBack }) {
 
   const choose = (opt) => {
     if (answered) return;
-    // A genuine tap always wins over any in-flight countdown-start delay
-    // or auto-advance: clearing both timers here (in addition to the
-    // countdown effect's own cleanup, which fires on the next render once
-    // `answered` flips true) guarantees no late auto-reveal/auto-advance,
-    // and no late countdown-start, can land after this.
-    clearTimeout(autoAdvanceTimeoutRef.current);
+    // A genuine tap always wins over any in-flight countdown-start delay:
+    // clearing it here (in addition to the countdown effect's own cleanup,
+    // which fires on the next render once `answered` flips true)
+    // guarantees no late countdown-start can land after this.
     clearTimeout(countdownStartTimeoutRef.current);
     setSelectedId(opt.id);
     if (opt.id === question.answer.id) playCorrect();
@@ -222,17 +218,15 @@ function QuizView({ selection, onBack }) {
   // (playIncorrect, then speak the correct pronunciation after the
   // module's established 500ms pacing) so this feeds into
   // useSinglePassSession's normal submit()/wrongItems tracking via next()
-  // -- not a separate scoring path. The auto-advance-to-next-question that
-  // follows reuses that same 500ms delay, since no auto-advance flow
-  // existed anywhere in this module before this feature to copy a timing
-  // value from.
+  // -- not a separate scoring path. `timedOut` flips `answered` to true the
+  // same way a manual selection does, so the reveal and the existing
+  // "ข้อถัดไป →" button appear and simply wait for a manual tap -- no
+  // auto-advance here, matching a manual wrong answer exactly.
   const handleTimeout = () => {
     setTimedOut(true);
     playIncorrect();
     clearTimeout(speakTimeoutRef.current);
     speakTimeoutRef.current = setTimeout(play, 500);
-    clearTimeout(autoAdvanceTimeoutRef.current);
-    autoAdvanceTimeoutRef.current = setTimeout(next, 500);
   };
 
   // Fires on every "hear example" tap's audio-end event, but only the
