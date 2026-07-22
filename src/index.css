@@ -1079,6 +1079,18 @@ button {
   font-size: 0.8rem;
 }
 
+/* Reserves the countdown's footprint at all times the timer is on, so the
+   ring appearing/disappearing inside never shifts the answer options above
+   it or the feedback/reveal below it -- matches .timer-ring's own 60px
+   height exactly, so the slot neither adds extra space nor clips it. */
+.timer-slot {
+  width: 100%;
+  min-height: 60px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 .timer-ring {
   position: relative;
   width: 60px;

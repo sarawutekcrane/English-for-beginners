@@ -360,8 +360,6 @@ function QuizView({ selection, onBack }) {
             🔊
           </button>
 
-          {countdownActive && !answered && <CountdownRing timeLeft={timeLeft} duration={timerDuration} />}
-
           <p className="th-text quiz-instruction">ฟังเสียงแล้วเลือกความหมายที่ตรงกัน</p>
 
           <div className="quiz-options">
@@ -378,6 +376,22 @@ function QuizView({ selection, onBack }) {
               );
             })}
           </div>
+
+          {/* Fixed-height slot reserved for the whole time the timer is on,
+              regardless of whether the countdown has actually started yet
+              or the question has since been answered -- the ring
+              appearing/disappearing inside it must never change the
+              slot's own height, so nothing above (the options grid) or
+              below (feedback/reveal) ever shifts position. Rendered below
+              the options grid specifically so a learner tapping quickly
+              can never have an answer button move out from under their
+              finger. Only rendered at all while the timer toggle is on,
+              so toggle-off sessions see no reserved gap. */}
+          {timerOn && (
+            <div className="timer-slot">
+              {countdownActive && !answered && <CountdownRing timeLeft={timeLeft} duration={timerDuration} />}
+            </div>
+          )}
 
           {answered && (
             <p className={`quiz-feedback ${isCorrect ? "feedback-correct" : "feedback-incorrect"} th-text`}>
