@@ -68,7 +68,7 @@ const TIMER_STEP_SECONDS = 1;
 // span the JS interval below takes to tick timeLeft down to 0, so the two
 // reach their endpoint together; nothing further to wait for besides this
 // deliberate pause itself.
-const TIMEOUT_REVEAL_DELAY_MS = 100;
+const TIMEOUT_REVEAL_DELAY_MS = 250;
 
 /**
  * Yellow warning stage kicks in at roughly the halfway point, red at the
