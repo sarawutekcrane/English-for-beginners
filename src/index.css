@@ -12,6 +12,8 @@
   --white: #ffffff;
   --success: #7bcf9e;
   --success-deep: #4fae78;
+  --warning: #ffe9a8;
+  --warning-deep: #d99a1f;
   --error: #ff8fa3;
   --error-deep: #e85d7a;
   --shadow-soft: 0 4px 14px rgba(180, 140, 160, 0.18);
@@ -1120,12 +1122,38 @@ button {
   transition: width 0.85s linear, background 0.2s ease;
 }
 
+.timer-bar.warning .timer-bar-track {
+  border-color: var(--warning);
+}
+
+.timer-bar.warning .timer-bar-fill {
+  background: var(--warning-deep);
+}
+
 .timer-bar.urgent .timer-bar-track {
   border-color: var(--error);
 }
 
 .timer-bar.urgent .timer-bar-fill {
   background: var(--error-deep);
+}
+
+/* Small uniform pulse on every single tick (see the number span's
+   key={timeLeft} in CountdownBar, which remounts a fresh node -- and
+   therefore restarts this animation -- on every countdown-value change).
+   Reads as a deliberate rhythmic "tick" cue applied consistently across
+   the whole countdown, rather than a one-off visual glitch at any single
+   transition. */
+@keyframes timer-tick-pulse {
+  0% {
+    transform: scale(1);
+  }
+  35% {
+    transform: scale(1.22);
+  }
+  100% {
+    transform: scale(1);
+  }
 }
 
 .timer-bar-number {
@@ -1135,6 +1163,12 @@ button {
   font-weight: 800;
   font-size: 1.05rem;
   color: var(--ink);
+  display: inline-block;
+  animation: timer-tick-pulse 0.25s ease-out;
+}
+
+.timer-bar.warning .timer-bar-number {
+  color: var(--warning-deep);
 }
 
 .timer-bar.urgent .timer-bar-number {

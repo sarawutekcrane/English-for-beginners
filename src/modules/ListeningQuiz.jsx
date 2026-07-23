@@ -60,10 +60,6 @@ const TIMER_MIN_SECONDS = 1;
 const TIMER_MAX_SECONDS = 10;
 const TIMER_DEFAULT_SECONDS = 3;
 const TIMER_STEP_SECONDS = 1;
-// Countdown starts this long after the "hear example" audio actually
-// finishes playing (its real onend event, not a guessed fixed delay from
-// tap time) -- keeps the start accurate regardless of the clip's length.
-const TIMER_START_DELAY_MS = 100;
 // Once the bar has visibly finished animating down to empty (see
 // handleZeroTransitionEnd -- driven by the fill's real transitionend
 // event, not a guessed duration), the reveal waits this much longer
@@ -79,10 +75,25 @@ const TIMEOUT_REVEAL_POST_TRANSITION_DELAY_MS = 100;
 // trigger either way).
 const ZERO_TRANSITION_FALLBACK_MS = 1000;
 
+/**
+ * Yellow warning stage kicks in at roughly the halfway point, red at the
+ * final second -- scaled so it's not tuned only for the default 3s case.
+ * A pure "halfway" cutoff (duration/2) would never actually show yellow at
+ * short durations, since the only ticks below halfway are already claimed
+ * by the red "final second" rule (e.g. duration=3's halfway is 1.5, but
+ * timeLeft=1 is already red) -- the Math.max(2, ...) floor guarantees at
+ * least one genuinely yellow tick even at short durations, while long
+ * durations still land close to a true halfway split.
+ */
+function yellowThresholdFor(duration) {
+  return Math.max(2, Math.ceil(duration / 2));
+}
+
 /** Long horizontal countdown bar matching the app's pastel-token visual language. */
-function CountdownBar({ timeLeft, duration, onZeroTransitionEnd }) {
+function CountdownBar({ timeLeft, duration, fillTransitionEnabled, onZeroTransitionEnd }) {
   const pct = duration > 0 ? Math.max(0, Math.min(1, timeLeft / duration)) : 0;
   const urgent = timeLeft <= 1;
+  const warning = !urgent && timeLeft <= yellowThresholdFor(duration);
   // Fires for every width change (each tick shrinks the fill), but only
   // the transition that lands AT zero should ever trigger a reveal --
   // earlier ticks' transitionend events are ignored via the timeLeft===0
@@ -91,15 +102,32 @@ function CountdownBar({ timeLeft, duration, onZeroTransitionEnd }) {
     if (e.propertyName === "width" && timeLeft === 0) onZeroTransitionEnd();
   };
   return (
-    <div className={`timer-bar${urgent ? " urgent" : ""}`} role="timer" aria-label={`เหลือเวลา ${timeLeft} วินาที`}>
+    <div
+      className={`timer-bar${urgent ? " urgent" : warning ? " warning" : ""}`}
+      role="timer"
+      aria-label={`เหลือเวลา ${timeLeft} วินาที`}
+    >
       <div className="timer-bar-track">
         <div
           className="timer-bar-fill"
-          style={{ width: `${pct * 100}%` }}
+          // Suppressed (no transition at all) for exactly the render where
+          // a new question resets the bar back to full -- otherwise this
+          // same width transition that smoothly animates each countdown
+          // tick would ALSO animate the reset, producing a visible
+          // "filling up" refill that shouldn't be there; a fresh question
+          // should just show full immediately.
+          style={{ width: `${pct * 100}%`, transition: fillTransitionEnabled ? undefined : "none" }}
           onTransitionEnd={handleFillTransitionEnd}
         />
       </div>
-      <span className="timer-bar-number">{timeLeft}</span>
+      {/* Keyed on timeLeft so every tick remounts a fresh node -- CSS
+          animations restart on mount, giving a uniform little pulse on
+          every single number change (see .timer-bar-number's
+          timer-tick-pulse animation) instead of an isolated effect at any
+          one specific transition. */}
+      <span className="timer-bar-number" key={timeLeft}>
+        {timeLeft}
+      </span>
     </div>
   );
 }
@@ -139,6 +167,13 @@ function QuizView({ selection, onBack }) {
   // warps the ring's fill percentage and the number/ring visibly jump out
   // of sync with each other.
   const [activeDuration, setActiveDuration] = useState(TIMER_DEFAULT_SECONDS);
+  // False for exactly the render where a new question resets the bar back
+  // to full (see resetForNewQuestion) -- suppresses CountdownBar's width
+  // transition for that one reset so it snaps to full instantly instead of
+  // visibly "filling up". Flipped back to true shortly after, via the
+  // double-rAF effect below, once the no-transition snap has actually
+  // painted, so the next real countdown tick animates normally again.
+  const [fillTransitionEnabled, setFillTransitionEnabled] = useState(true);
 
   const question = useMemo(() => (activeAnswer ? buildQuestion(pool, activeAnswer) : null), [pool, activeAnswer]);
 
@@ -170,7 +205,6 @@ function QuizView({ selection, onBack }) {
   const play = () => speak(question.answer.audioText);
 
   const speakTimeoutRef = useRef(null);
-  const countdownStartTimeoutRef = useRef(null);
   const timeoutRevealTimeoutRef = useRef(null);
   const zeroTransitionFallbackTimeoutRef = useRef(null);
   // Guards handleZeroTransitionEnd against firing twice for the same
@@ -209,7 +243,6 @@ function QuizView({ selection, onBack }) {
 
   const clearAllTimers = () => {
     clearTimeout(speakTimeoutRef.current);
-    clearTimeout(countdownStartTimeoutRef.current);
     clearTimeout(timeoutRevealTimeoutRef.current);
     clearTimeout(zeroTransitionFallbackTimeoutRef.current);
   };
@@ -221,6 +254,7 @@ function QuizView({ selection, onBack }) {
     setRevealed(false);
     setTimedOut(false);
     setCountdownActive(false);
+    setFillTransitionEnabled(false);
     setTimeLeft(timerDuration);
     setActiveDuration(timerDuration);
     countdownStartedRef.current = false;
@@ -232,15 +266,34 @@ function QuizView({ selection, onBack }) {
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [shuffleOn]);
 
+  // Re-enables the fill's width transition after resetForNewQuestion
+  // suppressed it, but only once the "no transition, full width" state has
+  // actually been painted -- a single rAF can still land in the SAME frame
+  // as the state update that triggered it (browsers are free to batch),
+  // which would let the very next transition-enabling render race the
+  // no-transition one and animate the reset after all. Nesting a second
+  // rAF inside the first guarantees at least one full frame was painted
+  // with transitions off before they're switched back on.
+  useEffect(() => {
+    if (fillTransitionEnabled) return;
+    let innerId;
+    const outerId = requestAnimationFrame(() => {
+      innerId = requestAnimationFrame(() => setFillTransitionEnabled(true));
+    });
+    return () => {
+      cancelAnimationFrame(outerId);
+      cancelAnimationFrame(innerId);
+    };
+  }, [fillTransitionEnabled]);
+
   const choose = (opt) => {
     if (answered) return;
-    // A genuine tap always wins over any in-flight countdown-start delay,
-    // or an in-flight timeout-reveal grace delay (the learner tapped an
-    // option during the brief window after the countdown hit 0 but before
-    // the delayed timeout reveal fired): clearing all of these here (in
-    // addition to the countdown effect's own cleanup, which fires on the
-    // next render once `answered` flips true) guarantees no late
-    // countdown-start or late timeout-reveal can land after this.
+    // A genuine tap always wins over any in-flight timeout-reveal grace
+    // delay (the learner tapped an option during the brief window after
+    // the countdown hit 0 but before the delayed timeout reveal fired):
+    // clearing both here (in addition to the countdown effect's own
+    // cleanup, which fires on the next render once `answered` flips true)
+    // guarantees no late timeout-reveal can land after this.
     // zeroTransitionHandledRef is also set here, not just cleared via
     // resetForNewQuestion, since the bar's already-in-flight CSS
     // transition can still fire its real transitionend event after this
@@ -248,7 +301,6 @@ function QuizView({ selection, onBack }) {
     // a React handler ran) -- without this, that late event would still
     // schedule a spurious handleTimeout after the learner already
     // answered manually.
-    clearTimeout(countdownStartTimeoutRef.current);
     clearTimeout(timeoutRevealTimeoutRef.current);
     clearTimeout(zeroTransitionFallbackTimeoutRef.current);
     zeroTransitionHandledRef.current = true;
@@ -298,18 +350,26 @@ function QuizView({ selection, onBack }) {
   // subsequent replay while the countdown is already running (or already
   // finished) is a no-op here, matching the deliberate design requirement
   // that replaying audio can't be used to reset/extend thinking time.
+  //
+  // No artificial delay before starting: investigated a report that the
+  // gap after "hear example" finishes felt longer than intended. This app
+  // only ever uses the Web Speech API's SpeechSynthesisUtterance for this
+  // audio (confirmed in useSpeech.js -- no pre-recorded files, no app-code
+  // silence padding anywhere in the speak() path), and it's a well-known,
+  // widely-reported cross-browser characteristic of that API that its
+  // `onend` event fires with real trailing latency after the audible
+  // speech actually stops -- the browser/OS voice engine's own doing, not
+  // something this app adds or has visibility into (there's no access to
+  // the raw audio waveform from here, only the onend event timing). A
+  // deliberate extra buffer on top of that already-unmeasurable delay only
+  // compounds it, so this now starts the countdown the instant onend
+  // fires, with nothing added.
   const handleExampleAudioEnd = () => {
     if (!timerOnRef.current || countdownStartedRef.current || answeredRef.current) return;
     countdownStartedRef.current = true;
-    clearTimeout(countdownStartTimeoutRef.current);
-    countdownStartTimeoutRef.current = setTimeout(() => {
-      // Re-check at fire time too: the learner could have answered during
-      // this short extra delay window.
-      if (answeredRef.current) return;
-      setTimeLeft(timerDurationRef.current);
-      setActiveDuration(timerDurationRef.current);
-      setCountdownActive(true);
-    }, TIMER_START_DELAY_MS);
+    setTimeLeft(timerDurationRef.current);
+    setActiveDuration(timerDurationRef.current);
+    setCountdownActive(true);
   };
 
   const hearExample = () => {
@@ -317,21 +377,22 @@ function QuizView({ selection, onBack }) {
   };
 
   // Duration changes apply from the next countdown-start onward (read via
-  // timerDurationRef at the moment handleExampleAudioEnd's delayed
-  // callback fires) -- not retroactively to an already-ticking countdown.
-  // Since a question's countdown can only ever start once (guarded by
-  // countdownStartedRef), "next countdown-start" in practice means the
-  // next question's first "hear example" tap.
+  // timerDurationRef at the moment handleExampleAudioEnd fires -- still
+  // needed even without an artificial delay, since audio playback itself
+  // can take a while, so this can fire long after the render where
+  // hearExample was tapped) -- not retroactively to an already-ticking
+  // countdown. Since a question's countdown can only ever start once
+  // (guarded by countdownStartedRef), "next countdown-start" in practice
+  // means the next question's first "hear example" tap.
   const adjustTimerDuration = (delta) => {
     setTimerDuration((d) => Math.min(TIMER_MAX_SECONDS, Math.max(TIMER_MIN_SECONDS, d + delta)));
   };
 
   // Countdown ticking: starts once countdownActive flips true (from
-  // handleExampleAudioEnd's delayed callback) and stops -- via this
-  // effect's own cleanup -- the moment the question becomes
-  // answered/finished, or countdownActive is reset for a new question. No
-  // lingering interval can ever fire into a question the learner has
-  // already left.
+  // handleExampleAudioEnd) and stops -- via this effect's own cleanup --
+  // the moment the question becomes answered/finished, or countdownActive
+  // is reset for a new question. No lingering interval can ever fire into
+  // a question the learner has already left.
   useEffect(() => {
     if (!countdownActive || answered || finished) return;
     const intervalId = setInterval(() => {
@@ -491,6 +552,7 @@ function QuizView({ selection, onBack }) {
             <CountdownBar
               timeLeft={displayTimeLeft}
               duration={displayDuration}
+              fillTransitionEnabled={fillTransitionEnabled}
               onZeroTransitionEnd={handleZeroTransitionEnd}
             />
           </div>
