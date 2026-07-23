@@ -62,11 +62,12 @@ const TIMER_DEFAULT_SECONDS = 3;
 const TIMER_STEP_SECONDS = 1;
 // The reveal waits this long after timeLeft actually reaches 0 before it
 // fires, so "empty" sits on screen for a beat instead of the reveal
-// appearing to fire the instant the bar/number hit zero. No longer tied to
-// waiting for a CSS transitionend -- the bar's width is now an instant,
-// untransitioned snap (see .timer-bar-fill), so the moment timeLeft hits 0
-// IS the moment the bar is visually empty; nothing further to wait for
-// besides this deliberate pause itself.
+// appearing to fire the instant the bar/number hit zero. Not tied to
+// waiting for a CSS transitionend -- the bar's continuous drain (see
+// CountdownBar) is timed to span exactly `duration` seconds, the same
+// span the JS interval below takes to tick timeLeft down to 0, so the two
+// reach their endpoint together; nothing further to wait for besides this
+// deliberate pause itself.
 const TIMEOUT_REVEAL_DELAY_MS = 100;
 
 /**
@@ -83,21 +84,42 @@ function yellowThresholdFor(duration) {
   return Math.max(2, Math.ceil(duration / 2));
 }
 
+// Reproduces .timer-bar-number's old CSS @keyframes timer-tick-pulse
+// exactly (same scale/offset/duration/easing), just played via the Web
+// Animations API on demand instead of declared as a CSS `animation` that
+// only restarts by remounting the element. See PULSE_DURATION_MS below.
+const PULSE_KEYFRAMES = [{ transform: "scale(1)" }, { transform: "scale(1.22)", offset: 0.35 }, { transform: "scale(1)" }];
+const PULSE_DURATION_MS = 250;
+
 /**
  * Long horizontal countdown bar matching the app's pastel-token visual
  * language.
  *
- * The fill's width is driven imperatively (via a ref), not through
+ * The fill's transform is driven imperatively (via a ref), not through
  * React's per-render `style` prop, because it needs to animate smoothly
  * and *continuously* across the whole countdown rather than jumping once
  * per second -- one single CSS transition spanning the entire `duration`,
- * started the moment counting begins and targeting 0%, instead of a new
- * transition re-targeted on every discrete tick (which is what produced
- * the old per-second jumps, and before that, a lag between the bar and
- * the number -- see the two fixes this replaces, in the git history for
- * this file). The discrete `timeLeft` value still drives the number and
- * the warning/urgent color stage exactly as before; only the fill's WIDTH
- * is now continuous and decoupled from individual ticks.
+ * started the moment counting begins and targeting scaleX(0), instead of
+ * a new transition re-targeted on every discrete tick (which is what
+ * produced the old per-second jumps, and before that, a lag between the
+ * bar and the number -- see the two fixes this replaces, in the git
+ * history for this file). The discrete `timeLeft` value still drives the
+ * number and the warning/urgent color stage exactly as before; only the
+ * fill's shrink animation is now continuous and decoupled from individual
+ * ticks.
+ *
+ * Animates `transform: scaleX()` rather than `width`: width changes force
+ * a full layout recalculation (reflow) on every animation frame, since
+ * they alter box geometry -- a universally expensive technique that's
+ * more likely to visibly stutter on weaker mobile hardware, and further
+ * aggravated on Safari/WebKit specifically since it relies on macOS/iOS's
+ * Core Animation compositor rather than having its own dedicated one the
+ * way Chromium does (documented architecture difference -- see the
+ * investigation this session's fix is based on). `transform` is handled
+ * entirely by the compositor thread (GPU), skipping layout and paint.
+ * transform-origin is pinned to the left edge (see .timer-bar-fill) so
+ * scaling shrinks the same direction the old width-based version did --
+ * anchored on the left, receding from the right as time runs out.
  *
  * Freezing (early answer or timeout) captures how far the animation has
  * *actually* visually progressed, computed from elapsed wall-clock time
@@ -118,11 +140,11 @@ function CountdownBar({ timeLeft, duration, active, answered }) {
 
     if (!active) {
       // Waiting for "hear example", timer toggle off, or freshly reset
-      // for a new question: full bar, no width transition, so a reset
-      // never visibly "fills back up" -- it's just already full.
+      // for a new question: full bar, no transform transition, so a
+      // reset never visibly "fills back up" -- it's just already full.
       startTimeRef.current = null;
       el.style.transition = "background 0.2s ease";
-      el.style.width = "100%";
+      el.style.transform = "scaleX(1)";
       return;
     }
 
@@ -136,18 +158,31 @@ function CountdownBar({ timeLeft, duration, active, answered }) {
       const elapsedMs = startTimeRef.current === null ? duration * 1000 : Date.now() - startTimeRef.current;
       const remainingFraction = Math.max(0, Math.min(1, 1 - elapsedMs / (duration * 1000)));
       el.style.transition = "background 0.2s ease";
-      el.style.width = `${remainingFraction * 100}%`;
+      el.style.transform = `scaleX(${remainingFraction})`;
       return;
     }
 
     // Actively counting down: one continuous transition for the entire
     // duration, from wherever the bar currently is (full, right after the
-    // waiting state above) down to empty -- reads as a smooth, continuous
-    // drain instead of a once-per-second jump.
+    // waiting state above) down to fully shrunk -- reads as a smooth,
+    // continuous drain instead of a once-per-second jump.
     startTimeRef.current = Date.now();
-    el.style.transition = `width ${duration}s linear, background 0.2s ease`;
-    el.style.width = "0%";
+    el.style.transition = `transform ${duration}s linear, background 0.2s ease`;
+    el.style.transform = "scaleX(0)";
   }, [active, answered, duration]);
+
+  const numberRef = useRef(null);
+  useEffect(() => {
+    // Replays the pulse on the SAME persistent node every tick, instead
+    // of the old key={timeLeft} approach of unmounting/remounting a fresh
+    // node each second to restart a CSS `animation` -- that destroy/
+    // recreate cost (DOM node teardown + React reconciliation) added to
+    // the main-thread work due every single tick, compounding with the
+    // bar's own animation cost on weaker mobile hardware. Runs once on
+    // mount too (matching the old approach, which also pulsed on first
+    // paint) since effects always fire at least once regardless of deps.
+    numberRef.current?.animate(PULSE_KEYFRAMES, { duration: PULSE_DURATION_MS, easing: "ease-out" });
+  }, [timeLeft]);
 
   return (
     <div
@@ -158,12 +193,7 @@ function CountdownBar({ timeLeft, duration, active, answered }) {
       <div className="timer-bar-track">
         <div className="timer-bar-fill" ref={fillRef} />
       </div>
-      {/* Keyed on timeLeft so every tick remounts a fresh node -- CSS
-          animations restart on mount, giving a uniform little pulse on
-          every single number change (see .timer-bar-number's
-          timer-tick-pulse animation) instead of an isolated effect at any
-          one specific transition. */}
-      <span className="timer-bar-number" key={timeLeft}>
+      <span className="timer-bar-number" ref={numberRef}>
         {timeLeft}
       </span>
     </div>

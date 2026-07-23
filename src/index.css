@@ -1114,14 +1114,23 @@ button {
   width: 100%;
   background: var(--blue-deep);
   border-radius: 999px;
-  /* Width and its transition are set imperatively by CountdownBar (see
-     ListeningQuiz.jsx), not declared here -- the countdown needs ONE
+  /* Shrinks via transform: scaleX(), not width -- width changes force a
+     full layout recalculation on every animation frame (a universal
+     performance cost, worse on mobile hardware and further aggravated on
+     Safari/WebKit's Core Animation-based compositor specifically), while
+     transform is handled entirely by the compositor thread. Scales from
+     the left edge (see transform-origin below) so it recedes from the
+     right as time runs out, matching the original width-based direction. */
+  transform-origin: left center;
+  /* Transform and its transition are set imperatively by CountdownBar
+     (see ListeningQuiz.jsx), not declared here -- the countdown needs ONE
      continuous transition spanning the whole (variable, 1-10s) duration
      for a smooth drain, plus the ability to freeze mid-animation exactly
      where it visually was on an early answer or timeout, neither of which
-     a single static CSS rule can express. This 100% is just the sensible
-     default for the brief moment before that effect first runs. Only the
-     color transition is a plain, fixed, CSS-declared rule. */
+     a single static CSS rule can express. scaleX(1) here is just the
+     sensible default for the brief moment before that effect first runs.
+     Only the color transition is a plain, fixed, CSS-declared rule. */
+  transform: scaleX(1);
   transition: background 0.2s ease;
 }
 
@@ -1141,24 +1150,6 @@ button {
   background: var(--error-deep);
 }
 
-/* Small uniform pulse on every single tick (see the number span's
-   key={timeLeft} in CountdownBar, which remounts a fresh node -- and
-   therefore restarts this animation -- on every countdown-value change).
-   Reads as a deliberate rhythmic "tick" cue applied consistently across
-   the whole countdown, rather than a one-off visual glitch at any single
-   transition. */
-@keyframes timer-tick-pulse {
-  0% {
-    transform: scale(1);
-  }
-  35% {
-    transform: scale(1.22);
-  }
-  100% {
-    transform: scale(1);
-  }
-}
-
 .timer-bar-number {
   flex-shrink: 0;
   min-width: 20px;
@@ -1167,7 +1158,12 @@ button {
   font-size: 1.05rem;
   color: var(--ink);
   display: inline-block;
-  animation: timer-tick-pulse 0.25s ease-out;
+  /* The small uniform pulse on every tick is played via the Web
+     Animations API instead of a declared CSS animation (see CountdownBar
+     in ListeningQuiz.jsx) -- it needs to replay on the SAME persistent
+     node every tick, not restart by remounting a fresh element, which
+     used to add DOM destroy/recreate cost on top of the bar's own
+     animation cost every single second. */
 }
 
 .timer-bar.warning .timer-bar-number {
