@@ -1113,13 +1113,17 @@ button {
   height: 100%;
   background: var(--blue-deep);
   border-radius: 999px;
-  /* Deliberately shorter than the 1s tick interval that drives timeLeft --
-     an exact 1:1 match left no settle buffer, so ordinary JS timer jitter
-     could make a tick land before the previous transition had fully
-     finished, producing a visible stutter/jump right as it restarted
-     mid-flight. 0.85s always finishes with room to spare before the next
-     tick arrives. */
-  transition: width 0.85s linear, background 0.2s ease;
+  /* No width transition, deliberately: a smooth width animation always
+     LAGS the number by however long it takes to visually catch up (this
+     app previously used 0.85s), since React updates the number instantly
+     while the browser keeps animating the bar toward its new target for
+     the following interval -- on the final tick that meant the number
+     already read "0" while the bar kept visibly shrinking for another
+     ~0.85s afterward. Width now snaps immediately, so the bar and number
+     are pixel-and-frame synchronized on every single tick, not just
+     approximately close. Only the color still transitions (a plain,
+     short fade, not a source of desync). */
+  transition: background 0.2s ease;
 }
 
 .timer-bar.warning .timer-bar-track {
