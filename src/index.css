@@ -1111,18 +1111,17 @@ button {
 
 .timer-bar-fill {
   height: 100%;
+  width: 100%;
   background: var(--blue-deep);
   border-radius: 999px;
-  /* No width transition, deliberately: a smooth width animation always
-     LAGS the number by however long it takes to visually catch up (this
-     app previously used 0.85s), since React updates the number instantly
-     while the browser keeps animating the bar toward its new target for
-     the following interval -- on the final tick that meant the number
-     already read "0" while the bar kept visibly shrinking for another
-     ~0.85s afterward. Width now snaps immediately, so the bar and number
-     are pixel-and-frame synchronized on every single tick, not just
-     approximately close. Only the color still transitions (a plain,
-     short fade, not a source of desync). */
+  /* Width and its transition are set imperatively by CountdownBar (see
+     ListeningQuiz.jsx), not declared here -- the countdown needs ONE
+     continuous transition spanning the whole (variable, 1-10s) duration
+     for a smooth drain, plus the ability to freeze mid-animation exactly
+     where it visually was on an early answer or timeout, neither of which
+     a single static CSS rule can express. This 100% is just the sensible
+     default for the brief moment before that effect first runs. Only the
+     color transition is a plain, fixed, CSS-declared rule. */
   transition: background 0.2s ease;
 }
 

@@ -85,18 +85,70 @@ function yellowThresholdFor(duration) {
 
 /**
  * Long horizontal countdown bar matching the app's pastel-token visual
- * language. The fill's width is a direct, untransitioned derivation of
- * timeLeft/duration -- exactly the same values driving the number below it
- * -- so the bar and number always update in the same render/frame with no
- * possibility of drifting apart (no separate width transition to lag
- * behind the number; see .timer-bar-fill). This also means a fresh
- * question's bar simply shows full immediately with no "filling up"
- * animation, with no special-casing needed for that reset.
+ * language.
+ *
+ * The fill's width is driven imperatively (via a ref), not through
+ * React's per-render `style` prop, because it needs to animate smoothly
+ * and *continuously* across the whole countdown rather than jumping once
+ * per second -- one single CSS transition spanning the entire `duration`,
+ * started the moment counting begins and targeting 0%, instead of a new
+ * transition re-targeted on every discrete tick (which is what produced
+ * the old per-second jumps, and before that, a lag between the bar and
+ * the number -- see the two fixes this replaces, in the git history for
+ * this file). The discrete `timeLeft` value still drives the number and
+ * the warning/urgent color stage exactly as before; only the fill's WIDTH
+ * is now continuous and decoupled from individual ticks.
+ *
+ * Freezing (early answer or timeout) captures how far the animation has
+ * *actually* visually progressed, computed from elapsed wall-clock time
+ * since it started -- not from the discrete timeLeft tick -- so the bar
+ * freezes exactly where it visually was instead of snapping forward or
+ * backward to the nearest whole-second checkpoint.
  */
-function CountdownBar({ timeLeft, duration }) {
-  const pct = duration > 0 ? Math.max(0, Math.min(1, timeLeft / duration)) : 0;
+function CountdownBar({ timeLeft, duration, active, answered }) {
   const urgent = timeLeft <= 1;
   const warning = !urgent && timeLeft <= yellowThresholdFor(duration);
+
+  const fillRef = useRef(null);
+  const startTimeRef = useRef(null);
+
+  useEffect(() => {
+    const el = fillRef.current;
+    if (!el) return;
+
+    if (!active) {
+      // Waiting for "hear example", timer toggle off, or freshly reset
+      // for a new question: full bar, no width transition, so a reset
+      // never visibly "fills back up" -- it's just already full.
+      startTimeRef.current = null;
+      el.style.transition = "background 0.2s ease";
+      el.style.width = "100%";
+      return;
+    }
+
+    if (answered) {
+      // Freeze exactly where the continuous drain had visually reached.
+      // If it was already running (startTimeRef set), compute the
+      // fraction of the duration that has genuinely elapsed in real time;
+      // if the countdown reached 0 before this fired (the reveal's own
+      // short delay -- see TIMEOUT_REVEAL_DELAY_MS), clamping below
+      // handles that the same way, landing on exactly empty.
+      const elapsedMs = startTimeRef.current === null ? duration * 1000 : Date.now() - startTimeRef.current;
+      const remainingFraction = Math.max(0, Math.min(1, 1 - elapsedMs / (duration * 1000)));
+      el.style.transition = "background 0.2s ease";
+      el.style.width = `${remainingFraction * 100}%`;
+      return;
+    }
+
+    // Actively counting down: one continuous transition for the entire
+    // duration, from wherever the bar currently is (full, right after the
+    // waiting state above) down to empty -- reads as a smooth, continuous
+    // drain instead of a once-per-second jump.
+    startTimeRef.current = Date.now();
+    el.style.transition = `width ${duration}s linear, background 0.2s ease`;
+    el.style.width = "0%";
+  }, [active, answered, duration]);
+
   return (
     <div
       className={`timer-bar${urgent ? " urgent" : warning ? " warning" : ""}`}
@@ -104,7 +156,7 @@ function CountdownBar({ timeLeft, duration }) {
       aria-label={`เหลือเวลา ${timeLeft} วินาที`}
     >
       <div className="timer-bar-track">
-        <div className="timer-bar-fill" style={{ width: `${pct * 100}%` }} />
+        <div className="timer-bar-fill" ref={fillRef} />
       </div>
       {/* Keyed on timeLeft so every tick remounts a fresh node -- CSS
           animations restart on mount, giving a uniform little pulse on
@@ -445,6 +497,32 @@ function QuizView({ selection, onBack }) {
 
           <p className="th-text quiz-instruction">ฟังเสียงแล้วเลือกความหมายที่ตรงกัน</p>
 
+          {/* Always visible/reserved, timer toggle on or off, so nothing
+              below it (the options grid, feedback/reveal) ever shifts
+              position when the toggle is flipped or the countdown
+              starts/stops. Placed above the options grid so it's the
+              first thing the learner sees while deciding, rather than
+              competing for attention below the buttons they're about to
+              tap.
+
+              While the timer is off (or a question's countdown hasn't
+              started yet), it's a static, non-counting display of the
+              currently configured duration. Once a countdown starts, it
+              drains continuously; once the learner answers early or times
+              out, it freezes at whatever point it had visually reached
+              (countdownActive stays true through that freeze -- see its
+              declaration above) and only resets, to the current
+              configured duration, when resetForNewQuestion runs for the
+              next question. */}
+          <div className="timer-slot">
+            <CountdownBar
+              timeLeft={displayTimeLeft}
+              duration={displayDuration}
+              active={countdownStarted}
+              answered={answered}
+            />
+          </div>
+
           <div className="quiz-options">
             {question.options.map((opt) => {
               let cls = "quiz-option";
@@ -458,25 +536,6 @@ function QuizView({ selection, onBack }) {
                 </button>
               );
             })}
-          </div>
-
-          {/* Always visible/reserved, timer toggle on or off, so nothing
-              above (the options grid) or below (feedback/reveal) ever
-              shifts position when the toggle is flipped or the countdown
-              starts/stops. Rendered below the options grid specifically so
-              a learner tapping quickly can never have an answer button
-              move out from under their finger.
-
-              While the timer is off (or a question's countdown hasn't
-              started yet), it's a static, non-counting display of the
-              currently configured duration. Once a countdown starts, it
-              ticks live; once the learner answers early or times out, it
-              freezes at whatever value it last showed (countdownActive
-              stays true through that freeze -- see its declaration above)
-              and only resets, to the current configured duration, when
-              resetForNewQuestion runs for the next question. */}
-          <div className="timer-slot">
-            <CountdownBar timeLeft={displayTimeLeft} duration={displayDuration} />
           </div>
 
           {answered && (
