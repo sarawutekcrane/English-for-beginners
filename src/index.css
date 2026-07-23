@@ -1079,10 +1079,10 @@ button {
   font-size: 0.8rem;
 }
 
-/* Reserves the countdown's footprint at all times the timer is on, so the
-   ring appearing/disappearing inside never shifts the answer options above
-   it or the feedback/reveal below it -- matches .timer-ring's own 60px
-   height exactly, so the slot neither adds extra space nor clips it. */
+/* Reserves the countdown's footprint at all times, so the ring's number
+   changing never shifts the answer options above it or the feedback/reveal
+   below it -- matches .timer-ring's own 60px height exactly, so the slot
+   neither adds extra space nor clips it. */
 .timer-slot {
   width: 100%;
   min-height: 60px;
@@ -1115,7 +1115,13 @@ button {
   stroke: var(--blue-deep);
   stroke-width: 6;
   stroke-linecap: round;
-  transition: stroke-dashoffset 1s linear, stroke 0.2s ease;
+  /* Deliberately shorter than the 1s tick interval that drives timeLeft --
+     an exact 1:1 match left no settle buffer, so ordinary JS timer jitter
+     could make a tick land before the previous transition had fully
+     finished, producing a visible stutter/jump right as it restarted
+     mid-flight. 0.85s always finishes with room to spare before the next
+     tick arrives. */
+  transition: stroke-dashoffset 0.85s linear, stroke 0.2s ease;
 }
 
 .timer-ring.urgent .timer-ring-progress {

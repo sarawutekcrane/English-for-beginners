@@ -111,13 +111,37 @@ function QuizView({ selection, onBack }) {
   const [timeLeft, setTimeLeft] = useState(TIMER_DEFAULT_SECONDS);
   // True only once the countdown has actually begun ticking for the
   // current question (after "hear example" finishes + the start delay).
+  // Stays true after the question is answered/timed out -- reset back to
+  // false only by resetForNewQuestion -- so the display's "has this
+  // question's countdown started" check can rely on it alone even once
+  // frozen.
   const [countdownActive, setCountdownActive] = useState(false);
+  // Snapshot of timerDuration taken at the moment THIS question's countdown
+  // actually started. The stepper can still be adjusted while a countdown
+  // is running (by design -- changes apply "from the next start onward"),
+  // but the ring's percentage must keep dividing by the duration it
+  // actually started counting down from, not whatever the stepper
+  // currently reads -- otherwise adjusting +/- mid-countdown retroactively
+  // warps the ring's fill percentage and the number/ring visibly jump out
+  // of sync with each other.
+  const [activeDuration, setActiveDuration] = useState(TIMER_DEFAULT_SECONDS);
 
   const question = useMemo(() => (activeAnswer ? buildQuestion(pool, activeAnswer) : null), [pool, activeAnswer]);
 
   const isCorrect = question && !timedOut && selectedId === question.answer.id;
   const answered = selectedId !== null || timedOut;
   const finished = session.finished;
+
+  // The countdown display is always visible (Part 2), but only reflects
+  // live ticking state once THIS question's countdown has actually
+  // started (countdownActive, which stays true through the
+  // answered/timed-out freeze -- see its declaration above). Before that
+  // -- and whenever the Timer toggle is off entirely -- it just mirrors
+  // the currently configured duration, live, so adjusting the stepper is
+  // reflected immediately in the waiting/inactive display.
+  const countdownStarted = timerOn && countdownActive;
+  const displayTimeLeft = countdownStarted ? timeLeft : timerDuration;
+  const displayDuration = countdownStarted ? activeDuration : timerDuration;
 
   // Phase 11: options are now the Thai meanings themselves, so there's no
   // Translation/Phonetic toggle left to gate the post-answer reveal behind
@@ -173,6 +197,8 @@ function QuizView({ selection, onBack }) {
     setRevealed(false);
     setTimedOut(false);
     setCountdownActive(false);
+    setTimeLeft(timerDuration);
+    setActiveDuration(timerDuration);
     countdownStartedRef.current = false;
   };
 
@@ -243,6 +269,7 @@ function QuizView({ selection, onBack }) {
       // this short extra delay window.
       if (answeredRef.current) return;
       setTimeLeft(timerDurationRef.current);
+      setActiveDuration(timerDurationRef.current);
       setCountdownActive(true);
     }, TIMER_START_DELAY_MS);
   };
@@ -300,29 +327,36 @@ function QuizView({ selection, onBack }) {
       <div className="toggle-group blue">
         <Toggle emoji="🔀" label="สุ่ม" checked={shuffleOn} onChange={setShuffleOn} />
         <Toggle emoji="⏱️" label="จับเวลา" checked={timerOn} onChange={setTimerOn} />
-        {timerOn && (
-          <div className="timer-stepper">
-            <button
-              type="button"
-              className="timer-stepper-btn"
-              onClick={() => adjustTimerDuration(-TIMER_STEP_SECONDS)}
-              disabled={timerDuration <= TIMER_MIN_SECONDS}
-              aria-label="ลดเวลานับถอยหลัง"
-            >
-              −
-            </button>
-            <span className="timer-stepper-value th-text">{timerDuration} วิ</span>
-            <button
-              type="button"
-              className="timer-stepper-btn"
-              onClick={() => adjustTimerDuration(TIMER_STEP_SECONDS)}
-              disabled={timerDuration >= TIMER_MAX_SECONDS}
-              aria-label="เพิ่มเวลานับถอยหลัง"
-            >
-              +
-            </button>
-          </div>
-        )}
+      </div>
+
+      {/* Own row directly below the toggle switches and above the blue
+          card -- a standalone settings row, not nested inside the toggle
+          pill group or the card. Always rendered, timer toggle on or off,
+          so flipping the toggle never shifts the card below it -- same
+          always-reserved principle as the countdown display inside the
+          card, just applied to this row too. Also lets the learner
+          pre-configure their preferred duration before ever turning the
+          timer on. */}
+      <div className="timer-stepper">
+        <button
+          type="button"
+          className="timer-stepper-btn"
+          onClick={() => adjustTimerDuration(-TIMER_STEP_SECONDS)}
+          disabled={timerDuration <= TIMER_MIN_SECONDS}
+          aria-label="ลดเวลานับถอยหลัง"
+        >
+          −
+        </button>
+        <span className="timer-stepper-value th-text">{timerDuration} วิ</span>
+        <button
+          type="button"
+          className="timer-stepper-btn"
+          onClick={() => adjustTimerDuration(TIMER_STEP_SECONDS)}
+          disabled={timerDuration >= TIMER_MAX_SECONDS}
+          aria-label="เพิ่มเวลานับถอยหลัง"
+        >
+          +
+        </button>
       </div>
 
       {finished ? (
@@ -371,21 +405,24 @@ function QuizView({ selection, onBack }) {
             })}
           </div>
 
-          {/* Fixed-height slot reserved for the whole time the timer is on,
-              regardless of whether the countdown has actually started yet
-              or the question has since been answered -- the ring
-              appearing/disappearing inside it must never change the
-              slot's own height, so nothing above (the options grid) or
-              below (feedback/reveal) ever shifts position. Rendered below
-              the options grid specifically so a learner tapping quickly
-              can never have an answer button move out from under their
-              finger. Only rendered at all while the timer toggle is on,
-              so toggle-off sessions see no reserved gap. */}
-          {timerOn && (
-            <div className="timer-slot">
-              {countdownActive && !answered && <CountdownRing timeLeft={timeLeft} duration={timerDuration} />}
-            </div>
-          )}
+          {/* Always visible/reserved, timer toggle on or off, so nothing
+              above (the options grid) or below (feedback/reveal) ever
+              shifts position when the toggle is flipped or the countdown
+              starts/stops. Rendered below the options grid specifically so
+              a learner tapping quickly can never have an answer button
+              move out from under their finger.
+
+              While the timer is off (or a question's countdown hasn't
+              started yet), it's a static, non-counting display of the
+              currently configured duration. Once a countdown starts, it
+              ticks live; once the learner answers early or times out, it
+              freezes at whatever value it last showed (countdownActive
+              stays true through that freeze -- see its declaration above)
+              and only resets, to the current configured duration, when
+              resetForNewQuestion runs for the next question. */}
+          <div className="timer-slot">
+            <CountdownRing timeLeft={displayTimeLeft} duration={displayDuration} />
+          </div>
 
           {answered && (
             <p className={`quiz-feedback ${isCorrect ? "feedback-correct" : "feedback-incorrect"} th-text`}>
