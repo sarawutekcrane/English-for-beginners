@@ -64,28 +64,22 @@ const TIMER_STEP_SECONDS = 1;
 // finishes playing (its real onend event, not a guessed fixed delay from
 // tap time) -- keeps the start accurate regardless of the clip's length.
 const TIMER_START_DELAY_MS = 250;
+// The reveal itself waits this long after the countdown visibly reaches 0
+// before it actually fires, so the learner sees "0" sit on screen for a
+// beat instead of the reveal appearing to interrupt the countdown before
+// it's finished.
+const TIMEOUT_REVEAL_DELAY_MS = 250;
 
-/** Circular countdown ring matching the app's existing SVG/pastel-token visual language. */
-function CountdownRing({ timeLeft, duration }) {
-  const radius = 26;
-  const circumference = 2 * Math.PI * radius;
-  const pct = duration > 0 ? timeLeft / duration : 0;
-  const offset = circumference * (1 - pct);
+/** Long horizontal countdown bar matching the app's pastel-token visual language. */
+function CountdownBar({ timeLeft, duration }) {
+  const pct = duration > 0 ? Math.max(0, Math.min(1, timeLeft / duration)) : 0;
   const urgent = timeLeft <= 1;
   return (
-    <div className={`timer-ring${urgent ? " urgent" : ""}`} role="timer" aria-label={`เหลือเวลา ${timeLeft} วินาที`}>
-      <svg viewBox="0 0 60 60" width="60" height="60">
-        <circle className="timer-ring-track" cx="30" cy="30" r={radius} />
-        <circle
-          className="timer-ring-progress"
-          cx="30"
-          cy="30"
-          r={radius}
-          strokeDasharray={circumference}
-          strokeDashoffset={offset}
-        />
-      </svg>
-      <span className="timer-ring-number">{timeLeft}</span>
+    <div className={`timer-bar${urgent ? " urgent" : ""}`} role="timer" aria-label={`เหลือเวลา ${timeLeft} วินาที`}>
+      <div className="timer-bar-track">
+        <div className="timer-bar-fill" style={{ width: `${pct * 100}%` }} />
+      </div>
+      <span className="timer-bar-number">{timeLeft}</span>
     </div>
   );
 }
@@ -157,6 +151,7 @@ function QuizView({ selection, onBack }) {
 
   const speakTimeoutRef = useRef(null);
   const countdownStartTimeoutRef = useRef(null);
+  const timeoutRevealTimeoutRef = useRef(null);
   // Guards against a replay of "hear example" restarting the countdown --
   // set once the countdown has been triggered for the CURRENT question,
   // reset to false at every question-change reset point below.
@@ -188,6 +183,7 @@ function QuizView({ selection, onBack }) {
   const clearAllTimers = () => {
     clearTimeout(speakTimeoutRef.current);
     clearTimeout(countdownStartTimeoutRef.current);
+    clearTimeout(timeoutRevealTimeoutRef.current);
   };
 
   useEffect(() => clearAllTimers, []);
@@ -209,11 +205,15 @@ function QuizView({ selection, onBack }) {
 
   const choose = (opt) => {
     if (answered) return;
-    // A genuine tap always wins over any in-flight countdown-start delay:
-    // clearing it here (in addition to the countdown effect's own cleanup,
-    // which fires on the next render once `answered` flips true)
-    // guarantees no late countdown-start can land after this.
+    // A genuine tap always wins over any in-flight countdown-start delay,
+    // or an in-flight timeout-reveal grace delay (the learner tapped an
+    // option during the brief window after the countdown hit 0 but before
+    // the delayed timeout reveal fired): clearing both here (in addition
+    // to the countdown effect's own cleanup, which fires on the next
+    // render once `answered` flips true) guarantees no late countdown-start
+    // or late timeout-reveal can land after this.
     clearTimeout(countdownStartTimeoutRef.current);
+    clearTimeout(timeoutRevealTimeoutRef.current);
     setSelectedId(opt.id);
     if (opt.id === question.answer.id) playCorrect();
     else playIncorrect();
@@ -307,9 +307,20 @@ function QuizView({ selection, onBack }) {
   // functions twice in development to check for purity, which would
   // double-fire handleTimeout's side effects (sound, scheduling) if it
   // were called from inside setTimeLeft's callback instead.
+  //
+  // Reaching 0 doesn't call handleTimeout immediately -- it schedules it
+  // after TIMEOUT_REVEAL_DELAY_MS, so the countdown display visibly sits
+  // at 0 for a beat before the reveal appears, instead of the reveal
+  // seeming to cut the countdown off right as it hits 0. timeLeft only
+  // ever transitions TO 0 once per question (subsequent ticks clamp at 0,
+  // which is the same value React already has, so this effect doesn't
+  // re-run and schedule a second delayed reveal).
   useEffect(() => {
     if (!countdownActive || answered || finished) return;
-    if (timeLeft === 0) handleTimeout();
+    if (timeLeft === 0) {
+      clearTimeout(timeoutRevealTimeoutRef.current);
+      timeoutRevealTimeoutRef.current = setTimeout(handleTimeout, TIMEOUT_REVEAL_DELAY_MS);
+    }
     // eslint-disable-next-line react-hooks/exhaustive-deps
   }, [timeLeft]);
 
@@ -421,7 +432,7 @@ function QuizView({ selection, onBack }) {
               and only resets, to the current configured duration, when
               resetForNewQuestion runs for the next question. */}
           <div className="timer-slot">
-            <CountdownRing timeLeft={displayTimeLeft} duration={displayDuration} />
+            <CountdownBar timeLeft={displayTimeLeft} duration={displayDuration} />
           </div>
 
           {answered && (
