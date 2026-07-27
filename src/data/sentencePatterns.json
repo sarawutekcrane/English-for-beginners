@@ -2694,7 +2694,7 @@
         "role": "คำบอกเวลาที่มักใช้กับโครงสร้างนี้"
       }
     ],
-    "timeNote": "Present Continuous ใช้พูดถึงสิ่งที่กำลังเกิดขึ้นตอนนี้ หรือสถานการณ์ชั่วคราวในช่วงเวลาปัจจุบัน",
+    "timeNote": "Present Continuous ใช้ได้ 2 ความหมาย: (1) สิ่งที่กำลังเกิดขึ้นตอนนี้ หรือสถานการณ์ชั่วคราวในช่วงเวลาปัจจุบัน (I am eating right now) และ (2) แผนการในอนาคตที่นัดหมาย/ตั้งใจไว้แล้ว มักมีคำบอกเวลาอนาคตกำกับชัดเจน เช่น tomorrow, on Friday, next week (I am meeting her tomorrow) -- สังเกตความต่าง: ความหมายแรกมักมี 'right now'/'at the moment' หรือไม่มีคำบอกเวลาเลย ส่วนความหมายที่สองมักมีคำบอกเวลาในอนาคตกำกับอยู่เสมอ",
     "conjugationField": "presentParticiple",
     "conjugationSuffix": "",
     "conjugationSuffixPhonetic": "",
@@ -2729,6 +2729,21 @@
         "text": "I am not sleeping right now.",
         "phonetic": "ไอ แอม น็อท สลี-ปิ้ง ไรท์ นาว",
         "thai": "ตอนนี้ฉันไม่ได้นอนหลับอยู่"
+      },
+      {
+        "text": "I am meeting her tomorrow.",
+        "phonetic": "ไอ แอม มี-ทิ่ง เฮอร์ ทู-มอ-โรว์",
+        "thai": "ฉันจะไปพบเธอพรุ่งนี้ (แผนที่วางไว้ล่วงหน้า)"
+      },
+      {
+        "text": "We are leaving on Friday.",
+        "phonetic": "วี อาร์ ลี-วิ่ง ออน ฟราย-เดย์",
+        "thai": "เราจะออกเดินทางวันศุกร์ (แผนที่วางไว้ล่วงหน้า)"
+      },
+      {
+        "text": "She is starting a new job next week.",
+        "phonetic": "ชี อิส สทาร์ท-ทิ่ง อะ นิว จ็อบ เน็กซท์ วีค",
+        "thai": "เธอจะเริ่มงานใหม่สัปดาห์หน้า (แผนที่วางไว้ล่วงหน้า)"
       }
     ],
     "wordOrderQuestions": [
@@ -3811,6 +3826,312 @@
         "phonetic": "เดย์ อาร์ ไร-ทิ่ง อะ รี-พอร์ท นาว",
         "thai": "ตอนนี้พวกเขากำลังเขียนรายงานอยู่",
         "explanation": "ประธานพหูพจน์ 'They' ใช้กับ 'are' เสมอ"
+      },
+      {
+        "id": "present-continuous-21",
+        "promptThai": "พูดว่า: ฉันจะไปพบเธอพรุ่งนี้",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม"
+          },
+          {
+            "text": "meeting",
+            "phonetic": "มี-ทิ่ง"
+          },
+          {
+            "text": "her tomorrow",
+            "phonetic": "เฮอร์ ทู-มอ-โรว์"
+          },
+          {
+            "text": "meet",
+            "phonetic": "มีท",
+            "isDistractor": true
+          },
+          {
+            "text": "meets",
+            "phonetic": "มีทส์",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "am",
+          "meeting",
+          "her tomorrow"
+        ],
+        "phonetic": "ไอ แอม มี-ทิ่ง เฮอร์ ทู-มอ-โรว์",
+        "thai": "ฉันจะไปพบเธอพรุ่งนี้",
+        "explanation": "Present Continuous ในประโยคนี้ใช้พูดถึงแผนที่วางไว้ล่วงหน้า (ไม่ใช่สิ่งที่กำลังเกิดขึ้นตอนนี้) สังเกตคำบอกเวลาอนาคตที่กำกับอยู่"
+      },
+      {
+        "id": "present-continuous-22",
+        "promptThai": "พูดว่า: เราจะออกเดินทางวันศุกร์",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์"
+          },
+          {
+            "text": "leaving",
+            "phonetic": "ลี-วิ่ง"
+          },
+          {
+            "text": "on Friday",
+            "phonetic": "ออน ฟราย-เดย์"
+          },
+          {
+            "text": "leave",
+            "phonetic": "ลีฝ",
+            "isDistractor": true
+          },
+          {
+            "text": "leaves",
+            "phonetic": "ลีฟส์",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "are",
+          "leaving",
+          "on Friday"
+        ],
+        "phonetic": "วี อาร์ ลี-วิ่ง ออน ฟราย-เดย์",
+        "thai": "เราจะออกเดินทางวันศุกร์",
+        "explanation": "Present Continuous ในประโยคนี้ใช้พูดถึงแผนที่วางไว้ล่วงหน้า (ไม่ใช่สิ่งที่กำลังเกิดขึ้นตอนนี้) สังเกตคำบอกเวลาอนาคตที่กำกับอยู่"
+      },
+      {
+        "id": "present-continuous-23",
+        "promptThai": "พูดว่า: เธอจะเริ่มงานใหม่สัปดาห์หน้า",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "starting",
+            "phonetic": "สทาร์ท-ทิ่ง"
+          },
+          {
+            "text": "a new job next week",
+            "phonetic": "อะ นิว จ็อบ เน็กซท์ วีค"
+          },
+          {
+            "text": "start",
+            "phonetic": "สทาร์ท",
+            "isDistractor": true
+          },
+          {
+            "text": "starts",
+            "phonetic": "สทาร์ทส์",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "is",
+          "starting",
+          "a new job next week"
+        ],
+        "phonetic": "ชี อิส สทาร์ท-ทิ่ง อะ นิว จ็อบ เน็กซท์ วีค",
+        "thai": "เธอจะเริ่มงานใหม่สัปดาห์หน้า",
+        "explanation": "Present Continuous ในประโยคนี้ใช้พูดถึงแผนที่วางไว้ล่วงหน้า (ไม่ใช่สิ่งที่กำลังเกิดขึ้นตอนนี้) สังเกตคำบอกเวลาอนาคตที่กำกับอยู่"
+      },
+      {
+        "id": "present-continuous-24",
+        "promptThai": "พูดว่า: พวกเขาจะไปเยี่ยมคุณยายสุดสัปดาห์นี้",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์"
+          },
+          {
+            "text": "visiting",
+            "phonetic": "วิส-ซิ-ทิ่ง"
+          },
+          {
+            "text": "their grandmother this weekend",
+            "phonetic": "แดร์ แกรนด์-มา-เธอร์ ดิส วีค-เอนด์"
+          },
+          {
+            "text": "visit",
+            "phonetic": "วิส-ซิท",
+            "isDistractor": true
+          },
+          {
+            "text": "visits",
+            "phonetic": "วิส-ซิทส์",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "are",
+          "visiting",
+          "their grandmother this weekend"
+        ],
+        "phonetic": "เดย์ อาร์ วิส-ซิ-ทิ่ง แดร์ แกรนด์-มา-เธอร์ ดิส วีค-เอนด์",
+        "thai": "พวกเขาจะไปเยี่ยมคุณยายสุดสัปดาห์นี้",
+        "explanation": "Present Continuous ในประโยคนี้ใช้พูดถึงแผนที่วางไว้ล่วงหน้า (ไม่ใช่สิ่งที่กำลังเกิดขึ้นตอนนี้) สังเกตคำบอกเวลาอนาคตที่กำกับอยู่"
+      },
+      {
+        "id": "present-continuous-25",
+        "promptThai": "พูดว่า: เขาจะบินไปญี่ปุ่นเดือนหน้า",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "flying",
+            "phonetic": "ฟลาย-อิ่ง"
+          },
+          {
+            "text": "to Japan next month",
+            "phonetic": "ทู จะ-แพน เน็กซท์ มันธ์"
+          },
+          {
+            "text": "fly",
+            "phonetic": "ฟลาย",
+            "isDistractor": true
+          },
+          {
+            "text": "flies",
+            "phonetic": "ฟลายส์",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "is",
+          "flying",
+          "to Japan next month"
+        ],
+        "phonetic": "ฮี อิส ฟลาย-อิ่ง ทู จะ-แพน เน็กซท์ มันธ์",
+        "thai": "เขาจะบินไปญี่ปุ่นเดือนหน้า",
+        "explanation": "Present Continuous ในประโยคนี้ใช้พูดถึงแผนที่วางไว้ล่วงหน้า (ไม่ใช่สิ่งที่กำลังเกิดขึ้นตอนนี้) สังเกตคำบอกเวลาอนาคตที่กำกับอยู่"
+      },
+      {
+        "id": "present-continuous-26",
+        "promptThai": "พูดว่า: คุณมีประชุมวันจันทร์",
+        "chunks": [
+          {
+            "text": "You",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์"
+          },
+          {
+            "text": "having",
+            "phonetic": "แฮฟ-วิ่ง"
+          },
+          {
+            "text": "a meeting on Monday",
+            "phonetic": "อะ มี-ทิ่ง ออน มัน-เดย์"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "You",
+          "are",
+          "having",
+          "a meeting on Monday"
+        ],
+        "phonetic": "ยู อาร์ แฮฟ-วิ่ง อะ มี-ทิ่ง ออน มัน-เดย์",
+        "thai": "คุณมีประชุมวันจันทร์",
+        "explanation": "Present Continuous ในประโยคนี้ใช้พูดถึงแผนที่วางไว้ล่วงหน้า (ไม่ใช่สิ่งที่กำลังเกิดขึ้นตอนนี้) สังเกตคำบอกเวลาอนาคตที่กำกับอยู่"
       }
     ]
   },
@@ -14596,6 +14917,733 @@
         "phonetic": "ชี เอน-จอยส์ มิว-สิค",
         "thai": "เธอชอบดนตรี",
         "explanation": "ไม่ใช้คำนำหน้าเลย เพราะพูดถึงคำนามพหูพจน์หรือคำนามนับไม่ได้แบบทั่วไป ไม่เจาะจง"
+      }
+    ]
+  },
+  {
+    "id": "imperatives",
+    "title": "Imperatives (Commands & Instructions)",
+    "titleTh": "ประโยคคำสั่ง Imperatives (คำสั่ง/คำแนะนำ)",
+    "level": "A2",
+    "order": 18,
+    "structure": "[Base verb] + [Object]! (คำสั่ง/คำแนะนำ ไม่มีประธาน) / Don't + [base verb] + [Object]! (ปฏิเสธ) / Please + [base verb]... (สุภาพขึ้น)",
+    "functionWords": [
+      {
+        "word": "Base verb (ไม่มีประธาน)",
+        "role": "ประโยคคำสั่งเริ่มต้นด้วยกริยาช่องที่ 1 (base form) ทันที ไม่ต้องมีประธาน (You) เพราะหมายถึงผู้ฟังอยู่แล้ว"
+      },
+      {
+        "word": "Don't + verb",
+        "role": "รูปปฏิเสธของประโยคคำสั่ง ใช้ห้ามไม่ให้ทำสิ่งนั้น"
+      },
+      {
+        "word": "Please",
+        "role": "เติมหน้าประโยคคำสั่งเพื่อให้ฟังดูสุภาพขึ้น เช่น Please wait here."
+      }
+    ],
+    "timeNote": "ประโยคคำสั่ง (Imperative) ใช้กริยาช่องที่ 1 (base form) โดยไม่ต้องมีประธาน เพราะเป็นการพูดกับผู้ฟังตรงๆ อยู่แล้ว ใช้ได้ทั้งคำสั่ง คำแนะนำ และคำเตือนด้านความปลอดภัย -- เติม 'Please' เพื่อให้สุภาพขึ้น และใช้ 'Don't' นำหน้าเพื่อสั่งห้ามทำ",
+    "examples": [
+      {
+        "text": "Open the door.",
+        "phonetic": "โอ-เพ่น เดอะ ดอร์",
+        "thai": "เปิดประตู"
+      },
+      {
+        "text": "Don't touch that.",
+        "phonetic": "โดนท์ ทัช แดท",
+        "thai": "อย่าแตะสิ่งนั้น"
+      },
+      {
+        "text": "Please wait here.",
+        "phonetic": "พลีส เวท เฮียร์",
+        "thai": "กรุณารอที่นี่"
+      },
+      {
+        "text": "Wear your helmet.",
+        "phonetic": "แวร์ ยัวร์ เฮล-เม็ท",
+        "thai": "สวมหมวกนิรภัยของคุณ"
+      },
+      {
+        "text": "Don't enter without permission.",
+        "phonetic": "โดนท์ เอน-เทอร์ วิธ-เอาท์ เพอร์-มิช-ชั่น",
+        "thai": "ห้ามเข้าโดยไม่ได้รับอนุญาต"
+      },
+      {
+        "text": "Report any hazard immediately.",
+        "phonetic": "รี-พอร์ท เอ-นี่ แฮ-เซิร์ด อิม-มี-เดียท-ลี่",
+        "thai": "รายงานอันตรายใดๆ ทันที"
+      },
+      {
+        "text": "Close the window, please.",
+        "phonetic": "โคลส เดอะ วิน-โดว์ พลีส",
+        "thai": "ปิดหน้าต่างด้วยค่ะ"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "imperatives-1",
+        "promptThai": "พูดว่า: สวมหมวกนิรภัยของคุณ",
+        "chunks": [
+          {
+            "text": "Wear",
+            "phonetic": "แวร์"
+          },
+          {
+            "text": "your helmet",
+            "phonetic": "ยัวร์ เฮล-เม็ท"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "Wears",
+            "phonetic": "แวร์ส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Wear",
+          "your helmet"
+        ],
+        "phonetic": "แวร์ ยัวร์ เฮล-เม็ท",
+        "thai": "สวมหมวกนิรภัยของคุณ",
+        "explanation": "ประโยคคำสั่งไม่ต้องมีประธาน (You) เริ่มต้นด้วยกริยาช่องที่ 1 (base form) ทันที"
+      },
+      {
+        "id": "imperatives-2",
+        "promptThai": "พูดว่า: ปฏิบัติตามกฎความปลอดภัย",
+        "chunks": [
+          {
+            "text": "Follow",
+            "phonetic": "ฟอล-โลว์"
+          },
+          {
+            "text": "the safety rules",
+            "phonetic": "เดอะ เซฟ-ตี้ รูลส์"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "Follows",
+            "phonetic": "ฟอล-โลว์ส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Follow",
+          "the safety rules"
+        ],
+        "phonetic": "ฟอล-โลว์ เดอะ เซฟ-ตี้ รูลส์",
+        "thai": "ปฏิบัติตามกฎความปลอดภัย",
+        "explanation": "ประโยคคำสั่งไม่ต้องมีประธาน (You) เริ่มต้นด้วยกริยาช่องที่ 1 (base form) ทันที"
+      },
+      {
+        "id": "imperatives-3",
+        "promptThai": "พูดว่า: รายงานอันตรายใดๆ ทันที",
+        "chunks": [
+          {
+            "text": "Report",
+            "phonetic": "รี-พอร์ท"
+          },
+          {
+            "text": "any hazard immediately",
+            "phonetic": "เอ-นี่ แฮ-เซิร์ด อิม-มี-เดียท-ลี่"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "Reports",
+            "phonetic": "รี-พอร์ทส์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Report",
+          "any hazard immediately"
+        ],
+        "phonetic": "รี-พอร์ท เอ-นี่ แฮ-เซิร์ด อิม-มี-เดียท-ลี่",
+        "thai": "รายงานอันตรายใดๆ ทันที",
+        "explanation": "ประโยคคำสั่งไม่ต้องมีประธาน (You) เริ่มต้นด้วยกริยาช่องที่ 1 (base form) ทันที"
+      },
+      {
+        "id": "imperatives-4",
+        "promptThai": "พูดว่า: สวมเสื้อกั๊กนิรภัยของคุณ",
+        "chunks": [
+          {
+            "text": "Wear",
+            "phonetic": "แวร์"
+          },
+          {
+            "text": "your safety vest",
+            "phonetic": "ยัวร์ เซฟ-ตี้ เวสท์"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "Wears",
+            "phonetic": "แวร์ส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Wear",
+          "your safety vest"
+        ],
+        "phonetic": "แวร์ ยัวร์ เซฟ-ตี้ เวสท์",
+        "thai": "สวมเสื้อกั๊กนิรภัยของคุณ",
+        "explanation": "ประโยคคำสั่งไม่ต้องมีประธาน (You) เริ่มต้นด้วยกริยาช่องที่ 1 (base form) ทันที"
+      },
+      {
+        "id": "imperatives-5",
+        "promptThai": "พูดว่า: ตรวจสอบอุปกรณ์ก่อน",
+        "chunks": [
+          {
+            "text": "Check",
+            "phonetic": "เชค"
+          },
+          {
+            "text": "the equipment first",
+            "phonetic": "ดิ อี-ควิพ-เมินท์ เฟิร์สท์"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "Checks",
+            "phonetic": "เชคส์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Check",
+          "the equipment first"
+        ],
+        "phonetic": "เชค ดิ อี-ควิพ-เมินท์ เฟิร์สท์",
+        "thai": "ตรวจสอบอุปกรณ์ก่อน",
+        "explanation": "ประโยคคำสั่งไม่ต้องมีประธาน (You) เริ่มต้นด้วยกริยาช่องที่ 1 (base form) ทันที"
+      },
+      {
+        "id": "imperatives-6",
+        "promptThai": "พูดว่า: รักษาพื้นที่นี้ให้สะอาด",
+        "chunks": [
+          {
+            "text": "Keep",
+            "phonetic": "คีพ"
+          },
+          {
+            "text": "this area clean",
+            "phonetic": "ดิส แอ-เรีย คลีน"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "Keeps",
+            "phonetic": "คีพส์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Keep",
+          "this area clean"
+        ],
+        "phonetic": "คีพ ดิส แอ-เรีย คลีน",
+        "thai": "รักษาพื้นที่นี้ให้สะอาด",
+        "explanation": "ประโยคคำสั่งไม่ต้องมีประธาน (You) เริ่มต้นด้วยกริยาช่องที่ 1 (base form) ทันที"
+      },
+      {
+        "id": "imperatives-7",
+        "promptThai": "พูดว่า: เปิดประตู",
+        "chunks": [
+          {
+            "text": "Open",
+            "phonetic": "โอ-เพ่น"
+          },
+          {
+            "text": "the door",
+            "phonetic": "ดอร์"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "Opens",
+            "phonetic": "โอ-เพ่นส์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Open",
+          "the door"
+        ],
+        "phonetic": "โอ-เพ่น ดอร์",
+        "thai": "เปิดประตู",
+        "explanation": "ประโยคคำสั่งไม่ต้องมีประธาน (You) เริ่มต้นด้วยกริยาช่องที่ 1 (base form) ทันที"
+      },
+      {
+        "id": "imperatives-8",
+        "promptThai": "พูดว่า: ปิดหน้าต่าง",
+        "chunks": [
+          {
+            "text": "Close",
+            "phonetic": "โคลส"
+          },
+          {
+            "text": "the window",
+            "phonetic": "วิน-โดว์"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "Closes",
+            "phonetic": "โคล-เสส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Close",
+          "the window"
+        ],
+        "phonetic": "โคลส วิน-โดว์",
+        "thai": "ปิดหน้าต่าง",
+        "explanation": "ประโยคคำสั่งไม่ต้องมีประธาน (You) เริ่มต้นด้วยกริยาช่องที่ 1 (base form) ทันที"
+      },
+      {
+        "id": "imperatives-9",
+        "promptThai": "พูดว่า: ปิดไฟ",
+        "chunks": [
+          {
+            "text": "Turn off",
+            "phonetic": "เทิร์น ออฟ"
+          },
+          {
+            "text": "the light",
+            "phonetic": "ไลท์"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "Turns off",
+            "phonetic": "เทิร์นส์ ออฟ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Turn off",
+          "the light"
+        ],
+        "phonetic": "เทิร์น ออฟ ไลท์",
+        "thai": "ปิดไฟ",
+        "explanation": "ประโยคคำสั่งไม่ต้องมีประธาน (You) เริ่มต้นด้วยกริยาช่องที่ 1 (base form) ทันที"
+      },
+      {
+        "id": "imperatives-10",
+        "promptThai": "พูดว่า: ล้างมือของคุณ",
+        "chunks": [
+          {
+            "text": "Wash",
+            "phonetic": "วอช"
+          },
+          {
+            "text": "your hands",
+            "phonetic": "ยัวร์ แฮนด์ส"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "Washes",
+            "phonetic": "วอช-เชส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Wash",
+          "your hands"
+        ],
+        "phonetic": "วอช ยัวร์ แฮนด์ส",
+        "thai": "ล้างมือของคุณ",
+        "explanation": "ประโยคคำสั่งไม่ต้องมีประธาน (You) เริ่มต้นด้วยกริยาช่องที่ 1 (base form) ทันที"
+      },
+      {
+        "id": "imperatives-11",
+        "promptThai": "พูดว่า: ห้ามแตะสายไฟเส้นนั้น",
+        "chunks": [
+          {
+            "text": "Don't",
+            "phonetic": "โดนท์"
+          },
+          {
+            "text": "touch",
+            "phonetic": "ทัช"
+          },
+          {
+            "text": "that wire",
+            "phonetic": "แดท ไวร์"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "touches",
+            "phonetic": "ทัช-เชส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Don't",
+          "touch",
+          "that wire"
+        ],
+        "phonetic": "โดนท์ ทัช แดท ไวร์",
+        "thai": "ห้ามแตะสายไฟเส้นนั้น",
+        "explanation": "ประโยคคำสั่งปฏิเสธใช้ 'Don't' + กริยาช่องที่ 1 (base form) ไม่ต้องมีประธานเช่นกัน"
+      },
+      {
+        "id": "imperatives-12",
+        "promptThai": "พูดว่า: ห้ามเข้าโดยไม่ได้รับอนุญาต",
+        "chunks": [
+          {
+            "text": "Don't",
+            "phonetic": "โดนท์"
+          },
+          {
+            "text": "enter",
+            "phonetic": "เอน-เทอร์"
+          },
+          {
+            "text": "without permission",
+            "phonetic": "วิธ-เอาท์ เพอร์-มิช-ชั่น"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "enters",
+            "phonetic": "เอน-เทอร์ส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Don't",
+          "enter",
+          "without permission"
+        ],
+        "phonetic": "โดนท์ เอน-เทอร์ วิธ-เอาท์ เพอร์-มิช-ชั่น",
+        "thai": "ห้ามเข้าโดยไม่ได้รับอนุญาต",
+        "explanation": "ประโยคคำสั่งปฏิเสธใช้ 'Don't' + กริยาช่องที่ 1 (base form) ไม่ต้องมีประธานเช่นกัน"
+      },
+      {
+        "id": "imperatives-13",
+        "promptThai": "พูดว่า: ห้ามถอดฝาครอบนิรภัยออก",
+        "chunks": [
+          {
+            "text": "Don't",
+            "phonetic": "โดนท์"
+          },
+          {
+            "text": "remove",
+            "phonetic": "รี-มูฟ"
+          },
+          {
+            "text": "the safety guard",
+            "phonetic": "เดอะ เซฟ-ตี้ การ์ด"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "removes",
+            "phonetic": "รี-มูฟส์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Don't",
+          "remove",
+          "the safety guard"
+        ],
+        "phonetic": "โดนท์ รี-มูฟ เดอะ เซฟ-ตี้ การ์ด",
+        "thai": "ห้ามถอดฝาครอบนิรภัยออก",
+        "explanation": "ประโยคคำสั่งปฏิเสธใช้ 'Don't' + กริยาช่องที่ 1 (base form) ไม่ต้องมีประธานเช่นกัน"
+      },
+      {
+        "id": "imperatives-14",
+        "promptThai": "พูดว่า: ห้ามวิ่งในทางเดิน",
+        "chunks": [
+          {
+            "text": "Don't",
+            "phonetic": "โดนท์"
+          },
+          {
+            "text": "run",
+            "phonetic": "รัน"
+          },
+          {
+            "text": "in the hallway",
+            "phonetic": "อิน เดอะ ฮอล-เวย์"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "runs",
+            "phonetic": "รันส์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Don't",
+          "run",
+          "in the hallway"
+        ],
+        "phonetic": "โดนท์ รัน อิน เดอะ ฮอล-เวย์",
+        "thai": "ห้ามวิ่งในทางเดิน",
+        "explanation": "ประโยคคำสั่งปฏิเสธใช้ 'Don't' + กริยาช่องที่ 1 (base form) ไม่ต้องมีประธานเช่นกัน"
+      },
+      {
+        "id": "imperatives-15",
+        "promptThai": "พูดว่า: ห้ามสูบบุหรี่ที่นี่",
+        "chunks": [
+          {
+            "text": "Don't",
+            "phonetic": "โดนท์"
+          },
+          {
+            "text": "smoke",
+            "phonetic": "สโมค"
+          },
+          {
+            "text": "here",
+            "phonetic": "เฮียร์"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "smokes",
+            "phonetic": "สโมคส์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Don't",
+          "smoke",
+          "here"
+        ],
+        "phonetic": "โดนท์ สโมค เฮียร์",
+        "thai": "ห้ามสูบบุหรี่ที่นี่",
+        "explanation": "ประโยคคำสั่งปฏิเสธใช้ 'Don't' + กริยาช่องที่ 1 (base form) ไม่ต้องมีประธานเช่นกัน"
+      },
+      {
+        "id": "imperatives-16",
+        "promptThai": "พูดว่า: อย่าแตะสิ่งนั้น",
+        "chunks": [
+          {
+            "text": "Don't",
+            "phonetic": "โดนท์"
+          },
+          {
+            "text": "touch",
+            "phonetic": "ทัช"
+          },
+          {
+            "text": "that",
+            "phonetic": "แดท"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "touches",
+            "phonetic": "ทัช-เชส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Don't",
+          "touch",
+          "that"
+        ],
+        "phonetic": "โดนท์ ทัช แดท",
+        "thai": "อย่าแตะสิ่งนั้น",
+        "explanation": "ประโยคคำสั่งปฏิเสธใช้ 'Don't' + กริยาช่องที่ 1 (base form) ไม่ต้องมีประธานเช่นกัน"
+      },
+      {
+        "id": "imperatives-17",
+        "promptThai": "พูดว่า: อย่ามาสาย",
+        "chunks": [
+          {
+            "text": "Don't",
+            "phonetic": "โดนท์"
+          },
+          {
+            "text": "be",
+            "phonetic": "บี"
+          },
+          {
+            "text": "late",
+            "phonetic": "เลท"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Don't",
+          "be",
+          "late"
+        ],
+        "phonetic": "โดนท์ บี เลท",
+        "thai": "อย่ามาสาย",
+        "explanation": "ประโยคคำสั่งปฏิเสธใช้ 'Don't' + กริยาช่องที่ 1 (base form) ไม่ต้องมีประธานเช่นกัน"
+      },
+      {
+        "id": "imperatives-18",
+        "promptThai": "พูดว่า: กรุณารอที่นี่",
+        "chunks": [
+          {
+            "text": "Please",
+            "phonetic": "พลีส"
+          },
+          {
+            "text": "wait",
+            "phonetic": "เวท"
+          },
+          {
+            "text": "here",
+            "phonetic": "เฮียร์"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "waits",
+            "phonetic": "เวทส์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Please",
+          "wait",
+          "here"
+        ],
+        "phonetic": "พลีส เวท เฮียร์",
+        "thai": "กรุณารอที่นี่",
+        "explanation": "เติม 'Please' หน้าประโยคคำสั่งเพื่อให้ฟังดูสุภาพขึ้น ตามด้วยกริยาช่องที่ 1 (base form) เหมือนประโยคคำสั่งปกติ"
+      },
+      {
+        "id": "imperatives-19",
+        "promptThai": "พูดว่า: กรุณานั่งลง",
+        "chunks": [
+          {
+            "text": "Please",
+            "phonetic": "พลีส"
+          },
+          {
+            "text": "sit down",
+            "phonetic": "ซิท ดาวน์"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "sits down",
+            "phonetic": "ซิทส์ ดาวน์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Please",
+          "sit down"
+        ],
+        "phonetic": "พลีส ซิท ดาวน์",
+        "thai": "กรุณานั่งลง",
+        "explanation": "เติม 'Please' หน้าประโยคคำสั่งเพื่อให้ฟังดูสุภาพขึ้น ตามด้วยกริยาช่องที่ 1 (base form) เหมือนประโยคคำสั่งปกติ"
+      },
+      {
+        "id": "imperatives-20",
+        "promptThai": "พูดว่า: กรุณาปิดโทรศัพท์ของคุณ",
+        "chunks": [
+          {
+            "text": "Please",
+            "phonetic": "พลีส"
+          },
+          {
+            "text": "turn off",
+            "phonetic": "เทิร์น ออฟ"
+          },
+          {
+            "text": "your phone",
+            "phonetic": "ยัวร์ โฟน"
+          },
+          {
+            "text": "You",
+            "phonetic": "ยู",
+            "isDistractor": true
+          },
+          {
+            "text": "turns off",
+            "phonetic": "เทิร์นส์ ออฟ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Please",
+          "turn off",
+          "your phone"
+        ],
+        "phonetic": "พลีส เทิร์น ออฟ ยัวร์ โฟน",
+        "thai": "กรุณาปิดโทรศัพท์ของคุณ",
+        "explanation": "เติม 'Please' หน้าประโยคคำสั่งเพื่อให้ฟังดูสุภาพขึ้น ตามด้วยกริยาช่องที่ 1 (base form) เหมือนประโยคคำสั่งปกติ"
       }
     ]
   }
