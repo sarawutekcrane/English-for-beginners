@@ -9370,5 +9370,1191 @@
         "explanation": "ประโยคเงื่อนไขเป็นปฏิเสธได้เช่นกัน โดยใช้ don't/doesn't + กริยารูปพื้นฐาน"
       }
     ]
+  },
+  {
+    "id": "present-perfect-for-since",
+    "title": "Present Perfect: For / Since",
+    "titleTh": "Present Perfect กับ For / Since (ระยะเวลา / จุดเริ่มต้น)",
+    "level": "B1",
+    "order": 12,
+    "structure": "[Subject] + have/has + [past participle] + for + [duration] / since + [starting point]",
+    "functionWords": [
+      {
+        "word": "have / has",
+        "role": "ใช้ have กับประธาน I/you/we/they และ has กับ he/she/it (บุรุษที่ 3 เอกพจน์) เหมือนกับ Present Simple"
+      },
+      {
+        "word": "past participle (กริยาช่องที่ 3)",
+        "role": "รูปกริยาที่ตามหลัง have/has เช่น been, lived, worked, studied, known"
+      },
+      {
+        "word": "for",
+        "role": "ตามด้วยระยะเวลา (duration) เช่น for three years, for a long time, for two hours"
+      },
+      {
+        "word": "since",
+        "role": "ตามด้วยจุดเริ่มต้นของเวลา (a starting point) เช่น since 2020, since Monday, since childhood"
+      }
+    ],
+    "timeNote": "ใช้ Present Perfect + for/since เมื่อพูดถึงสิ่งที่เริ่มต้นในอดีตและยังดำเนินต่อเนื่องมาถึงปัจจุบัน -- ใช้ for ตามด้วย 'ระยะเวลา' (three years, a long time, two hours) และใช้ since ตามด้วย 'จุดเริ่มต้นที่ชัดเจน' (2020, Monday, this morning) ห้ามใช้ since กับระยะเวลาและห้ามใช้ for กับจุดเริ่มต้น",
+    "examples": [
+      {
+        "text": "She has lived in this city for three years.",
+        "phonetic": "ชี แฮส ลิฟด์ อิน ดิส ซิ-ตี้ ฟอร์ ทรี เยียร์ส",
+        "thai": "เธออาศัยอยู่ในเมืองนี้มาสามปีแล้ว"
+      },
+      {
+        "text": "She has lived in this city since 2020.",
+        "phonetic": "ชี แฮส ลิฟด์ อิน ดิส ซิ-ตี้ ซินซ์ ทเวน-ตี้ ทเวน-ตี้",
+        "thai": "เธออาศัยอยู่ในเมืองนี้ตั้งแต่ปี 2020"
+      },
+      {
+        "text": "I have known him for a long time.",
+        "phonetic": "ไอ แฮฟ โนน ฮิม ฟอร์ อะ ลอง ไทม์",
+        "thai": "ฉันรู้จักเขามานานแล้ว"
+      },
+      {
+        "text": "I have known him since childhood.",
+        "phonetic": "ไอ แฮฟ โนน ฮิม ซินซ์ ไชลด์-ฮุด",
+        "thai": "ฉันรู้จักเขาตั้งแต่วัยเด็ก"
+      },
+      {
+        "text": "We have worked here since Monday.",
+        "phonetic": "วี แฮฟ เวิร์คท์ เฮียร์ ซินซ์ มัน-เดย์",
+        "thai": "เราทำงานที่นี่ตั้งแต่วันจันทร์"
+      },
+      {
+        "text": "They have studied English for two years.",
+        "phonetic": "เดย์ แฮฟ สทัด-ดีด อิง-กลิช ฟอร์ ทู เยียร์ส",
+        "thai": "พวกเขาเรียนภาษาอังกฤษมาสองปีแล้ว"
+      },
+      {
+        "text": "He has been busy since this morning.",
+        "phonetic": "ฮี แฮส บีน บิส-ซี่ ซินซ์ ดิส มอร์-นิ่ง",
+        "thai": "เขายุ่งตั้งแต่เช้านี้"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "present-perfect-for-since-1",
+        "promptThai": "พูดว่า: เธออาศัยอยู่ในเมืองนี้มาสามปีแล้ว",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส"
+          },
+          {
+            "text": "lived",
+            "phonetic": "ลิฟด์"
+          },
+          {
+            "text": "in this city",
+            "phonetic": "อิน ดิส ซิ-ตี้"
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์"
+          },
+          {
+            "text": "three years",
+            "phonetic": "ทรี เยียร์ส"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์",
+            "isDistractor": true
+          },
+          {
+            "text": "living",
+            "phonetic": "ลิฟ-วิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "has",
+          "lived",
+          "in this city",
+          "for",
+          "three years"
+        ],
+        "phonetic": "ชี แฮส ลิฟด์ อิน ดิส ซิ-ตี้ ฟอร์ ทรี เยียร์ส",
+        "thai": "เธออาศัยอยู่ในเมืองนี้มาสามปีแล้ว",
+        "explanation": "'three years' เป็นการบอกระยะเวลา (duration) จึงใช้ for ไม่ใช่ since -- และ 'She' ใช้กับ has"
+      },
+      {
+        "id": "present-perfect-for-since-2",
+        "promptThai": "พูดว่า: ฉันรู้จักเขามานานแล้ว",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "known",
+            "phonetic": "โนน"
+          },
+          {
+            "text": "him",
+            "phonetic": "ฮิม"
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์"
+          },
+          {
+            "text": "a long time",
+            "phonetic": "อะ ลอง ไทม์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์",
+            "isDistractor": true
+          },
+          {
+            "text": "knowing",
+            "phonetic": "โน-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "have",
+          "known",
+          "him",
+          "for",
+          "a long time"
+        ],
+        "phonetic": "ไอ แฮฟ โนน ฮิม ฟอร์ อะ ลอง ไทม์",
+        "thai": "ฉันรู้จักเขามานานแล้ว",
+        "explanation": "'a long time' เป็นการบอกระยะเวลา (duration) จึงใช้ for ไม่ใช่ since -- และ 'I' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-3",
+        "promptThai": "พูดว่า: พวกเขาเรียนภาษาอังกฤษมาสองปีแล้ว",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "studied",
+            "phonetic": "สทัด-ดีด"
+          },
+          {
+            "text": "English",
+            "phonetic": "อิง-กลิช"
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์"
+          },
+          {
+            "text": "two years",
+            "phonetic": "ทู เยียร์ส"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์",
+            "isDistractor": true
+          },
+          {
+            "text": "studying",
+            "phonetic": "สทัด-ดี้-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "have",
+          "studied",
+          "English",
+          "for",
+          "two years"
+        ],
+        "phonetic": "เดย์ แฮฟ สทัด-ดีด อิง-กลิช ฟอร์ ทู เยียร์ส",
+        "thai": "พวกเขาเรียนภาษาอังกฤษมาสองปีแล้ว",
+        "explanation": "'two years' เป็นการบอกระยะเวลา (duration) จึงใช้ for ไม่ใช่ since -- และ 'They' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-4",
+        "promptThai": "พูดว่า: เราทำงานที่นี่มาหกเดือนแล้ว",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "worked",
+            "phonetic": "เวิร์คท์"
+          },
+          {
+            "text": "here",
+            "phonetic": "เฮียร์"
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์"
+          },
+          {
+            "text": "six months",
+            "phonetic": "ซิกซ์ มันธ์ส"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์",
+            "isDistractor": true
+          },
+          {
+            "text": "working",
+            "phonetic": "เวิร์ค-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "have",
+          "worked",
+          "here",
+          "for",
+          "six months"
+        ],
+        "phonetic": "วี แฮฟ เวิร์คท์ เฮียร์ ฟอร์ ซิกซ์ มันธ์ส",
+        "thai": "เราทำงานที่นี่มาหกเดือนแล้ว",
+        "explanation": "'six months' เป็นการบอกระยะเวลา (duration) จึงใช้ for ไม่ใช่ since -- และ 'We' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-5",
+        "promptThai": "พูดว่า: เขายุ่งมาสองชั่วโมงแล้ว",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส"
+          },
+          {
+            "text": "been",
+            "phonetic": "บีน"
+          },
+          {
+            "text": "busy",
+            "phonetic": "บิส-ซี่"
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์"
+          },
+          {
+            "text": "two hours",
+            "phonetic": "ทู เอาเอิร์ส"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์",
+            "isDistractor": true
+          },
+          {
+            "text": "being",
+            "phonetic": "บี-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "has",
+          "been",
+          "busy",
+          "for",
+          "two hours"
+        ],
+        "phonetic": "ฮี แฮส บีน บิส-ซี่ ฟอร์ ทู เอาเอิร์ส",
+        "thai": "เขายุ่งมาสองชั่วโมงแล้ว",
+        "explanation": "'two hours' เป็นการบอกระยะเวลา (duration) จึงใช้ for ไม่ใช่ since -- และ 'He' ใช้กับ has"
+      },
+      {
+        "id": "present-perfect-for-since-6",
+        "promptThai": "พูดว่า: คุณรู้จักเธอมาสิบปีแล้ว",
+        "chunks": [
+          {
+            "text": "You",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "known",
+            "phonetic": "โนน"
+          },
+          {
+            "text": "her",
+            "phonetic": "เฮอร์"
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์"
+          },
+          {
+            "text": "ten years",
+            "phonetic": "เทน เยียร์ส"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์",
+            "isDistractor": true
+          },
+          {
+            "text": "knowing",
+            "phonetic": "โน-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "You",
+          "have",
+          "known",
+          "her",
+          "for",
+          "ten years"
+        ],
+        "phonetic": "ยู แฮฟ โนน เฮอร์ ฟอร์ เทน เยียร์ส",
+        "thai": "คุณรู้จักเธอมาสิบปีแล้ว",
+        "explanation": "'ten years' เป็นการบอกระยะเวลา (duration) จึงใช้ for ไม่ใช่ since -- และ 'You' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-7",
+        "promptThai": "พูดว่า: พ่อแม่ของฉันอาศัยอยู่ที่นี่มายี่สิบปีแล้ว",
+        "chunks": [
+          {
+            "text": "My parents",
+            "phonetic": "มาย แพ-เร้นท์ส"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "lived",
+            "phonetic": "ลิฟด์"
+          },
+          {
+            "text": "here",
+            "phonetic": "เฮียร์"
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์"
+          },
+          {
+            "text": "twenty years",
+            "phonetic": "ทเวน-ตี้ เยียร์ส"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์",
+            "isDistractor": true
+          },
+          {
+            "text": "living",
+            "phonetic": "ลิฟ-วิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "My parents",
+          "have",
+          "lived",
+          "here",
+          "for",
+          "twenty years"
+        ],
+        "phonetic": "มาย แพ-เร้นท์ส แฮฟ ลิฟด์ เฮียร์ ฟอร์ ทเวน-ตี้ เยียร์ส",
+        "thai": "พ่อแม่ของฉันอาศัยอยู่ที่นี่มายี่สิบปีแล้ว",
+        "explanation": "'twenty years' เป็นการบอกระยะเวลา (duration) จึงใช้ for ไม่ใช่ since -- และ 'My parents' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-8",
+        "promptThai": "พูดว่า: เด็กๆ เรียนภาษาฝรั่งเศสมาหนึ่งปีแล้ว",
+        "chunks": [
+          {
+            "text": "The children",
+            "phonetic": "เดอะ ชิล-เดริน"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "studied",
+            "phonetic": "สทัด-ดีด"
+          },
+          {
+            "text": "French",
+            "phonetic": "เฟรนช์"
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์"
+          },
+          {
+            "text": "one year",
+            "phonetic": "วัน เยียร์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์",
+            "isDistractor": true
+          },
+          {
+            "text": "studying",
+            "phonetic": "สทัด-ดี้-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The children",
+          "have",
+          "studied",
+          "French",
+          "for",
+          "one year"
+        ],
+        "phonetic": "เดอะ ชิล-เดริน แฮฟ สทัด-ดีด เฟรนช์ ฟอร์ วัน เยียร์",
+        "thai": "เด็กๆ เรียนภาษาฝรั่งเศสมาหนึ่งปีแล้ว",
+        "explanation": "'one year' เป็นการบอกระยะเวลา (duration) จึงใช้ for ไม่ใช่ since -- และ 'The children' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-9",
+        "promptThai": "พูดว่า: เธอทำงานที่บริษัทนี้มาสี่ปีแล้ว",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส"
+          },
+          {
+            "text": "worked",
+            "phonetic": "เวิร์คท์"
+          },
+          {
+            "text": "at this company",
+            "phonetic": "แอท ดิส คัม-พะ-นี"
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์"
+          },
+          {
+            "text": "four years",
+            "phonetic": "โฟร์ เยียร์ส"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์",
+            "isDistractor": true
+          },
+          {
+            "text": "working",
+            "phonetic": "เวิร์ค-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "has",
+          "worked",
+          "at this company",
+          "for",
+          "four years"
+        ],
+        "phonetic": "ชี แฮส เวิร์คท์ แอท ดิส คัม-พะ-นี ฟอร์ โฟร์ เยียร์ส",
+        "thai": "เธอทำงานที่บริษัทนี้มาสี่ปีแล้ว",
+        "explanation": "'four years' เป็นการบอกระยะเวลา (duration) จึงใช้ for ไม่ใช่ since -- และ 'She' ใช้กับ has"
+      },
+      {
+        "id": "present-perfect-for-since-10",
+        "promptThai": "พูดว่า: ฉันเหนื่อยมาสองสามวันแล้ว",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "been",
+            "phonetic": "บีน"
+          },
+          {
+            "text": "tired",
+            "phonetic": "ไทร์ด"
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์"
+          },
+          {
+            "text": "a few days",
+            "phonetic": "อะ ฟิว เดส์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์",
+            "isDistractor": true
+          },
+          {
+            "text": "being",
+            "phonetic": "บี-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "have",
+          "been",
+          "tired",
+          "for",
+          "a few days"
+        ],
+        "phonetic": "ไอ แฮฟ บีน ไทร์ด ฟอร์ อะ ฟิว เดส์",
+        "thai": "ฉันเหนื่อยมาสองสามวันแล้ว",
+        "explanation": "'a few days' เป็นการบอกระยะเวลา (duration) จึงใช้ for ไม่ใช่ since -- และ 'I' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-11",
+        "promptThai": "พูดว่า: เธออาศัยอยู่ในเมืองนี้ตั้งแต่ปี 2020",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส"
+          },
+          {
+            "text": "lived",
+            "phonetic": "ลิฟด์"
+          },
+          {
+            "text": "in this city",
+            "phonetic": "อิน ดิส ซิ-ตี้"
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์"
+          },
+          {
+            "text": "2020",
+            "phonetic": "ทเวน-ตี้ ทเวน-ตี้"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "living",
+            "phonetic": "ลิฟ-วิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "has",
+          "lived",
+          "in this city",
+          "since",
+          "2020"
+        ],
+        "phonetic": "ชี แฮส ลิฟด์ อิน ดิส ซิ-ตี้ ซินซ์ ทเวน-ตี้ ทเวน-ตี้",
+        "thai": "เธออาศัยอยู่ในเมืองนี้ตั้งแต่ปี 2020",
+        "explanation": "'2020' เป็นจุดเริ่มต้นของเวลา (a starting point) จึงใช้ since ไม่ใช่ for -- และ 'She' ใช้กับ has"
+      },
+      {
+        "id": "present-perfect-for-since-12",
+        "promptThai": "พูดว่า: ฉันรู้จักเขาตั้งแต่วัยเด็ก",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "known",
+            "phonetic": "โนน"
+          },
+          {
+            "text": "him",
+            "phonetic": "ฮิม"
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์"
+          },
+          {
+            "text": "childhood",
+            "phonetic": "ไชลด์-ฮุด"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "knowing",
+            "phonetic": "โน-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "have",
+          "known",
+          "him",
+          "since",
+          "childhood"
+        ],
+        "phonetic": "ไอ แฮฟ โนน ฮิม ซินซ์ ไชลด์-ฮุด",
+        "thai": "ฉันรู้จักเขาตั้งแต่วัยเด็ก",
+        "explanation": "'childhood' เป็นจุดเริ่มต้นของเวลา (a starting point) จึงใช้ since ไม่ใช่ for -- และ 'I' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-13",
+        "promptThai": "พูดว่า: เราทำงานที่นี่ตั้งแต่วันจันทร์",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "worked",
+            "phonetic": "เวิร์คท์"
+          },
+          {
+            "text": "here",
+            "phonetic": "เฮียร์"
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์"
+          },
+          {
+            "text": "Monday",
+            "phonetic": "มัน-เดย์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "working",
+            "phonetic": "เวิร์ค-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "have",
+          "worked",
+          "here",
+          "since",
+          "Monday"
+        ],
+        "phonetic": "วี แฮฟ เวิร์คท์ เฮียร์ ซินซ์ มัน-เดย์",
+        "thai": "เราทำงานที่นี่ตั้งแต่วันจันทร์",
+        "explanation": "'Monday' เป็นจุดเริ่มต้นของเวลา (a starting point) จึงใช้ since ไม่ใช่ for -- และ 'We' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-14",
+        "promptThai": "พูดว่า: เขายุ่งตั้งแต่เช้านี้",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส"
+          },
+          {
+            "text": "been",
+            "phonetic": "บีน"
+          },
+          {
+            "text": "busy",
+            "phonetic": "บิส-ซี่"
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์"
+          },
+          {
+            "text": "this morning",
+            "phonetic": "ดิส มอร์-นิ่ง"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "being",
+            "phonetic": "บี-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "has",
+          "been",
+          "busy",
+          "since",
+          "this morning"
+        ],
+        "phonetic": "ฮี แฮส บีน บิส-ซี่ ซินซ์ ดิส มอร์-นิ่ง",
+        "thai": "เขายุ่งตั้งแต่เช้านี้",
+        "explanation": "'this morning' เป็นจุดเริ่มต้นของเวลา (a starting point) จึงใช้ since ไม่ใช่ for -- และ 'He' ใช้กับ has"
+      },
+      {
+        "id": "present-perfect-for-since-15",
+        "promptThai": "พูดว่า: พวกเขาเรียนภาษาอังกฤษตั้งแต่เดือนมกราคม",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "studied",
+            "phonetic": "สทัด-ดีด"
+          },
+          {
+            "text": "English",
+            "phonetic": "อิง-กลิช"
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์"
+          },
+          {
+            "text": "January",
+            "phonetic": "แจน-ยู-แอ-รี่"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "studying",
+            "phonetic": "สทัด-ดี้-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "have",
+          "studied",
+          "English",
+          "since",
+          "January"
+        ],
+        "phonetic": "เดย์ แฮฟ สทัด-ดีด อิง-กลิช ซินซ์ แจน-ยู-แอ-รี่",
+        "thai": "พวกเขาเรียนภาษาอังกฤษตั้งแต่เดือนมกราคม",
+        "explanation": "'January' เป็นจุดเริ่มต้นของเวลา (a starting point) จึงใช้ since ไม่ใช่ for -- และ 'They' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-16",
+        "promptThai": "พูดว่า: คุณรู้จักเธอตั้งแต่ปีที่แล้ว",
+        "chunks": [
+          {
+            "text": "You",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "known",
+            "phonetic": "โนน"
+          },
+          {
+            "text": "her",
+            "phonetic": "เฮอร์"
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์"
+          },
+          {
+            "text": "last year",
+            "phonetic": "ลาสท์ เยียร์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "knowing",
+            "phonetic": "โน-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "You",
+          "have",
+          "known",
+          "her",
+          "since",
+          "last year"
+        ],
+        "phonetic": "ยู แฮฟ โนน เฮอร์ ซินซ์ ลาสท์ เยียร์",
+        "thai": "คุณรู้จักเธอตั้งแต่ปีที่แล้ว",
+        "explanation": "'last year' เป็นจุดเริ่มต้นของเวลา (a starting point) จึงใช้ since ไม่ใช่ for -- และ 'You' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-17",
+        "promptThai": "พูดว่า: พ่อแม่ของฉันอาศัยอยู่ที่นี่ตั้งแต่ปี 1999",
+        "chunks": [
+          {
+            "text": "My parents",
+            "phonetic": "มาย แพ-เร้นท์ส"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "lived",
+            "phonetic": "ลิฟด์"
+          },
+          {
+            "text": "here",
+            "phonetic": "เฮียร์"
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์"
+          },
+          {
+            "text": "1999",
+            "phonetic": "ไนน์-ทีน ไนน์-ตี้ ไนน์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "living",
+            "phonetic": "ลิฟ-วิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "My parents",
+          "have",
+          "lived",
+          "here",
+          "since",
+          "1999"
+        ],
+        "phonetic": "มาย แพ-เร้นท์ส แฮฟ ลิฟด์ เฮียร์ ซินซ์ ไนน์-ทีน ไนน์-ตี้ ไนน์",
+        "thai": "พ่อแม่ของฉันอาศัยอยู่ที่นี่ตั้งแต่ปี 1999",
+        "explanation": "'1999' เป็นจุดเริ่มต้นของเวลา (a starting point) จึงใช้ since ไม่ใช่ for -- และ 'My parents' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-18",
+        "promptThai": "พูดว่า: เด็กๆ เรียนภาษาฝรั่งเศสตั้งแต่เดือนที่แล้ว",
+        "chunks": [
+          {
+            "text": "The children",
+            "phonetic": "เดอะ ชิล-เดริน"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "studied",
+            "phonetic": "สทัด-ดีด"
+          },
+          {
+            "text": "French",
+            "phonetic": "เฟรนช์"
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์"
+          },
+          {
+            "text": "last month",
+            "phonetic": "ลาสท์ มันธ์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "studying",
+            "phonetic": "สทัด-ดี้-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The children",
+          "have",
+          "studied",
+          "French",
+          "since",
+          "last month"
+        ],
+        "phonetic": "เดอะ ชิล-เดริน แฮฟ สทัด-ดีด เฟรนช์ ซินซ์ ลาสท์ มันธ์",
+        "thai": "เด็กๆ เรียนภาษาฝรั่งเศสตั้งแต่เดือนที่แล้ว",
+        "explanation": "'last month' เป็นจุดเริ่มต้นของเวลา (a starting point) จึงใช้ since ไม่ใช่ for -- และ 'The children' ใช้กับ have"
+      },
+      {
+        "id": "present-perfect-for-since-19",
+        "promptThai": "พูดว่า: เธอทำงานที่บริษัทนี้ตั้งแต่เดือนมีนาคม",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส"
+          },
+          {
+            "text": "worked",
+            "phonetic": "เวิร์คท์"
+          },
+          {
+            "text": "at this company",
+            "phonetic": "แอท ดิส คัม-พะ-นี"
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์"
+          },
+          {
+            "text": "March",
+            "phonetic": "มาร์ช"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "working",
+            "phonetic": "เวิร์ค-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "has",
+          "worked",
+          "at this company",
+          "since",
+          "March"
+        ],
+        "phonetic": "ชี แฮส เวิร์คท์ แอท ดิส คัม-พะ-นี ซินซ์ มาร์ช",
+        "thai": "เธอทำงานที่บริษัทนี้ตั้งแต่เดือนมีนาคม",
+        "explanation": "'March' เป็นจุดเริ่มต้นของเวลา (a starting point) จึงใช้ since ไม่ใช่ for -- และ 'She' ใช้กับ has"
+      },
+      {
+        "id": "present-perfect-for-since-20",
+        "promptThai": "พูดว่า: ฉันเหนื่อยตั้งแต่วันศุกร์",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ"
+          },
+          {
+            "text": "been",
+            "phonetic": "บีน"
+          },
+          {
+            "text": "tired",
+            "phonetic": "ไทร์ด"
+          },
+          {
+            "text": "since",
+            "phonetic": "ซินซ์"
+          },
+          {
+            "text": "Friday",
+            "phonetic": "ฟราย-เดย์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "for",
+            "phonetic": "ฟอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "being",
+            "phonetic": "บี-อิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "have",
+          "been",
+          "tired",
+          "since",
+          "Friday"
+        ],
+        "phonetic": "ไอ แฮฟ บีน ไทร์ด ซินซ์ ฟราย-เดย์",
+        "thai": "ฉันเหนื่อยตั้งแต่วันศุกร์",
+        "explanation": "'Friday' เป็นจุดเริ่มต้นของเวลา (a starting point) จึงใช้ since ไม่ใช่ for -- และ 'I' ใช้กับ have"
+      }
+    ]
   }
 ]
