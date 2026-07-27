@@ -10556,5 +10556,4047 @@
         "explanation": "'Friday' เป็นจุดเริ่มต้นของเวลา (a starting point) จึงใช้ since ไม่ใช่ for -- และ 'I' ใช้กับ have"
       }
     ]
+  },
+  {
+    "id": "prepositions-time-place",
+    "title": "Prepositions: In / On / At",
+    "titleTh": "บุพบทบอกเวลาและสถานที่ In / On / At",
+    "level": "A2",
+    "order": 13,
+    "structure": "[Sentence] + at + [specific time/point] / on + [day, date, or surface] / in + [longer period or enclosed/large space]",
+    "functionWords": [
+      {
+        "word": "at",
+        "role": "ใช้กับเวลาที่เป็นจุดเวลาที่ชัดเจน (at 7 o'clock, at noon) และสถานที่ที่เป็นจุดเฉพาะเจาะจง (at the door, at the entrance)"
+      },
+      {
+        "word": "on",
+        "role": "ใช้กับวันหรือวันที่ที่เจาะจง (on Monday, on July 1st) และพื้นผิวที่วางของอยู่ด้านบน (on the table, on the wall)"
+      },
+      {
+        "word": "in",
+        "role": "ใช้กับช่วงเวลาที่ยาวกว่า เช่น ตอนเช้า/เย็น เดือน หรือปี (in the morning, in July, in 2000) และสถานที่ปิดหรือพื้นที่กว้าง (in this room, in Bangkok)"
+      }
+    ],
+    "timeNote": "จำง่ายๆ: at (จุดเล็กที่สุด) < on (วัน/พื้นผิว) < in (ช่วงเวลานาน/พื้นที่กว้าง) -- ไล่จากเล็กไปใหญ่",
+    "examples": [
+      {
+        "text": "I wake up at 7 o'clock.",
+        "phonetic": "ไอ เวค อัพ แอท เซเว่น อะ-คล็อก",
+        "thai": "ฉันตื่นนอนตอน 7 โมง"
+      },
+      {
+        "text": "We have a meeting on Monday.",
+        "phonetic": "วี แฮฟ อะ มี-ทิ่ง ออน มัน-เดย์",
+        "thai": "เรามีประชุมวันจันทร์"
+      },
+      {
+        "text": "They go on vacation in July.",
+        "phonetic": "เดย์ โก ออน เว-เค-ชั่น อิน จู-ไล",
+        "thai": "พวกเขาไปเที่ยวพักผ่อนเดือนกรกฎาคม"
+      },
+      {
+        "text": "Let's meet at the door.",
+        "phonetic": "เล็ทส์ มีท แอท เดอะ ดอร์",
+        "thai": "มาเจอกันที่ประตู"
+      },
+      {
+        "text": "Put your bag on the table.",
+        "phonetic": "พุท ยัวร์ แบก ออน เดอะ เท-เบิล",
+        "thai": "วางกระเป๋าของคุณบนโต๊ะ"
+      },
+      {
+        "text": "They live in Bangkok.",
+        "phonetic": "เดย์ ลิฟ อิน แบง-กอก",
+        "thai": "พวกเขาอาศัยอยู่ที่กรุงเทพ"
+      },
+      {
+        "text": "My office is in this building.",
+        "phonetic": "มาย ออฟ-ฟิส อิส อิน ดิส บิล-ดิ้ง",
+        "thai": "ออฟฟิศของฉันอยู่ในตึกนี้"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "prepositions-time-place-1",
+        "promptThai": "พูดว่า: ฉันตื่นนอนตอน 7 โมง",
+        "chunks": [
+          {
+            "text": "I wake up",
+            "phonetic": "ไอ เวค อัพ"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท"
+          },
+          {
+            "text": "7 o'clock",
+            "phonetic": "เซเว่น อะ-คล็อก"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I wake up",
+          "at",
+          "7 o'clock"
+        ],
+        "phonetic": "ไอ เวค อัพ แอท เซเว่น อะ-คล็อก",
+        "thai": "ฉันตื่นนอนตอน 7 โมง",
+        "explanation": "'at' ใช้กับเวลาที่เป็นจุดเวลาที่ชัดเจน เช่น ตัวเลขนาฬิกา (7 o'clock, noon)"
+      },
+      {
+        "id": "prepositions-time-place-2",
+        "promptThai": "พูดว่า: รถไฟออกตอนเที่ยง",
+        "chunks": [
+          {
+            "text": "The train leaves",
+            "phonetic": "เดอะ เทรน ลีฟส์"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท"
+          },
+          {
+            "text": "noon",
+            "phonetic": "นูน"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The train leaves",
+          "at",
+          "noon"
+        ],
+        "phonetic": "เดอะ เทรน ลีฟส์ แอท นูน",
+        "thai": "รถไฟออกตอนเที่ยง",
+        "explanation": "'at' ใช้กับเวลาที่เป็นจุดเวลาที่ชัดเจน เช่น ตัวเลขนาฬิกา (7 o'clock, noon)"
+      },
+      {
+        "id": "prepositions-time-place-3",
+        "promptThai": "พูดว่า: เรามีประชุมวันจันทร์",
+        "chunks": [
+          {
+            "text": "We have a meeting",
+            "phonetic": "วี แฮฟ อะ มี-ทิ่ง"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน"
+          },
+          {
+            "text": "Monday",
+            "phonetic": "มัน-เดย์"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We have a meeting",
+          "on",
+          "Monday"
+        ],
+        "phonetic": "วี แฮฟ อะ มี-ทิ่ง ออน มัน-เดย์",
+        "thai": "เรามีประชุมวันจันทร์",
+        "explanation": "'on' ใช้กับวันหรือวันที่ที่เจาะจง เช่น Monday, July 1st"
+      },
+      {
+        "id": "prepositions-time-place-4",
+        "promptThai": "พูดว่า: วันเกิดของเขาคือวันที่ 1 กรกฎาคม",
+        "chunks": [
+          {
+            "text": "His birthday is",
+            "phonetic": "ฮิส เบิร์ธ-เดย์ อิส"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน"
+          },
+          {
+            "text": "July 1st",
+            "phonetic": "จู-ไล เฟิร์สท์"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "His birthday is",
+          "on",
+          "July 1st"
+        ],
+        "phonetic": "ฮิส เบิร์ธ-เดย์ อิส ออน จู-ไล เฟิร์สท์",
+        "thai": "วันเกิดของเขาคือวันที่ 1 กรกฎาคม",
+        "explanation": "'on' ใช้กับวันหรือวันที่ที่เจาะจง เช่น Monday, July 1st"
+      },
+      {
+        "id": "prepositions-time-place-5",
+        "promptThai": "พูดว่า: ร้านปิดทุกวันอาทิตย์",
+        "chunks": [
+          {
+            "text": "The shop closes",
+            "phonetic": "เดอะ ชอพ โคลส-เซส"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน"
+          },
+          {
+            "text": "Sundays",
+            "phonetic": "ซัน-เดย์ส"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The shop closes",
+          "on",
+          "Sundays"
+        ],
+        "phonetic": "เดอะ ชอพ โคลส-เซส ออน ซัน-เดย์ส",
+        "thai": "ร้านปิดทุกวันอาทิตย์",
+        "explanation": "'on' ใช้กับวันหรือวันที่ที่เจาะจง เช่น Monday, July 1st"
+      },
+      {
+        "id": "prepositions-time-place-6",
+        "promptThai": "พูดว่า: ฉันมักจะอ่านหนังสือตอนเย็น",
+        "chunks": [
+          {
+            "text": "I usually study",
+            "phonetic": "ไอ ยู-ชวล-ลี่ สทัด-ดี้"
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน"
+          },
+          {
+            "text": "the evening",
+            "phonetic": "ดิ อี๊ฟ-นิ่ง"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I usually study",
+          "in",
+          "the evening"
+        ],
+        "phonetic": "ไอ ยู-ชวล-ลี่ สทัด-ดี้ อิน ดิ อี๊ฟ-นิ่ง",
+        "thai": "ฉันมักจะอ่านหนังสือตอนเย็น",
+        "explanation": "'in' ใช้กับช่วงเวลาที่ยาวกว่า เช่น ตอนเช้า/เย็น เดือน หรือปี"
+      },
+      {
+        "id": "prepositions-time-place-7",
+        "promptThai": "พูดว่า: พวกเขาไปเที่ยวพักผ่อนเดือนกรกฎาคม",
+        "chunks": [
+          {
+            "text": "They go on vacation",
+            "phonetic": "เดย์ โก ออน เว-เค-ชั่น"
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน"
+          },
+          {
+            "text": "July",
+            "phonetic": "จู-ไล"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They go on vacation",
+          "in",
+          "July"
+        ],
+        "phonetic": "เดย์ โก ออน เว-เค-ชั่น อิน จู-ไล",
+        "thai": "พวกเขาไปเที่ยวพักผ่อนเดือนกรกฎาคม",
+        "explanation": "'in' ใช้กับช่วงเวลาที่ยาวกว่า เช่น ตอนเช้า/เย็น เดือน หรือปี"
+      },
+      {
+        "id": "prepositions-time-place-8",
+        "promptThai": "พูดว่า: เธอเกิดปี 2000",
+        "chunks": [
+          {
+            "text": "She was born",
+            "phonetic": "ชี วอส บอร์น"
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน"
+          },
+          {
+            "text": "2000",
+            "phonetic": "ทู เธา-แซนด์"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She was born",
+          "in",
+          "2000"
+        ],
+        "phonetic": "ชี วอส บอร์น อิน ทู เธา-แซนด์",
+        "thai": "เธอเกิดปี 2000",
+        "explanation": "'in' ใช้กับช่วงเวลาที่ยาวกว่า เช่น ตอนเช้า/เย็น เดือน หรือปี"
+      },
+      {
+        "id": "prepositions-time-place-9",
+        "promptThai": "พูดว่า: เขาเริ่มงานตอน 9 โมง",
+        "chunks": [
+          {
+            "text": "He starts work",
+            "phonetic": "ฮี สทาร์ทส์ เวิร์ค"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท"
+          },
+          {
+            "text": "9 o'clock",
+            "phonetic": "ไนน์ อะ-คล็อก"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He starts work",
+          "at",
+          "9 o'clock"
+        ],
+        "phonetic": "ฮี สทาร์ทส์ เวิร์ค แอท ไนน์ อะ-คล็อก",
+        "thai": "เขาเริ่มงานตอน 9 โมง",
+        "explanation": "'at' ใช้กับเวลาที่เป็นจุดเวลาที่ชัดเจน เช่น ตัวเลขนาฬิกา (7 o'clock, noon)"
+      },
+      {
+        "id": "prepositions-time-place-10",
+        "promptThai": "พูดว่า: งานปาร์ตี้คือวันศุกร์",
+        "chunks": [
+          {
+            "text": "The party is",
+            "phonetic": "เดอะ พาร์-ตี้ อิส"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน"
+          },
+          {
+            "text": "Friday",
+            "phonetic": "ฟราย-เดย์"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The party is",
+          "on",
+          "Friday"
+        ],
+        "phonetic": "เดอะ พาร์-ตี้ อิส ออน ฟราย-เดย์",
+        "thai": "งานปาร์ตี้คือวันศุกร์",
+        "explanation": "'on' ใช้กับวันหรือวันที่ที่เจาะจง เช่น Monday, July 1st"
+      },
+      {
+        "id": "prepositions-time-place-11",
+        "promptThai": "พูดว่า: มาเจอกันที่ประตู",
+        "chunks": [
+          {
+            "text": "Let's meet",
+            "phonetic": "เล็ทส์ มีท"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท"
+          },
+          {
+            "text": "the door",
+            "phonetic": "เดอะ ดอร์"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Let's meet",
+          "at",
+          "the door"
+        ],
+        "phonetic": "เล็ทส์ มีท แอท เดอะ ดอร์",
+        "thai": "มาเจอกันที่ประตู",
+        "explanation": "'at' ใช้กับสถานที่ที่เป็นจุดเฉพาะเจาะจง เช่น the door, the entrance"
+      },
+      {
+        "id": "prepositions-time-place-12",
+        "promptThai": "พูดว่า: รอฉันที่ป้ายรถเมล์",
+        "chunks": [
+          {
+            "text": "Wait for me",
+            "phonetic": "เวท ฟอร์ มี"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท"
+          },
+          {
+            "text": "the bus stop",
+            "phonetic": "เดอะ บัส สท็อพ"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Wait for me",
+          "at",
+          "the bus stop"
+        ],
+        "phonetic": "เวท ฟอร์ มี แอท เดอะ บัส สท็อพ",
+        "thai": "รอฉันที่ป้ายรถเมล์",
+        "explanation": "'at' ใช้กับสถานที่ที่เป็นจุดเฉพาะเจาะจง เช่น the door, the entrance"
+      },
+      {
+        "id": "prepositions-time-place-13",
+        "promptThai": "พูดว่า: วางกระเป๋าของคุณบนโต๊ะ",
+        "chunks": [
+          {
+            "text": "Put your bag",
+            "phonetic": "พุท ยัวร์ แบก"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน"
+          },
+          {
+            "text": "the table",
+            "phonetic": "เดอะ เท-เบิล"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Put your bag",
+          "on",
+          "the table"
+        ],
+        "phonetic": "พุท ยัวร์ แบก ออน เดอะ เท-เบิล",
+        "thai": "วางกระเป๋าของคุณบนโต๊ะ",
+        "explanation": "'on' ใช้กับพื้นผิวหรือสิ่งที่วางอยู่ด้านบน เช่น the table, the wall, the desk"
+      },
+      {
+        "id": "prepositions-time-place-14",
+        "promptThai": "พูดว่า: มีโปสเตอร์อยู่บนผนัง",
+        "chunks": [
+          {
+            "text": "There is a poster",
+            "phonetic": "แดร์ อิส อะ โพส-เทอร์"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน"
+          },
+          {
+            "text": "the wall",
+            "phonetic": "เดอะ วอลล์"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "There is a poster",
+          "on",
+          "the wall"
+        ],
+        "phonetic": "แดร์ อิส อะ โพส-เทอร์ ออน เดอะ วอลล์",
+        "thai": "มีโปสเตอร์อยู่บนผนัง",
+        "explanation": "'on' ใช้กับพื้นผิวหรือสิ่งที่วางอยู่ด้านบน เช่น the table, the wall, the desk"
+      },
+      {
+        "id": "prepositions-time-place-15",
+        "promptThai": "พูดว่า: พวกเขาอาศัยอยู่ที่กรุงเทพ",
+        "chunks": [
+          {
+            "text": "They live",
+            "phonetic": "เดย์ ลิฟ"
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน"
+          },
+          {
+            "text": "Bangkok",
+            "phonetic": "แบง-กอก"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They live",
+          "in",
+          "Bangkok"
+        ],
+        "phonetic": "เดย์ ลิฟ อิน แบง-กอก",
+        "thai": "พวกเขาอาศัยอยู่ที่กรุงเทพ",
+        "explanation": "'in' ใช้กับสถานที่ปิดหรือพื้นที่กว้าง เช่น a room, a city, a building"
+      },
+      {
+        "id": "prepositions-time-place-16",
+        "promptThai": "พูดว่า: เธอทำงานอยู่ในห้องนี้",
+        "chunks": [
+          {
+            "text": "She works",
+            "phonetic": "ชี เวิร์คส์"
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน"
+          },
+          {
+            "text": "this room",
+            "phonetic": "ดิส รูม"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She works",
+          "in",
+          "this room"
+        ],
+        "phonetic": "ชี เวิร์คส์ อิน ดิส รูม",
+        "thai": "เธอทำงานอยู่ในห้องนี้",
+        "explanation": "'in' ใช้กับสถานที่ปิดหรือพื้นที่กว้าง เช่น a room, a city, a building"
+      },
+      {
+        "id": "prepositions-time-place-17",
+        "promptThai": "พูดว่า: เขายืนอยู่ที่ทางเข้า",
+        "chunks": [
+          {
+            "text": "He is standing",
+            "phonetic": "ฮี อิส สแทน-ดิ้ง"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท"
+          },
+          {
+            "text": "the entrance",
+            "phonetic": "ดิ เอน-ทรันซ์"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He is standing",
+          "at",
+          "the entrance"
+        ],
+        "phonetic": "ฮี อิส สแทน-ดิ้ง แอท ดิ เอน-ทรันซ์",
+        "thai": "เขายืนอยู่ที่ทางเข้า",
+        "explanation": "'at' ใช้กับสถานที่ที่เป็นจุดเฉพาะเจาะจง เช่น the door, the entrance"
+      },
+      {
+        "id": "prepositions-time-place-18",
+        "promptThai": "พูดว่า: กุญแจอยู่บนโต๊ะทำงาน",
+        "chunks": [
+          {
+            "text": "The keys are",
+            "phonetic": "เดอะ คีส์ อาร์"
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน"
+          },
+          {
+            "text": "the desk",
+            "phonetic": "เดอะ เดสก์"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The keys are",
+          "on",
+          "the desk"
+        ],
+        "phonetic": "เดอะ คีส์ อาร์ ออน เดอะ เดสก์",
+        "thai": "กุญแจอยู่บนโต๊ะทำงาน",
+        "explanation": "'on' ใช้กับพื้นผิวหรือสิ่งที่วางอยู่ด้านบน เช่น the table, the wall, the desk"
+      },
+      {
+        "id": "prepositions-time-place-19",
+        "promptThai": "พูดว่า: เรารอที่ล็อบบี้",
+        "chunks": [
+          {
+            "text": "We waited",
+            "phonetic": "วี เวท-ทิด"
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน"
+          },
+          {
+            "text": "the lobby",
+            "phonetic": "เดอะ ล็อบ-บี้"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We waited",
+          "in",
+          "the lobby"
+        ],
+        "phonetic": "วี เวท-ทิด อิน เดอะ ล็อบ-บี้",
+        "thai": "เรารอที่ล็อบบี้",
+        "explanation": "'in' ใช้กับสถานที่ปิดหรือพื้นที่กว้าง เช่น a room, a city, a building"
+      },
+      {
+        "id": "prepositions-time-place-20",
+        "promptThai": "พูดว่า: ออฟฟิศของฉันอยู่ในตึกนี้",
+        "chunks": [
+          {
+            "text": "My office is",
+            "phonetic": "มาย ออฟ-ฟิส อิส"
+          },
+          {
+            "text": "in",
+            "phonetic": "อิน"
+          },
+          {
+            "text": "this building",
+            "phonetic": "ดิส บิล-ดิ้ง"
+          },
+          {
+            "text": "at",
+            "phonetic": "แอท",
+            "isDistractor": true
+          },
+          {
+            "text": "on",
+            "phonetic": "ออน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "My office is",
+          "in",
+          "this building"
+        ],
+        "phonetic": "มาย ออฟ-ฟิส อิส อิน ดิส บิล-ดิ้ง",
+        "thai": "ออฟฟิศของฉันอยู่ในตึกนี้",
+        "explanation": "'in' ใช้กับสถานที่ปิดหรือพื้นที่กว้าง เช่น a room, a city, a building"
+      }
+    ]
+  },
+  {
+    "id": "can-could-requests",
+    "title": "Can / Could (Requests & Permission)",
+    "titleTh": "Can / Could สำหรับขอร้องและขออนุญาต",
+    "level": "A2",
+    "order": 14,
+    "structure": "Can/Could + I/you + [base verb] + ...? (ขอร้องหรือขออนุญาต)",
+    "functionWords": [
+      {
+        "word": "Can (ไม่เป็นทางการ)",
+        "role": "ใช้ขอร้องหรือขออนุญาตกับเพื่อนหรือคนใกล้ชิด ฟังดูเป็นกันเอง"
+      },
+      {
+        "word": "Could (สุภาพ)",
+        "role": "ใช้ขอร้องหรือขออนุญาตอย่างสุภาพมากขึ้น เหมาะกับคนแปลกหน้า ลูกค้า หรือที่ทำงาน"
+      },
+      {
+        "word": "...I...?",
+        "role": "ใช้เมื่อขออนุญาตทำบางอย่างด้วยตัวเอง เช่น Can I sit here?"
+      },
+      {
+        "word": "...you...?",
+        "role": "ใช้เมื่อขอให้อีกฝ่ายช่วยทำบางอย่างให้ เช่น Could you help me?"
+      }
+    ],
+    "timeNote": "'Could' ฟังดูสุภาพกว่า 'Can' แต่ความหมายเหมือนกันเมื่อใช้ขอร้อง/ขออนุญาต -- เลือกใช้ตามความสัมพันธ์กับคู่สนทนา ไม่ใช่ตามกาลเวลา",
+    "examples": [
+      {
+        "text": "Can you help me with this bag?",
+        "phonetic": "แคน ยู เฮลพ์ มี วิธ ดิส แบก",
+        "thai": "ช่วยฉันถือกระเป๋านี้หน่อยได้ไหม"
+      },
+      {
+        "text": "Could you open the window, please?",
+        "phonetic": "คุด ยู โอ-เพ่น เดอะ วิน-โดว์ พลีส",
+        "thai": "ช่วยเปิดหน้าต่างให้หน่อยได้ไหมคะ"
+      },
+      {
+        "text": "Can I use your phone?",
+        "phonetic": "แคน ไอ ยูส ยัวร์ โฟน",
+        "thai": "ขอใช้โทรศัพท์คุณหน่อยได้ไหม"
+      },
+      {
+        "text": "Could I leave early today?",
+        "phonetic": "คุด ไอ ลีฝ เออร์-ลี่ ทู-เดย์",
+        "thai": "ขออนุญาตกลับก่อนวันนี้ได้ไหมคะ"
+      },
+      {
+        "text": "Can you pass me the salt?",
+        "phonetic": "แคน ยู พาส มี เดอะ ซอลท์",
+        "thai": "ช่วยส่งเกลือให้หน่อยได้ไหม"
+      },
+      {
+        "text": "Could I have the bill, please?",
+        "phonetic": "คุด ไอ แฮฟ เดอะ บิล พลีส",
+        "thai": "ขอเช็คบิลหน่อยได้ไหมคะ"
+      },
+      {
+        "text": "Can I sit here?",
+        "phonetic": "แคน ไอ ซิท เฮียร์",
+        "thai": "ขอนั่งตรงนี้ได้ไหม"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "can-could-requests-1",
+        "promptThai": "พูดว่า: ช่วยฉันถือกระเป๋านี้หน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "chunks": [
+          {
+            "text": "Can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "help me with this bag?",
+            "phonetic": "เฮลพ์ มี วิธ ดิส แบก"
+          },
+          {
+            "text": "Could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Can",
+          "you",
+          "help me with this bag?"
+        ],
+        "phonetic": "แคน ยู เฮลพ์ มี วิธ ดิส แบก",
+        "thai": "ช่วยฉันถือกระเป๋านี้หน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "explanation": "ประโยคนี้เป็นการพูดแบบเป็นกันเอง จึงใช้ 'Can' ก็เพียงพอ ไม่จำเป็นต้องใช้ 'Could' -- และประธานที่ถูกต้องคือ 'you'"
+      },
+      {
+        "id": "can-could-requests-2",
+        "promptThai": "พูดว่า: ช่วยเปิดหน้าต่างให้หน่อยได้ไหมคะ (พูดอย่างสุภาพ)",
+        "chunks": [
+          {
+            "text": "Could",
+            "phonetic": "คุด"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "open the window, please?",
+            "phonetic": "โอ-เพ่น เดอะ วิน-โดว์ พลีส"
+          },
+          {
+            "text": "Can",
+            "phonetic": "แคน",
+            "isDistractor": true
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Could",
+          "you",
+          "open the window, please?"
+        ],
+        "phonetic": "คุด ยู โอ-เพ่น เดอะ วิน-โดว์ พลีส",
+        "thai": "ช่วยเปิดหน้าต่างให้หน่อยได้ไหมคะ (พูดอย่างสุภาพ)",
+        "explanation": "ประโยคนี้เหมาะกับสถานการณ์ที่ต้องสุภาพ จึงใช้ 'Could' ไม่ใช่ 'Can' -- และประธานที่ถูกต้องคือ 'you'"
+      },
+      {
+        "id": "can-could-requests-3",
+        "promptThai": "พูดว่า: ช่วยส่งเกลือให้หน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "chunks": [
+          {
+            "text": "Can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "pass me the salt?",
+            "phonetic": "พาส มี เดอะ ซอลท์"
+          },
+          {
+            "text": "Could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Can",
+          "you",
+          "pass me the salt?"
+        ],
+        "phonetic": "แคน ยู พาส มี เดอะ ซอลท์",
+        "thai": "ช่วยส่งเกลือให้หน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "explanation": "ประโยคนี้เป็นการพูดแบบเป็นกันเอง จึงใช้ 'Can' ก็เพียงพอ ไม่จำเป็นต้องใช้ 'Could' -- และประธานที่ถูกต้องคือ 'you'"
+      },
+      {
+        "id": "can-could-requests-4",
+        "promptThai": "พูดว่า: ช่วยพูดช้าลงหน่อยได้ไหมคะ (พูดกับคนแปลกหน้าอย่างสุภาพ)",
+        "chunks": [
+          {
+            "text": "Could",
+            "phonetic": "คุด"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "speak more slowly, please?",
+            "phonetic": "สปีค มอร์ สโลว์-ลี่ พลีส"
+          },
+          {
+            "text": "Can",
+            "phonetic": "แคน",
+            "isDistractor": true
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Could",
+          "you",
+          "speak more slowly, please?"
+        ],
+        "phonetic": "คุด ยู สปีค มอร์ สโลว์-ลี่ พลีส",
+        "thai": "ช่วยพูดช้าลงหน่อยได้ไหมคะ (พูดกับคนแปลกหน้าอย่างสุภาพ)",
+        "explanation": "ประโยคนี้เหมาะกับสถานการณ์ที่ต้องสุภาพ จึงใช้ 'Could' ไม่ใช่ 'Can' -- และประธานที่ถูกต้องคือ 'you'"
+      },
+      {
+        "id": "can-could-requests-5",
+        "promptThai": "พูดว่า: ขอยืมปากกาคุณหน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "chunks": [
+          {
+            "text": "Can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "lend me your pen?",
+            "phonetic": "เลนด์ มี ยัวร์ เพน"
+          },
+          {
+            "text": "Could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Can",
+          "you",
+          "lend me your pen?"
+        ],
+        "phonetic": "แคน ยู เลนด์ มี ยัวร์ เพน",
+        "thai": "ขอยืมปากกาคุณหน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "explanation": "ประโยคนี้เป็นการพูดแบบเป็นกันเอง จึงใช้ 'Can' ก็เพียงพอ ไม่จำเป็นต้องใช้ 'Could' -- และประธานที่ถูกต้องคือ 'you'"
+      },
+      {
+        "id": "can-could-requests-6",
+        "promptThai": "พูดว่า: ช่วยพูดอีกครั้งได้ไหมคะ (พูดที่ทำงานอย่างสุภาพ)",
+        "chunks": [
+          {
+            "text": "Could",
+            "phonetic": "คุด"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "repeat that, please?",
+            "phonetic": "รี-พีท แดท พลีส"
+          },
+          {
+            "text": "Can",
+            "phonetic": "แคน",
+            "isDistractor": true
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Could",
+          "you",
+          "repeat that, please?"
+        ],
+        "phonetic": "คุด ยู รี-พีท แดท พลีส",
+        "thai": "ช่วยพูดอีกครั้งได้ไหมคะ (พูดที่ทำงานอย่างสุภาพ)",
+        "explanation": "ประโยคนี้เหมาะกับสถานการณ์ที่ต้องสุภาพ จึงใช้ 'Could' ไม่ใช่ 'Can' -- และประธานที่ถูกต้องคือ 'you'"
+      },
+      {
+        "id": "can-could-requests-7",
+        "promptThai": "พูดว่า: ช่วยปิดไฟหน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "chunks": [
+          {
+            "text": "Can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "turn off the light?",
+            "phonetic": "เทิร์น ออฟ เดอะ ไลท์"
+          },
+          {
+            "text": "Could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Can",
+          "you",
+          "turn off the light?"
+        ],
+        "phonetic": "แคน ยู เทิร์น ออฟ เดอะ ไลท์",
+        "thai": "ช่วยปิดไฟหน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "explanation": "ประโยคนี้เป็นการพูดแบบเป็นกันเอง จึงใช้ 'Can' ก็เพียงพอ ไม่จำเป็นต้องใช้ 'Could' -- และประธานที่ถูกต้องคือ 'you'"
+      },
+      {
+        "id": "can-could-requests-8",
+        "promptThai": "พูดว่า: ช่วยยกกล่องนี้ให้หน่อยได้ไหมคะ (พูดกับเพื่อนร่วมงานอย่างสุภาพ)",
+        "chunks": [
+          {
+            "text": "Could",
+            "phonetic": "คุด"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "help me carry this box, please?",
+            "phonetic": "เฮลพ์ มี แค-รี่ ดิส บอกซ์ พลีส"
+          },
+          {
+            "text": "Can",
+            "phonetic": "แคน",
+            "isDistractor": true
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Could",
+          "you",
+          "help me carry this box, please?"
+        ],
+        "phonetic": "คุด ยู เฮลพ์ มี แค-รี่ ดิส บอกซ์ พลีส",
+        "thai": "ช่วยยกกล่องนี้ให้หน่อยได้ไหมคะ (พูดกับเพื่อนร่วมงานอย่างสุภาพ)",
+        "explanation": "ประโยคนี้เหมาะกับสถานการณ์ที่ต้องสุภาพ จึงใช้ 'Could' ไม่ใช่ 'Can' -- และประธานที่ถูกต้องคือ 'you'"
+      },
+      {
+        "id": "can-could-requests-9",
+        "promptThai": "พูดว่า: ช่วยฉันหน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "chunks": [
+          {
+            "text": "Can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "give me a hand?",
+            "phonetic": "กิฟ มี อะ แฮนด์"
+          },
+          {
+            "text": "Could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Can",
+          "you",
+          "give me a hand?"
+        ],
+        "phonetic": "แคน ยู กิฟ มี อะ แฮนด์",
+        "thai": "ช่วยฉันหน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "explanation": "ประโยคนี้เป็นการพูดแบบเป็นกันเอง จึงใช้ 'Can' ก็เพียงพอ ไม่จำเป็นต้องใช้ 'Could' -- และประธานที่ถูกต้องคือ 'you'"
+      },
+      {
+        "id": "can-could-requests-10",
+        "promptThai": "พูดว่า: ช่วยรอสักครู่ได้ไหมคะ (พูดกับลูกค้าอย่างสุภาพ)",
+        "chunks": [
+          {
+            "text": "Could",
+            "phonetic": "คุด"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "wait a moment, please?",
+            "phonetic": "เวท อะ โม-เมนท์ พลีส"
+          },
+          {
+            "text": "Can",
+            "phonetic": "แคน",
+            "isDistractor": true
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Could",
+          "you",
+          "wait a moment, please?"
+        ],
+        "phonetic": "คุด ยู เวท อะ โม-เมนท์ พลีส",
+        "thai": "ช่วยรอสักครู่ได้ไหมคะ (พูดกับลูกค้าอย่างสุภาพ)",
+        "explanation": "ประโยคนี้เหมาะกับสถานการณ์ที่ต้องสุภาพ จึงใช้ 'Could' ไม่ใช่ 'Can' -- และประธานที่ถูกต้องคือ 'you'"
+      },
+      {
+        "id": "can-could-requests-11",
+        "promptThai": "พูดว่า: ขอใช้โทรศัพท์คุณหน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "chunks": [
+          {
+            "text": "Can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "use your phone?",
+            "phonetic": "ยูส ยัวร์ โฟน"
+          },
+          {
+            "text": "Could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Can",
+          "I",
+          "use your phone?"
+        ],
+        "phonetic": "แคน ไอ ยูส ยัวร์ โฟน",
+        "thai": "ขอใช้โทรศัพท์คุณหน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "explanation": "ประโยคนี้เป็นการพูดแบบเป็นกันเอง จึงใช้ 'Can' ก็เพียงพอ ไม่จำเป็นต้องใช้ 'Could' -- และประธานที่ถูกต้องคือ 'I'"
+      },
+      {
+        "id": "can-could-requests-12",
+        "promptThai": "พูดว่า: ขออนุญาตกลับก่อนวันนี้ได้ไหมคะ (ขอหัวหน้าอย่างสุภาพ)",
+        "chunks": [
+          {
+            "text": "Could",
+            "phonetic": "คุด"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "leave early today?",
+            "phonetic": "ลีฝ เออร์-ลี่ ทู-เดย์"
+          },
+          {
+            "text": "Can",
+            "phonetic": "แคน",
+            "isDistractor": true
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Could",
+          "I",
+          "leave early today?"
+        ],
+        "phonetic": "คุด ไอ ลีฝ เออร์-ลี่ ทู-เดย์",
+        "thai": "ขออนุญาตกลับก่อนวันนี้ได้ไหมคะ (ขอหัวหน้าอย่างสุภาพ)",
+        "explanation": "ประโยคนี้เหมาะกับสถานการณ์ที่ต้องสุภาพ จึงใช้ 'Could' ไม่ใช่ 'Can' -- และประธานที่ถูกต้องคือ 'I'"
+      },
+      {
+        "id": "can-could-requests-13",
+        "promptThai": "พูดว่า: ขอยืมปากกาคุณหน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "chunks": [
+          {
+            "text": "Can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "borrow your pen?",
+            "phonetic": "บอ-โรว์ ยัวร์ เพน"
+          },
+          {
+            "text": "Could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Can",
+          "I",
+          "borrow your pen?"
+        ],
+        "phonetic": "แคน ไอ บอ-โรว์ ยัวร์ เพน",
+        "thai": "ขอยืมปากกาคุณหน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "explanation": "ประโยคนี้เป็นการพูดแบบเป็นกันเอง จึงใช้ 'Can' ก็เพียงพอ ไม่จำเป็นต้องใช้ 'Could' -- และประธานที่ถูกต้องคือ 'I'"
+      },
+      {
+        "id": "can-could-requests-14",
+        "promptThai": "พูดว่า: ขอเช็คบิลหน่อยได้ไหมคะ (พูดกับพนักงานร้านอาหารอย่างสุภาพ)",
+        "chunks": [
+          {
+            "text": "Could",
+            "phonetic": "คุด"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "have the bill, please?",
+            "phonetic": "แฮฟ เดอะ บิล พลีส"
+          },
+          {
+            "text": "Can",
+            "phonetic": "แคน",
+            "isDistractor": true
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Could",
+          "I",
+          "have the bill, please?"
+        ],
+        "phonetic": "คุด ไอ แฮฟ เดอะ บิล พลีส",
+        "thai": "ขอเช็คบิลหน่อยได้ไหมคะ (พูดกับพนักงานร้านอาหารอย่างสุภาพ)",
+        "explanation": "ประโยคนี้เหมาะกับสถานการณ์ที่ต้องสุภาพ จึงใช้ 'Could' ไม่ใช่ 'Can' -- และประธานที่ถูกต้องคือ 'I'"
+      },
+      {
+        "id": "can-could-requests-15",
+        "promptThai": "พูดว่า: ขอนั่งตรงนี้ได้ไหม (พูดทั่วไปกับเพื่อน)",
+        "chunks": [
+          {
+            "text": "Can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "sit here?",
+            "phonetic": "ซิท เฮียร์"
+          },
+          {
+            "text": "Could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Can",
+          "I",
+          "sit here?"
+        ],
+        "phonetic": "แคน ไอ ซิท เฮียร์",
+        "thai": "ขอนั่งตรงนี้ได้ไหม (พูดทั่วไปกับเพื่อน)",
+        "explanation": "ประโยคนี้เป็นการพูดแบบเป็นกันเอง จึงใช้ 'Can' ก็เพียงพอ ไม่จำเป็นต้องใช้ 'Could' -- และประธานที่ถูกต้องคือ 'I'"
+      },
+      {
+        "id": "can-could-requests-16",
+        "promptThai": "พูดว่า: ขอถามอะไรหน่อยได้ไหมคะ (พูดที่ทำงานอย่างสุภาพ)",
+        "chunks": [
+          {
+            "text": "Could",
+            "phonetic": "คุด"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "ask you a question?",
+            "phonetic": "อาสค์ ยู อะ เควส-ชั่น"
+          },
+          {
+            "text": "Can",
+            "phonetic": "แคน",
+            "isDistractor": true
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Could",
+          "I",
+          "ask you a question?"
+        ],
+        "phonetic": "คุด ไอ อาสค์ ยู อะ เควส-ชั่น",
+        "thai": "ขอถามอะไรหน่อยได้ไหมคะ (พูดที่ทำงานอย่างสุภาพ)",
+        "explanation": "ประโยคนี้เหมาะกับสถานการณ์ที่ต้องสุภาพ จึงใช้ 'Could' ไม่ใช่ 'Can' -- และประธานที่ถูกต้องคือ 'I'"
+      },
+      {
+        "id": "can-could-requests-17",
+        "promptThai": "พูดว่า: ขอน้ำหน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "chunks": [
+          {
+            "text": "Can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "have some water?",
+            "phonetic": "แฮฟ ซัม วอ-เทอร์"
+          },
+          {
+            "text": "Could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Can",
+          "I",
+          "have some water?"
+        ],
+        "phonetic": "แคน ไอ แฮฟ ซัม วอ-เทอร์",
+        "thai": "ขอน้ำหน่อยได้ไหม (พูดกับเพื่อนสนิท)",
+        "explanation": "ประโยคนี้เป็นการพูดแบบเป็นกันเอง จึงใช้ 'Can' ก็เพียงพอ ไม่จำเป็นต้องใช้ 'Could' -- และประธานที่ถูกต้องคือ 'I'"
+      },
+      {
+        "id": "can-could-requests-18",
+        "promptThai": "พูดว่า: ขอลาหยุดพรุ่งนี้ได้ไหมคะ (ขอหัวหน้าอย่างสุภาพ)",
+        "chunks": [
+          {
+            "text": "Could",
+            "phonetic": "คุด"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "take a day off tomorrow?",
+            "phonetic": "เทค อะ เดย์ ออฟ ทู-มอ-โรว์"
+          },
+          {
+            "text": "Can",
+            "phonetic": "แคน",
+            "isDistractor": true
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Could",
+          "I",
+          "take a day off tomorrow?"
+        ],
+        "phonetic": "คุด ไอ เทค อะ เดย์ ออฟ ทู-มอ-โรว์",
+        "thai": "ขอลาหยุดพรุ่งนี้ได้ไหมคะ (ขอหัวหน้าอย่างสุภาพ)",
+        "explanation": "ประโยคนี้เหมาะกับสถานการณ์ที่ต้องสุภาพ จึงใช้ 'Could' ไม่ใช่ 'Can' -- และประธานที่ถูกต้องคือ 'I'"
+      },
+      {
+        "id": "can-could-requests-19",
+        "promptThai": "พูดว่า: ขอเปิดประตูได้ไหม (พูดทั่วไปกับเพื่อน)",
+        "chunks": [
+          {
+            "text": "Can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "open the door?",
+            "phonetic": "โอ-เพ่น เดอะ ดอร์"
+          },
+          {
+            "text": "Could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Can",
+          "I",
+          "open the door?"
+        ],
+        "phonetic": "แคน ไอ โอ-เพ่น เดอะ ดอร์",
+        "thai": "ขอเปิดประตูได้ไหม (พูดทั่วไปกับเพื่อน)",
+        "explanation": "ประโยคนี้เป็นการพูดแบบเป็นกันเอง จึงใช้ 'Can' ก็เพียงพอ ไม่จำเป็นต้องใช้ 'Could' -- และประธานที่ถูกต้องคือ 'I'"
+      },
+      {
+        "id": "can-could-requests-20",
+        "promptThai": "พูดว่า: ขอใช้ห้องน้ำหน่อยได้ไหมคะ (พูดอย่างสุภาพ)",
+        "chunks": [
+          {
+            "text": "Could",
+            "phonetic": "คุด"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "use the restroom, please?",
+            "phonetic": "ยูส เดอะ เรสท์-รูม พลีส"
+          },
+          {
+            "text": "Can",
+            "phonetic": "แคน",
+            "isDistractor": true
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Could",
+          "I",
+          "use the restroom, please?"
+        ],
+        "phonetic": "คุด ไอ ยูส เดอะ เรสท์-รูม พลีส",
+        "thai": "ขอใช้ห้องน้ำหน่อยได้ไหมคะ (พูดอย่างสุภาพ)",
+        "explanation": "ประโยคนี้เหมาะกับสถานการณ์ที่ต้องสุภาพ จึงใช้ 'Could' ไม่ใช่ 'Can' -- และประธานที่ถูกต้องคือ 'I'"
+      }
+    ]
+  },
+  {
+    "id": "question-formation",
+    "title": "Question Formation",
+    "titleTh": "การสร้างประโยคคำถาม (Yes/No & Wh-Questions)",
+    "level": "B1",
+    "order": 15,
+    "structure": "[Question word] + auxiliary/modal + subject + verb...? (wh-question) / Auxiliary/modal + subject + verb...? (yes/no question)",
+    "functionWords": [
+      {
+        "word": "Yes/No question",
+        "role": "auxiliary/modal ขึ้นต้นประโยค ตามด้วยประธาน แล้วตามด้วยกริยา เช่น Do you like...?, Is she...?, Can they...?"
+      },
+      {
+        "word": "Wh-question",
+        "role": "คำคำถาม (what/where/when/why/who/how) ขึ้นต้นประโยค ตามด้วย auxiliary/modal แล้วตามด้วยประธานและกริยา"
+      },
+      {
+        "word": "do / does / did",
+        "role": "ใช้เป็น auxiliary ในประโยคคำถามของ Present/Past Simple -- เลือกตามประธานและกาล"
+      },
+      {
+        "word": "is/are/was/were",
+        "role": "ใช้เป็น auxiliary ในประโยคคำถามของ Present/Past Continuous หรือ be -- เลือกตามประธานและกาล"
+      }
+    ],
+    "timeNote": "จุดสำคัญคือการสลับตำแหน่ง: จากประโยคบอกเล่า (Subject + verb) กลายเป็นประโยคคำถามโดยย้าย auxiliary/modal มาไว้หน้าประธาน ส่วนประโยค wh-question ต้องมีคำคำถามนำหน้าสุดเสมอ",
+    "examples": [
+      {
+        "text": "Do you like tea?",
+        "phonetic": "ดู ยู ไลค์ ที",
+        "thai": "คุณชอบชาไหม"
+      },
+      {
+        "text": "Where do you live?",
+        "phonetic": "แวร์ ดู ยู ลิฟ",
+        "thai": "คุณอาศัยอยู่ที่ไหน"
+      },
+      {
+        "text": "Is she coming to the party?",
+        "phonetic": "อิส ชี คัม-มิ่ง ทู เดอะ พาร์-ตี้",
+        "thai": "เธอจะมางานปาร์ตี้ไหม"
+      },
+      {
+        "text": "What are you doing?",
+        "phonetic": "วอท อาร์ ยู ดู-อิ่ง",
+        "thai": "คุณกำลังทำอะไรอยู่"
+      },
+      {
+        "text": "Did they leave already?",
+        "phonetic": "ดิด เดย์ ลีฝ ออล-เร-ดี้",
+        "thai": "พวกเขาออกไปแล้วหรือยัง"
+      },
+      {
+        "text": "Why did she leave early?",
+        "phonetic": "วาย ดิด ชี ลีฝ เออร์-ลี่",
+        "thai": "ทำไมเธอถึงกลับก่อนเวลา"
+      },
+      {
+        "text": "Can you help me?",
+        "phonetic": "แคน ยู เฮลพ์ มี",
+        "thai": "คุณช่วยฉันได้ไหม"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "question-formation-1",
+        "promptThai": "พูดว่า: คุณชอบชาไหม",
+        "chunks": [
+          {
+            "text": "Do",
+            "phonetic": "ดู"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "like tea?",
+            "phonetic": "ไลค์ ที"
+          },
+          {
+            "text": "Does",
+            "phonetic": "ดัส",
+            "isDistractor": true
+          },
+          {
+            "text": "Did",
+            "phonetic": "ดิด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Do",
+          "you",
+          "like tea?"
+        ],
+        "phonetic": "ดู ยู ไลค์ ที",
+        "thai": "คุณชอบชาไหม",
+        "explanation": "ประโยคคำถามแบบ Yes/No ต้องย้าย auxiliary/modal 'Do' มาไว้หน้าประธาน 'you' -- ระวังอย่าสับสนกับ Does, Did"
+      },
+      {
+        "id": "question-formation-2",
+        "promptThai": "พูดว่า: เธอทำงานที่นี่ไหม",
+        "chunks": [
+          {
+            "text": "Does",
+            "phonetic": "ดัส"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "work here?",
+            "phonetic": "เวิร์ค เฮียร์"
+          },
+          {
+            "text": "Do",
+            "phonetic": "ดู",
+            "isDistractor": true
+          },
+          {
+            "text": "Did",
+            "phonetic": "ดิด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Does",
+          "she",
+          "work here?"
+        ],
+        "phonetic": "ดัส ชี เวิร์ค เฮียร์",
+        "thai": "เธอทำงานที่นี่ไหม",
+        "explanation": "ประโยคคำถามแบบ Yes/No ต้องย้าย auxiliary/modal 'Does' มาไว้หน้าประธาน 'she' -- ระวังอย่าสับสนกับ Do, Did"
+      },
+      {
+        "id": "question-formation-3",
+        "promptThai": "พูดว่า: พวกเขามาถึงตรงเวลาไหม",
+        "chunks": [
+          {
+            "text": "Did",
+            "phonetic": "ดิด"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "arrive on time?",
+            "phonetic": "อะ-ไรฟว์ ออน ไทม์"
+          },
+          {
+            "text": "Do",
+            "phonetic": "ดู",
+            "isDistractor": true
+          },
+          {
+            "text": "Does",
+            "phonetic": "ดัส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Did",
+          "they",
+          "arrive on time?"
+        ],
+        "phonetic": "ดิด เดย์ อะ-ไรฟว์ ออน ไทม์",
+        "thai": "พวกเขามาถึงตรงเวลาไหม",
+        "explanation": "ประโยคคำถามแบบ Yes/No ต้องย้าย auxiliary/modal 'Did' มาไว้หน้าประธาน 'they' -- ระวังอย่าสับสนกับ Do, Does"
+      },
+      {
+        "id": "question-formation-4",
+        "promptThai": "พูดว่า: เขากำลังเรียนภาษาอังกฤษอยู่ไหม",
+        "chunks": [
+          {
+            "text": "Is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "studying English?",
+            "phonetic": "สทัด-ดี้-อิ่ง อิง-กลิช"
+          },
+          {
+            "text": "Are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "Was",
+            "phonetic": "วอส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Is",
+          "he",
+          "studying English?"
+        ],
+        "phonetic": "อิส ฮี สทัด-ดี้-อิ่ง อิง-กลิช",
+        "thai": "เขากำลังเรียนภาษาอังกฤษอยู่ไหม",
+        "explanation": "ประโยคคำถามแบบ Yes/No ต้องย้าย auxiliary/modal 'Is' มาไว้หน้าประธาน 'he' -- ระวังอย่าสับสนกับ Are, Was"
+      },
+      {
+        "id": "question-formation-5",
+        "promptThai": "พูดว่า: คุณจะมาคืนนี้ไหม",
+        "chunks": [
+          {
+            "text": "Are",
+            "phonetic": "อาร์"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "coming tonight?",
+            "phonetic": "คัม-มิ่ง ทู-ไนท์"
+          },
+          {
+            "text": "Is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "Were",
+            "phonetic": "เวอร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Are",
+          "you",
+          "coming tonight?"
+        ],
+        "phonetic": "อาร์ ยู คัม-มิ่ง ทู-ไนท์",
+        "thai": "คุณจะมาคืนนี้ไหม",
+        "explanation": "ประโยคคำถามแบบ Yes/No ต้องย้าย auxiliary/modal 'Are' มาไว้หน้าประธาน 'you' -- ระวังอย่าสับสนกับ Is, Were"
+      },
+      {
+        "id": "question-formation-6",
+        "promptThai": "พูดว่า: เธอมีความสุขไหม (ตอนนั้น)",
+        "chunks": [
+          {
+            "text": "Was",
+            "phonetic": "วอส"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "happy?",
+            "phonetic": "แฮพ-พี่"
+          },
+          {
+            "text": "Is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "Were",
+            "phonetic": "เวอร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Was",
+          "she",
+          "happy?"
+        ],
+        "phonetic": "วอส ชี แฮพ-พี่",
+        "thai": "เธอมีความสุขไหม (ตอนนั้น)",
+        "explanation": "ประโยคคำถามแบบ Yes/No ต้องย้าย auxiliary/modal 'Was' มาไว้หน้าประธาน 'she' -- ระวังอย่าสับสนกับ Is, Were"
+      },
+      {
+        "id": "question-formation-7",
+        "promptThai": "พูดว่า: พวกเขาพร้อมไหม (ตอนนั้น)",
+        "chunks": [
+          {
+            "text": "Were",
+            "phonetic": "เวอร์"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "ready?",
+            "phonetic": "เรด-ดี้"
+          },
+          {
+            "text": "Was",
+            "phonetic": "วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "Are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Were",
+          "they",
+          "ready?"
+        ],
+        "phonetic": "เวอร์ เดย์ เรด-ดี้",
+        "thai": "พวกเขาพร้อมไหม (ตอนนั้น)",
+        "explanation": "ประโยคคำถามแบบ Yes/No ต้องย้าย auxiliary/modal 'Were' มาไว้หน้าประธาน 'they' -- ระวังอย่าสับสนกับ Was, Are"
+      },
+      {
+        "id": "question-formation-8",
+        "promptThai": "พูดว่า: คุณว่ายน้ำเป็นไหม",
+        "chunks": [
+          {
+            "text": "Can",
+            "phonetic": "แคน"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "swim?",
+            "phonetic": "สวิม"
+          },
+          {
+            "text": "Could",
+            "phonetic": "คุด",
+            "isDistractor": true
+          },
+          {
+            "text": "Will",
+            "phonetic": "วิล",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Can",
+          "you",
+          "swim?"
+        ],
+        "phonetic": "แคน ยู สวิม",
+        "thai": "คุณว่ายน้ำเป็นไหม",
+        "explanation": "ประโยคคำถามแบบ Yes/No ต้องย้าย auxiliary/modal 'Can' มาไว้หน้าประธาน 'you' -- ระวังอย่าสับสนกับ Could, Will"
+      },
+      {
+        "id": "question-formation-9",
+        "promptThai": "พูดว่า: พวกเขาจะมาพรุ่งนี้ไหม",
+        "chunks": [
+          {
+            "text": "Will",
+            "phonetic": "วิล"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "come tomorrow?",
+            "phonetic": "คัม ทู-มอ-โรว์"
+          },
+          {
+            "text": "Can",
+            "phonetic": "แคน",
+            "isDistractor": true
+          },
+          {
+            "text": "Do",
+            "phonetic": "ดู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Will",
+          "they",
+          "come tomorrow?"
+        ],
+        "phonetic": "วิล เดย์ คัม ทู-มอ-โรว์",
+        "thai": "พวกเขาจะมาพรุ่งนี้ไหม",
+        "explanation": "ประโยคคำถามแบบ Yes/No ต้องย้าย auxiliary/modal 'Will' มาไว้หน้าประธาน 'they' -- ระวังอย่าสับสนกับ Can, Do"
+      },
+      {
+        "id": "question-formation-10",
+        "promptThai": "พูดว่า: เขาพูดภาษาฝรั่งเศสไหม",
+        "chunks": [
+          {
+            "text": "Does",
+            "phonetic": "ดัส"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "speak French?",
+            "phonetic": "สปีค เฟรนช์"
+          },
+          {
+            "text": "Do",
+            "phonetic": "ดู",
+            "isDistractor": true
+          },
+          {
+            "text": "Did",
+            "phonetic": "ดิด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Does",
+          "he",
+          "speak French?"
+        ],
+        "phonetic": "ดัส ฮี สปีค เฟรนช์",
+        "thai": "เขาพูดภาษาฝรั่งเศสไหม",
+        "explanation": "ประโยคคำถามแบบ Yes/No ต้องย้าย auxiliary/modal 'Does' มาไว้หน้าประธาน 'he' -- ระวังอย่าสับสนกับ Do, Did"
+      },
+      {
+        "id": "question-formation-11",
+        "promptThai": "พูดว่า: คุณอาศัยอยู่ที่ไหน",
+        "chunks": [
+          {
+            "text": "Where",
+            "phonetic": "แวร์"
+          },
+          {
+            "text": "do",
+            "phonetic": "ดู"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "live?",
+            "phonetic": "ลิฟ"
+          },
+          {
+            "text": "does",
+            "phonetic": "ดัส",
+            "isDistractor": true
+          },
+          {
+            "text": "When",
+            "phonetic": "เว็น",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Where",
+          "do",
+          "you",
+          "live?"
+        ],
+        "phonetic": "แวร์ ดู ยู ลิฟ",
+        "thai": "คุณอาศัยอยู่ที่ไหน",
+        "explanation": "ประโยคคำถามแบบ Wh- ต้องขึ้นต้นด้วยคำคำถาม 'Where' เสมอ ตามด้วย auxiliary แล้วจึงตามด้วยประธาน -- ระวังอย่าสับสนกับ 'When'"
+      },
+      {
+        "id": "question-formation-12",
+        "promptThai": "พูดว่า: เธอกำลังทำอะไรอยู่",
+        "chunks": [
+          {
+            "text": "What",
+            "phonetic": "วอท"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "doing?",
+            "phonetic": "ดู-อิ่ง"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "Where",
+            "phonetic": "แวร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "What",
+          "is",
+          "she",
+          "doing?"
+        ],
+        "phonetic": "วอท อิส ชี ดู-อิ่ง",
+        "thai": "เธอกำลังทำอะไรอยู่",
+        "explanation": "ประโยคคำถามแบบ Wh- ต้องขึ้นต้นด้วยคำคำถาม 'What' เสมอ ตามด้วย auxiliary แล้วจึงตามด้วยประธาน -- ระวังอย่าสับสนกับ 'Where'"
+      },
+      {
+        "id": "question-formation-13",
+        "promptThai": "พูดว่า: พวกเขาออกไปเมื่อไหร่",
+        "chunks": [
+          {
+            "text": "When",
+            "phonetic": "เว็น"
+          },
+          {
+            "text": "did",
+            "phonetic": "ดิด"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "leave?",
+            "phonetic": "ลีฝ"
+          },
+          {
+            "text": "do",
+            "phonetic": "ดู",
+            "isDistractor": true
+          },
+          {
+            "text": "Where",
+            "phonetic": "แวร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "When",
+          "did",
+          "they",
+          "leave?"
+        ],
+        "phonetic": "เว็น ดิด เดย์ ลีฝ",
+        "thai": "พวกเขาออกไปเมื่อไหร่",
+        "explanation": "ประโยคคำถามแบบ Wh- ต้องขึ้นต้นด้วยคำคำถาม 'When' เสมอ ตามด้วย auxiliary แล้วจึงตามด้วยประธาน -- ระวังอย่าสับสนกับ 'Where'"
+      },
+      {
+        "id": "question-formation-14",
+        "promptThai": "พูดว่า: ทำไมคุณถึงมาสาย",
+        "chunks": [
+          {
+            "text": "Why",
+            "phonetic": "วาย"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "late?",
+            "phonetic": "เลท"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "How",
+            "phonetic": "ฮาว",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Why",
+          "are",
+          "you",
+          "late?"
+        ],
+        "phonetic": "วาย อาร์ ยู เลท",
+        "thai": "ทำไมคุณถึงมาสาย",
+        "explanation": "ประโยคคำถามแบบ Wh- ต้องขึ้นต้นด้วยคำคำถาม 'Why' เสมอ ตามด้วย auxiliary แล้วจึงตามด้วยประธาน -- ระวังอย่าสับสนกับ 'How'"
+      },
+      {
+        "id": "question-formation-15",
+        "promptThai": "พูดว่า: ใครกำลังโทรมา",
+        "chunks": [
+          {
+            "text": "Who",
+            "phonetic": "ฮู"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "calling?",
+            "phonetic": "คอล-ลิ่ง"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "What",
+            "phonetic": "วอท",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Who",
+          "is",
+          "calling?"
+        ],
+        "phonetic": "ฮู อิส คอล-ลิ่ง",
+        "thai": "ใครกำลังโทรมา",
+        "explanation": "ประโยคคำถามแบบ Wh- ต้องขึ้นต้นด้วยคำคำถาม 'Who' เสมอ ตามด้วย auxiliary แล้วจึงตามด้วยประธาน -- ระวังอย่าสับสนกับ 'What'"
+      },
+      {
+        "id": "question-formation-16",
+        "promptThai": "พูดว่า: คุณสะกดชื่อคุณอย่างไร",
+        "chunks": [
+          {
+            "text": "How",
+            "phonetic": "ฮาว"
+          },
+          {
+            "text": "do",
+            "phonetic": "ดู"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "spell your name?",
+            "phonetic": "สเปล ยัวร์ เนม"
+          },
+          {
+            "text": "does",
+            "phonetic": "ดัส",
+            "isDistractor": true
+          },
+          {
+            "text": "What",
+            "phonetic": "วอท",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "How",
+          "do",
+          "you",
+          "spell your name?"
+        ],
+        "phonetic": "ฮาว ดู ยู สเปล ยัวร์ เนม",
+        "thai": "คุณสะกดชื่อคุณอย่างไร",
+        "explanation": "ประโยคคำถามแบบ Wh- ต้องขึ้นต้นด้วยคำคำถาม 'How' เสมอ ตามด้วย auxiliary แล้วจึงตามด้วยประธาน -- ระวังอย่าสับสนกับ 'What'"
+      },
+      {
+        "id": "question-formation-17",
+        "promptThai": "พูดว่า: รถไฟออกกี่โมง",
+        "chunks": [
+          {
+            "text": "What time",
+            "phonetic": "วอท ไทม์"
+          },
+          {
+            "text": "does",
+            "phonetic": "ดัส"
+          },
+          {
+            "text": "the train",
+            "phonetic": "เดอะ เทรน"
+          },
+          {
+            "text": "leave?",
+            "phonetic": "ลีฝ"
+          },
+          {
+            "text": "do",
+            "phonetic": "ดู",
+            "isDistractor": true
+          },
+          {
+            "text": "Where",
+            "phonetic": "แวร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "What time",
+          "does",
+          "the train",
+          "leave?"
+        ],
+        "phonetic": "วอท ไทม์ ดัส เดอะ เทรน ลีฝ",
+        "thai": "รถไฟออกกี่โมง",
+        "explanation": "ประโยคคำถามแบบ Wh- ต้องขึ้นต้นด้วยคำคำถาม 'What time' เสมอ ตามด้วย auxiliary แล้วจึงตามด้วยประธาน -- ระวังอย่าสับสนกับ 'Where'"
+      },
+      {
+        "id": "question-formation-18",
+        "promptThai": "พูดว่า: เมื่อวานคุณอยู่ที่ไหน",
+        "chunks": [
+          {
+            "text": "Where",
+            "phonetic": "แวร์"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "yesterday?",
+            "phonetic": "เยส-เทอร์-เดย์"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "When",
+            "phonetic": "เว็น",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Where",
+          "were",
+          "you",
+          "yesterday?"
+        ],
+        "phonetic": "แวร์ เวอร์ ยู เยส-เทอร์-เดย์",
+        "thai": "เมื่อวานคุณอยู่ที่ไหน",
+        "explanation": "ประโยคคำถามแบบ Wh- ต้องขึ้นต้นด้วยคำคำถาม 'Where' เสมอ ตามด้วย auxiliary แล้วจึงตามด้วยประธาน -- ระวังอย่าสับสนกับ 'When'"
+      },
+      {
+        "id": "question-formation-19",
+        "promptThai": "พูดว่า: ทำไมเขาถึงหยุด",
+        "chunks": [
+          {
+            "text": "Why",
+            "phonetic": "วาย"
+          },
+          {
+            "text": "did",
+            "phonetic": "ดิด"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "stop?",
+            "phonetic": "สทอพ"
+          },
+          {
+            "text": "does",
+            "phonetic": "ดัส",
+            "isDistractor": true
+          },
+          {
+            "text": "How",
+            "phonetic": "ฮาว",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Why",
+          "did",
+          "he",
+          "stop?"
+        ],
+        "phonetic": "วาย ดิด ฮี สทอพ",
+        "thai": "ทำไมเขาถึงหยุด",
+        "explanation": "ประโยคคำถามแบบ Wh- ต้องขึ้นต้นด้วยคำคำถาม 'Why' เสมอ ตามด้วย auxiliary แล้วจึงตามด้วยประธาน -- ระวังอย่าสับสนกับ 'How'"
+      },
+      {
+        "id": "question-formation-20",
+        "promptThai": "พูดว่า: อันนี้ราคาเท่าไหร่",
+        "chunks": [
+          {
+            "text": "How much",
+            "phonetic": "ฮาว มัช"
+          },
+          {
+            "text": "does",
+            "phonetic": "ดัส"
+          },
+          {
+            "text": "it",
+            "phonetic": "อิท"
+          },
+          {
+            "text": "cost?",
+            "phonetic": "คอสท์"
+          },
+          {
+            "text": "do",
+            "phonetic": "ดู",
+            "isDistractor": true
+          },
+          {
+            "text": "How many",
+            "phonetic": "ฮาว เมน-นี่",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "How much",
+          "does",
+          "it",
+          "cost?"
+        ],
+        "phonetic": "ฮาว มัช ดัส อิท คอสท์",
+        "thai": "อันนี้ราคาเท่าไหร่",
+        "explanation": "ประโยคคำถามแบบ Wh- ต้องขึ้นต้นด้วยคำคำถาม 'How much' เสมอ ตามด้วย auxiliary แล้วจึงตามด้วยประธาน -- ระวังอย่าสับสนกับ 'How many'"
+      }
+    ]
+  },
+  {
+    "id": "modals-obligation",
+    "title": "Modals of Obligation: Must / Have to / Should",
+    "titleTh": "กริยาช่วยแสดงข้อบังคับ Must / Have to / Should",
+    "level": "B1",
+    "order": 16,
+    "structure": "[Subject] + must / have to (has to) / should + verb(base) + [Object]",
+    "functionWords": [
+      {
+        "word": "must",
+        "role": "ข้อบังคับที่หนักแน่น มักมาจากกฎหรือความเห็นส่วนตัวของผู้พูดเอง"
+      },
+      {
+        "word": "have to / has to",
+        "role": "ความจำเป็นที่มาจากภายนอก เช่น กฎของที่ทำงาน -- ผัน has to กับ he/she/it เหมือน Present Simple (เชื่อมกับแพทเทิร์น Have/Has)"
+      },
+      {
+        "word": "should",
+        "role": "คำแนะนำ น้ำหนักเบากว่า must/have to มาก ไม่ใช่ข้อบังคับ"
+      },
+      {
+        "word": "must not vs. don't have to",
+        "role": "'must not' แปลว่าห้ามทำเด็ดขาด ส่วน 'don't have to' แปลว่าไม่จำเป็นต้องทำ (แต่ทำได้ถ้าต้องการ) -- ความหมายต่างกันมาก"
+      }
+    ],
+    "timeNote": "ในชีวิตประจำวัน 'must' และ 'have to/has to' มักใช้แทนกันได้เมื่อพูดถึงความจำเป็น แต่ 'should' เบากว่ามากและใช้แนะนำเท่านั้น ระวังอย่าสับสน 'must not' (ห้ามทำ) กับ 'don't have to' (ไม่จำเป็นต้องทำ)",
+    "examples": [
+      {
+        "text": "You must wear a helmet on site.",
+        "phonetic": "ยู มัสท์ แวร์ อะ เฮล-เม็ท ออน ไซท์",
+        "thai": "คุณต้องสวมหมวกนิรภัยในสถานที่ทำงาน"
+      },
+      {
+        "text": "Employees have to report accidents immediately.",
+        "phonetic": "เอ็ม-พลอย-อีส์ แฮฟ ทู รี-พอร์ท แอ็ก-ซิ-เดิ้นท์ส อิม-มี-เดียท-ลี่",
+        "thai": "พนักงานต้องรายงานอุบัติเหตุทันที"
+      },
+      {
+        "text": "You should take a break after lunch.",
+        "phonetic": "ยู ชูด เทค อะ เบรค อาฟ-เทอร์ ลันช์",
+        "thai": "คุณควรพักหลังอาหารเที่ยง"
+      },
+      {
+        "text": "She has to finish the report today.",
+        "phonetic": "ชี แฮส ทู ฟิน-นิช เดอะ รี-พอร์ท ทู-เดย์",
+        "thai": "เธอต้องทำรายงานให้เสร็จวันนี้"
+      },
+      {
+        "text": "You must not touch that wire.",
+        "phonetic": "ยู มัสท์ นอท ทัช แดท ไวร์",
+        "thai": "คุณห้ามแตะสายไฟเส้นนั้น"
+      },
+      {
+        "text": "You don't have to work on Sunday.",
+        "phonetic": "ยู โดนท์ แฮฟ ทู เวิร์ค ออน ซัน-เดย์",
+        "thai": "คุณไม่จำเป็นต้องทำงานวันอาทิตย์"
+      },
+      {
+        "text": "Workers must follow the safety rules.",
+        "phonetic": "เวิร์ค-เกอร์ส มัสท์ ฟอล-โลว์ เดอะ เซฟ-ตี้ รูลส์",
+        "thai": "คนงานต้องปฏิบัติตามกฎความปลอดภัย"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "modals-obligation-1",
+        "promptThai": "พูดว่า: คุณต้องสวมหมวกนิรภัยในสถานที่ทำงาน",
+        "chunks": [
+          {
+            "text": "You",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์"
+          },
+          {
+            "text": "wear a helmet on site",
+            "phonetic": "แวร์ อะ เฮล-เม็ท ออน ไซท์"
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "You",
+          "must",
+          "wear a helmet on site"
+        ],
+        "phonetic": "ยู มัสท์ แวร์ อะ เฮล-เม็ท ออน ไซท์",
+        "thai": "คุณต้องสวมหมวกนิรภัยในสถานที่ทำงาน",
+        "explanation": "'must' ใช้แสดงข้อบังคับที่หนักแน่น มักมาจากกฎหรือความเห็นส่วนตัวของผู้พูดเอง"
+      },
+      {
+        "id": "modals-obligation-2",
+        "promptThai": "พูดว่า: คนงานต้องปฏิบัติตามกฎความปลอดภัย",
+        "chunks": [
+          {
+            "text": "Workers",
+            "phonetic": "เวิร์ค-เกอร์ส"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์"
+          },
+          {
+            "text": "follow the safety rules",
+            "phonetic": "ฟอล-โลว์ เดอะ เซฟ-ตี้ รูลส์"
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Workers",
+          "must",
+          "follow the safety rules"
+        ],
+        "phonetic": "เวิร์ค-เกอร์ส มัสท์ ฟอล-โลว์ เดอะ เซฟ-ตี้ รูลส์",
+        "thai": "คนงานต้องปฏิบัติตามกฎความปลอดภัย",
+        "explanation": "'must' ใช้แสดงข้อบังคับที่หนักแน่น มักมาจากกฎหรือความเห็นส่วนตัวของผู้พูดเอง"
+      },
+      {
+        "id": "modals-obligation-3",
+        "promptThai": "พูดว่า: คนขับต้องหยุดเมื่อไฟแดง",
+        "chunks": [
+          {
+            "text": "Drivers",
+            "phonetic": "ไดรฟ-เวอร์ส"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์"
+          },
+          {
+            "text": "stop at a red light",
+            "phonetic": "สทอพ แอท อะ เรด ไลท์"
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Drivers",
+          "must",
+          "stop at a red light"
+        ],
+        "phonetic": "ไดรฟ-เวอร์ส มัสท์ สทอพ แอท อะ เรด ไลท์",
+        "thai": "คนขับต้องหยุดเมื่อไฟแดง",
+        "explanation": "'must' ใช้แสดงข้อบังคับที่หนักแน่น มักมาจากกฎหรือความเห็นส่วนตัวของผู้พูดเอง"
+      },
+      {
+        "id": "modals-obligation-4",
+        "promptThai": "พูดว่า: พนักงานต้องสวมเสื้อกั๊กนิรภัย",
+        "chunks": [
+          {
+            "text": "Employees",
+            "phonetic": "เอ็ม-พลอย-อีส์"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์"
+          },
+          {
+            "text": "wear a safety vest",
+            "phonetic": "แวร์ อะ เซฟ-ตี้ เวสท์"
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Employees",
+          "must",
+          "wear a safety vest"
+        ],
+        "phonetic": "เอ็ม-พลอย-อีส์ มัสท์ แวร์ อะ เซฟ-ตี้ เวสท์",
+        "thai": "พนักงานต้องสวมเสื้อกั๊กนิรภัย",
+        "explanation": "'must' ใช้แสดงข้อบังคับที่หนักแน่น มักมาจากกฎหรือความเห็นส่วนตัวของผู้พูดเอง"
+      },
+      {
+        "id": "modals-obligation-5",
+        "promptThai": "พูดว่า: ฉันต้องทำรายงานนี้ให้เสร็จวันนี้",
+        "chunks": [
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์"
+          },
+          {
+            "text": "finish this report today",
+            "phonetic": "ฟิน-นิช ดิส รี-พอร์ท ทู-เดย์"
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I",
+          "must",
+          "finish this report today"
+        ],
+        "phonetic": "ไอ มัสท์ ฟิน-นิช ดิส รี-พอร์ท ทู-เดย์",
+        "thai": "ฉันต้องทำรายงานนี้ให้เสร็จวันนี้",
+        "explanation": "'must' ใช้แสดงข้อบังคับที่หนักแน่น มักมาจากกฎหรือความเห็นส่วนตัวของผู้พูดเอง"
+      },
+      {
+        "id": "modals-obligation-6",
+        "promptThai": "พูดว่า: เธอต้องต่ออายุใบอนุญาตเดือนนี้",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์"
+          },
+          {
+            "text": "renew her license this month",
+            "phonetic": "รี-นิว เฮอร์ ไล-เซินส์ ดิส มันธ์"
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "must",
+          "renew her license this month"
+        ],
+        "phonetic": "ชี มัสท์ รี-นิว เฮอร์ ไล-เซินส์ ดิส มันธ์",
+        "thai": "เธอต้องต่ออายุใบอนุญาตเดือนนี้",
+        "explanation": "'must' ใช้แสดงข้อบังคับที่หนักแน่น มักมาจากกฎหรือความเห็นส่วนตัวของผู้พูดเอง"
+      },
+      {
+        "id": "modals-obligation-7",
+        "promptThai": "พูดว่า: คุณต้องรายงานอุบัติเหตุทันที",
+        "chunks": [
+          {
+            "text": "You",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู"
+          },
+          {
+            "text": "report accidents immediately",
+            "phonetic": "รี-พอร์ท แอ็ก-ซิ-เดิ้นท์ส อิม-มี-เดียท-ลี่"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "You",
+          "have to",
+          "report accidents immediately"
+        ],
+        "phonetic": "ยู แฮฟ ทู รี-พอร์ท แอ็ก-ซิ-เดิ้นท์ส อิม-มี-เดียท-ลี่",
+        "thai": "คุณต้องรายงานอุบัติเหตุทันที",
+        "explanation": "'have to' ใช้แสดงความจำเป็นที่มาจากภายนอก เช่น กฎของที่ทำงาน -- ผันตามประธานเหมือน Present Simple"
+      },
+      {
+        "id": "modals-obligation-8",
+        "promptThai": "พูดว่า: เราต้องเข้าประชุมเรื่องความปลอดภัย",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู"
+          },
+          {
+            "text": "attend the safety meeting",
+            "phonetic": "อะ-เทนด์ เดอะ เซฟ-ตี้ มี-ทิ่ง"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "have to",
+          "attend the safety meeting"
+        ],
+        "phonetic": "วี แฮฟ ทู อะ-เทนด์ เดอะ เซฟ-ตี้ มี-ทิ่ง",
+        "thai": "เราต้องเข้าประชุมเรื่องความปลอดภัย",
+        "explanation": "'have to' ใช้แสดงความจำเป็นที่มาจากภายนอก เช่น กฎของที่ทำงาน -- ผันตามประธานเหมือน Present Simple"
+      },
+      {
+        "id": "modals-obligation-9",
+        "promptThai": "พูดว่า: พนักงานต้องรายงานอุบัติเหตุทันที",
+        "chunks": [
+          {
+            "text": "Employees",
+            "phonetic": "เอ็ม-พลอย-อีส์"
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู"
+          },
+          {
+            "text": "report accidents immediately",
+            "phonetic": "รี-พอร์ท แอ็ก-ซิ-เดิ้นท์ส อิม-มี-เดียท-ลี่"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Employees",
+          "have to",
+          "report accidents immediately"
+        ],
+        "phonetic": "เอ็ม-พลอย-อีส์ แฮฟ ทู รี-พอร์ท แอ็ก-ซิ-เดิ้นท์ส อิม-มี-เดียท-ลี่",
+        "thai": "พนักงานต้องรายงานอุบัติเหตุทันที",
+        "explanation": "'have to' ใช้แสดงความจำเป็นที่มาจากภายนอก เช่น กฎของที่ทำงาน -- ผันตามประธานเหมือน Present Simple"
+      },
+      {
+        "id": "modals-obligation-10",
+        "promptThai": "พูดว่า: เธอต้องทำรายงานให้เสร็จวันนี้",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู"
+          },
+          {
+            "text": "finish the report today",
+            "phonetic": "ฟิน-นิช เดอะ รี-พอร์ท ทู-เดย์"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์",
+            "isDistractor": true
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "has to",
+          "finish the report today"
+        ],
+        "phonetic": "ชี แฮส ทู ฟิน-นิช เดอะ รี-พอร์ท ทู-เดย์",
+        "thai": "เธอต้องทำรายงานให้เสร็จวันนี้",
+        "explanation": "'has to' ใช้แสดงความจำเป็นที่มาจากภายนอก -- ผัน has to กับ he/she/it เหมือน Present Simple (เชื่อมกับแพทเทิร์น Have/Has)"
+      },
+      {
+        "id": "modals-obligation-11",
+        "promptThai": "พูดว่า: เขาต้องสวมแว่นตานิรภัย",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู"
+          },
+          {
+            "text": "wear safety goggles",
+            "phonetic": "แวร์ เซฟ-ตี้ ก็อก-เกิลส์"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์",
+            "isDistractor": true
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "has to",
+          "wear safety goggles"
+        ],
+        "phonetic": "ฮี แฮส ทู แวร์ เซฟ-ตี้ ก็อก-เกิลส์",
+        "thai": "เขาต้องสวมแว่นตานิรภัย",
+        "explanation": "'has to' ใช้แสดงความจำเป็นที่มาจากภายนอก -- ผัน has to กับ he/she/it เหมือน Present Simple (เชื่อมกับแพทเทิร์น Have/Has)"
+      },
+      {
+        "id": "modals-obligation-12",
+        "promptThai": "พูดว่า: ผู้จัดการต้องอนุมัติแบบฟอร์มนี้",
+        "chunks": [
+          {
+            "text": "The manager",
+            "phonetic": "เดอะ แมน-นิ-เจอร์"
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู"
+          },
+          {
+            "text": "approve this form",
+            "phonetic": "อะ-พรูฟ ดิส ฟอร์ม"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์",
+            "isDistractor": true
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The manager",
+          "has to",
+          "approve this form"
+        ],
+        "phonetic": "เดอะ แมน-นิ-เจอร์ แฮส ทู อะ-พรูฟ ดิส ฟอร์ม",
+        "thai": "ผู้จัดการต้องอนุมัติแบบฟอร์มนี้",
+        "explanation": "'has to' ใช้แสดงความจำเป็นที่มาจากภายนอก -- ผัน has to กับ he/she/it เหมือน Present Simple (เชื่อมกับแพทเทิร์น Have/Has)"
+      },
+      {
+        "id": "modals-obligation-13",
+        "promptThai": "พูดว่า: คุณควรพักหลังอาหารเที่ยง",
+        "chunks": [
+          {
+            "text": "You",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด"
+          },
+          {
+            "text": "take a break after lunch",
+            "phonetic": "เทค อะ เบรค อาฟ-เทอร์ ลันช์"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์",
+            "isDistractor": true
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "You",
+          "should",
+          "take a break after lunch"
+        ],
+        "phonetic": "ยู ชูด เทค อะ เบรค อาฟ-เทอร์ ลันช์",
+        "thai": "คุณควรพักหลังอาหารเที่ยง",
+        "explanation": "'should' ใช้แสดงคำแนะนำ น้ำหนักเบากว่า must/have to มาก ไม่ใช่ข้อบังคับ"
+      },
+      {
+        "id": "modals-obligation-14",
+        "promptThai": "พูดว่า: พนักงานควรดื่มน้ำให้เพียงพอ",
+        "chunks": [
+          {
+            "text": "Employees",
+            "phonetic": "เอ็ม-พลอย-อีส์"
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด"
+          },
+          {
+            "text": "drink enough water",
+            "phonetic": "ดริ๊งค์ อิ-นัฟ วอ-เทอร์"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์",
+            "isDistractor": true
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Employees",
+          "should",
+          "drink enough water"
+        ],
+        "phonetic": "เอ็ม-พลอย-อีส์ ชูด ดริ๊งค์ อิ-นัฟ วอ-เทอร์",
+        "thai": "พนักงานควรดื่มน้ำให้เพียงพอ",
+        "explanation": "'should' ใช้แสดงคำแนะนำ น้ำหนักเบากว่า must/have to มาก ไม่ใช่ข้อบังคับ"
+      },
+      {
+        "id": "modals-obligation-15",
+        "promptThai": "พูดว่า: เขาควรไปหาหมอ",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด"
+          },
+          {
+            "text": "see a doctor",
+            "phonetic": "ซี อะ ด็อค-เทอร์"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์",
+            "isDistractor": true
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "should",
+          "see a doctor"
+        ],
+        "phonetic": "ฮี ชูด ซี อะ ด็อค-เทอร์",
+        "thai": "เขาควรไปหาหมอ",
+        "explanation": "'should' ใช้แสดงคำแนะนำ น้ำหนักเบากว่า must/have to มาก ไม่ใช่ข้อบังคับ"
+      },
+      {
+        "id": "modals-obligation-16",
+        "promptThai": "พูดว่า: คุณควรมาถึงก่อนเวลาประชุม",
+        "chunks": [
+          {
+            "text": "You",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด"
+          },
+          {
+            "text": "arrive early for the meeting",
+            "phonetic": "อะ-ไรฟว์ เออร์-ลี่ ฟอร์ เดอะ มี-ทิ่ง"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์",
+            "isDistractor": true
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "You",
+          "should",
+          "arrive early for the meeting"
+        ],
+        "phonetic": "ยู ชูด อะ-ไรฟว์ เออร์-ลี่ ฟอร์ เดอะ มี-ทิ่ง",
+        "thai": "คุณควรมาถึงก่อนเวลาประชุม",
+        "explanation": "'should' ใช้แสดงคำแนะนำ น้ำหนักเบากว่า must/have to มาก ไม่ใช่ข้อบังคับ"
+      },
+      {
+        "id": "modals-obligation-17",
+        "promptThai": "พูดว่า: เราควรตรวจสอบอุปกรณ์อีกครั้ง",
+        "chunks": [
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด"
+          },
+          {
+            "text": "double-check the equipment",
+            "phonetic": "ดับ-เบิล เชค ดิ อี-ควิพ-เมินท์"
+          },
+          {
+            "text": "must",
+            "phonetic": "มัสท์",
+            "isDistractor": true
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "has to",
+            "phonetic": "แฮส ทู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "We",
+          "should",
+          "double-check the equipment"
+        ],
+        "phonetic": "วี ชูด ดับ-เบิล เชค ดิ อี-ควิพ-เมินท์",
+        "thai": "เราควรตรวจสอบอุปกรณ์อีกครั้ง",
+        "explanation": "'should' ใช้แสดงคำแนะนำ น้ำหนักเบากว่า must/have to มาก ไม่ใช่ข้อบังคับ"
+      },
+      {
+        "id": "modals-obligation-18",
+        "promptThai": "พูดว่า: คุณห้ามแตะสายไฟเส้นนั้น",
+        "chunks": [
+          {
+            "text": "You",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "must not",
+            "phonetic": "มัสท์ นอท"
+          },
+          {
+            "text": "touch that wire",
+            "phonetic": "ทัช แดท ไวร์"
+          },
+          {
+            "text": "don't have to",
+            "phonetic": "โดนท์ แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "You",
+          "must not",
+          "touch that wire"
+        ],
+        "phonetic": "ยู มัสท์ นอท ทัช แดท ไวร์",
+        "thai": "คุณห้ามแตะสายไฟเส้นนั้น",
+        "explanation": "'must not' แปลว่าห้ามทำเด็ดขาด -- ต่างจาก 'don't have to' ที่แปลว่าไม่จำเป็นต้องทำ (แต่ทำได้ถ้าต้องการ)"
+      },
+      {
+        "id": "modals-obligation-19",
+        "promptThai": "พูดว่า: คุณไม่จำเป็นต้องทำงานวันอาทิตย์",
+        "chunks": [
+          {
+            "text": "You",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "don't have to",
+            "phonetic": "โดนท์ แฮฟ ทู"
+          },
+          {
+            "text": "work on Sunday",
+            "phonetic": "เวิร์ค ออน ซัน-เดย์"
+          },
+          {
+            "text": "must not",
+            "phonetic": "มัสท์ นอท",
+            "isDistractor": true
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "You",
+          "don't have to",
+          "work on Sunday"
+        ],
+        "phonetic": "ยู โดนท์ แฮฟ ทู เวิร์ค ออน ซัน-เดย์",
+        "thai": "คุณไม่จำเป็นต้องทำงานวันอาทิตย์",
+        "explanation": "'don't have to' แปลว่าไม่จำเป็นต้องทำ (แต่ทำได้ถ้าต้องการ) -- ความหมายต่างจาก 'must not' ที่แปลว่าห้ามทำเด็ดขาด"
+      },
+      {
+        "id": "modals-obligation-20",
+        "promptThai": "พูดว่า: คนงานห้ามถอดฝาครอบนิรภัยออก",
+        "chunks": [
+          {
+            "text": "Workers",
+            "phonetic": "เวิร์ค-เกอร์ส"
+          },
+          {
+            "text": "must not",
+            "phonetic": "มัสท์ นอท"
+          },
+          {
+            "text": "remove the safety guard",
+            "phonetic": "รี-มูฟ เดอะ เซฟ-ตี้ การ์ด"
+          },
+          {
+            "text": "don't have to",
+            "phonetic": "โดนท์ แฮฟ ทู",
+            "isDistractor": true
+          },
+          {
+            "text": "should",
+            "phonetic": "ชูด",
+            "isDistractor": true
+          },
+          {
+            "text": "have to",
+            "phonetic": "แฮฟ ทู",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Workers",
+          "must not",
+          "remove the safety guard"
+        ],
+        "phonetic": "เวิร์ค-เกอร์ส มัสท์ นอท รี-มูฟ เดอะ เซฟ-ตี้ การ์ด",
+        "thai": "คนงานห้ามถอดฝาครอบนิรภัยออก",
+        "explanation": "'must not' แปลว่าห้ามทำเด็ดขาด -- ต่างจาก 'don't have to' ที่แปลว่าไม่จำเป็นต้องทำ (แต่ทำได้ถ้าต้องการ)"
+      }
+    ]
+  },
+  {
+    "id": "articles-a-an-the",
+    "title": "Articles: A / An / The",
+    "titleTh": "คำนำหน้านาม A / An / The (และการไม่ใช้คำนำหน้า)",
+    "level": "B2",
+    "order": 17,
+    "structure": "a/an + [noun ที่กล่าวถึงครั้งแรก/ไม่เจาะจง] / the + [noun ที่เจาะจง/รู้กันอยู่แล้ว] / (ไม่มีคำนำหน้า) + [นามพหูพจน์/นับไม่ได้ที่พูดทั่วไป]",
+    "functionWords": [
+      {
+        "word": "a / an",
+        "role": "ใช้นำหน้าคำนามนับได้เอกพจน์ที่กล่าวถึงครั้งแรกหรือไม่เจาะจง -- เลือกจาก 'เสียง' ของคำถัดไป ไม่ใช่ตัวสะกด (a university เพราะออกเสียงพยัญชนะ, an hour เพราะ h ไม่ออกเสียง)"
+      },
+      {
+        "word": "the",
+        "role": "ใช้นำหน้าคำนามที่เจาะจง รู้กันอยู่แล้ว หรือมีสิ่งเดียวในโลก (the sun) หรือใช้กับขั้นสุด (the best)"
+      },
+      {
+        "word": "(ไม่มีคำนำหน้า)",
+        "role": "ใช้เมื่อพูดถึงคำนามพหูพจน์หรือคำนามนับไม่ได้แบบทั่วไป ไม่เจาะจง เช่น Dogs are..., I like coffee"
+      }
+    ],
+    "timeNote": "Article ไม่มีในภาษาไทย จึงต้องท่องจำหลักการ: a/an สำหรับของที่กล่าวถึงครั้งแรก, the สำหรับของที่เจาะจง/รู้กันแล้ว, และไม่ใช้คำนำหน้าเลยเมื่อพูดถึงพหูพจน์หรือนามนับไม่ได้แบบทั่วไป",
+    "examples": [
+      {
+        "text": "I saw a dog in the park.",
+        "phonetic": "ไอ ซอว์ อะ ด็อก อิน เดอะ พาร์ค",
+        "thai": "ฉันเห็นสุนัขตัวหนึ่งในสวนสาธารณะ"
+      },
+      {
+        "text": "I ate an apple.",
+        "phonetic": "ไอ เอท แอน แอ็บ-เพิล",
+        "thai": "ฉันกินแอปเปิ้ลลูกหนึ่ง"
+      },
+      {
+        "text": "She waited for an hour.",
+        "phonetic": "ชี เวท-ทิด ฟอร์ แอน เอาเอ่อร์",
+        "thai": "เธอรอเป็นเวลาหนึ่งชั่วโมง"
+      },
+      {
+        "text": "It's a university near my house.",
+        "phonetic": "อิทส์ อะ ยู-นิ-เวอร์-ซิ-ตี้ เนียร์ มาย เฮาส์",
+        "thai": "มันคือมหาวิทยาลัยแห่งหนึ่งใกล้บ้านฉัน"
+      },
+      {
+        "text": "The sun is bright today.",
+        "phonetic": "เดอะ ซัน อิส ไบรท์ ทู-เดย์",
+        "thai": "ดวงอาทิตย์สดใสวันนี้"
+      },
+      {
+        "text": "She is the best student in the class.",
+        "phonetic": "ชี อิส เดอะ เบสท์ สทิว-เดินท์ อิน เดอะ คลาส",
+        "thai": "เธอเป็นนักเรียนที่เก่งที่สุดในห้อง"
+      },
+      {
+        "text": "Dogs are friendly animals.",
+        "phonetic": "ด็อกส์ อาร์ เฟรนด์-ลี่ แอน-นิ-เมิลส์",
+        "thai": "สุนัขเป็นสัตว์ที่เป็นมิตร"
+      },
+      {
+        "text": "I like coffee.",
+        "phonetic": "ไอ ไลค์ คอฟ-ฟี่",
+        "thai": "ฉันชอบกาแฟ"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "articles-a-an-the-1",
+        "promptThai": "พูดว่า: ฉันเห็นสุนัขตัวหนึ่งในสวนสาธารณะ",
+        "chunks": [
+          {
+            "text": "I saw",
+            "phonetic": "ไอ ซอว์"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ"
+          },
+          {
+            "text": "dog in the park",
+            "phonetic": "ด็อก อิน เดอะ พาร์ค"
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I saw",
+          "a",
+          "dog in the park"
+        ],
+        "phonetic": "ไอ ซอว์ อะ ด็อก อิน เดอะ พาร์ค",
+        "thai": "ฉันเห็นสุนัขตัวหนึ่งในสวนสาธารณะ",
+        "explanation": "ใช้ 'a' นำหน้าคำนามนับได้เอกพจน์ที่กล่าวถึงครั้งแรก/ไม่เจาะจง และคำถัดไปออกเสียงพยัญชนะ"
+      },
+      {
+        "id": "articles-a-an-the-2",
+        "promptThai": "พูดว่า: เธอซื้อรถยนต์เมื่อวานนี้",
+        "chunks": [
+          {
+            "text": "She bought",
+            "phonetic": "ชี บอท"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ"
+          },
+          {
+            "text": "car yesterday",
+            "phonetic": "คาร์ เยส-เทอร์-เดย์"
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She bought",
+          "a",
+          "car yesterday"
+        ],
+        "phonetic": "ชี บอท อะ คาร์ เยส-เทอร์-เดย์",
+        "thai": "เธอซื้อรถยนต์เมื่อวานนี้",
+        "explanation": "ใช้ 'a' นำหน้าคำนามนับได้เอกพจน์ที่กล่าวถึงครั้งแรก/ไม่เจาะจง และคำถัดไปออกเสียงพยัญชนะ"
+      },
+      {
+        "id": "articles-a-an-the-3",
+        "promptThai": "พูดว่า: เขาเป็นหมอ",
+        "chunks": [
+          {
+            "text": "He is",
+            "phonetic": "ฮี อิส"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ"
+          },
+          {
+            "text": "doctor",
+            "phonetic": "ด็อค-เทอร์"
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He is",
+          "a",
+          "doctor"
+        ],
+        "phonetic": "ฮี อิส อะ ด็อค-เทอร์",
+        "thai": "เขาเป็นหมอ",
+        "explanation": "ใช้ 'a' นำหน้าคำนามนับได้เอกพจน์ที่กล่าวถึงครั้งแรก/ไม่เจาะจง และคำถัดไปออกเสียงพยัญชนะ"
+      },
+      {
+        "id": "articles-a-an-the-4",
+        "promptThai": "พูดว่า: ฉันต้องการปากกาด้ามหนึ่ง",
+        "chunks": [
+          {
+            "text": "I need",
+            "phonetic": "ไอ นีด"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ"
+          },
+          {
+            "text": "pen",
+            "phonetic": "เพน"
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I need",
+          "a",
+          "pen"
+        ],
+        "phonetic": "ไอ นีด อะ เพน",
+        "thai": "ฉันต้องการปากกาด้ามหนึ่ง",
+        "explanation": "ใช้ 'a' นำหน้าคำนามนับได้เอกพจน์ที่กล่าวถึงครั้งแรก/ไม่เจาะจง และคำถัดไปออกเสียงพยัญชนะ"
+      },
+      {
+        "id": "articles-a-an-the-5",
+        "promptThai": "พูดว่า: มันคือมหาวิทยาลัยแห่งหนึ่งใกล้บ้านฉัน",
+        "chunks": [
+          {
+            "text": "It's",
+            "phonetic": "อิทส์"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ"
+          },
+          {
+            "text": "university near my house",
+            "phonetic": "ยู-นิ-เวอร์-ซิ-ตี้ เนียร์ มาย เฮาส์"
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "It's",
+          "a",
+          "university near my house"
+        ],
+        "phonetic": "อิทส์ อะ ยู-นิ-เวอร์-ซิ-ตี้ เนียร์ มาย เฮาส์",
+        "thai": "มันคือมหาวิทยาลัยแห่งหนึ่งใกล้บ้านฉัน",
+        "explanation": "ใช้ 'a' นำหน้าคำนามนับได้เอกพจน์ที่กล่าวถึงครั้งแรก/ไม่เจาะจง และคำถัดไปออกเสียงพยัญชนะ"
+      },
+      {
+        "id": "articles-a-an-the-6",
+        "promptThai": "พูดว่า: ฉันกินแอปเปิ้ลลูกหนึ่ง",
+        "chunks": [
+          {
+            "text": "I ate",
+            "phonetic": "ไอ เอท"
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน"
+          },
+          {
+            "text": "apple",
+            "phonetic": "แอ็บ-เพิล"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I ate",
+          "an",
+          "apple"
+        ],
+        "phonetic": "ไอ เอท แอน แอ็บ-เพิล",
+        "thai": "ฉันกินแอปเปิ้ลลูกหนึ่ง",
+        "explanation": "ใช้ 'an' นำหน้าคำนามที่ออกเสียงขึ้นต้นด้วยเสียงสระ (ไม่ใช่ดูตัวสะกด)"
+      },
+      {
+        "id": "articles-a-an-the-7",
+        "promptThai": "พูดว่า: เธอรอเป็นเวลาหนึ่งชั่วโมง",
+        "chunks": [
+          {
+            "text": "She waited for",
+            "phonetic": "ชี เวท-ทิด ฟอร์"
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน"
+          },
+          {
+            "text": "hour",
+            "phonetic": "เอาเอ่อร์"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She waited for",
+          "an",
+          "hour"
+        ],
+        "phonetic": "ชี เวท-ทิด ฟอร์ แอน เอาเอ่อร์",
+        "thai": "เธอรอเป็นเวลาหนึ่งชั่วโมง",
+        "explanation": "ใช้ 'an' นำหน้าคำนามที่ออกเสียงขึ้นต้นด้วยเสียงสระ (ไม่ใช่ดูตัวสะกด)"
+      },
+      {
+        "id": "articles-a-an-the-8",
+        "promptThai": "พูดว่า: เขาเป็นวิศวกร",
+        "chunks": [
+          {
+            "text": "He is",
+            "phonetic": "ฮี อิส"
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน"
+          },
+          {
+            "text": "engineer",
+            "phonetic": "เอน-จิ-เนียร์"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He is",
+          "an",
+          "engineer"
+        ],
+        "phonetic": "ฮี อิส แอน เอน-จิ-เนียร์",
+        "thai": "เขาเป็นวิศวกร",
+        "explanation": "ใช้ 'an' นำหน้าคำนามที่ออกเสียงขึ้นต้นด้วยเสียงสระ (ไม่ใช่ดูตัวสะกด)"
+      },
+      {
+        "id": "articles-a-an-the-9",
+        "promptThai": "พูดว่า: ฉันต้องการร่มคันหนึ่ง",
+        "chunks": [
+          {
+            "text": "I need",
+            "phonetic": "ไอ นีด"
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน"
+          },
+          {
+            "text": "umbrella",
+            "phonetic": "อัม-เบรล-ล่า"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I need",
+          "an",
+          "umbrella"
+        ],
+        "phonetic": "ไอ นีด แอน อัม-เบรล-ล่า",
+        "thai": "ฉันต้องการร่มคันหนึ่ง",
+        "explanation": "ใช้ 'an' นำหน้าคำนามที่ออกเสียงขึ้นต้นด้วยเสียงสระ (ไม่ใช่ดูตัวสะกด)"
+      },
+      {
+        "id": "articles-a-an-the-10",
+        "promptThai": "พูดว่า: มันคือคำตอบที่ซื่อสัตย์",
+        "chunks": [
+          {
+            "text": "It's",
+            "phonetic": "อิทส์"
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน"
+          },
+          {
+            "text": "honest answer",
+            "phonetic": "ออน-เนสท์ แอน-เซอร์"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "It's",
+          "an",
+          "honest answer"
+        ],
+        "phonetic": "อิทส์ แอน ออน-เนสท์ แอน-เซอร์",
+        "thai": "มันคือคำตอบที่ซื่อสัตย์",
+        "explanation": "ใช้ 'an' นำหน้าคำนามที่ออกเสียงขึ้นต้นด้วยเสียงสระ (ไม่ใช่ดูตัวสะกด)"
+      },
+      {
+        "id": "articles-a-an-the-11",
+        "promptThai": "พูดว่า: ดวงอาทิตย์สดใสวันนี้",
+        "chunks": [
+          {
+            "text": "The",
+            "phonetic": "เดอะ"
+          },
+          {
+            "text": "sun is bright today",
+            "phonetic": "ซัน อิส ไบรท์ ทู-เดย์"
+          },
+          {
+            "text": "A",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "An",
+            "phonetic": "แอน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The",
+          "sun is bright today"
+        ],
+        "phonetic": "เดอะ ซัน อิส ไบรท์ ทู-เดย์",
+        "thai": "ดวงอาทิตย์สดใสวันนี้",
+        "explanation": "ใช้ 'the' เพราะเป็นสิ่งที่เจาะจง รู้กันอยู่แล้ว มีสิ่งเดียว หรือใช้กับขั้นสุด (superlative)"
+      },
+      {
+        "id": "articles-a-an-the-12",
+        "promptThai": "พูดว่า: ปิดประตูด้วยค่ะ",
+        "chunks": [
+          {
+            "text": "Close",
+            "phonetic": "โคลส"
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ"
+          },
+          {
+            "text": "door, please",
+            "phonetic": "ดอร์, พลีส"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Close",
+          "the",
+          "door, please"
+        ],
+        "phonetic": "โคลส เดอะ ดอร์, พลีส",
+        "thai": "ปิดประตูด้วยค่ะ",
+        "explanation": "ใช้ 'the' เพราะเป็นสิ่งที่เจาะจง รู้กันอยู่แล้ว มีสิ่งเดียว หรือใช้กับขั้นสุด (superlative)"
+      },
+      {
+        "id": "articles-a-an-the-13",
+        "promptThai": "พูดว่า: แมวตัวนั้นกำลังนอนอยู่บนโซฟา",
+        "chunks": [
+          {
+            "text": "The cat is sleeping on",
+            "phonetic": "เดอะ แคท อิส สลี-ปิ่ง ออน"
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ"
+          },
+          {
+            "text": "sofa",
+            "phonetic": "โซ-ฟา"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The cat is sleeping on",
+          "the",
+          "sofa"
+        ],
+        "phonetic": "เดอะ แคท อิส สลี-ปิ่ง ออน เดอะ โซ-ฟา",
+        "thai": "แมวตัวนั้นกำลังนอนอยู่บนโซฟา",
+        "explanation": "ใช้ 'the' เพราะเป็นสิ่งที่เจาะจง รู้กันอยู่แล้ว มีสิ่งเดียว หรือใช้กับขั้นสุด (superlative)"
+      },
+      {
+        "id": "articles-a-an-the-14",
+        "promptThai": "พูดว่า: เธอเป็นนักเรียนที่เก่งที่สุดในห้อง",
+        "chunks": [
+          {
+            "text": "She is",
+            "phonetic": "ชี อิส"
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ"
+          },
+          {
+            "text": "best student in the class",
+            "phonetic": "เบสท์ สทิว-เดินท์ อิน เดอะ คลาส"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She is",
+          "the",
+          "best student in the class"
+        ],
+        "phonetic": "ชี อิส เดอะ เบสท์ สทิว-เดินท์ อิน เดอะ คลาส",
+        "thai": "เธอเป็นนักเรียนที่เก่งที่สุดในห้อง",
+        "explanation": "ใช้ 'the' เพราะเป็นสิ่งที่เจาะจง รู้กันอยู่แล้ว มีสิ่งเดียว หรือใช้กับขั้นสุด (superlative)"
+      },
+      {
+        "id": "articles-a-an-the-15",
+        "promptThai": "พูดว่า: ช่วยส่งเกลือให้หน่อย",
+        "chunks": [
+          {
+            "text": "Please pass",
+            "phonetic": "พลีส พาส"
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ"
+          },
+          {
+            "text": "salt",
+            "phonetic": "ซอลท์"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "an",
+            "phonetic": "แอน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Please pass",
+          "the",
+          "salt"
+        ],
+        "phonetic": "พลีส พาส เดอะ ซอลท์",
+        "thai": "ช่วยส่งเกลือให้หน่อย",
+        "explanation": "ใช้ 'the' เพราะเป็นสิ่งที่เจาะจง รู้กันอยู่แล้ว มีสิ่งเดียว หรือใช้กับขั้นสุด (superlative)"
+      },
+      {
+        "id": "articles-a-an-the-16",
+        "promptThai": "พูดว่า: สุนัขเป็นสัตว์ที่เป็นมิตร",
+        "chunks": [
+          {
+            "text": "Dogs",
+            "phonetic": "ด็อกส์"
+          },
+          {
+            "text": "are friendly animals",
+            "phonetic": "อาร์ เฟรนด์-ลี่ แอน-นิ-เมิลส์"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Dogs",
+          "are friendly animals"
+        ],
+        "phonetic": "ด็อกส์ อาร์ เฟรนด์-ลี่ แอน-นิ-เมิลส์",
+        "thai": "สุนัขเป็นสัตว์ที่เป็นมิตร",
+        "explanation": "ไม่ใช้คำนำหน้าเลย เพราะพูดถึงคำนามพหูพจน์หรือคำนามนับไม่ได้แบบทั่วไป ไม่เจาะจง"
+      },
+      {
+        "id": "articles-a-an-the-17",
+        "promptThai": "พูดว่า: ฉันชอบกาแฟ",
+        "chunks": [
+          {
+            "text": "I like",
+            "phonetic": "ไอ ไลค์"
+          },
+          {
+            "text": "coffee",
+            "phonetic": "คอฟ-ฟี่"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "I like",
+          "coffee"
+        ],
+        "phonetic": "ไอ ไลค์ คอฟ-ฟี่",
+        "thai": "ฉันชอบกาแฟ",
+        "explanation": "ไม่ใช้คำนำหน้าเลย เพราะพูดถึงคำนามพหูพจน์หรือคำนามนับไม่ได้แบบทั่วไป ไม่เจาะจง"
+      },
+      {
+        "id": "articles-a-an-the-18",
+        "promptThai": "พูดว่า: เด็กๆ ต้องการความรักและการดูแล",
+        "chunks": [
+          {
+            "text": "Children",
+            "phonetic": "ชิล-เดรน"
+          },
+          {
+            "text": "need love and care",
+            "phonetic": "นีด ลัฟ แอนด์ แคร์"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Children",
+          "need love and care"
+        ],
+        "phonetic": "ชิล-เดรน นีด ลัฟ แอนด์ แคร์",
+        "thai": "เด็กๆ ต้องการความรักและการดูแล",
+        "explanation": "ไม่ใช้คำนำหน้าเลย เพราะพูดถึงคำนามพหูพจน์หรือคำนามนับไม่ได้แบบทั่วไป ไม่เจาะจง"
+      },
+      {
+        "id": "articles-a-an-the-19",
+        "promptThai": "พูดว่า: น้ำมีความสำคัญต่อชีวิต",
+        "chunks": [
+          {
+            "text": "Water",
+            "phonetic": "วอ-เทอร์"
+          },
+          {
+            "text": "is important for life",
+            "phonetic": "อิส อิม-พอร์-เทินท์ ฟอร์ ไลฟ์"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Water",
+          "is important for life"
+        ],
+        "phonetic": "วอ-เทอร์ อิส อิม-พอร์-เทินท์ ฟอร์ ไลฟ์",
+        "thai": "น้ำมีความสำคัญต่อชีวิต",
+        "explanation": "ไม่ใช้คำนำหน้าเลย เพราะพูดถึงคำนามพหูพจน์หรือคำนามนับไม่ได้แบบทั่วไป ไม่เจาะจง"
+      },
+      {
+        "id": "articles-a-an-the-20",
+        "promptThai": "พูดว่า: เธอชอบดนตรี",
+        "chunks": [
+          {
+            "text": "She enjoys",
+            "phonetic": "ชี เอน-จอยส์"
+          },
+          {
+            "text": "music",
+            "phonetic": "มิว-สิค"
+          },
+          {
+            "text": "a",
+            "phonetic": "อะ",
+            "isDistractor": true
+          },
+          {
+            "text": "the",
+            "phonetic": "เดอะ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She enjoys",
+          "music"
+        ],
+        "phonetic": "ชี เอน-จอยส์ มิว-สิค",
+        "thai": "เธอชอบดนตรี",
+        "explanation": "ไม่ใช้คำนำหน้าเลย เพราะพูดถึงคำนามพหูพจน์หรือคำนามนับไม่ได้แบบทั่วไป ไม่เจาะจง"
+      }
+    ]
   }
 ]
