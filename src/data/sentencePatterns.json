@@ -20095,5 +20095,2851 @@
         "explanation": "'expect' ต้องตามด้วย to + กริยาช่องที่ 1 (infinitive) เสมอ เช่น to arrive by noon -- ไม่ใช่ verb-ing"
       }
     ]
+  },
+  {
+    "id": "passive-voice",
+    "title": "Passive Voice (Basic)",
+    "titleTh": "กรรมวาจก Passive Voice (Present & Past Simple)",
+    "level": "B2",
+    "order": 24,
+    "structure": "[Subject] + is/are/was/were + [past participle] + (by + [agent])",
+    "functionWords": [
+      {
+        "word": "is / are / was / were",
+        "role": "กริยา be ที่ผันตามประธานและกาล (is/are = ปัจจุบัน, was/were = อดีต)"
+      },
+      {
+        "word": "past participle (กริยาช่องที่ 3)",
+        "role": "รูปกริยาที่ตามหลัง be เสมอในประโยค passive เช่น broken, written, submitted"
+      },
+      {
+        "word": "by + [ผู้กระทำ]",
+        "role": "ระบุผู้กระทำ (ถ้าจำเป็น) -- ส่วนใหญ่มักละไว้เมื่อไม่รู้หรือไม่สำคัญว่าใครเป็นผู้ทำ"
+      }
+    ],
+    "timeNote": "Passive Voice ใช้เมื่อเราอยากเน้นที่ 'สิ่งที่ถูกกระทำ' มากกว่า 'ผู้กระทำ' -- ต่างจากประโยค Active ทั่วไปที่ประธานเป็นผู้ทำกริยาเอง (Active: 'Someone broke the window' ผู้กระทำเป็นประธาน) ในประโยค Passive สิ่งที่ถูกกระทำ (the window) จะขึ้นมาเป็นประธานแทน (Passive: 'The window was broken') ใช้บ่อยเมื่อไม่รู้ว่าใครทำ ไม่สำคัญว่าใครทำ หรือต้องการเน้นผลลัพธ์มากกว่าตัวผู้กระทำ เช่นในกฎระเบียบที่ทำงาน 'Reports must be submitted by Friday' (เชื่อมกับแพทเทิร์น Must/Have to/Should)",
+    "examples": [
+      {
+        "text": "The window was broken.",
+        "phonetic": "เดอะ วิน-โดว์ วอส โบร-เคิ่น",
+        "thai": "หน้าต่างถูกทำแตก"
+      },
+      {
+        "text": "The report is written every week.",
+        "phonetic": "เดอะ รี-พอร์ท อิส ริท-เทิ่น เอฟ-รี วีค",
+        "thai": "รายงานถูกเขียนทุกสัปดาห์"
+      },
+      {
+        "text": "Reports must be submitted by Friday.",
+        "phonetic": "รี-พอร์ทส์ มัสท์ บี ซับ-มิท-ทิด บาย ฟราย-เดย์",
+        "thai": "รายงานต้องถูกส่งภายในวันศุกร์"
+      },
+      {
+        "text": "The safety rules are followed by everyone.",
+        "phonetic": "เดอะ เซฟ-ตี้ รูลส์ อาร์ ฟอล-โลว์ด บาย เอฟ-รี-วัน",
+        "thai": "กฎความปลอดภัยถูกปฏิบัติตามโดยทุกคน"
+      },
+      {
+        "text": "The email was sent yesterday.",
+        "phonetic": "ดิ อี-เมล วอส เซนท์ เยส-เทอร์-เดย์",
+        "thai": "อีเมลถูกส่งเมื่อวานนี้"
+      },
+      {
+        "text": "This helmet is made in Thailand.",
+        "phonetic": "ดิส เฮล-เม็ท อิส เมด อิน ไทย-แลนด์",
+        "thai": "หมวกนิรภัยนี้ผลิตในประเทศไทย"
+      },
+      {
+        "text": "The accident was reported immediately.",
+        "phonetic": "ดิ แอ็ก-ซิ-เดิ้นท์ วอส รี-พอร์ท-ทิด อิม-มี-เดียท-ลี่",
+        "thai": "อุบัติเหตุถูกรายงานทันที"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "passive-voice-1",
+        "promptThai": "พูดว่า: ประตูถูกล็อกตอนกลางคืน",
+        "chunks": [
+          {
+            "text": "The door",
+            "phonetic": "เดอะ ดอร์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "locked",
+            "phonetic": "ล็อคท์"
+          },
+          {
+            "text": "at night",
+            "phonetic": "แอท ไนท์"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "lock",
+            "phonetic": "ล็อค",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The door",
+          "is",
+          "locked",
+          "at night"
+        ],
+        "phonetic": "เดอะ ดอร์ อิส ล็อคท์ แอท ไนท์",
+        "thai": "ประตูถูกล็อกตอนกลางคืน",
+        "explanation": "Passive Voice = is + กริยาช่องที่ 3 (locked) ไม่ใช่กริยาช่องที่ 1 (lock) -- และ 'The door' ใช้กับ 'is'"
+      },
+      {
+        "id": "passive-voice-2",
+        "promptThai": "พูดว่า: รายงานถูกตรวจสอบทุกวัน",
+        "chunks": [
+          {
+            "text": "The reports",
+            "phonetic": "เดอะ รี-พอร์ทส์"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์"
+          },
+          {
+            "text": "checked",
+            "phonetic": "เชคท์"
+          },
+          {
+            "text": "every day",
+            "phonetic": "เอฟ-รี เดย์"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "check",
+            "phonetic": "เชค",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The reports",
+          "are",
+          "checked",
+          "every day"
+        ],
+        "phonetic": "เดอะ รี-พอร์ทส์ อาร์ เชคท์ เอฟ-รี เดย์",
+        "thai": "รายงานถูกตรวจสอบทุกวัน",
+        "explanation": "Passive Voice = are + กริยาช่องที่ 3 (checked) ไม่ใช่กริยาช่องที่ 1 (check) -- และ 'The reports' ใช้กับ 'are'"
+      },
+      {
+        "id": "passive-voice-3",
+        "promptThai": "พูดว่า: รถคันนี้ผลิตในญี่ปุ่น",
+        "chunks": [
+          {
+            "text": "This car",
+            "phonetic": "ดิส คาร์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "made",
+            "phonetic": "เมด"
+          },
+          {
+            "text": "in Japan",
+            "phonetic": "อิน จะ-แพน"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "make",
+            "phonetic": "เมค",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "This car",
+          "is",
+          "made",
+          "in Japan"
+        ],
+        "phonetic": "ดิส คาร์ อิส เมด อิน จะ-แพน",
+        "thai": "รถคันนี้ผลิตในญี่ปุ่น",
+        "explanation": "Passive Voice = is + กริยาช่องที่ 3 (made) ไม่ใช่กริยาช่องที่ 1 (make) -- และ 'This car' ใช้กับ 'is'"
+      },
+      {
+        "id": "passive-voice-4",
+        "promptThai": "พูดว่า: กฎถูกอธิบายให้พนักงานใหม่ฟัง",
+        "chunks": [
+          {
+            "text": "The rules",
+            "phonetic": "เดอะ รูลส์"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์"
+          },
+          {
+            "text": "explained",
+            "phonetic": "เอ็ก-สเพลนด์"
+          },
+          {
+            "text": "to new workers",
+            "phonetic": "ทู นิว เวิร์ค-เกอร์ส"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "explain",
+            "phonetic": "เอ็ก-สเพลน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The rules",
+          "are",
+          "explained",
+          "to new workers"
+        ],
+        "phonetic": "เดอะ รูลส์ อาร์ เอ็ก-สเพลนด์ ทู นิว เวิร์ค-เกอร์ส",
+        "thai": "กฎถูกอธิบายให้พนักงานใหม่ฟัง",
+        "explanation": "Passive Voice = are + กริยาช่องที่ 3 (explained) ไม่ใช่กริยาช่องที่ 1 (explain) -- และ 'The rules' ใช้กับ 'are'"
+      },
+      {
+        "id": "passive-voice-5",
+        "promptThai": "พูดว่า: ออฟฟิศถูกทำความสะอาดทุกเช้า",
+        "chunks": [
+          {
+            "text": "The office",
+            "phonetic": "ดิ ออฟ-ฟิส"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "cleaned",
+            "phonetic": "คลีนด์"
+          },
+          {
+            "text": "every morning",
+            "phonetic": "เอฟ-รี มอร์-นิ่ง"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "clean",
+            "phonetic": "คลีน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The office",
+          "is",
+          "cleaned",
+          "every morning"
+        ],
+        "phonetic": "ดิ ออฟ-ฟิส อิส คลีนด์ เอฟ-รี มอร์-นิ่ง",
+        "thai": "ออฟฟิศถูกทำความสะอาดทุกเช้า",
+        "explanation": "Passive Voice = is + กริยาช่องที่ 3 (cleaned) ไม่ใช่กริยาช่องที่ 1 (clean) -- และ 'The office' ใช้กับ 'is'"
+      },
+      {
+        "id": "passive-voice-6",
+        "promptThai": "พูดว่า: อุปกรณ์ความปลอดภัยถูกตรวจสอบเป็นประจำ",
+        "chunks": [
+          {
+            "text": "Safety equipment",
+            "phonetic": "เซฟ-ตี้ อี-ควิพ-เมินท์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "checked",
+            "phonetic": "เชคท์"
+          },
+          {
+            "text": "regularly",
+            "phonetic": "เรก-กิว-ลาร์-ลี่"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "check",
+            "phonetic": "เชค",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "Safety equipment",
+          "is",
+          "checked",
+          "regularly"
+        ],
+        "phonetic": "เซฟ-ตี้ อี-ควิพ-เมินท์ อิส เชคท์ เรก-กิว-ลาร์-ลี่",
+        "thai": "อุปกรณ์ความปลอดภัยถูกตรวจสอบเป็นประจำ",
+        "explanation": "Passive Voice = is + กริยาช่องที่ 3 (checked) ไม่ใช่กริยาช่องที่ 1 (check) -- และ 'Safety equipment' ใช้กับ 'is'"
+      },
+      {
+        "id": "passive-voice-7",
+        "promptThai": "พูดว่า: การประชุมถูกจัดขึ้นทุกวันจันทร์",
+        "chunks": [
+          {
+            "text": "The meeting",
+            "phonetic": "เดอะ มี-ทิ่ง"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "held",
+            "phonetic": "เฮลด์"
+          },
+          {
+            "text": "on Mondays",
+            "phonetic": "ออน มัน-เดย์ส"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "hold",
+            "phonetic": "โฮลด์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The meeting",
+          "is",
+          "held",
+          "on Mondays"
+        ],
+        "phonetic": "เดอะ มี-ทิ่ง อิส เฮลด์ ออน มัน-เดย์ส",
+        "thai": "การประชุมถูกจัดขึ้นทุกวันจันทร์",
+        "explanation": "Passive Voice = is + กริยาช่องที่ 3 (held) ไม่ใช่กริยาช่องที่ 1 (hold) -- และ 'The meeting' ใช้กับ 'is'"
+      },
+      {
+        "id": "passive-voice-8",
+        "promptThai": "พูดว่า: สินค้าเหล่านี้ถูกขายทั่วโลก",
+        "chunks": [
+          {
+            "text": "These products",
+            "phonetic": "ดีส พรอด-ดักท์ส"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์"
+          },
+          {
+            "text": "sold",
+            "phonetic": "โซลด์"
+          },
+          {
+            "text": "worldwide",
+            "phonetic": "เวิลด์-ไวด์"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์",
+            "isDistractor": true
+          },
+          {
+            "text": "sell",
+            "phonetic": "เซล",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "These products",
+          "are",
+          "sold",
+          "worldwide"
+        ],
+        "phonetic": "ดีส พรอด-ดักท์ส อาร์ โซลด์ เวิลด์-ไวด์",
+        "thai": "สินค้าเหล่านี้ถูกขายทั่วโลก",
+        "explanation": "Passive Voice = are + กริยาช่องที่ 3 (sold) ไม่ใช่กริยาช่องที่ 1 (sell) -- และ 'These products' ใช้กับ 'are'"
+      },
+      {
+        "id": "passive-voice-9",
+        "promptThai": "พูดว่า: ภาษาอังกฤษถูกพูดในหลายประเทศ",
+        "chunks": [
+          {
+            "text": "English",
+            "phonetic": "อิง-กลิช"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "spoken",
+            "phonetic": "สโป-เคิ่น"
+          },
+          {
+            "text": "in many countries",
+            "phonetic": "อิน เมน-นี่ คัน-ทรีส์"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "speak",
+            "phonetic": "สปีค",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "English",
+          "is",
+          "spoken",
+          "in many countries"
+        ],
+        "phonetic": "อิง-กลิช อิส สโป-เคิ่น อิน เมน-นี่ คัน-ทรีส์",
+        "thai": "ภาษาอังกฤษถูกพูดในหลายประเทศ",
+        "explanation": "Passive Voice = is + กริยาช่องที่ 3 (spoken) ไม่ใช่กริยาช่องที่ 1 (speak) -- และ 'English' ใช้กับ 'is'"
+      },
+      {
+        "id": "passive-voice-10",
+        "promptThai": "พูดว่า: อาคารถูกเฝ้าตลอด 24 ชั่วโมง",
+        "chunks": [
+          {
+            "text": "The building",
+            "phonetic": "เดอะ บิล-ดิ้ง"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส"
+          },
+          {
+            "text": "guarded",
+            "phonetic": "การ์ด-ดิด"
+          },
+          {
+            "text": "24 hours",
+            "phonetic": "ทเวน-ตี้-โฟร์ เอาเอิร์ส"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส",
+            "isDistractor": true
+          },
+          {
+            "text": "guard",
+            "phonetic": "การ์ด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The building",
+          "is",
+          "guarded",
+          "24 hours"
+        ],
+        "phonetic": "เดอะ บิล-ดิ้ง อิส การ์ด-ดิด ทเวน-ตี้-โฟร์ เอาเอิร์ส",
+        "thai": "อาคารถูกเฝ้าตลอด 24 ชั่วโมง",
+        "explanation": "Passive Voice = is + กริยาช่องที่ 3 (guarded) ไม่ใช่กริยาช่องที่ 1 (guard) -- และ 'The building' ใช้กับ 'is'"
+      },
+      {
+        "id": "passive-voice-11",
+        "promptThai": "พูดว่า: หน้าต่างถูกทำแตกเมื่อคืนนี้",
+        "chunks": [
+          {
+            "text": "The window",
+            "phonetic": "เดอะ วิน-โดว์"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส"
+          },
+          {
+            "text": "broken",
+            "phonetic": "โบร-เคิ่น"
+          },
+          {
+            "text": "last night",
+            "phonetic": "ลาสท์ ไนท์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "break",
+            "phonetic": "เบรค",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The window",
+          "was",
+          "broken",
+          "last night"
+        ],
+        "phonetic": "เดอะ วิน-โดว์ วอส โบร-เคิ่น ลาสท์ ไนท์",
+        "thai": "หน้าต่างถูกทำแตกเมื่อคืนนี้",
+        "explanation": "Passive Voice = was + กริยาช่องที่ 3 (broken) ไม่ใช่กริยาช่องที่ 1 (break) -- และ 'The window' ใช้กับ 'was'"
+      },
+      {
+        "id": "passive-voice-12",
+        "promptThai": "พูดว่า: อีเมลถูกส่งเมื่อวานนี้",
+        "chunks": [
+          {
+            "text": "The email",
+            "phonetic": "ดิ อี-เมล"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส"
+          },
+          {
+            "text": "sent",
+            "phonetic": "เซนท์"
+          },
+          {
+            "text": "yesterday",
+            "phonetic": "เยส-เทอร์-เดย์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "send",
+            "phonetic": "เซนด์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The email",
+          "was",
+          "sent",
+          "yesterday"
+        ],
+        "phonetic": "ดิ อี-เมล วอส เซนท์ เยส-เทอร์-เดย์",
+        "thai": "อีเมลถูกส่งเมื่อวานนี้",
+        "explanation": "Passive Voice = was + กริยาช่องที่ 3 (sent) ไม่ใช่กริยาช่องที่ 1 (send) -- และ 'The email' ใช้กับ 'was'"
+      },
+      {
+        "id": "passive-voice-13",
+        "promptThai": "พูดว่า: อุบัติเหตุถูกรายงานทันที",
+        "chunks": [
+          {
+            "text": "The accident",
+            "phonetic": "ดิ แอ็ก-ซิ-เดิ้นท์"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส"
+          },
+          {
+            "text": "reported",
+            "phonetic": "รี-พอร์ท-ทิด"
+          },
+          {
+            "text": "immediately",
+            "phonetic": "อิม-มี-เดียท-ลี่"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "report",
+            "phonetic": "รี-พอร์ท",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The accident",
+          "was",
+          "reported",
+          "immediately"
+        ],
+        "phonetic": "ดิ แอ็ก-ซิ-เดิ้นท์ วอส รี-พอร์ท-ทิด อิม-มี-เดียท-ลี่",
+        "thai": "อุบัติเหตุถูกรายงานทันที",
+        "explanation": "Passive Voice = was + กริยาช่องที่ 3 (reported) ไม่ใช่กริยาช่องที่ 1 (report) -- และ 'The accident' ใช้กับ 'was'"
+      },
+      {
+        "id": "passive-voice-14",
+        "promptThai": "พูดว่า: จดหมายถูกส่งเมื่อเช้านี้",
+        "chunks": [
+          {
+            "text": "The letters",
+            "phonetic": "เดอะ เล็ท-เทอร์ส"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์"
+          },
+          {
+            "text": "delivered",
+            "phonetic": "ดี-ลิฟ-เวอร์ด"
+          },
+          {
+            "text": "this morning",
+            "phonetic": "ดิส มอร์-นิ่ง"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "deliver",
+            "phonetic": "ดี-ลิฟ-เวอร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The letters",
+          "were",
+          "delivered",
+          "this morning"
+        ],
+        "phonetic": "เดอะ เล็ท-เทอร์ส เวอร์ ดี-ลิฟ-เวอร์ด ดิส มอร์-นิ่ง",
+        "thai": "จดหมายถูกส่งเมื่อเช้านี้",
+        "explanation": "Passive Voice = were + กริยาช่องที่ 3 (delivered) ไม่ใช่กริยาช่องที่ 1 (deliver) -- และ 'The letters' ใช้กับ 'were'"
+      },
+      {
+        "id": "passive-voice-15",
+        "promptThai": "พูดว่า: โปรเจกต์ถูกทำเสร็จตรงเวลา",
+        "chunks": [
+          {
+            "text": "The project",
+            "phonetic": "เดอะ พรอ-เจ็ค"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส"
+          },
+          {
+            "text": "finished",
+            "phonetic": "ฟิน-นิชท์"
+          },
+          {
+            "text": "on time",
+            "phonetic": "ออน ไทม์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "finish",
+            "phonetic": "ฟิน-นิช",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The project",
+          "was",
+          "finished",
+          "on time"
+        ],
+        "phonetic": "เดอะ พรอ-เจ็ค วอส ฟิน-นิชท์ ออน ไทม์",
+        "thai": "โปรเจกต์ถูกทำเสร็จตรงเวลา",
+        "explanation": "Passive Voice = was + กริยาช่องที่ 3 (finished) ไม่ใช่กริยาช่องที่ 1 (finish) -- และ 'The project' ใช้กับ 'was'"
+      },
+      {
+        "id": "passive-voice-16",
+        "promptThai": "พูดว่า: คนงานถูกฝึกอบรมเมื่อเดือนที่แล้ว",
+        "chunks": [
+          {
+            "text": "The workers",
+            "phonetic": "เดอะ เวิร์ค-เกอร์ส"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์"
+          },
+          {
+            "text": "trained",
+            "phonetic": "เทรนด์"
+          },
+          {
+            "text": "last month",
+            "phonetic": "ลาสท์ มันธ์"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "train",
+            "phonetic": "เทรน",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The workers",
+          "were",
+          "trained",
+          "last month"
+        ],
+        "phonetic": "เดอะ เวิร์ค-เกอร์ส เวอร์ เทรนด์ ลาสท์ มันธ์",
+        "thai": "คนงานถูกฝึกอบรมเมื่อเดือนที่แล้ว",
+        "explanation": "Passive Voice = were + กริยาช่องที่ 3 (trained) ไม่ใช่กริยาช่องที่ 1 (train) -- และ 'The workers' ใช้กับ 'were'"
+      },
+      {
+        "id": "passive-voice-17",
+        "promptThai": "พูดว่า: เครื่องจักรถูกซ่อมเมื่อวานนี้",
+        "chunks": [
+          {
+            "text": "The machine",
+            "phonetic": "เดอะ มะ-ชีน"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส"
+          },
+          {
+            "text": "repaired",
+            "phonetic": "รี-แพร์ด"
+          },
+          {
+            "text": "yesterday",
+            "phonetic": "เยส-เทอร์-เดย์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "repair",
+            "phonetic": "รี-แพร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The machine",
+          "was",
+          "repaired",
+          "yesterday"
+        ],
+        "phonetic": "เดอะ มะ-ชีน วอส รี-แพร์ด เยส-เทอร์-เดย์",
+        "thai": "เครื่องจักรถูกซ่อมเมื่อวานนี้",
+        "explanation": "Passive Voice = was + กริยาช่องที่ 3 (repaired) ไม่ใช่กริยาช่องที่ 1 (repair) -- และ 'The machine' ใช้กับ 'was'"
+      },
+      {
+        "id": "passive-voice-18",
+        "promptThai": "พูดว่า: เอกสารถูกเซ็นเมื่อบ่ายนี้",
+        "chunks": [
+          {
+            "text": "The documents",
+            "phonetic": "เดอะ ด็อค-คิว-เมินท์ส"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์"
+          },
+          {
+            "text": "signed",
+            "phonetic": "ไซน์ด"
+          },
+          {
+            "text": "this afternoon",
+            "phonetic": "ดิส อาฟ-เตอร์-นูน"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "sign",
+            "phonetic": "ไซน์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The documents",
+          "were",
+          "signed",
+          "this afternoon"
+        ],
+        "phonetic": "เดอะ ด็อค-คิว-เมินท์ส เวอร์ ไซน์ด ดิส อาฟ-เตอร์-นูน",
+        "thai": "เอกสารถูกเซ็นเมื่อบ่ายนี้",
+        "explanation": "Passive Voice = were + กริยาช่องที่ 3 (signed) ไม่ใช่กริยาช่องที่ 1 (sign) -- และ 'The documents' ใช้กับ 'were'"
+      },
+      {
+        "id": "passive-voice-19",
+        "promptThai": "พูดว่า: บ้านถูกสร้างในปี 1990",
+        "chunks": [
+          {
+            "text": "The house",
+            "phonetic": "เดอะ เฮาส์"
+          },
+          {
+            "text": "was",
+            "phonetic": "วอส"
+          },
+          {
+            "text": "built",
+            "phonetic": "บิลท์"
+          },
+          {
+            "text": "in 1990",
+            "phonetic": "อิน ไนน์-ทีน ไนน์-ตี้"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "build",
+            "phonetic": "บิลด์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The house",
+          "was",
+          "built",
+          "in 1990"
+        ],
+        "phonetic": "เดอะ เฮาส์ วอส บิลท์ อิน ไนน์-ทีน ไนน์-ตี้",
+        "thai": "บ้านถูกสร้างในปี 1990",
+        "explanation": "Passive Voice = was + กริยาช่องที่ 3 (built) ไม่ใช่กริยาช่องที่ 1 (build) -- และ 'The house' ใช้กับ 'was'"
+      },
+      {
+        "id": "passive-voice-20",
+        "promptThai": "พูดว่า: กฎถูกเปลี่ยนเมื่อปีที่แล้ว",
+        "chunks": [
+          {
+            "text": "The rules",
+            "phonetic": "เดอะ รูลส์"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์"
+          },
+          {
+            "text": "changed",
+            "phonetic": "เชนจ์ด"
+          },
+          {
+            "text": "last year",
+            "phonetic": "ลาสท์ เยียร์"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "change",
+            "phonetic": "เชนจ์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "The rules",
+          "were",
+          "changed",
+          "last year"
+        ],
+        "phonetic": "เดอะ รูลส์ เวอร์ เชนจ์ด ลาสท์ เยียร์",
+        "thai": "กฎถูกเปลี่ยนเมื่อปีที่แล้ว",
+        "explanation": "Passive Voice = were + กริยาช่องที่ 3 (changed) ไม่ใช่กริยาช่องที่ 1 (change) -- และ 'The rules' ใช้กับ 'were'"
+      }
+    ]
+  },
+  {
+    "id": "reported-speech",
+    "title": "Reported Speech (Basic)",
+    "titleTh": "การพูดแบบรายงาน Reported Speech (Present → Past)",
+    "level": "B2",
+    "order": 25,
+    "structure": "[Subject] + said (that) + [Subject] + [Past Simple / Past Continuous] (เปลี่ยนกาลจากคำพูดเดิม)",
+    "functionWords": [
+      {
+        "word": "said (that)",
+        "role": "ใช้รายงานคำพูดของคนอื่น -- คำว่า 'that' จะใส่หรือไม่ใส่ก็ได้ ความหมายเหมือนกัน"
+      },
+      {
+        "word": "Present Simple → Past Simple",
+        "role": "เมื่อรายงานคำพูด กริยาที่เป็น Present Simple ในคำพูดเดิมจะเปลี่ยนเป็น Past Simple (am/is/are → was/were, กริยาทั่วไป → กริยาช่องที่ 2)"
+      },
+      {
+        "word": "Present Continuous → Past Continuous",
+        "role": "กริยาที่เป็น Present Continuous ในคำพูดเดิมจะเปลี่ยนเป็น Past Continuous (am/is/are + -ing → was/were + -ing)"
+      }
+    ],
+    "timeNote": "เมื่อเรานำคำพูดของใครมาเล่าต่อ (Reported Speech) กาลของกริยาในคำพูดเดิมมักจะ 'ถอยหลัง' ไปหนึ่งขั้น (backshift) เพราะเวลาที่เราเล่าคือเวลาในอดีตแล้ว เช่น เธอพูดว่า 'I am tired' (Present Simple) ตอนนี้เมื่อเล่าต่อ จะกลายเป็น 'She said she was tired' (Past Simple) -- หลักการนี้ไม่มีในภาษาไทยเพราะภาษาไทยไม่ผันกริยาตามกาล จึงต้องจำโครงสร้างนี้เป็นพิเศษ (บทเรียนนี้ครอบคลุมเฉพาะการรายงานประโยคบอกเล่าแบบง่ายเท่านั้น ไม่รวมคำถามหรือคำสั่ง)",
+    "examples": [
+      {
+        "text": "She said (that) she was tired.",
+        "phonetic": "ชี เซด แดท ชี วอส ไทร์ด",
+        "thai": "เธอบอกว่าเธอเหนื่อย (คำพูดเดิม: \"I am tired.\")"
+      },
+      {
+        "text": "He said (that) he worked here.",
+        "phonetic": "ฮี เซด แดท ฮี เวิร์คท์ เฮียร์",
+        "thai": "เขาบอกว่าเขาทำงานที่นี่ (คำพูดเดิม: \"I work here.\")"
+      },
+      {
+        "text": "They said (that) they were waiting.",
+        "phonetic": "เดย์ เซด แดท เดย์ เวอร์ เวท-ทิ่ง",
+        "thai": "พวกเขาบอกว่าพวกเขากำลังรออยู่ (คำพูดเดิม: \"We are waiting.\")"
+      },
+      {
+        "text": "She said (that) she liked coffee.",
+        "phonetic": "ชี เซด แดท ชี ไลค์ท คอฟ-ฟี่",
+        "thai": "เธอบอกว่าเธอชอบกาแฟ (คำพูดเดิม: \"I like coffee.\")"
+      },
+      {
+        "text": "He said (that) he was busy.",
+        "phonetic": "ฮี เซด แดท ฮี วอส บิส-ซี่",
+        "thai": "เขาบอกว่าเขายุ่ง (คำพูดเดิม: \"I am busy.\")"
+      },
+      {
+        "text": "She said (that) she was studying English.",
+        "phonetic": "ชี เซด แดท ชี วอส สทัด-ดี้-อิ่ง อิง-กลิช",
+        "thai": "เธอบอกว่าเธอกำลังเรียนภาษาอังกฤษอยู่ (คำพูดเดิม: \"I am studying English.\")"
+      },
+      {
+        "text": "He said (that) he didn't have time.",
+        "phonetic": "ฮี เซด แดท ฮี ดิด-เอิ้นท์ แฮฟ ไทม์",
+        "thai": "เขาบอกว่าเขาไม่มีเวลา (คำพูดเดิม: \"I don't have time.\")"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "reported-speech-1",
+        "promptThai": "พูดว่า: เธอบอกว่าเธอเหนื่อย",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "was tired",
+            "phonetic": "วอส ไทร์ด"
+          },
+          {
+            "text": "is tired",
+            "phonetic": "อิส ไทร์ด",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "said",
+          "she",
+          "was tired"
+        ],
+        "phonetic": "ชี เซด ชี วอส ไทร์ด",
+        "thai": "เธอบอกว่าเธอเหนื่อย",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'was tired' ไม่ใช่ 'is tired' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-2",
+        "promptThai": "พูดว่า: เขาบอกว่าเขาทำงานที่นี่",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "worked here",
+            "phonetic": "เวิร์คท์ เฮียร์"
+          },
+          {
+            "text": "works here",
+            "phonetic": "เวิร์คส์ เฮียร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "said",
+          "he",
+          "worked here"
+        ],
+        "phonetic": "ฮี เซด ฮี เวิร์คท์ เฮียร์",
+        "thai": "เขาบอกว่าเขาทำงานที่นี่",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'worked here' ไม่ใช่ 'works here' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-3",
+        "promptThai": "พูดว่า: เธอบอกว่าเธอชอบกาแฟ",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "liked coffee",
+            "phonetic": "ไลค์ท คอฟ-ฟี่"
+          },
+          {
+            "text": "likes coffee",
+            "phonetic": "ไลค์ส คอฟ-ฟี่",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "said",
+          "she",
+          "liked coffee"
+        ],
+        "phonetic": "ชี เซด ชี ไลค์ท คอฟ-ฟี่",
+        "thai": "เธอบอกว่าเธอชอบกาแฟ",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'liked coffee' ไม่ใช่ 'likes coffee' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-4",
+        "promptThai": "พูดว่า: เขาบอกว่าเขายุ่ง",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "was busy",
+            "phonetic": "วอส บิส-ซี่"
+          },
+          {
+            "text": "is busy",
+            "phonetic": "อิส บิส-ซี่",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "said",
+          "he",
+          "was busy"
+        ],
+        "phonetic": "ฮี เซด ฮี วอส บิส-ซี่",
+        "thai": "เขาบอกว่าเขายุ่ง",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'was busy' ไม่ใช่ 'is busy' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-5",
+        "promptThai": "พูดว่า: พวกเขาบอกว่าพวกเขาพร้อม",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "were ready",
+            "phonetic": "เวอร์ เรด-ดี้"
+          },
+          {
+            "text": "are ready",
+            "phonetic": "อาร์ เรด-ดี้",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "said",
+          "they",
+          "were ready"
+        ],
+        "phonetic": "เดย์ เซด เดย์ เวอร์ เรด-ดี้",
+        "thai": "พวกเขาบอกว่าพวกเขาพร้อม",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'were ready' ไม่ใช่ 'are ready' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-6",
+        "promptThai": "พูดว่า: เธอบอกว่าเธออาศัยอยู่ที่กรุงเทพ",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "lived in Bangkok",
+            "phonetic": "ลิฟด์ อิน แบง-กอก"
+          },
+          {
+            "text": "lives in Bangkok",
+            "phonetic": "ลิฟส์ อิน แบง-กอก",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "said",
+          "she",
+          "lived in Bangkok"
+        ],
+        "phonetic": "ชี เซด ชี ลิฟด์ อิน แบง-กอก",
+        "thai": "เธอบอกว่าเธออาศัยอยู่ที่กรุงเทพ",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'lived in Bangkok' ไม่ใช่ 'lives in Bangkok' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-7",
+        "promptThai": "พูดว่า: เขาบอกว่าเขาต้องการความช่วยเหลือ",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "needed help",
+            "phonetic": "นี-ดิด เฮลพ์"
+          },
+          {
+            "text": "needs help",
+            "phonetic": "นีดส์ เฮลพ์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "said",
+          "he",
+          "needed help"
+        ],
+        "phonetic": "ฮี เซด ฮี นี-ดิด เฮลพ์",
+        "thai": "เขาบอกว่าเขาต้องการความช่วยเหลือ",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'needed help' ไม่ใช่ 'needs help' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-8",
+        "promptThai": "พูดว่า: เธอบอกว่าเธออยากกลับ",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "wanted to leave",
+            "phonetic": "วอน-ทิด ทู ลีฝ"
+          },
+          {
+            "text": "wants to leave",
+            "phonetic": "วอนท์ส ทู ลีฝ",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "said",
+          "she",
+          "wanted to leave"
+        ],
+        "phonetic": "ชี เซด ชี วอน-ทิด ทู ลีฝ",
+        "thai": "เธอบอกว่าเธออยากกลับ",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'wanted to leave' ไม่ใช่ 'wants to leave' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-9",
+        "promptThai": "พูดว่า: พวกเขาบอกว่าพวกเขามีรถยนต์",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "had a car",
+            "phonetic": "แฮด อะ คาร์"
+          },
+          {
+            "text": "have a car",
+            "phonetic": "แฮฟ อะ คาร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "said",
+          "they",
+          "had a car"
+        ],
+        "phonetic": "เดย์ เซด เดย์ แฮด อะ คาร์",
+        "thai": "พวกเขาบอกว่าพวกเขามีรถยนต์",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'had a car' ไม่ใช่ 'have a car' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-10",
+        "promptThai": "พูดว่า: เขาบอกว่าเขาไม่มีเวลา",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "didn't have time",
+            "phonetic": "ดิด-เอิ้นท์ แฮฟ ไทม์"
+          },
+          {
+            "text": "doesn't have time",
+            "phonetic": "ดัส-เอิ้นท์ แฮฟ ไทม์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "said",
+          "he",
+          "didn't have time"
+        ],
+        "phonetic": "ฮี เซด ฮี ดิด-เอิ้นท์ แฮฟ ไทม์",
+        "thai": "เขาบอกว่าเขาไม่มีเวลา",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'didn't have time' ไม่ใช่ 'doesn't have time' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-11",
+        "promptThai": "พูดว่า: เธอบอกว่าเธอมีความสุข",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "was happy",
+            "phonetic": "วอส แฮพ-พี่"
+          },
+          {
+            "text": "is happy",
+            "phonetic": "อิส แฮพ-พี่",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "said",
+          "she",
+          "was happy"
+        ],
+        "phonetic": "ชี เซด ชี วอส แฮพ-พี่",
+        "thai": "เธอบอกว่าเธอมีความสุข",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'was happy' ไม่ใช่ 'is happy' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-12",
+        "promptThai": "พูดว่า: เขาบอกว่าเขารู้คำตอบ",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "knew the answer",
+            "phonetic": "นิว เดอะ แอน-เซอร์"
+          },
+          {
+            "text": "knows the answer",
+            "phonetic": "โนส เดอะ แอน-เซอร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "said",
+          "he",
+          "knew the answer"
+        ],
+        "phonetic": "ฮี เซด ฮี นิว เดอะ แอน-เซอร์",
+        "thai": "เขาบอกว่าเขารู้คำตอบ",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'knew the answer' ไม่ใช่ 'knows the answer' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-13",
+        "promptThai": "พูดว่า: พวกเขาบอกว่าพวกเขากำลังรออยู่",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "were waiting",
+            "phonetic": "เวอร์ เวท-ทิ่ง"
+          },
+          {
+            "text": "are waiting",
+            "phonetic": "อาร์ เวท-ทิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "said",
+          "they",
+          "were waiting"
+        ],
+        "phonetic": "เดย์ เซด เดย์ เวอร์ เวท-ทิ่ง",
+        "thai": "พวกเขาบอกว่าพวกเขากำลังรออยู่",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'were waiting' ไม่ใช่ 'are waiting' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-14",
+        "promptThai": "พูดว่า: เธอบอกว่าเธอกำลังเรียนภาษาอังกฤษอยู่",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "was studying English",
+            "phonetic": "วอส สทัด-ดี้-อิ่ง อิง-กลิช"
+          },
+          {
+            "text": "is studying English",
+            "phonetic": "อิส สทัด-ดี้-อิ่ง อิง-กลิช",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "said",
+          "she",
+          "was studying English"
+        ],
+        "phonetic": "ชี เซด ชี วอส สทัด-ดี้-อิ่ง อิง-กลิช",
+        "thai": "เธอบอกว่าเธอกำลังเรียนภาษาอังกฤษอยู่",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'was studying English' ไม่ใช่ 'is studying English' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-15",
+        "promptThai": "พูดว่า: เขาบอกว่าเขากำลังทำงานอยู่",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "was working",
+            "phonetic": "วอส เวิร์ค-กิ้ง"
+          },
+          {
+            "text": "is working",
+            "phonetic": "อิส เวิร์ค-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "said",
+          "he",
+          "was working"
+        ],
+        "phonetic": "ฮี เซด ฮี วอส เวิร์ค-กิ้ง",
+        "thai": "เขาบอกว่าเขากำลังทำงานอยู่",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'was working' ไม่ใช่ 'is working' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-16",
+        "promptThai": "พูดว่า: พวกเขาบอกว่าพวกเขากำลังจะไปแล้ว",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "were leaving",
+            "phonetic": "เวอร์ ลี-วิ่ง"
+          },
+          {
+            "text": "are leaving",
+            "phonetic": "อาร์ ลี-วิ่ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "said",
+          "they",
+          "were leaving"
+        ],
+        "phonetic": "เดย์ เซด เดย์ เวอร์ ลี-วิ่ง",
+        "thai": "พวกเขาบอกว่าพวกเขากำลังจะไปแล้ว",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'were leaving' ไม่ใช่ 'are leaving' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-17",
+        "promptThai": "พูดว่า: เธอบอกว่าเธอกำลังทำอาหารเย็นอยู่",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "was cooking dinner",
+            "phonetic": "วอส คุค-กิ้ง ดิน-เนอร์"
+          },
+          {
+            "text": "is cooking dinner",
+            "phonetic": "อิส คุค-กิ้ง ดิน-เนอร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "said",
+          "she",
+          "was cooking dinner"
+        ],
+        "phonetic": "ชี เซด ชี วอส คุค-กิ้ง ดิน-เนอร์",
+        "thai": "เธอบอกว่าเธอกำลังทำอาหารเย็นอยู่",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'was cooking dinner' ไม่ใช่ 'is cooking dinner' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-18",
+        "promptThai": "พูดว่า: เขาบอกว่าเขากำลังขับรถกลับบ้าน",
+        "chunks": [
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "was driving home",
+            "phonetic": "วอส ไดร-วิ่ง โฮม"
+          },
+          {
+            "text": "is driving home",
+            "phonetic": "อิส ไดร-วิ่ง โฮม",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "He",
+          "said",
+          "he",
+          "was driving home"
+        ],
+        "phonetic": "ฮี เซด ฮี วอส ไดร-วิ่ง โฮม",
+        "thai": "เขาบอกว่าเขากำลังขับรถกลับบ้าน",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'was driving home' ไม่ใช่ 'is driving home' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-19",
+        "promptThai": "พูดว่า: พวกเขาบอกว่าพวกเขากำลังคุยกันอยู่",
+        "chunks": [
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "were talking",
+            "phonetic": "เวอร์ ทอค-กิ้ง"
+          },
+          {
+            "text": "are talking",
+            "phonetic": "อาร์ ทอค-กิ้ง",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "They",
+          "said",
+          "they",
+          "were talking"
+        ],
+        "phonetic": "เดย์ เซด เดย์ เวอร์ ทอค-กิ้ง",
+        "thai": "พวกเขาบอกว่าพวกเขากำลังคุยกันอยู่",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'were talking' ไม่ใช่ 'are talking' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      },
+      {
+        "id": "reported-speech-20",
+        "promptThai": "พูดว่า: เธอบอกว่าเธอกำลังรออยู่ข้างนอก",
+        "chunks": [
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "said",
+            "phonetic": "เซด"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "was waiting outside",
+            "phonetic": "วอส เวท-ทิ่ง เอาท์-ไซด์"
+          },
+          {
+            "text": "is waiting outside",
+            "phonetic": "อิส เวท-ทิ่ง เอาท์-ไซด์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "She",
+          "said",
+          "she",
+          "was waiting outside"
+        ],
+        "phonetic": "ชี เซด ชี วอส เวท-ทิ่ง เอาท์-ไซด์",
+        "thai": "เธอบอกว่าเธอกำลังรออยู่ข้างนอก",
+        "explanation": "เมื่อรายงานคำพูด กริยาต้อง 'ถอยหลัง' หนึ่งขั้น (backshift) จึงใช้ 'was waiting outside' ไม่ใช่ 'is waiting outside' ซึ่งเป็นรูปปัจจุบันของคำพูดเดิม"
+      }
+    ]
+  },
+  {
+    "id": "second-conditional",
+    "title": "Second Conditional",
+    "titleTh": "ประโยคเงื่อนไขแบบที่ 2 (สมมติที่ไม่จริงในปัจจุบัน)",
+    "level": "B2",
+    "order": 26,
+    "structure": "If + [Subject] + Past Simple, [Subject] + would + [base verb]",
+    "functionWords": [
+      {
+        "word": "If + Past Simple",
+        "role": "ประโยคเงื่อนไข ใช้ Past Simple แต่ไม่ได้หมายถึงอดีตจริงๆ -- เป็นการสมมติสิ่งที่ไม่จริงหรือไม่น่าเกิดขึ้นในปัจจุบัน/อนาคต"
+      },
+      {
+        "word": "would + verb (base)",
+        "role": "ผลลัพธ์ที่จะเกิดขึ้นถ้าเงื่อนไขสมมตินั้นเป็นจริง"
+      },
+      {
+        "word": "were (แทน was) ทุกประธาน",
+        "role": "ในรูปแบบทางการ ใช้ 'were' กับทุกประธานแม้แต่ I/he/she/it เช่น 'If I were you...' -- แต่ในภาษาพูดทั่วไป 'was' ก็ใช้ได้เช่นกัน"
+      }
+    ],
+    "timeNote": "Second Conditional ต่างจาก Zero Conditional (ความจริงทั่วไป) และ First Conditional (สิ่งที่เป็นไปได้จริงในอนาคต) ตรงที่พูดถึงสิ่งสมมติที่ไม่จริงหรือไม่น่าเกิดขึ้นในปัจจุบัน/อนาคต เช่น 'If I were you, I would...' (แต่ฉันไม่ใช่คุณจริงๆ) -- ใช้ Past Simple ใน if-clause (แม้จะไม่ได้พูดถึงอดีต) ตามด้วย would + กริยาช่องที่ 1 ในผลลัพธ์ -- ลำดับการเรียนที่แนะนำ: Zero Conditional → First Conditional → Second Conditional (จากความจริงทั่วไป → เป็นไปได้จริง → สมมติที่ไม่จริง)",
+    "examples": [
+      {
+        "text": "If I were you, I would take the job.",
+        "phonetic": "อิฟ ไอ เวอร์ ยู ไอ วูด เทค เดอะ จ็อบ",
+        "thai": "ถ้าฉันเป็นคุณ ฉันจะรับงานนี้"
+      },
+      {
+        "text": "If she had more time, she would travel more.",
+        "phonetic": "อิฟ ชี แฮด มอร์ ไทม์ ชี วูด แทร-เวิล มอร์",
+        "thai": "ถ้าเธอมีเวลามากกว่านี้ เธอจะเดินทางบ่อยขึ้น"
+      },
+      {
+        "text": "If I won the lottery, I would buy a house.",
+        "phonetic": "อิฟ ไอ วอน เดอะ ล็อท-เทอ-รี่ ไอ วูด บาย อะ เฮาส์",
+        "thai": "ถ้าฉันถูกลอตเตอรี่ ฉันจะซื้อบ้าน"
+      },
+      {
+        "text": "If he studied harder, he would pass the exam.",
+        "phonetic": "อิฟ ฮี สทัด-ดีด ฮาร์-เดอร์ ฮี วูด พาส เดอะ เอ็ก-แซม",
+        "thai": "ถ้าเขาตั้งใจเรียนมากกว่านี้ เขาจะสอบผ่าน"
+      },
+      {
+        "text": "If we had a bigger office, we would hire more staff.",
+        "phonetic": "อิฟ วี แฮด อะ บิก-เกอร์ ออฟ-ฟิส วี วูด ไฮร์ มอร์ สแทฟฟ์",
+        "thai": "ถ้าเรามีออฟฟิศที่ใหญ่กว่านี้ เราจะจ้างพนักงานเพิ่ม"
+      },
+      {
+        "text": "If they knew the answer, they would tell us.",
+        "phonetic": "อิฟ เดย์ นิว ดิ แอน-เซอร์ เดย์ วูด เทล อัส",
+        "thai": "ถ้าพวกเขารู้คำตอบ พวกเขาจะบอกเรา"
+      },
+      {
+        "text": "I wouldn't do that if I were you.",
+        "phonetic": "ไอ วูด-เอิ้นท์ ดู แดท อิฟ ไอ เวอร์ ยู",
+        "thai": "ฉันจะไม่ทำแบบนั้นถ้าฉันเป็นคุณ"
+      }
+    ],
+    "wordOrderQuestions": [
+      {
+        "id": "second-conditional-1",
+        "promptThai": "พูดว่า: ถ้าฉันเป็นคุณ ฉันจะรับงานนี้",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์"
+          },
+          {
+            "text": "you,",
+            "phonetic": "ยู,"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "would take",
+            "phonetic": "วูด เทค"
+          },
+          {
+            "text": "the job",
+            "phonetic": "เดอะ จ็อบ"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "will take",
+            "phonetic": "วิล เทค",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "I",
+          "were",
+          "you,",
+          "I",
+          "would take",
+          "the job"
+        ],
+        "phonetic": "อิฟ ไอ เวอร์ ยู, ไอ วูด เทค เดอะ จ็อบ",
+        "thai": "ถ้าฉันเป็นคุณ ฉันจะรับงานนี้",
+        "explanation": "Second Conditional ใช้ Past Simple ('were') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-2",
+        "promptThai": "พูดว่า: ถ้าเธอมีเวลามากกว่านี้ เธอจะเดินทางบ่อยขึ้น",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "had",
+            "phonetic": "แฮด"
+          },
+          {
+            "text": "more time,",
+            "phonetic": "มอร์ ไทม์,"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "would travel",
+            "phonetic": "วูด แทร-เวิล"
+          },
+          {
+            "text": "more",
+            "phonetic": "มอร์"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "will travel",
+            "phonetic": "วิล แทร-เวิล",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "She",
+          "had",
+          "more time,",
+          "she",
+          "would travel",
+          "more"
+        ],
+        "phonetic": "อิฟ ชี แฮด มอร์ ไทม์, ชี วูด แทร-เวิล มอร์",
+        "thai": "ถ้าเธอมีเวลามากกว่านี้ เธอจะเดินทางบ่อยขึ้น",
+        "explanation": "Second Conditional ใช้ Past Simple ('had') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-3",
+        "promptThai": "พูดว่า: ถ้าฉันถูกลอตเตอรี่ ฉันจะซื้อบ้าน",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "won",
+            "phonetic": "วอน"
+          },
+          {
+            "text": "the lottery,",
+            "phonetic": "เดอะ ล็อท-เทอ-รี่,"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "would buy",
+            "phonetic": "วูด บาย"
+          },
+          {
+            "text": "a house",
+            "phonetic": "อะ เฮาส์"
+          },
+          {
+            "text": "win",
+            "phonetic": "วิน",
+            "isDistractor": true
+          },
+          {
+            "text": "will buy",
+            "phonetic": "วิล บาย",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "I",
+          "won",
+          "the lottery,",
+          "I",
+          "would buy",
+          "a house"
+        ],
+        "phonetic": "อิฟ ไอ วอน เดอะ ล็อท-เทอ-รี่, ไอ วูด บาย อะ เฮาส์",
+        "thai": "ถ้าฉันถูกลอตเตอรี่ ฉันจะซื้อบ้าน",
+        "explanation": "Second Conditional ใช้ Past Simple ('won') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-4",
+        "promptThai": "พูดว่า: ถ้าเขาตั้งใจเรียนมากกว่านี้ เขาจะสอบผ่าน",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "studied",
+            "phonetic": "สทัด-ดีด"
+          },
+          {
+            "text": "harder,",
+            "phonetic": "ฮาร์-เดอร์,"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "would pass",
+            "phonetic": "วูด พาส"
+          },
+          {
+            "text": "the exam",
+            "phonetic": "ดิ เอ็ก-แซม"
+          },
+          {
+            "text": "studies",
+            "phonetic": "สทัด-ดี้ส์",
+            "isDistractor": true
+          },
+          {
+            "text": "will pass",
+            "phonetic": "วิล พาส",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "He",
+          "studied",
+          "harder,",
+          "he",
+          "would pass",
+          "the exam"
+        ],
+        "phonetic": "อิฟ ฮี สทัด-ดีด ฮาร์-เดอร์, ฮี วูด พาส ดิ เอ็ก-แซม",
+        "thai": "ถ้าเขาตั้งใจเรียนมากกว่านี้ เขาจะสอบผ่าน",
+        "explanation": "Second Conditional ใช้ Past Simple ('studied') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-5",
+        "promptThai": "พูดว่า: ถ้าเรามีออฟฟิศที่ใหญ่กว่านี้ เราจะจ้างพนักงานเพิ่ม",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "had",
+            "phonetic": "แฮด"
+          },
+          {
+            "text": "a bigger office,",
+            "phonetic": "อะ บิก-เกอร์ ออฟ-ฟิส,"
+          },
+          {
+            "text": "we",
+            "phonetic": "วี"
+          },
+          {
+            "text": "would hire",
+            "phonetic": "วูด ไฮร์"
+          },
+          {
+            "text": "more staff",
+            "phonetic": "มอร์ สแทฟฟ์"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "will hire",
+            "phonetic": "วิล ไฮร์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "We",
+          "had",
+          "a bigger office,",
+          "we",
+          "would hire",
+          "more staff"
+        ],
+        "phonetic": "อิฟ วี แฮด อะ บิก-เกอร์ ออฟ-ฟิส, วี วูด ไฮร์ มอร์ สแทฟฟ์",
+        "thai": "ถ้าเรามีออฟฟิศที่ใหญ่กว่านี้ เราจะจ้างพนักงานเพิ่ม",
+        "explanation": "Second Conditional ใช้ Past Simple ('had') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-6",
+        "promptThai": "พูดว่า: ถ้าพวกเขารู้คำตอบ พวกเขาจะบอกเรา",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "knew",
+            "phonetic": "นิว"
+          },
+          {
+            "text": "the answer,",
+            "phonetic": "ดิ แอน-เซอร์,"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "would tell",
+            "phonetic": "วูด เทล"
+          },
+          {
+            "text": "us",
+            "phonetic": "อัส"
+          },
+          {
+            "text": "know",
+            "phonetic": "โน",
+            "isDistractor": true
+          },
+          {
+            "text": "will tell",
+            "phonetic": "วิล เทล",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "They",
+          "knew",
+          "the answer,",
+          "they",
+          "would tell",
+          "us"
+        ],
+        "phonetic": "อิฟ เดย์ นิว ดิ แอน-เซอร์, เดย์ วูด เทล อัส",
+        "thai": "ถ้าพวกเขารู้คำตอบ พวกเขาจะบอกเรา",
+        "explanation": "Second Conditional ใช้ Past Simple ('knew') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-7",
+        "promptThai": "พูดว่า: ถ้าฉันรวย ฉันจะเดินทางรอบโลก",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์"
+          },
+          {
+            "text": "rich,",
+            "phonetic": "ริช,"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "would travel",
+            "phonetic": "วูด แทร-เวิล"
+          },
+          {
+            "text": "the world",
+            "phonetic": "เดอะ เวิลด์"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "will travel",
+            "phonetic": "วิล แทร-เวิล",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "I",
+          "were",
+          "rich,",
+          "I",
+          "would travel",
+          "the world"
+        ],
+        "phonetic": "อิฟ ไอ เวอร์ ริช, ไอ วูด แทร-เวิล เดอะ เวิลด์",
+        "thai": "ถ้าฉันรวย ฉันจะเดินทางรอบโลก",
+        "explanation": "Second Conditional ใช้ Past Simple ('were') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-8",
+        "promptThai": "พูดว่า: ถ้าเธอพูดภาษาอังกฤษได้ เธอจะได้งานที่ดีกว่า",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "spoke",
+            "phonetic": "สโปค"
+          },
+          {
+            "text": "English,",
+            "phonetic": "อิง-กลิช,"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "would get",
+            "phonetic": "วูด เก็ท"
+          },
+          {
+            "text": "a better job",
+            "phonetic": "อะ เบท-เทอร์ จ็อบ"
+          },
+          {
+            "text": "speaks",
+            "phonetic": "สปีคส์",
+            "isDistractor": true
+          },
+          {
+            "text": "will get",
+            "phonetic": "วิล เก็ท",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "She",
+          "spoke",
+          "English,",
+          "she",
+          "would get",
+          "a better job"
+        ],
+        "phonetic": "อิฟ ชี สโปค อิง-กลิช, ชี วูด เก็ท อะ เบท-เทอร์ จ็อบ",
+        "thai": "ถ้าเธอพูดภาษาอังกฤษได้ เธอจะได้งานที่ดีกว่า",
+        "explanation": "Second Conditional ใช้ Past Simple ('spoke') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-9",
+        "promptThai": "พูดว่า: ถ้าเขามีรถยนต์ เขาจะขับรถไปทำงาน",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "had",
+            "phonetic": "แฮด"
+          },
+          {
+            "text": "a car,",
+            "phonetic": "อะ คาร์,"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "would drive",
+            "phonetic": "วูด ไดรฟว์"
+          },
+          {
+            "text": "to work",
+            "phonetic": "ทู เวิร์ค"
+          },
+          {
+            "text": "has",
+            "phonetic": "แฮส",
+            "isDistractor": true
+          },
+          {
+            "text": "will drive",
+            "phonetic": "วิล ไดรฟว์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "He",
+          "had",
+          "a car,",
+          "he",
+          "would drive",
+          "to work"
+        ],
+        "phonetic": "อิฟ ฮี แฮด อะ คาร์, ฮี วูด ไดรฟว์ ทู เวิร์ค",
+        "thai": "ถ้าเขามีรถยนต์ เขาจะขับรถไปทำงาน",
+        "explanation": "Second Conditional ใช้ Past Simple ('had') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-10",
+        "promptThai": "พูดว่า: ถ้าเราสาย เราจะโทรแจ้งออฟฟิศ",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์"
+          },
+          {
+            "text": "late,",
+            "phonetic": "เลท,"
+          },
+          {
+            "text": "we",
+            "phonetic": "วี"
+          },
+          {
+            "text": "would call",
+            "phonetic": "วูด คอล"
+          },
+          {
+            "text": "the office",
+            "phonetic": "ดิ ออฟ-ฟิส"
+          },
+          {
+            "text": "are",
+            "phonetic": "อาร์",
+            "isDistractor": true
+          },
+          {
+            "text": "will call",
+            "phonetic": "วิล คอล",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "We",
+          "were",
+          "late,",
+          "we",
+          "would call",
+          "the office"
+        ],
+        "phonetic": "อิฟ วี เวอร์ เลท, วี วูด คอล ดิ ออฟ-ฟิส",
+        "thai": "ถ้าเราสาย เราจะโทรแจ้งออฟฟิศ",
+        "explanation": "Second Conditional ใช้ Past Simple ('were') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-11",
+        "promptThai": "พูดว่า: ถ้าฉันตกงาน ฉันจะหางานใหม่",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "lost",
+            "phonetic": "ล็อสท์"
+          },
+          {
+            "text": "my job,",
+            "phonetic": "มาย จ็อบ,"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "would look",
+            "phonetic": "วูด ลุค"
+          },
+          {
+            "text": "for a new one",
+            "phonetic": "ฟอร์ อะ นิว วัน"
+          },
+          {
+            "text": "lose",
+            "phonetic": "ลูส",
+            "isDistractor": true
+          },
+          {
+            "text": "will look",
+            "phonetic": "วิล ลุค",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "I",
+          "lost",
+          "my job,",
+          "I",
+          "would look",
+          "for a new one"
+        ],
+        "phonetic": "อิฟ ไอ ล็อสท์ มาย จ็อบ, ไอ วูด ลุค ฟอร์ อะ นิว วัน",
+        "thai": "ถ้าฉันตกงาน ฉันจะหางานใหม่",
+        "explanation": "Second Conditional ใช้ Past Simple ('lost') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-12",
+        "promptThai": "พูดว่า: ถ้าเธอเป็นผู้จัดการ เธอจะเปลี่ยนกฎ",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์"
+          },
+          {
+            "text": "the manager,",
+            "phonetic": "เดอะ แมน-นิ-เจอร์,"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "would change",
+            "phonetic": "วูด เชนจ์"
+          },
+          {
+            "text": "the rules",
+            "phonetic": "เดอะ รูลส์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "will change",
+            "phonetic": "วิล เชนจ์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "She",
+          "were",
+          "the manager,",
+          "she",
+          "would change",
+          "the rules"
+        ],
+        "phonetic": "อิฟ ชี เวอร์ เดอะ แมน-นิ-เจอร์, ชี วูด เชนจ์ เดอะ รูลส์",
+        "thai": "ถ้าเธอเป็นผู้จัดการ เธอจะเปลี่ยนกฎ",
+        "explanation": "Second Conditional ใช้ Past Simple ('were') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-13",
+        "promptThai": "พูดว่า: ถ้าพวกเขาอาศัยอยู่ใกล้ๆ พวกเขาจะมาเยี่ยมบ่อยขึ้น",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "lived",
+            "phonetic": "ลิฟด์"
+          },
+          {
+            "text": "nearby,",
+            "phonetic": "เนียร์-บาย,"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "would visit",
+            "phonetic": "วูด วิ-สิท"
+          },
+          {
+            "text": "more often",
+            "phonetic": "มอร์ ออฟ-เทิ่น"
+          },
+          {
+            "text": "live",
+            "phonetic": "ลิฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "will visit",
+            "phonetic": "วิล วิ-สิท",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "They",
+          "lived",
+          "nearby,",
+          "they",
+          "would visit",
+          "more often"
+        ],
+        "phonetic": "อิฟ เดย์ ลิฟด์ เนียร์-บาย, เดย์ วูด วิ-สิท มอร์ ออฟ-เทิ่น",
+        "thai": "ถ้าพวกเขาอาศัยอยู่ใกล้ๆ พวกเขาจะมาเยี่ยมบ่อยขึ้น",
+        "explanation": "Second Conditional ใช้ Past Simple ('lived') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-14",
+        "promptThai": "พูดว่า: ถ้าเขารู้ความจริง เขาจะบอกหัวหน้า",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "knew",
+            "phonetic": "นิว"
+          },
+          {
+            "text": "the truth,",
+            "phonetic": "เดอะ ทรูธ,"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "would tell",
+            "phonetic": "วูด เทล"
+          },
+          {
+            "text": "his boss",
+            "phonetic": "ฮิส บอส"
+          },
+          {
+            "text": "knows",
+            "phonetic": "โนส",
+            "isDistractor": true
+          },
+          {
+            "text": "will tell",
+            "phonetic": "วิล เทล",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "He",
+          "knew",
+          "the truth,",
+          "he",
+          "would tell",
+          "his boss"
+        ],
+        "phonetic": "อิฟ ฮี นิว เดอะ ทรูธ, ฮี วูด เทล ฮิส บอส",
+        "thai": "ถ้าเขารู้ความจริง เขาจะบอกหัวหน้า",
+        "explanation": "Second Conditional ใช้ Past Simple ('knew') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-15",
+        "promptThai": "พูดว่า: ถ้าฉันมีเงินพอ ฉันจะซื้อรถใหม่",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "had",
+            "phonetic": "แฮด"
+          },
+          {
+            "text": "enough money,",
+            "phonetic": "อิ-นัฟ มัน-นี่,"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "would buy",
+            "phonetic": "วูด บาย"
+          },
+          {
+            "text": "a new car",
+            "phonetic": "อะ นิว คาร์"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "will buy",
+            "phonetic": "วิล บาย",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "I",
+          "had",
+          "enough money,",
+          "I",
+          "would buy",
+          "a new car"
+        ],
+        "phonetic": "อิฟ ไอ แฮด อิ-นัฟ มัน-นี่, ไอ วูด บาย อะ นิว คาร์",
+        "thai": "ถ้าฉันมีเงินพอ ฉันจะซื้อรถใหม่",
+        "explanation": "Second Conditional ใช้ Past Simple ('had') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-16",
+        "promptThai": "พูดว่า: ถ้าเราต้องการความช่วยเหลือ เราจะขอคุณ",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "We",
+            "phonetic": "วี"
+          },
+          {
+            "text": "needed",
+            "phonetic": "นี-ดิด"
+          },
+          {
+            "text": "help,",
+            "phonetic": "เฮลพ์,"
+          },
+          {
+            "text": "we",
+            "phonetic": "วี"
+          },
+          {
+            "text": "would ask",
+            "phonetic": "วูด อาสค์"
+          },
+          {
+            "text": "you",
+            "phonetic": "ยู"
+          },
+          {
+            "text": "need",
+            "phonetic": "นีด",
+            "isDistractor": true
+          },
+          {
+            "text": "will ask",
+            "phonetic": "วิล อาสค์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "We",
+          "needed",
+          "help,",
+          "we",
+          "would ask",
+          "you"
+        ],
+        "phonetic": "อิฟ วี นี-ดิด เฮลพ์, วี วูด อาสค์ ยู",
+        "thai": "ถ้าเราต้องการความช่วยเหลือ เราจะขอคุณ",
+        "explanation": "Second Conditional ใช้ Past Simple ('needed') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-17",
+        "promptThai": "พูดว่า: ถ้าเธอว่าง เธอจะมาทานข้าวเที่ยงกับเรา",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "She",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์"
+          },
+          {
+            "text": "free,",
+            "phonetic": "ฟรี,"
+          },
+          {
+            "text": "she",
+            "phonetic": "ชี"
+          },
+          {
+            "text": "would join",
+            "phonetic": "วูด จอยน์"
+          },
+          {
+            "text": "us for lunch",
+            "phonetic": "อัส ฟอร์ ลันช์"
+          },
+          {
+            "text": "is",
+            "phonetic": "อิส",
+            "isDistractor": true
+          },
+          {
+            "text": "will join",
+            "phonetic": "วิล จอยน์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "She",
+          "were",
+          "free,",
+          "she",
+          "would join",
+          "us for lunch"
+        ],
+        "phonetic": "อิฟ ชี เวอร์ ฟรี, ชี วูด จอยน์ อัส ฟอร์ ลันช์",
+        "thai": "ถ้าเธอว่าง เธอจะมาทานข้าวเที่ยงกับเรา",
+        "explanation": "Second Conditional ใช้ Past Simple ('were') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-18",
+        "promptThai": "พูดว่า: ถ้าเขาทำโปรเจกต์เสร็จเร็ว เขาจะไปพักร้อน",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "He",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "finished",
+            "phonetic": "ฟิน-นิชท์"
+          },
+          {
+            "text": "the project early,",
+            "phonetic": "เดอะ พรอ-เจ็ค เออร์-ลี่,"
+          },
+          {
+            "text": "he",
+            "phonetic": "ฮี"
+          },
+          {
+            "text": "would take",
+            "phonetic": "วูด เทค"
+          },
+          {
+            "text": "a vacation",
+            "phonetic": "อะ เว-เค-ชั่น"
+          },
+          {
+            "text": "finishes",
+            "phonetic": "ฟิน-นิช-เชส",
+            "isDistractor": true
+          },
+          {
+            "text": "will take",
+            "phonetic": "วิล เทค",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "He",
+          "finished",
+          "the project early,",
+          "he",
+          "would take",
+          "a vacation"
+        ],
+        "phonetic": "อิฟ ฮี ฟิน-นิชท์ เดอะ พรอ-เจ็ค เออร์-ลี่, ฮี วูด เทค อะ เว-เค-ชั่น",
+        "thai": "ถ้าเขาทำโปรเจกต์เสร็จเร็ว เขาจะไปพักร้อน",
+        "explanation": "Second Conditional ใช้ Past Simple ('finished') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-19",
+        "promptThai": "พูดว่า: ถ้าฉันเป็นคนรับผิดชอบ ฉันจะแก้ปัญหานี้",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "were",
+            "phonetic": "เวอร์"
+          },
+          {
+            "text": "in charge,",
+            "phonetic": "อิน ชาร์จ,"
+          },
+          {
+            "text": "I",
+            "phonetic": "ไอ"
+          },
+          {
+            "text": "would fix",
+            "phonetic": "วูด ฟิกซ์"
+          },
+          {
+            "text": "this problem",
+            "phonetic": "ดิส พรอบ-เล็ม"
+          },
+          {
+            "text": "am",
+            "phonetic": "แอม",
+            "isDistractor": true
+          },
+          {
+            "text": "will fix",
+            "phonetic": "วิล ฟิกซ์",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "I",
+          "were",
+          "in charge,",
+          "I",
+          "would fix",
+          "this problem"
+        ],
+        "phonetic": "อิฟ ไอ เวอร์ อิน ชาร์จ, ไอ วูด ฟิกซ์ ดิส พรอบ-เล็ม",
+        "thai": "ถ้าฉันเป็นคนรับผิดชอบ ฉันจะแก้ปัญหานี้",
+        "explanation": "Second Conditional ใช้ Past Simple ('were') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      },
+      {
+        "id": "second-conditional-20",
+        "promptThai": "พูดว่า: ถ้าพวกเขามีคนงานมากกว่านี้ พวกเขาจะทำเสร็จเร็วกว่านี้",
+        "chunks": [
+          {
+            "text": "If",
+            "phonetic": "อิฟ"
+          },
+          {
+            "text": "They",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "had",
+            "phonetic": "แฮด"
+          },
+          {
+            "text": "more workers,",
+            "phonetic": "มอร์ เวิร์ค-เกอร์ส,"
+          },
+          {
+            "text": "they",
+            "phonetic": "เดย์"
+          },
+          {
+            "text": "would finish",
+            "phonetic": "วูด ฟิน-นิช"
+          },
+          {
+            "text": "faster",
+            "phonetic": "ฟาสท์-เทอร์"
+          },
+          {
+            "text": "have",
+            "phonetic": "แฮฟ",
+            "isDistractor": true
+          },
+          {
+            "text": "will finish",
+            "phonetic": "วิล ฟิน-นิช",
+            "isDistractor": true
+          }
+        ],
+        "correctOrder": [
+          "If",
+          "They",
+          "had",
+          "more workers,",
+          "they",
+          "would finish",
+          "faster"
+        ],
+        "phonetic": "อิฟ เดย์ แฮด มอร์ เวิร์ค-เกอร์ส, เดย์ วูด ฟิน-นิช ฟาสท์-เทอร์",
+        "thai": "ถ้าพวกเขามีคนงานมากกว่านี้ พวกเขาจะทำเสร็จเร็วกว่านี้",
+        "explanation": "Second Conditional ใช้ Past Simple ('had') ใน if-clause แม้จะไม่ได้พูดถึงอดีตจริง และใช้ 'would' ไม่ใช่ 'will' ในผลลัพธ์ เพราะเป็นการสมมติสิ่งที่ไม่จริง/ไม่น่าเกิดขึ้น"
+      }
+    ]
   }
 ]
