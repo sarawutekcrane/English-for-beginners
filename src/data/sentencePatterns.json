@@ -1729,7 +1729,7 @@
   },
   {
     "id": "past-simple",
-    "order": 3,
+    "order": 12,
     "level": "A2",
     "title": "Past Simple",
     "titleTh": "อดีตกาลธรรมดา",
@@ -2675,7 +2675,7 @@
   },
   {
     "id": "present-continuous",
-    "order": 4,
+    "order": 11,
     "level": "A2",
     "title": "Present Continuous",
     "titleTh": "ปัจจุบันกาลต่อเนื่อง",
@@ -4137,7 +4137,7 @@
   },
   {
     "id": "going-to-future",
-    "order": 5,
+    "order": 15,
     "level": "A2",
     "title": "Going-to Future",
     "titleTh": "อนาคตกาลด้วย Going to",
@@ -4914,7 +4914,7 @@
   },
   {
     "id": "will-future",
-    "order": 6,
+    "order": 16,
     "level": "A2",
     "title": "Will Future",
     "titleTh": "อนาคตกาลด้วย Will",
@@ -5688,7 +5688,7 @@
   },
   {
     "id": "there-is-are",
-    "order": 7,
+    "order": 3,
     "level": "A2",
     "title": "There is / There are",
     "titleTh": "โครงสร้าง There is / There are (มี...อยู่)",
@@ -7354,7 +7354,7 @@
   },
   {
     "id": "comparatives",
-    "order": 9,
+    "order": 10,
     "level": "B1",
     "title": "Comparatives & Superlatives",
     "titleTh": "การเปรียบเทียบคำคุณศัพท์ (ขั้นกว่า & ขั้นสุด)",
@@ -8826,7 +8826,7 @@
   },
   {
     "id": "zero-conditional",
-    "order": 10,
+    "order": 20,
     "level": "B1",
     "title": "Zero Conditional",
     "titleTh": "ประโยคเงื่อนไขแบบที่ 0 (ความจริงทั่วไป)",
@@ -9388,7 +9388,7 @@
   },
   {
     "id": "first-conditional",
-    "order": 11,
+    "order": 21,
     "level": "B1",
     "title": "First Conditional",
     "titleTh": "ประโยคเงื่อนไขแบบที่ 1 (เหตุการณ์ในอนาคตที่เป็นไปได้)",
@@ -10127,7 +10127,7 @@
     "title": "Present Perfect: For / Since",
     "titleTh": "Present Perfect กับ For / Since (ระยะเวลา / จุดเริ่มต้น)",
     "level": "B1",
-    "order": 12,
+    "order": 17,
     "structure": "[Subject] + have/has + [past participle] + for + [duration] / since + [starting point]",
     "functionWords": [
       {
@@ -11313,7 +11313,7 @@
     "title": "Prepositions: In / On / At",
     "titleTh": "บุพบทบอกเวลาและสถานที่ In / On / At",
     "level": "A2",
-    "order": 13,
+    "order": 6,
     "structure": "[Sentence] + at + [specific time/point] / on + [day, date, or surface] / in + [longer period or enclosed/large space]",
     "functionWords": [
       {
@@ -12095,7 +12095,7 @@
     "title": "Can / Could (Requests & Permission)",
     "titleTh": "Can / Could สำหรับขอร้องและขออนุญาต",
     "level": "A2",
-    "order": 14,
+    "order": 9,
     "structure": "Can/Could + I/you + [base verb] + ...? (ขอร้องหรือขออนุญาต)",
     "functionWords": [
       {
@@ -12881,7 +12881,7 @@
     "title": "Question Formation",
     "titleTh": "การสร้างประโยคคำถาม (Yes/No & Wh-Questions)",
     "level": "B1",
-    "order": 15,
+    "order": 18,
     "structure": "[Question word] + auxiliary/modal + subject + verb...? (wh-question) / Auxiliary/modal + subject + verb...? (yes/no question)",
     "functionWords": [
       {
@@ -13712,7 +13712,7 @@
     "title": "Modals of Obligation: Must / Have to / Should",
     "titleTh": "กริยาช่วยแสดงข้อบังคับ Must / Have to / Should",
     "level": "B1",
-    "order": 16,
+    "order": 19,
     "structure": "[Subject] + must / have to (has to) / should + verb(base) + [Object]",
     "functionWords": [
       {
@@ -14598,7 +14598,7 @@
     "title": "Articles: A / An / The",
     "titleTh": "คำนำหน้านาม A / An / The (และการไม่ใช้คำนำหน้า)",
     "level": "B2",
-    "order": 17,
+    "order": 4,
     "structure": "a/an + [noun ที่กล่าวถึงครั้งแรก/ไม่เจาะจง] / the + [noun ที่เจาะจง/รู้กันอยู่แล้ว] / (ไม่มีคำนำหน้า) + [นามพหูพจน์/นับไม่ได้ที่พูดทั่วไป]",
     "functionWords": [
       {
@@ -15355,7 +15355,7 @@
     "title": "Imperatives (Commands & Instructions)",
     "titleTh": "ประโยคคำสั่ง Imperatives (คำสั่ง/คำแนะนำ)",
     "level": "A2",
-    "order": 18,
+    "order": 5,
     "structure": "[Base verb] + [Object]! (คำสั่ง/คำแนะนำ ไม่มีประธาน) / Don't + [base verb] + [Object]! (ปฏิเสธ) / Please + [base verb]... (สุภาพขึ้น)",
     "functionWords": [
       {
@@ -16082,7 +16082,7 @@
     "title": "Past Continuous",
     "titleTh": "อดีตกาลต่อเนื่อง (กำลังทำอยู่ในอดีต)",
     "level": "B1",
-    "order": 19,
+    "order": 13,
     "structure": "[Subject] + was/were + verb-ing + [Object] (+ when + Past Simple)",
     "functionWords": [
       {
@@ -17044,7 +17044,7 @@
     "title": "Used To (Past Habits)",
     "titleTh": "Used To สำหรับนิสัย/สภาพในอดีตที่เลิกไปแล้ว",
     "level": "B1",
-    "order": 20,
+    "order": 14,
     "structure": "[Subject] + used to + [base verb] + [Object] (อดีต) / didn't use to + [base verb] (ปฏิเสธ) / Did + [Subject] + use to + [base verb]? (คำถาม)",
     "functionWords": [
       {
@@ -17746,7 +17746,7 @@
     "title": "Quantifiers: Much / Many / A Lot Of / A Few / A Little",
     "titleTh": "คำบอกปริมาณ Much / Many / A Lot Of / A Few / A Little (นับได้ / นับไม่ได้)",
     "level": "A2",
-    "order": 21,
+    "order": 7,
     "structure": "many/a few + [นามนับได้พหูพจน์] / much/a little + [นามนับไม่ได้] / a lot of + [นามนับได้หรือนับไม่ได้]",
     "functionWords": [
       {
@@ -18532,7 +18532,7 @@
     "title": "Relative Clauses: Who / Which / That / Where",
     "titleTh": "อนุประโยคขยายความ Who / Which / That / Where",
     "level": "B1",
-    "order": 22,
+    "order": 23,
     "structure": "[Noun] + who/which/that/where + [clause] (ขยายความนามข้างหน้า)",
     "functionWords": [
       {
@@ -19318,7 +19318,7 @@
     "title": "Gerunds vs. Infinitives",
     "titleTh": "Gerund (verb-ing) กับ Infinitive (to + verb) หลังกริยาบางคำ",
     "level": "B1",
-    "order": 23,
+    "order": 24,
     "structure": "[Subject] + verb + [gerund: verb-ing] (เช่น enjoy doing, avoid doing, finish doing) / [Subject] + verb + [infinitive: to + verb] (เช่น want to do, decide to do, plan to do)",
     "functionWords": [
       {
@@ -20101,7 +20101,7 @@
     "title": "Passive Voice (Basic)",
     "titleTh": "กรรมวาจก Passive Voice (Present & Past Simple)",
     "level": "B2",
-    "order": 24,
+    "order": 25,
     "structure": "[Subject] + is/are/was/were + [past participle] + (by + [agent])",
     "functionWords": [
       {
@@ -20983,7 +20983,7 @@
     "title": "Reported Speech (Basic)",
     "titleTh": "การพูดแบบรายงาน Reported Speech (Present → Past)",
     "level": "B2",
-    "order": 25,
+    "order": 26,
     "structure": "[Subject] + said (that) + [Subject] + [Past Simple / Past Continuous] (เปลี่ยนกาลจากคำพูดเดิม)",
     "functionWords": [
       {
@@ -21765,7 +21765,7 @@
     "title": "Second Conditional",
     "titleTh": "ประโยคเงื่อนไขแบบที่ 2 (สมมติที่ไม่จริงในปัจจุบัน)",
     "level": "B2",
-    "order": 26,
+    "order": 22,
     "structure": "If + [Subject] + Past Simple, [Subject] + would + [base verb]",
     "functionWords": [
       {
