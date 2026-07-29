@@ -194,6 +194,11 @@ button {
   max-width: 720px;
   margin: 0 auto;
   padding: 16px 16px 40px;
+  /* Swipe-right-to-go-back: hints to the browser that horizontal touch
+     gestures anywhere in the app are handled by page JS, not native
+     scrolling/navigation -- vertical panning (pan-y) still works exactly
+     as before. See useSwipeBack.js for the gesture itself. */
+  touch-action: pan-y;
 }
 
 .top-bar {

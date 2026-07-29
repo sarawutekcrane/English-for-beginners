@@ -4,9 +4,11 @@ import Toggle from "../components/Toggle";
 import AnnotatedText from "../components/AnnotatedText";
 import VocabGroupPicker from "../components/VocabGroupPicker";
 import { useSpeak } from "../hooks/useSpeech";
+import { useSwipeBack } from "../hooks/useSwipeBack";
 import { VOCAB_CATEGORIES, getVocab, toCard, shuffle } from "../utils/content";
 
 function CategoryPicker({ group, onPick, onBack }) {
+  useSwipeBack(onBack);
   const categories = VOCAB_CATEGORIES.filter((c) => c.group === group.id);
   return (
     <div className="picker">
@@ -36,6 +38,7 @@ function CategoryPicker({ group, onPick, onBack }) {
 
 function FlashcardView({ selection, onBack }) {
   const { speak } = useSpeak();
+  useSwipeBack(onBack);
   const [shuffleOn, setShuffleOn] = useState(false);
   const [index, setIndex] = useState(0);
   const [showThai, setShowThai] = useState(false);

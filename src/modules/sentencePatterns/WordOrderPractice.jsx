@@ -2,6 +2,7 @@ import { useEffect, useMemo, useRef, useState } from "react";
 import Toggle from "../../components/Toggle";
 import AnnotatedText from "../../components/AnnotatedText";
 import { useSpeak } from "../../hooks/useSpeech";
+import { useSwipeBack } from "../../hooks/useSwipeBack";
 import { shuffle } from "../../utils/content";
 import { playCorrect, playIncorrect } from "../../utils/sound";
 import { useSinglePassSession } from "../../utils/reviewQueue";
@@ -32,6 +33,7 @@ function arrayMove(arr, from, to) {
 
 export default function WordOrderPractice({ pattern, onBack }) {
   const { speak } = useSpeak();
+  useSwipeBack(onBack);
   const [shuffleOn, setShuffleOn] = useState(false);
   const [showPhonetic, setShowPhonetic] = useState(false);
 
@@ -302,7 +304,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
         <div className="practice-card">
           <p className="th-text word-order-prompt">{question.promptThai}</p>
 
-          <div className="answer-slot" ref={answerSlotCallbackRef} onMouseDown={handleAnswerMouseDown}>
+          <div className="answer-slot" data-swipe-exempt ref={answerSlotCallbackRef} onMouseDown={handleAnswerMouseDown}>
             {answerItems.length === 0 && <span className="answer-slot-hint th-text">แตะคำด้านล่างตามลำดับ</span>}
             {answerItems.map((item) => (
               <button
@@ -319,7 +321,7 @@ export default function WordOrderPractice({ pattern, onBack }) {
             ))}
           </div>
 
-          <div className="chunk-pool">
+          <div className="chunk-pool" data-swipe-exempt>
             {poolItems.map((item) => (
               <button key={item.key} className="chunk-pill en-text" onClick={() => tapPool(item)} disabled={submitted}>
                 {item.text}

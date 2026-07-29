@@ -1,8 +1,10 @@
 import { useSpeak } from "../../hooks/useSpeech";
+import { useSwipeBack } from "../../hooks/useSwipeBack";
 import AnnotatedText from "../../components/AnnotatedText";
 
 export default function LessonView({ pattern, onBack }) {
   const { speak } = useSpeak();
+  useSwipeBack(onBack);
 
   return (
     <div className="lesson-view">

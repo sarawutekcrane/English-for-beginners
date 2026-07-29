@@ -3,6 +3,7 @@ import Toggle from "../components/Toggle";
 import AnnotatedText from "../components/AnnotatedText";
 import VocabGroupPicker from "../components/VocabGroupPicker";
 import { useSpeak } from "../hooks/useSpeech";
+import { useSwipeBack } from "../hooks/useSwipeBack";
 import { VOCAB_CATEGORIES, getVocab, toCard } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
 import { useSinglePassSession } from "../utils/reviewQueue";
@@ -53,6 +54,7 @@ function checkAnswer(typed, target) {
 }
 
 function CategoryPicker({ group, onPick, onBack }) {
+  useSwipeBack(onBack);
   const categories = VOCAB_CATEGORIES.filter((c) => c.group === group.id);
   return (
     <div className="picker">
@@ -78,6 +80,7 @@ function CategoryPicker({ group, onPick, onBack }) {
 
 function RecallView({ category, onBack }) {
   const { speak } = useSpeak();
+  useSwipeBack(onBack);
   const [shuffleOn, setShuffleOn] = useState(false);
   const baseCards = useMemo(() => getVocab(category.id).map(toCard), [category]);
   const session = useSinglePassSession(baseCards, shuffleOn);

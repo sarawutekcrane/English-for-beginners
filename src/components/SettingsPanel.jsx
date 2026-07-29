@@ -4,7 +4,7 @@ export default function SettingsPanel({ onClose }) {
   const { speechRate, setSpeechRate } = useSettings();
 
   return (
-    <div className="settings-overlay" onClick={onClose} role="presentation">
+    <div className="settings-overlay" data-swipe-exempt onClick={onClose} role="presentation">
       <div className="settings-panel" onClick={(e) => e.stopPropagation()}>
         <div className="settings-panel-header">
           <h3 className="th-text">⚙️ ตั้งค่า</h3>

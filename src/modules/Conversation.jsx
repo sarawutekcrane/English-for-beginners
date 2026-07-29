@@ -2,6 +2,7 @@ import { useEffect, useState } from "react";
 import AnnotatedText from "../components/AnnotatedText";
 import Toggle from "../components/Toggle";
 import { useSpeak } from "../hooks/useSpeech";
+import { useSwipeBack } from "../hooks/useSwipeBack";
 import { shuffle } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
 import conversations from "../data/conversations.json";
@@ -45,6 +46,7 @@ function GroupPicker({ onPick }) {
 }
 
 function TopicPicker({ group, onPick, onBack }) {
+  useSwipeBack(onBack);
   const topics = conversations.filter((t) => t.group === group.id);
   return (
     <div className="picker">
@@ -87,6 +89,7 @@ function ConversationLine({ line, showTranslation, showPhonetic }) {
 
 function DialogueView({ topic, onBack }) {
   const { speak, supported } = useSpeak();
+  useSwipeBack(onBack);
   const [nodeId, setNodeId] = useState(topic.start);
   const [options, setOptions] = useState(() => shuffle(topic.nodes[topic.start].options));
   const [showTranslation, setShowTranslation] = useState(false);

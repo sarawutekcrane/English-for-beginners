@@ -1,6 +1,7 @@
 import { useEffect, useRef, useState } from "react";
 import Toggle from "../../components/Toggle";
 import { useSpeak } from "../../hooks/useSpeech";
+import { useSwipeBack } from "../../hooks/useSwipeBack";
 import { getAllAdjectiveQuestions } from "../../utils/adjectives";
 import { playCorrect, playIncorrect } from "../../utils/sound";
 import { useSinglePassSession } from "../../utils/reviewQueue";
@@ -9,6 +10,7 @@ const BASE_QUESTIONS = getAllAdjectiveQuestions();
 
 export default function AdjectivePractice({ onBack }) {
   const { speak } = useSpeak();
+  useSwipeBack(onBack);
   const [shuffleOn, setShuffleOn] = useState(false);
   const [showThai, setShowThai] = useState(false);
   const [showPhonetic, setShowPhonetic] = useState(false);

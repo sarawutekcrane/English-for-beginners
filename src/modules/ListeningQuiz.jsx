@@ -3,12 +3,14 @@ import Toggle from "../components/Toggle";
 import AnnotatedText from "../components/AnnotatedText";
 import VocabGroupPicker from "../components/VocabGroupPicker";
 import { useSpeak } from "../hooks/useSpeech";
+import { useSwipeBack } from "../hooks/useSwipeBack";
 import { VOCAB_CATEGORIES, getVocab, toCard, sample, shuffle } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
 import { useSinglePassSession } from "../utils/reviewQueue";
 import PHONETIC_CONFUSIONS from "../data/phoneticConfusions.json";
 
 function PoolPicker({ group, onPick, onBack }) {
+  useSwipeBack(onBack);
   const categories = VOCAB_CATEGORIES.filter((c) => c.group === group.id);
   return (
     <div className="picker">
@@ -202,6 +204,7 @@ function CountdownBar({ timeLeft, duration, active, answered }) {
 
 function QuizView({ selection, onBack }) {
   const { speak } = useSpeak();
+  useSwipeBack(onBack);
   const [shuffleOn, setShuffleOn] = useState(false);
   const [pool] = useState(() => getVocab(selection.category).map(toCard));
 

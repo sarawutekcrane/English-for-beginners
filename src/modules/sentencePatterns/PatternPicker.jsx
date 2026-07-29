@@ -1,4 +1,5 @@
 import { patterns } from "../../utils/grammar";
+import { useSwipeBack } from "../../hooks/useSwipeBack";
 
 const orderedPatterns = [...patterns].sort((a, b) => a.order - b.order);
 
@@ -15,6 +16,7 @@ function PatternButton({ pattern, onPick }) {
 }
 
 export default function PatternPicker({ onPick, onBack }) {
+  useSwipeBack(onBack);
   return (
     <div className="picker">
       <button className="btn btn-outline btn-sm" onClick={onBack}>

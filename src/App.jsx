@@ -8,6 +8,7 @@ import Conversation from "./modules/Conversation";
 import SentencePatterns from "./modules/SentencePatterns";
 import VocabularyRecall from "./modules/VocabularyRecall";
 import { playClick } from "./utils/sound";
+import { useSwipeBack, useSwipeBackGesture } from "./hooks/useSwipeBack";
 
 const CLICKABLE_SELECTOR = "button, .topic-card, .reply-option, .quiz-option, .chunk-pill";
 
@@ -43,6 +44,15 @@ function App() {
     setView(next);
     setInstanceKey((k) => k + 1);
   };
+
+  // The app-wide swipe-right-to-go-back listener; lives here since App is
+  // always mounted. It always calls whichever back handler is currently
+  // registered via useSwipeBack -- the innermost one if a module has its
+  // own nested picker/view open, falling back to this screen's own goHome
+  // once that nested view unmounts (there's nothing to go back to from
+  // "home" itself, so no handler is registered there).
+  useSwipeBackGesture();
+  useSwipeBack(view !== "home" ? goHome : undefined);
 
   return (
     <div className="app-shell">

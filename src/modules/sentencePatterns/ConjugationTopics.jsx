@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSwipeBack } from "../../hooks/useSwipeBack";
 import TopicIntro from "./topics/TopicIntro";
 import TopicPresent from "./topics/TopicPresent";
 import TopicPast from "./topics/TopicPast";
@@ -16,6 +17,7 @@ const TOPICS = [
 ];
 
 function TopicList({ onPick, onBack }) {
+  useSwipeBack(onBack);
   return (
     <div className="picker">
       <button className="btn btn-outline btn-sm" onClick={onBack}>
@@ -38,6 +40,7 @@ function TopicList({ onPick, onBack }) {
 }
 
 function TopicDetail({ index, onBackToList, onNext }) {
+  useSwipeBack(onBackToList);
   const topic = TOPICS[index];
   const isLast = index === TOPICS.length - 1;
   const { Component } = topic;

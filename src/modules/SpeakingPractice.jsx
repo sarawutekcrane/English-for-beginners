@@ -5,6 +5,7 @@ import AnnotatedText from "../components/AnnotatedText";
 import InAppBrowserNotice from "../components/InAppBrowserNotice";
 import VocabGroupPicker from "../components/VocabGroupPicker";
 import { useSpeak, useSpeechRecognition, matchesEnglish } from "../hooks/useSpeech";
+import { useSwipeBack } from "../hooks/useSwipeBack";
 import { VOCAB_CATEGORIES, getVocab, toCard } from "../utils/content";
 import { playCorrect, playIncorrect } from "../utils/sound";
 import { useSinglePassSession } from "../utils/reviewQueue";
@@ -12,6 +13,7 @@ import { useSinglePassSession } from "../utils/reviewQueue";
 const NUMERIC_ONLY = /^\d+$/;
 
 function CategoryPicker({ group, onPick, onBack }) {
+  useSwipeBack(onBack);
   const categories = VOCAB_CATEGORIES.filter((c) => c.group === group.id);
   return (
     <div className="picker">
@@ -94,6 +96,7 @@ const STATUS = {
 function SpeakingView({ category, onBack }) {
   const { speak, speaking, primeSpeechEngine } = useSpeak();
   const { supported, listening, start } = useSpeechRecognition();
+  useSwipeBack(onBack);
 
   const [shuffleOn, setShuffleOn] = useState(false);
   const baseCards = useMemo(() => getVocab(category.id).map(toCard), [category]);

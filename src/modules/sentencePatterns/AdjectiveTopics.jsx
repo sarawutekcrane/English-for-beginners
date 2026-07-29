@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useSwipeBack } from "../../hooks/useSwipeBack";
 import AdjectiveIntro from "./adjectives/AdjectiveIntro";
 import AdjectiveErEst from "./adjectives/AdjectiveErEst";
 import AdjectiveMoreMost from "./adjectives/AdjectiveMoreMost";
@@ -14,6 +15,7 @@ const TOPICS = [
 ];
 
 function TopicList({ onPick, onBack }) {
+  useSwipeBack(onBack);
   return (
     <div className="picker">
       <button className="btn btn-outline btn-sm" onClick={onBack}>
@@ -36,6 +38,7 @@ function TopicList({ onPick, onBack }) {
 }
 
 function TopicDetail({ index, onBackToList, onNext }) {
+  useSwipeBack(onBackToList);
   const topic = TOPICS[index];
   const isLast = index === TOPICS.length - 1;
   const { Component } = topic;
